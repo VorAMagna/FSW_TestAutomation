@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ROUTINE__ECS_Nami_SC",
+    "modelpath": [
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\BrakeDetS10\\BrakeDetS10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\ExtTrqCtrlS10\\ExtTrqCtrlS10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\GearDetS10\\GearDetS10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMStartS10\\PFMStartS10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMEndS10\\PFMEndS10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SC"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__ECS_Nami_SO",
+    "modelpath": [
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\PFMEndO10\\PFMEndO10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\PFMStartO10\\PFMStartO10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\StQualO10\\StQualO10.mdl",
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\TestBenchO10\\TestBenchO10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\ECS_Nami_ATC\\SW\\Development\\SO"
+    ],
+    "matlab_version": "2015b"
+  }
+]

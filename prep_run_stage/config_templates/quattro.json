@@ -1,0 +1,139 @@
+[
+  {
+    "name": "ROUTINE__Quattro_CC",
+    "modelpath": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AdpTrqDrgC10\\AdpTrqDrgC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AFOC02\\AFOC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AngTubeC10\\AngTubeC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\BallPosRstC10\\BallPosRstC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\BckUpFcnC10\\BckUpFcnC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CalC02\\CalC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CDCluOpC02\\CDCluOpC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CDInputC02\\CDInputC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CharCalcC10\\CharCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CharCorrC10\\CharCorrC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CluOpC02\\CluOpC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CtrlSwC02\\CtrlSwC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\DTWindupC10\\DTWindupC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FltyAssmblyC10\\FltyAssmblyC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FreezeFrameC02\\FreezeFrameC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FreezeFrameC10\\FreezeFrameC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FullLockHistoC10\\FullLockHistoC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\GuardCluC10\\GuardCluC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\HistogramC10\\HistogramC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InitPosC02\\InitPosC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InputC02\\InputC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InputC10\\InputC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\ITCInputC10\\ITCInputC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\MainC10\\MainC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\MisuseDetC10\\MisuseDetC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMReadC02\\NVMReadC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMReadC10\\NVMReadC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMWriteC02\\NVMWriteC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMWriteC10\\NVMWriteC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\PosCtrlC02\\PosCtrlC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\RngChngC02\\RngChngC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\RunInCompC10\\RunInCompC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SetPosC02\\SetPosC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SpdCtrlC02\\SpdCtrlC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\StQualC10\\StQualC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\StressCalcC10\\StressCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SvcJobC10\\SvcJobC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SynchHistogramC10\\SynchHistogramC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SynchHistogramC10\\SynchHistogramC10Lib.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TimeCalcC10\\TimeCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TmpOilCalcC10\\TmpOilCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TrqModC10\\TrqModC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\WearCalcC10\\WearCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SC_Modules\\SC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SC_Modules\\SignalConditioningC10\\SigCondC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\SD02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\GDDCMainS02\\GDDCMainS02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\GDDCPosCalcS02\\GDDCPosCalcS02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\GDDCUReqCtrlS02\\GDDCUReqCtrlS02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\NVMReadS02\\NVMReadS02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\SD_Modules\\NVMWriteS02\\NVMWriteS02.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC"
+    ],
+    "matlab_version": "2017b"
+  },
+  {
+    "name": "ROUTINE__Quattro_SC",
+    "modelpath": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC"
+    ],
+    "matlab_version": "2017b"
+  }
+]
+
+
+[
+  {
+    "name": "ROUTINE__Quattro_CC",
+    "modelpath": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AdpTrqDrgC10\\AdpTrqDrgC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AFOC02\\AFOC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\AngTubeC10\\AngTubeC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\BallPosRstC10\\BallPosRstC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\BckUpFcnC10\\BckUpFcnC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CalC02\\CalC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CDCluOpC02\\CDCluOpC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CDInputC02\\CDInputC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CharCalcC10\\CharCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CharCorrC10\\CharCorrC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CluOpC02\\CluOpC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CtrlSwC02\\CtrlSwC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\DTWindupC10\\DTWindupC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FltyAssmblyC10\\FltyAssmblyC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FreezeFrameC02\\FreezeFrameC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FreezeFrameC10\\FreezeFrameC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\FullLockHistoC10\\FullLockHistoC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\GuardCluC10\\GuardCluC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\HistogramC10\\HistogramC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InitPosC02\\InitPosC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InputC02\\InputC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\InputC10\\InputC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\ITCInputC10\\ITCInputC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\MainC10\\MainC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\MisuseDetC10\\MisuseDetC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMReadC02\\NVMReadC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMReadC10\\NVMReadC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMWriteC02\\NVMWriteC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\NVMWriteC10\\NVMWriteC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\PosCtrlC02\\PosCtrlC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\RngChngC02\\RngChngC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\RunInCompC10\\RunInCompC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SetPosC02\\SetPosC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SpdCtrlC02\\SpdCtrlC02.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\StQualC10\\StQualC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\StressCalcC10\\StressCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SvcJobC10\\SvcJobC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SynchHistogramC10\\SynchHistogramC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TimeCalcC10\\TimeCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TmpOilCalcC10\\TmpOilCalcC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\TrqModC10\\TrqModC10.mdl",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\WearCalcC10\\WearCalcC10.mdl"
+  ],
+    "sync": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\CC"
+    ],
+    "matlab_version": "2017b"
+  },
+  {
+    "name": "ROUTINE__Quattro_SC",
+    "modelpath": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.mdl",
+   "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMEndS10\\PFMEndS10.slx",
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMStartS10\\PFMStartS10.slx"
+    ],
+    "sync": [
+      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC"
+    ],
+    "matlab_version": "2017b"
+  }
+]

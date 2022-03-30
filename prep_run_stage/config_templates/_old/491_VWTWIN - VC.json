@@ -1,0 +1,23 @@
+[
+  {
+    "name": "ROUTINE__491_VWTWIN_VC",
+    "modelpath": [
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\AdpLockV10\\AdpLockV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\AdpPreCtrlV10\\AdpPreCtrlV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\AdpSlipLrnV10\\AdpSlipLrnV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\BrakeCtrlV10\\BrakeCtrlV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\HoldFuncV10\\HoldFuncV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\OutputV10\\OutputV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\PFMEndVDCV10\\PFMEndVDCV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\PFMStartVDCV10\\PFMStartVDCV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\PreCtrlV10\\PreCtrlHo2RV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\SlipCtrlV10\\SlipCtrlHo2RV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\TrqCoordV10\\TrqCoordHo2RV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC\\VC_Composition\\VC_Modules\\VibDampV10\\VibDampV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\VC"
+    ],
+    "matlab_version": "2015b"
+  }
+]

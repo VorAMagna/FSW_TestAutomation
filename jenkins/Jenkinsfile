@@ -1,0 +1,19 @@
+
+pipeline {
+    agent { label 'LANWINNB4082_vladvojn'}
+    environment {
+        proj_root = 'C:\\Sandbox\\Product_Group\\SW\\Development\\FSW_Tools\\FSW_TestAutomation'
+        script_path = "C:\\Sandbox\\Product_Group\\SW\\Development\\FSW_Tools\\FSW_TestAutomation\\main.py"
+        virtual_env = "${proj_root}\\venv\\Scripts\\activate"
+    }
+    stages {
+        stage('All In one Stage') {
+            steps {
+                bat 'set PYTHONUNBUFFERED="true"'
+                bat 'cd C:\\Sandbox\\Product_Group\\SW\\Development\\FSW_Tools\\FSW_TestAutomation'
+                bat "call ${env.virtual_env}"
+                bat "python ${env.script_path}"
+            }
+        }
+    }
+}

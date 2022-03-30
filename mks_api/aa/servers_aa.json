@@ -1,0 +1,10 @@
+{
+    "MPT_Lannach": {
+        "hostname": "lanwinsvmks1",
+        "port": "7001"
+    },
+    "MPT_StValentin": {
+        "hostname": "vanwinsv21005",
+        "port": "7001"
+    }
+}

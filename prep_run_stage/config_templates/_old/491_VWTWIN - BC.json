@@ -1,0 +1,31 @@
+[
+  {
+    "name": "ROUTINE__491_VWTWIN_BC",
+    "modelpath": [
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\DiagV10\\DiagV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\DTWindupLDRV10\\DTWindupLDRV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\DTWindupV10\\DTWindupV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\FricEstV10\\FricEstV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\ITCWhlTolChkV10\\ITCWhlTolChkV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\KinemCalcV10\\KinemCalcV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\LongSpdCalcV10\\LongSpdCalcV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\MassVehEstV10\\MassVehEstV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\MueSplitDetV10\\MueSplitDetV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\NVMReadV10\\NVMReadV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\NVMWriteV10\\NVMWriteV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\OffroadCalcV10\\OffroadCalcV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\PFMEndBVCV10\\PFMEndBVCV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\PFMStartBVCV10\\PFMStartBVCV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\RotSpdCalcV10\\RotSpdCalcV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\TmpPTUV10\\TmpPTUV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\TrqCardV10\\TrqCardV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\VelCalcV10\\VelCalcV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\WhlTolChkLDRV10\\WhlTolChkLDRV10.mdl",
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\WhlTolChkV10\\WhlTolChkV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\491_VW_MQB_Twin_RDM\\SW\\Development\\BC"
+    ],
+    "matlab_version": "2015b"
+  }
+]

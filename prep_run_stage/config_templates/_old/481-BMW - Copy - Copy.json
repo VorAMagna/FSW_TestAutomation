@@ -1,0 +1,91 @@
+[
+  {
+    "name": "ROUTINE__481_BMW_BC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\DiagV10\\DiagV10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\TrqCardV10\\TrqCardV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__481_BMW_CC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SetPosC02\\SetPosC02.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__481_BMW_SC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\SC"
+    ],
+    "matlab_version": "2015b"
+  }
+]
+
+
+
+
+
+[
+  {
+    "name": "ROUTINE__481_BMW_ARBx",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\CalcSlipLimX05\\CalcSlipLimX05.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\CheckQualX05\\CheckQualX05.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\ControlSlipX05\\ControlSlipX05.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\DegradConceptX05\\DegradConceptX05.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\InputX05\\InputX05.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx\\ARBx_Composition\\ARBx_Modules\\StatCtrlX05\\StatCtrlX05.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\ARBx"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__481_BMW_CC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\CtrlSwC02\\CtrlSwC02.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\HistogramC10\\HistogramC10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC\\CC_Composition\\CC_Modules\\SetPosC02\\SetPosC02.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\CC"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__481_BMW_SC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\SC"
+    ],
+    "matlab_version": "2015b"
+  },
+  {
+    "name": "ROUTINE__481_BMW_BC",
+    "modelpath": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\DiagV10\\DiagV10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\KinemCalcV10\\KinemCalcV10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\LongSpdCalcV10\\LongSpdCalcV10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\RotSpdCalcV10\\RotSpdCalcV10.mdl",
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC\\BC_Composition\\BC_Modules\\TrqCardV10\\TrqCardV10.mdl"
+    ],
+    "sync": [
+      "C:\\Sandbox\\481_BMW_CLAR_WE_ATC14_1\\SW\\Development\\BC"
+    ],
+    "matlab_version": "2015b"
+  }
+]
