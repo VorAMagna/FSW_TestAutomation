@@ -1,0 +1,195 @@
+<guideline fileVersion="2">
+  <uid>b9c1a46c-e09e-4c6d-8dc4-3a0c59c2bbce</uid>
+  <id>na_0006</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Guidelines for Mixed Use of Simulink and Stateflow</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>readability</value>
+        <value>verification/validation</value>
+        <value>workflow</value>
+        <value>simulation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 3.0, Chapter 5.1.</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Use Stateflow if complicated logical operations are to be implemented, use Simulink if numerical operations are addressed. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[The choice of whether to use Simulink or Stateflow to model a given portion of the control algorithm functionality should be driven by the nature of the behavior being modeled.
+<br /> 
+<ul> 
+ <li> If the function primarily involves complicated logical operations, use Stateflow diagrams.<br /> 
+  <ul> 
+   <li> Stateflow should be used to implement modal logic - where the control function to be performed at the current time depends on a combination of past and present logical conditions. </li> 
+  </ul> </li> 
+ <li> If the function primarily involves numerical operations, use Simulink features.<br /> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<ul> 
+ <li> If the primary nature of the function is logical, but some simple numerical calculations are done to support the logic, it is preferable to implement the simple numerical functions using the Stateflow action language. <p> <img style="width: 408px; height: 201px;" src="na_0006_1.png" /> </p> <p class="imageCaption"> Figure na_0006-1: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul> 
+<ul> 
+ <li> If the primary nature of the function is numeric, but some simple logical operations are done to support the arithmetic, it is preferable to implement the simple logical functions within Simulink blocks. <p> <img style="width: 388px; height: 140px;" src="na_0006_2.png" /> </p> <p class="imageCaption"> Figure na_0006-2: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul> 
+<ul> 
+ <li> If the primary nature of the function is logical, and some complicated numerical calculations must be done to support the logic, use a Simulink subsystem to implement the numerical calculations. The Stateflow software should invoke the execution of this subsystem using a function-call. <p> <img style="width: 214px; height: 254px;" src="na_0006_3.png" /> </p> <p class="imageCaption"> Figure na_0006-3: Guidelines for mixed use of Simulink and Stateflow </p> <p> <img style="width: 512px; height: 206px;" src="na_0006_4.png" /><br /> </p> <p class="imageCaption"> Figure na_0006-4: Guidelines for mixed use of Simulink and Stateflow </p> <p> <img style="width: 228px; height: 300px;" src="na_0006_5.png" /> </p> <p class="imageCaption"> Figure na_0006-5: Guidelines for mixed use of Simulink and Stateflow </p> <p> <img style="width: 582px; height: 224px;" src="na_0006_6.png" /><br /> </p> <p class="imageCaption"> Figure na_0006-6: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul> 
+<ul> 
+ <li> Use the Stateflow product to implement modal logic, where the control function to be performed at the current time depends on a combination of <em>past and present logical conditions</em>. (If there is a need to store the result of a logical condition test in Simulink, for example, by storing a flag, this is one indicator of the presence of modal logic, which should be modeled in Stateflow software.) <p> <img style="width: 559px; height: 210px;" src="na_0006_7.png" /><br /> </p> <p class="imageCaption"> Figure na_0006-7: Guidelines for mixed use of Simulink and Stateflow </p> <p> <img style="width: 263px; height: 193px;" src="na_0006_10.png" /> </p> <p class="imageCaption"> Figure na_0006-8: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul> 
+<ul> 
+ <li> Simulink should be used to implement numerical expressions containing continuously-valued states, e.g., difference equations, integrals, derivatives, and filters. <p class="imageCaption"> <img style="width: 383px; height: 200px;" src="na0006-9.PNG" /><br /> </p> <p class="imageCaption"> Figure na_0006-9: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value><![CDATA[<ul> 
+ <li> Use the Stateflow product to implement modal logic, where the control function to be performed at the current time depends on a combination of <em>past and present logical conditions</em>. (If there is a need to store the result of a logical condition test in Simulink, for example, by storing a flag, this is one indicator of the presence of modal logic, which should be modeled in Stateflow software.)<br /> <img src="na0006-10.PNG" /> <p class="imageCaption"> Figure na_0006-10: Guidelines for mixed use of Simulink and Stateflow </p> <p> <img src="na_0006_8.png" /> </p> <p class="imageCaption"> Figure na_0006-11: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul> 
+<ul> 
+ <li> Simulink should be used to implement numerical expressions containing continuously-valued states, e.g., difference equations, integrals, derivatives, and filters. <p> <img style="width: 255px; height: 225px;" src="na_0006_11.png" /> </p> <p class="imageCaption"> Figure na_0006-12: Guidelines for mixed use of Simulink and Stateflow </p> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Review all Simulink and Stateflow models. The choice between Simulink or Stateflow is driven by the nature of the behaviour being modeled.
+<br /> In general make sure that Stateflow diagrams are used if the function primarily involves complicated logical operations or Simulink features are used if the function primarily involves numerical operations.
+<br /> For more detailed specifications have a look in the description field.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.0</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refTitle="Generic Review Check for Stateflow Elements" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.ReviewTopSystem</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>false</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.IndividualMessage</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>Review the Stateflow chart according to the guideline. Stateflow diagrams are used if the function primarily involves complicated logical operations or Simulink features are used if the function primarily involves numerical operations.</value>
+        <comment>Review all Simulink and Stateflow models. The choice between Simulink or Stateflow is driven by the nature of the behaviour being modeled.
+In general make sure that Stateflow diagrams are used if the function primarily involves complicated logical operations or Simulink features are used if the function primarily involves numerical operations.
+For more detailed specifications have a look in the description field.</comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.GetStateflowObjects</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'Chart'}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/27/2017 08:38:30">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

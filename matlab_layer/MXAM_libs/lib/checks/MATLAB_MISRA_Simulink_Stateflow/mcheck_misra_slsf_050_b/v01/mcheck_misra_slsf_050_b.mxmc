@@ -1,0 +1,100 @@
+<check fileVersion="2">
+  <uid>0cbc5a78-625c-4c23-b7e5-cd3263be68a9</uid>
+  <id>mcheck_misra_slsf_050_b</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Stateflow Window and Text Appearance - Text Size</title>
+  <adapter version="2.0">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_050_b.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the font size of every text element in a Stateflow chart according to the font size given in the check parameter MISRA_SL_SF.misra_slsf_050_b.FontSize. Here, the check analyzes the font size defined as a global chart property and as a local property of a label or transition. </p>
+<p> Global chart property: </p>
+<ul>
+ <li> Failed1: The font size of transition labels differs from the value defined in the check parameter. </li>
+ <li> Failed2: The font size of state labels differs from the value defined in the check parameter. </li>
+</ul>
+<p> Local property: </p>
+<ul>
+ <li> Failed3: The font size of a transition label differs from the value defined in the check parameter. </li>
+ <li> Failed4: The font size of a state label differs from the value defined in the check parameter. </li>
+ <li> Failed5: The font size of an annotation differs from the value defined in the check parameter. </li>
+</ul>
+<p> The check result is passed if all failed cases do not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> The font size specified in the check parameter MISRA_SL_SF.misra_slsf_050_b.FontSize must be greater than 10. </p>
+<p> Within a Statechart, the font size may be defined as a global chart property or a local property of a certain label or transition. The local property overwrites the global setting. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Set the font size as a global chart property of transition labels and state labels to the value of the check parameter MISRA_SL_SF.misra_slsf_050_b.FontSize (R2011b: Edit -&gt; Style, R2013b: File -&gt; Stateflow Preferences -&gt; Style).<br /> Additionally, change the font size for each state label, transition label and annotation (note) individually or use the repair action provided by the check. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> The repair action sets the global chart property font size of state labels and transition labels to the value of the check parameter MISRA_SL_SF.misra_slsf_050_b.FontSize. Furthermore, the font size of each state label, transition label and annotation (note) is set to the parameter value individually. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_050_b.FontSize</name>
+      <description>Font size for all text elements in Stateflow (state label, transition label, annotation/note). The value must be greater or equal to 10.</description>
+      <defaultValue>12</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="02/24/2015 16:31:50">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+  </history>
+</check>

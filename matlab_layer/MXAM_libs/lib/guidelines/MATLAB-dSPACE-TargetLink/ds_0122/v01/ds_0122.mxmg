@@ -1,0 +1,139 @@
+<guideline fileVersion="2">
+  <uid>c7648df5-2bdd-4cc4-a50a-a360f23c644e</uid>
+  <id>ds_0122</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoidance of Complex Fixed-Point Expressions</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 12.3), dSPACE 3.0 (section 12.3)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value>
+  
+    
+      TargetLink Production Code Generation Guide [1], TargetLink Basics, Integer 
+          Calculation Basics, Implementation of Integer Calculation Operations
+      
+    
+  
+</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>Using complex expressions for fixed-point operations within the Stateflow action language should be avoided. If a condition or an assignment contains multiple fixed-point operands, intermediate variables with <em>Temporary</em> or <em>Local</em> scope should be introduced for each operation to which the intermediate result is assigned.</p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>Without intermediate variables, the explicit specification for ranges and data types for intermediate results cannot be performed. TargetLink therefore has to assume a maximum range for intermediate results, which often requires 32-bit arithmetic. Introducing intermediate variables allows the ranges to be restricted so that smaller bit lengths can be used. Please note, that Temporary Scope is no longer supported since R14 releases.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p>Figure ds_0122-1: shows the improper use of a complex fixed-point expressions in Stateflow. This leads to the following code fragment, which contains lots of 32-bit data types:</p>
+<p class="codeSample">Sb1_Out1_ = (Int16) ((((Int16) (UInt16) (((UInt16) ((((UInt16) Cb1_a) * ((UInt16) (Int16)(Sb1_In2_ &lt;&lt; 8))) &gt;&gt; 8)) + ((UInt16) (((UInt32) (((UInt32) (((UInt16) (((UInt16)(-((UInt16)Cb1_a))) + 256)) * ((UInt16) (Int16) (Sb1_In3_ &lt;&lt; 8)))) &lt;&lt; 15)) &gt;&gt; 23)))) * 100) &gt;&gt; 8);</p>
+<p><img src="ds_0122_1.png" /></p>
+<p class="imageCaption">Figure ds_0122-1: Complex expression involving multiple 16-bit fixed-point operands which leads to the generation of 32-bit arithmetic.</p>
+<p>Proper modeling in Stateflow requires the splitting of complex expressions into operations with two operands each and the introduction of auxiliary variables for intermediate results, see Figure ds_0122-2: The following code fragment is now generated, requiring no 32-bit arithmetic:</p>
+<p class="codeSample">Sb1_Out1_ = (Int16) ((((Int16) (((Int16) ((((UInt16) Cb1_a) * ((UInt16) (Int16) (Sb1_In2_ &lt;&lt; 8))) &gt;&gt; 8)) + ((Int16) ((((UInt16) (((UInt16) (-((UInt16) Cb1_a))) + 256)) * ((UInt16) (Int16) (Sb1_In3_ &lt;&lt; 8))) &gt;&gt; 8)))) * 100) &gt;&gt; 8);</p>
+<p><img src="ds_0122_2.png" /></p>
+<p class="imageCaption">Figure ds_0122-2: 32-bit arithmetic can be avoided by introducing auxiliary variables.</p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

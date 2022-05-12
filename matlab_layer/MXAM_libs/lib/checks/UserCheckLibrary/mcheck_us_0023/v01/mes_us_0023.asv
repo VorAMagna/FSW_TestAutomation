@@ -1,0 +1,113 @@
+function [result,cr_items,r_stats]=mes_us_0023(system,cmd_s)			% type before the id the keyword mes_
+[reg,s_regerr]=mxam_getCheckInfoFromDB('us_0023');  					% get defaults from db
+
+% For MXAM Drive 3.3 required:
+reg.license='';
+%
+
+																		% add all necessary information here:
+reg.version_id = '1.0'; 												% add version id check_infos
+reg.filename = mfilename;												% add filename to check_infos
+reg.functionhandle = 0; 												% clear invalid function handle for ModelAdvisor
+r_myscheme.HiliteType='user1';
+r_myscheme.ForegroundColor='blue';
+r_myscheme.BackgroundColor='magenta';
+set_param(0, 'HiliteAncestorsData', r_myscheme);
+mes_preprocess; 														% check arguments, preset defaults
+if done==1
+    return
+end
+
+try
+    
+    ... % find all blocks in the model
+    cs_blocks = find_system(model_name, 'LookUnderMasks', 'all',...
+                'FollowLinks','on',...
+                'Type', 'Block');% find all blocks in the model
+				'BlockType', 'Constant');
+
+    % filter irrelevant blocks, apply ignorelists, update statistics:
+    [cs_blocks,r_stats] = mes_periprocess(cs_blocks,r_peri_ops); 
+
+    mes_progress('please wait...',length(cs_blocks),mesvar_PBStep,reg.check_id,0); % init progress bar
+
+    % define default fields for check item struct, returned by this check
+    default_item=struct('result','faulty','qualifier','block','linkaction','hilite',...
+                        'message','The name and constant of this Block ist not the same');
+                    
+					
+	X=[1,1];
+	
+    count = 0;
+    for i = 1 : length(cs_blocks) % loop over to-be-checked blocks
+
+        b=cs_blocks{i}; % the current block
+
+        b_cancel=mes_progress(b);    % send progress-info to GUI and check for cancel message from GUI
+        if b_cancel
+            break
+        end
+        bh=get_param(b,'Handle'); % get block handle
+		Name=get_param(bh,'Name'); % get block name
+        BlockType = get_param(bh,'BlockType'); % get BlockType
+        bhClass = get_param(bh,'MaskValueString'); % get MaskValueString
+        % Check if block's class is MERGEABLE_DISP:
+        indClass=strfind(bhClass,'MERGEABLE_DISP'); % Find the index of the string 'MACRO'
+        
+        
+        if (isempty(indClass)==0)
+            count = count + 1;
+            saveFile = 'C:\Sandbox\Product_Platform\SW\Development\CC\tools\ModelExaminer\MXRay_MXAM_Toolchain\MXAMLibraries\UserCheckLibrary\mcheck_us_0023\test';
+            save(saveFile,'count');
+        end
+        
+        if strcmp(Name,'W_SigCondC10_iGbAct')
+            saveFile = 'C:\Sandbox\Product_Platform\SW\Development\CC\tools\ModelExaminer\MXRay_MXAM_Toolchain\MXAMLibraries\UserCheckLibrary\mcheck_us_0023\testCase';
+            save(saveFile,'Name','bhClass');
+        end
+        
+        if (strcmp(BlockType,'Inport')==0)
+            count = count + 1;
+            saveFile = 'C:\Sandbox\Product_Platform\SW\Development\CC\tools\ModelExaminer\MXRay_MXAM_Toolchain\MXAMLibraries\UserCheckLibrary\mcheck_us_0023\testName';
+            save(saveFile,'BlockType','Name','count');
+        end
+        
+		if (isempty(indClass)==0 && (strcmp(BlockType,'Inport')==0||...
+                strcmp(BlockType,'Outport')==0))
+                        
+%             % When no exception is found, the check will continue, else 
+%             % the next element will be checked:
+%             Constant=get_param(bh,'value');								% check parameter of the block
+%             ind=strfind(Constant,'/');
+%             if(isempty(ind))
+%                 NewConstant=Constant;
+%             else
+%                 startpos=ind(end)+1;
+%                 NewConstant=Constant(startpos:(end-2));
+%             end
+%             A=strcmp(NewConstant,Name);
+%             if(isempty(A))
+%                 A=0;
+%             end
+            hilite_system(bh,'user1')
+            % build check item structure for current rule violation:
+            it=mxam_newcritem(default_item,...
+                              'message','Mergeable Disp was used in a different block then a Inport or Outport',...
+                              'handle',bh,...
+                              'path',mes_cleanpathname(bh));
+            cr_items{end+1} = it; % add new check item to result list
+            
+        end
+    end
+
+
+catch %#ok<*CTCH> % error handling
+    lem=lasterror;
+    mes_progress('/full:'); % clean-up progressbar
+    result=['error in ' mfilename ': ',lem.message];
+    mes_postprocess;
+    return
+end
+
+mes_progress('/full:'); % finally, show full progressbar
+mes_postprocess; % clean up and report results

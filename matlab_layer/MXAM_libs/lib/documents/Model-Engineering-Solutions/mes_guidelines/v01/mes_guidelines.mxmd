@@ -1,0 +1,92 @@
+<guidelineDocument fileVersion="2">
+  <uid>9bc28c9b-93f6-4d8e-86e3-451e91915bd4</uid>
+  <id>mes_guidelines</id>
+  <title>MES Guidelines - Collection of Best Practices</title>
+  <access>protected</access>
+  <version>1</version>
+  <status>draft</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="3977ec59-01d1-40f9-b9dc-d2a258fc893e" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+    </chapter>
+    <chapter uid="aeb3121b-ad35-4a82-bd0b-71be0b0d70d5" title="Simulink/Stateflow">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="45364315-15fb-4775-bb48-e83b8299191d" modifier="standard" refUid="df3d4ed7-ce4c-46ad-b85b-a916e1b582dc" refId="mes_slsf_9100" refVersion="1" refTitle="Naming Conventions">
+        <check uid="fb80f1fb-67dc-49b1-b251-426f7aff4b15" selectedForRun="true" refUid="ff4c31dd-1834-48a7-ac2c-50321fafbd4d" refId="mcheck_mes_slsf_9100" refVersion="1" refTitle="Naming Conventions"/>
+      </guideline>
+      <guideline uid="7e0f2066-27bd-4cc9-a204-f8833e3d03f7" modifier="standard" refUid="5ba785aa-9c26-481e-a55d-6d3f6c9a8f17" refId="mes_slsf_9101" refVersion="1" refTitle="Avoid Blocks With Generic Name">
+        <check uid="67dfe589-1e6b-4783-ac14-7af7f5c5a2e6" selectedForRun="true" refUid="bc05458f-df49-4bcd-ae42-a724078f0e4d" refId="mcheck_mes_slsf_9101" refVersion="1" refTitle="Avoid Blocks With Generic Name"/>
+      </guideline>
+      <guideline uid="8b3a1e86-0a2e-4f07-b62f-629ad3cb412e" modifier="standard" refUid="9325d2e6-cbab-4ac8-89be-bf953b68ef0a" refId="mes_slsf_9102" refVersion="1" refTitle="Naming of Logged Signals (Simulink/Embedded Coder)">
+        <check uid="18aa44e7-ae3b-4a89-8f18-91f5c58f9ce9" selectedForRun="true" refUid="9cb2a5d9-c069-4ef3-ae29-e52f63a681a0" refId="mcheck_mes_slsf_9102" refVersion="1" refTitle="Naming of Logged Signals (Simulink/Embedded Coder)"/>
+      </guideline>
+      <guideline uid="a0a3627a-f722-4cff-b1f4-d49b8dd5c037" modifier="standard" refUid="bfcf9792-b030-4ec9-9a1b-4f6526f54582" refId="mes_slsf_9103" refVersion="1" refTitle="Unique Naming of Subsystems and Charts">
+        <check uid="2afc69ef-31e3-407d-9f9b-950455d93769" selectedForRun="true" refUid="f662c6ef-4240-4207-9d03-110859df50cd" refId="mcheck_mes_slsf_9103" refVersion="1" refTitle="Unique Naming of Subsystems and Charts"/>
+      </guideline>
+      <guideline uid="7b871e3d-e36e-4f75-b479-685ee561a7a7" modifier="standard" refUid="5a7c7196-3cfa-44a4-8d8c-6f2965475160" refId="mes_slsf_2102" refVersion="1" refTitle="Usage of UnitDelay and Memory blocks">
+        <check uid="0e7159df-4ede-40e1-bcff-1d5da9969e5f" selectedForRun="true" refUid="dacad978-689d-4da0-aafb-032a90c73599" refId="mcheck_mes_slsf_2102" refVersion="1" refTitle="Usage of UnitDelay and Memory blocks"/>
+      </guideline>
+      <guideline uid="55fb45af-2896-4f11-98b5-6e13ee2a6fa0" modifier="standard" refUid="8c472e5f-a02a-482a-8579-8bbf1316f78a" refId="mes_slsf_3106" refVersion="1" refTitle="Avoid Global Stateflow Functions">
+        <check uid="57c5b65f-d81b-4cbd-941d-184915bfaf73" selectedForRun="true" refUid="0864ad59-f98e-479a-87f8-491f6cdf39f2" refId="mcheck_mes_slsf_3106" refVersion="1" refTitle="Avoid Global Stateflow Functions"/>
+      </guideline>
+      <guideline uid="a54d704e-f0a1-4aba-9506-45a3e045fd37" modifier="standard" refUid="5d181a6c-9960-4090-aa2d-492126d1fc7d" refId="mes_slsf_3110" refVersion="1" refTitle="Usage of Stateflow Actions">
+        <check uid="26efb6ad-aa12-4c22-95b3-d128a23528a0" selectedForRun="true" refUid="e4fbebf1-eb1e-41f7-9405-16f1d001a0ac" refId="mcheck_mes_slsf_3110" refVersion="1" refTitle="Usage of Stateflow Actions"/>
+      </guideline>
+    </chapter>
+    <chapter uid="6fa6ffa3-76d0-4aa0-8f77-c381c3bd7d45" title="TargetLink">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="66e387a7-2a7a-4fb8-84b6-1ebabbbb202c" modifier="standard" refUid="c1d75bc7-5e77-4d56-8509-b926db7e06c1" refId="mes_cgtl_4102" refVersion="1" refTitle="Data Type Conversion Block in TargetLink Models">
+        <check uid="0ab68b68-96b1-4e32-84ae-746c239b9ee5" selectedForRun="true" refUid="3bc7b077-fe89-4abf-a3d0-8ff3e2210a33" refId="mcheck_mes_cgtl_4102" refVersion="1" refTitle="Data Type Conversion Block in TargetLink Models"/>
+      </guideline>
+      <guideline uid="5ee05988-d3f6-41ee-a20e-bfa5cb6c466b" modifier="standard" refUid="646e3053-1768-4cca-a8d2-bcb9bcb42e61" refId="mes_cgtl_4101" refVersion="1" refTitle="Tolerance Value of TargetLink Constant and Gain Block">
+        <check uid="526b69f5-ac22-4e76-8fc6-3e4bd886318e" selectedForRun="true" refUid="374a0a41-b642-49c0-ae72-86a99515a879" refId="mcheck_mes_cgtl_4101" refVersion="1" refTitle="Tolerance Value of TargetLink Constant and Gain Block"/>
+      </guideline>
+      <guideline uid="6c21f2ae-b3ef-4f7f-ae01-d095a62e9c98" modifier="standard" refUid="c1e86e42-a21c-4c73-a880-588b68955ce1" refId="mes_cgtl_4201" refVersion="1" refTitle="Consistency of TargetLink and Simulink Data Types in TargetLink Blocks">
+        <check uid="fb2a585e-bdca-4070-9cd4-bced6d2605b6" selectedForRun="true" refUid="636d2b37-4162-47df-a617-475017a0cd25" refId="mcheck_mes_cgtl_4201" refVersion="1" refTitle="Consistency of TargetLink and Simulink Data Types in TargetLink Blocks"/>
+      </guideline>
+    </chapter>
+    <chapter uid="6b7ca8b9-7da5-425d-8787-5dbdee27bd32" title="Configuration">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="ddb2f7c1-3d26-43b8-aff6-4b14a6ab025c" modifier="standard" refUid="0ed4648d-65b3-462d-b138-36805941f88e" refId="mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink">
+        <check uid="b47ea367-07dc-43e7-8d2e-b5d01149530c" selectedForRun="true" refUid="91107659-d83c-40be-bfbb-b528043a5f14" refId="mcheck_mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink"/>
+      </guideline>
+      <guideline uid="92b68b10-a25a-488b-b077-b7dfa0abd867" modifier="standard" refUid="1d63ff41-7318-4f43-a413-e9ca99e29e98" refId="mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink">
+        <check uid="7232c9ed-3814-458e-8d16-74fec168bfff" selectedForRun="true" refUid="fbba4c97-2d04-4f95-a65d-14735ab44bd4" refId="mcheck_mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink"/>
+      </guideline>
+      <guideline uid="b3a8f28b-929d-444d-b29c-f4f94c8aa3cd" modifier="standard" refUid="23c74593-5960-4922-909e-23ecca082acc" refId="mes_slsf_9003" refVersion="1" refTitle="Consistent Stateflow Chart Properties">
+        <check uid="f7ce8a00-64c6-4da2-b20e-0fe8e1232757" selectedForRun="true" refUid="cc43547a-d39b-458d-be00-356c88656f23" refId="mcheck_mes_slsf_9003" refVersion="1" refTitle="Stateflow Options"/>
+      </guideline>
+      <guideline uid="768bd0ee-df7b-401c-9637-bf7f7708c334" modifier="standard" refUid="731036ae-20da-43c7-9877-b13beffd35be" refId="mes_cgec_9004" refVersion="1" refTitle="Configuration Parameter Considerations">
+        <check uid="57444aa9-28fc-4718-b59b-eccb4a4431d4" selectedForRun="true" refUid="91107659-d83c-40be-bfbb-b528043a5f14" refId="mcheck_mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/28/2016 09:32:39">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

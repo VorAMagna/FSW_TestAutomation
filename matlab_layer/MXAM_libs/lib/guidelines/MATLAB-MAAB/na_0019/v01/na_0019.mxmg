@@ -1,0 +1,193 @@
+<guideline fileVersion="2">
+  <uid>61cfc39d-fdf4-4dd0-b36d-b260c183c8d2</uid>
+  <id>na_0019</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Restricted Variable Names</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>mandatory</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>NA-MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+        <value>verification/validation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 3.0, Chapter 10.1.</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Do not use reserved C variable names and MATLAB function names as variable names in the code of MATLAB Function blocks. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> To improve the readability of the MATLAB code, avoid using reserved C variable names. For example, avoid using const, TRUE, FALSE, infinity, nil, double, single, or enum in MATLAB Function code. These names may conflict with the compiler after C code is generated from the MATLAB code. </p> 
+<p> Avoid using variable names that conflict with MATLAB Functions, for example &quot;conv&quot;. </p> 
+<p> Note: Reserved key words are defined in Simulink Coder &gt; Users Guide &gt; Code Generation &gt; Configuration &gt; Code Appearance. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Review the code embedded by each MATLAB Function block. Avoid using reserved C variable names (examples: TRUE, FALSE, infinity, nil, double, single or enum)&nbsp; for better readability.
+<br /> If used, then change the variable names, else these names can conflict with the compiler after C code is generated from the MATLAB code.
+<br /> Also make sure to avoid variable names that conflict with MATLAB functions, for example &quot;conv&quot;.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>derived from jh_0021 (Restricted Variable Names)</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>3.0</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refTitle="Generic Review Check for Simulink Blocks" refVersion="1"/>
+    <reference refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refTitle="Generic Review Check for Stateflow Elements" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.GetStateflowObjects</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'MATLAB Function'}]]></value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.ReviewTopSystem</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>false</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.ReviewTopSystem</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>false</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.FindSystemConfiguration</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'BlockType','SubSystem','sfblocktype','MATLAB Function'}]]></value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.IndividualMessage</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>Review the MATLAB function according to the guideline. Avoid using reserved C variable names for better readability and avoid variable names that conflict with MATLAB functions.</value>
+        <comment>C variable names (examples: TRUE, FALSE, infinity, nil, double, single or enum) can conflict with the compiler after C code is generated from the MATLAB code.</comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.IndividualMessage</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>Review the MATLAB function according to the guideline. Avoid using reserved C variable names for better readability and avoid variable names that conflict with MATLAB functions.</value>
+        <comment>C variable names (examples: TRUE, FALSE, infinity, nil, double, single or enum) can conflict with the compiler after C code is generated from the MATLAB code.</comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="02/03/2016 14:02:27">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,87 @@
+<check fileVersion="2">
+  <uid>e3a6b464-38e7-4ea8-8100-132fec937b1e</uid>
+  <id>mcheck_mes_color_001</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Color Layout of Simulink Models</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_color_001.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the color setting of each model element (blocks and annotations)<br /> Failed: the color setting of the model element is not specified in accordance with the color schema as defined by the check parameter.<br /> The check issues a pass if the failed case does not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Change the color setting of each reported model element as defined by the check's color schema parameter. It is also possible to adjust the color schema to fit to your needs. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> The color settings defined by the check's color schema parameter are applied to each model element. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MES.mes_color_001.colorSchema</name>
+      <description>Specify the name of the file that contains the color layout definition (for more details see the comments in the file)</description>
+      <defaultValue><![CDATA['mxam_colorSchema_MES_Complex']]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

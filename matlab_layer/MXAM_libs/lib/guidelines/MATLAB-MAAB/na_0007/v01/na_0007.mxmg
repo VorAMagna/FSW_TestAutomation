@@ -1,0 +1,189 @@
+<guideline fileVersion="2">
+  <uid>a28ee9a4-78d9-431c-aedc-28d9b54567bb</uid>
+  <id>na_0007</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Guidelines for Use of Flow Charts, Truth Tables and State Machines</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+        <value>verification/validation</value>
+        <value>workflow</value>
+        <value>simulation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 3.0, Chapter 5.1.</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> If modes of operation or discrete-valued states are modelled, use state charts; for if-then-else etc. use flow charts or truth tables. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Within Stateflow, the choice of whether to utilize a flow chart or a state chart to model a given portion of the control algorithm functionality should be driven by the nature of the behavior being modeled. </p> 
+<ul> 
+ <li> If the primary nature of the function segment is to calculate modes of operation or discrete-valued states, use state charts. Some examples are<br /> 
+  <ul> 
+   <li> Diagnostic model with pass, fail, abort, and conflict states </li> 
+   <li> Model that calculates different modes of operation for a control algorithm </li> 
+  </ul> </li> 
+ <li> <p> If the primary nature of the function segment involves if-then-else statements, use flowcharts or truth tables. </p> </li> 
+</ul> 
+<p> Specifics: </p> 
+<ul> 
+ <li> If the primary nature of the function segment is to calculate modes or states, but if-then-else statements are required, add a flow chart to a state within the state chart. (see 7.5 Flowchart Patterns) </li> 
+</ul> 
+<p> Prerequisite: na_0006: Guidelines for Mixed use of Simulink and Stateflow<br /> </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[The choice whether to use a flow chart or a state chart to model a given portion of the control algorithm functionality should be driven by the nature of the behavior being modeled.
+<br /> For instance, if the primary nature of the function segment is to calculate modes of operation or discrete-valued states, use state charts.
+<br /> In case the primary nature of the function segment involves if-then-else statements, use flowcharts or truth tables.&nbsp;
+<br /> A special case would be, if the primary nature of the function segment is to calculate modes or states, but if then else statements are required, then add a flowchart to a state with in the state chart.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.0</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refTitle="Generic Review Check for Stateflow Elements" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.ReviewTopSystem</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>false</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.IndividualMessage</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>Review the use of states, flow charts and truth tables according to the guideline. If modes of operation or discrete-valued states are modeled, use state-charts; for if-then-else and similars use flowcharts or truth-tables.</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sf_generic_0001.GetStateflowObjects</parameterName>
+          <sourceIdentifier>mcheck_mes_sf_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'Chart'}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/27/2017 08:38:52">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

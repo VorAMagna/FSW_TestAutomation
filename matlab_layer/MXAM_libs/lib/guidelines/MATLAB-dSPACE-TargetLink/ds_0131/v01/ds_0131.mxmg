@@ -1,0 +1,141 @@
+<guideline fileVersion="2">
+  <uid>3ba9aac3-490d-4408-b237-704f49d5d08d</uid>
+  <id>ds_0131</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Constants and Multiplications with Constants</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 13.4), dSPACE 3.0 (section 13.4)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value>
+  
+    
+      TargetLink Production Code Generation Guide [1], TargetLink Basics, 
+          Integer Calculation Basics, Implementation of Integer Calculation Operations
+      
+    
+  
+</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>The efficiency of the code can be enhanced if gain or constant parameters of <em>Gain / Constant</em> blocks are either chosen appropriately or specified with a permitted tolerance.</p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>Real constants are implemented as divisions of two integer numbers if fixed-point code is generated. This is particularly efficient if, numerator or denominator can be expressed as a power of two, which leads to bitshift operations. If a certain tolerance is specified for the constant/gain parameter or the values are chosen appropriately, the numerator or denominator can be chosen as power of two-values by the code generator.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p>If no permitted tolerance is specified for the gain parameter with the constant value 23.74, see Figure ds_0131-1: the following code is generated:</p>
+<p class="codeSample">Sa1_Gain = (Int16) ((((Int32) Sa1_InPort1) * 1187) / 50);</p>
+<p><img src="ds_0131_1.png" /></p>
+<p class="imageCaption">Figure ds_0131-1: A constant multiplication in a Gain block. Minor modifications of the gain parameter lead to more efficient code.</p>
+<p>The division can be replaced by a more efficient bitshift operation if the gain parameter 23.74 can be modified to 23.75, which leads to the following code:</p>
+<p class="codeSample">Sa1_Gain = (Int16) ((((Int32) Sa1_InPort1) * 95) &gt;&gt; 2);</p>
+<p>As an alternative, an acceptable deviation (tolerance level) can be specified in the block dialog, see Figure ds_0131-2: which results in the following efficient code</p>
+<p class="codeSample">Sa1_Gain = (Int16) ((((Int32) Sa1_InPort1) * 24309) &gt;&gt; 10);</p>
+<p><img src="ds_0131_2.png" /></p>
+<p class="imageCaption">Figure ds_0131-2: Specification of an acceptable tolerance level. A deviation of 1% is the default setting for <em>Gain</em> blocks.</p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

@@ -1,0 +1,82 @@
+<check fileVersion="2">
+  <uid>ced2cb1c-4668-44b2-ada5-7f5498d716f1</uid>
+  <id>mcheck_us_misra_0001</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="beermara" domain="MAGNA"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Use of calibration constants - adapted version of mcheck_mes_misra_tl_3_3</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_us_misra_0001</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> If a TargetLink constant, whose property output.class is not empty and not default and the property info of this class is neither none nor readonly (it is then calibrateable), has its output.variable being defined by a variable of DD, but the min and max property of this variable is not defined, or if the table.class of a lookup table is a calibrateable class, and the table.variable is a DD variable but its min and max are not defined, or if a DD variable which is connected with a Stateflow constant belongs to a calibrateable class,and its max and min are not defined, then a fail is given. All other cases get a Pass.<br /> <br /> Note: since the cases that the constant value is defined by a native number and by a variable but this variable is not in DD are checked by the misra_tl_3_2, this check tests only the case that the constant is defined by a variable in DD. </p> 
+<p> <strong>Adaption:</strong><br /> If the limits are not directly defined in the calibratable min/max properties but defined via referenced type defintion (e.g. TLT_prc for percent variables) this shall not lead to a fail. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>The value of a TargetLink calibrateable constant should be defined as a variable in data dictionary, and its max and min value must be defined.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>No automatic repair action available.</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="04/17/2019 12:17:31">
+      <author username="beermara" domain="MAGNA"/>
+      <comment>Check created.</comment>
+    </record>
+  </history>
+</check>

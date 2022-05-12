@@ -1,0 +1,636 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+PID=16892
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0ff33353-1ee9-4c6e-b46b-6bb74db00ff2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0ff33353-1ee9-4c6e-b46b-6bb74db00ff2'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8d9c4c7b-6d00-4f31-8a3f-144181f44816'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8d9c4c7b-6d00-4f31-8a3f-144181f44816'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8d9c4c7b-6d00-4f31-8a3f-144181f44816'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '18f1329a-72bf-4ce4-8030-0454819af42d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=18f1329a-72bf-4ce4-8030-0454819af42d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '18f1329a-72bf-4ce4-8030-0454819af42d'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5d528e14-a25d-4617-b6e5-6c28f030222e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5d528e14-a25d-4617-b6e5-6c28f030222e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5d528e14-a25d-4617-b6e5-6c28f030222e'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '4468498e-9ee7-47cb-b38a-fe2a94dc554e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=4468498e-9ee7-47cb-b38a-fe2a94dc554e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '4468498e-9ee7-47cb-b38a-fe2a94dc554e'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Review 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3fa3ec05-be24-47fc-b81b-69c96f8e4521'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3fa3ec05-be24-47fc-b81b-69c96f8e4521'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3fa3ec05-be24-47fc-b81b-69c96f8e4521'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Review 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2a0987ef-2ee3-49f9-93b9-2b5a7b1e2ab6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2a0987ef-2ee3-49f9-93b9-2b5a7b1e2ab6'
+
+Using DD project file:   C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Composition.dd
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2a0987ef-2ee3-49f9-93b9-2b5a7b1e2ab6'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '681e5206-95c1-4fb7-a5f0-248b33a4e552'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=681e5206-95c1-4fb7-a5f0-248b33a4e552'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '681e5206-95c1-4fb7-a5f0-248b33a4e552'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd3bf4c7b-ee64-4ec5-9df2-9267cc69dfe3'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d3bf4c7b-ee64-4ec5-9df2-9267cc69dfe3'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd3bf4c7b-ee64-4ec5-9df2-9267cc69dfe3'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '812cfef6-6580-4a2a-8fd7-89ff7d7aacb0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=812cfef6-6580-4a2a-8fd7-89ff7d7aacb0'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '812cfef6-6580-4a2a-8fd7-89ff7d7aacb0'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '65a92726-d00e-45d7-80b6-1a90136d232d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=65a92726-d00e-45d7-80b6-1a90136d232d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '65a92726-d00e-45d7-80b6-1a90136d232d'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5ef939f7-06d7-4ab4-9c77-12b73a36ecae'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5ef939f7-06d7-4ab4-9c77-12b73a36ecae'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5ef939f7-06d7-4ab4-9c77-12b73a36ecae'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6007447a-8236-4201-ace2-0bfdcd6a1f66'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6007447a-8236-4201-ace2-0bfdcd6a1f66'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6007447a-8236-4201-ace2-0bfdcd6a1f66'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'df671140-b18e-43a7-b540-61d3ceb52490'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=df671140-b18e-43a7-b540-61d3ceb52490'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'df671140-b18e-43a7-b540-61d3ceb52490'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5d9dbe3b-bc73-4763-ba65-07c30b24e4ff'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5d9dbe3b-bc73-4763-ba65-07c30b24e4ff'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5d9dbe3b-bc73-4763-ba65-07c30b24e4ff'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3849cb50-1b6e-4ec8-9c8a-3decf68a6fbf'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3849cb50-1b6e-4ec8-9c8a-3decf68a6fbf'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3849cb50-1b6e-4ec8-9c8a-3decf68a6fbf'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2c4b0741-36e3-4666-a8a0-0803cb26be9d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2c4b0741-36e3-4666-a8a0-0803cb26be9d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2c4b0741-36e3-4666-a8a0-0803cb26be9d'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '16cd8e5b-6d23-4b1f-920e-99820a5c154c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=16cd8e5b-6d23-4b1f-920e-99820a5c154c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '16cd8e5b-6d23-4b1f-920e-99820a5c154c'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f005b7c6-ea9b-4a7c-88fa-73372fd280fd'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f005b7c6-ea9b-4a7c-88fa-73372fd280fd'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f005b7c6-ea9b-4a7c-88fa-73372fd280fd'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6fe9aa72-355d-4603-80af-4c1f8b28b4a0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6fe9aa72-355d-4603-80af-4c1f8b28b4a0'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6fe9aa72-355d-4603-80af-4c1f8b28b4a0'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '09805681-a294-4dcd-aab2-cd474176d1bb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=09805681-a294-4dcd-aab2-cd474176d1bb'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '09805681-a294-4dcd-aab2-cd474176d1bb'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

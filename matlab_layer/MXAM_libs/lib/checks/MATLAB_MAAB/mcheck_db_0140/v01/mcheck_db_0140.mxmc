@@ -1,0 +1,150 @@
+<check fileVersion="2">
+  <uid>dad50ee4-90e2-4d7c-bbab-bed2fff4f127</uid>
+  <id>mcheck_db_0140</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Display of Basic Block Parameters</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0140.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Check verifies the attributes of the block defined in the parameters below:
+<br /> 
+<ol> 
+ <li> Parameter for Simulink : MAAB.db_0140.AttributeFormatString.SLBlockType_Attribute </li> 
+ <li> Parameter for TargetLink version less than 3 :MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_2 </li> 
+ <li> Parameter for TagetLink version 3 and above: MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_3 </li> 
+</ol>Failed: If the block attributes differs from its default values.
+<br /> Passed otherwise.
+<br /> 
+<br /> 
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Set the block annotation for attributes modified from its default values in a block.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[Attributes format defined in the below parameters will be set to its corresponding blocks, if it differs from its default values
+<br /> 
+<ol> 
+ <li> Parameter for Simulink : MAAB.db_0140.AttributeFormatString.SLBlockType_Attribute </li> 
+ <li> Parameter for TargetLink version less than 3 :MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_2 </li> 
+ <li> Parameter for TagetLink version 3 and above: MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_3 </li> 
+</ol>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0140.AttributeFormatString.SLBlockType_Attribute</name>
+      <description>Listed SL blocktypes and parameters that are considered by this check.</description>
+      <defaultValue><![CDATA[{'UnitDelay',{'<Initial=%<X0>>','<Tsample=%<SampleTime>>'};...
+					'DiscreteIntegrator',{'<Initial=%<InitialCondition>>','<Tsample=%<SampleTime>>','<Lower Limit=%<LowerSaturationLimit>>','<Upper Limit =%<UpperSaturationLimit>>'};...
+					'DiscreteZeroPole',{'<Tsample=%<SampleTime>>','<Gain=%<Gain>>'};...
+					'DiscreteTransferFcn',{'<Tsample=%<SampleTime>>'};...
+					'DiscreteStateSpace',{'<Initial=%<X0>>','<Tsample=%<SampleTime>>'};...
+					'Lookup_n-D',{'<Input=%<BreakpointsForDimension1>>','<Output=%<Table>>'};...
+					'Lookup_n-D',{'<Row=%<BreakpointsForDimension1>>','<Column=%<BreakpointsForDimension2>>','<Table=%<Table>>'};...
+					'Saturate',{'<Lower Limit=%<LowerLimit>>','<Upper Limit =%<UpperLimit>>'};...
+					'Quantizer',{'<Interval=%<QuantizationInterval>>'};...
+					'Backlash',{'<Initial=%<InitialOutput>>','<Width=%<BacklashWidth>>'};...
+					'DeadZone',{'<Zone (Lower)=%<LowerValue>>','<Zone (Upper) =%<UpperValue>>'};...
+					'Relay',{'<On Switch Value =%<OnSwitchValue>>','<On Output Value =%<OnOutputValue>>','<Off Switch Value=%<OffSwitchValue>>','<On Output Value =%<OffOutputValue>>'};...
+					'Switch',{'<Threshold=%<Threshold>>'};...
+					'Merge',{'<Initial=%<InitialOutput>>'};...
+					'EnablePort',{'<States=%<StatesWhenEnabling>>'};...
+}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_2</name>
+      <description>Listed TL blocktypes and parameters that are considered by this check.</description>
+      <defaultValue><![CDATA[{'TL_UnitDelay',{'<Initial=%<X0>>','<Tsample=%<dt>>'};...
+					'TL_DiscreteIntegrator',{'<Tsample=%<dt>>','<Lower Limit=%<Lower_limit>>','<Upper Limit =%<upper_limit>>'};...
+					'TL_DiscreteTransferFcn',{'<Tsample=%<dt>>'};...
+					'TL_DiscreteStateSpace',{'<Initial=%<X0>>','<Tsample=%<dt>>'};...
+					'TL_Lookup1D',{'<Input=%<u>>','<Output=%<y>>'};...
+					'TL_Lookup2D',{'<Row=%<row>>','<Column=%<col>>','<Table=%<table>>'};...
+					'TL_Saturate',{'<Lower Limit=%<lower_limit>>','<Upper Limit =%<upper_limit>>'};...
+					'TL_Relay',{'<On Switch Value=%<OnSwitchValue>>','<On Output Value = %<OnOutputValue>>','<Off Switch Value=%<OffSwitchValue>>','<Off Output Value =%<OffOutputValue>>'};...
+					'TL_Switch',{'<Threshold=%<threshold>>'};...
+					'TL_Merge',{'<Initial=%<x0>>'};...
+}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0140.AttributeFormatString.TLBlockType_Attribute_3</name>
+      <description><![CDATA[Listed TL blocktypes and parameters that are considered by this check (TL version >=3).]]></description>
+      <defaultValue><![CDATA[{'TL_UnitDelay',{'<Initial=%<X0>>','<Tsample=%<SampleTime>>'};...
+					'TL_DiscreteIntegrator',{'<Tsample=%<SampleTime>>','<Lower Limit=%<LowerSaturationLimit>>','<Upper Limit = %<UpperSaturationLimit>>'};...
+					'TL_DiscreteTransferFcn',{'<Tsample=%<SampleTime>>'};...
+					'TL_DiscreteStateSpace',{'<Initial=%<X0>>','<Tsample=%<SampleTime>>'};...
+					'TL_Lookup1D',{'<Input=%<BreakpointsForDimension1>>','<Output=%<Table>>'};...
+					'TL_Lookup2D',{'<Row=%<BreakpointsForDimension1>>','<Column=%<BreakpointsForDimension2>>','<Table=%<table>>'};...
+					'TL_Saturate',{'<Lower Limit=%<LowerLimit>>','Upper Limit = %<UpperLimit>>'};...
+					'TL_Relay',{'<On Switch Value=%<OnSwitchValue>>','<On Output Value = %<OnOutputValue>>','<Off Switch Value=%<OffSwitchValue>>','<Off Output Value = %<OffOutputValue>>'};...
+					'TL_Switch',{'<Threshold=%<Threshold>>'};...
+					'TL_Merge',{'<Initial=%<InitialOutput>>'};...
+}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

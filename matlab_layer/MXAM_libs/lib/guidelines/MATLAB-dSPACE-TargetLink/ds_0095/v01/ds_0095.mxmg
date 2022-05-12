@@ -1,0 +1,136 @@
+<guideline fileVersion="2">
+  <uid>e8688ba9-455f-4f47-8f4e-c0338312d639</uid>
+  <id>ds_0095</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>General Use of Data Types</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>simulation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 8.1), dSPACE 3.0 (section 8.1)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p>use double data type for continous signals, do not use fixed-point data types for simulation in Simulink</p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>All signals which are continuous by nature should be modeled using the <em>double</em> data type on the block level. Information with regard to a later fixed-point implementation should be added during the code generation phase later on, not on the Simulink block level.</p>
+<p>Signals which are discrete by nature can be modeled using integer data types like <em>int8, int16</em> etc., with a range that is sufficient to make sure that the integer arithmetic is devoid of any overflows, integer saturations etc. Those are implementation-specific characteristics which should be handled during the target implementation phase.</p>
+<p><img src="ds_0095_1.png" /></p>
+<p class="imageCaption">Figure ds_0095-1: Saturated addition using integer arithmetic: The output of the <em>Sum</em> block is specified as <em>int8</em> and the <em>saturate on integer overflow</em> option is set. Note that not the assumed result 100 + 100 - 100 = 100, which perfectly fits into an <em>int8</em> variable, is calculated, but 27. This is a consequence of the saturation of intermediate results in Simulink, which leads to a rather unexpected result. Such a modeling style must not be used.</p>
+<p><img src="ds_0095_2.png" /></p>
+<p class="imageCaption">Figure ds_0095-1: Now the expected result 100 is calculated because no saturation of intermediate results occurs. Hence, the addition is far from being commutative and such a modeling style must not be used.</p>
+<p><img src="ds_0095_3.png" /></p>
+<p class="imageCaption">Figure ds_0095-3: Integer addition with rounding: Since an integer data type is specified for the output, and the input signals are non-integer, a rounding operation must be performed. Although the <em>round integer calculation towards</em> option is set to <em>Nearest</em>, Simulink calculates 30 as result. This is due to the fact that the input signals of the <em>Sum</em> block are directly cast to the output type, applying the specified rounding functionality. This behavior is highly block-specific.</p>
+<p><img src="ds_0095_4.png" /></p>
+<p class="imageCaption">Figure ds_0095-3: the rounding operation is only performed on intermediate results, not on the input signals directly. As a consequence Simulinks calculated result does not equal 1000. Because this behavior is highly block-specific and nontransparent, a modeling style requiring such operations should be avoided.</p>
+<p>Fixed-point data types must not be used for simulations in Simulink on the block diagram level (model-in-the-loop simulation) at all. They should be used for software-in-the-loop simulations (code level) exclusively.</p>
+<p>Logical signals can be modeled using the data type <em>boolean</em>.</p>
+<p>Note: The use of integer data types is significantly restricted if the TargetLink stand-alone blockset is used because the <em>Cast output to TargetLink type flag</em> is mostly ignored in this mode in TargetLink versions prior to TargetLink 2.1.6.</p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>Data types during the function development phase should be free from implementation-specific details. The use of fixed-point data types is highly implementation-specific and furthermore it is not transparent how exactly the fixed-point operations are carried out with regard to intermediate results. These details should be addressed during the implementation/coding phase.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

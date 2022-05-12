@@ -1,0 +1,86 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+[Warning: File not found or permission denied] 
+[> In dspace_shutdown>FcnShutdown
+  In dspace_shutdown
+  In dsmint_privatefinish
+  In finish (line 18)
+  In movegui (line 119)
+  In dstabdlg
+  In dstabdlg
+  In dstabdlg
+  In tl_config (line 198)
+  In dsmint_dspacesetup>FcnCallProductInitializations
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 46)
+  In startup (line 5)] 
+[Warning: Error evaluating <sldiag objui="callback" objparam="DestroyFcn"></sldiag> callback of [] block (mask)
+'tllib/Subsystem/Subsystem/Subsystem'.
+Callback string is 'if exist('update_tl_main_dlg','file'), update_tl_main_dlg('TL_subs_display'); end'] 
+[> In finish
+  In dspace_shutdown>FcnEvalFunction
+  In dspace_shutdown>FcnExecuteFunctionInLocation
+  In dspace_shutdown>FcnShutdown
+  In dspace_shutdown
+  In dsmint_privatefinish
+  In finish (line 18)
+  In movegui (line 119)
+  In dstabdlg
+  In dstabdlg
+  In dstabdlg
+  In tl_config (line 198)
+  In dsmint_dspacesetup>FcnCallProductInitializations
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 46)
+  In startup (line 5)] 
+[Warning: Struct contents reference from a non-struct array object.] 
+[> In finish
+  In dspace_shutdown>FcnEvalFunction
+  In dspace_shutdown>FcnExecuteFunctionInLocation
+  In dspace_shutdown>FcnShutdown
+  In dspace_shutdown
+  In dsmint_privatefinish
+  In finish (line 18)
+  In movegui (line 119)
+  In dstabdlg
+  In dstabdlg
+  In dstabdlg
+  In tl_config (line 198)
+  In dsmint_dspacesetup>FcnCallProductInitializations
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 46)
+  In startup (line 5)] 

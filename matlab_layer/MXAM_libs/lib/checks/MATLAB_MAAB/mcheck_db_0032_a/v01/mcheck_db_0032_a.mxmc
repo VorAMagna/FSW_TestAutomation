@@ -1,0 +1,92 @@
+<check fileVersion="2">
+  <uid>9b6fd2a4-8301-431b-b5a1-dacdf7623532</uid>
+  <id>mcheck_db_0032_a</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>MAAB</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Simulink Signal Appearance - Diagonal Signal Lines</title>
+  <adapter version="1.6">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0032_a.m</executable>
+  <repairOption>false</repairOption>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes each signal line in the model. </p>
+<ul>
+ <li> Failed: The signal line is drawn diagonally. </li>
+ <li> Passed: No signal line of the model is drawn diagonally. </li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> This check is one of four checks that all together cover guideline db_0032. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Change the layout of your model and draw straight signal lines. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="01/29/2015 15:37:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="02/03/2015 10:32:26">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

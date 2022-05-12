@@ -1,0 +1,103 @@
+<check fileVersion="2">
+  <uid>d548d815-5bef-4fd2-b1e3-9442568d2d9e</uid>
+  <id>mcheck_jc_0281</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Naming of Trigger Port Block and Enable Port Block</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_jc_0281.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A fail is given to each signal line that is
+<br /> - connectet to a trigger or an enable port and this port is not named
+<br /> identically to the signal line
+<br /> - connected to a reuseable subsystem and has a non-empty label
+<br /> 
+<br /> Additionally, a fail is given if not all used suffixes or prefixes are
+<br /> identical.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- In spite of the intuitiv assumption to search all ports and compare
+<br /> their names with the connected signal line labels, this check is
+<br /> implemented the other way around. Therefore the statistic might be
+<br /> differ from your assumed result: The checked lines are counted.
+<br /> - This check does not cover the case that an Enable or Trigger port is
+<br /> directly connected to an Outport. In this case, Enable/Triger port and
+<br /> Outport must use some prefix or suffix. With default settings this
+<br /> would not be detected by this check - even if suffix or prefix is used,
+<br /> this will cause an error.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Adapt signal or port names.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="boolean">
+      <name>MAAB.jc_0281.LabelSignalLinesConnectingReusableSubsystem</name>
+      <description>If set to true, the labels of signal lines connecting reusable subsystem should be named.
+If set to false, the labels of signal lines connecting reusable subsystem should not be named.
+Default value of this parameter is set to false, to adhere to the guideline.</description>
+      <defaultValue>false</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

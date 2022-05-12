@@ -1,0 +1,112 @@
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+Bugfixes:
+#3420: misra_tl_6_7: Usage of a Lookup-Table in a loop issued an incorrect computation of the range for the input and output range of this lookup table. This is fixed. 
+#3447: misra_tl_1_2_b: Analyzing a single element caused an aborted. This is handled now correctly. 
+#3469: misra_tl_5_10: The check was aborted for new the custom code block in TargetLink 4.0. This guideline is not applicable to the new custom code block. A review result is issued now, as the compliance to this guideline must be done manually. 
+#3512: misra_tl_3_2, misra_tl_3_3, misra_tl_7_5, misra_tl_7_6: The check reported a failed result that a class could not be found in combination with replaceable data items. If there is no mapping of replaceable data item found in DD/pool/Variable, they are ignored from checking.
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+Bugfixes:
+#2939: misra_tl_5_8: Incorrect handling of the treshold '0.5' has been fixed. 
+#2976: misra_tl_5_8 : Updated check to execute on selected subsystem and not on the entire model itself.
+
+Version 3.4.0 ©2007-2015 31-Mar-2015
+Version 1.8.6 ©2007-2015 31-Mar-2015
+---------------------------------------------------------------------------
+Changes:
+#2199 misra_tl_1_2_b: Fixed linkaction for DD-objects. Improved repair action.
+
+Version 1.8.5.0 ©2007-2014 02-Dec-2014
+---------------------------------------------------------------------------
+#2045: misra_tl_5_8: If the data type class of a TargetLink 3.4/3.5 Constant or Sign block was 
+       set to 'default' the check reported a rule violation because the data  
+       type could not be resolved. The data type can now be evaluated correctly.
+
+Version 1.8.1.0 ©2007-2014 17-Feb-2014
+---------------------------------------------------------------------------
+Changes:
+#1147: misra_tl_5_6: Since the mulitportswitch block has been 
+      changed in simulink sinde Matlab R2010b, check will work as follows
+      - if your version is R2010b or older: datatype as well as datarange 
+        of control input of mulitport switches are checks
+      - if your version is newer than R2010b, only datatype is checked. 
+      
+
+V1.7 build 0001.0 ©2007-2013   16-Jul-2013
+-------------------------------------------------------------------------------
+Changes:
+#618: misra_tl_1_2: Splittet into 2 subchecks:
+      misra_tl_1_2_a - Comments in block properties
+      misra_tl_1_2_b - Special chars in block properties
+
+
+V1.7 build 0000.1 ©2007-2013   20-Jun-2013
+-------------------------------------------------------------------------------
+Changes:
+- misra_tl_3_2, 7_5 7_6 5_10, link action is changed, now the TargetLink dialog block of a TL block
+  will be opened if the related block is a TL block
+
+
+V1.6 build 0003.0 ©2007-2012   11-Sep-2012
+--------------------------------------------------------------------------------
+Changes:
+- mes_tl_0043_a: If an identifier only contains one character, this check no longer returns a fail.
+
+
+V1.6 build 0002.0 ©2007-2012   29-Aug-2012
+--------------------------------------------------------------------------------
+Changes:
+- mes_misra_tl_6_1: DataDictionary DataTypes and Scalings are considered. 
+- mes_misra_tl_6_2: DataDictionary DataTypes and Scalings are considered. 
+                    Fix option for this check has been added
+
+
+V1.5 build 0006.3 ©2007-2012   18-Jun-2012
+--------------------------------------------------------------------------------
+Bugfixes:
+misra_tl_7_5, misra_tl_7_6: handling of calling tl_get for TargetLink block properties 
+                            whos values are not used by certain blocks under TL 3.3
+
+misra_tl_5_1: can now find the correct datatype in the DataDictionary when more than one 
+              types with the same name exists in different groups.
+
+
+V1.5 build 0006.0 ©2007-2012   05-Apr-2012
+--------------------------------------------------------------------------------
+Changes:
+- misra_tl_5_6: Use of parameter MISRA.check56.trustUserSpecifiedRange has been corrected.
+                For TargetLink version 3.2 or higher the check receives a pass because 
+                the default path of the Multiport Switch block has been introduced. Correct 
+                determination of the data type when a TL Rescaler block is used. 
+
+Bugfixes:
+- mes_misra_tl_5_9: handling of a gain blocks value as vector
+
+
+V1.5 build 0004.0 ©2007-2011   08-Feb-2012
+--------------------------------------------------------------------------------
+Bugfixes:
+- misra_tl_3_2: improved handling of references to undefined workspace variables
+- misra_tl_4_2: unwanted filtering of blocks referring to the same lib chart
+
+
+V1.5 build 0002.0 ©2007-2011   24-Aug-2011
+--------------------------------------------------------------------------------
+Changes:
+- misra_tl_5_8: Parameter MISRA.misra_tl_5_8.threshold, MISRA.misra_tl_5_8.criteria,
+                MISRA.misra_tl_5_8.withoutAttributesFormatString
+
+Bugfixes:
+- misra_tl_3_2: statistics output corrected
+
+
+V1.4 build 0005.2 ©2007-2011   16-Feb-2011
+--------------------------------------------------------------------------------
+Bugfixes:
+- misra_tl_1_2: statistic info is corrected
+- misra_tl_5_8: is now set to tl_required.
+- misra_tl_5_9: outport number of source block is corrected.
+

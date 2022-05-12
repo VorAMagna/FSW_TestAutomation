@@ -1,0 +1,492 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+PID=5924
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "BrakeDetS10" ...
+[Warning: The file 'BrakeDetS10.slx' is shadowing a more recently saved MDL file, 'BrakeDetS10.mdl', in the same folder.  For more
+information see <a href="matlab:helpview([docroot '/toolbox/simulink/helptargets.map'], 'shadowing')">"Avoiding Problems with Shadowed
+Files"</a> in the Simulink documentation.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "GearDetS10" ...
+[Warning: The file 'GearDetS10.slx' is shadowing a more recently saved MDL file, 'GearDetS10.mdl', in the same folder.  For more
+information see <a href="matlab:helpview([docroot '/toolbox/simulink/helptargets.map'], 'shadowing')">"Avoiding Problems with Shadowed
+Files"</a> in the Simulink documentation.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MisuseDetS10" ...
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMEndS10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMStartS10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SaFuS10" ...
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SigCondV10" ...
+[Warning: Failed to open library/model "PFMEndS10" which is referenced by at least one block! Maybe library/model is not on MATLAB search
+path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Failed to open library/model "PFMStartS10" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "EvalBus" which is referenced by at least one block! Maybe library/model is not on MATLAB search
+path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "MagnaLib" which is referenced by at least one block! Maybe library/model is not on MATLAB search
+path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Failed to open library/model "BrakeDetS10" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Failed to open library/model "MisuseDetS10" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "TurnOnDelay_Bool_UInt16" which is referenced by at least one block! Maybe library/model is not on
+MATLAB search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Failed to open library/model "Decoder_8Bit" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "GearDetS10" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "SaFuS10" which is referenced by at least one block! Maybe library/model is not on MATLAB search
+path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+Step 2 of 2: Writing result files ...
+done

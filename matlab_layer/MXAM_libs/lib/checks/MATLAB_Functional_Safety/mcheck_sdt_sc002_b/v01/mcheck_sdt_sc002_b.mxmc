@@ -1,0 +1,118 @@
+<check fileVersion="2">
+  <uid>b4261b43-7422-46b4-a11f-f81283f751bd</uid>
+  <id>mcheck_sdt_sc002_b</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Strong Data Typing at the Stateflow Interface - Input Interface</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sc002_b.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes each input data item of every Stateflow chart of a TargetLink model. </p> 
+<ul> 
+ <li> Passed1: the setting &quot;sf.inheritscaling&quot; is &quot;true&quot; and the minimum range value (limit.min) and the maximum range value (limit.max) match with their corresponding range values of the respective source block. </li> 
+ <li> Passed2: the setting &quot;sf.inheritscaling&quot; is not &quot;true&quot;, but 
+  <ul> 
+   <li> the data type, scaling and range values are the same as that of the output of the TargetLink block that connects with this input, or </li> 
+   <li> the description field of this input is empty (no TargetLink properties are defined). </li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> Passed3: the inport is set to scaling invariant and the data type is same as its source.<br /> </li> 
+</ul> 
+<p> The check issues a failed if these passed cases do not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> If there exists no description field for a Stateflow data item or that description field is empty, TargetLink infers the properties defined for the proceeding block to the input data item and no variable is generated for this input data item. To this end, this checks does not analyze this data item any further. </p> 
+<p> If the value range of each input data item should not be considered and the setting &quot;sf.inheritscaling&quot; is &quot;true&quot;, this check may be deselected. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Adjust the data type, scaling and range values of each reported input data item such that these settings match with the TargetLink block that connects with that input. Note, that the data type, scaling and range values of the Stateflow input can be set in the property manager or in the description of the input data item. Alternatively, consider adapting the value of the setting &quot;sf.inheritscaling&quot; or adapting the particular TargetLink block that connects with a reported data item. In case of a range value error, adapt the check parameter &quot;SDT.sc002_b.RangeDifferenceThreshold&quot; that defines a tolerated difference for two range values. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>SDT.sc002_b.IgnoreUndefinedSFVariableRange</name>
+      <description>If set to true, empty variable ranges of Stateflow variables are ignored. If this parameter is set to false, each empty variable range raises a failure.</description>
+      <defaultValue>1</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>SDT.sc002_b.UseDataRangeForMissingUserRange</name>
+      <description>If set to true, each undefined minimum or maximum value is set to its possible value that is inferred by the data type of the data item.</description>
+      <defaultValue>1</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>SDT.sc002_b.RangeDifferenceThreshold</name>
+      <description>Two minimum (maximum) values are compared by their difference. If that difference is less or equal to the threshold value, they are considered to be equal.</description>
+      <defaultValue>1e-005</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="06/26/2015 14:58:31">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="06/26/2015 15:25:50">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

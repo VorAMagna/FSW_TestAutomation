@@ -1,0 +1,228 @@
+<guidelineDocument fileVersion="2">
+  <uid>97f67f28-b4c7-4a7c-b699-cdda641653df</uid>
+  <id>mes_functional_safety</id>
+  <title>Functional Safety Modeling Guidelines</title>
+  <access>public</access>
+  <version>2</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES"/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="a3e1f325-5826-4732-8d12-ac94bde1cfbc" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> The Model Examiner (MXAM) is designed to support automated analysis and correction of guideline violations for Simulink&reg;, Stateflow&reg;, and TargetLink&reg; models. Guidelines that require checking are frequently those used in the safety-critical environment of software modeling. For this reason it is also advisable to check the safety-relevant properties of Simulink&reg;, Stateflow&reg;, and TargetLink&reg; models. </p>
+<p> Potential issues include incorrect data type allocation, missing value initialization, and unsuitable adaptation of value ranges to the module interfaces of the model, all of which can ultimately have a negative effect on model simulation and code generation. </p>
+<p> MXAM’s MES Functional Safety Guidelines safeguards the modeling process with respect to properties that are crucial to the modeling, simulation, and automated code generation of safety-relevant software. </p>
+<p> The MES Functional Safety Guidelines check signal exchange at module interfaces and wherever signals merge and are combined. Furthermore, TargetLink function interfaces are investigated to see whether, for example, the types of incoming and outgoing signals, in other words their function parameters, are correctly allocated to data type, converted, and dimensioned. In addition, the MES Functional Safety Guidelines ensure that the initialization of conditionally executable Simulink subsystems is consistent and correct. </p>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="c8599861-c8af-4e0b-90c1-026e56010273" title="Consistency of Interface Signals">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> All signals that mediate data exchange beyond system boundaries are termed interface signals. In principle, this applies to every Simulink subsystem as well as its inputs and outputs (Inports and Outports). Signals that are located at the interface between different system architectures (i.e. between Simulink, TargetLink, and Stateflow) must fulfill particular requirements, as this is where implicit data conversions can take place or missing signal properties are added. </p>
+<p> Taken in this context, consistency means that all the properties of a source signal (data type, scaling, dimension, etc.) must comply with the properties specified at the system input, or at the very least, be compatible with them. Compatible means that conversions are possible without any significant loss of accuracy, inefficient code, or the danger of a value range violation. </p>
+<p> To properly check consistency, it is also necessary that all relevant properties are specified at the system input. Missing specifications can hinder the optimization of generated code and make it more difficult to recognize value range violations. </p>
+<p> The conversion and combination of interface signals requires consistency of: </p>
+<ul>
+ <li> Signal type and dimensionality </li>
+ <li> Value range information (min and max values of signals), if available </li>
+ <li> Scaling information (Gain/LSB, Offset) </li>
+</ul>
+<p> Between: </p>
+<ul>
+ <li> Inport and source </li>
+ <li> Outport and sink(s) </li>
+ <li> Inputs that are combined together </li>
+</ul>
+<p> Input and output, dependent on signal calculation (e.g. the value range of the result of a multiplication is the same as the product of the value ranges of its factors) </p>]]></value>
+      </description>
+      <guideline uid="62390f4c-e25b-4d47-87cf-27d0b445f117" modifier="standard" refUid="b5931ff0-a4e8-4cdd-98d4-a6180ad8900c" refId="sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface">
+        <check uid="9f76d472-55ad-475c-8b7e-0642c2c4b4c1" selectedForRun="true" refUid="4e26b66c-dd40-45aa-846a-2e46d5d9ce2d" refId="mcheck_sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface"/>
+      </guideline>
+      <guideline uid="b664b127-6a4d-4f05-b4d0-9cc40e2a1f81" modifier="standard" refUid="d82a9a48-cdfc-47cd-a021-254f9218395f" refId="sdt_sc002" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface">
+        <check uid="ef54a6f5-c09e-4d1d-adeb-28ef812c71b2" selectedForRun="true" refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Chart Option &quot;Strong Data Typing with Simulink I/O&quot;"/>
+        <check uid="56932249-f490-484a-8c1a-15c793965d75" selectedForRun="true" refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Input Interface"/>
+        <check uid="9076e1f1-3443-465a-8174-34bc3d2ff21a" selectedForRun="true" refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Output Interface"/>
+        <check uid="fe011807-c9ee-4821-9ccc-229e39ee0b7e" selectedForRun="true" refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Data Range"/>
+        <check uid="54f22a73-8e9f-489a-8765-a7b5d793187a" selectedForRun="true" refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Variable Range"/>
+      </guideline>
+      <guideline uid="f7c17936-ff79-4db1-a26d-3611308d31f7" modifier="standard" refUid="8d12be9e-9122-490d-a3ac-b8a0f6440891" refId="sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks">
+        <check uid="34c51808-41cd-460a-a4d3-04dceae5c42c" selectedForRun="true" refUid="c3db96f2-ebce-47d1-bae4-b1a33c72d021" refId="mcheck_sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks"/>
+      </guideline>
+      <guideline uid="4c0932be-a20f-4205-9bab-fa549928c61e" modifier="standard" refUid="8482f987-6dee-407c-b50b-a0d844984c3a" refId="sdt_sc004" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks">
+        <check uid="05470b13-df4d-464c-8a4e-c4e9fe6572b3" selectedForRun="true" refUid="ebd053c1-fcd2-426d-9376-bcf1b02b0a21" refId="mcheck_sdt_sc004_a" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Option &quot;Require all inputs to have the same data type&quot;"/>
+        <check uid="ea0198f4-37c6-4dd9-a86c-1adcbb723922" selectedForRun="true" refUid="49963ec7-8c8e-4928-81f0-261acab47eec" refId="mcheck_sdt_sc004_b" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Scaling and Min/Max"/>
+        <check uid="fe5d6b74-5c24-4e14-9bd3-5933151a1d31" selectedForRun="true" refUid="ad747466-21a7-4eb8-a908-b9d3db172946" refId="mcheck_sdt_sc004_c" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Data Range Output Data Type"/>
+      </guideline>
+      <guideline uid="c8fade26-4e6b-4d73-81be-2f429989ff28" modifier="standard" refUid="929fd940-7ad8-4140-9ced-31b58f64055c" refId="sdt_sc007" refVersion="1" refTitle="Definition TargetLink Function Interface">
+        <check uid="c53e8299-b136-43a9-b1d5-0138ea42d942" selectedForRun="true" refUid="ebb99c13-e678-4e84-86cb-183ecdac5aba" refId="mcheck_mes_sk_006" refVersion="1" refTitle="In- and Outports in TargetLink subsystems"/>
+        <check uid="2f9cfd8b-e220-44b1-8e03-b4931c7bddad" selectedForRun="true" refUid="d8939a44-2e95-44e5-a2ee-88c0447a6350" refId="mcheck_sdt_sc007_a" refVersion="1" refTitle="Definition TargetLink Function Interface - Inports"/>
+        <check uid="1830f84f-ad6a-4446-87f4-09e1b7a8325a" selectedForRun="true" refUid="3ad93759-09cd-487a-bad3-e61d7733610e" refId="mcheck_sdt_sc007_b" refVersion="1" refTitle="Definition TargetLink Function Interface - Outports"/>
+      </guideline>
+    </chapter>
+    <chapter uid="db5cbccd-4484-4b30-986b-9ca0ba004e95" title="Adequacy of Signal Properties">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> It is important to ensure that signals are always adequate for the respective block type. Signals with incorrect data types, scaling and dimensions can result in undefined states, value range violations, or losses in accuracy. Furthermore, the associated type conversions can result in implementation-dependent side effects. </p>
+<p> Signals with the correct data type and scaling, on the other hand, increase the comprehensibility, transparency, and adaptability of a model. </p>]]></value>
+      </description>
+      <chapter uid="1fd2ed69-92bb-4b86-a412-1bcb7f479aa8" title="Control signal requirements">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<ul>
+ <li> Switch signals (switch block, conditionally executable subsystems) must be of a Boolean type, or of a discrete numeric type with an adequate value range [0 | &gt;0]. </li>
+ <li> Routing signals (e.g. index signals from Multiport switches, variables in Stateflow transition conditions) may only display a discrete data type. Their value range must match the range of the index used to route the signal. If, for example, a control signal of a Multiport switch routes three data lines, its' value range must be restricted to [1..3], or, if zero-based indexing is used, to [0..2]. Moreover, the value range must cover the entire index range. Thus, a Boolean control signal would be inadequate, because it is not able to route the third data line. </li>
+</ul>]]></value>
+        </description>
+        <guideline uid="d130672a-115e-46de-872b-645b06abfbdf" modifier="standard" refUid="fa33826c-2b14-4b6a-9256-585a0d6f1f47" refId="sdt_sa003" refVersion="1" refTitle="Control Input of Switch Blocks">
+          <check uid="3b81688c-89e9-4eeb-8549-b1d7be423d7e" selectedForRun="true" refUid="941a55d6-9ba4-4564-a4bf-1459953f3b2d" refId="mcheck_sdt_sa003" refVersion="1" refTitle="Control Input of Switch Blocks"/>
+        </guideline>
+        <guideline uid="8ae89b48-c27f-48a1-a0ae-15868bba114e" modifier="standard" refUid="800d61d9-5586-494b-8521-d86f1b6f51d8" refId="sdt_sa004" refVersion="1" refTitle="Control Input of Multiport Switch Blocks">
+          <check uid="65c2eba3-a093-4d79-96f6-2a63b969a42e" selectedForRun="true" refUid="ec162622-293c-4d21-a7b2-e15f96b7985f" refId="mcheck_sdt_sa004_a" refVersion="1" refTitle="Control Input of Multiport Switch Blocks - Data Type"/>
+          <check uid="9a937732-21e7-428c-8f25-1c625aa81deb" selectedForRun="true" refUid="1438d075-c533-426a-a28b-14e85cad229c" refId="mcheck_sdt_sa004_b" refVersion="1" refTitle="Control Input of Multiport Switch Blocks - Data Range"/>
+        </guideline>
+      </chapter>
+      <chapter uid="3eff277c-bf28-4860-8dc6-82dbc0f017d7" title="Numerical and logical signal requirements">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<ul>
+ <li> Value ranges should be defined as a signal property if they are known at the time of design. The availability of value ranges enables a precise scaling of data. Moreover, their definition safeguards the integrity of data and simplifies the analysis of dataflow as well as system dynamics. </li>
+ <li> Scaling should always be adapted to the respective value range. </li>
+ <li> Continual signals may not feed into discrete operators. If this cannot be avoided, an explicit type conversion should be carried out. This restriction ensures clear semantics of discrete operations (e.g., what is the result of 0.4 AND -0.01?) and avoids implementation-specific dependencies, e.g. due to rounding. </li>
+ <li> The scaling (accuracy) of the signal must be taken into account in the case of continual relational and arithmetic operations (e.g. with divisions or zero comparisons). For example, avoid dividing by low-resolution signals if their values can get close to zero. In this case, the signal may have to be rescaled. When comparing continual signals, their scaling have to be adjusted. </li>
+</ul>]]></value>
+        </description>
+        <guideline uid="dfc42245-4e19-4da1-963c-e6738ef80df2" modifier="standard" refUid="ea7ace1d-1005-413d-9d2c-c7c3b6cb7230" refId="sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks">
+          <check uid="b093c5d0-dad4-420f-8ded-525800e3f518" selectedForRun="true" refUid="fe41ad15-6f09-46c5-aa8b-8632402a1c2a" refId="mcheck_sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks"/>
+        </guideline>
+        <guideline uid="33cd665d-fdb3-436b-abd0-410ab17019c2" modifier="standard" refUid="f8f2f09b-502f-4abe-8ecc-eb8751b81639" refId="sdt_sa002" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks">
+          <check uid="df77f8b8-b7fb-4cbd-9954-f347b8dc65f3" selectedForRun="true" refUid="f89981e7-333a-4c75-af33-0d11724c2e1b" refId="mcheck_sdt_sa002_a" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Logical Operator Blocks"/>
+          <check uid="7ad92b9c-80ee-4c1e-a301-505553625745" selectedForRun="true" refUid="7db5dcd8-f8de-4d9a-8046-83a65c00a247" refId="mcheck_sdt_sa002_b" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Relational Operator Blocks"/>
+        </guideline>
+        <guideline uid="c71e990c-7bb1-4b94-bd1e-c70aebd604a6" modifier="standard" refUid="f4d6f9d5-8d9f-44e8-87ad-2bfeb2737eb5" refId="mes_sltl_002" refVersion="1" refTitle="Comparison of Floating-Point Signals">
+          <check uid="e7ae8f5f-05f9-41f3-870a-5820a889b1b6" selectedForRun="true" refUid="d283c68e-c9a5-41df-909f-adb303e48aba" refId="mcheck_mes_sltl_002_a" refVersion="1" refTitle="Comparison of Floating-Point Signals in Simulink and TargetLink"/>
+          <check uid="2baf4fe9-ec6c-4dae-8930-5ced41f87e2b" selectedForRun="true" refUid="83a7a72d-cf21-46f4-9295-0d99f766547c" refId="mcheck_mes_sltl_002_b" refVersion="1" refTitle="Comparison of Floating-Point Signals in Stateflow"/>
+        </guideline>
+      </chapter>
+      <chapter uid="7046d5df-7450-4293-a34e-3aec62a0c2d8" title="Saturation of Signals">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="47ad9160-fd53-4075-a2d7-6ea91a061eb3" modifier="standard" refUid="89564a45-6265-4a7d-b4b9-a985de4bd694" refId="mes_tl_001" refVersion="1" refTitle="Avoidance of Implicit Saturation in TargetLink Blocks">
+          <check uid="c6346be2-4b1f-460d-b8d2-9db9ff15923d" selectedForRun="true" refUid="3a778870-679e-4f51-9bfb-c1340378129e" refId="mcheck_mes_tl_001" refVersion="1" refTitle="Avoidance of Implicit Saturation inTargetLink blocks"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="f2d7da6d-e072-4516-bbc3-4806239cac10" title="Initialization of Conditionally Executed Subsystems and States">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> Conditionally executed subsystems, conditionally routed signals (merge blocks), block states, and state diagrams must always be initialized in a comprehensible, correct, and consistent manner. This applies to internal and output values. </p>
+<p> Correct initialization comprises of: </p>
+<ul>
+ <li> Checking of definition and propagation of default values (type checking, if necessary) </li>
+ <li> Definition and recognizability of default paths (switch case blocks) </li>
+ <li> Initialization of output values from conditionally executed subsystems and merge blocks </li>
+ <li> Existence of default transitions in state diagrams </li>
+ <li> Recognition of non-disjoint transition conditions in state diagrams </li>
+ <li> Safeguarding of consistent initialization in the model simulation (Simulink) and generated code (TargetLink) </li>
+</ul>]]></value>
+      </description>
+      <guideline uid="67d44460-8d5b-4d63-99cf-ac176e9516d5" modifier="standard" refUid="e6d4b540-984b-470a-8f98-f174b406d7ea" refId="sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems">
+        <check uid="32612dab-3458-48fe-ba01-d4e31fd74389" selectedForRun="true" refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems"/>
+      </guideline>
+      <guideline uid="4c1f15ab-93ea-4cc2-aba3-7b5a3ecd87df" modifier="standard" refUid="e4b56390-2ebc-48a2-8970-e3da6c7bb6a1" refId="sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks">
+        <check uid="495f40f7-a807-41ed-88cd-0cfd28e43943" selectedForRun="true" refUid="f6ee89e5-24cb-4428-b7cd-6221054a3f4a" refId="mcheck_sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks"/>
+      </guideline>
+      <guideline uid="009cca36-2a9e-4263-9b69-e4746e2baf38" modifier="standard" refUid="8a3d85f1-ebb6-4e78-b384-496fa577faf4" refId="sdt_ic003" refVersion="1" refTitle="Default Paths of Switch Case Blocks">
+        <check uid="3acf0fbf-a16a-4eea-9404-cbee11a46289" selectedForRun="true" refUid="494723f9-2422-4893-9286-375171e46ca1" refId="mcheck_sdt_ic003" refVersion="1" refTitle="Default Paths of Switch Case Blocks"/>
+      </guideline>
+      <guideline uid="1afd8bd5-65cc-460e-a249-84ed371f13ca" modifier="standard" refUid="7ec9f904-9028-4b97-ac50-de092b6bb2a5" refId="sdt_ic004" refVersion="1" refTitle="Else Paths of If Blocks">
+        <check uid="c8fa18c4-666a-4cc1-becb-312d7f1a87a5" selectedForRun="true" refUid="4e3c4af6-df60-4d3a-9a47-d9826e7861a5" refId="mcheck_sdt_ic004" refVersion="1" refTitle="Else Paths of If Blocks"/>
+      </guideline>
+    </chapter>
+    <chapter uid="688d600f-b29b-4508-87b0-15078910c41d" title="Interface Layout">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> Interfaces between system boundaries should be kept as narrow as possible. Duplication of identical signals should be avoided. </p>
+<p> Narrow interfaces are not only clearer, they also greatly simplify interface maintenance and documentation. Duplicated signals, on the other hand, can easily lead to misunderstandings, as their common source and the resultant value coupling is no longer identifiable on the other side of the system boundary. Furthermore, they increase the interface overhead unnecessarily (thereby increasing the generated code) without any associated gain in functionality. </p>]]></value>
+      </description>
+      <guideline uid="6585fe12-2f0a-4e9e-ad69-321dee9bf8b9" modifier="standard" refUid="377394ba-be81-405e-9ff2-cda40c2f8e53" refId="sdt_il001" refVersion="1" refTitle="Avoidance of Duplicated Port Signals">
+        <check uid="43497df2-7957-4616-9d8c-eb088e15ed4a" selectedForRun="true" refUid="d5e875cd-69c7-4fdf-8ae7-24a2b1b4997a" refId="mcheck_sdt_il001_a" refVersion="1" refTitle="Avoidance of Duplicated Port Signals - Source Signal"/>
+        <check uid="df3955e7-1932-4502-8f85-4cb2c3ac83fe" selectedForRun="true" refUid="65a25f2a-ad4c-467b-a8c6-5e30e9c10eaa" refId="mcheck_sdt_il001_b" refVersion="1" refTitle="Avoidance of Duplicated Port Signals - Shadow Inports"/>
+      </guideline>
+    </chapter>
+    <chapter uid="bd327333-75bd-4837-b2ac-b14059a4a652" title="Visibility of Data and Signal Flow">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="d4a1b4d4-8e05-4383-844c-f0e88e12a410" modifier="standard" refUid="c914863d-5437-4962-95cd-453e8e53ebea" refId="mes_sltl_001" refVersion="1" refTitle="Magic Constants in Constant Blocks">
+        <check uid="e865a14d-8081-43d4-a310-2e18de9df1f9" selectedForRun="true" refUid="997d4ad7-e704-4a58-ad74-157195496646" refId="mcheck_mes_sltl_001" refVersion="1" refTitle="Magic Constants in Constant Blocks"/>
+      </guideline>
+      <guideline uid="6159e495-05b1-4f9b-b686-a17c71af3161" modifier="standard" refUid="87b9850f-b832-454c-a9b0-4b9bbf860e10" refId="sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names">
+        <check uid="7270486e-0e51-4f45-9452-e4700ad60912" selectedForRun="true" refUid="17544735-a087-4664-a7da-96553758f81b" refId="mcheck_sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names"/>
+      </guideline>
+      <guideline uid="a042450a-8568-44a1-81fe-ee7551769ed8" modifier="standard" refUid="3954f4c8-afef-454e-a2e5-fc57217c1c44" refId="sdt_sc006" refVersion="1" refTitle="Signal Naming and Propagation">
+        <check uid="9572d566-647b-4bf7-b6c1-cedbfc427a54" selectedForRun="true" refUid="64daff9e-19b8-45a4-a989-fe91d892610d" refId="mcheck_sdt_sc006" refVersion="1" refTitle="Signal Naming and Propagation"/>
+      </guideline>
+      <guideline uid="da890671-c11d-43ab-8f43-bc5ee8e02dc0" modifier="standard" refUid="6b2b4c9d-2a64-45ef-860d-ec13eaaf4d9d" refId="mes_slsf_3109" refVersion="1" refTitle="Avoid Transitions Crossing State Boundaries">
+        <check uid="b414330c-520b-40a8-967b-d7b88fab1ff3" selectedForRun="true" refUid="6978f51c-2304-48b6-8731-5c3eb4cd8656" refId="mcheck_mes_slsf_3109" refVersion="1" refTitle="Avoid Transitions Crossing State Boundaries"/>
+      </guideline>
+    </chapter>
+    <chapter uid="bc3933cb-b993-4f1f-8bff-e61a12eebccb" title="Stateflow Transition Paths">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="7ddbff38-dfe8-4beb-bf7f-1eccb6a204a9" modifier="standard" refUid="279c9928-9dd1-4634-b4ea-afd7df90d733" refId="mes_sf_001" refVersion="1" refTitle="No Loops in Multi Segmented Transitions">
+        <check uid="c3cb0b9a-0505-4632-b1c0-854f4980dc56" selectedForRun="true" refUid="a1308c10-3667-49e1-ad2a-8331cc272c0e" refId="mcheck_mes_sf_001" refVersion="1" refTitle="No Loops in Multi Segmented Transitions"/>
+      </guideline>
+      <guideline uid="76cbe677-e8e3-4918-bf1d-451805c91349" modifier="standard" refUid="718d4456-8087-4d10-bc5d-0eb66004863a" refId="mes_sf_002" refVersion="1" refTitle="Variable Assignments in Transition Segments">
+        <check uid="6c2aa7e8-22a6-4a0c-a697-e6a8f6470e5a" selectedForRun="true" refUid="a8110b76-442d-4118-bb93-2886ff542fd1" refId="mcheck_mes_sf_002" refVersion="1" refTitle="Variable Assignments in Transition Segments"/>
+      </guideline>
+    </chapter>
+    <chapter uid="e5f4dd98-7949-4f92-b5df-63b69ee59a21" title="Interaction of Stateflow States with Events">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="45afc9cb-fe20-4ffe-a14a-ef7c37fdd6b9" modifier="standard" refUid="abf33eef-ab62-4dea-8eb9-abf769a54d79" refId="mes_sf_003" refVersion="1" refTitle="Interaction between Parallel States">
+        <check uid="a217e5d7-ebc4-4c23-af23-2ed33fa5bc4b" selectedForRun="true" refUid="67140efb-97ba-444f-91d0-0190e94ce5cb" refId="mcheck_mes_sf_003" refVersion="1" refTitle="Interaction between Parallel States"/>
+      </guideline>
+      <guideline uid="e907a73f-bd44-4dda-90ac-55daa208c82e" modifier="standard" refUid="fbe652dd-bb6e-4c6b-a135-2a08ee97a997" refId="mes_sf_004" refVersion="1" refTitle="Freeness of Early Return Logic Problems">
+        <check uid="8ec59aef-c942-49c9-941f-bc02854063f0" selectedForRun="true" refUid="3d11193f-75d5-45e7-8c11-a07105aa53c2" refId="mcheck_mes_sf_004" refVersion="1" refTitle="Freeness of Early Return Logic Problems"/>
+      </guideline>
+    </chapter>
+    <chapter uid="8f1467aa-77ef-44b8-b0e6-a32ecd676249" title="Configuration">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="a0b5e111-760f-44ec-8dab-d4e3e0ed8343" modifier="standard" refUid="0ed4648d-65b3-462d-b138-36805941f88e" refId="mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink">
+        <check uid="4cd9d512-62b7-492a-9f9b-33b1a23ba32f" selectedForRun="true" refUid="91107659-d83c-40be-bfbb-b528043a5f14" refId="mcheck_mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink"/>
+      </guideline>
+      <guideline uid="cf229621-6bb0-4b44-b7a0-5e5a113c655f" modifier="standard" refUid="1d63ff41-7318-4f43-a413-e9ca99e29e98" refId="mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink">
+        <check uid="90c530ff-a30a-4850-abe4-42fd4ce960e7" selectedForRun="true" refUid="fbba4c97-2d04-4f95-a65d-14735ab44bd4" refId="mcheck_mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink"/>
+      </guideline>
+      <guideline uid="64f78f50-db77-40b2-9971-a77a79967200" modifier="standard" refUid="1f04873d-90bb-49fa-8c58-bc5a94e5f3b1" refId="mes_is_0002" refVersion="1" refTitle="User-specified State/transition Execution Order">
+        <check uid="44e1be5a-a28f-4ca6-841e-c695df3f6bf8" selectedForRun="true" refUid="f50db154-cbba-42fc-92eb-7fa2feaa5605" refId="mcheck_mes_is_0002" refVersion="1" refTitle="User-specified State/Transition execution order"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/11/2015 14:13:50">
+      <author username="Model Engineering Solutions GmbH" domain="MES"/>
+      <comment>Guideline document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

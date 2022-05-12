@@ -1,0 +1,97 @@
+<check fileVersion="2">
+  <uid>6160798b-65cd-4655-9b50-3d6028171725</uid>
+  <id>mcheck_mes_cgtl_4301</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Avoidance of TargetLink Specifications for Stateflow Input Variables</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_cgtl_4301.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each input variable of each chart in the model.
+<br /> 
+<ul> 
+ <li> Review 1: The property sf.createinputvariable of an input variable is set to 'on'.<br /> </li> 
+</ul>The check result is passed if all review cases do not apply.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[If the property sf.createinputvariable is set to 'on' for an input variable, a separate Stateflow input variable is specified and generated. TargetLink normally uses the output variables of preceding blocks as input variables for Stateflow, but if separate input variables are generated, these are used instead.
+<br /> The Stateflow input variables need function parameter classes assigned to them only if functions with a well-defined interface have to be generated for the Stateflow chart. In this case, it may be convenient to set the property sf.createinputvariable to 'on'.
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Set the property sf.createinputvariable of the chart's input variable to 'off' unless the entire chart function should be reused.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[No automatic repair action available.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="07/19/2017 17:23:37">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="07/24/2017 12:16:30">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="07/27/2017 13:37:00">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

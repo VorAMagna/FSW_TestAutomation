@@ -1,0 +1,92 @@
+<check fileVersion="2">
+  <uid>71d19b33-a9f2-4715-b823-7fc12ce3fa27</uid>
+  <id>mcheck_db_0151</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>State Machine Patterns for Transition Actions</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0151.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[This check analyzes each transition action within Stateflow state machines.
+<br /> 
+<ul> 
+ <li> Failed 1: There are two or more transition actions in the same line. </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Use only one transition action per line, as described in the example.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[No automatic repair action available.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value><![CDATA[<p> <img src="db_0151_2.png" /> </p>Figure db_0151: Two or more transition actions in multiline form; two or more transition actions in one line are not allowed.]]></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="05/22/2017 15:10:00">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="06/07/2017 13:44:18">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

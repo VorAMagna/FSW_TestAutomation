@@ -1,0 +1,863 @@
+<guidelineDocument fileVersion="2">
+  <uid>8d037cc5-4b5e-4bb2-9b7e-7b2e24b4b41b</uid>
+  <id>maab_3_0</id>
+  <title>MAAB - Control Algorithm Modeling Guidelines Using MATLAB®, Simulink®, and Stateflow® Version 3.0</title>
+  <access>public</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="1c1b2645-5150-40da-9c18-4378aa368836" title="History">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<table title="" border="1" cellpadding="2" cellspacing="0" width="85%">
+ <tbody>
+  <tr>
+   <th abbr="" id="" scope="col"> Date<br /> </th>
+   <th abbr="" id="" scope="col"> Change<br /> </th>
+  </tr>
+  <tr>
+   <td> 02.04.2001<br /> </td>
+   <td> Initial document release, Version 1.00<br /> </td>
+  </tr>
+  <tr>
+   <td> 04.27.2007<br /> </td>
+   <td> Version 2.00 Update release<br /> </td>
+  </tr>
+  <tr>
+   <td> 07.30.2011<br /> </td>
+   <td> Version 2.20 Update release<br /> </td>
+  </tr>
+  <tr>
+   <td> 08.31.2012<br /> </td>
+   <td> Version 3.0 Update release<br /> </td>
+  </tr>
+ </tbody>
+</table>
+<br />]]></value>
+      </description>
+    </chapter>
+    <chapter uid="a011d5cb-3727-47b3-9a51-72d02f9dd0e5" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="7cda88f5-3e6d-4a8f-b701-22349d786762" title="Motivation">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[The MAAB guidelines are an important basis for project success and teamwork - both in-house and when cooperating with partners or subcontractors. Observing the guidelines is one key prerequisite to achieving
+<br />
+<ul>
+ <li> System integration without problems </li>
+ <li> Well-defined interfaces. </li>
+ <li> Uniform appearance of models, code and documentation </li>
+ <li> Reusable models </li>
+ <li> Readable models </li>
+ <li> Problem-free exchange of models </li>
+ <li> A simple, effective process </li>
+ <li> Professional documentation </li>
+ <li> Understandable presentations </li>
+ <li> Fast software changes </li>
+ <li> Cooperation with subcontractors </li>
+ <li> Handing over of research or predevelopment projects to product development </li>
+</ul>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="a1fefea2-e71d-4061-a119-906b3cabb5a8" title="Notes on version 3.0">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[The current version of this document, 3.0, supports MATLAB releases R2007b through R2011b. Version 3.0 references rules from the NASA Orion style guidelines (http://www.mathworks.com/aerospace-defense/standards/nasa.html). Rules that are referenced from the NASA Orion guideline are noted with a “See also” field that provides the original rule number.
+<br />]]></value>
+        </description>
+      </chapter>
+      <chapter uid="4c0ea423-1f8a-4a16-ac47-6ff9eb95c4ef" title="Guideline template">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[Guideline descriptions are documented using the following template. Companies that want to create additional guidelines are encouraged to use the same template.
+<br />
+<br />
+<table title="" border="1" cellpadding="2" cellspacing="0" width="85%">
+ <tbody>
+  <tr>
+   <th abbr="" id="" scope="col"> ID: Title<br /> </th>
+   <th abbr="" id="" scope="col"> XX_nnnn: Title of the guideline (unique,short)<br /> </th>
+  </tr>
+  <tr>
+   <td> Priority<br /> </td>
+   <td> One of mandatory / strongly recommended / recommended<br /> </td>
+  </tr>
+  <tr>
+   <td> Scope<br /> </td>
+   <td> MAAB, NA-MAAB, J-MAAB, Specific Company (for optional local company usage)<br /> </td>
+  </tr>
+  <tr>
+   <td> MATLAB&reg;<br /> Version<br /> </td>
+   <td> all<br /> RX, RY, RZ<br /> RX and earlier<br /> RX and later<br /> RX through RY<br /> </td>
+  </tr>
+  <tr>
+   <td> Prerequisites<br /> </td>
+   <td> Links to guidelines, which are prerequisite to this guideline (ID+title)<br /> </td>
+  </tr>
+  <tr>
+   <td> Description<br /> </td>
+   <td> Description of the guideline<br /> </td>
+  </tr>
+  <tr>
+   <td> Rationale<br /> </td>
+   <td> Motivation for the guideline<br /> </td>
+  </tr>
+  <tr>
+   <td> Last Change<br /> </td>
+   <td> Version number of last change<br /> </td>
+  </tr>
+ </tbody>
+</table>
+<br /> Note: The elements of this template are the minimum required items that must be present for proper understanding and exchange of guidelines. The addition of project- or vendor fields to this template is possible as long as their meaning does not overlap with any of the existing fields. In fact, such additions are even encouraged if they help to integrate other guideline templates and lead to a wider acceptance of the core template itself.
+<br />]]></value>
+        </description>
+        <chapter uid="66b6cc31-1bdc-4364-8ac8-acacdc8037fa" title="Guideline ID">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> The guideline ID is built out of two lowercase letters (representing the origin of the rule) and a four-digit number, separated by an underscore. </li>
+ <li> Once a new guideline has an ID, the ID will not be changed. </li>
+ <li> The ID is used for references to guidelines. </li>
+ <li> The two letter prefixes na, jp, jc and eu are reserved for future MAAB committee rules. </li>
+ <li> Legacy prefixes, db, jm, hd, and ar, are reserved. </li>
+ <li> No new rules will be written with these legacy prefixes. </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+        <chapter uid="b8339eab-9e1a-40b7-a7fb-0110be0afe0b" title="Guideline Title">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> The title should be a short, but unique description of the guidelines area of application (for example, length of names). </li>
+ <li> The title is used for the Prerequisites field and for custom checker-tools. </li>
+ <li> The title text should appear with a hyperlink that links to the guideline. </li>
+</ul>Note: The title should not be a redundant short description of the guidelines content. The description of the guideline might change over time, but the title should remain stable.
+<br />]]></value>
+          </description>
+        </chapter>
+        <chapter uid="beacfea1-998e-43fe-b39a-1e66c1f4287b" title="Priority">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[Each guideline must be rated with one of the following priorities:
+<br />
+<ul>
+ <li> Mandatory </li>
+ <li> Strongly recommended </li>
+ <li> Recommended </li>
+</ul>The priority describes the importance of the guideline and determines the consequences of violations.
+<br />
+<table style="width: 649px; height: 530px;" title="" border="1" cellpadding="2" cellspacing="0">
+ <tbody>
+  <tr>
+   <th abbr="" id="" scope="col">
+    <div style="margin-left: 80px;">
+     Mandatory
+     <br />
+    </div> </th>
+   <th abbr="" id="" scope="col">
+    <div style="margin-left: 40px;">
+     Strongly
+     <br /> Recommended
+     <br />
+    </div> </th>
+   <th abbr="" id="" scope="col">
+    <div style="margin-left: 40px;">
+     Recommended
+     <br />
+    </div> </th>
+  </tr>
+  <tr>
+   <td> <br /> </td>
+   <td style="font-weight: bold;">
+    <div style="margin-left: 40px;">
+     DEFINITION
+     <br />
+    </div> </td>
+   <td> <br /> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li> Guidelines that all companies agree to that are absolutely essential </li>
+     <li> Guidelines that all companies conform to 100% </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li> Guidelines that are agreed upon to be a good practice, but legacy models preclude a company from conforming to the guideline 100% </li>
+     <li> Models should conform to these guidelines to the greatest extent possible; however 100% compliance is not required<br /> </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li> Guidelines that are recommended to improve the appearance of the model diagram, but are not critical to running the model </li>
+     <li> Guidelines where conformance is preferred, but not required </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td> <br /> </td>
+   <td>
+    <div style="margin-left: 40px;">
+     <span style="font-weight: bold;">CONSEQUENCES</span>
+     <br /> If the guideline is violated
+     <br />
+    </div><br /> </td>
+   <td> <br /> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li> Essential items are missing </li>
+     <li> The model might not work properly </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li> The quality and the appearance deteriorates </li>
+     <li> There may be an adverse effect on maintainability, portability, and reusability </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li> The appearance will not conform with other projects </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td> <br /> </td>
+   <td>
+    <div style="margin-left: 40px;">
+     <span style="font-weight: bold;">WAIVER POLICY</span>
+     <br /> If the guideline is intentionally ignored,
+     <br />
+    </div> </td>
+   <td> <br /> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li> The reasons must be documented </li>
+    </ul> </td>
+   <td> <br /> </td>
+   <td> <br /> <br /> </td>
+  </tr>
+ </tbody>
+</table>
+<br />]]></value>
+          </description>
+        </chapter>
+        <chapter uid="ceb6b853-9074-4c32-a274-fb65fcd3feee" title="Scope">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[The scope can be set to one of the following
+<br /> MAAB (MathWorks Automotive Advisory Board) J-MAAB (Japan MAAB)
+<br /> NA-MAAB (North American MAAB)
+<br />
+<br /> &quot;MAAB&quot; is a group of automotive manufacturers and suppliers that work closely together with MathWorks. MAAB includes the sub-groups J-MAAB, and NA-MAAB.
+<br />
+<br /> “J-MAAB” is a subgroup of MAAB that includes automotive manufacturers and suppliers in JAPAN and works closely with MathWorks. Rules with J-MAAB scope are local to Japan.
+<br />
+<br /> “NA-MAAB” is a subgroup of MAAB that includes automotive manufacturers and suppliers in USA and Europe and works closely with MathWorks. That rule is local rule in USA and Europe. Coverage is USA and Europe.
+<br />]]></value>
+          </description>
+        </chapter>
+        <chapter uid="8809abbb-d067-4a0b-9c57-d8adafedfff6" title="MATLAB® Versions">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[The guidelines support all versions of MATLAB and Simulink products. If the rule applies to a specific version or versions, the versions are identified in the MATLAB versions field. The versions information is in one of the following formats.
+<br />
+<br />
+<ul>
+ <li> All : All versions of MATLAB </li>
+ <li> RX, RY, RZ : A specific version of MATLAB </li>
+ <li> RX and earlier : Versions of MATLAB until version RX </li>
+ <li> RX and later: Versions of MATLAB from version RX to the current version </li>
+ <li> RX through RY: Versions of MATLAB between RX and RY </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+        <chapter uid="0e8ba0cc-cc6e-4436-8ab3-e7b6d6a0e967" title="Prerequisites">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> This field is for links to other guidelines that are prerequisite to this guideline (logical conjunction). </li>
+ <li> Use the guideline ID (for consistency) and the title (for readability) for the links. The &quot;Prerequisites&quot; field should not contain any other text. </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+        <chapter uid="e1735945-7f53-4a27-bee1-2b211cae463d" title="Description">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> This field contains a detailed description of the guideline. </li>
+ <li> If needed, images and tables can be added. </li>
+</ul>Note: If formal notation (math, regular expression, syntax diagrams, and exact numbers/limits) is available, it should be used to unambiguously describe a guideline and specify an automated check. However, a human, understandable, informal description must always be provided for daily reference.]]></value>
+          </description>
+        </chapter>
+        <chapter uid="fdba3590-97dd-4ff5-a5fe-1ad75ecc1fbd" title="Rationale">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[The guidelines can be recommended for one or more of the following reasons.
+<br />
+<br />
+<ul>
+ <li> Readability: Easily understood algorithms </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Readable models </li>
+   <li> Uniform appearance of models, code, and documentation </li>
+   <li> Clean interfaces </li>
+   <li> Professional documentation </li>
+  </ul> </li>
+ <li> Workflow: Effective development process and workflow </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Ease of maintenance </li>
+   <li> Rapid model changes </li>
+   <li> Reusable components </li>
+   <li> Problem-free exchange of models </li>
+   <li> Model portability </li>
+  </ul> </li>
+ <li> Simulation: Efficient simulation and analysis </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Simulation speed </li>
+   <li> Simulation memory </li>
+   <li> Model instrumentation </li>
+  </ul> </li>
+ <li> Verification &amp; Validation: Ability to verify and validate a model and generated code with: </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Requirements Traceability </li>
+   <li> Testing </li>
+   <li> Problem-free system integration </li>
+   <li> Clean interfaces </li>
+  </ul> </li>
+ <li> Code generation: Generation of code that is efficient and effective for embedded systems </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Fast software changes </li>
+   <li> Robustness of generated code </li>
+  </ul> </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+        <chapter uid="c1ebbf08-1d60-4a1d-a2ae-519a06f0a132" title="Last change">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[the &quot;Last Change&quot; field contains the document version number.
+<br />]]></value>
+          </description>
+        </chapter>
+      </chapter>
+      <chapter uid="5aad7960-d827-467a-804d-1162c0f0f21f" title="Document Usage">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[The following paragraphs provide information on using this document as reference and for compiling a project-specific guideline document. Information on automated checking of the guidelines can be found in Appendix A.
+<br />]]></value>
+        </description>
+        <chapter uid="6c660bdf-2a33-4096-849a-a7257dc1e330" title="Guideline Interaction Semantics">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[The initial sections of the document, naming conventions and model architecture, provide basic guidelines that apply to all types of models. The later sections, Simulink and Stateflow, provide specific rules for those environments. Some guidelines are dependent on other guidelines and are explicitly listed throughout the template.
+<br />]]></value>
+          </description>
+        </chapter>
+        <chapter uid="ac7b0eb6-8b4f-4899-889f-3d2ea7b233c9" title="Masked Subsystems and Readability Rules">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[If users do not view the content of masked subsystems within a model, the guidelines for readability are not applicable.
+<br />]]></value>
+          </description>
+        </chapter>
+      </chapter>
+    </chapter>
+    <chapter uid="13be2f11-174c-4b07-9431-0ae54c61bd97" title="Software Environment">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <chapter uid="3cc030c0-1555-4ebe-91e5-e426a6716c5b" title="General guidelines">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="f63d4c52-e76d-462b-bf7f-405f576a2e94" modifier="standard" refUid="a19967a0-997a-4e8d-94fe-d2c38c1af499" refId="na_0026" refVersion="1" refTitle="Consistent Software Environment">
+          <check uid="f05afa38-b5da-4c50-807b-dc2e5b7a3923" selectedForRun="true" refUid="0e05bea5-1096-4622-a4ec-e077f2222396" refId="mcheck_na_0026" refVersion="1" refTitle="Consistent Software Environment"/>
+        </guideline>
+        <guideline uid="cdeb39d5-719a-44b9-b83b-d62862aa548d" modifier="standard" refUid="049bdbb1-b256-4512-90c1-a1c116bb7144" refId="na_0027" refVersion="1" refTitle="Use of Only Standard Library Blocks">
+          <check uid="80d99bca-b336-4436-8063-3d2b63dfab7e" selectedForRun="true" refUid="6bffbef7-2687-4b9d-a1f9-066997a3dca7" refId="mcheck_na_0027" refVersion="1" refTitle="Use of Only Standard Library Blocks"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="e8fac08d-1623-48f1-bd74-b396c90207d1" title="Naming Conventions">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="dea040e1-80ff-48db-82d1-581eaacd4725" title="General Guidelines">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="2bac170c-ad21-4d06-b1c6-7b20e0c042d1" modifier="standard" refUid="7e39fbec-dbe5-4109-85b9-e94c78a2480f" refId="ar_0001" refVersion="1" refTitle="Filenames">
+          <check uid="2cfc4cea-04c3-4dcd-96d0-a1ace3dfcf63" selectedForRun="true" refUid="95144401-aacf-4ef6-ad90-8b6e88592bc3" refId="mcheck_ar_0001" refVersion="1" refTitle="Filenames"/>
+        </guideline>
+        <guideline uid="69a34000-bb3b-426a-babc-29c337def735" modifier="standard" refUid="babbb049-6819-48e7-9eac-56d32b012bac" refId="ar_0002" refVersion="1" refTitle="Directory Names">
+          <check uid="e8b20df8-3207-4596-a5d5-bd4f93a7fda6" selectedForRun="true" refUid="ece938f0-e91d-46c6-97e1-53dcd4bb0912" refId="mcheck_ar_0002" refVersion="1" refTitle="Directory Names"/>
+        </guideline>
+        <guideline uid="11c2080d-85bf-403a-840d-d184be493b6b" modifier="standard" refUid="a9cd6d97-44c1-4c57-9a90-ab1bd7a021d3" refId="na_0035" refVersion="1" refTitle="Adoption of Naming Conventions"/>
+      </chapter>
+      <chapter uid="c607f343-d082-4630-9e76-85f831a21d68" title="Model Content Guidelines">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="26d0f51d-43c7-4b8c-8391-f7fb91dcbe8d" modifier="standard" refUid="4eaf9c89-3269-4f82-bb91-c991f358e6b1" refId="jc_0201" refVersion="1" refTitle="Usable Characters for Subsystem Names">
+          <check uid="b5bb518b-0288-417a-84da-44de785cb0ba" selectedForRun="true" refUid="cc248994-c58c-4253-8852-021696c9dee1" refId="mcheck_jc_0201" refVersion="1" refTitle="Usable Characters for Subsystem Names"/>
+        </guideline>
+        <guideline uid="22fb691f-33d6-44f3-bdb9-bd33fb19b96b" modifier="standard" refUid="345d53c8-0af7-4947-bafe-bb977d0a1fb4" refId="jc_0211" refVersion="1" refTitle="Usable Characters for Inport Block and Outport Block">
+          <check uid="14131098-889c-48f1-94fb-dbaa4d402f32" selectedForRun="true" refUid="e4ba90c1-889f-4f6a-a2be-1d34369a5bbc" refId="mcheck_jc_0211" refVersion="1" refTitle="Usable Characters for Inport Block and Outport Block"/>
+        </guideline>
+        <guideline uid="38f98d42-bc72-43d3-a3b6-5eb971a4994a" modifier="standard" refUid="3e9bb6fb-3864-4414-aaad-69bf4299ce86" refId="jc_0221" refVersion="1" refTitle="Usable Characters for Signal Line Names">
+          <check uid="f02480e4-6215-44c6-a5d3-f5268947cb73" selectedForRun="true" refUid="22b6e970-a973-4824-936b-03539f528bf4" refId="mcheck_jc_0221" refVersion="1" refTitle="Usable Characters for Signal Line Names"/>
+        </guideline>
+        <guideline uid="80f11f27-d46a-4e09-b8ff-f1c480a9b5dc" modifier="standard" refUid="49a1aab0-33ff-48e0-87f9-7dd30a76a29c" refId="na_0030" refVersion="1" refTitle="Usable Characters for Simulink Bus Names">
+          <check uid="a2c2ac43-acb3-4c1a-b58f-36a7a53af88a" selectedForRun="true" refUid="d548e7bb-b8de-48c4-804e-7261726426aa" refId="mcheck_na_0030" refVersion="1" refTitle="Usable Characters for Simulink Bus Names"/>
+        </guideline>
+        <guideline uid="4dd3a0ae-c256-4818-87c5-64bd14f3e17c" modifier="standard" refUid="99ab2f29-65d7-4f2f-b49d-42ec02c86573" refId="jc_0231" refVersion="1" refTitle="Usable Characters for Block Names">
+          <check uid="ce83024d-d266-44d0-93ec-d7ce2129b5f1" selectedForRun="true" refUid="d7424787-0401-42a9-b7d6-c47df2801bfa" refId="mcheck_jc_0231" refVersion="1" refTitle="Usable Characters for Block Names"/>
+        </guideline>
+        <guideline uid="4ac2a91d-eae5-4ce5-82bb-35a3391181c9" modifier="standard" refUid="80b1d6a3-2431-4a21-a708-32a24c323480" refId="na_0014" refVersion="1" refTitle="Use of Local Language in Simulink and Stateflow">
+          <check uid="ab6d0bb9-0b4c-4196-b76f-34ea31f048ed" selectedForRun="true" refUid="9395a9a3-5eaf-4b19-b037-d4f0c7d6b8c1" refId="mcheck_na_0014_a" refVersion="1" refTitle="Use of Local Language in Simulink and Stateflow - Simulink"/>
+          <check uid="9aacda3b-9e01-4087-b19d-e2843ca0e6a9" selectedForRun="true" refUid="d7086cd9-1fc8-4a6f-854b-e394e626dcf8" refId="mcheck_na_0014_b" refVersion="1" refTitle="Use of Local Language in Simulink and Stateflow - Stateflow"/>
+          <check uid="984364ff-df66-49bb-9325-f4da533d9664" selectedForRun="true" refUid="7a10c2cd-722f-438f-8aa6-2f427dc3349d" refId="mcheck_na_0014_c" refVersion="1" refTitle="Use of Local Language in Simulink and Stateflow - TargetLink DD Variables"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="ab65394b-6e79-40f3-a760-f27db7e0e75d" title="Model Architecture">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p><b>Basic Blocks</b></p>
+<p>This document uses the term &quot;Basic Blocks&quot; to refer to blocks from the base Simulink palette; examples of basic blocks are shown below.</p>
+<p><img src="4_Model_Architecture_1.png" /></p>
+<p class="imageCaption"> Figure MAAB_3_0-1: Model Architecture</p>]]></value>
+      </description>
+      <chapter uid="3da8abe0-6f08-4e24-8b79-0ce1ff95aa3b" title="Simulink/Stateflow Partitioning">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="63192242-4f58-4473-913e-88776965265e" modifier="standard" refUid="b9c1a46c-e09e-4c6d-8dc4-3a0c59c2bbce" refId="na_0006" refVersion="1" refTitle="Guidelines for Mixed Use of Simulink and Stateflow">
+          <check uid="3989db46-a76b-4df3-bb70-f9b582d1a648" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+        <guideline uid="d603bea0-f090-4101-95f2-94a9b7d0ae61" modifier="standard" refUid="a28ee9a4-78d9-431c-aedc-28d9b54567bb" refId="na_0007" refVersion="1" refTitle="Guidelines for Use of Flow Charts, Truth Tables and State Machines">
+          <check uid="592fcfab-9ce6-4418-8534-57b7f2521a43" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+      </chapter>
+      <chapter uid="b7bdb7a8-3469-477f-9db9-2865d643cb16" title="Subsystem Hierarchies">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="efd49815-d4e9-4abf-8032-855c63076804" modifier="standard" refUid="35b5161e-d511-4161-830d-a93b9df3db80" refId="db_0143" refVersion="1" refTitle="Similar Block Types on the Model Levels">
+          <check uid="8bce2a24-8671-4b20-ba80-7f64a8ddfc3c" selectedForRun="true" refUid="cae0df38-55b7-42b0-921e-3b3c444db507" refId="mcheck_db_0143" refVersion="1" refTitle="Similar Block Types on the Model Levels"/>
+        </guideline>
+        <guideline uid="30790d9b-bf12-44a5-804f-645c82849efe" modifier="standard" refUid="d425c1b0-ec3d-43d5-8a4e-cfa4ade8ba8a" refId="db_0144" refVersion="1" refTitle="Use of Subsystems">
+          <check uid="45bb6fa3-ddef-4063-ad05-18cd3d070fd6" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+        </guideline>
+        <guideline uid="36ad562d-029f-40d6-9173-06e6140fb62f" modifier="standard" refUid="7589e25d-cdd9-4714-b413-b8e38fcafff4" refId="db_0040" refVersion="1" refTitle="Model Hierarchy">
+          <check uid="5539effc-056c-446e-be69-f52a1120aed0" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+        </guideline>
+        <guideline uid="907510a6-ccbb-42b9-a4d1-bb387b85ab63" modifier="standard" refUid="c15f187b-c731-4c41-b544-0909a89f239b" refId="na_0037" refVersion="1" refTitle="Use of Single Variable Conditionals">
+          <check uid="4b50347c-b470-4721-bd51-ce1e1dae1247" selectedForRun="true" refUid="23da0c4a-a30b-4399-85e7-f3af95c30954" refId="mcheck_na_0037" refVersion="1" refTitle="Use of Single Variable Conditionals"/>
+        </guideline>
+        <guideline uid="70ce3edb-4e0f-400f-b376-6d8aa290e3b0" modifier="standard" refUid="5adb6443-1101-4d7c-b3c8-08e5c6da8d97" refId="na_0020" refVersion="1" refTitle="Number of Inputs to Variant Subsystems">
+          <check uid="cdaae269-bfc8-40ee-82de-78d84d3395a6" selectedForRun="true" refUid="5e8693ee-21d9-4fc4-8dfd-1bb868f608d8" refId="mcheck_na_0020" refVersion="1" refTitle="Number of Inputs to Variant Subsystems"/>
+        </guideline>
+        <guideline uid="4c1a4850-a877-408f-8226-3387e967c1e3" modifier="standard" refUid="86bcd24c-c8bb-4543-a52e-2759c6325f6d" refId="na_0036" refVersion="1" refTitle="Default Variant">
+          <check uid="8ad74a22-0724-4745-81d8-dbd472bbba13" selectedForRun="true" refUid="b2d29848-eaff-4665-990d-840ce29b69d5" refId="mcheck_na_0036" refVersion="1" refTitle="Default Variant"/>
+        </guideline>
+      </chapter>
+      <chapter uid="8e0cfffe-cd12-4025-a423-7f76451f18c5" title="J-MAAB Model Architecture Decomposition">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="9156b6d2-4b7f-4ed7-adb7-cde04d0be47e" modifier="standard" refUid="7da54354-35d5-46d4-a81b-e836836a7b78" refId="jc_0301" refVersion="1" refTitle="Controller Model"/>
+        <guideline uid="20060ac5-d67c-4572-b406-d316545da58b" modifier="standard" refUid="a96da119-6f46-4668-b8c8-b65c929e48be" refId="jc_0311" refVersion="1" refTitle="Top Layer/ Root Level"/>
+        <guideline uid="228d006c-b1e0-4dbe-bd0a-4ac67b09af00" modifier="standard" refUid="387c733f-534f-43ea-9c11-9673316d0bb3" refId="jc_0321" refVersion="1" refTitle="Trigger Layer"/>
+        <guideline uid="8a2766a8-20f1-4abb-846e-8a2c3e9867be" modifier="standard" refUid="b78c11de-91bf-4d6f-9f43-add97c62c5b3" refId="jc_0331" refVersion="1" refTitle="Structure Layer"/>
+        <guideline uid="395d5dab-338d-40d4-90fc-8faedef64845" modifier="standard" refUid="f86e8d98-458a-478b-bfed-50f15c1ec5b9" refId="jc_0341" refVersion="1" refTitle="Data Flow Layer"/>
+      </chapter>
+    </chapter>
+    <chapter uid="45766a5b-0c22-4195-bc58-ce35655983ea" title="Model Configuration Options">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="3cdc8c50-18cf-4e37-aed3-fe7c4e64a886" modifier="standard" refUid="df7772eb-4116-417b-ba5c-1105b26d5489" refId="jc_0011" refVersion="1" refTitle="Optimization Parameters for Boolean Data Types">
+        <check uid="9af7b393-ede8-4d1d-953b-acb3858f91c7" selectedForRun="true" refUid="00057888-ce04-41ca-b47e-f5af7217b96a" refId="mcheck_jc_0011" refVersion="1" refTitle="Optimization Parameters for Boolean Data Types"/>
+      </guideline>
+      <guideline uid="f8b62a08-389a-48f3-ad89-54683fdccc97" modifier="standard" refUid="8ff85bcc-399f-4073-b66f-4fb9ed954e2a" refId="jc_0021" refVersion="1" refTitle="Model Diagnostic Settings">
+        <check uid="564aa230-5825-41b8-8fef-e446e0a928dc" selectedForRun="true" refUid="d3401ad4-4922-442f-b2a8-9a366ccf09da" refId="mcheck_jc_0021" refVersion="1" refTitle="Model Diagnostic Settings"/>
+      </guideline>
+    </chapter>
+    <chapter uid="315e3bdf-44b0-4b67-9fd6-a12b19455610" title="Simulink">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="61fcc8da-bb10-4a0d-8cd3-0997064a9c62" title="Diagram appearance">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="106fbbd0-59ac-4c7e-9669-19bcd0d97503" modifier="standard" refUid="ddabc537-755b-421c-a709-eb88a717882b" refId="na_0004" refVersion="1" refTitle="Simulink Model Appearance">
+          <check uid="054cdd98-704f-476f-81bf-2449495261e0" selectedForRun="true" refUid="c1bff1bf-106c-4fa1-984a-25cb698499ac" refId="mcheck_na_0004" refVersion="1" refTitle="Simulink Model Appearance"/>
+        </guideline>
+        <guideline uid="5d7b6f1a-e325-4b03-9940-e6d24a9d7f1c" modifier="standard" refUid="79dad25c-bc30-4eb7-a991-8a7d80c58295" refId="db_0043" refVersion="1" refTitle="Simulink Font and Font Size">
+          <check uid="07fb855b-73cf-4236-a6d6-60f2e74a7d59" selectedForRun="true" refUid="305aba89-60fb-4396-b2f8-39e9ec487b35" refId="mcheck_db_0043" refVersion="1" refTitle="Simulink Font and Font Size"/>
+        </guideline>
+        <guideline uid="3290b73b-f910-4c49-a763-1425c8f63fef" modifier="standard" refUid="3d4416b9-aca0-41bd-bb42-c6e1e79a46f1" refId="db_0042" refVersion="1" refTitle="Port Block in Simulink Models">
+          <check uid="647d7c7a-be4b-4e27-9439-33051e749dc0" selectedForRun="true" refUid="2e705794-8dd8-40e6-a05c-c9a4fc3324eb" refId="mcheck_db_0042_a" refVersion="1" refTitle="Port Block in Simulink Models - Position of Inports/Outports"/>
+          <check uid="8bd14c35-f0e5-4940-a32e-db267c896c2e" selectedForRun="true" refUid="b06bf6bb-118a-4587-a939-3935c88c1bb0" refId="mcheck_db_0042_b" refVersion="1" refTitle="Port Blocks in Simulink Models - Duplicate Inports"/>
+        </guideline>
+        <guideline uid="93db6c7c-918a-4bf2-9d94-28999be9d108" modifier="standard" refUid="a0ceb839-f15f-4e22-a2b7-86af1eba9581" refId="na_0005" refVersion="1" refTitle="Port Block Name Visibility in Simulink Models">
+          <check uid="bae6b99f-300b-49e4-8ff9-e84ea386d067" selectedForRun="true" refUid="9e9d57b2-ec33-435f-a65c-7edb88f2a422" refId="mcheck_na_0005" refVersion="1" refTitle="Port Block Name Visibility in Simulink Models"/>
+        </guideline>
+        <guideline uid="8f7f1030-d053-4339-8811-7f62ec355993" modifier="standard" refUid="259a296d-44e7-46d5-a4b4-c1631750f6d6" refId="jc_0081" refVersion="1" refTitle="Icon Display for Port Block">
+          <check uid="f8f3a734-2b7c-42b8-9b46-9bfc7156a39d" selectedForRun="true" refUid="348de4d2-ef8d-401f-a6d7-f60a342e5e1f" refId="mcheck_jc_0081" refVersion="1" refTitle="Icon Display for Port Blocks"/>
+        </guideline>
+        <guideline uid="3a0d64ce-4df8-49c3-913a-424be1649612" modifier="standard" refUid="191983b6-a314-46ab-bb16-1c013c74ced1" refId="jm_0002" refVersion="1" refTitle="Block Resizing">
+          <check uid="b09c5ed8-962b-4f63-8aa1-d55b61dc3ebe" selectedForRun="true" refUid="f7c69d66-2377-487b-915f-90b305e48f57" refId="mcheck_jm_0002_a" refVersion="1" refTitle="Block Resizing - Visibility of Parameters"/>
+          <check uid="c15148e0-787a-4226-bd31-fc392a161af7" selectedForRun="true" refUid="52e9adbf-6d16-4bff-9fdd-6b7c48a4d3eb" refId="mcheck_jm_0002_b" refVersion="1" refTitle="Block Resizing - Visibility of Port Names"/>
+        </guideline>
+        <guideline uid="28f571f3-aaec-4d58-9862-fef43aa4261b" modifier="standard" refUid="06347311-4b21-4381-b991-801273f0888f" refId="db_0142" refVersion="1" refTitle="Position of Block Names">
+          <check uid="923a1f64-ba1f-4c0a-b1a8-44d56cb6f649" selectedForRun="true" refUid="fffe36ac-1a69-4b21-9440-b76c5015fd1b" refId="mcheck_db_0142" refVersion="1" refTitle="Position of Block Names"/>
+        </guideline>
+        <guideline uid="22945bee-c87e-4752-9a7c-ee84c9b8a00d" modifier="standard" refUid="0b27abe7-daa6-4707-9211-83b1ea632628" refId="jc_0061" refVersion="1" refTitle="Display of Block Names">
+          <check uid="ddd5008c-2214-4ef4-9857-8094bef1afa4" selectedForRun="true" refUid="768fe8c6-97d4-48d5-aa82-c5c1eeb273c7" refId="mcheck_jc_0061" refVersion="1" refTitle="Display of Block Names"/>
+        </guideline>
+        <guideline uid="c6595e87-20c0-4406-b911-89f191a50045" modifier="standard" refUid="4e472d43-b643-47a4-acc2-1d4607202f2a" refId="db_0146" refVersion="1" refTitle="Triggered, Enabled, Conditional Subsystems">
+          <check uid="28e3cbbe-b6f1-4444-b1ff-4514a0b157c5" selectedForRun="true" refUid="45a31a33-35e6-449e-aa54-d4d4012b0442" refId="mcheck_db_0146" refVersion="1" refTitle="Triggered, Enabled, Conditional Subsystems"/>
+        </guideline>
+        <guideline uid="ce020c50-a079-4382-9b30-d82462a88daa" modifier="standard" refUid="447ce7c2-f2f5-4e6e-bf96-4492631fa530" refId="db_0140" refVersion="1" refTitle="Display of Basic Block Parameters">
+          <check uid="52392cdb-1c92-4a07-b93a-683c9833f46c" selectedForRun="true" refUid="dad50ee4-90e2-4d7c-bbab-bed2fff4f127" refId="mcheck_db_0140" refVersion="1" refTitle="Display of Basic Block Parameters"/>
+        </guideline>
+        <guideline uid="520a32fe-33ba-4bfa-9b5f-35594176aa3b" modifier="standard" refUid="c2474aac-6238-4a23-a95e-3450fcc048e9" refId="db_0032" refVersion="1" refTitle="Simulink Signal Appearance">
+          <check uid="45a4cc95-8b8c-4e14-bb1d-7f1c2c08e62d" selectedForRun="true" refUid="9b6fd2a4-8301-431b-b5a1-dacdf7623532" refId="mcheck_db_0032_a" refVersion="1" refTitle="Simulink Signal Appearance - Diagonal Signal Lines"/>
+          <check uid="7eed9a99-3569-408b-a41f-e72f639db163" selectedForRun="true" refUid="a6f17b68-2113-46e1-96d4-f1527692616c" refId="mcheck_db_0032_b" refVersion="1" refTitle="Simulink Signal Appearance - Overlap"/>
+          <check uid="eb402936-7dcb-4741-b9a6-b17e58ab8642" selectedForRun="true" refUid="c7d404bb-3fc6-4415-ae9d-f7c5d78c3cbd" refId="mcheck_db_0032_c" refVersion="1" refTitle="Simulink Signal Appearance - Line Crossings"/>
+          <check uid="8bed8efc-3587-408e-92bd-380ef7f6b925" selectedForRun="true" refUid="ca1e5983-c7dd-44bf-9061-5881c4487949" refId="mcheck_db_0032_d" refVersion="1" refTitle="Simulink Signal Appearance - Line Branches"/>
+        </guideline>
+        <guideline uid="4bf62f17-8deb-4c8a-9570-3a611d442f29" modifier="standard" refUid="ce46d843-604d-4bb8-9bd1-d04b32b431c2" refId="db_0141" refVersion="1" refTitle="Signal Flow in Simulink Models">
+          <check uid="8dfb054b-66cd-40c2-907b-6149e9545c3d" selectedForRun="true" refUid="46a722e0-cc27-4b3c-8e81-569e3d232520" refId="mcheck_db_0141" refVersion="1" refTitle="Signal Flow in Simulink Models"/>
+        </guideline>
+        <guideline uid="8f69c427-9d4b-4126-91fe-8cc385d30b9a" modifier="standard" refUid="884c2e7f-41c3-41a8-b99e-9d87f5a23abb" refId="jc_0171" refVersion="1" refTitle="Maintaining Signal Flow When Using Goto and From Blocks"/>
+        <guideline uid="a87db555-3e6a-4606-85f5-a34dbafb642a" modifier="standard" refUid="e97e223b-6e27-433d-aab7-703261f7c717" refId="na_0032" refVersion="1" refTitle="Use of Merge Blocks">
+          <check uid="84bfbd8a-7dd9-45ee-8cc7-9213b292ce95" selectedForRun="true" refUid="68d12632-3430-4e1d-b588-9407d7276123" refId="mcheck_na_0032_a" refVersion="1" refTitle="Use of Merge Blocks - Identical Buses"/>
+          <check uid="8748d6dc-6ed8-4ec2-8492-5fec3e0a4db2" selectedForRun="true" refUid="ec5354ef-bdb5-4312-8036-38d38cb6060e" refId="mcheck_na_0032_b" refVersion="1" refTitle="Use of Merge Blocks - Signals Entering Merge Block"/>
+        </guideline>
+        <guideline uid="feaab4b3-2dc5-4a27-99a9-44f8776f34c1" modifier="standard" refUid="f78c6b8c-1549-48f2-a894-e258d7d0780a" refId="jm_0010" refVersion="1" refTitle="Port Block Names in Simulink Models">
+          <check uid="76fd51dd-e6da-4dc5-8054-d9ee6207bfaa" selectedForRun="true" refUid="17eb648a-3b79-4f57-bb52-9f73766faae8" refId="mcheck_jm_0010_a" refVersion="1" refTitle="Signal Names of Inports and Outports of Stateflow Charts - Simulink Ports"/>
+          <check uid="a0363e97-8d89-4a28-9cc4-bb9a22954d8d" selectedForRun="true" refUid="a35f5639-7f24-45a6-bab2-f2e3ec3b41fa" refId="mcheck_jm_0010_b" refVersion="1" refTitle="Signal Names of Inports and Outports of Stateflow Charts - Stateflow Chart Ports"/>
+        </guideline>
+        <guideline uid="84513a67-8ac5-4840-a7f3-5bc82d80d692" modifier="standard" refUid="b58fb025-016a-479a-814e-bcc179ca5099" refId="jc_0281" refVersion="1" refTitle="Naming of Trigger Port Block and Enable Port Block">
+          <check uid="bf27415a-68c9-4856-81cd-e00a982b8d46" selectedForRun="true" refUid="d548d815-5bef-4fd2-b1e3-9442568d2d9e" refId="mcheck_jc_0281" refVersion="1" refTitle="Naming of Trigger Port Block and Enable Port Block"/>
+        </guideline>
+      </chapter>
+      <chapter uid="d8e7dcf7-ec46-478c-9d9b-08c0549b2f9c" title="Signals">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>Signals may be scalars, vectors, or buses. They may carry data or control flows.</p>
+<p>You use signal labels to make model functionality more understandable from the Simulink diagram. You can also use them to control the variable names used in simulation and code generation. Enter signal labels only once (at the point of signal origination). Often, you may also want to also display the signal name elsewhere in the model. In these cases, the signal name should be inherited until the signal is functionally transformed. (Passing a signal through an integrator is functionally transforming. Passing a signal through an Inport into a nested subsystem is not.) Once a named signal is functionally transformed, a new name should be associated with it.</p>
+<p>Unless explicitly stated otherwise, the following naming rules apply to all types of signals.</p>]]></value>
+        </description>
+        <guideline uid="aa5dd92c-cf67-44ea-ad6f-8db86fdb6b18" modifier="standard" refUid="c3146ec2-2ca9-4286-93a3-bffa63bfde62" refId="na_0008" refVersion="1" refTitle="Display of Labels on Signals">
+          <check uid="30f9f88e-f715-4481-8725-a58f44752603" selectedForRun="true" refUid="c5f32518-c88c-43ac-bcf2-95b816cbcaee" refId="mcheck_na_0008" refVersion="1" refTitle="Display of Labels on Signals"/>
+        </guideline>
+        <guideline uid="9409d340-e93a-4531-a215-eec249a0ce0a" modifier="standard" refUid="9cee64fe-6c26-41d8-b35b-ff5aecf52236" refId="na_0009" refVersion="1" refTitle="Entry versus Propagation of Signal Labels">
+          <check uid="0e45c7c0-6fd8-4958-b6df-cbcab2771015" selectedForRun="true" refUid="0174db32-bd7f-4aa6-9520-b3725ba4342d" refId="mcheck_na_0009" refVersion="1" refTitle="Entry versus Propagation of Signal Labels"/>
+        </guideline>
+        <guideline uid="23f9911b-e28a-4ec0-b183-63077f0c7711" modifier="standard" refUid="52781de1-655f-4107-912b-33cd6d691d45" refId="db_0097" refVersion="1" refTitle="Positions of Labels for Signals and Busses"/>
+        <guideline uid="2298bdba-fcdd-4ca7-a97b-b794b9b7ddfa" modifier="standard" refUid="d04e8a97-6509-4dd3-a623-c190d137e198" refId="db_0081" refVersion="1" refTitle="Unconnected signals and block inputs / outputs">
+          <check uid="35e75e56-72f2-4d14-a29a-a87b7a84f6f4" selectedForRun="true" refUid="1069b0a8-5cc7-49e0-afb8-325344515347" refId="mcheck_db_0081" refVersion="1" refTitle="Unconnected signals and block inputs / outputs"/>
+        </guideline>
+      </chapter>
+      <chapter uid="e00866df-b424-43e8-b10d-0c323fcd51ac" title="Block Usage">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="2bbdfedb-0406-48a6-89f4-19f1e09182da" modifier="standard" refUid="969edbbd-e4e0-4350-bb5d-5a297e70a06b" refId="na_0003" refVersion="1" refTitle="Simple Logical Expressions in If Condition Block">
+          <check uid="42d9a1d9-bc6f-4948-9a95-ab7c5fd3f7a4" selectedForRun="true" refUid="3ae7a0db-7655-4368-9c09-9d7efdf77c57" refId="mcheck_na_0003" refVersion="1" refTitle="Simple Logical Expressions in If Condition Block"/>
+        </guideline>
+        <guideline uid="87791326-3c35-4f40-8bec-5a90c37c6dab" modifier="standard" refUid="e82ce60b-b5e8-4412-8d70-ad3500e8aaef" refId="na_0002" refVersion="1" refTitle="Appropriate Implementation of Fundamental Logical and Numerical Operations">
+          <check uid="3094a97f-910c-4507-8b9f-aa67ea4a26ee" selectedForRun="true" refUid="29081d4f-ae9a-4f89-9cfa-c955daa698f6" refId="mcheck_na_0002" refVersion="1" refTitle="Appropriate Implementation of Fundamental Logical and Numerical Operations"/>
+        </guideline>
+        <guideline uid="0307e99f-f59e-4e5e-b00b-7aa3d8d1fe2b" modifier="standard" refUid="091957ea-5006-40ab-96a9-8f7225c51ff5" refId="jm_0001" refVersion="1" refTitle="Prohibited Simulink Standard Blocks Inside Controllers">
+          <check uid="34dd4ab4-535d-4824-bfa1-40868bdd8133" selectedForRun="true" refUid="7efdf5aa-88bb-43a2-9363-256dc9a44ebf" refId="mcheck_jm_0001" refVersion="1" refTitle="Prohibited Simulink Standard Blocks Inside Controllers"/>
+        </guideline>
+        <guideline uid="69cb7910-e1db-4633-b257-b8df1a90386a" modifier="standard" refUid="00c60bfe-f69a-4466-aee4-c64eebd37bcb" refId="hd_0001" refVersion="1" refTitle="Prohibited Simulink Sinks">
+          <check uid="b8c1c310-e30c-44a9-998d-842955b615c9" selectedForRun="true" refUid="2c012f85-3aff-4a0d-8d44-21820ed4d019" refId="mcheck_hd_0001" refVersion="1" refTitle="Prohibited Simulink Sinks"/>
+        </guideline>
+        <guideline uid="bdc19f02-33dc-4513-897c-2fca92979161" modifier="standard" refUid="5336831e-6826-4cca-8404-b78ee56df5b8" refId="na_0011" refVersion="1" refTitle="Scope of Goto and from Blocks">
+          <check uid="620a854f-4945-4566-b5b8-5e3d038d7cbd" selectedForRun="true" refUid="7e9be932-7a25-40b8-abea-fe5e1891223e" refId="mcheck_na_0011" refVersion="1" refTitle="Scope of Goto and from Blocks"/>
+        </guideline>
+        <guideline uid="d984eaa0-98ea-4b28-bb40-fac1f9b1003d" modifier="standard" refUid="5892a840-7afb-415a-b499-d11721311da0" refId="jc_0141" refVersion="1" refTitle="Use of the Switch Block">
+          <check uid="31e2d776-0166-4b74-9b0c-bc270d764951" selectedForRun="true" refUid="bace10d1-86f0-4711-94b8-0ab3ba79aa1d" refId="mcheck_jc_0141" refVersion="1" refTitle="Use of the Switch Block"/>
+        </guideline>
+        <guideline uid="b725c157-7c8c-4eb7-ad57-20bc31f0ded4" modifier="standard" refUid="6a0f757b-6237-4cb1-bf95-a1b0af0a23ec" refId="jc_0121" refVersion="1" refTitle="Use of the Sum Block">
+          <check uid="c6dda14a-da43-47d4-9e75-a9c795eccf4c" selectedForRun="true" refUid="949393b6-e450-44fd-ad53-0302da01d593" refId="mcheck_jc_0121" refVersion="1" refTitle="Use of the Sum Block"/>
+        </guideline>
+        <guideline uid="7cf40e68-e44a-4a90-8187-c7e00341b71b" modifier="standard" refUid="83706100-ab15-439b-9bb2-cd322f51d02b" refId="jc_0131" refVersion="1" refTitle="Use of Relational Operator Block">
+          <check uid="e988fa10-0a9f-4a52-b6ac-a361ea829b1f" selectedForRun="true" refUid="5fda925e-b98a-4d4a-a125-85a1a5739ed5" refId="mcheck_jc_0131" refVersion="1" refTitle="Use of Relational Operator Block"/>
+        </guideline>
+        <guideline uid="598b4ab1-8a38-425b-9f42-0a7eae2a30f1" modifier="standard" refUid="b6bda196-984c-4555-acf4-40d6042a2897" refId="jc_0161" refVersion="1" refTitle="Use of Data Store Read / Write / Memory Blocks"/>
+      </chapter>
+      <chapter uid="f2727a45-7857-4616-8fa8-eb0f9c58f0da" title="Block Parameters">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="1a480d84-555b-4108-9027-d2df5780d08a" modifier="standard" refUid="e49c4690-b755-4924-8712-68515d11e099" refId="db_0112" refVersion="2" refTitle="Indexing">
+          <check uid="272a629e-7116-42ed-ab8c-cbd141e337ec" selectedForRun="true" refUid="0668806f-0f80-4571-9fd1-7aed52e2e77e" refId="mcheck_db_0112" refVersion="1" refTitle="Indexing"/>
+        </guideline>
+        <guideline uid="d68ad78d-325f-42f8-ad58-7eac4ebc4f00" modifier="standard" refUid="5af63ef0-6840-466b-beb6-788e0ee37a6f" refId="na_0010" refVersion="1" refTitle="Grouping Data Flows Into Signals"/>
+        <guideline uid="26f152f2-a993-4cba-b045-de6047e33f62" modifier="standard" refUid="70efc672-a717-4c00-90c8-cea06c4cd239" refId="db_0110" refVersion="1" refTitle="Tunable Parameters in Basic Blocks">
+          <check uid="a4df15da-a3aa-4d01-aee9-1961d4469324" selectedForRun="true" refUid="7373a801-3da8-403a-91e1-ebf7c01fc823" refId="mcheck_db_0110" refVersion="1" refTitle="Tunable Parameters in Basic Blocks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="b2e98151-4548-4ed9-b801-62bfa6cb49b2" title="Simulink Patterns">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value>The following rules illustrate sample patterns used in Simulink diagrams. As such they would normally be part of a much larger Simulink diagram.</value>
+        </description>
+        <guideline uid="6770a265-0978-4bc9-95a8-8678fe21d961" modifier="standard" refUid="2a751b21-263b-42ef-9540-57a5c3f04c8f" refId="na_0012" refVersion="1" refTitle="Use of Switch vs. If-Then-Else Action Subsystem"/>
+        <guideline uid="4c94d6fd-8ac6-45dc-867f-3c0704f6ab56" modifier="standard" refUid="c25681f9-252d-4894-9753-b719e9d1fe58" refId="db_0114" refVersion="1" refTitle="Simulink Patterns for If-then-else-if Constructs"/>
+        <guideline uid="cbd377cd-bfa2-44c4-9bd4-3d1c32c7d7ed" modifier="standard" refUid="e34c87a6-a674-403d-ab0c-24c9ad37ea5a" refId="na_0028" refVersion="1" refTitle="Use of If-Then-Else Action Subsysten to Replace Multiple Switches">
+          <check uid="ae973716-32ff-47d6-b07e-f462752228d4" selectedForRun="true" refUid="993904af-5ea7-42fc-ae9f-cd2154c78b88" refId="mcheck_na_0028" refVersion="1" refTitle="Use of If-Then-Else Action Subsysten to Replace Multiple Switches"/>
+        </guideline>
+        <guideline uid="c19ef640-9cd2-4a37-9fbc-a25c3d82fbea" modifier="standard" refUid="95e6976b-67bc-489b-8012-cb31313cc52e" refId="db_0115" refVersion="1" refTitle="Simulink Patterns for Case Constructs">
+          <check uid="caeafd6d-2b52-40c2-9567-7a011fb80a8e" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+        </guideline>
+        <guideline uid="6f31e701-fd85-43df-87af-3e74c961226b" modifier="standard" refUid="9cf1c5bf-92ca-45e7-b4de-3be323fde930" refId="db_0116" refVersion="1" refTitle="Simulink Patterns for Logical Constructs with Logical Blocks">
+          <check uid="b959ab00-04ac-4fad-bf62-d8a35c80e051" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+        </guideline>
+        <guideline uid="5871ad70-91fa-4501-8f0f-87731126ce3a" modifier="standard" refUid="0c0c4027-39d4-43a4-91a7-589c7c78bfe0" refId="db_0117" refVersion="1" refTitle="Simulink Patterns for Vector Signals"/>
+        <guideline uid="7ae11a0e-134d-453b-a295-f99a536b57bf" modifier="standard" refUid="cc79b1d1-c73a-4c3e-b71b-e9ddfcf3b535" refId="jc_0351" refVersion="1" refTitle="Methods of Initialization"/>
+        <guideline uid="b0149ca0-c917-4789-bde3-08b819d947f6" modifier="standard" refUid="7fc06542-8278-4684-8a5e-2a65fe0f9aa3" refId="jc_0111" refVersion="1" refTitle="Direction of Subsystem">
+          <check uid="e986103a-7f61-4ac0-a163-db24caf81047" selectedForRun="true" refUid="d89f6850-9c82-4544-b962-3b05136bab8d" refId="mcheck_jc_0111" refVersion="1" refTitle="Direction of Subsystem"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="5b714f1c-370a-4900-9eb5-7a3bf24382aa" title="Stateflow">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="130a14ad-3604-463e-9fd1-8680a2104d17" title="Chart Appearance">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="9574e6d4-b06e-4466-b061-c58aedcfef5b" modifier="standard" refUid="3671302e-e793-4235-bab6-f957b0ebea49" refId="db_0123" refVersion="1" refTitle="Stateflow port names">
+          <check uid="faf249e1-464e-43f6-8e5a-491a33c28e41" selectedForRun="true" refUid="37c65d1d-bb0d-44a6-99f4-f3d7c4bca3c3" refId="mcheck_db_0123" refVersion="1" refTitle="Stateflow port names"/>
+        </guideline>
+        <guideline uid="cb4fbe42-cf3f-4e32-976a-f87b1e98c5a7" modifier="standard" refUid="6af6c419-b307-41fe-9ec1-1234da4cd93b" refId="db_0129" refVersion="1" refTitle="Stateflow Transition Appearance">
+          <check uid="bf84c7cf-4852-47bb-9f46-5cd4c011bb86" selectedForRun="true" refUid="e3a58e3c-c241-403f-822f-e1a2caa56173" refId="mcheck_db_0129_a" refVersion="1" refTitle="Stateflow Transition Appearance - Overlaps"/>
+          <check uid="b16885e0-53a2-4420-a434-c3c91317c9ed" selectedForRun="true" refUid="93a3db34-fe95-41f8-aea2-689fb5a71bd2" refId="mcheck_db_0129_b" refVersion="1" refTitle="Stateflow Transition Appearance - Crossings"/>
+          <check uid="a7a8d529-2eec-4885-8fa4-01aeccfc65b8" selectedForRun="true" refUid="0308b3f3-69f0-48d8-ac00-1db87435c51f" refId="mcheck_db_0129_c" refVersion="1" refTitle="Stateflow Transition Appearance - Associated Labels"/>
+        </guideline>
+        <guideline uid="fed144b9-3a5d-48dd-8681-679f867c1e0e" modifier="standard" refUid="453f26c4-7bea-4350-87e4-bbc306c0b396" refId="db_0137" refVersion="1" refTitle="States in State Machines">
+          <check uid="b2e614ea-fc8b-4663-bc99-163d00f1e759" selectedForRun="true" refUid="c6aeb570-654e-4d13-ab01-5733226d8a41" refId="mcheck_db_0137" refVersion="1" refTitle="States in State Machines"/>
+        </guideline>
+        <guideline uid="b376e85f-dafb-4e41-a49b-fd24308c1832" modifier="standard" refUid="9734d5f0-3b64-4666-a248-118ffa40af08" refId="db_0133" refVersion="1" refTitle="Use of Patterns for Flowcharts"/>
+        <guideline uid="ae34e75c-517e-4f56-9841-03856178cba4" modifier="standard" refUid="870de783-f91c-4fc3-b2a2-e7b6957ca3e1" refId="db_0132" refVersion="1" refTitle="Transitions in Flowcharts"/>
+        <guideline uid="ad646b2d-b9a5-4ccd-822b-c6f923d9ecf9" modifier="standard" refUid="ec3c753e-3c46-4e56-ba3a-32a24790f7cb" refId="jc_0501" refVersion="1" refTitle="Format of Entries in a State Block">
+          <check uid="eedf0c26-4de4-46bf-badf-375e99160f7f" selectedForRun="true" refUid="aeee0a93-b56f-4d81-9416-1b36a70bd395" refId="mcheck_jc_0501" refVersion="1" refTitle="Format of Entries in a State Block"/>
+        </guideline>
+        <guideline uid="07d152a5-51b1-4ee6-9468-3cb4e06a945b" modifier="standard" refUid="20ecf149-f6b3-4f33-b391-5c7955438ffa" refId="jc_0511" refVersion="1" refTitle="Setting the Return Value from a Graphical Function">
+          <check uid="ff8677ad-ff7f-4e3a-aa45-e3561401815b" selectedForRun="true" refUid="3eb02451-a203-42ce-9612-3e8d2bcc3b9d" refId="mcheck_jc_0511" refVersion="1" refTitle="Setting the Return Value from a Graphical Function"/>
+        </guideline>
+        <guideline uid="3df17f3e-c00f-40da-ad23-1ba0dac53689" modifier="standard" refUid="18b9ec0b-4940-4fdd-8c6f-f3e03c58808d" refId="jc_0531" refVersion="1" refTitle="Placement of the Default Transition">
+          <check uid="151c5d57-96ae-4c35-8a4f-529b25de835e" selectedForRun="true" refUid="f04b5b80-6f44-4363-8a66-365eb1757d31" refId="mcheck_jc_0531" refVersion="1" refTitle="Placement of the Default Transition"/>
+        </guideline>
+        <guideline uid="0f69e5e6-2202-429e-b850-1cdf49ada618" modifier="standard" refUid="a9dc2a48-8a09-481d-83d0-62a83a227262" refId="jc_0521" refVersion="1" refTitle="Use of the Return Value from Graphical Functions">
+          <check uid="dadd3620-ba6e-4826-be4e-cb467a935335" selectedForRun="true" refUid="739851cf-0dfd-4a77-86b9-fd3707ca16e6" refId="mcheck_jc_0521" refVersion="1" refTitle="Use of the Return Value from Graphical Functions"/>
+        </guideline>
+      </chapter>
+      <chapter uid="24442e5d-5341-4920-9c9f-5b96c02809cd" title="Stateflow data and operations">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="9e8a81a5-97a2-46fb-9b0c-2f8bf1497cc4" modifier="standard" refUid="013ec052-c1ba-444d-a58e-0d03d94ff013" refId="na_0001" refVersion="1" refTitle="Bitwise Stateflow Operators">
+          <check uid="65c97719-348b-4889-bc1b-55bb85bc4cf0" selectedForRun="true" refUid="249d15ad-c680-4f81-90c9-ae4c6c04d90d" refId="mcheck_na_0001" refVersion="1" refTitle="Bitwise Stateflow Operators"/>
+        </guideline>
+        <guideline uid="58a57140-c055-4b3d-b45d-ab16dcd967ea" modifier="standard" refUid="77159c74-bb10-4cfe-b315-9f5ee308ae7f" refId="jc_0451" refVersion="1" refTitle="Use of Unary Minus on Unsigned Integers in Stateflow">
+          <check uid="de5df568-5cc4-4d74-8530-0c73b9c07c63" selectedForRun="true" refUid="9de9a30b-b56d-48a8-9c6d-2573df05ebf2" refId="mcheck_jc_0451" refVersion="1" refTitle="Use of Unary Minus on Unsigned Integers in Stateflow"/>
+        </guideline>
+        <guideline uid="eefd54d2-d4a8-4bd8-8cca-4ef2db1245b5" modifier="standard" refUid="43840e3b-8a51-4ff0-a55a-6369043aefa6" refId="na_0013" refVersion="1" refTitle="Comparison Operation in Stateflow">
+          <check uid="da182299-f54d-4b06-b423-0135113ee168" selectedForRun="true" refUid="d0aca577-2f33-4acf-8e5c-0cfa75dc7121" refId="mcheck_na_0013" refVersion="1" refTitle="Comparison Operation in Stateflow"/>
+        </guideline>
+        <guideline uid="fd15e7e7-d775-466d-94aa-f816f7961922" modifier="standard" refUid="eb3da481-b25f-4f67-9503-8eb695451167" refId="db_0122" refVersion="1" refTitle="Stateflow/Simulink Interface Signals and Parameters">
+          <check uid="405484a1-064e-4658-8ac4-f834d86c29a7" selectedForRun="true" refUid="49f6eabc-b59c-40f4-90f7-8fba896dd457" refId="mcheck_db_0122" refVersion="1" refTitle="Stateflow/Simulink interface signals and parameters"/>
+        </guideline>
+        <guideline uid="a07edde6-5610-4485-acb1-c94fd6bbc97d" modifier="standard" refUid="e90048b1-7fea-42ef-a777-3bfd8bb8fd88" refId="db_0125" refVersion="1" refTitle="Scope of Internal Signals and Local Auxiliary Variables">
+          <check uid="45c92eb2-50dd-4ce4-8f1e-420344e7679a" selectedForRun="true" refUid="6d3a3fb6-5c70-4118-aecf-8ce18e5ecab3" refId="mcheck_db_0125" refVersion="1" refTitle="Scope of Internal Signals and Local Auxiliary Variables"/>
+        </guideline>
+        <guideline uid="9dc8705f-260c-4e34-99ec-39ddb1b431c5" modifier="standard" refUid="6e4583c5-e53c-47be-946e-9e199138a1b7" refId="jc_0481" refVersion="1" refTitle="Use of Hard Equality Comparisons for Floating Point Numbers in Stateflow">
+          <check uid="5882e257-86bb-4e24-acc9-8ad696983a86" selectedForRun="true" refUid="29c76b77-a988-4d1e-bed1-6b8d4c4be1e0" refId="mcheck_jc_0481" refVersion="1" refTitle="Use of Hard Equality Comparisons for Floating Point Numbers in Stateflow"/>
+        </guideline>
+        <guideline uid="0cfad86e-6637-41ac-924c-8c2d882b281e" modifier="standard" refUid="355a37fd-9e84-4221-9e14-e9e29d14c5c6" refId="jc_0491" refVersion="1" refTitle="Reuse of Variables within a Single Stateflow Scope"/>
+        <guideline uid="145dfc8e-0f51-4b3b-9eac-2c26061691af" modifier="standard" refUid="4af5bd33-bf95-480d-9752-f8917f23c464" refId="jc_0541" refVersion="1" refTitle="Use of Tunable Parameters in Stateflow">
+          <check uid="361d94f9-39ff-44c5-a058-9e6cd84ac25e" selectedForRun="true" refUid="a90b58b5-9370-4c5b-bae7-3c26d6cf493d" refId="mcheck_jc_0541" refVersion="1" refTitle="Use of Tunable Parameters in Stateflow"/>
+        </guideline>
+        <guideline uid="81ae4544-6d27-43a3-ab9d-73be9d392de8" modifier="standard" refUid="d36d1e19-fc91-4420-b909-384755031b16" refId="db_0127" refVersion="1" refTitle="Matlab Specific Commands in Stateflow">
+          <check uid="2615ec61-8539-40b6-8eb7-a87cb8e1ed0f" selectedForRun="true" refUid="892bb660-2de6-45ee-99f7-ff8641c1a8f3" refId="mcheck_db_0127" refVersion="1" refTitle="Matlab Specific Commands in Stateflow"/>
+        </guideline>
+        <guideline uid="e5d84da9-8087-4181-9a9a-227c9d7aa8d7" modifier="standard" refUid="3b039ed5-61c7-4454-8f37-1d23b4ad8f23" refId="jm_0011" refVersion="1" refTitle="Pointers in Stateflow">
+          <check uid="4f716c7b-8423-478c-ade1-ba2f428217bd" selectedForRun="true" refUid="baf2f4da-9408-4412-98ee-bb80b02e2d48" refId="mcheck_jm_0011" refVersion="1" refTitle="Pointers in Stateflow"/>
+        </guideline>
+      </chapter>
+      <chapter uid="33844d8d-a9f4-4f70-89d8-20e8d097ace4" title="Events">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="18300c67-24e1-456e-b547-10893999f225" modifier="standard" refUid="1a05a16f-3d69-45d9-96d0-4b785a9b2173" refId="db_0126" refVersion="1" refTitle="Scope of Events">
+          <check uid="7b73d774-cbc8-4b69-ad3a-6fc3a62bc9e5" selectedForRun="true" refUid="f9a89aa3-4cf2-4a7f-b245-4ef13ff68ed2" refId="mcheck_db_0126" refVersion="1" refTitle="Scope of Events"/>
+        </guideline>
+        <guideline uid="bef2a8a9-7961-4d3b-a6e9-3a773eeb2f11" modifier="standard" refUid="970e7b95-a91b-43fa-bba4-1b2ddb909949" refId="jm_0012" refVersion="1" refTitle="Event Broadcasts">
+          <check uid="adb0ac21-db7e-416a-bb6a-c2565d5c11b0" selectedForRun="true" refUid="c309925a-aad8-442f-a4c7-65f4ddba72c9" refId="mcheck_jm_0012" refVersion="1" refTitle="Event Broadcasts"/>
+        </guideline>
+      </chapter>
+      <chapter uid="6b7edbc1-c1cc-4233-bf7d-051b58e9e19c" title="Statechart Patterns">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="761f6ca6-e07c-4aaa-86d9-1d9364efd31b" modifier="standard" refUid="e1e8605e-fd64-4b42-8dd9-5a9955f0e443" refId="db_0150" refVersion="1" refTitle="State Machine Patterns for Conditions"/>
+        <guideline uid="954a45c4-2d63-4855-b420-84207910febf" modifier="standard" refUid="8b590618-39d5-4ea2-bada-b4af762b2c28" refId="db_0151" refVersion="1" refTitle="State Machine Patterns for Transition Actions">
+          <check uid="82a99d02-ffc8-43a0-b2e9-4f4e9f00291a" selectedForRun="true" refUid="71d19b33-a9f2-4715-b823-7fc12ce3fa27" refId="mcheck_db_0151" refVersion="1" refTitle="State Machine Patterns for Transition Actions"/>
+        </guideline>
+      </chapter>
+      <chapter uid="9b609fce-71ae-4998-849a-9475d5215ebb" title="Flowchart Patterns">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value>The following rules illustrate sample patterns used in flow charts. As such they would normally be part of a much larger Stateflow diagram.</value>
+        </description>
+        <guideline uid="2ee12cbf-5bd4-4357-9c16-403b77a635d4" modifier="standard" refUid="8869520a-8be8-4f4b-a399-3a31cd45dc59" refId="db_0148" refVersion="1" refTitle="Flowchart Patterns for Conditions"/>
+        <guideline uid="61401d8d-1519-4fe6-a18c-b5e6a9b19442" modifier="standard" refUid="66f13456-57e9-4e51-bbb1-ff55434b6609" refId="db_0149" refVersion="1" refTitle="Flowchart Patterns for Condition Actions"/>
+        <guideline uid="2280d5db-c52e-4655-a7b3-406de688c3fc" modifier="standard" refUid="8cf00e43-cecd-40e7-8008-069e4536ca79" refId="db_0134" refVersion="1" refTitle="Flowchart Patterns for If Constructs"/>
+        <guideline uid="4f196794-afe4-49c2-b41a-3fa36953e33c" modifier="standard" refUid="ae6db032-df4e-475c-b7c7-d853fd025419" refId="db_0159" refVersion="1" refTitle="Flowchart Patterns for Case Constructs"/>
+        <guideline uid="4a2c6b83-6ade-4c60-8e85-33aeb502d51c" modifier="standard" refUid="0d0c8934-c46c-457f-87c7-8d78257b3cdd" refId="db_0135" refVersion="1" refTitle="Flowchart Patterns for Loop Constructs"/>
+      </chapter>
+      <chapter uid="a1f286c1-9e49-4065-a84d-96ee4c808588" title="State Chart Architecture">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="bc48b064-e741-410d-8704-3f8dbfba3c0b" modifier="standard" refUid="fae11356-2288-481d-9e9d-f42ca4296fc8" refId="na_0038" refVersion="1" refTitle="Levels in Stateflow Charts">
+          <check uid="cccb1bbd-ab62-4d0a-b276-615741f9e3ce" selectedForRun="true" refUid="53501fcb-c096-4a8b-b76b-917ec7d1cd51" refId="mcheck_na_0038" refVersion="1" refTitle="Levels in Stateflow Charts"/>
+        </guideline>
+        <guideline uid="7c8428b1-773f-4e5e-9748-7c30d55d578d" modifier="standard" refUid="5674fdee-4722-4436-994f-765ea44f6990" refId="na_0039" refVersion="1" refTitle="Use of Simulink in Stateflow Charts">
+          <check uid="e60e8452-7013-4f5d-b316-1fef8de01c19" selectedForRun="true" refUid="37fa594c-1326-45af-9b86-42b24f9e7f0f" refId="mcheck_na_0039" refVersion="1" refTitle="Use of Simulink in Stateflow Charts"/>
+        </guideline>
+        <guideline uid="0079cb8e-1a9d-4b45-876b-e61a6e63a527" modifier="standard" refUid="d08174ad-f53f-45f6-aa97-11c34d069b2d" refId="na_0040" refVersion="1" refTitle="Number of States Per Container">
+          <check uid="b8dc6679-9540-471c-99cc-834ad6651284" selectedForRun="true" refUid="ed778bbc-b067-488e-af4d-ad1f83e628b0" refId="mcheck_na_0040" refVersion="1" refTitle="Number of States Per Container"/>
+        </guideline>
+        <guideline uid="be55bab1-af03-447f-9329-8c67f72174a7" modifier="standard" refUid="ccb0ac62-dae8-41d4-8404-7d4723d57a94" refId="na_0041" refVersion="1" refTitle="Selection of Function Type"/>
+        <guideline uid="5744dc54-50b2-4d04-b09c-c448119dc29f" modifier="standard" refUid="ee8b4975-6d9a-4563-8cac-083cc8d4b2d1" refId="na_0042" refVersion="1" refTitle="Location of Simulink Functions">
+          <check uid="2a4df052-7b7f-4ed3-b8e2-d2c1abfa7d80" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="1d5ecbfd-3f2a-41e3-a0e1-b57c5c3eb336" title="Enumerated Data">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <guideline uid="a95ff182-83b9-4f61-9833-262091c8ce15" modifier="standard" refUid="a35dbf0b-e5b9-41f2-9dd9-ae1de749959b" refId="na_0033" refVersion="1" refTitle="Enumerated Types Usage"/>
+      <guideline uid="2ae0487d-a7b7-47ad-b90c-1c0c7bab90b0" modifier="standard" refUid="8b785317-c722-4026-a81d-4bbe6a963542" refId="na_0031" refVersion="1" refTitle="Definition of Default Enumerated Value"/>
+    </chapter>
+    <chapter uid="67d2b2ce-5532-43ac-85c5-d8b9f2654c39" title="MATLAB Functions">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <chapter uid="3e03a675-62cd-45dd-acf5-2a6dfa6b4d08" title="MATLAB Function Appearance">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="88042163-b627-4e41-90ec-edc5a935eda5" modifier="standard" refUid="121407bc-6e55-4d90-b864-a210329854c8" refId="na_0018" refVersion="1" refTitle="Number of Nested If/else and Case Statement">
+          <check uid="3d9b1ed4-2214-475b-a40b-c83e41a1bec5" selectedForRun="true" refUid="bda929a4-8eec-4276-a9bf-96a650d3fc04" refId="mcheck_na_0018" refVersion="1" refTitle="Number of Nested If/else and Case Statement"/>
+        </guideline>
+        <guideline uid="01646644-b0a4-491d-b34c-1132b09e0b45" modifier="standard" refUid="61cfc39d-fdf4-4dd0-b36d-b260c183c8d2" refId="na_0019" refVersion="1" refTitle="Restricted Variable Names">
+          <check uid="9b1b36ff-0ed4-4fdb-a70a-41641713af9a" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="0ff4aa98-0b46-4669-8aad-0c9b168780c0" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+        <guideline uid="12c7dffc-2d4e-47c4-9611-8fca3b45e383" modifier="standard" refUid="6bf9d633-b3a8-48fc-aaba-abe227717e9c" refId="na_0025" refVersion="1" refTitle="MATLAB Function Header">
+          <check uid="2922b782-ff48-46be-82cb-4ee143b50857" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="c2440157-1a81-4a2a-87c2-db26a4f23683" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+      </chapter>
+      <chapter uid="d71994d9-4d21-4806-9070-a264b881c7f0" title="MATLAB Function Data and Operations">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="a1d75a2a-591d-4ea8-b29a-ff8bd22cf96e" modifier="standard" refUid="eba7dc52-8cc9-410a-a3f8-684a4aa722fb" refId="na_0034" refVersion="1" refTitle="MATLAB Function Block Input/Output Settings">
+          <check uid="831e15ca-fb30-4fb8-9ce8-c019911d1c5b" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="ccabef9e-4ec7-4967-91ee-3c25b26d2b3a" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+        <guideline uid="5eea1437-7318-4636-9b45-dd9c67ab77d0" modifier="standard" refUid="6f6d0b31-b9e9-4b8e-ac14-adf2f6795718" refId="na_0024" refVersion="1" refTitle="Global Variables"/>
+      </chapter>
+      <chapter uid="f2563f7d-56ee-4bcd-9e0d-762d431818f3" title="MATLAB Function Patterns">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="ad558590-d1d0-4809-96e2-c6d6725afee4" modifier="standard" refUid="aa8b97af-217a-4421-9b7f-d242d5e3cb39" refId="na_0022" refVersion="1" refTitle="Recommended Patterns for Switch/Case Statements">
+          <check uid="759c8fb2-5221-4f38-b198-25f6f76abdfa" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="6edbed84-573f-4cd4-872f-7707bed016e2" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+      </chapter>
+      <chapter uid="00b3c4c3-2be7-4001-8981-3f92a6eb8dd7" title="MATLAB Function Usage">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="e60f92b5-a876-4425-a6a9-e58cf104df51" modifier="standard" refUid="0bf68b22-4200-412f-b181-c14caaaafd02" refId="na_0016" refVersion="1" refTitle="Source Lines of MATLAB Functions">
+          <check uid="344ccd6a-1ea6-4efd-b837-b846c38704a3" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="261910ea-f5b1-408a-bc24-771f47de14a4" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+        <guideline uid="3ae3afaf-f61b-49d0-9054-072a407174af" modifier="standard" refUid="93dcba95-25c0-495d-bf92-18372e86498c" refId="na_0017" refVersion="1" refTitle="Number of Called Function Levels">
+          <check uid="08a89671-e469-48f3-8279-544c3715b649" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="ac41828a-d047-451b-9827-aaeacd7b2018" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+        <guideline uid="9ee18ae8-54ed-43ad-a250-9873aaeaa58c" modifier="standard" refUid="15e656b4-92db-4ffc-bb5e-0de2d51637f6" refId="na_0021" refVersion="1" refTitle="Strings">
+          <check uid="926d899e-4347-4cef-a2fc-e03b5c03c04d" selectedForRun="true" refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refVersion="1" refTitle="Generic Review Check for Simulink Blocks"/>
+          <check uid="54dbec13-964e-4fc3-8a81-775c4cd7bcf0" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+        </guideline>
+      </chapter>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="10/11/2013 13:41:13">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

@@ -1,0 +1,110 @@
+<check fileVersion="2">
+  <uid>22b6e970-a973-4824-936b-03539f528bf4</uid>
+  <id>mcheck_jc_0221</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Usable Characters for Signal Line Names</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_jc_0221.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each signal line of the model that is not a bus signal.
+<br /> 
+<ul> 
+ <li> Failed 1: The name contains consecutive underscores. </li> 
+ <li> Failed 2: The name contains blanks or carriage returns. </li> 
+ <li> Failed 3: The name contains other non-allowed characters. </li> 
+ <li> Failed 4: The name starts with an underscore or a digit. </li> 
+ <li> Failed 5: The name ends with an underscore. </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[It is possible that consecutive underscores are produced during fixing even though the original name does not contain consecutive underscores. This is fixed as well and, in this case, the fix action produces the message:
+<br /> 'Fixed: Consecutive underscores have been reduced to '_' .'
+<br /> Furthermore, if the repair actions result in an inadmissible name the fix is aborted and the name is restored. The user is then informed of this action.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Consider renaming the signal line name according to the guideline.
+<br /> 
+<ul> 
+ <li> Solution 1: Replace unnecessary consecutive underscores. </li> 
+ <li> Solution 2: Remove blanks and/or carriage returns. </li> 
+ <li> Solution 3: Replace or remove non-allowed characters. </li> 
+ <li> Solution 4: Start the name with an allowed character. </li> 
+ <li> Solution 5: End the name with an allowed character. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<ul> 
+ <li> Repair Action 1: Consecutive underscores are reduced to a single underscore. </li> 
+ <li> Repair Action 2: A blank or carriage return is replaced by an underscore. </li> 
+ <li> Repair Action 3: A prohibited character is replaced by an underscore. </li> 
+ <li> Repair Action 4: Nonconforming first characters are deleted. </li> 
+ <li> Repair Action 5: Nonconforming last characters are deleted. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="06/07/2016 16:46:26">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,668 @@
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\001_CM] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\002_Specification] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\003_Testing] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\004_UserDocs\Help] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\005_ReleaseNotes] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\006_ToolQualification] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\007_Extensions] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\008_ReportTemplates] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\Help] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\AR_Interface_VCa_PF] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\BTC_scripts] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_cfg] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_plugin] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_private] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+PID=26036
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Controls\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Dialogs\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Extras\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLi...'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e0e5e093-1ad6-417e-b4f8-0d90c871413c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e0e5e093-1ad6-417e-b4f8-0d90c871413c'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLi...'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '78b59eb4-a916-44cc-9102-a26c4a130135'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=78b59eb4-a916-44cc-9102-a26c4a130135'
+
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Berechnung Drehzahlen
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Berechnung Funktionsqualifier
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Ersatzwertbildung_qual
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Ersatzwertbildung_sig
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '78b59eb4-a916-44cc-9102-a26c4a130135'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05_MXA...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05...'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'cf3e1238-83b9-4073-932b-0093eb7a45a1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=cf3e1238-83b9-4073-932b-0093eb7a45a1'
+
+Autodoc Block must be added to the subsystem!
+CheckQualX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'cf3e1238-83b9-4073-932b-0093eb7a45a1'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05_MXAM_Re...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSli...'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd540b4e5-e0c1-43f9-9d6b-1250175f0255'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d540b4e5-e0c1-43f9-9d6b-1250175f0255'
+
+Autodoc Block must be added to the subsystem!
+ControlSlipX05
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK/Abschaltung_Momentenpfad/Abschaltung_Bei_Passivierung
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK/Abschaltung_Momentenpfad1/Abschaltung_Bei_Passivierung
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Preproc/Regleraktivierung/Schub
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Preproc/Regleraktivierung/Zug
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Regler/PID
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd540b4e5-e0c1-43f9-9d6b-1250175f0255'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05_MXA...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradCo...'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f2c86c61-e1b6-48cd-b51e-0131f28e8593'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f2c86c61-e1b6-48cd-b51e-0131f28e8593'
+
+Autodoc Block must be added to the subsystem!
+DegradConceptX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f2c86c61-e1b6-48cd-b51e-0131f28e8593'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b24b8db6-b644-4060-bde5-ff27b34c31b2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b24b8db6-b644-4060-bde5-ff27b34c31b2'
+
+Autodoc Block must be added to the subsystem!
+InputX05
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX1/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX2/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX3/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_ConfigCtrlLongTrqDistribution/Auswertung_Signaltyp_1a_4Ns
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_RequestLongitudinalTrqDistribution/Auswertung_Signaltyp_1a_2Ns
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_RequestRPMFrontaxleBackaxle/Auswertung_Signaltyp_1a_4Ns
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b24b8db6-b644-4060-bde5-ff27b34c31b2'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0884811e-7724-4520-8d97-b78ccea8f157'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0884811e-7724-4520-8d97-b78ccea8f157'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0884811e-7724-4520-8d97-b78ccea8f157'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3dc2ff9d-4f61-466e-97a2-cb93ca1dc29c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3dc2ff9d-4f61-466e-97a2-cb93ca1dc29c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3dc2ff9d-4f61-466e-97a2-cb93ca1dc29c'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '32f1efd3-ccfb-4db4-a294-2932cf8a25e1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=32f1efd3-ccfb-4db4-a294-2932cf8a25e1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '32f1efd3-ccfb-4db4-a294-2932cf8a25e1'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05_MXAM_Repo...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bf9ab9cc-f41f-4779-b952-d4b4417ae9bb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=bf9ab9cc-f41f-4779-b952-d4b4417ae9bb'
+
+Autodoc Block must be added to the subsystem!
+StatCtrlX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bf9ab9cc-f41f-4779-b952-d4b4417ae9bb'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05_MXAM_Repo...'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

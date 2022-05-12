@@ -1,0 +1,20 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.4p0 				05-Apr-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1         12-Oct-2015 okay
+DSDD             Data Dictionary                            4.1         12-Oct-2015 okay
+========================================================================================
+
+PID=275392
+done

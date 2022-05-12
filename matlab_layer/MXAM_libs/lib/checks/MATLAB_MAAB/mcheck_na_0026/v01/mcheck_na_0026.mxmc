@@ -1,0 +1,104 @@
+<check fileVersion="2">
+  <uid>0e05bea5-1096-4622-a4ec-e077f2222396</uid>
+  <id>mcheck_na_0026</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Consistent Software Environment</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_na_0026.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A pass is given, if
+<br /> - the used Matlab Version is equal to the one given in parameter
+<br /> MAAB.na_0026.MatlabVersion
+<br /> - the used TargetLink Version is equal to the one given in parameter
+<br /> MAAB.na_0026.TargetLinkVersion
+<br /> 
+<br /> If a parameter is empty, a pass is without checking corresponding
+<br /> software.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- It is not necessary to check for Simulink version as this one corresponds
+<br /> to the MATLAB version.
+<br /> - Guideline indicates to check version number of C Compiler. This has to
+<br /> be done manually.
+<br /> - 'Checked blocks' in 'Statistics' corresponds to checked software
+<br /> components.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Use advised Software versions.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.na_0026.MatlabVersion</name>
+      <description>Allowed MATLAB version.</description>
+      <defaultValue><![CDATA['dc']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.na_0026.TargetLinkVersion</name>
+      <description>Allowed TargetLink version.</description>
+      <defaultValue><![CDATA['dc']]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,135 @@
+<guideline fileVersion="2">
+  <uid>14190f22-e136-40f5-ba53-97db78d6bf62</uid>
+  <id>ds_0139</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Function Calls in Logical Expressions</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 14.4), dSPACE 3.0 (section 14.4)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>Situations should be avoided in which optimized (erased) block output variables lead to the appearance of function calls as second operands in logical expressions.</p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>Adherence to this rule makes sure that the generated code complies with MISRA rules 33 and 46. MISRA rule 33 requires that the second operand in a logical expression is side-effect free. However, if a block output variable is erased through optimization, leading to a function call appearing as second operand in a logical expression, MISRA rule 33 is violated. This also violates MISRA rule 46, requiring that the execution order of an expression must be irrelevant.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p>For the model in Figure ds_0139-1: TargetLink generates a look-up table call, whose result is compared to the constant <em>1</em>. The result is used in a logical operation. Using a <em>default</em> variable class for the output of the <em>Look-up Table</em> block, see Figure ds_0139-2: the following code is generated:</p>
+<p class="codeSample">Sa1_OutPort = Sa1_InPort &amp;&amp;(((Int16)Tab1DS0I2T1563_a(&amp;(Sa1_Look_Up_Table_map), (Int8) Sa1_InPort1)) &gt; 1 /* 1. */);</p>
+<p>Obviously, the function call <em>Tab1DS0I2T1563_a</em>, which is generated for the <em>Look-up Table</em>, appears as a second operand in the logical operation.</p>
+<p><img src="ds_0139_1.png" /></p>
+<p class="imageCaption">Figure ds_0139-1: Example model with a <em>Look-up Table</em> block, whose output is evaluated in a subsequent relational and logical expression.</p>
+<p><img src="ds_0139_2.png" /></p>
+<p class="imageCaption">Figure ds_0139-2: A <em>default</em> variable class is used at the output of the <em>Look-Up Table</em> block. As a consequence the variable is erasable during code optimization.</p>
+<p>However, if a non-optimizable variable class like <em>NOPT_LOCAL</em> is used, see Figure ds_0139-3: the following code is generated.</p>
+<p class="codeSample">Sa1_Look_Up_Table = (Int16) Tab1DS0I2T1563_a(&amp;(Sa1_Look_Up_Table_map), (Int8) Sa1_InPort1); Sa1_OutPort = Sa1_InPort &amp;&amp; (Sa1_Look_Up_Table &gt; 1 /* 1. */);</p>
+<p>This code fragment violates neither MISRA rule 33 nor MISRA rule 46.</p>
+<p><img src="ds_0139_3.png" /></p>
+<p class="imageCaption">Figure ds_0139-3: The specification of a non-erasable variable class for the output of the <em>Look-up table</em> block.</p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

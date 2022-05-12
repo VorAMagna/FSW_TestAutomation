@@ -1,0 +1,142 @@
+<guideline fileVersion="2">
+  <uid>86bdef6b-ca1c-43ae-9c6e-39080f3f070d</uid>
+  <id>misra_tl_2_2</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MIRA Limited, 2007</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoiding Identical Identifier Names</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MISRA AC TL 1.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> do not use identical names for identifiers </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Identical names for identifiers (variables, types etc.) should be avoided even if the names do not overlap. The default name macro &quot;$S_$B&quot; can be used to ensure that unique names are generated for block outputs. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value><![CDATA[The model in Figure misra_tl_2_2-1: contains two independent subsystems that both contain a Gain block that is named &quot;Gain&quot;, see Figure misra_tl_2_2-2. The output variables of the Gain blocks are both local, each using the name macro $B, see Figure misra_tl_2_2-3. If code is generated for this model, two functions are created, each with a local variable called Gain. This violates MISRA C rule 5.6.]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> TargetLink does not check whether identifiers in independent namespaces have identical names (violates rule 5.6) and in some circumstances, whether identifiers in an inner scope hide identifiers with identical names in an outer scope (violates rule 5.2). </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="MISRA_TL_R_2_2_Fig_1.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_2_2-1: Example model with two independent subsystems. </p>
+<p> <img src="MISRA_TL_R_2_2_Fig_2.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_2_2-2: A <em>Gain</em> block is contained in each of the two subsystems. </p>
+<p> <img style="width: 489px; height: 392px;" src="MISRA_TL_R_2_2_Fig_3.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_2_2-3: Use of the name macro $B for the output variable of the Gain block. As a consequence, the variable inherits its name Gain from the block. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Review all identifiers (variables, types etc.). Avoid identical names even if the names do not overlap. To ensure that unique names are generated for block outputs the default name macro &quot;$S_$B&quot; can be used.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>Compliance with MISRA C rule 5.2 and 5.6</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1h Use of Naming Conventions</value>
+        <value>T8.1d No Multiple Use of Variable Names</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.1 Suitable Programming Language</value>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

@@ -1,0 +1,176 @@
+<check fileVersion="2">
+  <uid>1357ce2a-8c61-4762-99ba-436e8be99551</uid>
+  <id>mcheck_mes_sfcolor_001</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Font and Color Settings of Stateflow Elements</title>
+  <adapter version="2.1">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_sfcolor_001.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the font attributes and color setting of each Stateflow chart element (chart, state, state label, transition, transition label and junction).<br /> Failed: the font attributes or color setting of the chart element are not specified in accordance with the values defined in the check parameters.<br /> The check issues a pass if the failed case does not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Change the font attributes and color setting of each reported Stateflow chart element in accordance with the check parameters. It is also possible to change the values of the check parameters to fit to your needs. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> The font attributes and color settings defined by the check parameters are applied to each Stateflow chart element. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.ChartColor</name>
+      <description>Background color of each Stateflow chart</description>
+      <defaultValue><![CDATA['white']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.JunctionColor</name>
+      <description>Foreground color of each Stateflow junction</description>
+      <defaultValue><![CDATA['brown']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateColor</name>
+      <description>Foreground color of each Stateflow state</description>
+      <defaultValue><![CDATA['black']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateFontWeight</name>
+      <description>Font weight of each Stateflow state label</description>
+      <defaultValue><![CDATA['normal']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['off']]></entry>
+        <entry><![CDATA['']]></entry>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['bold']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateFontAngle</name>
+      <description>Font angle of each Stateflow state label</description>
+      <defaultValue><![CDATA['normal']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['off']]></entry>
+        <entry><![CDATA['']]></entry>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['italic']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateFontName</name>
+      <description>Font of each Stateflow state label</description>
+      <defaultValue><![CDATA['Arial']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateFontSize</name>
+      <description>Font size of each Stateflow state label</description>
+      <defaultValue>12</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.StateLabelColor</name>
+      <description>Color of each Stateflow state label</description>
+      <defaultValue><![CDATA['black']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionColor</name>
+      <description>Foreground color of each Stateflow transition</description>
+      <defaultValue><![CDATA['blue']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionFontWeight</name>
+      <description>Font weight of each Stateflow transition label</description>
+      <defaultValue><![CDATA['normal']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['off']]></entry>
+        <entry><![CDATA['']]></entry>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['bold']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionFontAngle</name>
+      <description>Font angle of each Stateflow transition label</description>
+      <defaultValue><![CDATA['normal']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['off']]></entry>
+        <entry><![CDATA['']]></entry>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['italic']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionFontName</name>
+      <description>Font name of each Stateflow transition label</description>
+      <defaultValue><![CDATA['Arial']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionFontSize</name>
+      <description>Font size of each Stateflow transition label</description>
+      <defaultValue>12</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sfcolor_001.SF.TransitionLabelColor</name>
+      <description>Color of each Stateflow transition label</description>
+      <defaultValue><![CDATA['blue']]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

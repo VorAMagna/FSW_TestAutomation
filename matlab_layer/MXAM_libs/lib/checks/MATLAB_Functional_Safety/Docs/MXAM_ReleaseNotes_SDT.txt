@@ -1,0 +1,323 @@
+Version 4.0.1 ©2007-2016 09-Nov-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- sdt_sc004_b and sdt_sc006 caused an aborted if a matrix signal with min/max values has been analysed. This has been fixed (#4135).
+
+Version 4.0.0 ©2007-2016 30-Oct-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- mes_sltl_002, sdt_sc002, jc_0481: Each check compared the data type of the Stateflow input even if the option 'createinputvariable' is not set. 
+        A util function has been adapted to consider the option 'createinputvariable' in Stateflow inports. If this option is enabled, 
+        the TL data type of this port is taken. If the option is disabled, the data type of the inport's source is taken (#3526).
+- sdt_sc001: The check was aborted if the signal dimension differs between the source (Mux) with vector signal and destination block TargetLink Inport, 
+        whose dimension is not adapted to the incoming vector signal. This is shown as failed now (#3955).
+- mes_tl_001: Adapted the check to extract signal names and information from TargetLink bus outport for Matlab version R2010b and below (#3770).
+- sdt_sc006: The check traced the signal back over Data Store blocks. Now a stopping condition for Data Stores has been added such that these are identified as signal source (#3753, #3707).
+- sdt_sc007_b: An incorrect concatenation of logical and scalar values caused an aborted. This has been fixed (#3792).
+- sdt_sc002_b and sdt_sc002_c: The util function 'mes_evalBlockParamValue' is now used to evaluate the size of a variable in base and model workspace to prevent a check abort (#3995).
+
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+New check:
+mes_tl_001: Avoidance of Implicit Saturation in TargetLink Blocks
+
+Bugfixes:
+#3518: sdt_sc005: The check reported false positives for bus signals. The correct handling of bus creator solves this issue. 
+#3526: sdt_sc002, mes_sltl_002: If the option 'create input variable' is not set, the check still analyzed the scaling of the data item. The check 
+verifies now the datatype and scaling of the preceding block, if this option is not set. 
+#3519: sdt_sc003: The source of a merge block was incorrectly identified as vector which caused a failed result. This has been fixed by improving the identification algorithm of vectors.
+#3478: sk_006: Simulink Inports in a TargetLink Function issued a failed even if the signal is s trigger or enable signal. Simulink Inports which are inputs to a triggered or enabled subsystem will be ignored now.
+#3637: sdt_sc007_a, sdt_sc007_b: An incorrect concatenation caused an aborted of the checks. The concatenation problem is fixed.
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+New check: 
+- mes_is_0002: User-specified State/transition Execution Order
+
+Changes:
+- sdt_sc006: Rework of the check. Added parameter SDT.sc006.BlacklistSourceBlocks to exclude specific source blocks. An repair action for signal propagation has been implemented.
+
+Bugfixes: 
+#3310: sdt_sc004_c: Incorrect Initialization of variables caused an aborted. This has been fixed. 
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+New guideline sdt_sc007 (draft): Definition TargetLink Function Interface with following checks:
+sdt_sc007_a: Definition TargetLink Function Interface - Inports
+sdt_sc007_b: Definition TargetLink Function Interface - Outports
+mes_sk_006: In- and Outports in TargetLink Subsystems
+
+Version 3.6.0 ©2007-2015 30-Sept-2015
+Version 1.8.8 ©2007-2015 30-Sept-2015
+---------------------------------------------------------------------------
+New checks:
+- mes_sltl_002_a: Comparison of Floating-Point Signals in Simulink and TargetLink
+- mes_sltl_002_b: Comparison of Floating-Point Signals in Stateflow
+
+Splitted Check:
+sdt_il001 has been splitted into 
+- sdt_il001_a: Avoidance of Duplicated Port Signals - Source Signal
+- sdt_il001_b: Avoidance of Duplicated Port Signals - Shadow Inports
+
+Bugfixes:
+#2535: sdt_sc002_e: Boolean variables will be ignored now for the analysis of the range.
+#2575: sdt_sc004_c: Interpretation of the range has been improved. 
+#2687: sdt_sc001: The check issued a failed result for comparing the LSB of boolean signals. Boolean signals are ignored now. 
+
+Improvements:
+#2684: mes_sf_002: Improved performance.
+
+Version 3.5.0 ©2007-2015 30-Jun-2015
+Version 1.8.7 ©2007-2015 30-Jun-2015
+---------------------------------------------------------------------------
+New checks:
+- mes_sf_001: No Loops in Multi Segmented Transitions (Review check, only available in 3.5.0)
+- mes_sf_002: Variable Assignments in Transition Segments
+- mes_sf_003: Interaction between Parallel States
+- mes_sf_004: Freeness of Early Return Logic Problems
+- mes_sltl_001: Magic Constants in Constant Blocks
+
+Bugfixes:
+#2281: sdt_sc006: The check reported failed results in the intermediate level of TargetLink subsystems. These are ignored now.
+#2480: sdt_sc002_c: The check did not analyse the data type if the destination block is a TargetLink Inport within another subsystem. The check is now able to detect the TargetLink Inports as a destination. 
+#2499: sdt_sc002_b: The check reported failed results for floating point data types. This will be ignored now. 
+
+Version 1.8.3.1 ©2007-2014 28-Aug-2014
+---------------------------------------------------------------------------
+Bugfixes:
+#1719: sdt_sa004_b: The error 'variable lengthOfInputSignalOfIndexVector not defined'
+       has been fixed. The variable is now initialized correctly.
+#1703: sdt_sc002: The check ignores the output of a state chart if it 
+       is of data type float.
+
+Version 1.8.2.0 ©2007-2014 09-Apr-2014
+---------------------------------------------------------------------------
+The functional safety check library has been reworked. Part One of this process includes:
+- Improvement of check documentation,
+- Improvement of parameter decoumentation
+- Checks have been splitted and therefore atomized to make their usage easier for the user.
+  Each check now inspects one specific guideline part rather than inspecting several. 
+  
+In detail, following changes have been made:
+ 
+Splittet Checks:
+- sdt_sa002 has been splittet into 
+		-> sdt_sa002_a (Logical Operator Blocks) and
+		-> sdt_sa002_b (Relational Operator Blocks)
+		
+- sdt_sa003 has been splittet into 
+		-> sdt_sa003 (Switch Blocks)
+		-> sdt_sa004_a (Multiswitch Ports: Data Type of Control Input)
+		-> sdt_sa004_b (Multiswitch Ports: Range of Control Input)
+
+- sdt_sc002 has been splittet into
+		-> sdt_sc002_a (Stateflow: Chart Option 'Strong Data Typing with Simulink I/O')
+		-> sdt_sc002_b (Stateflow:  Strong Data Typing at the Input Interface)
+		-> sdt_sc002_c (Stateflow: Strong Data Typing at the Output Interface)
+		-> sdt_sc002_d (Stateflow: Chart Option 'Data Range')
+		-> sdt_sc002_e (Stateflow: Undefined SF Variable Range)
+
+- sdt_sc004 has been splitted into
+		-> sdt_sc004_a (Arithmetical Operators: Option 'Require all Inputs to have same data type')
+		-> sdt_sc004_b (Arithmetical Operators: Scalings and Max/Min values.)
+		-> sdt_sc004_c (Arithmetical Operators: Data Range of the Output Data Type)
+		
+Renamed Checks:
+- sdt_sc005_alte has been renamed to sdt_sc006
+
+Moved Checks:
+- The following MES checks are now included in the functional safety library:
+  -> mes_sltl_0001 > sdt_ic001
+  -> mes_sltl_0002 > sdt_ic002
+  
+Parameters:
+It has been tried to reduce the number of parameters and to avoid shared parameters, 
+i.e. a parameter is now used by only one check. to achieve a better handling for the user 
+Furthermore, each parameter is now documented within the checks .m file. 
+
+As there are many changes regarding this topic, here is a list of implemented parameters 
+for all checks within the SDT library (name of parameter, datatype and default value - a
+description can be found within the corresponding .m file).
+
+- sdt_ic002
+	-> SDT.ic002.IgnoreCheckInitialOutput, 	type: boolean, default: false
+	-> SDT.ic002.AllowCheckTriggerSource, 	type: boolean, default: false
+
+- sdt_sa001
+	-> SDT.sa001.AllowedInputBaseTypes, 	type: cellstring, default: {''}
+	-> SDT.sa001.IgnoreTLDefaultDataTypes, 	type: boolean, default: true
+
+- sdt_sa003
+	-> SDT.sa003.AllowedBaseTypesForSwitchControlInputs, type: cellstring, default: {'Bool'}
+
+- sdt_sa004_b
+	-> SDT.sa004_b.TrustUserSpecifiedRange, type: boolean, default: true
+
+- sdt_sc001
+	-> SDT.sc001.IgnoreNonTLSources, 		type: boolean, default: true
+	-> SDT.sc001.IgnoreTLDefaultDataTypes, 	type: boolean, default: true
+	-> SDT.sc001.IgnoreUndefinedRanges, 	type: boolean, default: false
+	-> SDT.sc001.ValidBaseTypeCombinations, type: cellstring, default: {'UInt8','Int16'; 'UInt16','Int32'}
+
+- sdt_sc002_b
+	-> SDT.sc002_b.IgnoreUndefinedSFVariableRange, 	type: boolean, default: true
+	-> SDT.sc002_b.UseDataRangeForMissingUserRange, type: boolean, default: true
+	-> SDT.sc002_b.RangeDifferenceThreshold, 		type: float, default: 1e-5
+
+- sdt_sc002_c
+	-> SDT.sc002_c.IgnoreUndefinedSFVariableRange,  type: boolean, default: true
+	-> SDT.sc002_c.UseDataRangeForMissingUserRange, type: boolean, default: true
+	-> SDT.sc002_c.RangeDifferenceThreshold, 		type: float, default: 1e-5
+
+- sdt_sc003
+	-> SDT.sc003.IgnoreTLDefaultDataTypes,  type: boolean, default: true
+
+- sdt_sc004_b
+	-> SDT.sc004_b.TrustUserSpecifiedRange,  		type: boolean, default: true
+	-> SDT.sc004_b.IgnoreTLDefaultDataTypes,  		type: boolean, default: true
+	-> SDT.sc004_b.TrustSaturationSettingOfBlock,  	type: boolean, default: true
+
+- sdt_sc004_c
+	-> SDT.sc004_c.IgnoreRangeOfFloatOutput, 	 	type: boolean, default: true
+	-> SDT.sc004_c.TrustUserSpecifiedRange,  		type: boolean, default: true
+	-> SDT.sc004_c.TrustSaturationSettingOfBlock,  	type: boolean, default: true
+
+- sdt_sc005
+	-> SDT.sc005.UserSourceBlocks, type: cellstring, default: {'SubSystem', 'CONSTREAL';                                 
+                                                               'SubSystem','CONSTLOGIC';
+                                                               'Constant','TL_Constant';
+                                                               'Inport','TL_Inport' }
+
+Note, that one of the main changes is, that parameters [check_id].IgnoredMaskedSubsystems no 
+longer exist. To ignore masked subsystems, use the global parameter Global.IgnoredMaskedSubsystems
+
+Bugfixes:
+- sdt_sa002_a, sdt_sa002_b: adapted the code for the changes of value of parameter 'outdatatypestr' since matlab2011b.
+- sdt_sc004_a, sc_002_a. use of check_param instead of loop to provide autofix for single deviations.
+- sdt_ic_003, sc_002_d: repair option changed to fix all deviations at once.
+
+Version 1.8.0.0 ©2007-2013   10-Oct-2013
+-------------------------------------------------------------------------------
+- #789: Fix of check description that obtained a special character causing  
+  a broken HTML report.
+
+V1.6 build 0005.2 ©2007-2012   15-Jan-2013
+--------------------------------------------------------------------------------
+- mxam_paraoptdef_SDT.m: set default value of SDT.sc004.IgnoreRangeOfFloatOutput to 1
+
+V1.6 build 0001.0 ©2007-2012   24-Jul-2012
+--------------------------------------------------------------------------------
+
+sdt_sc001: wrong call of mes_getOutputDataInfo: second argument is the port number, 
+but vector index was given
+
+V1.5 build 0006.2 ©2007-2012   10-May-2012
+--------------------------------------------------------------------------------
+sdt_sc004:change the basetype code of float32 to 10 (same as single), 
+and float64 to 9 (same as double);can get range of mix data type.
+
+sdt_sc005: algorithm of check improved: every route will be checkd from 
+source to dest,even if one source may have more dests.
+
+V1.5 build 0006.0 ©2007-2012   26-Mar-2012
+--------------------------------------------------------------------------------
+- sdt_sc005: extended: if a signal name is given although the the name is already 
+propagated from the source a 'failed' will be given. This message will be shown for
+all blocks of the signal data flow (from source to destination). 
+
+V1.5 build 0003.1 2007-2012   06-Feb-2012
+--------------------------------------------------------------------------------
+- sdt_sc001: ports with default class are ignored
+
+V1.5 build 0003.0 ©2007-2011   15-Nov-2011
+--------------------------------------------------------------------------------
+- sdt_sc003: adapt for tl3.x: get the block param 'inputs' with different methods for SL and TL blocks
+
+- sdt_sc002: add more comment for the reason why ignore the Stateflow variables with description empty.
+
+- sdt_sc005_alte proxi_0027:bug fix: get source of a block until no TL_Bus and TL_outport
+blocks are reached.
+
+V1.5 build 0000.0 ©2007-2011   11-Jun-2011
+--------------------------------------------------------------------------------
+- sdt_sc004 add parameter SDT.sc004.TrustSaturationSettingOfBlock,
+  if this is true and the saturation setting of TL sum and proud blocks is
+  set, then the range (min or max) will be be checked.
+- sdt_sc_001: improve the method to read the scalingpropagation property of 
+  a tl_function block
+  
+V1.4 build 0004.0 ©2007-2010   24-Sep-2010
+--------------------------------------------------------------------------------
+
+- sdt_ic002: 
+Two check parameters have been added:
+  - IgnoreCheckInitialOutput: if true, the system setting 'CheckInitialOutput' is not checked.
+  - AllowCheckTriggerSource: if true, it is checked if the trigger source covers all
+    the conditions and if all conditions are connected with destinations.  
+    If, for example, the trigger source is an if- or switch block, it is checked if
+    the option 'showelse' or 'showdefaultcase' is on and all the conditions are
+    properly connected.
+                            
+sdt_sc002: 
+Two parameters have been added: 
+  - CheckStrongDataTypingWithSimulink: if true, then the setting 'StrongDataTypingWithSimulink'
+    is also checked for charts outside of TL subsystems
+  - b_UseDataRangeForMissingUserRange: if true, any missing user-defined range will be replaced 
+    by the actual (worst-case-) data range. This applies also to stateflow chart objects
+    
+sdt_sc001: 
+-if a port is configured as scaling invariant, only the data type of the ports is checked, but not the 
+ scaling info. 
+- Targetlink ports are checked only when their output.class is one of FCN_ARG, 
+  FCN_REF_ARG or FCN_RETURN.
+
+sdt_sc005_alte:
+alternative to check sdt_sc005: All output signals of a subsystem must be named at the source
+            signals and be propagated to the outport blocks. 
+          
+sdt_sc005: 
+- the name of a vector is no longer checked, if the source is a chart
+- is now partially fixable (for signal line property 'signalpropagation', fixallonly)
+
+
+release 1.3
+***********
+
+2010/06/02 sa001/sa002: fixed: TL3.0 logical blocks were wrongly recognized as Simulink
+			logical blocks
+
+
+2010/05/18 sc001: added: range checking: source range must not exceed port range
+                  fixed: undefined user-ranges of boolean/constant sources are now ignored
+
+2010/05/12 il001: fixed: inports of sf-charts were not checked
+                  fixed: override of lookundermasks to find sf-chart inports
+
+
+2010/05/06 sc001: added: handling of TL2.2 run-time error in accessing sf-output
+                  added: handling of SL Sources 
+
+
+2010/05/05 sc002: added: parameter SDT.sc002.RangeDifferenceThreshold for difference threshold added
+
+ 
+2010/04/30: sc002: fixed: handling of non-scalar inputs 
+
+
+2010/04/19: changed: all check parameter names now begin with a capital letter, e.g. 
+            SDT.IgnoreTLDefaultDataTypes instead of SDT.ignoreTLDefaultDataTypes
+
+
+release 1.2
+***********
+
+manual includes reference to other guidelines
+
+sdt_sa003:
+- messages improved, details on range violations
+- parameter added to trust assured ranges
+
+mes_findSrcBlock: changed interface (now uses structs)
+

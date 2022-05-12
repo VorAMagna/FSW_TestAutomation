@@ -1,0 +1,181 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=6680
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7d4730c8-ec5a-4ff7-9661-71fcf881b4e0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7d4730c8-ec5a-4ff7-9661-71fcf881b4e0'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'dd3e5d54-4830-4323-8eb6-05e21ba97761'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=dd3e5d54-4830-4323-8eb6-05e21ba97761'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'dd3e5d54-4830-4323-8eb6-05e21ba97761'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7040db9b-d12d-426a-af3f-cd2fd8bae708'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7040db9b-d12d-426a-af3f-cd2fd8bae708'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7040db9b-d12d-426a-af3f-cd2fd8bae708'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c508957d-9c85-405e-aafa-fe9d5c969744'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c508957d-9c85-405e-aafa-fe9d5c969744'
+
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_enSigAge_VKM_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_enSigAge_VKM_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_tErrorFilterFSW_VKM_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_tErrorFilterFSW_VKM_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_enSigAge_OTP_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_enSigAge_OTP_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_tErrorFilterFSW_OTP_01' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path '//DD0/Pool/Variables/SWC_SignalConditioning/SigCondV10/Calibratables/P_V_SigCondV10_tErrorFilterFSW_OTP_01' of reference property 'variable' could not be resolved.
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/kmh2rpmCalc_Front/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/kmh2rpmCalc_Rear/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DTWindUpBypassing
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DTWindUpBypassing/Bypass_Enable
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/WheelSpeeds
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/nFrax_nRax_Calc_based_on_nWhlxx
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/nFrax_nRax_Calc_based_on_vWhlxx
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/trackCurvtreVWhlCalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c508957d-9c85-405e-aafa-fe9d5c969744'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...

@@ -1,0 +1,106 @@
+<check fileVersion="2">
+  <uid>17544735-a087-4664-a7da-96553758f81b</uid>
+  <id>mcheck_sdt_sc005</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Propagation of Signal Names</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sc005.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check inspects every signal line of the model.<br /> Failed: If the signal line of its source block is named, but each subsequent signal in this signal chain that supports signal name and signal name propagation but whose property &quot;Show propagated signals&quot; is set to &quot;off&quot;.<br /> The check issues a pass if the failed case does not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> As of Matlab 2018b the model option &quot;Display -&gt; Signals &amp; Ports -&gt; Propagated Signal Labels&quot; is not recommended for use because it is not consistent with the individual signal property &quot;Show Propagated Signals&quot;. In addition, it is not updated when single changes in the individual property take place. Therefore, the check analyzes only the individual property and it could return failed findings if only the model option is set to &quot;on&quot;. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Locate the following source blocks in the model.<br /> </p> 
+<ul> 
+ <li> Inport blocks at the top level of the model. </li> 
+ <li> Inport blocks at the top level of all non-virtual blocks that directly or indirectly feed into a top-level Outport. </li> 
+ <li> Other Simulink source blocks (see Library section &quot;Simulink Library Browser/ Sources&quot;) and Data Store Read block. </li> 
+ <li> Bus creator blocks. </li> 
+</ul> 
+<p> For each source block, name the signal that is directly connected with its output. Further, set the signal property &quot;Show propagated signals&quot; of all subsequent signals in this signal chain to &quot;on&quot;. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[If the signal of a source block has a name and subsequent signals are not named, the check sets the signal property &quot;Show propagated signals&quot; of these nameless signals to &quot;on&quot;. 
+<p> Follow these steps to auto-repair: </p> 
+<ol> 
+ <li> Name the signal output from its source block. </li> 
+ <li> Delete any other signal names in the subsequent signal lines after the named signal from the source block. </li> 
+ <li> Apply autofix, which sets the signal property &quot;Show propagated signals&quot; of the subsequent signals to 'on'. </li> 
+</ol> 
+<p> Note: In some cases, the number of failed messages may differ from the number of repaired messages. This is because the repair action of setting the property 'Show propagated signals' to 'on' in the complete signal chain from source to destination would have fixed other failed cases.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>SDT.sc005.UserSourceBlocks</name>
+      <description><![CDATA[A list (cell array) of pairs that specifies additional types of sources. Each pair defines a block type and a mask type string. The check additionally checks all those signal lines that originate from these user-defined sources.
+
+Note: If the block has no mask type, leave the second entry of the pair empty, e.g. SDT.sc005.UserSourceBlocks = {{'blocktype',''};{'blocktype2'‚''}}.]]></description>
+      <defaultValue><![CDATA[{'SubSystem','CONSTREAL';...
+					'SubSystem','CONSTLOGIC';...
+					'Constant','TL_Constant';...
+					'Inport','TL_Inport'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/26/2015 15:35:59">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

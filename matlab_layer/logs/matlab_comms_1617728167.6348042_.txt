@@ -1,0 +1,189 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=17312
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0b76844d-386f-4329-8828-b4833023f597'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0b76844d-386f-4329-8828-b4833023f597'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3e7dd872-a585-4de7-a4c0-e916f4e57fe8'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3e7dd872-a585-4de7-a4c0-e916f4e57fe8'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3e7dd872-a585-4de7-a4c0-e916f4e57fe8'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bd560b02-92e2-42c1-b997-ffcadd7ff031'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=bd560b02-92e2-42c1-b997-ffcadd7ff031'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bd560b02-92e2-42c1-b997-ffcadd7ff031'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6f56a082-8bd2-4e31-8a85-687d8e90c593'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6f56a082-8bd2-4e31-8a85-687d8e90c593'
+
+Autodoc Block must be added to the subsystem!
+StQualO10/ShiftEvaluation
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6f56a082-8bd2-4e31-8a85-687d8e90c593'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\TestBenchO10\TestBenchO10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '84ea28d4-6424-4446-9453-3ad1cafa313e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=84ea28d4-6424-4446-9453-3ad1cafa313e'
+
+Autodoc Block must be added to the subsystem!
+TestBenchO10/stGDDCCalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '84ea28d4-6424-4446-9453-3ad1cafa313e'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\TestBenchO10\TestBenchO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\TestBenchO10\TestBenchO10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO\SO_Composition\SO_Modules\TestBenchO10\TestBenchO10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

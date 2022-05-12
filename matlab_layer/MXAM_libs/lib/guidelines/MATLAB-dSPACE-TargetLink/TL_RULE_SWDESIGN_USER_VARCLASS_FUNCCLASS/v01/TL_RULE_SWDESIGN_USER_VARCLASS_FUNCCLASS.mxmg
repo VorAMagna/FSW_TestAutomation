@@ -1,0 +1,133 @@
+<guideline fileVersion="2">
+  <uid>0d280c38-25e0-43a9-a7ce-38e10139a0cd</uid>
+  <id>TL_RULE_SWDESIGN_USER_VARCLASS_FUNCCLASS</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of User-Specific Variable Classes and Function Classes</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>usability</value>
+        <value>maintainability</value>
+        <value>portability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 4.0 (section 5.2.2)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Use of user-specific variable classes and function classes is recommended instead of predefined TL classes. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Rather than using the predefined variable classes and function classes that are provided in TargetLink Data Dictionary Template files directly, it is beneficial to use those as starting point to create user-specific variable/function classes and use those on models rather than the TargetLink-provided ones. The only exceptions are variables/function classes and function classes for AUTOSAR variables and functions. </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> The names of variable classes and function classes are entirely arbitrary and with no direct influence on the generated code (with the exception of those used for AUTOSAR). It is only the properties of variable classes/function classes that matter. By specifying user-provided variable/function classes, they can be adapted more easily to project specific needs, e.g. to specify pragmas to map variables and functions to separate memory segments. Please note that the Data Dictionary include file mechanism can be used to share those variable/function classes among multiple users. Please note that many figures inside this document might show TargetLink-provided rather than user-specific classes. This is however merely to demonstrate a point by using well-known variable classes or function classes rather than user-specific ones. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_RULE_SWDESIGN_USER_VARCLASS_FUNCCLASS-1 shows the inclusion of user-specified variable classes and function classes in the Data Dictionary using the DD include file mechanism. Those variable/function classes should be used in models. </p>
+<img src="TL_RULE_SWDESIGN_USER_VARCLASS_FUNCCLASS_1.png" /> 
+<p class="imageCaption"> Figure TL_RULE_SWDESIGN_USER_VARCLASS_FUNCCLASS-1: It is generally recommended to use user-specific variable/function classes in models instead of those directly provided by TargetLink. This ensures more flexibility to simply adapt the settings for different projects. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-2.4 Modular Approach</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/29/2016 14:02:25">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="09/15/2016 17:33:14">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

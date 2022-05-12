@@ -1,0 +1,65 @@
+<guideline fileVersion="2">
+  <uid>b0496714-c931-48d3-9d9b-d7c55b60fdfe</uid>
+  <id>Only_User_Checks</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="svc_jenkins" domain="MAGNA"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>4e8533c0-33f2-4dc3-b2d3-5b45b023375c</templateUid>
+  <title>Only the selfmade checks</title>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this guideline</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="b85e24ba-70c3-4618-9255-ee1dac51b8ce" refId="mcheck_us_0001" refTitle="Test the Input block Backgroundcolor" refVersion="1"/>
+    <reference refUid="d01fbca9-a6a3-4b6f-95ee-1ef5dc7f6aae" refId="mcheck_us_0002" refTitle="Test the Output block Backgroundcolor" refVersion="1"/>
+    <reference refUid="5e739887-1ed4-447d-83ab-5c552a615246" refId="mcheck_us_0003" refTitle="Test of the Terminator Backgroundcolor" refVersion="1"/>
+    <reference refUid="4acec49c-33ea-4479-8644-9f756d4ff476" refId="mcheck_us_0004" refTitle="Test of LUT Block LSB" refVersion="1"/>
+    <reference refUid="1caa7e25-5e0c-4d67-969c-3ff29fb77cb9" refId="mcheck_us_0005" refTitle="Test of Saturate BackgroundColor" refVersion="1"/>
+    <reference refUid="7f650601-bee9-44b4-9f5a-1cfd14bc0b28" refId="mcheck_us_0006" refTitle="Test of the Saturate Output values" refVersion="1"/>
+    <reference refUid="8781532b-1984-4b37-b2c3-d2f3150ded65" refId="mcheck_us_0007" refTitle="Test of the connection of constant with relational operator" refVersion="1"/>
+    <reference refUid="58bec37c-2532-45d9-be35-e3b9f3480958" refId="mcheck_us_0008" refTitle="Test of Linked block`s port" refVersion="1"/>
+    <reference refUid="0277060a-f116-4b82-a8a4-ef0536356fe0" refId="mcheck_us_0009" refTitle="Test of the Linked block`s port type" refVersion="1"/>
+    <reference refUid="6b74c822-b13d-486f-91e6-275bc8768867" refId="mcheck_us_0010" refTitle="Test of Class of TL_Inport/TL_Outport" refVersion="1"/>
+    <reference refUid="d0dd6724-faa3-4655-9c5b-e556909ada50" refId="mcheck_us_0011" refTitle="Test of the Linked block`s port about lsb, type or scaling" refVersion="1"/>
+    <reference refUid="d2c6b363-3063-4b96-9bf6-d2b5465db4dc" refId="mcheck_us_0012" refTitle="Test of the Abs Block type" refVersion="1"/>
+    <reference refUid="e00df7fe-178a-4f22-a42e-1923635942f9" refId="mcheck_us_0013" refTitle="Test of the BackgroundColor of P_,L_,C_" refVersion="1"/>
+    <reference refUid="45f9a5af-18e1-4a66-9563-b57a40dba76e" refId="mcheck_us_0014" refTitle="Test of the name and constant of P_,C_ Block" refVersion="1"/>
+    <reference refUid="6c407825-f6ae-4537-8049-b9611938d002" refId="mcheck_us_0015" refTitle="Test of the name and variable of L_ Block" refVersion="1"/>
+    <reference refUid="94603230-303d-42d3-bc62-d211a3673bf1" refId="mcheck_us_0016" refTitle="Test of LSB or type of LUT" refVersion="1"/>
+    <reference refUid="84748b0c-9e6d-4917-96cd-8290b621b43a" refId="mcheck_us_0018" refTitle="Test of the name and variable of targetlink inport" refVersion="1"/>
+    <reference refUid="5dc156bb-8e89-4473-a56e-a7ec2612f98a" refId="mcheck_us_0019" refTitle="Test of the name and variable of targetlink outport" refVersion="1"/>
+    <reference refUid="9742f260-6abc-4397-bea3-f928aba6143d" refId="mcheck_us_0020" refTitle="Test of the Look-Up method" refVersion="1"/>
+    <reference refUid="31786f03-23c1-4c21-b826-a882042f0285" refId="mcheck_us_0022" refTitle="Test of the name and constant of interrunnables" refVersion="1"/>
+    <reference refUid="dc67212e-3079-45ec-907d-95fa834ad71d" refId="mcheck_us_0023" refTitle="Test of the use of &quot;Mergeable Disp&quot;" refVersion="1"/>
+    <reference refUid="65ce0cd8-aacf-46c1-b6f0-29d0618fde38" refId="mcheck_us_0024" refTitle="Test the names of the blocks and the modules for blanks and special characters." refVersion="1"/>
+    <reference refUid="e3de08e5-c641-4446-a578-c9d13b6e8c36" refId="mcheck_us_0025" refTitle="Test the names of the blocks with calibratables for the right prefix" refVersion="1"/>
+    <reference refUid="ec28b36a-2efc-47cf-920e-30b9732548a7" refId="mcheck_us_0026" refTitle="Test the names of the blocks with DISP for the right prefix (W_moduleName)." refVersion="1"/>
+    <reference refUid="c209c664-61dd-472a-8cee-e649fef9b0dc" refId="mcheck_us_0027" refTitle="Test the names of the inports and outports which are module outputs or EEPROM signals" refVersion="1"/>
+    <reference refUid="27d69b5b-cbbb-4a98-9015-e72166386803" refId="mcheck_us_0028" refTitle="Test the LUT block name" refVersion="1"/>
+    <reference refUid="8d56c44e-d746-4a19-8c27-fd8f600b6ee5" refId="mcheck_us_0029" refTitle="Test the Subsystem names" refVersion="1"/>
+    <reference refUid="3574fd51-81dd-4573-b706-0d9b3b4ab276" refId="mcheck_us_0030" refTitle="Test the link status of a block" refVersion="1"/>
+    <reference refUid="e57ad77e-785e-4bef-b736-d75183e40449" refId="mcheck_us_0031" refTitle="Test the status of the linked requirements." refVersion="1"/>
+    <reference refUid="19c321a8-e817-448e-9e0b-efa8a18d20ea" refId="mcheck_us_0032" refTitle="Test LUT property deposit" refVersion="1"/>
+    <reference refUid="a85ca453-1f92-44e4-a494-319bcc2bd849" refId="mcheck_us_0033" refTitle="Test the Autodoc blocks" refVersion="1"/>
+    <reference refUid="e5e34095-f12a-4605-b3e8-e6212c98c59d" refId="mcheck_us_0034" refTitle="Test the use of dd parameters" refVersion="1"/>
+    <reference refUid="22b5a571-e211-4d06-9356-d8aba87042c4" refId="mcheck_us_0035" refTitle="Test if library links are disabled" refVersion="1"/>
+    <reference refUid="86073815-91e6-4159-beef-84705b779fc5" refId="mcheck_us_0036" refTitle="Test if division by zero is possible" refVersion="1"/>
+    <reference refUid="6fdf7af7-7d4b-4e01-8ea2-b0d465d7720c" refId="mcheck_us_0037" refTitle="Test the character encoding property" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="12/05/2018 14:18:59">
+      <author username="svc_jenkins" domain="MAGNA"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

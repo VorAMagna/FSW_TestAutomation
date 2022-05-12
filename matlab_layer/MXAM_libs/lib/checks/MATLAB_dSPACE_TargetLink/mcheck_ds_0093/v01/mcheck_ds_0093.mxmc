@@ -1,0 +1,109 @@
+<check fileVersion="2">
+  <uid>cbacd62d-2eba-467e-ba6c-a20c302f9790</uid>
+  <id>mcheck_ds_0093</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Diagnostics Settings</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ds_0093.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check verifies the diagnostics settings of the model, which are defined in the parameter dSPACE.TargetLink.ds_0093.DiagnosticSettings. </p> 
+<ul> 
+ <li> Failed 1: The simulation/configuration option is not set to the desired value. </li> 
+ <li> Failed 2: The check parameter dSPACE.TargetLink.ds_0093.minDiagnosticsError is set to true and the simulation/configuration option has a warning/error level less strict than the expected value. </li> 
+</ul> 
+<p> The check result is passed if all failed cases do not apply. </p> 
+<p> Note: Library models are not considered by the check as diagnostic settings are not used in libraries.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Review the diagnostic options according to guideline.<br /> </p> 
+<ul> 
+ <li> Solution 1: Set the simulation/configuration option to the desired value given in dSPACE.TargetLink.ds_0093.DiagnosticSettings. </li> 
+ <li> Solution 2: If the check parameter dSPACE.TargetLink.ds_0093.minDiagnosticsError is true, make sure the simulation/configuration parameters have equal or more strict warning/error level than the desired value. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> All diagnostic settings will be set according to the values specified in the parameter dSPACE.TargetLink.ds_0093.DiagnosticSettings. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="boolean">
+      <name>dSPACE.TargetLink.ds_0093.minDiagnosticsError</name>
+      <description>Boolean parameter that treats the expected values for diagnostics parameters as the minimum level.
+If the parameter is set to true, the check does not deliver a fail finding for parameters with a more strict warning/error level than the desired value.</description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>dSPACE.TargetLink.ds_0093.DiagnosticSettings</name>
+      <description>Each row represents a diagnostic setting to be checked: 
+First column: setting parameter name
+Second column: default setting
+Third column: description for report message</description>
+      <defaultValue><![CDATA[{'AlgebraicLoopMsg','error','Diagnostics:General->Solver->Algebraic loop';...
+ 'ArrayBoundsChecking','none','Diagnostics:Data Validity->Array bounds exceeded';...
+'BlockPriorityViolationMsg','error','Diagnostics:General->Solver->Block priority violation';...
+'ConsistencyChecking','none','Diagnostics:General->Solver->Solver data inconsistency';...
+'SingleTaskRateTransMsg','warning','Diagnostics:Sample Time->Sample Time->Single task rate transition';...
+'CheckMatrixSingularityMsg','warning','Diagnostics:Data Validity->Division by singular matrix';...
+'UnderSpecifiedDataTypeMsg','warning','Diagnostics:Data Validity->Underspecified data types';...
+'UnnecessaryDatatypeConvMsg','warning','Diagnostics:Type Conversion->Type Conversion->Unnecessary type conversions';...
+'VectorMatrixConversionMsg','warning','Diagnostics:Type Conversion->Type Conversion->Vector/Matrix block input conversion';...
+'SignalLabelMismatchMsg','warning','Diagnostics:Connectivity->Signals->Signal label mismatch';...
+'UnconnectedInputMsg','error','Diagnostics:Connectivity->Signals->Unconnected block input ports';...
+'UnconnectedOutputMsg','error','Diagnostics:Connectivity->Signals->Unconnected block output ports';...
+'UnconnectedLineMsg','error','Diagnostics:Connectivity->Signals->Unconnected line'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history/>
+</check>

@@ -1,0 +1,103 @@
+<check fileVersion="2">
+  <uid>9d406ee3-6596-49fe-83e8-5d146f3d1f18</uid>
+  <id>mcheck_mes_cgtl_4202</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>64-Bit Operations</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_cgtl_4202.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value><![CDATA[>3.0]]></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes the output variable of each TargetLink block in the model that has a 32-bit integer input.
+<br /> 
+<ul> 
+ <li> Review 1 (only for product and gain blocks): The output variable has an LSB scaling different from 1.<br /> </li> 
+ <li> Review 2: The output variable has an arbitrary LSB scaling enabled. </li> 
+ <li> Review 3: The output variable has the &quot;saturate&quot; option enabled. </li> 
+</ul> 
+<p> Stateflow objects are not analyzed. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[The check only analyzes TargetLink blocks with fixed point data type inputs. The review findings are based on the assumption that the default setting for the 'ExploitComputeThroughOverflow' TargetLink code generation property is chosen. If compute-through-overflow (CTO) is not exploited, the generated code may involve additional 64-bit operations. &nbsp;
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Examine the code production options of the relevant blocks to avoid code generation that requires 64-bit intermediate operations.
+<br /> 
+<ul> 
+ <li> Solution 1: Review and, if possible, adjust the LSB scaling of the output variable. </li> 
+ <li> Solution 2: Review and, if possible, adjust the LSB scaling of the output variable. </li> 
+ <li> Solution 3: Review and, if possible, adjust the &quot;saturate&quot; options of the output variable. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>No automatic repair action available.</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="01/08/2018 11:07:16">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="01/17/2018 10:51:23">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="01/18/2018 12:05:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

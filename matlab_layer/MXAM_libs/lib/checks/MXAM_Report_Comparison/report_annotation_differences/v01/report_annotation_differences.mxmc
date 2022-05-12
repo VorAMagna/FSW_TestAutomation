@@ -1,0 +1,71 @@
+<check fileVersion="2">
+  <uid>35c2d182-f5fd-4954-9a70-7db992c3daf7</uid>
+  <id>report_annotation_differences</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>No differences in matched annotations</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_annotation_differences.v01.implementation.ReportAnnotationDifferences</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="true" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[Annotations in MXAM DRIVE can be modified without changing the corresponding finding.
+<br /> 
+<br /> The check analyzes two reports and creates findings if two matching annotations have been found with&nbsp;
+<span style="font-weight: bold;">differences</span> in their attributes.
+<br /> 
+<br /> Two annotations match if:
+<br /> 
+<ul> 
+ <li> They target the same finding. </li> 
+ <li> They are created on the same date. </li> 
+ <li> The result of the finding is the same.<br /> </li> 
+</ul>Differences in the following attributes are considered for matched annotations:
+<br /> 
+<ul> 
+ <li> Result to </li> 
+ <li> Comment </li> 
+ <li> Modified date </li> 
+ <li> Author </li> 
+</ul>
+<br />]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="true" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check passes if no differences in matched annotations are found.
+<br /> 
+<br /> Warning: An annotation in one report has a matching annotation in the other report with&nbsp;
+<span style="font-weight: bold;">differences</span> in at least one of the aforementioned attributes.
+<br />]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.AggregatedResults</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.SameCheckIdPairs</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="05/15/2017 15:26:52">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:38:04">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

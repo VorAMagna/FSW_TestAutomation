@@ -1,0 +1,135 @@
+<guideline fileVersion="2">
+  <uid>347942e1-2348-46e2-9b05-9e8168535355</uid>
+  <id>TL_ADV_OPTI_VARIABLES_ERASABLE</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Erasing of Variables</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 11.3), dSPACE 3.0 (section 11.3), dSPACE 4.0 (section 5.4.2)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> each variable of class ERASABLE can be erased by the code generator if its values is no longer needed </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> If a variable class other than default needs to be specified and it is not necessary that block variables of that class exist as C code variables in the code, then the ERASABLE optimization attribute should be set for the variable class. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Only block variables whose variable class is either default or has the ERASABLE optimization attribute set are eliminated by the code generator. The elimination of superfluous variables and code reduces code size and execution time. Please note that TargetLink of course makes sure that the functional behavior of the code is unchanged, whether the variable is eliminated or not. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_ADV_OPTI_VARIABLES_ERASABLE-1 shows an example with two variables which are irrelevant to the rest of the model. The code generator uses the <em>ERASABLE optimization</em> attribute to decide whether the variables must be deleted or not. The attribute is set for the <em>DISP_ERASABLE</em> variable class and cleared for the other variable class, see Figure TL_ADV_OPTI_VARIABLES_ERASABLE-2. As a result, TargetLink generates the following code: </p>
+<p class="codeSample"> Void Subsystem(Void){<br /> /* Gain: Subsystem/Class DISP_NOT_ERASABLE */<br /> Sa1_Class_DISP_NOT_ERASABLE = Sa1_In * 5;<br /> /* Outport: Subsystem/Out. */<br /> Sa1_Out = Sa1_In;<br /> } </p>
+<p> The calculation of the variable Sa1_Class_DISP_NOT_ERASABLE is carried out, although the result is not necessary for the rest of the model. The calculation of the variable Sa1_Class_DISP_ERASABLE is avoided due to the specified optimization attribute. In general, intermediate variables are only erased if the <em>ERASABLE</em> attribute is set. </p>
+<p> <img style="width: 456px; height: 283px;" src="TL_ADV_OPTI_VARIABLES_ERASABLE_Ex.png" /></p>
+<p class="imageCaption"> Figure TL_ADV_OPTI_VARIABLES_ERASABLE-1: Model with two irrelevant variables which could be erased. However, variable without ERASABLE optimization attribute are still generated by the code generator </p>
+<p> <img style="width: 675px; height: 467px;" src="TL_ADV_OPTI_VARIABLES_ERASABLE_Ex1.png" /></p>
+<p class="imageCaption"> Figure TL_ADV_OPTI_VARIABLES_ERASABLE-2: The <em>ERASABLE</em> attribute is set, enabling the code generator to delete the variable if possible. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/26/2016 15:23:57">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Erasing of Variables' (ID: ds_0116, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</guideline>

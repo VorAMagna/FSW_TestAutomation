@@ -1,0 +1,948 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+PID=9612
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '380ef29b-4ef3-406e-b543-95dae2d1a55d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=380ef29b-4ef3-406e-b543-95dae2d1a55d'
+
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '49d4435d-a864-48a1-86a8-d3af42b9e9fe'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=49d4435d-a864-48a1-86a8-d3af42b9e9fe'
+
+Description in the Autodoc block is too short!
+NVMReadED01/NVMED01_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED01/NVMED01_01/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '49d4435d-a864-48a1-86a8-d3af42b9e9fe'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'aaeeed56-8a3e-48c8-9af7-9fb54bc37f9e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=aaeeed56-8a3e-48c8-9af7-9fb54bc37f9e'
+
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_03/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_04/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_05/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_06/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_07/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMReadED10/NVMED10_06/Crc8Calc2
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'aaeeed56-8a3e-48c8-9af7-9fb54bc37f9e'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ccf3e1d3-8c59-4e8f-b07a-4b6c4d94b62a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ccf3e1d3-8c59-4e8f-b07a-4b6c4d94b62a'
+
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/NVMED01_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/NVMED01_01_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/WDBIcalc/ValueChange/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ccf3e1d3-8c59-4e8f-b07a-4b6c4d94b62a'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b9438c77-68d5-47f5-a5e0-73a8cfb5bfb6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b9438c77-68d5-47f5-a5e0-73a8cfb5bfb6'
+
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/NVMED10_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/NVMED10_03_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/NVM_Version/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/NVMED10_04_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/NVM_Version/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/NVMED10_05_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/NVM_Version/ValueChange1/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/NVMED10_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/TicketIDMan/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMWriteED10/NVMED10_00/WDBIcalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b9438c77-68d5-47f5-a5e0-73a8cfb5bfb6'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '53fd3454-a978-4677-a572-5915d3ca908c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=53fd3454-a978-4677-a572-5915d3ca908c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '53fd3454-a978-4677-a572-5915d3ca908c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '51b18d53-05c1-4eb7-815f-302aa68b2db9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=51b18d53-05c1-4eb7-815f-302aa68b2db9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '51b18d53-05c1-4eb7-815f-302aa68b2db9'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '60e16366-a917-4c91-86e8-67de9dd4caca'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=60e16366-a917-4c91-86e8-67de9dd4caca'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '60e16366-a917-4c91-86e8-67de9dd4caca'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5c20f83d-3628-4ef7-a8fe-92756016b1c1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5c20f83d-3628-4ef7-a8fe-92756016b1c1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5c20f83d-3628-4ef7-a8fe-92756016b1c1'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3d339b75-1a07-46d4-b477-6cde03faea76'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3d339b75-1a07-46d4-b477-6cde03faea76'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3d339b75-1a07-46d4-b477-6cde03faea76'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c0c16536-459a-47b5-addd-bd0011247fc9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c0c16536-459a-47b5-addd-bd0011247fc9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c0c16536-459a-47b5-addd-bd0011247fc9'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c61529d4-83be-47a5-88be-e140428400b9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c61529d4-83be-47a5-88be-e140428400b9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c61529d4-83be-47a5-88be-e140428400b9'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c03818bf-864c-4dd0-ac73-817455e01333'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c03818bf-864c-4dd0-ac73-817455e01333'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c03818bf-864c-4dd0-ac73-817455e01333'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '53fccb1d-39e0-4f83-ab64-1ec544c440e5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=53fccb1d-39e0-4f83-ab64-1ec544c440e5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '53fccb1d-39e0-4f83-ab64-1ec544c440e5'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8f429474-1cf7-465f-b2f8-23ae80480dbe'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8f429474-1cf7-465f-b2f8-23ae80480dbe'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8f429474-1cf7-465f-b2f8-23ae80480dbe'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3a94430a-f4d4-48ff-8564-895ead0a7703'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3a94430a-f4d4-48ff-8564-895ead0a7703'
+
+Autodoc Block must be added to the subsystem!
+SyncGearED01/SyncConditions
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3a94430a-f4d4-48ff-8564-895ead0a7703'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '68169e72-fd73-46ec-8922-78d520ac00ec'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=68169e72-fd73-46ec-8922-78d520ac00ec'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '68169e72-fd73-46ec-8922-78d520ac00ec'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0e2ad27d-c606-4a5c-9ab2-4967261ca4d1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0e2ad27d-c606-4a5c-9ab2-4967261ca4d1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0e2ad27d-c606-4a5c-9ab2-4967261ca4d1'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bc3d0637-ee9c-4303-98c2-5fa21b78cb19'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=bc3d0637-ee9c-4303-98c2-5fa21b78cb19'
+
+Autodoc Block must be added to the subsystem!
+TestBenchED10/RateLim
+Autodoc Block must be added to the subsystem!
+TestBenchED10/RateLim1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bc3d0637-ee9c-4303-98c2-5fa21b78cb19'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '767d0dd4-c80c-460c-ad60-83eb8263f667'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=767d0dd4-c80c-460c-ad60-83eb8263f667'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '767d0dd4-c80c-460c-ad60-83eb8263f667'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '80b4f8b2-7dc3-44f9-a88e-1d71a90fc3b1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=80b4f8b2-7dc3-44f9-a88e-1d71a90fc3b1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '80b4f8b2-7dc3-44f9-a88e-1d71a90fc3b1'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '24e7d707-768e-4222-ab59-b0876259c73b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=24e7d707-768e-4222-ab59-b0876259c73b'
+
+Upgrading library 'CounterResetSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 402 to 403 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'Decoder_16Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_16Bit' from revision 402 to 403 ...
+Upgrading library 'Decoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'Encoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Encoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 402 to 403 ...
+Autodoc Block must be added to the subsystem!
+TrqAvailFdbkEC10/Diag_MechIntegrity/errDbncr/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '24e7d707-768e-4222-ab59-b0876259c73b'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'fb85c090-9a52-4f9d-934a-6105f47a396d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=fb85c090-9a52-4f9d-934a-6105f47a396d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'fb85c090-9a52-4f9d-934a-6105f47a396d'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '622a4adc-6087-49eb-95cc-8ae5f4a5f08c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=622a4adc-6087-49eb-95cc-8ae5f4a5f08c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '622a4adc-6087-49eb-95cc-8ae5f4a5f08c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'eedc75d7-77fb-4732-93fd-973010ef275e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=eedc75d7-77fb-4732-93fd-973010ef275e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'eedc75d7-77fb-4732-93fd-973010ef275e'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1288be71-766d-40f4-b363-ba5739e2faff'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1288be71-766d-40f4-b363-ba5739e2faff'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1288be71-766d-40f4-b363-ba5739e2faff'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd5834155-6475-424f-8610-a0e0ec4c311c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d5834155-6475-424f-8610-a0e0ec4c311c'
+
+Autodoc Block must be added to the subsystem!
+VltgCtrlED01/DcplM_SpeedSync/PICtrl/CalcLockInt
+Autodoc Block must be added to the subsystem!
+VltgCtrlED01/DcplM_SpeedSync/PICtrl/IntegralPart
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd5834155-6475-424f-8610-a0e0ec4c311c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

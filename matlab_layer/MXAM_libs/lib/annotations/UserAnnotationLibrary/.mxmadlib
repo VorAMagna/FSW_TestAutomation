@@ -1,0 +1,7 @@
+<library type="AnnotationDefinitionLibrary" id="UserAnnotationLibrary" title="Public library for user annotation definitions" uid="555f933c-a414-4eef-8106-e50eb528e352">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>

@@ -1,0 +1,94 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=18488
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '43fe44b4-d83f-4d53-9887-9c29bf1570ac'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=43fe44b4-d83f-4d53-9887-9c29bf1570ac'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '574ebe37-7c6b-4319-ace9-d59ea6de2530'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=574ebe37-7c6b-4319-ace9-d59ea6de2530'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '574ebe37-7c6b-4319-ace9-d59ea6de2530'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

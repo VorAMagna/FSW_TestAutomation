@@ -1,0 +1,148 @@
+<guideline fileVersion="2">
+  <uid>e6d4b540-984b-470a-8f98-f174b406d7ea</uid>
+  <id>sdt_ic002</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Initial Value of the Output of Conditional Subsystems</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>functionality</value>
+        <value>reliability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MES Functional Safety Guidelines 1.3</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Specify initial output of all Outports of conditionally executed subsystems, set option &quot;Check undefined subsystem initial output&quot; </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> a) The initial output value of each Outport in a conditionally executed subsystem must be specified.<br /> b) The diagnostic setting &quot;Check undefined subsystem initial output&quot; is to be set. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> An undefined initial output value of an Outport in a conditionally executed subsystem may cause different simulation behavior between Simulink and TargetLink, because Simulink only propagates initial values if they are requested, whereas TargetLink always propagates initial values. Moreover, unassigned initial values violate MISRA C Rule 30, stating that all variables should be assigned a value before being used. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="sdt_ic002_exampleDiagnosticsSetting.png" /> </p> 
+<p class="imageCaption"> Figure sdt_ic002-1: The diagnostic setting &quot;Check undefined subsystem initial output&quot; is set. </p> 
+<p> Figure sdt_ic002-2 illustrates the difference between how Simulink (model-in-the-loop, MIL) and TargetLink (software-in-the-loop, SIL) handles non-initializated output values. The model contains an enabled subsystem that is activated by a step function at t=5. It outputs the constant value 3. Importantly, the enabled subsystem does not define an initial output value. In MIL mode, the output is set to zero before the subsystem is enabled as shown in the scope. In contrast, in TargetLink SIL mode, the constant 3 is used as the initial output value. </p> 
+<p> <img src="mil.png" /> </p> 
+<p class="imageCaption"> Figure sdt_ic002-2: Model-in-the-loop simulation. </p> 
+<p> <img src="sil.png" /> </p> 
+<p class="imageCaption"> Figure sdt_ic002-3: Software-in-the-loop simulation. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>MISRA Rule 30: Variables must be assigned a value, before being used</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T8.1c Initialization of Variables</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refTitle="Initial Value of the Output of Conditional Subsystems" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/16/2015 10:18:24">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="UserGuidelineLibrary" title="Public library for user guidelines" uid="d9acc469-e1af-4eb9-acc8-a40a63041392">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>

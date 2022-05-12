@@ -1,0 +1,229 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=4016
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FreezeFrameP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "HistogramP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InitPosP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InputP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InputP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MainP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMReadP02" ...
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PA_Group\PA_Composition\PA_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMReadP10" ...
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PA_Group\PA_Composition\PA_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMWriteP02" ...
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PA_Group\PA_Composition\PA_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMWriteP10" ...
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PA_Group\PA_Composition\PA_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMEndP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMEndP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMStartP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMStartP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PosCtrlP02" ...
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PA_Group\PA_Composition\PA_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "ShiftOpP02" ...
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "MagnaLib" which is referenced by at least one block! Maybe library/model is not on MATLAB search path. Content of all
+referenced library blocks or referenced model ignored in analysis!] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Cannot find library called 'MagnaLib'.  To use the library, install '<a
+href="matlab:com.mathworks.addons.AddonsLauncher.showExplorer('AO_MODEL_RP')">MagnaLib</a>'.] 
+[> In mxray_getAllBlocksInSimulinkElement
+  In mxray_analyzeSimulinkElement
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SpdCtrlP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SvcJobP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TestBenchP02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TestBenchP10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "VltOutP02" ...
+Step 2 of 2: Writing result files ...
+done

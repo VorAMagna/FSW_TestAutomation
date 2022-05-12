@@ -1,0 +1,94 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=4908
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0aa17a54-289c-482b-81f0-2b7858760a1b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0aa17a54-289c-482b-81f0-2b7858760a1b'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '39cd8ede-671a-451e-8c81-b5269dc3e2e4'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=39cd8ede-671a-451e-8c81-b5269dc3e2e4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '39cd8ede-671a-451e-8c81-b5269dc3e2e4'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StQualC10\StQualC10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

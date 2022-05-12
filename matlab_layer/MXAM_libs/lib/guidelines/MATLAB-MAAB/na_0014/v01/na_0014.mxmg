@@ -1,0 +1,167 @@
+<guideline fileVersion="2">
+  <uid>80b1d6a3-2431-4a21-a708-32a24c323480</uid>
+  <id>na_0014</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of Local Language in Simulink and Stateflow</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>J-MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 3.0, Chapter 4.2.6</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Local language may only be used in descriptive fields. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[The local language should be used only in descriptive fields. Descriptive fields are text entry points that do not affect code generation or simulation. Examples of descriptive fields include
+<br /> 
+<br /> Simulink Example 
+<ul> 
+ <li> The Description field in the Block Properties<br /> <p> <img style="width: 498px; height: 513px;" src="GL_na_0014_Example_Simulink.PNG" /><br /> </p> <p class="imageCaption"> Figure na_0014-1: Use of local language in Simulink, Description field in the Block Properties. </p> </li> 
+</ul> 
+<ul> 
+ <li> Text annotation directly entered in the model<br /> <p> <img src="na_0014_2.png" /> </p> <p class="imageCaption"> Figure na_0014-2: Use of local language in Simulink, text annotation in the model. </p> </li> 
+</ul> 
+<p> Stateflow Example </p> 
+<ul> 
+ <li> The Description field of the chart or state Properties<br /> <p> <img style="width: 500px; height: 343px;" src="GL_na_0014_Example_Stateflow.PNG" /><br /> </p> <p class="imageCaption"> Figure na_0014-3: Use of local language in Stateflow, Description field&nbsp;in the state Properties.<br /> </p> </li> 
+</ul> 
+<ul> 
+ <li> <p> Annotation description added using Add Note </p> <p> <img style="width: 218px; height: 184px;" src="na_0014_4.png" /> </p> <p class="imageCaption"> Figure na_0014-4: Use of local language in Stateflow, annotation description in the chart using Add Note. </p> </li> 
+</ul> 
+<p> Note: It is possible that Simulink can't open a model that includes local language on the different character encoding systems; thus, it is important to pay attention when using local characters in case of exchanging models between overseas. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[Readability.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Make sure that the local language is only used in the fields that do not affect code generation or simulation. Here are some examples of fields that need to be reviewed:
+<br /> 
+<ul> 
+ <li> Simulink </li> 
+</ul>The Callbacks field in the Block Properties. Masktype of blocks.
+<br /> 
+<ul> 
+ <li> Stateflow </li> 
+</ul>The DataType field in Stateflow.Data objects.
+<br /> 
+<ul> 
+ <li> TargetLink </li> 
+</ul>Variable properties such as 'ReferencedBy', 'InitConstantName'.
+<br /> 
+<div style="margin-left: 40px;"> 
+ <br /> 
+</div>
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.0</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="9395a9a3-5eaf-4b19-b037-d4f0c7d6b8c1" refId="mcheck_na_0014_a" refTitle="Use of Local Language in Simulink and Stateflow - Simulink" refVersion="1"/>
+    <reference refUid="d7086cd9-1fc8-4a6f-854b-e394e626dcf8" refId="mcheck_na_0014_b" refTitle="Use of Local Language in Simulink and Stateflow - Stateflow" refVersion="1"/>
+    <reference refUid="7a10c2cd-722f-438f-8aa6-2f427dc3349d" refId="mcheck_na_0014_c" refTitle="Use of Local Language in Simulink and Stateflow - TargetLink DD Variables" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/01/2016 10:25:55">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

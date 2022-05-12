@@ -1,0 +1,1054 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=1984
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6668f7e9-d369-4964-94ee-7e304d582f2c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6668f7e9-d369-4964-94ee-7e304d582f2c'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'dcb3532b-be64-4f5e-9dcc-de564fb4e757'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=dcb3532b-be64-4f5e-9dcc-de564fb4e757'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'dcb3532b-be64-4f5e-9dcc-de564fb4e757'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TwinStCalcC10\TwinStCalcC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c583696c-03b2-40e6-83b3-f67ac43770a7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c583696c-03b2-40e6-83b3-f67ac43770a7'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c583696c-03b2-40e6-83b3-f67ac43770a7'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TwinStCalcC10\TwinStCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TwinStCalcC10\TwinStCalcC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7310445c-4614-47d9-959b-591f9a0aef4c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7310445c-4614-47d9-959b-591f9a0aef4c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7310445c-4614-47d9-959b-591f9a0aef4c'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqModC02\TrqModC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '32c71019-2bdc-460b-b8ab-ce43aee57784'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=32c71019-2bdc-460b-b8ab-ce43aee57784'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '32c71019-2bdc-460b-b8ab-ce43aee57784'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqModC02\TrqModC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqModC02\TrqModC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '39695e81-7d7c-481c-a464-4312bfe23efd'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=39695e81-7d7c-481c-a464-4312bfe23efd'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '39695e81-7d7c-481c-a464-4312bfe23efd'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpRADC10\TmpRADC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5c3a9546-4c80-4f75-818d-f45ec761ab22'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5c3a9546-4c80-4f75-818d-f45ec761ab22'
+
+Using DD project file:   C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Composition.dd
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5c3a9546-4c80-4f75-818d-f45ec761ab22'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpRADC10\TmpRADC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpRADC10\TmpRADC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'be316dd3-db84-41d9-8ae6-b4ab991d67ee'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=be316dd3-db84-41d9-8ae6-b4ab991d67ee'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'be316dd3-db84-41d9-8ae6-b4ab991d67ee'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '317fd5ee-ff7d-48a0-b916-4903decf91da'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=317fd5ee-ff7d-48a0-b916-4903decf91da'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '317fd5ee-ff7d-48a0-b916-4903decf91da'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TestBenchC02\TestBenchC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1af4c6c0-1ef3-4de6-9231-d1be1d39e038'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1af4c6c0-1ef3-4de6-9231-d1be1d39e038'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1af4c6c0-1ef3-4de6-9231-d1be1d39e038'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TestBenchC02\TestBenchC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TestBenchC02\TestBenchC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\ChiSvcJobC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5a923f5f-919e-4ef8-8429-84df27e8ddd7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5a923f5f-919e-4ef8-8429-84df27e8ddd7'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5a923f5f-919e-4ef8-8429-84df27e8ddd7'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\ChiSvcJobC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\ChiSvcJobC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e2ace243-374a-40f7-bbed-b8882b17ed2b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e2ace243-374a-40f7-bbed-b8882b17ed2b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e2ace243-374a-40f7-bbed-b8882b17ed2b'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8effa1f6-7c91-416b-8f7d-ec8318b07b9d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8effa1f6-7c91-416b-8f7d-ec8318b07b9d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8effa1f6-7c91-416b-8f7d-ec8318b07b9d'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'dea2ddd9-6aaa-4b4a-b2d7-2395465eeeff'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=dea2ddd9-6aaa-4b4a-b2d7-2395465eeeff'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'dea2ddd9-6aaa-4b4a-b2d7-2395465eeeff'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3bbd8bb0-50b4-4313-b2e8-0154f4e796ed'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3bbd8bb0-50b4-4313-b2e8-0154f4e796ed'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3bbd8bb0-50b4-4313-b2e8-0154f4e796ed'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2f9b01db-2e55-4b69-ac3e-c0d72cae8b42'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2f9b01db-2e55-4b69-ac3e-c0d72cae8b42'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2f9b01db-2e55-4b69-ac3e-c0d72cae8b42'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd853f3e1-c6bc-4c98-a983-d955a9f4c616'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d853f3e1-c6bc-4c98-a983-d955a9f4c616'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd853f3e1-c6bc-4c98-a983-d955a9f4c616'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0a11355e-f103-4981-a8d3-72b75a0622fb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0a11355e-f103-4981-a8d3-72b75a0622fb'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0a11355e-f103-4981-a8d3-72b75a0622fb'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '261c4ddd-84f4-4b3d-bd3b-5101fad0d3cb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=261c4ddd-84f4-4b3d-bd3b-5101fad0d3cb'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '261c4ddd-84f4-4b3d-bd3b-5101fad0d3cb'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f256c6ad-2467-487f-8733-9f911e84868c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f256c6ad-2467-487f-8733-9f911e84868c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f256c6ad-2467-487f-8733-9f911e84868c'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b68e35ae-d079-4203-b68d-956071172691'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b68e35ae-d079-4203-b68d-956071172691'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b68e35ae-d079-4203-b68d-956071172691'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '29354060-be44-4e4a-8665-4ca72ea8aa53'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=29354060-be44-4e4a-8665-4ca72ea8aa53'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '29354060-be44-4e4a-8665-4ca72ea8aa53'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2d0297e7-977c-49c7-bc1a-1623708dc312'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2d0297e7-977c-49c7-bc1a-1623708dc312'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2d0297e7-977c-49c7-bc1a-1623708dc312'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '489b0749-fd25-42ee-b455-740e6822c5f1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=489b0749-fd25-42ee-b455-740e6822c5f1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '489b0749-fd25-42ee-b455-740e6822c5f1'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '55521566-00f9-4bdf-a477-5385601a46c5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=55521566-00f9-4bdf-a477-5385601a46c5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '55521566-00f9-4bdf-a477-5385601a46c5'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ec5c1194-4079-4292-af83-15ae9cd885bb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ec5c1194-4079-4292-af83-15ae9cd885bb'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ec5c1194-4079-4292-af83-15ae9cd885bb'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '377664e4-991f-4f1b-a0b3-bb58f732ad60'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=377664e4-991f-4f1b-a0b3-bb58f732ad60'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '377664e4-991f-4f1b-a0b3-bb58f732ad60'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c082b6b5-f43d-4c10-95a7-9c83912bf78f'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c082b6b5-f43d-4c10-95a7-9c83912bf78f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c082b6b5-f43d-4c10-95a7-9c83912bf78f'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e02713fe-0c71-461b-a10c-8ab5af9982de'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e02713fe-0c71-461b-a10c-8ab5af9982de'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e02713fe-0c71-461b-a10c-8ab5af9982de'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3e1f8108-0dee-4207-bf9e-bfa76967eb82'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3e1f8108-0dee-4207-bf9e-bfa76967eb82'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3e1f8108-0dee-4207-bf9e-bfa76967eb82'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0db92ee9-edbc-4136-a236-29f484fd6f17'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0db92ee9-edbc-4136-a236-29f484fd6f17'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0db92ee9-edbc-4136-a236-29f484fd6f17'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '89d5e6ac-1849-4e1f-b566-e7e64a1aee7b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=89d5e6ac-1849-4e1f-b566-e7e64a1aee7b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '89d5e6ac-1849-4e1f-b566-e7e64a1aee7b'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5c17deb5-780f-481e-afff-1c0e290204f5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5c17deb5-780f-481e-afff-1c0e290204f5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5c17deb5-780f-481e-afff-1c0e290204f5'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC02\CharCalcC02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd65de1ef-4592-4766-8803-d816bcf7fbd5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d65de1ef-4592-4766-8803-d816bcf7fbd5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd65de1ef-4592-4766-8803-d816bcf7fbd5'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC02\CharCalcC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC02\CharCalcC02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3740ba08-ab56-4dd4-a895-90bfd2c10e26'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3740ba08-ab56-4dd4-a895-90bfd2c10e26'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3740ba08-ab56-4dd4-a895-90bfd2c10e26'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '338c47bd-bd39-4d89-bdca-bb59bf1f8669'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=338c47bd-bd39-4d89-bdca-bb59bf1f8669'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '338c47bd-bd39-4d89-bdca-bb59bf1f8669'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TwinStCalcC10\TwinStCalcC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqModC02\TrqModC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpRADC10\TmpRADC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TestBenchC02\TestBenchC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\ChiSvcJobC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\OilWearC10\OilWearC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC02\CharCalcC02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

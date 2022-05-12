@@ -1,0 +1,446 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+PID=23120
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'cbaba8e2-27b9-442d-8337-7d81cc892659'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=cbaba8e2-27b9-442d-8337-7d81cc892659'
+
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '19617b58-23a9-48b0-b341-db4257b1d62f'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=19617b58-23a9-48b0-b341-db4257b1d62f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '19617b58-23a9-48b0-b341-db4257b1d62f'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5244a050-0f82-4e92-a7af-525ebec975bd'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5244a050-0f82-4e92-a7af-525ebec975bd'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5244a050-0f82-4e92-a7af-525ebec975bd'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Review 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2a469dc6-7487-45e9-97ba-728a4b85582c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2a469dc6-7487-45e9-97ba-728a4b85582c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2a469dc6-7487-45e9-97ba-728a4b85582c'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Review 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Review' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f0f25d9b-97dd-4c16-bf9c-7571390671f2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f0f25d9b-97dd-4c16-bf9c-7571390671f2'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f0f25d9b-97dd-4c16-bf9c-7571390671f2'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd110c2b0-d557-42b0-9ca9-a92a76ac51b5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d110c2b0-d557-42b0-9ca9-a92a76ac51b5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd110c2b0-d557-42b0-9ca9-a92a76ac51b5'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c80ad6b7-eefe-4c0f-bfe4-f72c26f1f37b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c80ad6b7-eefe-4c0f-bfe4-f72c26f1f37b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c80ad6b7-eefe-4c0f-bfe4-f72c26f1f37b'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2bef91c9-e792-4aca-b1c5-4ba5b7553420'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2bef91c9-e792-4aca-b1c5-4ba5b7553420'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2bef91c9-e792-4aca-b1c5-4ba5b7553420'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MassVehEstV10\MassVehEstV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '22a4e16c-fcb0-4687-8f99-45b75532348a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=22a4e16c-fcb0-4687-8f99-45b75532348a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '22a4e16c-fcb0-4687-8f99-45b75532348a'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MassVehEstV10\MassVehEstV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MassVehEstV10\MassVehEstV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6c487e0e-a410-4f1c-86b0-b85f24443df5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6c487e0e-a410-4f1c-86b0-b85f24443df5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6c487e0e-a410-4f1c-86b0-b85f24443df5'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c2c59565-c801-47e6-a816-6361004081a8'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c2c59565-c801-47e6-a816-6361004081a8'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c2c59565-c801-47e6-a816-6361004081a8'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '20cc2b49-d831-437b-b993-8c94773105e0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=20cc2b49-d831-437b-b993-8c94773105e0'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '20cc2b49-d831-437b-b993-8c94773105e0'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '982ff8a1-a3e1-42cb-9674-b2339eaaabd4'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=982ff8a1-a3e1-42cb-9674-b2339eaaabd4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '982ff8a1-a3e1-42cb-9674-b2339eaaabd4'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bf9202c5-69b6-4105-a08d-8efe16917c40'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=bf9202c5-69b6-4105-a08d-8efe16917c40'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bf9202c5-69b6-4105-a08d-8efe16917c40'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '08ae13ad-ba93-44be-9b73-e6f02112f2a3'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=08ae13ad-ba93-44be-9b73-e6f02112f2a3'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '08ae13ad-ba93-44be-9b73-e6f02112f2a3'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\BC\BC_Composition\BC_Modules\RotSpdCalcV10\RotSpdCalcV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c70ef49c-3b52-4e37-a40d-81c235b061b5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c70ef49c-3b52-4e37-a40d-81c235b061b5'
+
+Autodoc Block must be added to the subsystem!
+RotSpdCalcV10/Synchronization_Speed_Difference_for_Range_Change

@@ -1,0 +1,184 @@
+<check fileVersion="2">
+  <uid>78b7c3ab-1a21-43fc-b23b-9d74d3a69e1e</uid>
+  <id>mcheck_misra_slsf_020_abcd</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Text Appearance</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_020_abcd.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[If the font properties of block signal label and annotation text have value as defined in the parameters(MISRA_SL_SF.BlockFont., MISRA_SL_SF.LineFont, MISRA_SL_SF.AnnotationFont)a pass is given. The attributes are either assigned explicitly (adjusted via the Format/Font menu or block parameters to the default values) or implicitly (via Block Parameters &quot;FontName&quot; set to &quot;auto&quot;, &quot;FontSize&quot; to -1, &quot;FontWeight&quot; to &quot;auto&quot; and &quot;FontAngle&quot; to &quot;auto&quot;), if they are assigned implicitly, the default setting in Simulink preferences should be same as the value in the parameters, otherwise, a fail will be given. Note: color of the text is checked by mes_color_001.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[The color of text(block name, line label, annotation) is not checked by this check, because the color of label line is depended on the color of the source block, the color of the block and annotation can be checked by mes_color_001. To avoid duplicated definition of the parameter, it is suggested to use mes_color_001 to check the color of the text.
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Set font attributes back to chosen values.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.BlockFont.Name</name>
+      <description><![CDATA[String, define the font name of block, it affects the name of the block, can be any font name. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultblockfontname'. If define it to 'off', the block font name will not be checked.  Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.BlockFont.Weight</name>
+      <description><![CDATA[String, define the font weight of block, it affects the name of the block, can be 'normal','bold','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultblockfontweight'. If define it to 'off', the block font weight will not be checked. Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['bold']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.BlockFont.Angle</name>
+      <description><![CDATA[String, define the font angle of block, it affects the name of the block, can be 'normal','italic','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultblockfontangle'. If define it to 'off', the block font angle will not be checked. Default value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['italic']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.BlockFont.Size</name>
+      <description><![CDATA[Interger value, define the font size of block name, can be any positive interger number. If define it to '-1', the default value is then used, the default value can be obtained by property 'defaultblockfontsize'. If define it to '0', the block font size will not be checked. Default value is '-1'.]]></description>
+      <defaultValue>-1</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.LineFont.Name</name>
+      <description><![CDATA[String, define the font name of signal label, can be any font name. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultlinefontname'. If define it to 'off', the line font name will not be checked.  Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.LineFont.Weight</name>
+      <description><![CDATA[String, define the font weight of line label, can be 'normal','bold','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultlinefontweight'. If define it to 'off', the line label font weight will not be checked. Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['bold']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.LineFont.Angle</name>
+      <description><![CDATA[String, define the font angle of line label , can be 'normal','italic','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultlinefontangle'. If define it to 'off', the line font angle will not be checked. Default value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['italic']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.LineFont.Size</name>
+      <description><![CDATA[Interger value, define the font size of signal label, can be any positive interger number. If define it to '-1', the default value is then used, the default value can be obtained by property 'defaultlinefontsize'. If define it to '0', the signal label font size will not be checked. Default value is '-1'.]]></description>
+      <defaultValue>-1</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.AnnotationFont.Name</name>
+      <description><![CDATA[String, define the font name of annotation, can be any font name. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultannotationfontname'. If define it to 'off', the annotation font name will not be checked.  Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.AnnotationFont.Weight</name>
+      <description><![CDATA[String, define the font weight of annotation, can be 'normal','bold','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultannotationfontweight'. If define it to 'off', the annotation font weight will not be checked. Defalte value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['bold']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.AnnotationFont.Angle</name>
+      <description><![CDATA[String, define the font angle of annotation , can be 'normal','italic','auto' and 'off'. If define it to 'auto', the default value is then used, the default value can be obtained by property 'defaultannotationfontangle'. If define it to 'off', the annotation font angle will not be checked. Default value is 'auto'.]]></description>
+      <defaultValue><![CDATA['auto']]></defaultValue>
+      <allowedValues>
+        <entry><![CDATA['normal']]></entry>
+        <entry><![CDATA['italic']]></entry>
+        <entry><![CDATA['auto']]></entry>
+        <entry><![CDATA['off']]></entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.AnnotationFont.Size</name>
+      <description><![CDATA[Interger value, define the font size of annotation, can be any positive interger number. If define it to '-1', the default value is then used, the default value can be obtained by property 'defaultannotationfontsize'. If define it to '0', the annotation font size will not be checked. Default value is '-1'.]]></description>
+      <defaultValue>-1</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="11/24/2015 14:09:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Text Appearance' (ID: mcheck_misra_slsf_020, Version: v01, Library: MATLAB_MISRA_Simulink_Stateflow, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+    <record timestamp="12/09/2015 16:30:16">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

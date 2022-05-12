@@ -1,0 +1,618 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=12484
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '34bcd35c-942d-4021-a31b-a4c843486ff9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=34bcd35c-942d-4021-a31b-a4c843486ff9'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+Using DD project file:   C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e68fb556-b398-4fae-bbff-96b734a2e5d5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e68fb556-b398-4fae-bbff-96b734a2e5d5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e68fb556-b398-4fae-bbff-96b734a2e5d5'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkLDRV10\WhlTolChkLDRV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f7b32c46-27a7-43af-a301-c9e326ec98c5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f7b32c46-27a7-43af-a301-c9e326ec98c5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f7b32c46-27a7-43af-a301-c9e326ec98c5'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkLDRV10\WhlTolChkLDRV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkLDRV10\WhlTolChkLDRV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\VelCalcV10\VelCalcV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8edd81b3-9a7f-4095-9883-5545cffc67f9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8edd81b3-9a7f-4095-9883-5545cffc67f9'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8edd81b3-9a7f-4095-9883-5545cffc67f9'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\VelCalcV10\VelCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\VelCalcV10\VelCalcV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TrqCardV10\TrqCardV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '50293fa5-32dc-43ee-b4b4-2b38aff09e9e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=50293fa5-32dc-43ee-b4b4-2b38aff09e9e'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '50293fa5-32dc-43ee-b4b4-2b38aff09e9e'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TrqCardV10\TrqCardV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TrqCardV10\TrqCardV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TmpPTUV10\TmpPTUV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd35cd70f-2a13-448f-8b5c-1f247ac6afd6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d35cd70f-2a13-448f-8b5c-1f247ac6afd6'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd35cd70f-2a13-448f-8b5c-1f247ac6afd6'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TmpPTUV10\TmpPTUV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TmpPTUV10\TmpPTUV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\RotSpdCalcV10\RotSpdCalcV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '134b1fe7-6fd4-479a-a137-cd7a1fd4154e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=134b1fe7-6fd4-479a-a137-cd7a1fd4154e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '134b1fe7-6fd4-479a-a137-cd7a1fd4154e'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\RotSpdCalcV10\RotSpdCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\RotSpdCalcV10\RotSpdCalcV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '08111bbc-84fd-4d52-a0bd-09f32e932f14'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=08111bbc-84fd-4d52-a0bd-09f32e932f14'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '08111bbc-84fd-4d52-a0bd-09f32e932f14'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7c461d81-3c21-4b02-945e-5593f391d031'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7c461d81-3c21-4b02-945e-5593f391d031'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7c461d81-3c21-4b02-945e-5593f391d031'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '41c6a7a0-9ffc-4326-8589-5e505470a464'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=41c6a7a0-9ffc-4326-8589-5e505470a464'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '41c6a7a0-9ffc-4326-8589-5e505470a464'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '30a91f7e-a637-4bc9-834d-3ade9ea4c7d8'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=30a91f7e-a637-4bc9-834d-3ade9ea4c7d8'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '30a91f7e-a637-4bc9-834d-3ade9ea4c7d8'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'fc820262-fb72-4f7f-9ee8-434a036e65c8'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=fc820262-fb72-4f7f-9ee8-434a036e65c8'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'fc820262-fb72-4f7f-9ee8-434a036e65c8'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '989acc51-524e-48cc-8331-0738ea5c232e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=989acc51-524e-48cc-8331-0738ea5c232e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '989acc51-524e-48cc-8331-0738ea5c232e'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '82b42e12-a932-401b-b994-f499255c9b96'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=82b42e12-a932-401b-b994-f499255c9b96'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '82b42e12-a932-401b-b994-f499255c9b96'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '47328201-5bd2-4cec-8451-c376e0d26580'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=47328201-5bd2-4cec-8451-c376e0d26580'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '47328201-5bd2-4cec-8451-c376e0d26580'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '97efe14d-0f5e-425d-befa-86b8ce1b8e2f'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=97efe14d-0f5e-425d-befa-86b8ce1b8e2f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '97efe14d-0f5e-425d-befa-86b8ce1b8e2f'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46fc3c9b-1d13-4a00-ad00-23f0cf2c7c38'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=46fc3c9b-1d13-4a00-ad00-23f0cf2c7c38'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46fc3c9b-1d13-4a00-ad00-23f0cf2c7c38'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd940ec0b-b261-4336-8ae5-c5f0dcf5b9cc'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d940ec0b-b261-4336-8ae5-c5f0dcf5b9cc'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd940ec0b-b261-4336-8ae5-c5f0dcf5b9cc'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5f886367-f792-48d1-b3d7-8afa728d62ba'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5f886367-f792-48d1-b3d7-8afa728d62ba'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5f886367-f792-48d1-b3d7-8afa728d62ba'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '31a71b5c-f7e4-4033-860f-ff3e67084fab'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=31a71b5c-f7e4-4033-860f-ff3e67084fab'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '31a71b5c-f7e4-4033-860f-ff3e67084fab'
+    export: 'true'
+      file: 'C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkV10\WhlTolChkV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\WhlTolChkLDRV10\WhlTolChkLDRV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\VelCalcV10\VelCalcV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TrqCardV10\TrqCardV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\TmpPTUV10\TmpPTUV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\RotSpdCalcV10\RotSpdCalcV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMStartBVCV10\PFMStartBVCV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\PFMEndBVCV10\PFMEndBVCV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\OffroadCalcV10\OffroadCalcV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMWriteV10\NVMWriteV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\NVMReadV10\NVMReadV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\MueSplitDetV10\MueSplitDetV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\LongSpdCalcV10\LongSpdCalcV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\KinemCalcV10\KinemCalcV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\ITCWhlTolChkV10\ITCWhlTolChkV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\FricEstV10\FricEstV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupV10\DTWindupV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DTWindupLDRV10\DTWindupLDRV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\Product_Group\SW\Development\BC\BC_Composition\BC_Modules\DiagV10\DiagV10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

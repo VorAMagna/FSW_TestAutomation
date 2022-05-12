@@ -1,0 +1,97 @@
+<guidelineDocument fileVersion="2">
+  <uid>652f0924-f50a-4d92-b949-56786ca84110</uid>
+  <id>mes_mxam_report_comparison</id>
+  <title>MXAM Report Comparison Document (beta)</title>
+  <access>protected</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="bf940bee-7965-47c4-9c94-f75c2a32eaf9" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[The MES Model Examiner&reg; (MXAM) creates reports by analyzing models. On their own, these reports provide a good overview of the state of the models according to the chosen modeling guidelines. Nevertheless, it is important to know the difference between two reports if they, for instance, belong to the same setup of guidelines and models.
+<br />
+<br /> Using a different version of MXAM or model may lead to discrepancies in reports of the same project setup. Comparing reports by hand can be a time-consuming task. This guideline document provides you with a set of guidelines that analyze reports and give findings on differences in multiple aspects of each report. This makes it is easy to identify changes and to use them as the basis for decisions about the project setup.
+<br />
+<br /> The MXAM Report Comparator Document offers guidelines for the following aspects:
+<br />
+<br />
+<ul>
+ <li> Semantic Analysis: </li>
+ <li style="list-style: none">
+  <ul>
+   <li> Guidelines to detect changes in the set of findings created by the used checks </li>
+   <li> Guidelines to detect changes in the set of annotations mapped in the reports<br /> <br /> </li>
+  </ul> </li>
+ <li> Structural Analysis – Guidelines to detect changes in the document structure<br /> <br /> </li>
+ <li> Report Statistics – Guidelines with statistical information from the MXAM Report Comparator analysis </li>
+</ul>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="c0e97523-61fa-4a48-862d-b259472f9f74" title="Semantic Analysis">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[Findings are created by model checks conducted during an analysis. The occurrence of additional, missing, or moved findings or those with differences may be due to several reasons. Identifying those differences is important and may lead to further actions to retain model quality.
+<br />
+<br /> Annotations reference findings and add additional textual information. Optionally, the result of the referenced finding can be changed by the annotation.
+<br />
+<br /> Changes in annotations may lead to a changed result and are therefore a very important part of the report. Additional or missing annotations or those with differences should be identified properly.
+<br />]]></value>
+      </description>
+      <guideline uid="25c1ad59-d03f-4026-9d23-dbfafc5aa514" modifier="standard" refUid="58e7f818-d028-4022-b34b-41d8b9616c3c" refId="report_equal_findings" refVersion="1" refTitle="Equal Findings">
+        <check uid="ba15f50d-d3e3-4bfc-a194-9c9a542f596b" selectedForRun="true" refUid="42f8d570-61e1-4ccc-abdf-cb51ac00513e" refId="report_finding_differences" refVersion="1" refTitle="No differences in matched findings"/>
+        <check uid="96fc5fc9-e0c1-4d81-b8c0-403248e2fc2c" selectedForRun="true" refUid="06a175ec-8178-47b2-bc4f-106f46b9e2d4" refId="report_finding_location" refVersion="1" refTitle="No difference in location of matched findings"/>
+        <check uid="a85bbdbd-81e8-45e3-8b51-e5c17eee3665" selectedForRun="true" refUid="1ef7bd5b-f275-4684-8c9d-ee67101919b6" refId="report_additional_finding" refVersion="1" refTitle="No additional finding"/>
+        <check uid="7fe96d22-6e7d-47ae-9237-c35b37fc54b9" selectedForRun="true" refUid="6731b715-b3ea-40a1-a362-7b1170d127b2" refId="report_missing_finding" refVersion="1" refTitle="No missing finding"/>
+      </guideline>
+      <guideline uid="60b787f8-432d-4249-b465-405370e6cff2" modifier="standard" refUid="7f26f317-2e14-4d55-b00f-94cccceb6ea0" refId="report_equal_annotations" refVersion="1" refTitle="Equal Annotations">
+        <check uid="542dfd01-2af4-4d26-a0dc-0aa140b5e98b" selectedForRun="true" refUid="35c2d182-f5fd-4954-9a70-7db992c3daf7" refId="report_annotation_differences" refVersion="1" refTitle="No differences in matched annotations"/>
+        <check uid="1e015193-267c-4546-9861-a35d90834980" selectedForRun="true" refUid="cc96905e-0350-4429-8e21-58c7cd50586d" refId="report_additional_annotation" refVersion="1" refTitle="No additional annotation"/>
+        <check uid="6bbcbb73-1336-4e39-acce-9b648f7a7b32" selectedForRun="true" refUid="c127a9c6-d971-4341-aaab-978c96f5eaf0" refId="report_missing_annotation" refVersion="1" refTitle="No missing annotation"/>
+      </guideline>
+    </chapter>
+    <chapter uid="1effdacb-51ed-49c8-b89f-66bc7750bb27" title="Structural Analysis">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[The structure of a guideline document is provided by its chapters and their guidelines. The amount and depth of chapters does not change the execution context of the guidelines. Chapters are used for structuring and therefore lead to a better overview. This increases maintainability of the guideline document.
+<br />
+<br /> The structure of a guideline document may change over time, which may lead to the introduction, deletion, or modification of the set of used guidelines. It is important to be aware of these changes.
+<br />
+<br /> Not all changes in the document structure (for example, when guidelines are rearranged) lead to different analysis findings. This chapter offers guidelines that also detect these kinds of changes so appropriate actions can be performed if needed.
+<br />]]></value>
+      </description>
+      <guideline uid="8548ff68-004b-4f8d-9684-c1e5812f8b9a" modifier="standard" refUid="6d6a8fe7-13f4-4a55-8800-def1917fc076" refId="report_equal_document_structure" refVersion="1" refTitle="Equal Document Structure">
+        <check uid="198ee083-3a8f-4384-9f1e-53e68b128d6b" selectedForRun="true" refUid="46b13604-24e7-46bd-aff2-f2662bc73cd9" refId="report_document_structure_differences" refVersion="1" refTitle="No differences in structure of documents"/>
+      </guideline>
+    </chapter>
+    <chapter uid="1e2e3651-db8d-472f-a26f-131fef0b7ea4" title="Statistics">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value>This chapter includes guidelines that retrieve statistical information about the compared reports. This information can be used to validate the execution of the Report Comparator so that all required aspects are analyzed.</value>
+      </description>
+      <guideline uid="e0f94dd1-70fc-4618-9127-ae8ba94cea38" modifier="standard" refUid="c8f3ede0-12fa-4bdf-a137-322841f72470" refId="report_statistics" refVersion="1" refTitle="Report Statistics">
+        <check uid="309947e2-a588-4ec8-83d0-57221c72f551" selectedForRun="true" refUid="88012653-eeee-49d8-a0dd-20e97f5e58f3" refId="report_number_of_findings" refVersion="1" refTitle="Difference in number of findings"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="02/15/2016 14:01:50">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:36:52">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guidelineDocument>

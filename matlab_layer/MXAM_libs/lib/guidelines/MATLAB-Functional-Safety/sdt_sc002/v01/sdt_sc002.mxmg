@@ -1,0 +1,181 @@
+<guideline fileVersion="2">
+  <uid>d82a9a48-cdfc-47cd-a021-254f9218395f</uid>
+  <id>sdt_sc002</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Strong Data Typing at the Stateflow Interface</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>SDT</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>functionality</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MES_FS_1_3</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Data type, scaling and range consistency in the Simulink and Stateflow interface, and required property settings </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The data type, scaling and value range of each signal of the Stateflow interface must be well defined and consistent with its source or destination block. To this end, the following criteria must be met. </p> 
+<ul> 
+ <li> The Stateflow chart option &quot;Use Strong Data Typing with Simulink I/O&quot; (Chart -&gt; Properties) must be selected. </li> 
+ <li> The range of each Stateflow variable must be explicitly defined in the Model Explorer (General -&gt; Limit range). The debug option &quot;Data Range&quot; (Simulation -&gt; Debug -&gt; Debug Chart) assists during a simulation to detect whether the minimum and maximum values you specified for a data item are exceeded. In addition, it is checked whether fixed-point data overflows its base word size. </li> 
+</ul>Note: In Matlab 2015, the Stateflow property setting &quot; Simulation range checking: error&quot; (Simulation-&gt; Configuration Parameters -&gt; Diagnostics -&gt; Data Validity) checks the insufficient data range of a Stateflow data item. The debug option &quot;Data Range&quot; is not valid in Matlab 2015.
+<br /> 
+<p> If a Stateflow chart resides in a TargetLink system, the data type, scaling, and range </p> 
+<ul> 
+ <li> of each input signal must be consistent with its source block. </li> 
+ <li> of each output signal must be consistent with its destination block. </li> 
+</ul> 
+<p> In a TargetLink model of TargetLink version less than 2.2, the inheritance mechanism for the size and data type properties at the Simulink/Stateflow interface must not be used. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> If the Stateflow chart option &quot;Use Strong Data Typing with Simulink I/O&quot; is not selected, Stateflow performs implicit data type conversions at the Simulink/Stateflow interface. This may lead to data loss for any variable with scope &quot;Input from Simulink&quot; or &quot;Output to Simulink&quot;. </p> 
+<p> If the range of a Stateflow variable is set as tight as possible, the internal TargetLink Stateflow scaling algorithm can choose an appropriate data type for any intermediate result variable. This leads to operations with small bit sizes. TargetLink uses user defined ranges to optimize the generated code. Missing range definitions hinder the detection and control of overflows. </p> 
+<p> Inconsistent data types may lead to inefficient code, reduced accuracy or range violations. For function interfaces, strong data type consistency of each passed parameter and each return value ensures signal integrity and efficient production code minimizing the need for type casts and rounding operations. </p> 
+<p> Between MATLAB versions R2010b and R2012b, the option &quot;Use Strong Data Typing with Simulink I/O&quot; has not been selectable in the GUI. It is set to &quot;true&quot; by default. It is, however, possible to change its value through the API. </p> 
+<p> Type/size inheritance was introduced with MATLAB Release R14 and is not supported by TargetLink versions prior to 2.2. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="sdt_sc002_example.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc002-1: Selection of the chart option &quot;Use Strong Data Typing with Simulink I/O&quot; </p> 
+<p> <img src="sdt_sc002_exampleDialogLimitRange.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc002-2: The minimum and maximum values of the Stateflow variable data_local are set<br /> </p> 
+<p> <img src="sdt_sc002_exampleDialogDataRange.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc002-3: The Stateflow chart debug option &quot;Data Range&quot; is set<br /> </p> 
+<p> If working with TargetLink versions prior to 2.2.1, the inheritance mechanism for the size and type of Stateflow data needs to be deactivated. </p> 
+<p> To deactivate this option, open the TargetLink Property Manager (see Figure sdt_sc002-4) and follow the steps below </p> 
+<ol> 
+ <li> Select the respective chart input data item </li> 
+ <li> Set the view option &quot;Inherit signal properties&quot; in section &quot;TargetLink properties of Stateflow objects&quot; </li> 
+ <li> Set the property sf.inheritscaling to &quot;off&quot; </li> 
+</ol> 
+<p> <img src="TLPropertyInheritSignalProperties.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc002-4: Deactivation of the inheritance of signal properties in the TargetLink Property Manager </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value><![CDATA[misra_tl_4_2, 
+dSPACE ds_0058 (2.16.5: Permitted Data Types at the Stateflow Chart Interface), 
+dSPACE ds_0056 (2.16.2: permitted Dimensionality at the Stateflow Chart Interface), 
+dSPACE ds_0072 (2.16.19: Simulink Stateflow Inheritance), 
+dSPACE ds_0112 (12.2: Specification of Range Information for Variables)]]></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1c Enforcement of Strong Typing</value>
+        <value>T8.1g No Implicit Type Conversion</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.2 Strongly Typed Programming Language</value>
+        <value>T3-2.2 Defensive Programming</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refTitle="Strong Data Typing at the Stateflow Interface - Chart Option &quot;Strong Data Typing with Simulink I/O&quot;" refVersion="1"/>
+    <reference refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refTitle="Strong Data Typing at the Stateflow Interface - Input Interface" refVersion="1"/>
+    <reference refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refTitle="Strong Data Typing at the Stateflow Interface - Output Interface" refVersion="1"/>
+    <reference refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refTitle="Strong Data Typing at the Stateflow Interface - Data Range" refVersion="1"/>
+    <reference refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refTitle="Strong Data Typing at the Stateflow Interface - Variable Range" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/16/2015 10:20:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

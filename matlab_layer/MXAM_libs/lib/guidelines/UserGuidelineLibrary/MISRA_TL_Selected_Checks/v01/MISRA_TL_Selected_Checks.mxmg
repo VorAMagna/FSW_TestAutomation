@@ -1,0 +1,81 @@
+<guideline fileVersion="2">
+  <uid>4a504af0-ab98-4b39-8393-40a1d5e75ea8</uid>
+  <id>MISRA_TL_Selected_Checks</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="beermara" domain="MAGNA"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>629df1f2-5025-496d-af5e-fb2b09f8a928</templateUid>
+  <title>MISRA_TL_Selected_Checks</title>
+  <properties>
+    <boolean name="Boolean attribute" optional="true" private="false">
+      <description>boolean example</description>
+      <value>true</value>
+    </boolean>
+    <double name="Double attribute" optional="true" private="false">
+      <description>double example</description>
+      <value>1.0</value>
+    </double>
+    <integer name="Integer attribute" optional="true" private="false">
+      <description>integer example</description>
+      <value>1</value>
+    </integer>
+    <richtext name="Richtext attribute" optional="true" private="false">
+      <description>richtext example</description>
+      <value>this is a richtext</value>
+    </richtext>
+    <string name="String attribute" optional="true" private="false">
+      <description>string example</description>
+      <value>this is a string</value>
+    </string>
+    <enumeration name="Enumeration attribute single" optional="true" private="false" multi="false">
+      <description>enumeration attribute (single selection)</description>
+      <enums>
+        <value>passed</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Enumeration attribute multi" optional="true" private="false" multi="true">
+      <description>enumeration attribute (multi selection)</description>
+      <enums>
+        <value>passed</value>
+        <value>failed</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences>
+    <reference refUid="ced2cb1c-4668-44b2-ada5-7f5498d716f1" refId="mcheck_us_misra_0001" refTitle="Use of calibration constants - adapted version of mcheck_mes_misra_tl_3_3" refVersion="1"/>
+    <reference refUid="87a33c48-2c2c-4e38-a84b-04f52ab08b6c" refId="mcheck_misra_tl_1_1" refTitle="Use of Block Priorities" refVersion="1"/>
+    <reference refUid="c68d453f-40a5-482d-9dfc-71c88265ba8f" refId="mcheck_misra_tl_1_2_a" refTitle="Comments in block properties" refVersion="1"/>
+    <reference refUid="6697732d-1e3b-4a62-ae87-16d56af7534d" refId="mcheck_misra_tl_1_2_b" refTitle="Umlaute in Block Properties" refVersion="1"/>
+    <reference refUid="31b61a11-2373-4773-959c-b7d46384bbd1" refId="mcheck_misra_tl_4_2" refTitle="Permitted data types at the Stateflow Chart Interface" refVersion="1"/>
+    <reference refUid="97927f70-f12d-4182-8ea4-b94636180691" refId="mcheck_misra_tl_4_4" refTitle="Avoidance of Saturation in Integer Arithmetics" refVersion="1"/>
+    <reference refUid="141241e2-0946-4163-8a97-0f269fc8c585" refId="mcheck_misra_tl_4_5" refTitle="Avoidance of Rounding Operations" refVersion="1"/>
+    <reference refUid="6b6b88b3-18a2-45cc-b0c2-4ff0d8fc44d2" refId="mcheck_misra_tl_5_1" refTitle="Attributes of Look-Up table outputs" refVersion="1"/>
+    <reference refUid="01d59b3a-a67a-4d09-b7c8-99287cae6be2" refId="mcheck_misra_tl_5_10" refTitle="Use of Custom Code blocks" refVersion="1"/>
+    <reference refUid="b822f148-bdec-4b08-bfd9-2de5fb4c5f8f" refId="mcheck_misra_tl_5_2_a" refTitle="Use of the Switch Case block: Show default case" refVersion="1"/>
+    <reference refUid="a1e8d34d-4d3f-4eb1-ab50-a7d65de5234b" refId="mcheck_misra_tl_5_2_b" refTitle="Use of the Switch Case block: avoid unconnected default outputs" refVersion="1"/>
+    <reference refUid="bf10d503-8285-41e0-ba2a-e0863c3cb369" refId="mcheck_misra_tl_5_3" refTitle="Use of Data Store blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="8541c376-6f31-4458-8c48-79a424fd1ba5" refId="mcheck_misra_tl_5_4" refTitle="Use of From and Goto blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="db750cae-1927-40ee-aba1-f4c022151b07" refId="mcheck_misra_tl_5_7" refTitle="Use of data types for Multiport Switch block" refVersion="1"/>
+    <reference refUid="a11936af-acf6-4504-bec2-f63bb2ca26c0" refId="mcheck_misra_tl_5_8" refTitle="Use of the Switch block" refVersion="1"/>
+    <reference refUid="62c57b75-024b-4f98-bf5b-2442aca0c912" refId="mcheck_misra_tl_5_9" refTitle="Use of the Fcn Block for assigning Boolean variables" refVersion="1"/>
+    <reference refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)" refVersion="1"/>
+    <reference refUid="7b96410b-6116-4a4b-b728-875ab3fc9cd4" refId="mcheck_misra_tl_7_1" refTitle="Generating generic code without pragmas" refVersion="1"/>
+    <reference refUid="fd353c9e-f8ca-4965-a99b-140cd8540cd8" refId="mcheck_misra_tl_7_2" refTitle="Avoiding target-specific assembly code" refVersion="1"/>
+    <reference refUid="a731839e-437f-4766-8edb-05827d5e4be0" refId="mcheck_misra_tl_7_5" refTitle="Local macros should not be used" refVersion="1"/>
+    <reference refUid="483e4e2a-18e3-42ec-af65-fdd6cb117931" refId="mcheck_misra_tl_7_6" refTitle="Correct declaration of external variables" refVersion="1"/>
+    <reference refUid="759dedc1-9733-404e-bae9-404abdf00e0e" refId="mcheck_misra_tl_7_7" refTitle="Use of Include Statements in Custom Code Block" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/29/2019 13:23:13">
+      <author username="beermara" domain="MAGNA"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

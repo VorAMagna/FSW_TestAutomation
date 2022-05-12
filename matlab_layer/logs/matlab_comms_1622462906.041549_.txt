@@ -1,0 +1,277 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=26296
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5c73e9f1-b348-4045-8ecc-a1b2cdf87b20'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5c73e9f1-b348-4045-8ecc-a1b2cdf87b20'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a5285d9e-9752-415b-95b7-7920717585a7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=a5285d9e-9752-415b-95b7-7920717585a7'
+
+Description in the Autodoc block is too short!
+SigCondC10/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+SigCondC10/eval_ZAS_Kl_15/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+SigCondC10/speed calculations/kmh2rpmCalc_Front/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondC10/speed calculations/kmh2rpmCalc_Rear/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SigCondC10/dtWindUpBybassing
+Autodoc Block must be added to the subsystem!
+SigCondC10/dtWindUpBybassing/Bypass_Enable
+Autodoc Block must be added to the subsystem!
+SigCondC10/trackCurvtreVWhlCalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a5285d9e-9752-415b-95b7-7920717585a7'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCMainS02\GDDCMainS02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b40429ed-0f34-45da-9bc1-af3c8aee07dd'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b40429ed-0f34-45da-9bc1-af3c8aee07dd'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b40429ed-0f34-45da-9bc1-af3c8aee07dd'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCMainS02\GDDCMainS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCMainS02\GDDCMainS02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCPosCalcS02\GDDCPosCalcS02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e3d085ed-1c27-4fe7-aa42-7ba5a723bdeb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e3d085ed-1c27-4fe7-aa42-7ba5a723bdeb'
+
+Description in the Autodoc block is too short!
+GDDCPosCalcS02/calc_dXSecNut/Autodoc
+Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e3d085ed-1c27-4fe7-aa42-7ba5a723bdeb'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCPosCalcS02\GDDCPosCalcS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCPosCalcS02\GDDCPosCalcS02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCUReqCtrlS02\GDDCUReqCtrlS02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '23547101-4370-4b88-b1b2-bc291d9f2871'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=23547101-4370-4b88-b1b2-bc291d9f2871'
+
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Description in the Autodoc block is too short!
+GDDCUReqCtrlS02/uReqSolDisconnect/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+GDDCUReqCtrlS02/uReqSolDisconnect/ExcCnt/Autodoc
+Customization1
+Autodoc Block must be added to the subsystem!
+GDDCUReqCtrlS02/Logging_System_Resistance/EnablingConditions
+Autodoc Block must be added to the subsystem!
+GDDCUReqCtrlS02/uReqSolCluEngdDet
+Autodoc Block must be added to the subsystem!
+GDDCUReqCtrlS02/uReqSolSourceSel/Solenoid_current_controller
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '23547101-4370-4b88-b1b2-bc291d9f2871'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCUReqCtrlS02\GDDCUReqCtrlS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCUReqCtrlS02\GDDCUReqCtrlS02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMReadS02\NVMReadS02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9b5cf92c-6784-4c1a-bbe3-2c499132bdc2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=9b5cf92c-6784-4c1a-bbe3-2c499132bdc2'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9b5cf92c-6784-4c1a-bbe3-2c499132bdc2'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMReadS02\NVMReadS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMReadS02\NVMReadS02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMWriteS02\NVMWriteS02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '905cfd98-f721-4020-858e-6171e1618818'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=905cfd98-f721-4020-858e-6171e1618818'
+
+Autodoc Block must be added to the subsystem!
+NVMWriteS02/NVMS02_00
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '905cfd98-f721-4020-858e-6171e1618818'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMWriteS02\NVMWriteS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMWriteS02\NVMWriteS02.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SC_Modules\SignalConditioningC10\SigCondC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCMainS02\GDDCMainS02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCPosCalcS02\GDDCPosCalcS02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\GDDCUReqCtrlS02\GDDCUReqCtrlS02.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMReadS02\NVMReadS02.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\SD_Modules\NVMWriteS02\NVMWriteS02.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

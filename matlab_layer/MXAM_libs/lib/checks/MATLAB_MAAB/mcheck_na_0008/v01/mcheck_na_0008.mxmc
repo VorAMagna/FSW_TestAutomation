@@ -1,0 +1,105 @@
+<check fileVersion="2">
+  <uid>c5f32518-c88c-43ac-bcf2-95b816cbcaee</uid>
+  <id>mcheck_na_0008</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Display of Labels on Signals</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_na_0008.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each signal according to the guideline.
+<br /> 
+<ul> 
+ <li> Failed 1: The output signal has no label and it originates from one of the blocks listed in the guideline.<br /> </li> 
+ <li> Failed 2: The input signal has no label and its destination is one of the blocks listed in the guideline.<br /> </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br /> 
+<br /> Constant block: If the constant block has a valid expression in the constant value field, i.e. the name consists only of characters [A-Z,a-z,0-9,_], then this block receives a pass.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[If the signal to a block has no name but violates the guideline, the source block will be reported, instead of the destination block.
+<br /> In case of the exception: If the block has the proper setting it receives a pass, no matter whether the connected signal has a name or not.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Set the block properties according to this guideline. Use either the GUI or the API.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<ul> 
+ <li> From: Changes the option 'Icon display' to 'Tag and signal name'. </li> 
+ <li> Subsystem: Changes the option 'Show port labels' to 'SignalName'. </li> 
+ <li> Inport:<br /> 
+  <ul> 
+   <li> If it has a propagated signal, then changes the option 'Show propagated signals' to 'on'. </li> 
+   <li> If it has no propagated signal, tries to change the signal name to the name of the inport. </li> 
+  </ul> </li> 
+ <li> Outport:<br /> 
+  <ul> 
+   <li> If it has a propagated signal, then changes the option 'Show propagated signals' to 'on'. </li> 
+   <li> If it has no propagated signal, tries to change the signal name to the name of the outport. </li> 
+  </ul> </li> 
+ <li> Demux, Goto, Data Store Write,Bus Creator, Mux, Selector: If it has a propagated signal, then changes the option 'Show propagated signals' to 'on'. </li> 
+ <li> Constant, Data Store Read: Does nothing. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,159 @@
+<guideline fileVersion="2">
+  <uid>910d94df-c8ac-4583-9692-017dabaf013b</uid>
+  <id>TL_RULE_SWDESIGN_MULT_VS_BITSHIFT_MISRA</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Multiplications/Divisions vs. Bitshifts</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>verification/validation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 14.20), dSPACE 3.0 (section 14.20), dSPACE 4.0 (section 5.1.2.)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> use option ShiftMode in a hook function before code generation for MISRA compliance </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The TargetLink code generation option <span style="font-style: italic;">ShiftMode</span> should be set appropriately before code generation if MISRA compliance is an issue. As a consequence, bitshifts can be replaced by multiplications/divisions. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Adherence to this rule serves to comply with MISRA rule 12.7, which prohibits bit operations on signed integer types. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> In order to get a list of TargetLink&acute;s code generation options, type <span style="font-style: italic;">tl_get_supported_cgoptions</span> on the MATLAB command window. Among other options, there is the <span style="font-style: italic;">ShiftMode</span> property with the following valid settings: </p>
+<ul>
+ <li> 0 -&gt; no restrictions with regard to bitshifts. This is the default. </li>
+ <li> 1 -&gt; don' t shift right </li>
+ <li> 2 -&gt; don't shift left </li>
+ <li> 3 -&gt; don't shift right or left </li>
+</ul>
+<p> Code generation settings like the <span style="font-style: italic;">ShiftMode</span> option have to be set before code generation. You can set code generation options either using the TargetLink Main Dialog or in hook functions. For the latter, each TargetLink installation contains a template file for the <span style="font-style: italic;">pre-codegen.hook</span> function called <span style="font-style: italic;">tl_pre_codegen_hook.m</span> under <span style="font-style: italic;">%TL_Root%\Matlab\Tl\config\codegen</span>. It also demonstrates how to set code generation options there. </p>
+<p> In order to replace bitshifts by multiplications/divisions, make the following adjustments in the above hook file: </p>
+<p class="codeSample"> tlcgOptions = { tlcgOptions{:} ...<br /> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'ShiftMode', 3, ...<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }; </p>
+<p> Consequently, the following code fragment generated for the <span style="font-style: italic;">pipt1</span> TargetLink demo contains multiplications/divisions instead of bitshifts: </p>
+<p class="codeSample"> /* Sum: picontroller/sU<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # combined # Gain: picontroller/Kp<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # combined # Gain: picontroller/Ki */<br /> Sa1_sU = (Int16) (((UInt16) (Int16) ((((Int32) Sa1_e) * ((Int32) P_Sa1_Kp)) / 128)) + ((UInt16) (Int16) ((((Int32) Sa1_x) * ((Int32) P_Sa1_Ki)) / 64))); </p>
+<p> If instead the <em>ShiftMode</em> option is set to 0, the generated code fragment makes use of bitshifts and looks like this: </p>
+<p class="codeSample"> /* Sum: picontroller/sU<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # combined # Gain: picontroller/Kp<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # combined # Gain: picontroller/Ki */<br /> Sa1_sU = (Int16) (((UInt16) (Int16) ((((Int32) Sa1_e) * ((Int32) P_Sa1_Kp)) &gt;&gt; 7)) + ((UInt16) (Int16) ((((Int32) Sa1_x) * ((Int32) P_Sa1_Ki)) &gt;&gt; 6))); </p>
+<p> Note: In a similar manner, other code generation options can be set in the pre-codegen-hook function as well. For instance, if both the <span style="font-style: italic;">ShiftMode</span> and the <span style="font-style: italic;">GlobalOptimizationIterationThreshold</span> property must be modified, this can be carried out via the following lines:&nbsp; </p>
+<p class="codeSample"> tlcgOptions = { tlcgOptions{:} ...<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'GlobalOptimizationIterationThreshold', 10, ...<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'ShiftMode', 3, ...<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }; </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value>12.7</value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/15/2016 13:24:15">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Multiplications/Divisions vs. Bitshifts' (ID: ds_0156, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+    <record timestamp="09/15/2016 17:30:16">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

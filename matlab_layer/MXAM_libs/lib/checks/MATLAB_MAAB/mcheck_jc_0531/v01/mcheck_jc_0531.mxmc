@@ -1,0 +1,99 @@
+<check fileVersion="2">
+  <uid>f04b5b80-6f44-4363-8a66-365eb1757d31</uid>
+  <id>mcheck_jc_0531</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Placement of the Default Transition</title>
+  <adapter version="1.0">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_jc_0531.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Each default transition receives a fail that
+<br /> - has Option DestinationOclock greater than 10.5 or smaller than 1.5.
+<br /> - is connected to an object which is not the most upper object (not
+<br /> considering the default transition itself) in the considered hierachy.
+<br />
+<br /> Furthermore a fail is given to an object if it contains more than one
+<br /> default transition. In this case, the position of the destination object
+<br /> and the position of the connection between default transition and
+<br /> destination object is NOT checked.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- 'objects' covers 'states', 'graphical functions', 'boxes', 'embedded
+<br /> Matlab functions', 'simulink function block' and 'truth tables.
+<br /> - related Guideline only consideres 'states' for 'objects'. This
+<br /> implementation checks on a more generale basis and considered all
+<br /> stateflow objects
+<br /> - 'upper' is defined as: the upper left corner of the destination object
+<br /> (case non-junction object) or the 12 O'clock coordinate (case junction)
+<br /> is more upper than all other upper left corners]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Reposition the connection between default transition and destination
+<br /> object.
+<br /> Reposition the position of the default transition destination object such
+<br /> that it is the most upper left object.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p>No automatic repair action available.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

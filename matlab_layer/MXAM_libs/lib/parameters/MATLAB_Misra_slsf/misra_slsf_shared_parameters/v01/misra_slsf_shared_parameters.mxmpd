@@ -1,0 +1,67 @@
+<parameterDefinition fileVersion="1">
+  <uid>a3fa1599-5f03-4b4a-b174-a2c7285ab8d7</uid>
+  <id>misra_slsf_shared_parameters</id>
+  <version>1</version>
+  <status>draft</status>
+  <title>Shared parameters for Misra slsf checks</title>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright></copyright>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.BasicMaskedBlocks</name>
+      <description><![CDATA[Each entry of the list is a masktype and represents a masked basic block. Signal lines placed at blocks with such a masktype will not be considered by the check.
+Note: Blocks with empty MaskType will be ignored.]]></description>
+      <defaultValue><![CDATA[{''}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Add</name>
+      <description>List of operators, that are treated as an indicator for a sum operation.</description>
+      <defaultValue><![CDATA[{'+','++'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Bit</name>
+      <description>List of operators, that are treated as an indicator for bit-class.</description>
+      <defaultValue><![CDATA[{'<<','>>'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Div</name>
+      <description>List of operators, that are treated as an indicator for a division operation.</description>
+      <defaultValue><![CDATA[{'/','\','%%'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Ignore</name>
+      <description>List of operators, that will be ignored.</description>
+      <defaultValue><![CDATA[{'='}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Logic</name>
+      <description>List of operators, that are treated as an indicator for logic-class.</description>
+      <defaultValue><![CDATA[{'~','&','&&','|','||','!'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Mul</name>
+      <description>List of operators, that are treated as an indicator for a  mulitplication operation.</description>
+      <defaultValue><![CDATA[{'*','^'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Rel</name>
+      <description>List of operators, that are treated as an indicator for relational-class.</description>
+      <defaultValue><![CDATA[{'<','<=','==','>=','>','~=','!=','<>'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.OperatorClasses.Sub</name>
+      <description>List of operators, that are treated as an indicator for a subtract  operation.</description>
+      <defaultValue><![CDATA[{'-','--'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.ReportNonlinearTransitionsIndividually</name>
+      <description><![CDATA[Can be activated ('yes') to receive a warning for each nonlinear transition. This makes it easier to review the single transitions.]]></description>
+      <defaultValue><![CDATA['no']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.IgnoredBlocks</name>
+      <description><![CDATA[Each row describes a block, first column represents the blocktype, second the masktype. Per row only ONE block.  Example: {'EnablePort' ''; 'Constant' ''} -> all Enable and Constant blocks will be ignored.]]></description>
+      <defaultValue><![CDATA[{'',''}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+</parameterDefinition>

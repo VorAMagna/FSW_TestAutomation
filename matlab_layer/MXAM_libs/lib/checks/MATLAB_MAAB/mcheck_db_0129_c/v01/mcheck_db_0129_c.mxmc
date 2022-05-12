@@ -1,0 +1,104 @@
+<check fileVersion="2">
+  <uid>0308b3f3-69f0-48d8-ac00-1db87435c51f</uid>
+  <id>mcheck_db_0129_c</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Stateflow Transition Appearance - Associated Labels</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0129_c.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A transition receives a fail, if its label is too far away (maximal
+<br /> distance is given by parameter db_0129_c.MaxDistBetweenTransitionAndLabel).]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- Since the distance between a transition and the parallel edges of the virtual
+<br /> box around the transition label is computed, it is possible that a
+<br /> label with a lot of characters receives a fail. Reason is that the
+<br /> parallel edges are too far away, even if some characters of the label
+<br /> are close to the transition (might even cross).
+<br /> 
+<br /> - Since there are only 3 Points for transitions, only linear transitions are
+<br /> treated (for each other type, a correct analysis could not be guaranteed).
+<br /> User is informed, if nonlinear transitions are used.
+<br /> 
+<br /> - It is only possible to compute a distance between horizontal or
+<br /> vertical transitions and their labels. Therefore, a diagonal signal would
+<br /> always receive a fail. So they are ignored by this check. In
+<br /> combination with the note above that results in: Only horizontal and
+<br /> vertical signal lines are checked. Diagonal signal lines will receive a
+<br /> warning.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Redraw the transitions in failed charts such that they do not cross any
+<br /> stateflow object.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0129_c.MaxDistBetweenTransitionAndLabel</name>
+      <description>Maximal allowed distance between transitions and its label. At the same time it is the minimal distance between a transition and the  label of another transition.</description>
+      <defaultValue>10</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

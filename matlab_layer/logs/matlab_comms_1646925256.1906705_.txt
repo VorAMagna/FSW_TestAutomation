@@ -1,0 +1,2495 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=8772
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+
+L_HistogramC10_workTrqDeltaN_z =
+
+     0     1     2     3     4
+     5     6     7     8     9
+    10    11    12    13    14
+    15    16    17    18    19
+    20    21    22    23    24
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c00ecf35-6e6a-4d2f-83a4-7de62d796f39'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=c00ecf35-6e6a-4d2f-83a4-7de62d796f39'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3509fcb0-e013-414e-b6e5-0b2280a31189'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=3509fcb0-e013-414e-b6e5-0b2280a31189'
+
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/ManVal/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/ManVal1/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/ManVal2/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/ManVal3/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/RangeCorrector/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/RangeCorrector/Calc_facCorrHIGH/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/RangeCorrector/Calc_facCorrLow/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/RangeCorrector/Calc_facCorrMid/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/SimuNCard2/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/TimeoutDetection/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/TimeoutDetection/tOutRngHighCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/TimeoutDetection/tOutRngLowCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/TimeoutDetection/tOutRngMidCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/evalRanges/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpTrqDrgC10/nIntRangeInt/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3509fcb0-e013-414e-b6e5-0b2280a31189'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AFOC02\AFOC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '350ce395-8ac6-4f57-8e61-c1319e7f7bda'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=350ce395-8ac6-4f57-8e61-c1319e7f7bda'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '350ce395-8ac6-4f57-8e61-c1319e7f7bda'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AFOC02\AFOC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AFOC02\AFOC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a200ca39-e336-495e-af8a-bad55617bdac'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=a200ca39-e336-495e-af8a-bad55617bdac'
+
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/angTubeVioChk/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/lowAngLmtVioFilt/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCrit/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCrit/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/limTolSaveCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/StartMoveDelay/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalc/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+AngTubeC10/Diag_PHI_TUBE/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a200ca39-e336-495e-af8a-bad55617bdac'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '660bef75-2f08-4a31-9224-32bd5d15e4bf'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=660bef75-2f08-4a31-9224-32bd5d15e4bf'
+
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/BallPosResetLogic/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/ballPosClrcModeManPar/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/phiBallTravelCritCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/steepSlopeVioRstRqCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/steepSlopeVioRstRqCalc/actPosPhiCritCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/steepSlopeVioRstRqCalc/enNAtrChkManPar/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqLogic/steepSlopeVioRstRqCalc/enPhiChkManPar/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/enBallPosRstReqMan/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/lowAngTubVioEval/lowAngTubVioManPar/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/phiBallTravelCalc/phiActStepWghtCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/phiBallTravelCalc/phiBallTravelManPar/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/phiBallTravelCalc/phiBallTravelVibRawCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/phiBallTravelMaxLmtCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/stCluOpnClrcMan/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/stCluOpnReqCCMan/Autodoc_Customization1
+Description in the Autodoc block is too short!
+BallPosRstC10/stFlex4Man/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '660bef75-2f08-4a31-9224-32bd5d15e4bf'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckLshCompC10\BckLshCompC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f5754781-b183-4571-9b1c-67daf5667149'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=f5754781-b183-4571-9b1c-67daf5667149'
+
+Description in the Autodoc block is too short!
+BckLshCompC10/Autodoc
+Customization1
+Autodoc Block must be added to the subsystem!
+BckLshCompC10/S_BckLshCompC10
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f5754781-b183-4571-9b1c-67daf5667149'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckLshCompC10\BckLshCompC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckLshCompC10\BckLshCompC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8b4d2652-23f3-43d8-a86f-1d9d146ffbf5'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=8b4d2652-23f3-43d8-a86f-1d9d146ffbf5'
+
+Autodoc Block must be added to the subsystem!
+BckUpFcnC10/Rampings/Step2_TorqueRamp
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8b4d2652-23f3-43d8-a86f-1d9d146ffbf5'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CalC02\CalC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e09efbea-f452-4a98-bf53-8402a6fcd79a'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=e09efbea-f452-4a98-bf53-8402a6fcd79a'
+
+Description in the Autodoc block is too short!
+CalC02/CalAngleCalc_l/Calibration_Angle_Calculation/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/CalAngleCalc_l/Calibration_Angle_Calculation/CalC02PT1Filter/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/CalAngleCalc_l/Calibration_Angle_Calculation/dltPhiCalTol/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/CalAngleCalc_l/dltphiCalMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/CalAngleCalc_l/dltphiCalRawMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/CalConditions/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/CtrlLogic/iPreCtrl_CAL/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/CtrlLogic/iSMSetP_CAL/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/CtrlLogic/nSMSetP_CAL/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/CtrlLogic/phiSMSetP_CAL/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/CtrlLogic/uSMSP/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CalC02/Diag_END_OF_LIFE/ESQ_CLUTCH_END_OF_LIFE_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/Diag_NEAR_END_OF_LIFE/ESQ_CLUTCH_NEAR_END_OF_LIFE_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/Diag_NO_CALIB/ESQ_NO_CALIB_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/dltPhiCal2Cal_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/dltPhiCalFirst_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/dltPhiCal_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/stCalCond_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/stCalOK_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CalC02/stCal_Man/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+CalC02/CalConditions/CalCond/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+CalC02/DiagEvents/Calib_Angle_Err/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CalC02/DiagEvents/Calib_Err/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CalC02/Diag_END_OF_LIFE/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CalC02/Diag_NEAR_END_OF_LIFE/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CalC02/Diag_NO_CALIB/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e09efbea-f452-4a98-bf53-8402a6fcd79a'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CalC02\CalC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CalC02\CalC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDCluOpC02\CDCluOpC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '90e6f8ef-f8ca-41ae-a42d-6ff5c09a7518'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=90e6f8ef-f8ca-41ae-a42d-6ff5c09a7518'
+
+Description in the Autodoc block is too short!
+CDCluOpC02/OutputLogic/Autodoc_Customization2
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '90e6f8ef-f8ca-41ae-a42d-6ff5c09a7518'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDCluOpC02\CDCluOpC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDCluOpC02\CDCluOpC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDInputC02\CDInputC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '252c2438-6d1d-4576-875f-0156c052ee6f'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=252c2438-6d1d-4576-875f-0156c052ee6f'
+
+Autodoc Block must be added to the subsystem!
+CDInputC02/calcNSensor
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '252c2438-6d1d-4576-875f-0156c052ee6f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDInputC02\CDInputC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDInputC02\CDInputC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC10\CharCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e806f881-0b8e-4ca6-b895-ff20950f743d'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=e806f881-0b8e-4ca6-b895-ff20950f743d'
+
+Description in the Autodoc block is too short!
+CharCalcC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCalcC10/Calc_V_trqTol/Calc_V_trqTol/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCalcC10/checkLim/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e806f881-0b8e-4ca6-b895-ff20950f743d'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC10\CharCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC10\CharCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '88b62d04-abd6-4971-b9dc-c0d12124854a'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=88b62d04-abd6-4971-b9dc-c0d12124854a'
+
+Description in the Autodoc block is too short!
+CharCorrC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/ActTmpComp/ActTmpComp/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/ActTmpComp/ActTmpComp/Temperature_Calculation/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/ActTmpComp/ActTmpComp/Temperature_Calculation/ManSetTmpActuatorRings/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/ActTmpComp/ActTmpComp/Temperature_Calculation/ManSetTmpWelle/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/ActTmpComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/BckLshCompComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale1/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale10/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale3/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassDecoder/Rescale5/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale1/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale10/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale3/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ClassLoDecoder/Rescale5/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualClassing/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualClassingLo/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualClassingVersion/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualFdiagNoClass/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualGain/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Classing/ManualOffset/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/ManSetGain/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/ManSetOffset/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/calcActive/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/enCltTmpGain/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/enCluTmpOffset/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/CltTmpCorr/enCtrlLimDec_/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/DeepTempComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/DeltaNComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/Hysterese/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/OilTempComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/NoPasHoldFcnComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/InitValueCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/ManValue/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/ManValue1/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/OiledCondCalc/RevCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/PT1Oiled/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/PT1Unoiled/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/ResetTrigCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/ResetTrigCalc/Latch/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TargetValueCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TargetValueCalc/ManValue/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TargetValueCalc/ManValue2/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TimeConstantCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TimeConstantCalc/ManValue/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/TimerSec/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/UnoiledCondCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/PasHoldFcnComp/PasHoldFcnComp/tIdleQFTrigCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/RunInComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/WearClutchCorr/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/WearOilCorr/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/centrifugalComp/Autodoc_Customization1
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/dltPhiCalFirstEOL_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/dltPhiCalFirstHiEOL_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/dltPhiCalFirstLoEOL_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CharCorrC10/CharCorr/phiAbsRotatSpeedComp/Autodoc_Customization1
+Autodoc Block must be added to the subsystem!
+CharCorrC10/CharCorr/ActTmpComp/ActTmpComp/CltTmpCorr
+Autodoc Block must be added to the subsystem!
+CharCorrC10/CharCorr/Classing/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CharCorrC10/CharCorr/DeltaNComp/DeltaNComp
+Autodoc Block must be added to the subsystem!
+CharCorrC10/CharCorr/WearClutchCorr/WearCluCorr
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '88b62d04-abd6-4971-b9dc-c0d12124854a'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ChiSvcJobC10\ChiSvcJobC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c93b9607-21bd-4a81-b8c3-7cd053d46c83'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=c93b9607-21bd-4a81-b8c3-7cd053d46c83'
+
+Description in the Autodoc block is too short!
+ChiSvcJobC10/IOCTRL/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/IOCTRLResCode_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/IOCTRL_enRetCtrl2RngChngSel_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/ConditionsFromCal/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/SensorCheck/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/WDBIPrecondCheck/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/ManualClassingVersion/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Rescale/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Rescale1/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Rescale3/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbCheck/Rescale5/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Rescale/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Rescale1/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Rescale3/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classGrbLoCheck/Rescale5/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/PrecondCalc/classGrb_classVersion_check/classVersionCheck/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/RDBID/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/RDBIDResCode_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/RTCTRL/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/RTCTRLResCode_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/StatusInitPos/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/SvcJob /Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/SvcJob /SvcJobMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/WDBID/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/WDBIDResCode_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/newRequest/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/selProductCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+ChiSvcJobC10/trqCluReqDiag/setTrqValueRangeCheck/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/PDCal_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/WDBI_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/WDBI_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/classGrb_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/classGrb_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/firstCal_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/initPos_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/rngChng_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+ChiSvcJobC10/PrecondCalc/setTrq_RespCodeCalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c93b9607-21bd-4a81-b8c3-7cd053d46c83'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ChiSvcJobC10\ChiSvcJobC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ChiSvcJobC10\ChiSvcJobC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '421794ef-4273-4609-a414-3fb3ac7fefdb'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=421794ef-4273-4609-a414-3fb3ac7fefdb'
+
+Description in the Autodoc block is too short!
+CluOpC02/Limit/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/ManOverride_BROKEN_MECAHNICS/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/ManOverride_MAX_ANGLE/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/Haltestromanpassung/facHold_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/Raise2Const/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/RampCounter/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/SampPhiSP/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/decrease/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/hold/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/OutputLogic/hold/calcIncrement/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/Set_Manual/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/Chng_Inc_Dec/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/EnTrqDecLog/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/EnTrqIncLog/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/EnabledSubs/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/EndOfIncDec/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/FallingEdgeDet/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/OffDly/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/OffDly1/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/Set_Manual/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/TimeOutViol/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/stInc2IncTimeoutCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/TransLogic/stIncTimeout2Inc_stDecTimeout2Dec/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/broken_mechanics/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/cntDecTimeOut/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/cntIncTimeOut/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/enLUTValues_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/iSpring_iTorque/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/kTrqBLDC/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/phiAtrSetPoint_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+CluOpC02/stCluCtrl_Man/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+CluOpC02/Diag_BROKEN_MECHANICS/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CluOpC02/Diag_EX_MAX_ANGLE/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+CluOpC02/OutputLogic/Haltestromanpassung/Decrease
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '421794ef-4273-4609-a414-3fb3ac7fefdb'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e1543e93-3e3b-49ff-a7fe-3214e800dc49'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=e1543e93-3e3b-49ff-a7fe-3214e800dc49'
+
+Autodoc Block must be added to the subsystem!
+CtrlSwC02
+Autodoc Block must be added to the subsystem!
+CtrlSwC02/phiSetPointSW
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e1543e93-3e3b-49ff-a7fe-3214e800dc49'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DiagC10\DiagC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7ea33a6a-768f-4d96-b629-c86aeaf22335'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=7ea33a6a-768f-4d96-b629-c86aeaf22335'
+
+Autodoc Block must be added to the subsystem!
+DiagC10/FORBIDDEN_RNGCHNGDET_IN_NOT_N/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7ea33a6a-768f-4d96-b629-c86aeaf22335'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DiagC10\DiagC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DiagC10\DiagC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '28a8701c-daab-4327-af41-9c04129d1a63'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=28a8701c-daab-4327-af41-9c04129d1a63'
+
+Description in the Autodoc block is too short!
+DTWindupC10/Basic_torque_distribution/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Berechnung_MSpann/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Berechnung_Schlupf_Kupplungsmoment/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Div_0_prevention/facTrqDtConf_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Integrator_twist_angle/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Logic_Touchpoint/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Total_drivetrain_stiffness/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/backlash_reduction_second_end/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/expct_rear_propshaft_trq_locked_state/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/trqCardMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+DTWindupC10/verdrehung_trqCard/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '28a8701c-daab-4327-af41-9c04129d1a63'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '84878a69-07a5-44ee-90be-f170ee046147'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=84878a69-07a5-44ee-90be-f170ee046147'
+
+Autodoc Block must be added to the subsystem!
+FltyAssmblyC10/errDbncr/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '84878a69-07a5-44ee-90be-f170ee046147'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f328e319-00fc-4be9-8812-06391fcc21f1'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=f328e319-00fc-4be9-8812-06391fcc21f1'
+
+Description in the Autodoc block is too short!
+FreezeFrameC02/BROKEN_MECHANICS/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CALIB_ANGLE_ERR/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CALIB_ERR/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CLUTCH_END_OF_LIFE/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CLUTCH_END_OF_LIFE1/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/EX_MAX_ANGLE/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/INITIAL_POSITION/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/INITIAL_POSITION_DEVIATION/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/INITIAL_POSITION_UNEXPECTED_VARIATION/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/NO_CALIB/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/OverallSignalQF/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState1/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState2/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState3/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+FreezeFrameC02/OverallSignalQF/Encoder8Bit/Encoder8Bit
+*** Obsolete function tl_get_blockset_mode called from mes_setmode (298)
+*** For more information, refer online help on <a href="matlab:help tl_get_blockset_mode">tl_get_blockset_mode</a>
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f328e319-00fc-4be9-8812-06391fcc21f1'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '349b27d3-0efb-4efd-806c-cbc268197cfe'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=349b27d3-0efb-4efd-806c-cbc268197cfe'
+
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLASSIFICATION_NOT_DONE/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLUTCH_PROTECTION/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLUTCH_WEAR_PLAUSI/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/CURRENT_OVLD_LIFETIME_WARNING/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ECU_PROTECTION/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ESQ_projSpec0_FF/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ESQ_projSpec1_FF/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ESQ_projSpec2_FF/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ESQ_projSpec3_FF/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/EVENT_CC_NVMDATA_CORRUPT/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/INITIAL_POSITION_TIMEOUT/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/NVMDATA_Corrupt_Calculation/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/PHI_TUBE/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/WEAR_OIL/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/prevState/Autodoc_Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/prevState1/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+FreezeFrameC10/OverallSignalQFCalc/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '349b27d3-0efb-4efd-806c-cbc268197cfe'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ca685eeb-5834-4286-a7ff-eaa8a3f09ecc'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=ca685eeb-5834-4286-a7ff-eaa8a3f09ecc'
+
+Description in the Autodoc block is too short!
+GuardCluC10/GuardCluC10_dltTmpStDisc2Clu_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+GuardCluC10/GuardCluC10_dltTmpStDisc2Oil_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+GuardCluC10/TCHousePower/Autodoc_Customization
+Description in the Autodoc block is too short!
+GuardCluC10/stOilTankClsCalc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+GuardCluC10/tIdleDecision/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ca685eeb-5834-4286-a7ff-eaa8a3f09ecc'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b0f24e9b-ec68-42e0-aee8-6470cee80c3c'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=b0f24e9b-ec68-42e0-aee8-6470cee80c3c'
+
+Description in the Autodoc block is too short!
+HistogramC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+HistogramC10/dstWhlTolHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/dstWhlTolHistogram/dstWhlTolHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/dstWhlTolHistogram/vVeh2covDist_Calc/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/tIBLDCHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/tOilTmpHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/tStDiscTmpHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/tTmpHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/workTrqDeltaNHistogram/Autodoc_Customization
+Description in the Autodoc block is too short!
+HistogramC10/workTrqDeltaNHistogram/TrqvsDltPhiCluLoRng_Calc/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b0f24e9b-ec68-42e0-aee8-6470cee80c3c'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a700ac9b-51a5-458c-8cf4-95e794559e8f'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=a700ac9b-51a5-458c-8cf4-95e794559e8f'
+
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosNOK/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosOK/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosOK_WDBI/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CtrlLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_DEVIATION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_UNEXPECTED_VARIATION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/Lock/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/Set_stReqPos/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/StartLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys1/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/TransLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/phiExpHardStop_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stDPhiHardStop_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stInitPos_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stPhiExpHardStop_Man/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit2/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a700ac9b-51a5-458c-8cf4-95e794559e8f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6c1198f1-d36e-40c9-b47e-da622ff4603f'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=6c1198f1-d36e-40c9-b47e-da622ff4603f'
+
+Autodoc Block must be added to the subsystem!
+InputC02
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6c1198f1-d36e-40c9-b47e-da622ff4603f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '11899c1b-073f-4fed-866b-947a95082707'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=11899c1b-073f-4fed-866b-947a95082707'
+
+Description in the Autodoc block is too short!
+InputC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/FahrPr_Sperre/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/FastCalReq/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/aLat/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/cluOpnClrc/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/cntSessionChange/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/degSWA/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/dnLatMax/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/drvProg/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/enEngTrqLimPermitted/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/failmode/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/mVeh/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/modeBLDC/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/modeTransPAG/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/nGb/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/nWhlMin/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/ratFrax/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/ratRax/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/slopeRoad/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/stCodingDataRead/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/swtESPActv/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/swtESPActv_QF/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/systemShutdown/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/tireTol/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/transFcnTransm/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/trqMax/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/trqTCIn/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputC10/varCoding/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '11899c1b-073f-4fed-866b-947a95082707'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2822dcd8-0c37-47e8-be03-e666dfef07a9'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=2822dcd8-0c37-47e8-be03-e666dfef07a9'
+
+Description in the Autodoc block is too short!
+ITCInputC10/cntShftLckFail/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+ITCInputC10/Diagnostics/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+ITCInputC10/Diagnostics/Encoder8Bit2/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+ITCInputC10/Diagnostics/Encoder8Bit3/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+ITCInputC10/Diagnostics/Encoder8Bit4/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+ITCInputC10/RngChngCond/Encoder16Bit/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+ITCInputC10/RngChngCond/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2822dcd8-0c37-47e8-be03-e666dfef07a9'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a0aba179-c90f-43fb-ba18-c509a3d655a2'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=a0aba179-c90f-43fb-ba18-c509a3d655a2'
+
+Description in the Autodoc block is too short!
+MainC10/BF_decision/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/ESQ_INITIAL_POSITION_TIMEOUT_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/FstCalConditionsCalc/MinTimeFastCalReq/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/FstCalConditionsCalc/MinTimeFastCalReq/risingedgedetect/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/MaxTimeNVMWrite/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/MinTimeNVMWrite/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/ModePositionSelector/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/NVMHTrigMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/OutputLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/PasHoldFcnTempBFSelector/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/ReqDRPCMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/SJ_CalDetection/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/TimeOutShutDown/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/cmdCal_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/enBallPosRstReqMan/Autodoc_Customization1
+Description in the Autodoc block is too short!
+MainC10/enShutDownMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/enShutDown_TurnOnDelay/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/risingedgedetect/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/risingedgedetect1/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/stAccService_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+MainC10/stBridgeDrv/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+MainC10/DIAG_INITIAL_POSITION_TIMEOUT/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+MainC10/stTrqReliance_calculation/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a0aba179-c90f-43fb-ba18-c509a3d655a2'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MisuseDetC10\MisuseDetC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '375e37bb-36e2-4e04-adab-a706b19bd41b'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=375e37bb-36e2-4e04-adab-a706b19bd41b'
+
+Description in the Autodoc block is too short!
+MisuseDetC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+MisuseDetC10/ErrorSetCondition/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/HighTorqueReq/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/ManualFdiag_PROT_FCN/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/Manual_cntHighTrqMnvrMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/ResetLowTempLog/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/ResetLowTempLog/Subsystem1/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/ResetLowTempLog/Subsystem1/RisingEdgeDet/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/SetLowTempLog/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/TrqLimitation/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/TrqMaxSwitch/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/TurnOnDelay_UInt16/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/cntMisuseLowTemp/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/cntMisuseThrsPhiReached/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetC10/tmpBladeMan/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+MisuseDetC10/FailureHandling/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '375e37bb-36e2-4e04-adab-a706b19bd41b'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MisuseDetC10\MisuseDetC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MisuseDetC10\MisuseDetC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bee8505e-4cd9-49a0-9b9a-4682075ebb15'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=bee8505e-4cd9-49a0-9b9a-4682075ebb15'
+
+Description in the Autodoc block is too short!
+NVMReadC02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC02/NVMC02_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC02/NVMC02_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC02/NVMC02_41/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC02/NVMC02_42/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC02/NVMC02_51/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMReadC02/NVMC02_00/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC02/NVMC02_01/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC02/NVMC02_41/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC02/NVMC02_42/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC02/NVMC02_51/FailureHandling/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bee8505e-4cd9-49a0-9b9a-4682075ebb15'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ff2839bb-e034-45a6-94a5-e279649255af'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=ff2839bb-e034-45a6-94a5-e279649255af'
+
+Description in the Autodoc block is too short!
+NVMReadC10/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_10/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_11/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_12/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_13/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_14/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadC10/NVMC10_15/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_00/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_01/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_01/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_02/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_02/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+NVMReadC10/NVMC10_16
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ff2839bb-e034-45a6-94a5-e279649255af'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ae59c8ec-83a5-4a11-a07f-30b3e62237d1'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=ae59c8ec-83a5-4a11-a07f-30b3e62237d1'
+
+Description in the Autodoc block is too short!
+NVMWriteC02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_00/NVMC02_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_01/NVMC02_01_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_01/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_41/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_41/NVMC02_41_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_41/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_41/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_41/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_42/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_42/NVMC02_42_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_42/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_42/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_42/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_51/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_51/NVMC02_51_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_51/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC02/NVMC02_51/TicketIDMan/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_00/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_00/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_01/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_01/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_41/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_42/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC02/NVMC02_51/WDBICalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ae59c8ec-83a5-4a11-a07f-30b3e62237d1'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'afbe0a50-d430-4879-ad54-fa53278e79fc'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=afbe0a50-d430-4879-ad54-fa53278e79fc'
+
+Description in the Autodoc block is too short!
+NVMWriteC10/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_00/NVMC10_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_01/NVMC10_01_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_02/NVMC10_02_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_02/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_02/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_10/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_10/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_10/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_11/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_11/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_11/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_12/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_12/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_12/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_13/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_13/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_13/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_14/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_14/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_14/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_15/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_15/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_15/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_16/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_16/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteC10/NVMC10_16/TicketIDMan/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMWriteC10/NVMC10_00/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC10/NVMC10_01/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMWriteC10/NVMC10_01/WDBIcalc
+Autodoc Block must be added to the subsystem!
+NVMWriteC10/NVMC10_02/Crc8Calc
+Autodoc Block must be added to the subsystem!
+NVMWriteC10/NVMC10_02/WDBIcalc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'afbe0a50-d430-4879-ad54-fa53278e79fc'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b38ba361-483c-4d64-b3a7-a870216cae6a'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=b38ba361-483c-4d64-b3a7-a870216cae6a'
+
+Description in the Autodoc block is too short!
+PFMEndC02/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b38ba361-483c-4d64-b3a7-a870216cae6a'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '4044f1ad-6385-4555-959d-ff18db391017'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=4044f1ad-6385-4555-959d-ff18db391017'
+
+Description in the Autodoc block is too short!
+PFMEndC10/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '4044f1ad-6385-4555-959d-ff18db391017'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd1cb8b49-9510-44d8-ad43-36d501edaaf6'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=d1cb8b49-9510-44d8-ad43-36d501edaaf6'
+
+Description in the Autodoc block is too short!
+PFMStartC02/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd1cb8b49-9510-44d8-ad43-36d501edaaf6'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '17c99de4-b1eb-455f-9a29-1daa1a8dd43f'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=17c99de4-b1eb-455f-9a29-1daa1a8dd43f'
+
+Description in the Autodoc block is too short!
+PFMStartC10/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '17c99de4-b1eb-455f-9a29-1daa1a8dd43f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6aefd459-275c-4f6e-bf98-473638bcb401'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=6aefd459-275c-4f6e-bf98-473638bcb401'
+
+Description in the Autodoc block is too short!
+PosCtrlC02/Autodoc_Customization1
+Description in the Autodoc block is too short!
+PosCtrlC02/Limitation/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+PosCtrlC02/IncDecDet/DecodeStates
+Autodoc Block must be added to the subsystem!
+PosCtrlC02/ePhiCalc/Smoother
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6aefd459-275c-4f6e-bf98-473638bcb401'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RngChngC02\RngChngC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '87c2ad14-ebb3-4c57-baac-028d22c9c8d7'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=87c2ad14-ebb3-4c57-baac-028d22c9c8d7'
+
+Autodoc Block must be added to the subsystem!
+RngChngC02/OutputLogic/AppSyncSig/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+RngChngC02/OutputLogic/AppSyncSig/sSyncDirCalc
+Autodoc Block must be added to the subsystem!
+RngChngC02/dnSynSpdCalc/Smoother_Filter
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '87c2ad14-ebb3-4c57-baac-028d22c9c8d7'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RngChngC02\RngChngC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RngChngC02\RngChngC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2c239b60-979d-4a06-86d2-d26fb362a95e'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=2c239b60-979d-4a06-86d2-d26fb362a95e'
+
+*** Obsolete function tl_get_blockset_mode called from jmiCommandWrapper (0)
+*** For more information, refer online help on <a href="matlab:help tl_get_blockset_mode">tl_get_blockset_mode</a>
+Description in the Autodoc block is too short!
+RunInCompC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+RunInCompC10/RunInCompCalc/Manual_value4/Autodoc_Customization
+Description in the Autodoc block is too short!
+RunInCompC10/RunInCompCalc/Manual_value5/Autodoc_Customization
+Description in the Autodoc block is too short!
+RunInCompC10/RunInCompCalc/Round/Autodoc_Customization
+Description in the Autodoc block is too short!
+RunInCompC10/RunInCompCalc/Round1/Autodoc_Customization
+Description in the Autodoc block is too short!
+RunInCompC10/RunInCompCalc/Round2/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2c239b60-979d-4a06-86d2-d26fb362a95e'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1a6faf5d-0014-4d55-ac8f-f350fbe214fa'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=1a6faf5d-0014-4d55-ac8f-f350fbe214fa'
+
+Description in the Autodoc block is too short!
+SetPosC02/Autodoc_Customization1
+Description in the Autodoc block is too short!
+SetPosC02/PosDecision/Action_2S/Autodoc_Customization
+Description in the Autodoc block is too short!
+SetPosC02/PosDecision/Action_Flex_ATC/Autodoc_Customization
+Description in the Autodoc block is too short!
+SetPosC02/PosDecision/Autodoc_Customization
+Description in the Autodoc block is too short!
+SetPosC02/SetPosC02_phiAtrSetPnt_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+SetPosC02/SetPosC02_stSetPos_Man/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1a6faf5d-0014-4d55-ac8f-f350fbe214fa'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '815caffd-5d0d-460d-bf3c-dbd8f27698e0'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=815caffd-5d0d-460d-bf3c-dbd8f27698e0'
+
+Description in the Autodoc block is too short!
+SpdCtrlC02/TemporaryPowerStageBF/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '815caffd-5d0d-460d-bf3c-dbd8f27698e0'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '66e8acdc-6fac-41ad-aef3-7a94fbeb80c2'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=66e8acdc-6fac-41ad-aef3-7a94fbeb80c2'
+
+Description in the Autodoc block is too short!
+StressCalcC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+StressCalcC10/HighTrqReqDet/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/HighTrqReqDet/stHiTrqReqActvMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/ManualFdiagESQ_CURRENT_OVLD_LIFETIME_WARNING/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/ManualFdiagECUProtection/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/StressMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/ManualFdiagClutchProtection/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/StressMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_MotorWinding/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_MotorWinding/prcStressAtrMotorMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_Shunt/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_Shunt/prcStressAtrShuntMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_TmpBridge/Autodoc_Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress_TmpBridge/prcStressAtrTmpBridgeMan/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+StressCalcC10/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+StressCalcC10/Stress_Actuator/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+StressCalcC10/Stress_Clutch/FailureHandling/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '66e8acdc-6fac-41ad-aef3-7a94fbeb80c2'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1a5ad240-6103-4da1-ac1f-c90848c70e52'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=1a5ad240-6103-4da1-ac1f-c90848c70e52'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1a5ad240-6103-4da1-ac1f-c90848c70e52'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10Lib.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6db2eb72-4de3-40b6-b6a2-2a9f55e8c95f'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=6db2eb72-4de3-40b6-b6a2-2a9f55e8c95f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6db2eb72-4de3-40b6-b6a2-2a9f55e8c95f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10Lib_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10Lib.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9855f4f0-004d-47a2-bb87-e8befe35a43a'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=9855f4f0-004d-47a2-bb87-e8befe35a43a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9855f4f0-004d-47a2-bb87-e8befe35a43a'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46db28d3-b317-4eae-a1d7-0a12cd60c575'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=46db28d3-b317-4eae-a1d7-0a12cd60c575'
+
+Autodoc Block must be added to the subsystem!
+TrqDgrdC10/S_TrqDgrdC10
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46db28d3-b317-4eae-a1d7-0a12cd60c575'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '078ee2ed-2d5c-4efc-b7a7-f8f5678945a7'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=078ee2ed-2d5c-4efc-b7a7-f8f5678945a7'
+
+Description in the Autodoc block is too short!
+TrqModC10/TrqRampUp/Autodoc_Customization
+Description in the Autodoc block is too short!
+TrqModC10/TrqSwitch/Autodoc_Customization
+Description in the Autodoc block is too short!
+TrqModC10/Trq_Limitation/Autodoc_Customization
+Description in the Autodoc block is too short!
+TrqModC10/stActCtrl_Man/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '078ee2ed-2d5c-4efc-b7a7-f8f5678945a7'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '63f3fddb-0518-48e6-ad9e-f9cb4b26ca56'
+        resultLink: 'http://127.0.0.1:63985/result?jobUid=63f3fddb-0518-48e6-ad9e-f9cb4b26ca56'
+
+Description in the Autodoc block is too short!
+WearCalcC10/Autodoc_Customization1
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/CalParam/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/CalParam/FastCalDetection/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/execSvcJob/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/kmMainLatchCalc/OdoOK/InitialValueConsideration/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/Works/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/Works/ReCalcValues_SvcJob/Autodoc_Customization
+Description in the Autodoc block is too short!
+WearCalcC10/LossNeedleBearings/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+WearCalcC10/GearRedLoss
+Autodoc Block must be added to the subsystem!
+WearCalcC10/OdoCalc/decodeSvcJobs/SvcJobs
+Autodoc Block must be added to the subsystem!
+WearCalcC10/Works/CalPower/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+WearCalcC10/Works/DiagOil/FailureHandling/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '63f3fddb-0518-48e6-ad9e-f9cb4b26ca56'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AdpTrqDrgC10\AdpTrqDrgC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AFOC02\AFOC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BallPosRstC10\BallPosRstC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckLshCompC10\BckLshCompC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\BckUpFcnC10\BckUpFcnC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CalC02\CalC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDCluOpC02\CDCluOpC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CDInputC02\CDInputC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCalcC10\CharCalcC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CharCorrC10\CharCorrC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ChiSvcJobC10\ChiSvcJobC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CluOpC02\CluOpC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\CtrlSwC02\CtrlSwC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DiagC10\DiagC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\InputC10\InputC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MainC10\MainC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\MisuseDetC10\MisuseDetC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC02\NVMWriteC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\NVMWriteC10\NVMWriteC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC02\PFMEndC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMEndC10\PFMEndC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC02\PFMStartC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PFMStartC10\PFMStartC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\PosCtrlC02\PosCtrlC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RngChngC02\RngChngC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\RunInCompC10\RunInCompC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SetPosC02\SetPosC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SpdCtrlC02\SpdCtrlC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10Lib.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqDgrdC10\TrqDgrdC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...

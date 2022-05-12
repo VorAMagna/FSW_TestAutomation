@@ -1,0 +1,23 @@
+<parameterDefinition fileVersion="1">
+  <uid>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</uid>
+  <id>ReportComparisonParameterDefinition</id>
+  <version>1</version>
+  <title>Report Comparison Parameter Definition</title>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <parameterSpecifications>
+    <specification type="boolean">
+      <name>ReportComparison.AggregatedResults</name>
+      <description><![CDATA[Set this parameter to 'TRUE' to aggregate similar results of the report comparison.]]></description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>ReportComparison.SameCheckIdPairs</name>
+      <description><![CDATA[In case a check ID has been changed in different MXAM versions you can define pairs of check ID's that should be handled equally when comparing findings. 
+
+Example:
+(check_a, check_abc); (check_b, check_def)]]></description>
+      <defaultValue></defaultValue>
+    </specification>
+  </parameterSpecifications>
+</parameterDefinition>

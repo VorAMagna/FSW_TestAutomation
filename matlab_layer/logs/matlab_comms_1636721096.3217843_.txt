@@ -1,0 +1,377 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=18580
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2d77f1a6-e337-4d5a-84e8-3d54aab3a6ab'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2d77f1a6-e337-4d5a-84e8-3d54aab3a6ab'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f777d463-3e72-41e5-8290-a7fe44d957ed'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f777d463-3e72-41e5-8290-a7fe44d957ed'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f777d463-3e72-41e5-8290-a7fe44d957ed'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\GearStateS02\GearStateS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '50ce25ec-054a-4fd5-86ab-55aae72e5c0d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=50ce25ec-054a-4fd5-86ab-55aae72e5c0d'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '50ce25ec-054a-4fd5-86ab-55aae72e5c0d'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\GearStateS02\GearStateS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\GearStateS02\GearStateS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\MainS02\MainS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '459b8db0-7a3a-4d63-b0d5-d00a343894a1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=459b8db0-7a3a-4d63-b0d5-d00a343894a1'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '459b8db0-7a3a-4d63-b0d5-d00a343894a1'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\MainS02\MainS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\MainS02\MainS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMReadS02\NVMReadS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '18b38302-9326-4f08-a04f-eac28f65006e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=18b38302-9326-4f08-a04f-eac28f65006e'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '18b38302-9326-4f08-a04f-eac28f65006e'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMReadS02\NVMReadS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMReadS02\NVMReadS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMWriteS02\NVMWriteS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'eb6bd362-6dff-4678-9c0c-fcb39f3248e0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=eb6bd362-6dff-4678-9c0c-fcb39f3248e0'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'eb6bd362-6dff-4678-9c0c-fcb39f3248e0'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMWriteS02\NVMWriteS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMWriteS02\NVMWriteS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMEndS02\PFMEndS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f4df6f39-5e25-40a5-838d-02aa88d81fb7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f4df6f39-5e25-40a5-838d-02aa88d81fb7'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f4df6f39-5e25-40a5-838d-02aa88d81fb7'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMEndS02\PFMEndS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMEndS02\PFMEndS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMStartS02\PFMStartS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0a5d673d-2d05-4560-a91c-2daa2f09fc88'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=0a5d673d-2d05-4560-a91c-2daa2f09fc88'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0a5d673d-2d05-4560-a91c-2daa2f09fc88'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMStartS02\PFMStartS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMStartS02\PFMStartS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosCorrS02\PosCorrS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a8cc7747-a2ce-40db-8a28-36f1896550aa'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=a8cc7747-a2ce-40db-8a28-36f1896550aa'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a8cc7747-a2ce-40db-8a28-36f1896550aa'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosCorrS02\PosCorrS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosCorrS02\PosCorrS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosMonS02\PosMonS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1b5a4af1-72c9-4da9-a253-e8480364eb7b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1b5a4af1-72c9-4da9-a253-e8480364eb7b'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1b5a4af1-72c9-4da9-a253-e8480364eb7b'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosMonS02\PosMonS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosMonS02\PosMonS02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\SvcJobS02\SvcJobS02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3d8686ea-6b4a-4750-b739-a2aa9b2ced79'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3d8686ea-6b4a-4750-b739-a2aa9b2ced79'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3d8686ea-6b4a-4750-b739-a2aa9b2ced79'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\SvcJobS02\SvcJobS02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\SvcJobS02\SvcJobS02.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\BckUpFcnS02\BckUpFcnS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\GearStateS02\GearStateS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\MainS02\MainS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMReadS02\NVMReadS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\NVMWriteS02\NVMWriteS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMEndS02\PFMEndS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PFMStartS02\PFMStartS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosCorrS02\PosCorrS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\PosMonS02\PosMonS02.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\PS_Group\PS_Composition\PS_Modules\SvcJobS02\SvcJobS02.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

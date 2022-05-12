@@ -1,0 +1,160 @@
+<check fileVersion="2">
+  <uid>06d0eefd-445a-4c07-88fb-3e9ba6510565</uid>
+  <id>mcheck_mes_cgec_2001</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Prohibited Simulink Blocks for Code Generation</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_cgec_2001.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each Simulink block in the model.
+<br /> 
+<ul> 
+ <li> Failed 1: The block is a standard Simulink block and is defined in the check parameter mes_cgec_2001.ProhibitedSLBlocks. </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[The default parameters of this check are designed for Matlab R2015b, Embedded Coder version 6.9.
+<br /> However, the user can customize the check parameters for other versions.
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Only use allowed standard Simulink blocks or blocks that have been verified.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[No automatic repair action available.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>mes_cgec_2001.ProhibitedSLBlocks</name>
+      <description><![CDATA[Prohibited blocks from standard Simulink library. The default values refer to Matlab R2015b.
+
+Each row of this cell array represents a block. The array must have at least two columns. The third and fourth columns are optional.
+First column:   block type
+Second column:  mask type 
+Third column:   mask description
+Fourth column: time domain
+Example 1: {'blocktype1', 'masktype1', 'maskdescription'}
+Example 2: {'blocktype1','masktype1';
+			'blocktype2','masktype2'}
+Example 3:{'blocktype1','masktype1', 'maskdescription', 'timedomain';
+			'blocktype2','masktype2', 'maskdescription', ''}]]></description>
+      <defaultValue><![CDATA[{'SubSystem','PID 1dof','Simulink:masks:PID1dof_MD','Continuous-time';
+'SubSystem','PID 2dof','Simulink:masks:PID2dof_MD','Continuous-time';
+'SubSystem','Difference','Simulink:masks:Difference_MD','';
+'SubSystem','First-Order Hold','Simulink:masks:FirstOrderHold_MD','';
+'SubSystem','Algebraic Constraint','Simulink:masks:AlgebraicConstraint_MD','';
+'SubSystem','Checks_Gradient','Simulink:masks:Checks_Gradient_MD','';
+'SubSystem','Checks_SGap','Simulink:masks:Checks_SGap_MD','';
+'SubSystem','Checks_SRange','Simulink:masks:Checks_SRange_MD','';
+'SubSystem','Checks_Resolution','Simulink:masks:Checks_Resolution_MD','';
+'SubSystem','Checks_SMin','Simulink:masks:Checks_SMin_MD','';
+'SubSystem','Checks_SMax','Simulink:masks:Checks_SMax_MD','';
+'SubSystem','Timed Linearization','Simulink:masks:TimedLinearization_MD','';
+'SubSystem','Triggered Linearization','Simulink:masks:TriggeredLinearization_MD','';
+'SubSystem','Environment Controller','Simulink:masks:EnvironmentController_MD','';
+'SubSystem','XY scope.','Simulink:masks:XYScope_MD','';
+'SubSystem','Repeating table','Simulink:masks:RepeatingTable_MD','';
+'SubSystem','chirp','Simulink:masks:chirp_MD','';
+'SubSystem','Counter Free-Running','Simulink:masks:CounterFreeRunning_MD','';
+'SubSystem','Counter Limited','Simulink:masks:CounterLimited_MD','';
+'SubSystem','Ramp','Simulink:masks:Ramp_MD','';
+'SubSystem','Sigbuilder block','Simulink:masks:SigbuilderBlock_MD','';
+'SubSystem','WaveformGenerator','','';
+'Clock','','','';
+'Derivative','','','';
+'DigitalClock','','','';
+'Display','','','';
+'FromFile','','','';
+'FromWorkspace','','','';
+'HitCross','','','';
+'InitialCondition','','','';
+'Integrator','','','';
+'ManualSwitch','','','';
+'MATLABFcn','','','';
+'M-S-Function','','','';
+'Scope','','','';
+'SecondOrderIntegrator','','','';
+'SignalGenerator','','','';
+'StateSpace','','','';
+'Step','','','';
+'Stop','','','';
+'ToFile','','','';
+'ToWorkspace','','','';
+'TransferFcn','','','';
+'TransportDelay','','','';
+'VariableTransportDelay','','','';
+'ZeroPole','','',''}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="05/26/2017 12:33:49">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="06/20/2017 11:00:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [ACCEPTED]. </comment>
+    </record>
+    <record timestamp="06/26/2017 22:12:03">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

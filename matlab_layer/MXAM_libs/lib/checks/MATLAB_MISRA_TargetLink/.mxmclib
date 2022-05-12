@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_MISRA_TargetLink" title="MISRA AC TargetLink® - MATLAB® Checks" uid="14413a2d-ce11-4cf2-87f8-43dde4975952">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

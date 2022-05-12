@@ -1,0 +1,113 @@
+<guideline fileVersion="2">
+  <uid>c25681f9-252d-4894-9753-b719e9d1fe58</uid>
+  <id>db_0114</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>779210d8-c997-4ff6-9b66-052d994b31b6</templateUid>
+  <title>Simulink Patterns for If-then-else-if Constructs</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The following patterns should be used for IF THEN ELSEIF constructs within Simulink. </p>]]></value>
+    </richtext>
+    <richtext name="Pattern" optional="true" private="false">
+      <description>List of patterns this guideline suggests to be used.</description>
+      <value><![CDATA[<p class="codeSample"> if (If_Condition)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_signal = If_Value;<br /> }<br /> else if (Else_If_Condition)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_signal = Else_If_Value;<br /> }<br /> else<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_signal = Else_Value;<br /> } </p>
+<p> <img src="db_0114_1.png" /> </p>
+<p class="imageCaption"> Figure db_0114-1. IF THEN ELSE using switch blocks in Simulink connected by single signals </p>
+<p class="codeSample"> if(Fault_1_Active &amp; Fault_2_Active)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;ErrMsg = SaftyCrit;<br /> }<br /> else if (Fault_1_Active | Fault_2_Active)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;ErrMsg = DriveWarn;<br /> }<br /> else<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;ErrMsg = NoFaults;<br /> } </p>
+<p> <img src="db_0114_2.png" /> </p>
+<p class="imageCaption"> Figure db_0114-2. IF THEN ELSEIF ELSE using action subsystems in Simulink connected by single signals </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="true" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Patterns should be used for If-then-else-if constructs within a Simulink model.
+<br />]]></value>
+    </richtext>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1g Use of Style Guides</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/12/2016 12:15:03">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

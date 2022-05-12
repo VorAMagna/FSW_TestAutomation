@@ -1,0 +1,93 @@
+<check fileVersion="2">
+  <uid>50bfb767-7778-4caa-81d7-6868b377dc17</uid>
+  <id>mcheck_ds_0087</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Simulink Signal Line Appearance</title>
+  <adapter version="1.0">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ds_0087.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>true</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check computes the geometric relationship between all the lines and
+<br />between lines and blocks, if the distance of two lines is greater than
+<br />10, and all the lines do not cross eachother, and no line crosses blocks,
+<br />at a single branching point not more than two sub lines are splitted, and
+<br />no overlap between the lines of one branch, and all lines are drawn
+<br />vertically or horizontally,then the model passes this check. If not, the
+<br />model receives a fail and the links to the lines with errors are given.
+<br />The user can click on the link and view the highlighted lines.
+<br />Note:
+<br />The lables of the line are not checked.
+<br />This feature will be covered in the next version.
+<br />Subsystems with link to library are not checked.
+<br />The model must be compiled before it is checked.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Try to avoid signal crossings. If this is not possible, use From and Goto blocks to prevent signal crossings (but use From/Goto blocks only in local scope on the same subsystem layer). Try to separate signal lines clearly!</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p>No automatic repair action available.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:45">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,63 @@
+<guidelineDocument fileVersion="2">
+  <uid>60e27a16-0a62-42a6-8973-5859d7066594</uid>
+  <id>Only_User_Check_Guideline_Document</id>
+  <title>Only User Checks</title>
+  <access>protected</access>
+  <version>1</version>
+  <status>draft</status>
+  <author username="beermara" domain="MAGNA"/>
+  <copyright></copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="b36f3149-b7e2-44b4-ab20-3517c101eade" title="Only User Checks">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="a434cb4b-760f-4f8c-ac50-5a74927d9d66" selectedForRun="true" modifier="standard" refUid="604e36f9-34fd-45ea-a202-6c6a0dc6d4e5" refId="Only_User_Checks" refVersion="1" refTitle="Only the selfmade checks">
+        <check uid="1100765d-22c2-4a24-8c97-bf71d3b5bfd5" selectedForRun="true" refUid="b85e24ba-70c3-4618-9255-ee1dac51b8ce" refId="mcheck_us_0001" refVersion="1" refTitle="Test the Input block Backgroundcolor"/>
+        <check uid="9f0656ab-a28d-470f-ae24-5bd52f1d5e75" selectedForRun="true" refUid="d01fbca9-a6a3-4b6f-95ee-1ef5dc7f6aae" refId="mcheck_us_0002" refVersion="1" refTitle="Test the Output block Backgroundcolor"/>
+        <check uid="10fe7ae1-21b2-43ad-b67c-167a7600e091" selectedForRun="true" refUid="5e739887-1ed4-447d-83ab-5c552a615246" refId="mcheck_us_0003" refVersion="1" refTitle="Test of the Terminator Backgroundcolor"/>
+        <check uid="2b38c627-0c8b-4438-abe8-494638c4a9d5" selectedForRun="true" refUid="4acec49c-33ea-4479-8644-9f756d4ff476" refId="mcheck_us_0004" refVersion="1" refTitle="Test of LUT Block LSB"/>
+        <check uid="a1da5445-dae4-4cc1-8f22-d4cf5652fe14" selectedForRun="true" refUid="1caa7e25-5e0c-4d67-969c-3ff29fb77cb9" refId="mcheck_us_0005" refVersion="1" refTitle="Test of Saturate BackgroundColor"/>
+        <check uid="629307c5-7d6d-4e8e-a364-12ccb60b4aac" selectedForRun="true" refUid="7f650601-bee9-44b4-9f5a-1cfd14bc0b28" refId="mcheck_us_0006" refVersion="1" refTitle="Test of the Saturate Output values"/>
+        <check uid="615eee64-3368-4666-a7f0-f41648866cab" selectedForRun="true" refUid="8781532b-1984-4b37-b2c3-d2f3150ded65" refId="mcheck_us_0007" refVersion="1" refTitle="Test of the connection of constant with relational operator"/>
+        <check uid="ad83dec1-41c4-4296-ac73-3666bd92bac2" selectedForRun="true" refUid="58bec37c-2532-45d9-be35-e3b9f3480958" refId="mcheck_us_0008" refVersion="1" refTitle="Test of Linked block`s port"/>
+        <check uid="77194177-cc8b-4fc0-80e2-bec2dfb7c9a2" selectedForRun="true" refUid="0277060a-f116-4b82-a8a4-ef0536356fe0" refId="mcheck_us_0009" refVersion="1" refTitle="Test of the Linked block`s port type"/>
+        <check uid="faa4adbe-87ea-4744-9aa7-acf6d225d89e" selectedForRun="true" refUid="6b74c822-b13d-486f-91e6-275bc8768867" refId="mcheck_us_0010" refVersion="1" refTitle="Test of Class of TL_Inport/TL_Outport"/>
+        <check uid="ab1922e6-04f7-4339-9355-69decb6552cb" selectedForRun="true" refUid="d0dd6724-faa3-4655-9c5b-e556909ada50" refId="mcheck_us_0011" refVersion="1" refTitle="Test of the Linked block`s port about lsb, type or scaling"/>
+        <check uid="9ef6c274-2417-4479-b088-2ac5ecf39ce6" selectedForRun="true" refUid="d2c6b363-3063-4b96-9bf6-d2b5465db4dc" refId="mcheck_us_0012" refVersion="1" refTitle="Test of the Abs Block type"/>
+        <check uid="c9d7ebe0-9102-482e-8af2-d0602e24a96d" selectedForRun="true" refUid="e00df7fe-178a-4f22-a42e-1923635942f9" refId="mcheck_us_0013" refVersion="1" refTitle="Test of the BackgroundColor of P_,L_,C_"/>
+        <check uid="8231fe56-594c-4bb0-b71e-303cd5805294" selectedForRun="true" refUid="45f9a5af-18e1-4a66-9563-b57a40dba76e" refId="mcheck_us_0014" refVersion="1" refTitle="Test of the name and constant of P_,C_ Block"/>
+        <check uid="283f6de4-734c-48c1-a369-af44d90afe8b" selectedForRun="true" refUid="6c407825-f6ae-4537-8049-b9611938d002" refId="mcheck_us_0015" refVersion="1" refTitle="Test of the name and variable of L_ Block"/>
+        <check uid="bc729684-31e6-4470-baee-dd3d27259bfe" selectedForRun="true" refUid="94603230-303d-42d3-bc62-d211a3673bf1" refId="mcheck_us_0016" refVersion="1" refTitle="Test of LSB or type of LUT"/>
+        <check uid="061c963a-c1d8-4fa1-8ce4-0117e437c272" selectedForRun="true" refUid="84748b0c-9e6d-4917-96cd-8290b621b43a" refId="mcheck_us_0018" refVersion="1" refTitle="Test of the name and variable of targetlink inport"/>
+        <check uid="87d9b11c-28bd-4f0a-a754-af3b2b5eac09" selectedForRun="true" refUid="5dc156bb-8e89-4473-a56e-a7ec2612f98a" refId="mcheck_us_0019" refVersion="1" refTitle="Test of the name and variable of targetlink outport"/>
+        <check uid="aba38525-d885-4107-9a5a-f0b93791afcc" selectedForRun="true" refUid="9742f260-6abc-4397-bea3-f928aba6143d" refId="mcheck_us_0020" refVersion="1" refTitle="Test of the Look-Up method"/>
+        <check uid="e0adef19-457a-4b48-a8b6-21794c606d96" selectedForRun="true" refUid="31786f03-23c1-4c21-b826-a882042f0285" refId="mcheck_us_0022" refVersion="1" refTitle="Test of the name and constant of interrunnables"/>
+        <check uid="5bbe278a-16ab-45c3-becd-46793c521dd9" selectedForRun="true" refUid="dc67212e-3079-45ec-907d-95fa834ad71d" refId="mcheck_us_0023" refVersion="1" refTitle="Test of the use of &quot;Mergeable Disp&quot;"/>
+        <check uid="72971b70-0d96-4921-8b62-acac52c6a6b0" selectedForRun="true" refUid="65ce0cd8-aacf-46c1-b6f0-29d0618fde38" refId="mcheck_us_0024" refVersion="1" refTitle="Test the names of the blocks and the modules for blanks and special characters."/>
+        <check uid="a2422776-02af-454e-8132-c61dbdf97ebc" selectedForRun="true" refUid="e3de08e5-c641-4446-a578-c9d13b6e8c36" refId="mcheck_us_0025" refVersion="1" refTitle="Test the names of the blocks with calibratables for the right prefix"/>
+        <check uid="61563d56-a4dc-4d69-b3ca-52fac157116e" selectedForRun="true" refUid="ec28b36a-2efc-47cf-920e-30b9732548a7" refId="mcheck_us_0026" refVersion="1" refTitle="Test the names of the blocks with DISP for the right prefix (W_moduleName)."/>
+        <check uid="b9b9d2e8-b70d-4f20-97d8-eea6b4a31c7f" selectedForRun="true" refUid="c209c664-61dd-472a-8cee-e649fef9b0dc" refId="mcheck_us_0027" refVersion="1" refTitle="Test the names of the inports and outports which are module outputs or EEPROM signals"/>
+        <check uid="88a77218-cb9f-4c3f-a664-99aef5ae7715" selectedForRun="true" refUid="27d69b5b-cbbb-4a98-9015-e72166386803" refId="mcheck_us_0028" refVersion="1" refTitle="Test the LUT block name"/>
+        <check uid="92871d04-658a-4572-a589-09a3bae82fee" selectedForRun="true" refUid="8d56c44e-d746-4a19-8c27-fd8f600b6ee5" refId="mcheck_us_0029" refVersion="1" refTitle="Test the Subsystem names"/>
+        <check uid="1918c0ae-2d95-40ac-ab0c-87bae654111a" selectedForRun="true" refUid="3574fd51-81dd-4573-b706-0d9b3b4ab276" refId="mcheck_us_0030" refVersion="1" refTitle="Test the link status of a block"/>
+        <check uid="d07c33af-d5b6-4643-b586-de95ee7d5a13" selectedForRun="true" refUid="e57ad77e-785e-4bef-b736-d75183e40449" refId="mcheck_us_0031" refVersion="1" refTitle="Test the status of the linked requirements."/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="04/09/2018 15:52:20">
+      <author username="beermara" domain="MAGNA"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

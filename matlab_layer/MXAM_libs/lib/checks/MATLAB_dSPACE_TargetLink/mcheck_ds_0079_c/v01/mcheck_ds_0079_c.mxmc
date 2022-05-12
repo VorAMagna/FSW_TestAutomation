@@ -1,0 +1,127 @@
+<check fileVersion="2">
+  <uid>ca8be79c-8101-4985-bb4b-2c863034d79e</uid>
+  <id>mcheck_ds_0079_c</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>General Naming Conventions: Reserved Names</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ds_0079_c.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check verifies the following:
+<br /> -&nbsp; signal-line label
+<br /> -&nbsp; block identifier
+<br /> -&nbsp; port name
+<br /> -&nbsp; value of any editable parameter of each block
+<br /> 
+<br /> Failed 1: If any of the above elements is equal to a member of the blacklist.
+<br /> Failed 2: For TargetLink models, if the names of 'Typedef', 'Variable', 'VariableClass' or 'Scaling' properties of any TargetLink block is equal to a member of the blacklist.
+<br /> The check gives a pass if the failed cases do not apply.
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[Note 1: The TargetLink property 'Type' of a TargetLink block can have the name 'Void', as it is part of 'Typedef' default list of TargetLink Data Dictionary.
+<br /> Note 2: The TargetLink property 'Class' of a TargetLink block can have the names 'Global' and 'Const', as they are part of 'VariableClasses' default list of TargetLink Data Dictionary.
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>-</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>dSPACE.ForbiddenIdentifierNames</name>
+      <description><![CDATA[Each member of 'dSPACE.ForbiddenIdentifierNames' is a forbidden identifier and is not allowed to use as a blockidentifier, a signal-line label or as a value of an editable blockparameter.]]></description>
+      <defaultValue><![CDATA[{'auto','break','case',...
+					'catch','char','const',...
+					'continue','default','do',...
+					'double','else','elseif',...
+					'end','enum','extern',...
+					'float','for','function',...
+					'global','goto','if',...
+					'int','long','otherwise',...
+					'persistent','register','return',...
+					'short','signed','sizeof',...
+					'static','struct','switch',...
+					'try','typedef','union',...
+					'unsigned','void','volatile',...
+					'while'}]]></defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>dSPACE.IgnoreHiddenBlockNames</name>
+      <description><![CDATA[If the parameter is set to 'true', the hidden block names are ignored for analysis.
+If the parameter is set to 'false', the hidden block names are considered for analysis.
+Default value is 'false'.]]></description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>dSPACE.CaseSensitiveAnalysis</name>
+      <description><![CDATA[If the parameter is set to 'true', the analysis is case sensitive.
+If the parameter is set to 'false', the analysis of the keywords is not case sensitive.
+Default value is 'false'.]]></description>
+      <defaultValue>false</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:45">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

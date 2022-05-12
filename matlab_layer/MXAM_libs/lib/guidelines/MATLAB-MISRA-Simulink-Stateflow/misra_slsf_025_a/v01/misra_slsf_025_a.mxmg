@@ -1,0 +1,148 @@
+<guideline fileVersion="2">
+  <uid>10a7070f-d51e-407a-935a-f8c372081ca6</uid>
+  <id>misra_slsf_025_a</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MIRA Limited, 2009</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Simulink Block, Subsystem and Library Shape and Size - Defaults</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>usability</value>
+        <value>maintainability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MISRA AC SLSF 1.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p>use default shape and size on all blocks, some exceptions are defined</p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>The default shape and size must be used on all blocks, including those added to support real-time applications (e.g. The Mathworks Real-Time Workshop, third-party blocks). Exceptions:</p>
+<ul>
+ <li>Blocks that have multiple inputs or outputs - these must be sized such that port names or signal labels do not overlap.</li>
+ <li>&quot;goto&quot; and &quot;from&quot; blocks manually and automatically generated may use a size different from the default, e.g. to ensure the tags of &quot;goto&quot; and &quot;from&quot; blocks are readable (note: matching &quot;goto&quot; and &quot;from&quot; blocks should be the same size).</li>
+ <li>The &quot;icon display&quot; for all inport and outport blocks must be set to &quot;port number&quot; (default).</li>
+ <li>The sum block should be displayed as a rectangular shape (not round).</li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>Consistent drawing style.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1g Use of Style Guides</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>1.00</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="7636b52a-2a69-4973-b043-07a4689b3900" refId="mcheck_misra_slsf_025_a_1" refTitle=" Simulink blocks: Default Size" refVersion="1"/>
+    <reference refUid="48e33072-f682-4fb0-832c-824b8baa762c" refId="mcheck_misra_slsf_025_a_2" refTitle=" Simulink block From and Goto: Matching Sizes" refVersion="1"/>
+    <reference refUid="52fcd2ea-bab6-49af-b804-f072c6c623a4" refId="mcheck_misra_slsf_025_a_3" refTitle=" Simulink Ports: Option IconDisplay" refVersion="1"/>
+    <reference refUid="64389a94-e5ed-4c7a-808f-c0de10d12ba1" refId="mcheck_misra_slsf_025_a_4" refTitle=" Simulink Sum blocks: Shape" refVersion="1"/>
+    <reference refUid="0d1657e7-09b7-4f41-85e9-ef0840fced1f" refId="mcheck_misra_slsf_025_a_5" refTitle=" Simulink Subsystems: Sufficient Size to display Portnames" refVersion="1"/>
+    <reference refUid="7ddb8b93-74ff-4604-83df-2fabaee66ab6" refId="mcheck_misra_slsf_025_a_6" refTitle=" Simulink blocks: Overlapping block labels" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

@@ -1,0 +1,161 @@
+<guideline fileVersion="2">
+  <uid>929fd940-7ad8-4140-9ced-31b58f64055c</uid>
+  <id>sdt_sc007</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Definition TargetLink Function Interface</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>verification/validation</value>
+        <value>workflow</value>
+        <value>simulation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MES FS_1_3</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value><![CDATA[>=2.0]]></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Ensure consistent data type, scaling and value range of TargetLink function arguments and TargetLink function return values. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> A proper definition of a TargetLink Function Interface requires the following properties.<br /> </p> 
+<p> The Inports and Outports on the top level of a TargetLink Function Subsystem must be TargetLink ports.<br /> </p> 
+<p> A TargetLink port is considered to be an argument or a return value of a function if its &quot;Class&quot; is set to &quot;FCN_ARG&quot;, &quot;FCN_REF_ARG&quot; or &quot;FCN_RETURN&quot;. </p> 
+<p> If one of these classes is set the data type, scaling and value range of the following blocks must be consistent:<br /> </p> 
+<ul> 
+ <li> All TargetLink Inports that provide arguments of a TargetLink function with their respective source.<br /> </li> 
+ <li> All TargetLink Outports that define a return value of a TargetLink function with their respective destination. </li> 
+</ul> 
+<p> Note that in the case of TargetLink Function Outports it is not always desirable that the destination block has the same data type, scaling or value range. Nevertheless, implicit data type conversion should be avoided whenever possible.<br /> </p> 
+<p> If a TargetLink function is configured as scaling invariant, only the data type of the ports need to be consistent with their respective source, but not the scaling information.&nbsp; </p> 
+<p> If a TargetLink port is NOT to be considered as an argument or return value of a function, the class should still be selected explicitly, i.e., the class 'default' should not be used.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Inconsistent data types may lead to inefficient code, reduced accuracy or range violations. For function interfaces, strong type consistency of the passed parameters and returned values ensures signal integrity and efficient production code by minimizing the need for type casts and rounding operations. Missing range definitions hinder the detection and control of overflows. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="sdt_sc007_Inport.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc007-1: Equal scaling information, data type and LSB of the TargetLink function Inport and its source </p> 
+<p> <img src="sdt_sc007_Outport.png" /> </p> 
+<p class="imageCaption"> Figure sdt_sc001-2: Equal scaling information, data type and LSB of the TargetLink function Outport and its destination<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Some TargetLink blocks such as Saturate, Gain, Fcn, Trigonometry, Math, Sqrt get a review finding, since it might not be reasonable to have the same settings as the TargetLink Function Outport. Consider using a Rescaler block to avoid implicit data type conversion whenever possible.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1c Enforcement of Strong Typing</value>
+        <value>T8.1g No Implicit Type Conversion</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.2 Strongly Typed Programming Language</value>
+        <value>T3-2.2 Defensive Programming</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="ebb99c13-e678-4e84-86cb-183ecdac5aba" refId="mcheck_mes_sk_006" refTitle="In- and Outports in TargetLink subsystems" refVersion="1"/>
+    <reference refUid="d8939a44-2e95-44e5-a2ee-88c0447a6350" refId="mcheck_sdt_sc007_a" refTitle="Definition TargetLink Function Interface - Inports" refVersion="1"/>
+    <reference refUid="3ad93759-09cd-487a-bad3-e61d7733610e" refId="mcheck_sdt_sc007_b" refTitle="Definition TargetLink Function Interface - Outports" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/23/2018 16:05:36">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

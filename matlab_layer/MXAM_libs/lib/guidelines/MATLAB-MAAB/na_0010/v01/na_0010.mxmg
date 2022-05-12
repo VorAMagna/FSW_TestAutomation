@@ -1,0 +1,217 @@
+<guideline fileVersion="2">
+  <uid>5af63ef0-6840-466b-beb6-788e0ee37a6f</uid>
+  <id>na_0010</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Grouping Data Flows Into Signals</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>readability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> distinction between vector and bus signals </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> <b>Vectors</b> </p>
+<p> The individual scalar signals composing a vector must have common functionality, data types, dimensions and units. The most common example of a vector signal is sensor or actuator data that is grouped into an array indexed by location. The output of a Mux block must always be a vector. The inputs to a Mux block must always be scalars. </p>
+<p> <b>Busses</b> </p>
+<p> Signals that do not meet the vectorization criteria described above must only be grouped into bus signals. Bus selector blocks may only be used with a bus signal input; they must not be used to extract scalar signals from vector signals. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Examples of vector signals include: </p>
+<table>
+ <tbody>
+  <tr>
+   <td> <p> <font size="2"><b>Vector type</b></font> </p> </td>
+   <td> <p> <font size="2"><b>Size</b></font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Row vector</font> </p> </td>
+   <td> <p> <font size="2">[1 n]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Column vector</font> </p> </td>
+   <td> <p> <font size="2">[n 1]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Wheel speed vector</font> </p> </td>
+   <td> <p> <font size="2">[1 Number of wheels]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Cylinder vector</font> </p> </td>
+   <td> <p> <font size="2">[1 Number of cylinders]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Position vector based on 2-D coordinates</font> </p> </td>
+   <td> <p> <font size="2">[1 2]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Position vector based on 3-D coordinates</font> </p> </td>
+   <td> <p> <font size="2">[1 3]</font> </p> </td>
+  </tr>
+ </tbody>
+</table>
+<p> Examples of bus signals include: </p>
+<table>
+ <tbody>
+  <tr>
+   <td> <p> <font size="2"><b>Bus Type</b></font> </p> </td>
+   <td> <p> <font size="2"><b>Elements</b></font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Sensor Bus</font> </p> </td>
+   <td> <p> <font size="2">Force Vector [Fx, Fy, Fz]</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Position</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Wheel Speed Vector</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Acceleration</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Pressure</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Controller Bus</font> </p> </td>
+   <td> <p> <font size="2">Sensor Bus</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Actuator Bus</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <p> <font size="2">Serial Data Bus</font> </p> </td>
+   <td> <p> <font size="2">Coolant Temperature</font> </p> </td>
+  </tr>
+  <tr>
+   <td> <font size="2"><br /> </font> </td>
+   <td> <p> <font size="2">Engine Speed, Passenger Door Open</font> </p> </td>
+  </tr>
+ </tbody>
+</table>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Review the data flow. Make sure that individual scalar signals composing a vector must have common functionality, data types and units. Moreover, the output of a Mux block must always be a vector and that the inputs to a Mux block must always be scalars.
+<br /> Also review that signals that do not meet criteria for a vector as described above, must only be grouped into bus signals. In addition, check whether the bus selector blocks are used to extract scalar signals from vector signals, if yes then this is incorrect. Bus selector blocks may only be used with a bus signal input.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.00</value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

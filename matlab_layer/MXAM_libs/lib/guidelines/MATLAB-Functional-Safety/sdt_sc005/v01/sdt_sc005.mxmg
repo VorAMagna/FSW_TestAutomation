@@ -1,0 +1,163 @@
+<guideline fileVersion="2">
+  <uid>87b9850f-b832-454c-a9b0-4b9bbf860e10</uid>
+  <id>sdt_sc005</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Propagation of Signal Names</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+        <value>maintainability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MES_FS_1_3</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Name signals at their source and propagate signal names as far as possible.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Signal names should be propagated as far as possible. To this end, the signal propagation mechanism of Simulink should be used to automatically name signals along a sequence of signal lines. </p>
+<ul>
+ <li> If a signal name is used along a sequence of signals, it should be named at the signal directly connected to the signal source, and<br /> </li>
+ <li> this name should be propagated to all subsequently connected signal lines by setting the signal property &quot;Show propagated signals&quot; to &quot;on&quot;. </li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Signal propagation ensures the consistency of signal naming, shows the data flow clearly, and reduces the effort to rename any signals. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="sdt_sc005_exampleModel.png" /> </p>
+<p class="imageCaption"> Figure sdt_sc005-1: The signal is explicitly named at its source. That signal name is then propagated to any subsequently connected signal lines.<br /> </p>
+<p> <img src="sdt_sc005_exampleDialog.png" /> </p>
+<p class="imageCaption"> Figure sdt_sc005-2:The option &quot;Show propagated signals&quot; is set to &quot;on&quot; to show the propagated signal name.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="17544735-a087-4664-a7da-96553758f81b" refId="mcheck_sdt_sc005" refTitle="Propagation of Signal Names" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>SDT.sc005.UserSourceBlocks</parameterName>
+          <sourceIdentifier>mcheck_sdt_sc005</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'SubSystem','CONSTREAL';...
+					'SubSystem','CONSTLOGIC';...
+					'Constant','TL_Constant';...
+					'Inport','TL_Inport';...
+'BusSelector',''}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="03/16/2015 10:20:41">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,22 @@
+model_name = 'MainC10';
+cs_blocks = find_system(model_name,'LookUnderMasks','all','FollowLinks','on',...
+    'LinkStatus','resolved');
+
+for i = 1 : length(cs_blocks) % loop over to-be-checked blocks
+    b=cs_blocks{i}; % the current block
+    
+    b_cancel=mes_progress(b);    % send progress-info to GUI and check for cancel message from GUI
+    if b_cancel
+        break
+    end
+    
+    bh=get_param(b,'Handle'); % get block handle
+    Name = get_param(bh,'Name');
+    bhClass = get_param(bh,'MaskValueString');
+    it=mxam_newcritem(default_item,...
+        'message','The LinkStatus of this block is "resolved". Please disable the link!',...
+        'handle',bh,...
+        'path',mes_cleanpathname(bh));
+    cr_items{end+1} = it; % add new check item to result list
+    
+end

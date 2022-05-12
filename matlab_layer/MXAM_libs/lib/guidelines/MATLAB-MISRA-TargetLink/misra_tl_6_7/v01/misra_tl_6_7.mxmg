@@ -1,0 +1,149 @@
+<guideline fileVersion="2">
+  <uid>4a9546d6-c0be-450d-8613-459183b22780</uid>
+  <id>misra_tl_6_7</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MIRA Limited, 2007</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoiding rescaling of input signals to LookupTables</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>advisory</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MISRA-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MISRA_TL_1_0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Input of a Lookup table must be representable by the input axis. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Care must be taken to ensure that the block output preceding the input to a Lookup table has a value that can be represented by the scaling of the input axis without causing an overflow or underflow. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> In TargetLink generated code, the input signals to a Lookup table are rescaled to the input axis scaling without any checks or saturation on the value of the signal. This can result in overflows or underflows if the input axis scaling cannot represent the value of the signal. </p>
+<p> Note: TargetLink produces a warning during code generation to highlight this issue. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure misra_tl_6_7-1 shows a model where the output of a Gain block (Gain1) is the input to a Lookup table. The signal Gain1 is an <em>Int16</em> with a value of 64. This is scaled to be 2^-8 (see Figure misra_tl_6_7-2) giving a hex value of 16384. </p>
+<p> The input axis to the Lookup table is an <em>Int16</em> with a scaling of 2^-9 (see Figure misra_tl_6_7-3). This results in TargetLink rescaling the input signal from 2^-8 to 2^-9 by multiplying the value by 2. This is shown in the following code fragment. </p>
+<p class="codeSample"> /* Gain: Subsystem/Gain1<br /> Subsystem/Gain1: folded operation<br /> multiplication to constant value 64 */<br /> Gain1 = 16384 /* 64. */; </p>
+<p class="codeSample"> /* TargetLink outport: Subsystem/OutPort3<br /> # combined # TableLookup: Subsystem/Look-Up Table */<br /> Sa1_OutPort3 = (Int16)Tab1DS0I2T1564_a(&amp;(Sa1_Look_Up_Table_map), (Int16) (Gain1 &lt;&lt; 1)); </p>
+<p> The input to the Lookup table &lt;codesnippet&gt;(Gain1 &lt;&lt; 1)&lt;/codesnippet&gt; now has a value of 32768 but this cannot be represented in an <em>Int16</em> and results in an overflow. </p>
+<p> <img src="MISRA_TL_R_6_7_Fig_1.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_6_7-1: Shows the output of a Gain block being used as input to a Lookup table. </p>
+<p> <img src="MISRA_TL_R_6_7_Fig_2.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_6_7-2: The scaling of the output signal from the Gain block. </p>
+<p> <img src="MISRA_TL_R_6_7_Fig_3.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_6_7-3: The scaling of the input axis of the Lookup table. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1c Enforcement of Strong Typing</value>
+        <value>T8.1g No Implicit Type Conversion</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.2 Strongly Typed Programming Language</value>
+        <value>T3-2.2 Defensive Programming</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

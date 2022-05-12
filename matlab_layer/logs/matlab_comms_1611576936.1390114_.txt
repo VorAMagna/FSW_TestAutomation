@@ -1,0 +1,194 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=2060
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '598128c6-9ae4-4f50-a64f-35002b947046'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=598128c6-9ae4-4f50-a64f-35002b947046'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a2ec99a0-de68-48da-98d3-be62ca519940'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=a2ec99a0-de68-48da-98d3-be62ca519940'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a2ec99a0-de68-48da-98d3-be62ca519940'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1a6afd89-1c8c-40f7-b0a9-58965744cd24'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1a6afd89-1c8c-40f7-b0a9-58965744cd24'
+
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Composition.dd
+Upgrading model 'NVMReadC10' from revision 401 to 402 ...
+Upgrading model 'NVMReadC10' from revision 402 to 403 ...
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1a6afd89-1c8c-40f7-b0a9-58965744cd24'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'eb58a9b7-2d76-4e73-9807-5f507e120935'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=eb58a9b7-2d76-4e73-9807-5f507e120935'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'eb58a9b7-2d76-4e73-9807-5f507e120935'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '724a9505-f241-47e7-b606-9f5c486deac5'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=724a9505-f241-47e7-b606-9f5c486deac5'
+
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+MXAM is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\mxam.log')">here</a>.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '724a9505-f241-47e7-b606-9f5c486deac5'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC10\NVMReadC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\NVMReadC02\NVMReadC02.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\CC\CC_Composition\CC_Modules\ITCInputC10\ITCInputC10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

@@ -1,0 +1,95 @@
+<mxam-project uid="b7c03498-e7f5-4166-a8cb-48166b430987" title="MXAM Guideline Project" contactName="Model Engineering Solutions GmbH" contactEmail="support@model-engineers.com" defaultReportName="MXAM-Report_%PROJECT%_%SYSTEM%_%yyyy-MM-dd_HH.mm%">
+  <access>public</access>
+  <exportNextToArtifact>true</exportNextToArtifact>
+  <selectionChangeAllowed>true</selectionChangeAllowed>
+  <defaultReportFormat>MXMR</defaultReportFormat>
+  <defaultReportType>FULL</defaultReportType>
+  <reportExportSettingsChangeAllowed>true</reportExportSettingsChangeAllowed>
+  <managers>
+    <manager username="mihaoper" domain="MAGNA"/>
+  </managers>
+  <documents>
+    <uid refUid="60e27a16-0a62-42a6-8973-5859d7066594" refId="Only_User_Check_Guideline_Document" refTitle="Only User Checks">
+      <guideline uid="a434cb4b-760f-4f8c-ac50-5a74927d9d66" modifier="standard" refUid="604e36f9-34fd-45ea-a202-6c6a0dc6d4e5" refId="Only_User_Checks" refVersion="1" refTitle="Only the selfmade checks">
+        <check uid="cf24058f-7354-48ea-83bc-bcf8efe69d74" selectedForRun="true" refUid="b85e24ba-70c3-4618-9255-ee1dac51b8ce" refId="mcheck_us_0001" refVersion="1" refTitle="Test the Input block Backgroundcolor"/>
+        <check uid="bbfdacc4-5352-4a77-9ebc-4fd08d1e1997" selectedForRun="true" refUid="d01fbca9-a6a3-4b6f-95ee-1ef5dc7f6aae" refId="mcheck_us_0002" refVersion="1" refTitle="Test the Output block Backgroundcolor"/>
+        <check uid="d6614ba2-a9f5-41d8-8e36-3425711a884f" selectedForRun="true" refUid="5e739887-1ed4-447d-83ab-5c552a615246" refId="mcheck_us_0003" refVersion="1" refTitle="Test of the Terminator Backgroundcolor"/>
+        <check uid="bf2862f1-33f1-4d79-a7a3-98d1b7221931" selectedForRun="true" refUid="4acec49c-33ea-4479-8644-9f756d4ff476" refId="mcheck_us_0004" refVersion="1" refTitle="Test of LUT Block LSB"/>
+        <check uid="55ce7a2c-acb9-4696-822a-ef16a676f2a2" selectedForRun="true" refUid="1caa7e25-5e0c-4d67-969c-3ff29fb77cb9" refId="mcheck_us_0005" refVersion="1" refTitle="Test of Saturate BackgroundColor"/>
+        <check uid="5c80d7d4-7dd8-41c7-a5fb-54ba90382fbe" selectedForRun="true" refUid="7f650601-bee9-44b4-9f5a-1cfd14bc0b28" refId="mcheck_us_0006" refVersion="1" refTitle="Test of the Saturate Output values"/>
+        <check uid="70d2e680-4922-4457-83e8-b3afc06e25c9" selectedForRun="true" refUid="8781532b-1984-4b37-b2c3-d2f3150ded65" refId="mcheck_us_0007" refVersion="1" refTitle="Test of the connection of constant with relational operator"/>
+        <check uid="bd6e985f-b01d-407a-bcb2-d6dc6ce8f261" selectedForRun="true" refUid="58bec37c-2532-45d9-be35-e3b9f3480958" refId="mcheck_us_0008" refVersion="1" refTitle="Test of Linked block`s port"/>
+        <check uid="f8e5d0fb-96e7-4473-85f6-00e0b5d11691" selectedForRun="true" refUid="0277060a-f116-4b82-a8a4-ef0536356fe0" refId="mcheck_us_0009" refVersion="1" refTitle="Test of the Linked block`s port type"/>
+        <check uid="49b73fce-94d6-4529-8157-8ea72ec92062" selectedForRun="true" refUid="6b74c822-b13d-486f-91e6-275bc8768867" refId="mcheck_us_0010" refVersion="1" refTitle="Test of Class of TL_Inport/TL_Outport"/>
+        <check uid="3b2df191-7627-4a21-8402-7f9f090ad844" selectedForRun="true" refUid="d0dd6724-faa3-4655-9c5b-e556909ada50" refId="mcheck_us_0011" refVersion="1" refTitle="Test of the Linked block`s port about lsb, type or scaling"/>
+        <check uid="331b35d4-e12e-4b5e-bc2f-b408ccb916a7" selectedForRun="true" refUid="d2c6b363-3063-4b96-9bf6-d2b5465db4dc" refId="mcheck_us_0012" refVersion="1" refTitle="Test of the Abs Block type"/>
+        <check uid="9723db28-e0c0-410d-b86c-7554e00007bd" selectedForRun="true" refUid="e00df7fe-178a-4f22-a42e-1923635942f9" refId="mcheck_us_0013" refVersion="1" refTitle="Test of the BackgroundColor of P_,L_,C_"/>
+        <check uid="73643486-2a73-4853-9152-4acbed99f4a2" selectedForRun="true" refUid="45f9a5af-18e1-4a66-9563-b57a40dba76e" refId="mcheck_us_0014" refVersion="1" refTitle="Test of the name and constant of P_,C_ Block"/>
+        <check uid="b299c797-407a-4abc-9949-7abe9cfab8a6" selectedForRun="true" refUid="6c407825-f6ae-4537-8049-b9611938d002" refId="mcheck_us_0015" refVersion="1" refTitle="Test of the name and variable of L_ Block"/>
+        <check uid="75d36399-e605-4989-8c2d-affedb55e613" selectedForRun="true" refUid="94603230-303d-42d3-bc62-d211a3673bf1" refId="mcheck_us_0016" refVersion="1" refTitle="Test of LSB or type of LUT"/>
+        <check uid="196516bc-5682-4b58-91d5-633191e97e15" selectedForRun="true" refUid="84748b0c-9e6d-4917-96cd-8290b621b43a" refId="mcheck_us_0018" refVersion="1" refTitle="Test of the name and variable of targetlink inport"/>
+        <check uid="813d64b2-c15b-4e54-8fe0-ca5b8672f40b" selectedForRun="true" refUid="5dc156bb-8e89-4473-a56e-a7ec2612f98a" refId="mcheck_us_0019" refVersion="1" refTitle="Test of the name and variable of targetlink outport"/>
+        <check uid="e18f735f-0875-4c84-9710-386cc8d6e1e6" selectedForRun="true" refUid="9742f260-6abc-4397-bea3-f928aba6143d" refId="mcheck_us_0020" refVersion="1" refTitle="Test of the Look-Up method"/>
+        <check uid="326b7530-cf8a-4aef-9504-8f0634b82985" selectedForRun="true" refUid="31786f03-23c1-4c21-b826-a882042f0285" refId="mcheck_us_0022" refVersion="1" refTitle="Test of the name and constant of interrunnables"/>
+        <check uid="92a89a56-dc07-458f-9323-3a3f26c3f9ce" selectedForRun="true" refUid="dc67212e-3079-45ec-907d-95fa834ad71d" refId="mcheck_us_0023" refVersion="1" refTitle="Test of the use of &quot;Mergeable Disp&quot;"/>
+        <check uid="7977884f-ec62-41c0-9e61-f8790302fbb1" selectedForRun="true" refUid="65ce0cd8-aacf-46c1-b6f0-29d0618fde38" refId="mcheck_us_0024" refVersion="1" refTitle="Test the names of the blocks and the modules for blanks and special characters."/>
+        <check uid="eae84893-1bdf-4945-b716-5548b5a8e3f9" selectedForRun="true" refUid="e3de08e5-c641-4446-a578-c9d13b6e8c36" refId="mcheck_us_0025" refVersion="1" refTitle="Test the names of the blocks with calibratables for the right prefix"/>
+        <check uid="138f9ef8-0f8a-48e5-b7e0-9fb7a0d35306" selectedForRun="true" refUid="ec28b36a-2efc-47cf-920e-30b9732548a7" refId="mcheck_us_0026" refVersion="1" refTitle="Test the names of the blocks with DISP for the right prefix (W_moduleName)."/>
+        <check uid="74aefb2a-772f-4687-8d21-7f2c5db1146f" selectedForRun="true" refUid="c209c664-61dd-472a-8cee-e649fef9b0dc" refId="mcheck_us_0027" refVersion="1" refTitle="Test the names of the inports and outports which are module outputs or EEPROM signals"/>
+        <check uid="71a6851a-ee6d-4e02-a47a-924b17627679" selectedForRun="true" refUid="27d69b5b-cbbb-4a98-9015-e72166386803" refId="mcheck_us_0028" refVersion="1" refTitle="Test the LUT block name"/>
+        <check uid="2b31c7e8-e1e9-4887-ace4-8afe5c230288" selectedForRun="true" refUid="8d56c44e-d746-4a19-8c27-fd8f600b6ee5" refId="mcheck_us_0029" refVersion="1" refTitle="Test the Subsystem names"/>
+        <check uid="4ae89d17-21e9-4f96-a679-d28976cd8a3d" selectedForRun="true" refUid="3574fd51-81dd-4573-b706-0d9b3b4ab276" refId="mcheck_us_0030" refVersion="1" refTitle="Test the link status of a block"/>
+        <check uid="ee236b1f-bbf4-4508-bc2c-8a762a49bbe7" selectedForRun="true" refUid="e57ad77e-785e-4bef-b736-d75183e40449" refId="mcheck_us_0031" refVersion="1" refTitle="Test the status of the linked requirements."/>
+      </guideline>
+    </uid>
+  </documents>
+  <artefactDefinitionPaths/>
+  <ignoreListDefinitionPaths/>
+  <guidelinemappings/>
+  <annotationDefinitions/>
+  <projectLibraries projectLibrariesSetting="NONE"/>
+  <resultConfig allowAnnotation="true" numberOfAnnotationsPerFinding="-1" reviewhasHigherPriorityThan="UNREPAIRED">
+    <result value="REVIEW">
+      <allowedAnnotation>REVIEW</allowedAnnotation>
+      <allowedAnnotation>FAILED</allowedAnnotation>
+      <allowedAnnotation>WARNING</allowedAnnotation>
+      <allowedAnnotation>INFO</allowedAnnotation>
+      <allowedAnnotation>PASSED</allowedAnnotation>
+    </result>
+    <result value="FAILED">
+      <allowedAnnotation>REVIEW</allowedAnnotation>
+      <allowedAnnotation>FAILED</allowedAnnotation>
+      <allowedAnnotation>WARNING</allowedAnnotation>
+      <allowedAnnotation>INFO</allowedAnnotation>
+      <allowedAnnotation>PASSED</allowedAnnotation>
+    </result>
+    <result value="WARNING">
+      <allowedAnnotation>REVIEW</allowedAnnotation>
+      <allowedAnnotation>FAILED</allowedAnnotation>
+      <allowedAnnotation>WARNING</allowedAnnotation>
+      <allowedAnnotation>INFO</allowedAnnotation>
+      <allowedAnnotation>PASSED</allowedAnnotation>
+    </result>
+    <result value="INFO">
+      <allowedAnnotation>REVIEW</allowedAnnotation>
+      <allowedAnnotation>FAILED</allowedAnnotation>
+      <allowedAnnotation>WARNING</allowedAnnotation>
+      <allowedAnnotation>INFO</allowedAnnotation>
+      <allowedAnnotation>PASSED</allowedAnnotation>
+    </result>
+    <result value="PASSED">
+      <allowedAnnotation>REVIEW</allowedAnnotation>
+      <allowedAnnotation>FAILED</allowedAnnotation>
+      <allowedAnnotation>WARNING</allowedAnnotation>
+      <allowedAnnotation>INFO</allowedAnnotation>
+      <allowedAnnotation>PASSED</allowedAnnotation>
+    </result>
+    <checkIds annotationCheckIdsIsBlacklist="true"/>
+    <saveOption value="USER_DECISION"></saveOption>
+  </resultConfig>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+</mxam-project>

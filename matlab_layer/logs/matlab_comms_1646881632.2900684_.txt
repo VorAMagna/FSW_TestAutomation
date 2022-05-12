@@ -1,0 +1,334 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=10036
+
+MODELS_TO_EXCEPT_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxray_models_to_except.json
+
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'TurnOnDelay_Bool_UInt16'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Unable to load block diagram 'EvalBus_Chili'] 
+[> In get_limits (line 13)
+  In PostProcessing_MXRAY (line 28)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+done

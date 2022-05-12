@@ -1,0 +1,561 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=24956
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b9f00f4f-36df-48ff-a31d-8fc8ae6893fb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b9f00f4f-36df-48ff-a31d-8fc8ae6893fb'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b63f9126-6249-4653-bb41-89b13caa1a2c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b63f9126-6249-4653-bb41-89b13caa1a2c'
+
+Description in the Autodoc block is too short!
+StressCalcC10/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+StressCalcC10/HighTrqReqDet/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/HighTrqReqDet/stHiTrqReqActvMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/ManualFdiagECUProtection/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Actuator/StressMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/ManualFdiagClutchProtection/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/Stress_Clutch/StressMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress MotorWinding/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress MotorWinding/prcStressAtrMotorMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress Shunt/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress Shunt/prcStressAtrShuntMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress TmpBridge/Autodoc
+Customization
+Description in the Autodoc block is too short!
+StressCalcC10/prcStressAtrCalc/Stress TmpBridge/prcStressAtrTmpBridgeMan/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+StressCalcC10/Stress_Actuator/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+StressCalcC10/Stress_Clutch/FailureHandling/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b63f9126-6249-4653-bb41-89b13caa1a2c'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\SvcJobC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd845aa16-3c86-4d69-8956-5312037598e2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d845aa16-3c86-4d69-8956-5312037598e2'
+
+Description in the Autodoc block is too short!
+SvcJobC10/ChangeIndication_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/IOCtrlErrorType_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/IOCtrlStatus_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/IOCtrl_Jobs_Activation/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/NewRequest/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/CLUTCH_2_calc/stPreCondSJ10_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/CLUTCH_ACTUATOR_1_calc/stPreCondSJ8_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/CLUTCH_ACTUATOR_2_calc/stPreCondSJ9_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/ConditionsFromCal/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/PrecondSetPoint/stPreCondNoBF_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/SYSTEM_FUNCTION_TEST/stPreCondSJ11_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Rescale/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Rescale1/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Rescale2/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Rescale3/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ClassDecoder1/Rescale5/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/ManualClassingVersion/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/PrecondCalc/WriteCal_calc/classVersionCheck/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/RDBI Jobs/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/RTCtrl Jobs/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/RTCtrlErrorType_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/RTCtrlStatus_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/ReadErrorType_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/ReadStatus_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/StatusInitPos/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/TrigTrqSet/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/WDBI Jobs/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/WriteErrorType_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/WriteStatus_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/cmdSvcJob_calc/SvcJobMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/st2WD4WDReqSvcJob_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/stReqSvcJobC2_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/stReqSvcJobCA1_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/stReqSvcJobCA2_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/stReqSvcJobSFT_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SvcJobC10/stSolenoidReqSvcJob_Man/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/IOJob_Clutch2ForAllWheelDrive
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/IOJob_ClutchActuator1ForAllWheelDrive
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/IOJob_ClutchActuator2ForAllWheelDrive
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/IOJob_SystemFunctionTest
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/Status_Abort_Calculation
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/Status_Abort_Calculation/keep_old_abort_reason
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs/Status_Abort_Calculation/keep_old_status
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs_Activation/Encoder16Bit1/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs_Activation/Encoder16Bit3/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/IOCtrl_Jobs_Activation/Encoder16Bit4/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/ADAPTIVE_SYNC_LEARN_RESET_calc/SJ16_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/CLUTCH_2_calc/SJ10_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/CLUTCH_ACTUATOR_1_calc/SJ8_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/CLUTCH_ACTUATOR_1_calc/SJ8_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/CLUTCH_ACTUATOR_2_calc/SJ9_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/DATA_RETENTION_calc/SJ13_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/DATA_RETENTION_calc/SJ13_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/FirstCal_calc/firstCal_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/InitPos_calc/initPos_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/OIL_RESET_CAL_calc/SJ16_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/PDCal_calc/pdCal_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/PrecondSetPoint
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/RESET_CAL_calc/SJ12_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/RESET_CAL_calc/SJ12_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/STEUERN_REQUEST_2WD_4WD_calc/SJ5_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/SYSTEM_FUNCTION_TEST/SJ11_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/SetTrq_calc/setTrq_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/WRITE_FULLOCK_calc/SJ15_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/WRITE_FULLOCK_calc/SJ15_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/WriteCal_calc/SJ6_RespCodeCalc
+Autodoc Block must be added to the subsystem!
+SvcJobC10/PrecondCalc/WriteCal_calc/SJ6_RespCodeCalc/calcRespCode
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RDBI Jobs/Encoder16Bit1/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RDBI Jobs/Encoder16Bit2/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RTCtrl Jobs/Encoder16Bit/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RTCtrl Jobs/Encoder16Bit1/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RTCtrl Jobs/Encoder16Bit2/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RTCtrl Jobs/Status_Abort_Calculation
+Autodoc Block must be added to the subsystem!
+SvcJobC10/RTCtrl Jobs/Status_Abort_Calculation/keep_old_abort_reason
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit1/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit2/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit3/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit4/Encoder16Bit
+Autodoc Block must be added to the subsystem!
+SvcJobC10/WDBI Jobs/Encoder16Bit6/Encoder16Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd845aa16-3c86-4d69-8956-5312037598e2'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\SvcJobC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\SvcJobC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ac13264f-d018-470c-a4a2-709a57b678de'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ac13264f-d018-470c-a4a2-709a57b678de'
+
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ac13264f-d018-470c-a4a2-709a57b678de'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '618baa27-e382-4a22-9419-0b93e8523657'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=618baa27-e382-4a22-9419-0b93e8523657'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '618baa27-e382-4a22-9419-0b93e8523657'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '04315c91-d1d2-49c8-9450-f7d9a98377c9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=04315c91-d1d2-49c8-9450-f7d9a98377c9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '04315c91-d1d2-49c8-9450-f7d9a98377c9'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd6b14d69-74e1-4d69-a0fb-18cdbf538482'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d6b14d69-74e1-4d69-a0fb-18cdbf538482'
+
+Description in the Autodoc block is too short!
+TrqModC10/Trq Limitation/Autodoc
+Customization
+Description in the Autodoc block is too short!
+TrqModC10/TrqRampUp/Autodoc
+Customization
+Description in the Autodoc block is too short!
+TrqModC10/TrqSwitch/Autodoc
+Customization
+Description in the Autodoc block is too short!
+TrqModC10/stActCtrl_Man/Autodoc
+Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd6b14d69-74e1-4d69-a0fb-18cdbf538482'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '31d81b87-4576-4e57-bb41-efd8dc514610'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=31d81b87-4576-4e57-bb41-efd8dc514610'
+
+Description in the Autodoc block is too short!
+WearCalcC10/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/CalParam/Autodoc
+Customization
+Description in the Autodoc block is too short!
+WearCalcC10/OdoCalc/Recalculation/Autodoc
+Customization
+Description in the Autodoc block is too short!
+WearCalcC10/Works/Autodoc
+Customization
+Description in the Autodoc block is too short!
+WearCalcC10/Works/ReCalcValues SvcJob/Autodoc
+Customization
+Description in the Autodoc block is too short!
+WearCalcC10/LossNeedleBearings/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+WearCalcC10/GearRedLoss
+Autodoc Block must be added to the subsystem!
+WearCalcC10/OdoCalc/StatSel
+Autodoc Block must be added to the subsystem!
+WearCalcC10/Works/CalPower/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+WearCalcC10/Works/DiagOil/FailureHandling/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '31d81b87-4576-4e57-bb41-efd8dc514610'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\StressCalcC10\StressCalcC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SvcJobC10\SvcJobC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\SynchHistogramC10\SynchHistogramC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TimeCalcC10\TimeCalcC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TmpOilCalcC10\TmpOilCalcC10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\TrqModC10\TrqModC10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\WearCalcC10\WearCalcC10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

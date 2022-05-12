@@ -1,0 +1,61 @@
+<check fileVersion="2">
+  <uid>42f8d570-61e1-4ccc-abdf-cb51ac00513e</uid>
+  <id>report_finding_differences</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>No differences in matched findings</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_finding_differences.v01.implementation.ReportFindingDifferences</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[The check analyzes two reports and creates findings if two matching findings have been found with&nbsp;
+<span style="font-weight: bold;">differences</span> in the message or result type.
+<br /> 
+<br /> Two findings match if:
+<br /> 
+<ul> 
+ <li> They both do not have the result type ABORTED.<br /> </li> 
+ <li> They are created by the same check of the same guideline in the same chapter and document.<br /> </li> 
+ <li> They target the same model element, i.e. the same model element with the same type, path, and name. </li> 
+</ul> 
+<p> If more than two matching findings are found, the most similar findings - considering the number of identical words in the message - are matched. </p>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check passes if no differences in matched findings are found.
+<br /> 
+<br /> Warning: A finding in one report has a matching finding in the other report with a&nbsp;
+<span style="font-weight: bold;">different</span> message or result type.]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.AggregatedResults</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.SameCheckIdPairs</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="02/18/2016 14:13:40">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:37:36">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

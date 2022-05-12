@@ -1,0 +1,7 @@
+<library type="ParameterDefinitionLibrary" id="MATLAB_Misra_slsf" title="Misra Simulink Stateflow Parameters" uid="50dfc40e-d5ca-4cef-ad3b-a65339b008ac">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

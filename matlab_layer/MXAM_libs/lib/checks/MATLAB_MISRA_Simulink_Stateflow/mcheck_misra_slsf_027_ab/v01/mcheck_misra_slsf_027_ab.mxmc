@@ -1,0 +1,102 @@
+<check fileVersion="2">
+  <uid>30d358b6-b718-4a1e-8071-3d6515a0fbc2</uid>
+  <id>mcheck_misra_slsf_027_ab</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Signal and Bus Label Usage - Label at Source</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_027_ab.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[If a signal from a source block has signal name and all the signals that can inherit this signal name set the property 'signalPropagation' to 'on', this signal will get a pass. If a signal has a name but its property 'signalPropagation' is set to 'on' a fail will be given.
+<br /> Note: if the signal has a name that is different with its source signal, it is regarded as be changed purposely, in this case no error is reported.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[As of Matlab 2018b the model option &quot;Display -&gt; Signals &amp; Ports -&gt; Propagated Signal Labels&quot; is not recommended for use because it is not consistent with the individual signal property &quot;Show Propagated Signals&quot;. In addition, it is not updated when single changes in the individual property take place. Therefore, the check analyzes only the individual property and it could return failed findings if only the model option is set to &quot;on&quot;.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Set the signal property 'signalPropagation' to on.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[If the signal of a source block has a name and subsequent signals are not named, the check sets the signal property &quot;Show propagated signals&quot; of these nameless signals to &quot;on&quot;. 
+<p> Follow these steps to auto-repair: </p> 
+<ol> 
+ <li> Name the signal output from its source block. </li> 
+ <li> Delete any other signal names in the subsequent signal lines after the named signal from the source block. </li> 
+ <li> Apply autofix, which sets the signal property &quot;Show propagated signals&quot; of the subsequent signals to 'on'. </li> 
+</ol> 
+<p> Note: In some cases, the number of failed messages may differ from the number of repaired messages. This is because the repair action of setting the property 'Show propagated signals' to 'on' in the complete signal chain from source to destination would have fixed other failed cases.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_027_ab.LibrariesToCheck</name>
+      <description><![CDATA[Each entry of this list is a library. Each block of this library is  treated as a reuseable Subsystem and therefore as a source.
+ If list is empty -> each reuseable subsystem is treated as a source.
+ If list has entries -> only subsystems from these libraries are treated as source.]]></description>
+      <defaultValue><![CDATA[{''}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_027_ab.BasicMaskedBlocks</name>
+      <description>Each entry of list is a masktype and represents a masked basic block. Signal lines placed in such blocks are not considered by Guideline. Note: Blocks with empty MaskType will be ignored.</description>
+      <defaultValue><![CDATA[{''}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

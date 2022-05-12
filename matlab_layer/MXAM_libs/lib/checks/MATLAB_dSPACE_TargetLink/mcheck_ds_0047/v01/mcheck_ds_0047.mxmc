@@ -1,0 +1,96 @@
+<check fileVersion="2">
+  <uid>ae0f1287-7a23-484b-bdcf-1a9461d7dddf</uid>
+  <id>mcheck_ds_0047</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Use of the Multiport Switch Block</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ds_0047.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value><![CDATA[&lt;R2010b]]></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value><![CDATA[&lt;3.2]]></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Check verifies Multiport Switch blocks.
+<br /> Warning1: If Matlab version is less than R2010, a warning is raised, about a potential missing default path in the Multiport Switch block.
+<br /> Warning2: If Matlab version is greater than R2010, a warning is raised, that the control input of the Multiport Switch block should have an integer datatype.
+<br /> Failed: If the control input of the Multiport Switch block is not of integer datatype.
+<br /> 
+<br /> Note: This check is obsolete for Matlab versions above R2010 as the Multiport Switch block always has a 'default path'. In this case it only verifies the datatype of the contril input of the Multiport Switch block.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[For Matlab versions less than R2010: Add some additional logic at the control port of the Multiport Switch block in order to define a default path for possible data port selections.
+<br /> For Matlab versions greater than R2010: Control input of a Multiport Switch block should be of integer datatype with range that exactly fits into the number of ports in the Multiport Switch block.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>dSPACE.checkds47.trustUserSpecifiedRange</name>
+      <description>If true, user-defined ranges (in Targetlink: output.min, output.max, in Stateflow: sf.min, sf.max) are accepted to limit the control input range.
+If false, the data-limited range of control input is checked, and user-defined min and max values are ignored.</description>
+      <defaultValue>0</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:45">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,700 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=9060
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '77ed3031-df00-499c-b524-b15aa8b08a94'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=77ed3031-df00-499c-b524-b15aa8b08a94'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b6249a0a-4392-4081-b22f-d3d2059dafe1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b6249a0a-4392-4081-b22f-d3d2059dafe1'
+
+Autodoc Block must be added to the subsystem!
+CplOpP02/Diagnoses
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b6249a0a-4392-4081-b22f-d3d2059dafe1'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CtrlSwP02\CtrlSwP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '60a76129-f13e-4156-978d-2dcbb2063626'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=60a76129-f13e-4156-978d-2dcbb2063626'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '60a76129-f13e-4156-978d-2dcbb2063626'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CtrlSwP02\CtrlSwP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CtrlSwP02\CtrlSwP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\FreezeFrameP02\FreezeFrameP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2d00285d-d2a4-4b64-8d55-e88250a76d6d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2d00285d-d2a4-4b64-8d55-e88250a76d6d'
+
+Upgrading library 'Decoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit' from revision 402 to 403 ...
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2d00285d-d2a4-4b64-8d55-e88250a76d6d'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\FreezeFrameP02\FreezeFrameP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\FreezeFrameP02\FreezeFrameP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\HistogramP10\HistogramP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46b61ed7-370c-4ebe-8bb3-dd562d673011'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=46b61ed7-370c-4ebe-8bb3-dd562d673011'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46b61ed7-370c-4ebe-8bb3-dd562d673011'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\HistogramP10\HistogramP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\HistogramP10\HistogramP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InitPosP02\InitPosP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8fa87fb2-9aa4-4c33-9a0b-e96eacb7d18e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8fa87fb2-9aa4-4c33-9a0b-e96eacb7d18e'
+
+Autodoc Block must be added to the subsystem!
+InitPosP02/Diagnoses
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8fa87fb2-9aa4-4c33-9a0b-e96eacb7d18e'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InitPosP02\InitPosP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InitPosP02\InitPosP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP02\InputP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46908961-04b3-4b66-909d-de658734b08c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=46908961-04b3-4b66-909d-de658734b08c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46908961-04b3-4b66-909d-de658734b08c'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP02\InputP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP02\InputP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP10\InputP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8799063a-0dfd-464e-ae6a-c4f1b9bc78db'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8799063a-0dfd-464e-ae6a-c4f1b9bc78db'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8799063a-0dfd-464e-ae6a-c4f1b9bc78db'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP10\InputP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP10\InputP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\LubCycP10\LubCycP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '995a1732-21f1-4fe1-9132-3e6bf9ec5324'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=995a1732-21f1-4fe1-9132-3e6bf9ec5324'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '995a1732-21f1-4fe1-9132-3e6bf9ec5324'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\LubCycP10\LubCycP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\LubCycP10\LubCycP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\MainP10\MainP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '85ecada7-4d5e-48d0-940c-aa3bbd8be53c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=85ecada7-4d5e-48d0-940c-aa3bbd8be53c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '85ecada7-4d5e-48d0-940c-aa3bbd8be53c'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\MainP10\MainP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\MainP10\MainP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP02\NVMReadP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9b52cce1-7061-426d-b677-7203ed7ee204'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=9b52cce1-7061-426d-b677-7203ed7ee204'
+
+Using DD project file:   C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Composition.dd
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9b52cce1-7061-426d-b677-7203ed7ee204'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP02\NVMReadP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP02\NVMReadP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP10\NVMReadP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '11844509-2da1-40ef-b7dd-cf45b5e7667d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=11844509-2da1-40ef-b7dd-cf45b5e7667d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '11844509-2da1-40ef-b7dd-cf45b5e7667d'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP10\NVMReadP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP10\NVMReadP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP02\NVMWriteP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ceaa8b9a-5677-4b4f-a83a-fdf2426cc86d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ceaa8b9a-5677-4b4f-a83a-fdf2426cc86d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ceaa8b9a-5677-4b4f-a83a-fdf2426cc86d'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP02\NVMWriteP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP02\NVMWriteP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP10\NVMWriteP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'df7f6d71-162a-4cf7-b8b8-98339b34eefb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=df7f6d71-162a-4cf7-b8b8-98339b34eefb'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'df7f6d71-162a-4cf7-b8b8-98339b34eefb'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP10\NVMWriteP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP10\NVMWriteP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP02\PFMEndP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '32368433-372f-4ab2-931a-47b0af3ad002'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=32368433-372f-4ab2-931a-47b0af3ad002'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '32368433-372f-4ab2-931a-47b0af3ad002'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP02\PFMEndP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP02\PFMEndP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP10\PFMEndP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6c266615-e407-43d6-899d-0aad7ce8003b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6c266615-e407-43d6-899d-0aad7ce8003b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6c266615-e407-43d6-899d-0aad7ce8003b'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP10\PFMEndP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP10\PFMEndP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP02\PFMStartP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '15d4077b-0c89-491b-a1d0-b6e2af1cf4bf'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=15d4077b-0c89-491b-a1d0-b6e2af1cf4bf'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '15d4077b-0c89-491b-a1d0-b6e2af1cf4bf'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP02\PFMStartP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP02\PFMStartP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP10\PFMStartP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd55f29e9-be74-4836-9ac7-30d45f175a0e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d55f29e9-be74-4836-9ac7-30d45f175a0e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd55f29e9-be74-4836-9ac7-30d45f175a0e'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP10\PFMStartP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP10\PFMStartP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PosCtrlP02\PosCtrlP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'dda8a385-8d46-45d0-bd68-380a15955ede'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=dda8a385-8d46-45d0-bd68-380a15955ede'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'dda8a385-8d46-45d0-bd68-380a15955ede'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PosCtrlP02\PosCtrlP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PosCtrlP02\PosCtrlP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SpdCtrlP02\SpdCtrlP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '60155e03-f4f4-4fcb-b4b3-0193c5c912dd'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=60155e03-f4f4-4fcb-b4b3-0193c5c912dd'
+
+Autodoc Block must be added to the subsystem!
+SpdCtrlP02/ResolveBlockedMvmt/CplBlkCurrentPulses
+Autodoc Block must be added to the subsystem!
+SpdCtrlP02/ResolveBlockedMvmt/DcplBklCurrentPulses
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '60155e03-f4f4-4fcb-b4b3-0193c5c912dd'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SpdCtrlP02\SpdCtrlP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SpdCtrlP02\SpdCtrlP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SvcJobP10\SvcJobP10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'af576fec-5031-46f0-b00d-4c8bbbf3c458'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=af576fec-5031-46f0-b00d-4c8bbbf3c458'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'af576fec-5031-46f0-b00d-4c8bbbf3c458'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SvcJobP10\SvcJobP10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SvcJobP10\SvcJobP10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\TestBenchP02\TestBenchP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e8cd886a-6731-472d-bc1a-3e24f59d24e6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e8cd886a-6731-472d-bc1a-3e24f59d24e6'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e8cd886a-6731-472d-bc1a-3e24f59d24e6'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\TestBenchP02\TestBenchP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\TestBenchP02\TestBenchP02.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\VltOutP02\VltOutP02.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'fc4e1a72-186e-48a8-97f0-6707b9d84029'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=fc4e1a72-186e-48a8-97f0-6707b9d84029'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'fc4e1a72-186e-48a8-97f0-6707b9d84029'
+    export: 'true'
+      file: 'C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\VltOutP02\VltOutP02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\VltOutP02\VltOutP02.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CplOpP02\CplOpP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\CtrlSwP02\CtrlSwP02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\FreezeFrameP02\FreezeFrameP02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\HistogramP10\HistogramP10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InitPosP02\InitPosP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP02\InputP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\InputP10\InputP10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\LubCycP10\LubCycP10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\MainP10\MainP10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP02\NVMReadP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMReadP10\NVMReadP10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP02\NVMWriteP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\NVMWriteP10\NVMWriteP10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP02\PFMEndP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMEndP10\PFMEndP10.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP02\PFMStartP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PFMStartP10\PFMStartP10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\PosCtrlP02\PosCtrlP02.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SpdCtrlP02\SpdCtrlP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\SvcJobP10\SvcJobP10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\TestBenchP02\TestBenchP02.slx
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP\CP_Composition\CP_Modules\VltOutP02\VltOutP02.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

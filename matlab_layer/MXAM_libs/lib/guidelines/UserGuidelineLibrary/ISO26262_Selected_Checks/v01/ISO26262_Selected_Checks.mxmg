@@ -1,0 +1,119 @@
+<guideline fileVersion="2">
+  <uid>14a71bf1-4ecd-4eec-b47d-d662e764044a</uid>
+  <id>ISO26262_Selected_Checks</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="mihaoper" domain="MAGNA"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>629df1f2-5025-496d-af5e-fb2b09f8a928</templateUid>
+  <title>ISO26262_Selected_Checks</title>
+  <properties>
+    <boolean name="Boolean attribute" optional="true" private="false">
+      <description>boolean example</description>
+      <value>true</value>
+    </boolean>
+    <double name="Double attribute" optional="true" private="false">
+      <description>double example</description>
+      <value>1.0</value>
+    </double>
+    <integer name="Integer attribute" optional="true" private="false">
+      <description>integer example</description>
+      <value>1</value>
+    </integer>
+    <richtext name="Richtext attribute" optional="true" private="false">
+      <description>richtext example</description>
+      <value>this is a richtext</value>
+    </richtext>
+    <string name="String attribute" optional="true" private="false">
+      <description>string example</description>
+      <value>this is a string</value>
+    </string>
+    <enumeration name="Enumeration attribute single" optional="true" private="false" multi="false">
+      <description>enumeration attribute (single selection)</description>
+      <enums>
+        <value>passed</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Enumeration attribute multi" optional="true" private="false" multi="true">
+      <description>enumeration attribute (multi selection)</description>
+      <enums>
+        <value>passed</value>
+        <value>failed</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences>
+    <reference refUid="f50db154-cbba-42fc-92eb-7fa2feaa5605" refId="mcheck_mes_is_0002" refTitle="User-specified State/Transition execution order" refVersion="1"/>
+    <reference refUid="a8110b76-442d-4118-bb93-2886ff542fd1" refId="mcheck_mes_sf_002" refTitle="Variable Assignments in Transition Segments" refVersion="1"/>
+    <reference refUid="67140efb-97ba-444f-91d0-0190e94ce5cb" refId="mcheck_mes_sf_003" refTitle="Interaction between Parallel States" refVersion="1"/>
+    <reference refUid="3d11193f-75d5-45e7-8c11-a07105aa53c2" refId="mcheck_mes_sf_004" refTitle="Freeness of Early Return Logic Problems" refVersion="1"/>
+    <reference refUid="ebb99c13-e678-4e84-86cb-183ecdac5aba" refId="mcheck_mes_sk_006" refTitle="In- and Outports in TargetLink subsystems" refVersion="1"/>
+    <reference refUid="997d4ad7-e704-4a58-ad74-157195496646" refId="mcheck_mes_sltl_001" refTitle="Magic Constants in Constant Blocks" refVersion="1"/>
+    <reference refUid="d283c68e-c9a5-41df-909f-adb303e48aba" refId="mcheck_mes_sltl_002_a" refTitle="Comparison of Floating-Point Signals in Simulink and TargetLink" refVersion="1"/>
+    <reference refUid="83a7a72d-cf21-46f4-9295-0d99f766547c" refId="mcheck_mes_sltl_002_b" refTitle="Comparison of Floating-Point Signals in Stateflow" refVersion="1"/>
+    <reference refUid="3a778870-679e-4f51-9bfb-c1340378129e" refId="mcheck_mes_tl_001" refTitle="Avoidance of Implicit Saturation inTargetLink blocks" refVersion="1"/>
+    <reference refUid="87a33c48-2c2c-4e38-a84b-04f52ab08b6c" refId="mcheck_misra_tl_1_1" refTitle="Use of Block Priorities" refVersion="1"/>
+    <reference refUid="c68d453f-40a5-482d-9dfc-71c88265ba8f" refId="mcheck_misra_tl_1_2_a" refTitle="Comments in block properties" refVersion="1"/>
+    <reference refUid="6697732d-1e3b-4a62-ae87-16d56af7534d" refId="mcheck_misra_tl_1_2_b" refTitle="Umlaute in Block Properties" refVersion="1"/>
+    <reference refUid="31b61a11-2373-4773-959c-b7d46384bbd1" refId="mcheck_misra_tl_4_2" refTitle="Permitted data types at the Stateflow Chart Interface" refVersion="1"/>
+    <reference refUid="97927f70-f12d-4182-8ea4-b94636180691" refId="mcheck_misra_tl_4_4" refTitle="Avoidance of Saturation in Integer Arithmetics" refVersion="1"/>
+    <reference refUid="141241e2-0946-4163-8a97-0f269fc8c585" refId="mcheck_misra_tl_4_5" refTitle="Avoidance of Rounding Operations" refVersion="1"/>
+    <reference refUid="6b6b88b3-18a2-45cc-b0c2-4ff0d8fc44d2" refId="mcheck_misra_tl_5_1" refTitle="Attributes of Look-Up table outputs" refVersion="1"/>
+    <reference refUid="01d59b3a-a67a-4d09-b7c8-99287cae6be2" refId="mcheck_misra_tl_5_10" refTitle="Use of Custom Code blocks" refVersion="1"/>
+    <reference refUid="b822f148-bdec-4b08-bfd9-2de5fb4c5f8f" refId="mcheck_misra_tl_5_2_a" refTitle="Use of the Switch Case block: Show default case" refVersion="1"/>
+    <reference refUid="a1e8d34d-4d3f-4eb1-ab50-a7d65de5234b" refId="mcheck_misra_tl_5_2_b" refTitle="Use of the Switch Case block: avoid unconnected default outputs" refVersion="1"/>
+    <reference refUid="bf10d503-8285-41e0-ba2a-e0863c3cb369" refId="mcheck_misra_tl_5_3" refTitle="Use of Data Store blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="8541c376-6f31-4458-8c48-79a424fd1ba5" refId="mcheck_misra_tl_5_4" refTitle="Use of From and Goto blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="db750cae-1927-40ee-aba1-f4c022151b07" refId="mcheck_misra_tl_5_7" refTitle="Use of data types for Multiport Switch block" refVersion="1"/>
+    <reference refUid="a11936af-acf6-4504-bec2-f63bb2ca26c0" refId="mcheck_misra_tl_5_8" refTitle="Use of the Switch block" refVersion="1"/>
+    <reference refUid="62c57b75-024b-4f98-bf5b-2442aca0c912" refId="mcheck_misra_tl_5_9" refTitle="Use of the Fcn Block for assigning Boolean variables" refVersion="1"/>
+    <reference refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)" refVersion="1"/>
+    <reference refUid="7b96410b-6116-4a4b-b728-875ab3fc9cd4" refId="mcheck_misra_tl_7_1" refTitle="Generating generic code without pragmas" refVersion="1"/>
+    <reference refUid="fd353c9e-f8ca-4965-a99b-140cd8540cd8" refId="mcheck_misra_tl_7_2" refTitle="Avoiding target-specific assembly code" refVersion="1"/>
+    <reference refUid="a731839e-437f-4766-8edb-05827d5e4be0" refId="mcheck_misra_tl_7_5" refTitle="Local macros should not be used" refVersion="1"/>
+    <reference refUid="483e4e2a-18e3-42ec-af65-fdd6cb117931" refId="mcheck_misra_tl_7_6" refTitle="Correct declaration of external variables" refVersion="1"/>
+    <reference refUid="759dedc1-9733-404e-bae9-404abdf00e0e" refId="mcheck_misra_tl_7_7" refTitle="Use of Include Statements in Custom Code Block" refVersion="1"/>
+    <reference refUid="f6ee89e5-24cb-4428-b7cd-6221054a3f4a" refId="mcheck_sdt_ic001" refTitle="Initial Value of the Output of Merge Blocks" refVersion="1"/>
+    <reference refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refTitle="Initial Value of the Output of Conditional Subsystems" refVersion="1"/>
+    <reference refUid="494723f9-2422-4893-9286-375171e46ca1" refId="mcheck_sdt_ic003" refTitle="Default Paths of Switch Case Blocks" refVersion="1"/>
+    <reference refUid="4e3c4af6-df60-4d3a-9a47-d9826e7861a5" refId="mcheck_sdt_ic004" refTitle="Else Paths of If Blocks" refVersion="1"/>
+    <reference refUid="d5e875cd-69c7-4fdf-8ae7-24a2b1b4997a" refId="mcheck_sdt_il001_a" refTitle="Avoidance of Duplicated Port Signals - Source Signal" refVersion="1"/>
+    <reference refUid="65a25f2a-ad4c-467b-a8c6-5e30e9c10eaa" refId="mcheck_sdt_il001_b" refTitle="Avoidance of Duplicated Port Signals - Shadow Inports" refVersion="1"/>
+    <reference refUid="fe41ad15-6f09-46c5-aa8b-8632402a1c2a" refId="mcheck_sdt_sa001" refTitle="Strong Data Typing at the Input of Logical Operator Blocks" refVersion="1"/>
+    <reference refUid="f89981e7-333a-4c75-af33-0d11724c2e1b" refId="mcheck_sdt_sa002_a" refTitle="Output Type of Logical and Relational Operator Blocks - Logical Operator Blocks" refVersion="1"/>
+    <reference refUid="7db5dcd8-f8de-4d9a-8046-83a65c00a247" refId="mcheck_sdt_sa002_b" refTitle="Output Type of Logical and Relational Operator Blocks - Relational Operator Blocks" refVersion="1"/>
+    <reference refUid="941a55d6-9ba4-4564-a4bf-1459953f3b2d" refId="mcheck_sdt_sa003" refTitle="Control Input of Switch Blocks" refVersion="1"/>
+    <reference refUid="ec162622-293c-4d21-a7b2-e15f96b7985f" refId="mcheck_sdt_sa004_a" refTitle="Control Input of Multiport Switch Blocks - Data Type" refVersion="1"/>
+    <reference refUid="1438d075-c533-426a-a28b-14e85cad229c" refId="mcheck_sdt_sa004_b" refTitle="Control Input of Multiport Switch Blocks - Data Range" refVersion="1"/>
+    <reference refUid="4e26b66c-dd40-45aa-846a-2e46d5d9ce2d" refId="mcheck_sdt_sc001" refTitle="Strong Data Typing at the TargetLink Function Interface" refVersion="1"/>
+    <reference refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refTitle="Strong Data Typing at the Stateflow Interface - Chart Option &quot;Strong Data Typing with Simulink I/O&quot;" refVersion="1"/>
+    <reference refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refTitle="Strong Data Typing at the Stateflow Interface - Input Interface" refVersion="1"/>
+    <reference refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refTitle="Strong Data Typing at the Stateflow Interface - Output Interface" refVersion="1"/>
+    <reference refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refTitle="Strong Data Typing at the Stateflow Interface - Data Range" refVersion="1"/>
+    <reference refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refTitle="Strong Data Typing at the Stateflow Interface - Variable Range" refVersion="1"/>
+    <reference refUid="c3db96f2-ebce-47d1-bae4-b1a33c72d021" refId="mcheck_sdt_sc003" refTitle="Strong Data Typing of Merge Blocks" refVersion="1"/>
+    <reference refUid="ebd053c1-fcd2-426d-9376-bcf1b02b0a21" refId="mcheck_sdt_sc004_a" refTitle="Strong Data Typing of Arithmetic Blocks - Option &quot;Require all inputs to have the same data type&quot;" refVersion="1"/>
+    <reference refUid="49963ec7-8c8e-4928-81f0-261acab47eec" refId="mcheck_sdt_sc004_b" refTitle="Strong Data Typing of Arithmetic Blocks - Scaling and Min/Max" refVersion="1"/>
+    <reference refUid="ad747466-21a7-4eb8-a908-b9d3db172946" refId="mcheck_sdt_sc004_c" refTitle="Strong Data Typing of Arithmetic Blocks - Data Range Output Data Type" refVersion="1"/>
+    <reference refUid="17544735-a087-4664-a7da-96553758f81b" refId="mcheck_sdt_sc005" refTitle="Propagation of Signal Names" refVersion="1"/>
+    <reference refUid="64daff9e-19b8-45a4-a989-fe91d892610d" refId="mcheck_sdt_sc006" refTitle="Signal Naming and Propagation" refVersion="1"/>
+    <reference refUid="d8939a44-2e95-44e5-a2ee-88c0447a6350" refId="mcheck_sdt_sc007_a" refTitle="Definition TargetLink Function Interface - Inports" refVersion="1"/>
+    <reference refUid="3ad93759-09cd-487a-bad3-e61d7733610e" refId="mcheck_sdt_sc007_b" refTitle="Definition TargetLink Function Interface - Outports" refVersion="1"/>
+    <reference refUid="ced2cb1c-4668-44b2-ada5-7f5498d716f1" refId="mcheck_us_misra_0001" refTitle="Use of calibration constants - adapted version of mcheck_mes_misra_tl_3_3" refVersion="1"/>
+    <reference refUid="4d5c68b8-edca-4840-bd57-781930c46af9" refId="mcheck_us_misra_0002" refTitle="Avoidance of Identical Identifier Names" refVersion="1"/>
+    <reference refUid="cc22956c-57dc-489c-98e5-7fa598b9c251" refId="mcheck_us_misra_0003" refTitle="Avoidance of function calls in logical expressions" refVersion="1"/>
+    <reference refUid="b8271313-4673-41cf-bc14-2d0d4c2f5708" refId="mcheck_us_misra_0004" refTitle="Avoidance of volatile variables in logical expressions" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/14/2021 13:14:39">
+      <author username="mihaoper" domain="MAGNA"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,48 @@
+Version 4.0.0 ©2007-2016 30-Oct-2016
+---------------------------------------------------------------------------
+New checks (Functional Safety Solution only):
+- mes_slsf_9100: Naming Conventions
+- mes_slsf_2102: Usage of UnitDelay and Memory blocks
+- mes_slsf_3106: Avoid Global Stateflow Functions
+- mes_cgtl_4102: Data Type Conversion Block in TargetLink Models
+- mes_cgtl_4201: Consistency of TargetLink and Simulink Data Types of TargetLink Blocks
+- mes_cgtl_4101: Tolerance Value of TargetLink Constant and Gain Block
+- mes_slsf_9003: Consistent Stateflow Chart Properties
+
+Renamed Guidelines:
+- mes_sltlec_001 to mes_cgec_9004.
+- mes_sk_002 to mes_cgtl_9002.
+- mes_sk_001 to mes_slsf_9001.
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+New checks (Functional Safety Solution only):
+mes_sk_001: Configuration Parameters for Simulink
+mes_sk_002: Advanced Parameters and Configuration Settings for TargetLink
+
+Version 1.8.5.0 ©2007-2014 02-Dec-2014
+---------------------------------------------------------------------------
+New checks:
+- mes_sk_007: TargetLink Product Blocks: 'Protect against Div by Zero'
+
+Version 1.8.1.0 ©2007-2014 17-Feb-2014
+---------------------------------------------------------------------------
+Changes:
+- mes_mes_color_0001: New implementation. See documentation of the check 
+  to see a detailed description of the improvements.
+  >> help mes_mes_color_0001 
+  Main change: Global parameters are no longer used.
+  
+Renamed Checks:
+- mes_tl_opt_0001 --> New ID: mes_mes_tl_opt_0001
+
+Deleted Checks:
+- mes_sltl_0001
+- mes_sltl_0002
+
+
+V1.7 build 0001.0 ©2007-2013  28-Jun-2013
+--------------------------------------------------------------------------------
+Changed Checks:
+- #608 mes_nc_0004: chars < and > of propagated signal names are not not checked.

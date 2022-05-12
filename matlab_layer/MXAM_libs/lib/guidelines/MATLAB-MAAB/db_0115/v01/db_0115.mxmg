@@ -1,0 +1,109 @@
+<guideline fileVersion="2">
+  <uid>95e6976b-67bc-489b-8012-cb31313cc52e</uid>
+  <id>db_0115</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>779210d8-c997-4ff6-9b66-052d994b31b6</templateUid>
+  <title>Simulink Patterns for Case Constructs</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 3.0, Chapter 7.5.</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Pattern for case constructs within Simulink. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The following patterns are used for case constructs within Simulink. </p>]]></value>
+    </richtext>
+    <richtext name="Pattern" optional="true" private="false">
+      <description>The pattern to be used.</description>
+      <value><![CDATA[<p> switch (PRNDL_Enum)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;case 1:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TqEstimate = ParkV;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br /> &nbsp;&nbsp;&nbsp;&nbsp;case 2:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TqEstimae = RevV;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br /> &nbsp;&nbsp;&nbsp;&nbsp;default:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TqEstimate = NeutralV;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br /> } </p> 
+<p> <img style="width: 487px; height: 225px;" src="db_0115_1.png" /><br /> </p> 
+<p class="imageCaption"> Figure db_0115-1: Simulink pattern for case constructs </p>]]></value>
+    </richtext>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="fead616e-ed50-42ed-9e3a-e2e14f0f3944" refId="mcheck_mes_sl_generic_0001" refTitle="Generic Review Check for Simulink Blocks" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.FindSystemConfiguration</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'BlockType','SwitchCase','MaskType',''}]]></value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.ReviewTopSystem</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>false</value>
+        <comment>Only Switch Case blocks are analyzed.</comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>MES.mes_sl_generic_0001.IndividualMessage</parameterName>
+          <sourceIdentifier>mcheck_mes_sl_generic_0001</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>Review whether the pattern described in the guideline is applied for each case construct.</value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/12/2016 12:56:06">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

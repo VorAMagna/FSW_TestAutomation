@@ -1,0 +1,115 @@
+<check fileVersion="2">
+  <uid>0ae7d390-cafb-498b-b0a3-6e0e69d93df2</uid>
+  <id>mcheck_mes_sf_generic_0001</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Generic Review Check for Stateflow Elements</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_sf_generic_0001.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Creates review findings with a generic review message indicating that the user should take action to review the model with respect to the Stateflow guideline. The type of elements for which a review finding is reported can be configured in the check parameters.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value>Please use the parameters only at guideline level. Using this parameter at document or project level causes interferences between other guidelines using this generic check.</value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Review the model with respect to the modeling guideline.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>No automatic repair action available.</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value><![CDATA[To review the compliance of used transitions with a specific guideline, set the parameter 'GetStateflowObjects' to {'Transition'} and create an individual review message by setting the parameter 'IndividualMessage' to: Please check if all Stateflow transitions follow the aspects defined in the guideline.
+<br />]]></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MES.mes_sf_generic_0001.GetStateflowObjects</name>
+      <description><![CDATA[Cell array with arguments that identifiy the elements the user has to review. Possible elements: Chart, State, Transition, Junction, Graphical Function, Box, Simulink Function, MATLAB Function, Truth Table.
+Example:
+If more than one type of elements should be reported, use the following Syntax.
+{'State';'Transition';'Simulink Function'}
+
+Please use this parameter only at guideline level. Using this parameter at document or project level causes interferences between other guidelines using this generic check.]]></description>
+      <defaultValue><![CDATA[{'State'}]]></defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>MES.mes_sf_generic_0001.ReviewTopSystem</name>
+      <description>True, creates a review finding for the top system (model root).
+
+Please use this parameter only at guideline level. Using this parameter at document or project level causes interferences between other guidelines using this generic check.</description>
+      <defaultValue>true</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_sf_generic_0001.IndividualMessage</name>
+      <description>This String defines an individual message to be shown in the review findings.
+Example:
+This chart should be reviewed regarding the aspects defined in the guideline.
+
+Please use this parameter only at guideline level. Using this parameter at document or project level causes interferences between other guidelines using this generic check.</description>
+      <defaultValue></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="05/16/2017 16:02:09">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="06/06/2017 14:11:52">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,12 @@
+<artefactDefinition uid="27c0f0d1-7d22-4184-891b-e29fcdee6b8a" id="Default_ID" title="artifactDefinition.mxma">
+  <ignoreListDefinitionPaths/>
+  <artefacts>
+    <artefact>
+      <adapterId>com.modelengineers.mxam.tooladapter.matlab</adapterId>
+      <storageNature>File artifact</storageNature>
+      <selected>true</selected>
+      <modelpath>..\..\..\..\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\TrqSwC10\TrqSwC10.mdl</modelpath>
+      <modeltype>MOD</modeltype>
+    </artefact>
+  </artefacts>
+</artefactDefinition>

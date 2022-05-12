@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="UserCheckLibrary" title="Public library for user checks" uid="30a1ce8a-8e43-45e2-8d52-c966d90256d9">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>

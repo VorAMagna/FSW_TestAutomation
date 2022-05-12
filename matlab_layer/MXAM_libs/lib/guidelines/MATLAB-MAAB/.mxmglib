@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MATLAB-MAAB" title="MAAB - MATLAB® Guidelines" uid="702794e6-1db7-4f1e-a520-16be31d61674">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

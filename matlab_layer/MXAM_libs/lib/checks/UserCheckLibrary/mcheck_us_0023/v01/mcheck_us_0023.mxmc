@@ -1,0 +1,67 @@
+<check fileVersion="2">
+  <uid>dc67212e-3079-45ec-907d-95fa834ad71d</uid>
+  <id>mcheck_us_0023</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Beermara" domain="EU"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-4a1d-a982-901a9fd65b09</templateUid>
+  <title><![CDATA[Test of the use of "Mergeable Disp"]]></title>
+  <adapter version="2.1">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_us_0023.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check reuires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> When the checked block is not a inport or a outport then it is not allowed to use &quot;Mergeable Disp&quot;.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Change the variable class.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> Change the variable class. </p>]]></value>
+    </richtext>
+    <enumeration name="Analysed Element Type" optional="false" private="false" multi="true">
+      <description>The element types which the checks analyses.</description>
+      <enums>
+        <value>block</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="09/25/2015 10:27:37">
+      <author username="Beermara" domain="EU"/>
+      <comment>Check created.</comment>
+    </record>
+  </history>
+</check>

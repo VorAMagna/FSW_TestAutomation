@@ -1,0 +1,359 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=2648
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f92aa60a-2e34-41a4-b626-ebe6603ec8fd'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=f92aa60a-2e34-41a4-b626-ebe6603ec8fd'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f091c1f5-72e8-4a5d-934b-4a9a6537585d'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=f091c1f5-72e8-4a5d-934b-4a9a6537585d'
+
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Berechnung Drehzahlen
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Berechnung Funktionsqualifier
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Ersatzwertbildung_qual
+Autodoc Block must be added to the subsystem!
+CalcSlipLimX05/Ersatzwertbildung_sig
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f091c1f5-72e8-4a5d-934b-4a9a6537585d'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a18382f3-3aff-42f3-8c89-5f9bf35a82cb'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=a18382f3-3aff-42f3-8c89-5f9bf35a82cb'
+
+Autodoc Block must be added to the subsystem!
+CheckQualX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a18382f3-3aff-42f3-8c89-5f9bf35a82cb'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b18c39fc-af50-4354-bed3-b6c06dc51931'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=b18c39fc-af50-4354-bed3-b6c06dc51931'
+
+Autodoc Block must be added to the subsystem!
+ControlSlipX05
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK/Abschaltung_Momentenpfad/Abschaltung_Bei_Passivierung
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Abschaltung_DK/Abschaltung_Momentenpfad1/Abschaltung_Bei_Passivierung
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Preproc/Regleraktivierung/Schub
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Preproc/Regleraktivierung/Zug
+Autodoc Block must be added to the subsystem!
+ControlSlipX05/Regler/PID
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b18c39fc-af50-4354-bed3-b6c06dc51931'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1fa7324f-eb1d-4384-ab6d-207f45fd2b68'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=1fa7324f-eb1d-4384-ab6d-207f45fd2b68'
+
+Autodoc Block must be added to the subsystem!
+DegradConceptX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1fa7324f-eb1d-4384-ab6d-207f45fd2b68'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '55a559d5-64da-4245-8e73-1b2fc3279770'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=55a559d5-64da-4245-8e73-1b2fc3279770'
+
+Autodoc Block must be added to the subsystem!
+InputX05
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX1/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX2/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_AVL_RPM_WHL/SA_omegaRad_XX3/Auswertung_Signaltyp_1a
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_ConfigCtrlLongTrqDistribution/Auswertung_Signaltyp_1a_4Ns
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_RequestLongitudinalTrqDistribution/Auswertung_Signaltyp_1a_2Ns
+Autodoc Block must be added to the subsystem!
+InputX05/PDU_RequestRPMFrontaxleBackaxle/Auswertung_Signaltyp_1a_4Ns
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '55a559d5-64da-4245-8e73-1b2fc3279770'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c43d4572-87e4-40f8-b53f-246d518a9da6'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=c43d4572-87e4-40f8-b53f-246d518a9da6'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c43d4572-87e4-40f8-b53f-246d518a9da6'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd815a968-0370-4ec8-9890-c7c4bd80fd23'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=d815a968-0370-4ec8-9890-c7c4bd80fd23'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd815a968-0370-4ec8-9890-c7c4bd80fd23'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8aeff987-cbbe-46cb-8d13-3a20a1421651'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=8aeff987-cbbe-46cb-8d13-3a20a1421651'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8aeff987-cbbe-46cb-8d13-3a20a1421651'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c50384f4-777d-483b-948f-2c879265677e'
+        resultLink: 'http://127.0.0.1:60895/result?jobUid=c50384f4-777d-483b-948f-2c879265677e'
+
+Autodoc Block must be added to the subsystem!
+StatCtrlX05
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c50384f4-777d-483b-948f-2c879265677e'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CalcSlipLimX05\CalcSlipLimX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\CheckQualX05\CheckQualX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\ControlSlipX05\ControlSlipX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\DegradConceptX05\DegradConceptX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\InputX05\InputX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\OutputX05\OutputX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMEndX05\PFMEndX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\PFMStartX05\PFMStartX05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\ARBx\ARBx_Composition\ARBx_Modules\StatCtrlX05\StatCtrlX05.mdl
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...

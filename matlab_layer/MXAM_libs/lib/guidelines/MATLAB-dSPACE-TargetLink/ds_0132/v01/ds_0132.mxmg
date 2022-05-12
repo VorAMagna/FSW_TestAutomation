@@ -1,0 +1,133 @@
+<guideline fileVersion="2">
+  <uid>a9c73876-7a6b-45b6-a63d-97812a1f0f5c</uid>
+  <id>ds_0132</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of Constraint Limits</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 13.5), dSPACE 3.0 (section 13.5)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value>TargetLink Production Code Generation Guide [1], TargetLink Basics, Integer Calculation Basics, Implementation of Integer Calculation Operations, Range Determination Basics</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p>specify value ranges in advance if the limits are known</p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p>Value ranges of block outputs that are known in advance should be specified as <em>constraint limits</em> in the block dialog.</p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>The code generator evaluates range information and propagates them as far as possible through the model. Giving the code generator these information might prevent the necessity to use wider data types, particularly 64-bit, to avoid over/underflows.</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p>Figure ds_0132-1: shows a model with specified scaling that requires the generation of a 64-bit multiplication. It leads to the generation of the following code:</p>
+<p class="codeSample">Int32 Aux_S32 /* LSB: 2^2 OFF: 0 MIN/MAX: -8589934592 .. 8589934588 */; <br /> UInt32 Aux_U32 /* LSB: 2^2 OFF: 0 MIN/MAX: 0 .. 17179869180 */;</p>
+<p class="codeSample">/* Product: subsystem/Product */ <br /> F__I64MULI32I32(Sa1_InPort1, (Int32) Sa1_InPort2, #038;(Aux_S32), #038;(Aux_U32));</p>
+<p class="codeSample">/* Outport: subsystem/Out */ <br /> Sa1_OutPort = C__I32SHRI64C6_LT32(Aux_S32, Aux_U32, 2, 30);</p>
+<p><img src="ds_0132_1.png" /></p>
+<p class="imageCaption">Figure ds_0132-1: Model with specified data types and scalings.</p>
+<p>The generation of 64-bit code contained in the called functions can be avoided by specifying <em>constraint limits</em> for the input variables if these are known in advance, see Figure ds_0132-2. The code generator now detects that the result of the multiplication can be stored in an <em>Int32</em> variable under all circumstances, thereby avoiding the use of 64-bit arithmetic:</p>
+<p class="codeSample">Sa1_OutPort = (Int32) ((Sa1_InPort1 * ((Int32) Sa1_InPort2)) &gt;&gt; 2);</p>
+<p><img src="ds_0132_2.png" /></p>
+<p class="imageCaption">Figure ds_0132-2: Specification of <em>constraint limits</em> for the Inports.</p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_MISRA_Simulink_Stateflow" title="MISRA AC Simulink® Stateflow® - MATLAB® Checks" uid="8a74db03-0301-41d5-9249-b1859cd0924c">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

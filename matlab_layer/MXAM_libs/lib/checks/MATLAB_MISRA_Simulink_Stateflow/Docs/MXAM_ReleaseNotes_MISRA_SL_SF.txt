@@ -1,0 +1,736 @@
+Version 4.0.1 ©2007-2016 09-Nov-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- misra_slsf_008_b caused an aborted if a matrix signal with min/max values has been analysed. This has been fixed (#4135).
+
+Version 4.0.0 ©2007-2016 30-Oct-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- misra_slsf_053_b: There could be a junction and transitions overlapping on this junction within a state chart. This case was not considered before. The check takes care of such a situation now (#3748). 
+- misra_slsf_053_b: The crossing of an inner transition with the parent state will not report a failed result any more (#3969).
+- misra_slsf_037_h: The check reported a failed result if the type property of a Stateflow data is set to 'inherit' with scope 'Data Store Memory'. This will be ignored now (#3743). 
+- misra_slsf_012_a: A check abort has been raised due to a wrong initialization. This has been fixed (#3832).
+
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+New check: 
+- misra_slsf_052_a: State Labelling – Uniqueness
+
+Bugfixes:
+#3516: misra_slsf_030_abc: Check adapted for new co-ordinates of new MATLAB version model window.
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+Changes:
+- misra_slsf_027_cd, misra_slsf_027_e, misra_slsf_027_h: Defined existing parameter 'MISRA_SL_SF.BasicMaskedBlocks' as shared parameter.
+- misra_slsf_038_a, misra_slsf_038_b: Defined existing parameters 'MISRA_SL_SF.OperatorClasses.Bit', 'MISRA_SL_SF.OperatorClasses.Logic', 'MISRA_SL_SF.OperatorClasses.Rel', 'MISRA_SL_SF.OperatorClasses.Add', 'MISRA_SL_SF.OperatorClasses.Sub', 'MISRA_SL_SF.OperatorClasses.Mul', 'MISRA_SL_SF.OperatorClasses.Div' and 'MISRA_SL_SF.OperatorClasses.Ignore' as shared parameters.
+- misra_slsf_053_c, misra_slsf_054_a: Defined existing parameter 'MISRA_SL_SF.ReportNonlinearTransitionsIndividually' as shared parameter. 
+
+Bugfixes: 
+#3228: misra_slsf_020_abcd: Followlinks was hardcoded to 'on' which did not work properly when global settings for 'followlinks' was set to 'off'.
+#3238: misra_slsf_006_b: Unavailable properties have been reported. The existence of block property field is checked now, before the value can be accessed.
+#3288: misra_slsf_027_j: Single lines without source and destination caused an aborted. This is handeled now. 
+#3290: misra_slsf_055_b: The check could not detect if the state action keyword, appeared on the same line as the action declaration before. 
+#3333: misra_slsf_027_e: Incorrect finding in reusable subsystem. Detection of blocks in loops has been adapted.
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+New checks:
+- misra_slsf_045_e: Condition-Actions, Transition-Actions and State-Actions - Read and Write on Transitions
+- misra_slsf_045_f: Condition-Actions, Transition-Actions and State-Actions - Number of Variable Modifications
+- misra_slsf_045_g: Condition-Actions, Transition-Actions and State-Actions - Usage of Condition-Actions and Transition-Actions
+- misra_slsf_044_b: State-Actions - Entry, Exit
+- misra_slsf_044_c: State-Actions - Flow-Charts
+
+Bugfixes: 
+#3091: misra_slsf_037_b: The check reported any local data item as a failed. Now the check analyzes additionally if data items are used more than once. 
+#2874: misra_slsf_042_e: Crossing has not been detected correctly. Adapted Tolerance such that most cases should be covered.
+#2957: misra_slsf_017_a: Unconnected blocks in variant subsystems caused a failes result. These will be ignored now. 
+
+Changes:
+- misra_slsf_038_b: Checking of the option 'Enable C-bit operations' has been removed, because this is not part of the guideline. 
+
+Changed IDs:
+- misra_slsf_007 to misra_slsf_007_a
+- misra_slsf_019 to misra_slsf_019_abc
+- misra_slsf_020 to misra_slsf_020_abcd
+- misra_slsf_030 to misra_slsf_030_abc
+- misra_slsf_046 to misra_slsf_046_a
+- misra_slsf_047 to misra_slsf_047_a
+
+Version 3.6.0 ©2007-2015 30-Sept-2015
+Version 1.8.8 ©2007-2015 30-Sept-2015
+---------------------------------------------------------------------------
+New checks:
+- misra_slsf_043_g: Transitions - Unguarded Transitions
+- misra_slsf_045_d: Condition-Actions, Transition-Actions and State-Actions - Transition Actions and Entry Actions
+- misra_slsf_048_g: Stateflow Coding - Numbers
+
+Bugfixes:
+#2824: ds_0093/ds_0094: Checks are only relevant for models not libraries, therefore libraries are not checked.
+#2740: misra_slsf_025_b: Check has been revised such that the deafult size of blocks is checked. 
+#2525: misra_slsf_036_c: An endless loop occured if the source signal of a Stateflow input passed a loop. 
+#2551: misra_slsf_013_b: Handled error of mes_getOutputDataInfo giving warning if a data type cannot be determined because model is not compilable.
+#2630: misra_slsf_036_a: Redefined variable name.
+#2621: misra_slsf_030: Changed hard coded keywords of lookundermasks and followlinks such that global setting is applied.
+#2723: misra_slsf_055_d, misra_slsf_055_a, misra_slsf_050_e, misra_slsf_045_c, misra_slsf_045_b, misra_slsf_045_a, misra_slsf_044_a, misra_slsf_043_f, misra_slsf_043_d, misra_slsf_042_e: An entry in the global parameter Global.IgnoredLibraries caused an error in the filter process. This has been fixed. 
+#2686: misra_slsf_055_c: The check did not ignore semicolons in comments in transition labels. This has been fixed. 
+#2751: misra_slsf_026_c: The analysis of libraries by this check is not meaningful, therefore warning is given if a library is analysed. 
+#2756: misra_slsf_030: An internal error 'Matrix dimensions must agree' occured. This has been fixed. 
+#2739: misra_slsf_006_b: Internal warnings appeared if keywords have changed in different MATLAB versions. The check now identifies the correct keywords for the used MATLAB version. 
+#2741: misra_slsf_016_c: Check has been adapted such that only names in busses are checked, the source of the bus signal is no longer considered. Performance has been improved. 
+#2486: misra_slsf_036_a: Added exception handling. If source block cannot be obtained (e.g. if it's a library block that is not available) a warning is given.
+#2737: misra_slsf_030: The check gave different results than db_0146. The tolerance for the position has been adapted such that the checks give the same result now. 
+
+Changes:
+#2745: misra_slsf_009_d: Repair action has been implemented. 
+#2753: splitted misra_slsf_029_af into 
+- misra_slsf_029_a: Signal and Bus Line Positioning - Orientation
+- misra_slsf_029_f: Signal and Bus Line Positioning - Branching
+
+Version 3.5.0 ©2007-2015 30-Jun-2015
+Version 1.8.7 ©2007-2015 30-Jun-2015
+---------------------------------------------------------------------------
+New checks:
+- misra_slsf_043_f: Transitions - Internal Transitions
+- misra_slsf_043_h: Transitions - Backtracking
+- misra_slsf_045_a: Condition-Actions, Transition-Actions and State-Actions - Use of Entry
+- misra_slsf_045_b: Condition-Actions, Transition-Actions and State-Actions - Use of Exit
+- misra_slsf_045_c: Condition-Actions, Transition-Actions and State-Actions - Use of Exit and Entry
+- misra_slsf_050_e: Stateflow Window and Text Appearance - Comment Delimiters
+- misra_slsf_053_k: Transition Positioning - Terminating Junction
+- misra_slsf_054_e: Transition Labelling - Braces
+- misra_slsf_054_h: Transition Labelling - Usage of Logical Operators
+- misra_slsf_055_d: State-Action Formatting - State-Action Duplication
+
+Bugfixes:
+#2280: misra_slsf_036_a: The check issued an internal error if a dialog variable of a masked subsystem was adressed. This has been fixed.
+#2429: misra_slsf_009_d: TargetLink blocks are handeled correctly now.
+#2425: misra_slsf_054_d: An internal error was issued if more than one transition action occured. The check handels now more than one transition action at a transition.
+#2423/#2438: misra_slsf_043_c: Empty transition labels issued an error, this has been fixed.
+#2395: misra_slsf_005_b: An error occurs for giving a maskdescription in the parameter. This has been fixed.
+#2509: misra_slsf_006_a: The check analyzes the initial condition of the Unit Delay block and parameters of If and the Switch Case block.
+#2526: missra_slsf_006_b: The identification of function calls has been improved. 
+#2521: misra_slsf_008_b: The check issued an internal error if there is used a locked library within the model. Now it is tested if the library is locked first. 
+
+Changes:
+#2414: misra_slsf_020: The parameter definition has been changed such that properties can also be ignored. 
+
+Version 3.4.0 ©2007-2015 31-Mar-2015
+Version 1.8.6 ©2007-2015 31-Mar-2015
+---------------------------------------------------------------------------
+New checks:
+- misra_slsf_004_a: Diagnostic settings
+- misra_slsf_006_c: Block Parameters - Numerical Values
+- misra_slsf_009_d: Block execution frequency and order - Sample Time
+- misra_slsf_012_a: Switch Block
+- misra_slsf_015_b: Vector and Matrix Signals - Creation of Matrix Signal
+- misra_slsf_016_a: Busses - Creation
+- misra_slsf_016_b: Busses - Naming
+- misra_slsf_016_c: Busses - Contained Signals
+- misra_slsf_016_d: Busses - Operation
+- misra_slsf_016_e: Busses - Split up
+- misra_slsf_021_a: Annotation Appearance - Drop Shadow
+- misra_slsf_022_a: Model, Subsystem and Library Information Appearance - General Information
+- misra_slsf_022_b: Model, subsystem and library information appearance - Tool Information
+- misra_slsf_023_a: Simulink Block, Subsystem and Library Colour
+- misra_slsf_024_a: Simulink Block, Subsystem and Library Drop Shadow
+- misra_slsf_034_b: Chart Properties - Transition Execution
+- misra_slsf_037_c: Internal Data - Naming of Local Data
+- misra_slsf_039_a: States - Sub-States
+- misra_slsf_039_c: States - Hierarchy of Sub-Charts
+- misra_slsf_040_a: Parallel States - Top-Level
+- misra_slsf_040_b: Parallel States - Grouping
+- misra_slsf_042_a: Default Transitions - Super-State
+- misra_slsf_042_b: Default Transitions - One State
+- misra_slsf_042_c: Default Transitions - Top-Level
+- misra_slsf_042_d: Default Transitions - Unguarded Path
+- misra_slsf_042_e: Default Transitions - Crossings
+- misra_slsf_043_i: Transitions - Unconditional Transition
+- misra_slsf_044_a: State-Actions - During
+- misra_slsf_048_b: Stateflow Coding - Embedded MATLAB Block
+- misra_slsf_048_c: Stateflow Coding - C Code
+- misra_slsf_050_a: Stateflow Window and Text Appearance - Text Font
+- misra_slsf_050_b: Stateflow Window and Text Appearance - Text Size
+- misra_slsf_050_c: Stateflow Window and Text Appearance - Colour and Style
+- misra_slsf_050_d: Stateflow Window and Text Appearance - Note Text
+- misra_slsf_054_b: Transition Labelling - Placement
+- misra_slsf_054_c: Transition Labelling - Conditions and Actions
+- misra_slsf_054_d: Transition Labelling - Actions
+- misra_slsf_054_f: Transition Labelling - Sub-Conditions
+- misra_slsf_055_a: State-Action Formatting - Order of State-Actions
+- misra_slsf_055_b: State-Action Formatting - New Lines for State-Actions
+- misra_slsf_055_c: State-Action Formatting - New Lines for Actions
+
+Version 1.8.5.0 ©2007-2014 03-Dec-2014
+---------------------------------------------------------------------------
+New checks:
+misra_slsf_003_a: Solver Settings
+misra_slsf_009_b: Block Execution Frequency and Order - Block Priority
+
+Bugfixes: 
+# 1976: misra_slsf_054_a: Display of warnings for nonlinear transitions can 
+        be modified by a parameter now. 
+# 1975: misra_slsf_053_c: Improved the accuracy of the check. Display of 
+        warnings for nonlinear transitions can be modified by a parameter now. 
+# 1971: misra_slsf_006_b: Check handled type definitions, e.g. 'single()' 
+        as function calls. These will be ignored now.
+
+Version 1.8.4.0 ©2007-2014 29-Sep-2014
+---------------------------------------------------------------------------
+New Check:
+misra_slsf_034_b: Stateflow Transitions and States: Execution Order
+
+Version 1.8.3.1 ©2007-2014 28-Aug-2014
+---------------------------------------------------------------------------
+Splitted Checks:
+#1768: misra_slsf_034: The check has been split into: 
+       - misra_slsf_034_a (Enabled option 'C-like bitwise operators' for charts)
+       - misra_slsf_034_c (Enabled option 'Use strong data typing with Simulink I/O' for charts)
+       - misra_slsf_034_d. (Enabled option 'Execute (enter) Chart at Initialization' for charts)
+       Be aware that existing check-sets must be adapted to reference the new checks.
+
+Version 1.8.3.0 ©2007-2014 13-Aug-2014
+---------------------------------------------------------------------------
+Bugfixes:
+#1783: misra_slsf_029_c, misra_slsf_029_be: The memory consumption of kron
+       has been reduced.
+#1780: misra_slsf_019_b: An error occurred when using the link in MATLAB R2013b to  
+       navigate to the model element. The error occurred only in MATLAB 2013b. 
+       The subsystem must be opened to set the view zoom factor and get its new zoom 
+       factor, otherwise it will return -99. The link action 'hilite' is now used 
+       instead of 'open system'. 'open system' is not supported by the MXAM GUI.
+#1779: misra_slsf_054_a: The internal error 'index exceeds matrix dimensions' occurred.
+       It is currently not possible to find the correct end point of an inner transition 
+       inside of a sub-chart in Matlab versions earlier than version 8. As a workaround, 
+       such transitions will be ignored. The check will be enhanced as soon as a solution 
+       from Mathworks is available.
+#1519,1760: misra_slsf_053_b: Fixed internal error "Error using Stateflow.Junction/get 
+       The name 'name' is not an accessible property for an instance of class 'Junction'."
+#1558: misra_slsf_006_a: If 'ddv' is used, a pass will be given.
+#1802: misra_slsf_005_a: All TargetLink blocks are now allowed. Blocks 
+       under masked subsystems of the Simulink library are also considered as 
+       Simulink standard blocks. 
+
+Version 1.8.1.0 ©2007-2014 17-Feb-2014
+---------------------------------------------------------------------------
+New Parameters:
+#991:   MISRA_SL_SF.misra_slsf_018_c.CheckLibBlock, type: boolean, default: true
+        If true, all Goto blocks are checked. If false, all Goto blocks with an
+        active LinkStatus will be ignored. 
+
+Bugfix:
+#1052:  mes_misra_slsf_025_a2: Reference block for Goto and From are set as 
+        handles
+#1053:  mes_misra_slsf_030: Problems mit matrix dimensions fixed. 
+
+
+Version 1.8.0.1 ©2007-2013   13-Nov-2013
+-------------------------------------------------------------------------------
+Bugfix:
+- #939: misra_slsf_037_b and misra_slsf_043_a no longer consider the root model
+        but the chosen model/subsystem. 
+- #941: misra_slsf_027_cd: Check no longer only considers chosen subsystem/model
+        but also all layers beneath. 
+
+
+Splitted Checks:
+- #962: misra_slsf_005_ab: Check has been splitted into misra_slsf_005_a and misra_slsf_005_b.
+
+        misra_slsf_005_a considers prohibited SL blocks in general and allowed blocks, 
+        that are not from the standard SL library. Both parts are user defined by the
+        new parameters: MISRA_SLSF.misra_slsf_005_a.ProhibitedSLBlocks and 
+        MISRA_SLSF.misra_slsf_005_a.AllowedNonSLBlocks.
+
+        misra_slsf_005_b considers only prohibited SL standard blocks S-Function, 
+        Embedded Matlab Function and duplicated inports. 
+
+- #977: misra_slsf_025_a: Check has been splitted into 
+            - misra_slsf_025_a_1 (default size of blocks)
+            - misra_slsf_025_a_2 (matching Goto and From blocks)
+            - misra_slsf_025_a_3 (IconDisplay option of ports)
+            - misra_slsf_025_a_4 (Shape of Sum blocks)
+        to provide a better mapping of checks to correpsonding part of guideline and 
+        to give the user the possibility, only to check parts of this guideline.
+
+Renamed Checks:
+- #977: To provide a better mapping of checks to correpsonding part of guideline, following
+        two checks have been renamed:
+        - misra_slsf_025_c => misra_slsf_025_a_5
+        - misra_slsf_025_d => misra_slsf_025_a_6 
+
+New/Deleted/Renamed Parameters: 
+- MISRA_SLSF.check005.ProhibitedSLBlocks: renamed into MISRA_SLSF.misra_slsf_005_a.ProhibitedSLBlocks
+- MISRA_SLSF.check005.AllowedNonSLBlocks: renamed into MISRA_SLSF.misra_slsf_005_a.AllowedNonSLBlocks
+- MISRA_SL_SF.misra_slsf_025_a.Libs2Check: renamed into MISRA_SLSF.misra_slsf_025_a_1.Libs2Check
+- MISRA_SL_SF.misra_slsf_026_ab.BlocksWithoutCalibrationData: renamed into MISRA_SL_SF.misra_slsf_026_a.BlocksWithoutCalibrationData
+- MISRA_SL_SF.misra_slsf_026_ab.LibrariesToCheck: renamed into MISRA_SL_SF.misra_slsf_026_a.LibrariesToCheck
+- MISRA_SL_SF.misra_slsf_026_b.BlocksWithoutCalibrationData: New
+- MISRA_SL_SF.misra_slsf_025_a.ShapeSumBlock: Deleted
+
+V1.8 build 0000.0 ©2007-2013   10-Oct-2013
+-------------------------------------------------------------------------------
+Renamed Checks:
+In order to map checks more easily to a guideline, following checks have been 
+renamed:
+- misra_slsf_018_a has been renamed to misra_slsf_018_b_1
+- misra_slsf_018_b has been renamed to misra_slsf_018_b_2
+- misra_slsf_018_c has been renamed to misra_slsf_018_a
+- misra_slsf_018_d has been renamed to misra_slsf_018_c
+- misra_slsf_018_e has been renamed to misra_slsf_018_d
+- misra_slsf_018_f has been renamed to misra_slsf_018_e
+
+V1.7 build 0002.0 ©2007-2013   25-Jul-2013
+-------------------------------------------------------------------------------
+Changed Checks:
+- #617: misra_slsf_018: Splitted into 6 subchecks:
+	- misra_slsf_018_a: Use of Goto blocks: Incoming signals and Tag names
+	- misra_slsf_018_b: Use of From blocks: Outgoing signals and Tag names
+	- misra_slsf_018_c: Use of Goto blocks: Tag Visibility
+ 	- misra_slsf_018_d: Use of Goto blocks: Uniqueness of Tags
+	- misra_slsf_018_e: Use of Goto blocks: Corresponding From block
+	- misra_slsf_018_f: Use of From blocks: Corresponding Goto block
+- #620: misra_slsf_026_ab: Splittet into 2 subcheckes:
+	- misra_slsf_026_a: Block, subsystem and library naming, part A;
+			    Block orientation, name placement and name display
+	- misra_slsf_026_b: Block, subsystem and library naming,part B:
+			    Block name should be same as including named constant
+			    This check does not check TL blocks since this guideline is
+			    designed for SL model, not for TL model.
+
+New Parameters:
+- #621: MISRA_SL_SF.misra_slsf_027_fgi.CheckContentOfLibraries, type: string, 
+	default: 'off'. 
+	If 'off', content of library blocks will not be checked. 
+	If 'on', content of library blocks will be checkes. 
+	Other values are not allowed.
+	For this check, global parameter 'followlinks' will be ignored. The
+	setting of this local parameter will be considered instead. 
+	Reason: For this check, it is not recommended to check the contents 
+	of libraries.
+
+- #621: MISRA_SL_SF.misra_slsf_027_fgi.BasicMaskedBlocks, type:cell array of strings, 
+  	default: Empty
+  	Each entry of list is a masktype and represents a masked basic block. 
+  	Signal lines placed in such blocks are not considered by Guideline.
+  	Note: Blocks with empty MaskType will be ignored.
+
+Bugfix:
+- #773: misra_slsf_013_c: TL blocks with empty minimum and maxmimum will no longer throw an exception
+
+
+
+V1.7 build 0001.0 ©2007-2013  28-Jun-2013
+--------------------------------------------------------------------------------
+Changed Checks:
+- #605 misra_slsf_026_ab: change the method of testing if a var is a tunable var; 
+  if one block has more than one calibrate vars, test if the block name is equal 
+  to one of the vars name, do not check subsystem which is SL block
+- #607 misra_slsf_027_fgi: do not check blocks inside a SL block (which is a Subsystem)
+- #606 misra_slsf_027_j:do not check content of SL blocks and do not check signals of busselector
+
+
+V1.7 build 0000.1 ©2007-2013   20-Jun-2013
+--------------------------------------------------------------------------------
+Bugfix:
+- misra_slsf_027_fgi: To detect tuneable parameters in constant blocks, value of these blocks
+			have been checked for non-digit characters. This leads to errors when 
+			using floating numbers i.e. 0.1. Method has been changed to: An error 
+			thrown if any letter is used. 
+- #508: misra_slsf_006_a, misra_slsf_006_b, misra_slsf_006_e, misra_slsf_007, misra_slsf_011, 
+      misra_slsf_026_c: find_system no longer use hardcoded lookundermasks and folllowlinks
+
+Changed Checks:
+- misra_slsf_036_b: error message is improved; no error is issued, only warnings
+- misra_slsf_005_b: do not check blocks within Simulink blocks
+- misra_slsf_027_cd: do not check subsystems that are Simulink blocks
+
+
+
+V1.7 build 0000.0 ©2007-2013   17-Mai-2013
+--------------------------------------------------------------------------------
+new check:
+- misra_slsf_007 Initialization
+
+bugfix:
+- misra_slsf_006_e: ignore empty parameters
+- misra_slsf_019_b: bugfix that occurs in combination R2006 and Charts
+
+
+V1.6 build 0005.2 ©2007-2013   15-Jan-2013
+--------------------------------------------------------------------------------
+- project_parametersettings: 
+  -- added parameter misra_slsf_026_ab, misra_slsf_019_b, misra_slsf_030
+  -- changed parameter for misra_slsf_027_j
+- mxam_paraoptdef_MISRASLSF: 
+  -- added parameter for misra_slsf_026_ab, misra_slsf_019_b, misra_slsf_030
+  -- changed parameter for misra_slsf_027_j
+
+V1.6 build 0006.4 ©2007-2013   14-Mar-2013
+--------------------------------------------------------------------------------
+
+New checks:
+===========
+- misra_slsf_025_b: test if block has suitable size to show parameters clearly
+- misra_slsf_025_c: test if subsystem has suitable size to show portnames clearly
+- misra_slsf_025_d: test if the block name is overlaped by other block
+
+changed checks:
+================
+- misra_slsf_025_a: add auto fix function
+
+V1.6 build 0006.1 ©2007-2013   07-Mar-2013
+--------------------------------------------------------------------------------
+
+New Checks:
+===========
+- misra_slsf_029_af: Diagonal Signal lines, branches
+- misra_slsf_029_be: Signal lines overlapping
+- misra_slsf_029_c: Signal lines crossing (with other blocks)
+
+
+Changed Checks:
+================
+- misra_slsf_025_a: Check no longer controls layout of signal lines (use 029 instead). Now, check controls
+  layout of sum-blocks, size of matching from and goto blocks, icon display of in- and outports and the 
+  size of simulink blocks
+- misra_slsf_025_b: deleted. Its content has been merged with misra_slsf_025_a
+- misra_slsf_029_abcef: deleted and replaced by misra_slsf_029_af, misra_slsf_029_be and misra_slsf_029_c
+
+New Parameters:
+===============
+- misra_slsf_025_a.ShapeSumBlock: Either 'rectangular' or 'round' - allowed shape of sum block
+- misra_slsf_025_a.Libs2Check: List of libraries, in which default sizes for blocks are looked up.
+- misra_slsf_029_be.MinDist: Minimal distance between line and line or line and egde of block. If
+  distance is closer, a fail is returned.
+
+
+
+V1.6 build 0005.2 ©2007-2012   15-Jan-2013
+--------------------------------------------------------------------------------
+misra_slsf_029_d
+  - added new check (Avoidance of Signal Crossings)
+misra_slsf_019_b
+	- improvement of behavior
+	- fixed several bugs throwing a fatal error for some models in case no stateflow block is found
+misra_slsf_025_b
+	- not defined variables and empty stateflow handles are now accurately treated
+misra_slsf_029_abcef
+	- added progress bar
+misra_slsf_019
+	- corrected the method to search for a Stateflow chart 
+misra_slsf_019_b
+	- proper detection if no Stateflow block is found
+	- added ')' at the end of one of the check output messages
+misra_slsf_006_e
+	- added progress bar
+	- if a lib file is to be closed, it is now checked whether it is actually open
+	- fixed typos
+misra_slsf_029_abcef
+	- contents of Stateflow charts are not checked anymore
+	- if signal name is empty, the check output messages shows '' instead of the word "empty"	
+	- part f now handles non cell arrays correctly
+	- fixed typos
+misra_slsf_027_h
+	- improved check output messages
+misra_slsf_027_fgi
+	- improved check output messages
+misra_slsf_027_j
+	- fixed several bugs
+	- improved handling of cell and strings
+	- fixed typos
+	- changed parameters
+misra_slsf_027_e
+	- virtual blocks are not considered anymore
+misra_slsf_008_a, misra_slsf_008_b
+	- blocks that belong to an SL block are not checked anymore
+misra_slsf_026_c
+	- if no signal line label exists, the check does not check the respective signal
+misra_slsf_025_a
+	- only blocks and lines are checked that reside in the same subsystem
+misra_slsf_006_a
+	- ignore '{}' if '{' is at the beginning of a string
+	- do not check "DataPortIndices" of multiport switch block if parameter "dataportorder" is not 
+	  set to "specify indices"
+misra_slsf_026_ab
+	- explicit testing of whether TargetLink is installed prior to certain funcionality of the check
+	- check issues report only if a block uses a calibration parameter
+misra_slsf_053_j
+	- added new check
+misra_slsf_047
+	- added new check
+		- corrected handling of non-existing fields of return value of mes_splitSFTransitionLabel
+		- do not check output event in action
+		- check send actions as well
+misra_slsf_026_ab
+	- added parameter for blocks that do not contain calibration data
+misra_slsf_005_ab, misra_slsf_005_c
+	- fixed typos
+misra_slsf_020
+	- fixed typos
+misra_slsf_036_a
+	- reinialized loop variable
+misra_slsf_030
+	- corrected statistics
+	- added new parameter
+	- added check of alignment
+misra_slsf_038_b
+	- option "Enable C like..." is now checked
+misra_slsf_019_b
+	- added parameter for tolerance
+misra_slsf_006_a
+	- check fields for attributes "dont-eval"
+
+	
+V1.6 build 0005.1 ©2007-2012   03-Dec-2013
+--------------------------------------------------------------------------------
+mes_misra_slsf_006_a
+- TL Makros $() and $E() are now recognized as non-function elements
+
+mes_misra_slsf_006_b
+- Advice has been improved
+
+mes_misra_slsf_006_e
+- User has now the possibility, to enter libraries. These libraries are serached for masked 
+  subsystems, which are treated as basic blocks.
+- Parameter MISRA_SL_SF.misra_slsf_006.ThirdPartySubsystemsWithParameters has been deleted. 
+- New parameter:
+	MISRA_SL_SF.misra_slsf_006_e.LibsToCheck, cell array of strings, 
+	default = {'simulink', 'sflib', 'tllib'}
+	Blocks in these libraries are treated as basic blocks. 
+
+	NOTE: 
+	=====
+	- It is not possible to mark one block as a basic block. It is only
+	  possible to add the corresponding library to the parameter
+	- A subsystem within the considered model is treated as a basic block if 
+	  its masktype and its maskvariables are equal to the corresponding fields
+	  of one masked subsystem in the specified libraries.
+	- Subsystems with empty 'masktype' are checked in any case. 
+
+mes_misra_slsf_013_a/_b/_c
+- Check has been divided in three different parts 
+- adapted to reformulated pass/fail criteria
+
+mes_misra_slsf_025_bcdef
+- This check no longer checks if
+	-> blocks are smaller than default size
+	-> input signal lines hav buckles
+	-> ratio between height and width is smaller than a user given tolerance
+- Because, many parts of the original check have been dropped, check id has been
+ renamed to: mes_misra_slsf_025_b. 
+
+mes_misra_slsf_026_ab
+- New parameter: 
+	MISRA_SL_SF.misra_slsf_026_ab.LibrariesToCheck, cell array of string, default: {'simulink'}
+	Each entry of LibrariesToCheck is a library. Each block(name) of these 
+	libraries is collected and treated as standard. Blocks(names) of the 
+	analysed model are compared with this collection.
+
+mes_misra_slsf_027_fgi
+- Constant blocks are no longer checked, because of the 'shall' in the corresponding passage of 
+this guideline
+
+mes_misra_slsf_029
+- Check has been reimplemented with regards to efficiency. It is no longer time comsuming. 
+- Part D of guideline (crossing of signal-lines) has been eliminated, because it is advisory. 
+  Therefore, check id has been renamed to: misra_slsf_029_abcef
+- New parameter:
+	Misra_SL_SF.misra_slsf_029.MinDistanceBetweenTwoParallelLines, Numerics, default = 0;
+	represents the minimal distance between to parallel lines. If distance is
+	smaller, both lines are treated as overlapping (for reasonable start- and
+	endpoint).  
+
+mes_misra_slsf_030
+- Check has been reimplemented with regards to efficiency. It is no longer time comsuming. 
+- New parameter:
+	MISRA_SL_SF.misra_slsf_030.PartsToBeChecked; cell array of strings, 
+	default = {'A','B','C'};
+	Only the parts given by this parameter are checked. 
+
+	MISRA_SL_SF.misra_slsf_030.IgnoredMaskTypes; cell array of strings, 
+	default = {''};
+	Each block which masktype matches one of the entries in this parameter is
+	ignored.
+
+	MISRA_SL_SF.misra_slsf_030.Trigger.Region; string; default = 'left'.
+	Possible other values for this parameter are 'center' and 'right'. 
+	This parameter defines the region, where a trigger block has to be
+	positioned. Each region is a third of the used simulink workspace. The
+	range of the workspace is given by the distance between the most left and
+	the most right block. 
+
+	MISRA_SL_SF.misra_slsf_030.Trigger.Range; string of a vector with two entries;
+	default: '[150 100]' ([x y], unit: pixel);
+	Value of this parameter gives the height(x) and the width(y) relative to
+	the top left corner of the corresponding region of the rectangular,
+	within a trigger might be positioned. 
+ 
+	MISRA_SL_SF.misra_slsf_030.Enable.Region
+	MISRA_SL_SF.misra_slsf_030.Enable.Range
+	MISRA_SL_SF.misra_slsf_030.Action.Region
+	MISRA_SL_SF.misra_slsf_030.Action.Range
+	are used in the same was as the corresponding 'Trigger-Parameter'. 
+
+mes_misra_slsf_034
+- New check (Stateflow Chart properties)
+
+mes_misra_slsf_036_b
+- Check detects data in scope 'Constant' and scope 'Data Store Memory'.
+
+mes_misra_slsf_037_b
+- Check has been reimplemented with new fail criteria. Each chart receives a fail 
+  if there are datas with scope 'local' are defined below chart level. 
+
+mes_misra_slsf_038_a
+-  In conditions, ONE Operator out of '+', '-'  XOR '*' might be used (several times) 
+   in addition to relational and logical operators. 
+
+misra_slsf_053_a, misra_slsf_053_b, misra_Slsf_053_c
+- New check (Stateflow transition appearance)
+
+misra_slsf_054_a
+- Check has been reimplemented corresponding to the way of implementation in misra_slsf_053. 
+- New parameter:
+	MISRA_SL_SF.misra_slsf_054_a.MaxDistBetweenTransitionAndLabel, Numerics, default = 10;
+	This numeric has two impacts:
+	1. Its the maximal allowed distance between a transition and its label. 
+	2. Its the minimal allowed distance between a transition and a label of a foreign transition.
+
+
+
+
+
+
+V1.6 build 0003.1 ©2007-2012   24-Sep-2012
+--------------------------------------------------------------------------------
+mes_misra_slsf_006_a
+- fixed: dicrectory '/' (from DD expressions) is interpreted as Divide Operator
+
+mes_misra_slsf_031_a
+- new parameter: MISRA_SL_SF.AllowedBlocksInLoops. This is a cell array of strings, which is by 
+     default empty.
+     As long as it remains empty, each block in a feedback loop might have a 'left' orientation.
+     If this cell array is filled with some block types, ONLY those blocks are allowed to have a
+     'left' orientation (within a feedback loop).
+- each block, which has no Inports and no Outports is ignored
+
+mes_misra_slsf_017a
+- word 'unconnected' added in description
+
+mes_misra_slsf_018
+- an error has been fixed which occured if just one Goto/From pair is used.
+
+mes_misra_slsf_030
+- check differentiates between Outport (right) and Inport (left) in error messages.
+
+mes_misra_slsf_054_a
+- check differentiates between different layers of charts
+
+mes_misra_slsf_027_ab
+- several typos corrected
+- new parameter: MISRA_SL_SF.BasicMaskedBlocks, cell array of strings,
+default: Empty
+Each entry of list is a masktype and represents a masked basic block.
+Signal lines placed in such blocks are not considered by Guideline.
+Note: Blocks with empty MaskType will be ignored.
+
+mes_misra_slsf_027_fgi
+- Signals originating from Cionstant blocks shall be labeled, if:
+- a tuneable parameter is entered, or if
+- the correspinding signal is fed into a bus, or if
+- the corresponding signal leaves the subsystem boundary or is used in
+  user defined subsystems of lower hierarchy
+
+mes_misra_slsf_026_ab
+- description of part B added.
+
+mes_misra_slsf_008_a
+- pass/fail criteria rewritten
+
+mes_misra_slsf_008_b
+- pass/fail criteria rewritten
+- block which only have
+
+
+V1.6 build 0003.0 ©2007-2012   11-Sep-2012
+--------------------------------------------------------------------------------
+
+- misra_slsf_027_ab
+New parameter MISRA_SL_SF.LibsToCheck added. If MISRA_SL_SF.LibsToCheck is 
+empty, each subsystem is treated as a sources. If MISRA_SL_SF.LibsToCheck has 
+entries, only these ones are treated as sources.
+
+- misra_slsf_030
+New parameter MISRA_SL_SF.TriggerportPositionRange. If MISRA_SL_SF.TriggerportPositionRange  
+is empty, MISRA_SL_SF.TriggerportPositionRange = '[x,y]' defines the area of the  
+'left-top-most' corner. x represents the height, y the width (both in pixel).  
+default is [100 100]. If MISRA_SL_SF.TriggerportPositionRange is not empty,  
+MISRA_SL_SF.TriggerportPositionRange is ignored. 
+
+- misra_slsf_006_a
+check, if '/' is an operator or a path seperator in data dictionary.
+
+- misra_slsf_008_b
+If blocks option 'Rounding Integers towards' is not zero, check only returns a 
+fail if at least one inport data type is integer. 
+
+
+V1.6 build 0002.0 ©2007-2012   24-Aug-2012
+--------------------------------------------------------------------------------
+CHANGED CHECKS:
+- mes_misra_slsf_027_j: Check handles reuseable subsystem with multiple outports
+
+- mes_misra_slsf_006_a: fixed output wording; improved search for parameters;
+fields with only or - (i.e. sum blocks) are ignored
+
+mes_misra_slsf_006_b: fixed output wording; improved search for parameters;
+imporved handling of parameters with cell of cell arrays
+
+V1.6 build 0001.0 2007-2012   24-Feb-2012
+--------------------------------------------------------------------------------
+NEW MISRA SL SF Checks:
+misra_slsf_006_a:	Block parameters
+misra_slsf_006_b:	Block parameters
+misra_slsf_006_e:	Block parameters
+misra_slsf_020:	Simulink font and font size
+misra_slsf_025_a:	Simulink block, subsystem and library shape and size
+misra_slsf_025_bcdef:	Simulink block, subsystem and library shape and size
+misra_slsf_026_ab: Block, subsystem and library naming
+misra_slsf_036_b:	Stateflow/Simulink interface signals, parameters and naming part B
+
+
+V1.5 build 0004.0 2007-2012   24-Feb-2012
+--------------------------------------------------------------------------------
+- misra_sl_sf_0019: added now also check settings BlockNameDataTip,
+BlockParametersDataTip, BlockDescriptionStringDataTip
+
+NEW MISRA SL SF Checks:
+- misra_slsf_005_ab:	Allowable Simulink blocks part A,B
+- misra_slsf_005_c:	Allowable Simulink blocks part C
+- misra_slsf_008_a:	Rounding and saturation in Simulink blocks part A
+- misra_slsf_008_b:	Rounding and saturation in Simulink blocks part B
+- misra_slsf_010_a:	Arithmetic operation order part A
+- misra_slsf_010_b:	Arithmetic operation order part B
+- misra_slsf_010_c:	Arithmetic operation order part C
+- misra_slsf_013_a:	Multiport switch block part A
+- misra_slsf_013_bc:	Multiport switch block parts B,C
+- misra_slsf_017_a:	Unconnected blocks, signal lines and busses part A
+- misra_slsf_017_b:	Unconnected blocks, signal lines and busses part B
+- misra_slsf_018:	Usage of From and Goto Blocks
+- misra_slsf_019:	Simulink window appearance
+- misra_slsf_029:	Signal and bus line positioning
+- misra_slsf_030:	Port location
+- misra_slsf_031_a:	Data flow and block orientation part A
+- misra_slsf_036_a:	Stateflow/Simulink interface signals, parameters and naming part A
+- misra_slsf_037_a:	Internal data part A
+- misra_slsf_037_b:	Internal data part B
+- misra_slsf_037_h:	Internal data part H
+- misra_slsf_038_a:	Operators in state machines part A
+- misra_slsf_038_b:	Operators in state machines part B
+- misra_slsf_038_c:	Operators in state machines part C
+- misra_slsf_043_a:	Transitions part A
+- misra_slsf_043_b:	Transitions part B
+- misra_slsf_046:	History junction

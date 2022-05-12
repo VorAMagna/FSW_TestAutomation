@@ -1,0 +1,195 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=10248
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1d94b8f9-7f28-4725-bd51-0d511e432805'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1d94b8f9-7f28-4725-bd51-0d511e432805'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2c624cfa-f7ea-4c67-bc66-85f4887f1653'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2c624cfa-f7ea-4c67-bc66-85f4887f1653'
+
+Autodoc Block must be added to the subsystem!
+SigCondI10/CtlModeReqCalc/cmdEmReqCalc
+Autodoc Block must be added to the subsystem!
+SigCondI10/SystemState48V
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr1/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr10/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr13/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr14/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr15/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr16/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr17/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr18/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr19/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr2/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr20/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr21/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr22/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr23/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr24/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr25/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr26/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr27/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr28/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr29/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr3/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr30/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr31/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr32/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr33/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr34/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr35/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr36/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr37/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr38/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr39/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr4/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr40/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr41/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr42/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr43/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr44/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr45/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr46/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr5/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr6/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr7/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr8/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondI10/errDbncr9/Encoder8Bit/Encoder8Bit
+The previous block couldn't be found. Please check this manually.Handle:1250.0007
+Path: SigCondI10
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2c624cfa-f7ea-4c67-bc66-85f4887f1653'
+    export: 'true'
+      file: 'C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\MPT_011_eDS48V_BMW_HDT_P1\SW\STD\Development\SI\SI_Composition\SI_Modules\SigCondI10\SigCondI10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

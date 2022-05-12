@@ -1,0 +1,101 @@
+<check fileVersion="2">
+  <uid>3b47be5e-83a0-4fbe-97a4-885a01502243</uid>
+  <id>mcheck_tl_pr20060404_06</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Unintentional optimization of relational or logical operations between code variable and constant value</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_tl_pr20060404_06.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.0.1, 3.1, 3.2, 3.3, 3.4, 3.5, 4.0, 4.1, 4.2, 4.3</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Predefined condition:
+<br /> the variable's variable class does not specify a macro (i.e. &quot;Macro&quot; property is set to &quot;off&quot;) AND
+<br /> - the variable's user-specified Min/Max constraint limits do not contain the constant value OR - the variable class specifies the variable to be const via the &quot;Const&quot; property set to &quot;on&quot; AND
+<br /> - the &quot;Info&quot; property of this variable class is not set to &quot;adjustable&quot;, &quot;readwrite&quot; or &quot;offline_readwrite&quot;.
+<br /> 
+<br /> This check analyzes each Relational, Logic, Switch and If block. For the following cases a fail or review will be given, otherwise, a pass will be given
+<br /> 
+<br /> Failed1: One input to a relational block is a Constant block with class set to 'default', the other input has settings defined as given in the predefined condition.
+<br /> Failed2_1: The criteria for the first input of the switch block is not 'u2~=0', the class of the threshold is set to 'default', the block to the control input of this switch block has setting defined as above predefined condition.
+<br /> Failed2_2: The criteria for the first input of the switch block is not 'u2~=0', the class of the threshold is set to 'const' or 'default', the block to the control input of this switch block is a constant block with class set to 'default'.
+<br /> Failed3: If the operator of a logical block is 'AND' or 'NAND' and one of the inputs of this logical block is a Constant block with class set to 'default' and a value 'false', or the operator is 'OR' or 'NOR' and one of the inputs of this logical block is Constant block with class set to 'default' and a value 'true', and the class of none of the other input of this logical block is specified as a macro (i.e. &quot;Macro&quot; property is set to &quot;off&quot;).
+<br /> Review: If one of the inputs of a If block is a Constant block with class set to 'default', and one of the other inputs has the setting defined as given in the predefined condition.
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[For If block, the condition expression inside should be analyzed, but it is difficult, so that a review is given.
+<br /> Stateflow expression in current version is not checked.
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[1) Do not specify or correct the Min/Max constraint limits for the variable.
+<br /> Or 2) Set the &quot;Info&quot; property of the associated variable class to &quot;adjustable&quot; (does not appear in the generated A2L file) or &quot;readwrite&quot; (appears in the generated A2L file for calibration).
+<br /> Or 3) unset the &quot;Const&quot; property in the associated variable class.
+<br /> Or 4) specify a variable instead of a constant value (e.g. change the variable class of the Switch block Threshold, or for the If block add another input).
+<br /> &nbsp;
+<br /> Note that for logical operations only workaround 4 is possible.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/22/2015 14:01:17">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Unintentional Optimization of Relational Operation' (ID: mcheck_tl_kp_20060404_06, Version: v01, Library: MATLAB_CriticalTargetLinkProblems, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</check>

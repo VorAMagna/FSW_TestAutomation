@@ -1,0 +1,208 @@
+<guideline fileVersion="2">
+  <uid>02b4ce19-6786-4190-a206-4043549dd4cb</uid>
+  <id>ds_0033</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoidance of Special Data Type / Function Combinations for the Math Function Block</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 2.7.6), dSPACE 3.0 (section 2.7.6)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> excludes certain combinations of supported data types for input and output and the math operation </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The combination of the following TargetLink data types/functions in the Math Function Block has to be avoided. </p>
+<table>
+ <tbody>
+  <tr>
+   <th> <p> Input data type </p> </th>
+   <th> <p> Output data type </p> </th>
+   <th> <p> Incorrect Operation </p> </th>
+  </tr>
+  <tr>
+   <td> <p> Int16 </p> </td>
+   <td> <p> Int16 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> Int32 </p> </td>
+   <td> <p> Int32 </p> </td>
+   <td> <p> acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> tan(), acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> Int32 </p> </td>
+   <td> <p> Int16 </p> </td>
+   <td> <p> acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> Int16 </p> </td>
+   <td> <p> acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> Int32 </p> </td>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> acos(), atan() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> Int16 </p> </td>
+   <td> <p> Int32 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> UInt16 </p> </td>
+   <td> <p> Int32 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+  <tr>
+   <td> <p> Int16 </p> </td>
+   <td> <p> UInt32 </p> </td>
+   <td> <p> acos() </p> </td>
+  </tr>
+ </tbody>
+</table>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value><![CDATA[<span class="richttextattribute">For the output of a <code>tan</code> function, any output with an unsigned data type must have an offset to create a symmetrically implemented output range.<br /> Trigonometric function block with atan<br /> The fixed-point implementation of <code>atan</code> must represent the 1/( LSB(Input) ^2) value as a 32-bit integer value. If the LSB of the input is too small, this constant cannot be represented correctly. Code generation stops with an error message.<br /> Trigonometric Function block with atan2<br /> The following rules apply to fixed-point implementation:</span>
+<ul>
+ <li> <span class="richttextattribute">TargetLink does not support 32-bit integer values as input for the fixed-point implementation of the atan2 function.</span> </li>
+ <li> <span class="richttextattribute">TargetLink does not support unsigned inputs and outputs for the fixed-point implementation of the <code>atan2</code> function.</span> </li>
+ <li> <span class="richttextattribute">To calculate the atan2, the second input (y) has to be squared and represented with the square of the LSB of the first input (x). The result must fit into a 32-bit integer. Otherwise the code generation stops with an error message.</span> </li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Currently, TargetLink generates incorrect code for the above combinations of operations/ data types. As a workaround, floating point arithmetic can be used. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

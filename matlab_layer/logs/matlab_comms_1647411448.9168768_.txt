@@ -1,0 +1,173 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=12848
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'af10c799-62a8-4185-9705-99ac54111ffb'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=af10c799-62a8-4185-9705-99ac54111ffb'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '37d2ada8-2d63-44c4-8b83-83f4a00b55c4'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=37d2ada8-2d63-44c4-8b83-83f4a00b55c4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '37d2ada8-2d63-44c4-8b83-83f4a00b55c4'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8ad925c6-cd4f-48e4-b983-332e703c51de'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8ad925c6-cd4f-48e4-b983-332e703c51de'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8ad925c6-cd4f-48e4-b983-332e703c51de'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7dcef5bd-eabb-4de8-a902-7936bd66eb7e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7dcef5bd-eabb-4de8-a902-7936bd66eb7e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7dcef5bd-eabb-4de8-a902-7936bd66eb7e'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1dc3dc46-1d17-4f95-a815-1f2392d14a73'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1dc3dc46-1d17-4f95-a815-1f2392d14a73'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1dc3dc46-1d17-4f95-a815-1f2392d14a73'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\OffrdEvalO10\OffrdEvalO10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMEndO10\PFMEndO10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\PFMStartO10\PFMStartO10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SO\SO_Composition\SO_Modules\StQualO10\StQualO10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...

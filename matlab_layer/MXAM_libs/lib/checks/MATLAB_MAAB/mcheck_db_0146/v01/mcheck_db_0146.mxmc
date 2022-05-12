@@ -1,0 +1,149 @@
+<check fileVersion="2">
+  <uid>45a31a33-35e6-449e-aa54-d4d4012b0442</uid>
+  <id>mcheck_db_0146</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Triggered, Enabled, Conditional Subsystems</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0146.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A trigger block gets a fail if its position is not within the region
+<br /> given by the two parameters MAAB.db_0146.Trigger.Region and
+<br /> MAAB.db_0146.Trigger.Range.
+<br /> The same holds true for enable ports, action ports, for-iterator ports,
+<br /> and while-iterator ports in combination with the corresponding parameters.
+<br /> 
+<br /> Additionally, each enable block gets a fail that is positioned more
+<br /> right than a trigger block (if one exist).]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[The demand that the enable block has to be positioned left to the
+<br /> trigger block has been made to clarify this guideline.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Move the ports to the top of the diagram. Move the enable block to left
+<br /> the trigger block (if one exists).]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[Fix does switch the position of an enable block and the most left trigger port
+<br /> (if both exist).
+<br /> The fix-operation does NOT move the ports to the upper part of the
+<br /> diagramm.]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0146.IgnoredBlocks</name>
+      <description>Blocks defined by {BlockType MaskType} will not be considered by this check.</description>
+      <defaultValue><![CDATA[{'',''}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.TriggerPort.Region</name>
+      <description><![CDATA[Possible other values for this parameter are 'center' and 'right'. This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink diagramm. The range of the diagramm is given by the distance between the most left and the most right block.]]></description>
+      <defaultValue><![CDATA['left']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.TriggerPort.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue><![CDATA['[100 100]']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.EnablePort.Region</name>
+      <description><![CDATA[Possible other values for this parameter are 'center' and 'right'. This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink diagramm. The range of the diagramm is given by the distance between the most left and the most right block.]]></description>
+      <defaultValue><![CDATA['left']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.EnablePort.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue><![CDATA['[100 100]']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.ActionPort.Region</name>
+      <description><![CDATA[Possible other values for this parameter are 'center' and 'right'. This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink diagramm. The range of the diagramm is given by the distance between the most left and the most right block.]]></description>
+      <defaultValue><![CDATA['left']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.ActionPort.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue><![CDATA['[100 100]']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.ForIterator.Region</name>
+      <description><![CDATA[Possible other values for this parameter are 'center' and 'right'. This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink diagramm. The range of the diagramm is given by the distance between the most left and the most right block.]]></description>
+      <defaultValue><![CDATA['left']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.ForIterator.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue><![CDATA['[100 100]']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.WhileIterator.Region</name>
+      <description><![CDATA[Possible other values for this parameter are 'center' and 'right'.  This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink diagramm.  The range of the diagramm is given by the distance between the most  left and the most right block.]]></description>
+      <defaultValue><![CDATA['left']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0146.WhileIterator.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y)  relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue><![CDATA['[100 100]']]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

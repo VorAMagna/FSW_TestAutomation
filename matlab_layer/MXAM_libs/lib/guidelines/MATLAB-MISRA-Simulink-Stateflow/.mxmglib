@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MATLAB-MISRA-Simulink-Stateflow" title="MISRA AC Simulink® Stateflow® - MATLAB® Guidelines" uid="c0c66b52-bd4a-48da-bb6e-8db05537d66f">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

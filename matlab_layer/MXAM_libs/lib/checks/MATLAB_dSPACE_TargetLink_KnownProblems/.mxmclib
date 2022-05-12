@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_dSPACE_TargetLink_KnownProblems" title="dSPACE TargetLink® Known Problems - MATLAB® Checks" uid="52b9bbe3-54fb-4fee-953e-cc7a9a3b5f5f">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

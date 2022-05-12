@@ -1,0 +1,121 @@
+<guideline fileVersion="2">
+  <uid>0c0c4027-39d4-43a4-91a7-589c7c78bfe0</uid>
+  <id>db_0117</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>779210d8-c997-4ff6-9b66-052d994b31b6</templateUid>
+  <title>Simulink Patterns for Vector Signals</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>readability</value>
+        <value>verification/validation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Simulink is a vectorizeable modeling language allowing for the direct processing of vector data.The following patterns are used for vector signals within Simulink model.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Pattern" optional="true" private="false">
+      <description>List of patterns this guideline suggests to be used.</description>
+      <value><![CDATA[<ul>
+ <li> Vector manipulation with a scalar value <p class="codeSample"> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_vector[i] = input_vector[i] * tunable_parameter_value;<br /> } </p> <p> <img src="db_0117_1.png" /> </p> <p class="imageCaption"> Figure db_0117-1. Vector manipulation with a scalar value </p> </li>
+ <li> Vector manipulation with a vector <p class="codeSample"> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_vector[i] = input_vector[i] * tunable_parameter_vector[i];<br /> } </p> <p> <img src="db_0117_2.png" /> </p> <p class="imageCaption"> Figure db_0117-2. Vector manipulation with a vector </p> </li>
+ <li> Product of vector elements <p class="codeSample"> output_signal = 1;<br /> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_signal = output_signal * input_vector[i];<br /> } </p> <p> <img src="db_0117_3.png" /> </p> <p class="imageCaption"> Figure db_0117-3. Product of vector elements </p> </li>
+ <li> Division of vector elements <p class="codeSample"> output_signal = 1;<br /> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp; if (i==0)<br /> &nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_signal = input_vector[0];<br /> &nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; else<br /> &nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_signal = output_signal / input_vector[i];<br /> &nbsp;&nbsp;&nbsp; }<br /> } </p> <p> <img src="db_0117_4.png" /> </p> <p class="imageCaption"> Figure db_0117-4. Division of vector elements </p> </li>
+ <li> Addition of a vector and a scalar value <p class="codeSample"> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_vector[i] = input_vector[i] + tunable_parameter_value;<br /> } </p> <p> <img src="db_0117_5.png" /> </p> <p class="imageCaption"> Figure db_0117-5. Addition of a vector and a scalar value </p> </li>
+ <li> Addition of two vectors <p class="codeSample"> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_vector[i] = input_vector[i] + tunable_parameter_vector[i];<br /> } </p> <p> <img src="db_0117_6.png" /> </p> <p class="imageCaption"> Figure db_0117-6. Addition of two vectors </p> </li>
+ <li> Addition of vector elements <p class="codeSample"> output_signal = 0;<br /> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;output_signal = output_signal + input_vector[i];<br /> } </p> <p> <img src="db_0117_7.png" /> </p> <p class="imageCaption"> Figure db_0117-7. Addition of vector elements </p> </li>
+ <li> Subtraction of vector elements <p class="codeSample"> for (i=0; i &lt; input_vector_size; i++)<br /> {<br /> &nbsp;&nbsp;&nbsp; if (i == 0)<br /> &nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp; &nbsp; &nbsp; output_signal = input_vector[0];<br /> &nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; else<br /> &nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_signal = output_signal - input_vector[i];<br /> &nbsp;&nbsp;&nbsp; }<br /> }<br /> </p> <p> <img src="db_0117_8.png" /> </p> <p class="imageCaption"> Figure db_0117-8. Subtraction of vector elements </p> </li>
+ <li> Minimum or maximum of a signal or a vector over time <p> <img src="db_0117_9.png" /> </p> <p class="imageCaption"> Figure db_0117-9. Minimum or maximum of a signal or a vector over time </p> </li>
+ <li> Change event of a signal or a vector <p> <img src="db_0117_10.png" /> </p> <p class="imageCaption"> Figure db_0117-10. Change event of a signal or a vector </p> </li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="true" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.20</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Patterns are used for vector signals within Simulink model.
+<br />]]></value>
+    </richtext>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/12/2016 14:10:27">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

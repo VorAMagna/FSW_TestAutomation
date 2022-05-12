@@ -1,0 +1,131 @@
+<guideline fileVersion="2">
+  <uid>8cf00e43-cecd-40e7-8008-069e4536ca79</uid>
+  <id>db_0134</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>779210d8-c997-4ff6-9b66-052d994b31b6</templateUid>
+  <title>Flowchart Patterns for If Constructs</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+        <value>verification/validation</value>
+        <value>workflow</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Guidelines </p>
+<ul>
+ <li> [ <u>db_0148</u>] Flowchart patterns for conditions<br /> <br /> </li>
+ <li> [ <u>db_0149</u>] Flowchart patterns for condition actions </li>
+</ul>
+<p> are prerequisites for this guideline. </p>
+<p> The following patterns are used for If-constructs within Stateflow Flowcharts. </p>]]></value>
+    </richtext>
+    <richtext name="Pattern" optional="true" private="false">
+      <description>List of patterns this guideline suggests to be used.</description>
+      <value><![CDATA[<h4> IF THEN </h4>
+<p class="codeSample"> if (condition)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action;<br /> } </p>
+<p> <img src="db_0134_1.png" /> </p>
+<p class="imageCaption"> Figure db_0134-1: If-then </p>
+<h4> IF THEN ELSE </h4>
+<p class="codeSample"> if (condition)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action1;<br /> }<br /> else<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action2;<br /> } </p>
+<p> <img src="db_0134_2.png" /> </p>
+<p class="imageCaption"> Figure db_0134-2: If-then-else </p>
+<h4> IF THEN ELSE IF </h4>
+<p class="codeSample"> if (condition1)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action1;<br /> }<br /> else if (condition2)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action2;<br /> }<br /> else if (condition3)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action3;<br /> }<br /> else<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action4;<br /> } </p>
+<p> <img src="db_0134_3.png" /> </p>
+<p class="imageCaption"> Figure db_0134-3: If-then-else-if </p>
+<h4> Cascade of IF THEN </h4>
+<p class="codeSample"> if (condition1)<br /> {<br /> &nbsp;&nbsp;&nbsp;&nbsp;action1;<br /> &nbsp;&nbsp;&nbsp;&nbsp;if (condition2)<br /> &nbsp;&nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action2;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (condition3)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action3;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /> &nbsp;&nbsp;&nbsp;&nbsp;}<br /> } </p>
+<p> <img src="db_0134_4.png" /> </p>
+<p class="imageCaption"> Figure db_0134-4: Cascade of if-then </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="true" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>1.00</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Flowchart patterns for If constructs.
+<br />]]></value>
+    </richtext>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1g Use of Style Guides</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/12/2016 16:01:38">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_dSPACE_TargetLink" title="dSPACE TargetLink® - MATLAB® Checks" uid="b5d99877-d4f2-4d6e-817b-c82b649c7566">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

@@ -1,0 +1,546 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=2572
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7db1136e-de03-43fb-aa99-4d0bc06b91ed'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7db1136e-de03-43fb-aa99-4d0bc06b91ed'
+
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2777ebba-9896-4b77-9988-7c75e617dd0f'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2777ebba-9896-4b77-9988-7c75e617dd0f'
+
+Description in the Autodoc block is too short!
+DTWindupC10/Basic torque distribution/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Berechnung MSpann/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Berechnung Schlupf
+& Kupplungsmoment/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Integrator
+for twist angle/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Logic Touchpoint/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/Total drivetrain stiffness/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/backlash reduction
+second end/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/expected rear propshaft torque
+in locked state/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/trqCardMan/Autodoc
+Customization
+Description in the Autodoc block is too short!
+DTWindupC10/verdrehung trqCard/Autodoc
+Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2777ebba-9896-4b77-9988-7c75e617dd0f'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\DTWindupC10\DTWindupC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e44372ff-3844-415e-825d-9ad47720eee1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e44372ff-3844-415e-825d-9ad47720eee1'
+
+Autodoc Block must be added to the subsystem!
+FltyAssmblyC10/errDbncr/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e44372ff-3844-415e-825d-9ad47720eee1'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FltyAssmblyC10\FltyAssmblyC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '90084fe7-de34-47d0-a537-739b1b80d30c'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=90084fe7-de34-47d0-a537-739b1b80d30c'
+
+Description in the Autodoc block is too short!
+FreezeFrameC02/BROKEN_MECHANICS/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CALIB_ANGLE_ERR/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CALIB_ERR/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/CLUTCH_END_OF_LIFE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/EX_MAX_ANGLE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/INITIAL_POSITION/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/INITIAL_POSITION_DEVIATION/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/NO_CALIB/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/SigQF/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState1/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState2/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC02/prevState3/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+FreezeFrameC02/dbncr_ESQ_NVMDATAC02_CORRUPT/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '90084fe7-de34-47d0-a537-739b1b80d30c'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC02\FreezeFrameC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '79fbfc8b-9246-4ed9-bfb6-260ccfa5eb75'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=79fbfc8b-9246-4ed9-bfb6-260ccfa5eb75'
+
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLASSIFICATION_NOT_DONE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLUTCH_PROTECTION/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/CLUTCH_WEAR_PLAUSI/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/DOG_CLUTCH_MECHANICAL_DISCONNECT/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/DOG_CLUTCH_MECHANICAL_ERROR/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/ECU_PROTECTION/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/FULL_LOCK_TORQUE_DEACTIVATED/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/NOT_SYNCHRONOUS/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/NVMDATA_CORRUPT/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/OVERSPEED_DISCONNECT/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/PHI_TUBE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/PROTECTIVE_FCN_PT_DEACTIVATED/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/REAR_AXLE_GEAR_RATIO_MISMATCH/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/SOLENOID_OVERTEMP/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/TOO_HIGH_DRAG_TORQUE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/TOO_HIGH_INPUT_TORQUE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/TOO_HIGH_SYNC_TORQUE/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/WEAR_OIL/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/prevState/Autodoc
+Customization
+Description in the Autodoc block is too short!
+FreezeFrameC10/prevState1/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+FreezeFrameC10/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+FreezeFrameC10/dbncr_ESQ_NVMDATAC10_CORRUPT/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '79fbfc8b-9246-4ed9-bfb6-260ccfa5eb75'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FreezeFrameC10\FreezeFrameC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FullLockHistoC10\FullLockHistoC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '777d2b98-da55-4faf-8e14-ec012c68263b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=777d2b98-da55-4faf-8e14-ec012c68263b'
+
+Description in the Autodoc block is too short!
+FullLockHistoC10/Autodoc
+Customization1
+Autodoc Block must be added to the subsystem!
+FullLockHistoC10/Diagnosis-DeactivateFullLock/OBD_Message/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '777d2b98-da55-4faf-8e14-ec012c68263b'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FullLockHistoC10\FullLockHistoC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\FullLockHistoC10\FullLockHistoC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'adea2906-9dd4-4274-aa91-7109957a0232'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=adea2906-9dd4-4274-aa91-7109957a0232'
+
+Description in the Autodoc block is too short!
+GuardCluC10/GuardCluC10_dltTmpStDisc2Clu_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+GuardCluC10/GuardCluC10_dltTmpStDisc2Oil_Man/Autodoc
+Customization
+Description in the Autodoc block is too short!
+GuardCluC10/TCHousePower/Autodoc
+Customization
+Description in the Autodoc block is too short!
+GuardCluC10/stOilTankClsCalc/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+GuardCluC10/tIdleDecision/Autodoc
+Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'adea2906-9dd4-4274-aa91-7109957a0232'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\GuardCluC10\GuardCluC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3f364821-976a-4d38-8085-4d677e8e7716'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3f364821-976a-4d38-8085-4d677e8e7716'
+
+Description in the Autodoc block is too short!
+HistogramC10/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+HistogramC10/DynoModeHistogram/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/cntNLRMode/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/CovDistInt/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/CovDistInt1/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/InitOffstCalc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/InitOffstCalc1/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/Trigger_1sec/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/NLRHistogram/mNLRModeHistogram/vVeh2covDist_Calc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/cntEfficiencyMode/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/cntNThredDisconHistogram/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/mEfficiencyModeHistogram/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/mEfficiencyModeHistogram/CovDistInt/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/mEfficiencyModeHistogram/InitOffstCalc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/mEfficiencyModeHistogram/vVeh2covDist_Calc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+HistogramC10/tIBLDCHistogram/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+HistogramC10/NLRHistogram
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3f364821-976a-4d38-8085-4d677e8e7716'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\HistogramC10\HistogramC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ad914148-c5d6-4292-99bf-e3e24ab09271'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ad914148-c5d6-4292-99bf-e3e24ab09271'
+
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosNOK/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosOK/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CntInitPosOK_WDBI/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/CtrlLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_DEVIATION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/ESQ_INITIAL_POSITION_UNEXPECTED_VARIATION_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/Lock/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/Set_stReqPos/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/StartLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys1/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys1/dphiCalc/mod2/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys1/mod/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/SyncSubsys1/mod1/Rescale2/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/TransLogic/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/phiExpHardStop_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stDPhiHardStop_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stInitPos_Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+InitPosC02/stPhiExpHardStop_Man/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+InitPosC02/FailureHandling/Encoder8Bit2/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ad914148-c5d6-4292-99bf-e3e24ab09271'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\InitPosC02\InitPosC02.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a07d28c7-20ad-47ac-98b5-c3b11ea67966'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=a07d28c7-20ad-47ac-98b5-c3b11ea67966'
+

@@ -1,0 +1,150 @@
+<guideline fileVersion="2">
+  <uid>b3fa0adb-e478-49d6-a2fe-cd682a813a26</uid>
+  <id>misra_tl_7_3</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MIRA Limited, 2007</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoiding 64-bit Arithmetic</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MISRA AC TL 1.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> avoid 64-bit arithmetics </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> 64-bit arithmetic should be avoided if a high degree of compliance with individual MISRA rules is to be achieved. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> This rule serves to ensure that TargetLink generated code complies with the above MISRA C rules. Pointer casts are used in the implementations of some 64-bit multiplication macros. Rules 18.2 and 18.4 are not adhered to in some 64-bit divisions and multiplications because unions are used to access memory areas. 64-bit divisions also do not comply with rules 13.5 and 13.6, and some 64-bit macros do not adhere to rules 19.4 and 19.10. </p>
+<p> Note: This rule does not imply that use of the TargetLink macros and library functions (resulting in noncompliance with the above rules) will necessarily result in unsafe code. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure misra_tl_7_3-1: shows a model with a Gain block whose predecessor is an Inport with Int32 output, see Figure misra_tl_7_3-2. The Gain parameter is set to 3/5 and the output is saturated, see Figure misra_tl_7_3-3. </p>
+<p> <img src="MISRA_TL_R_7_3_Fig_1.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_7_3-1: Example model </p>
+<p> <img src="MISRA_TL_R_7_3_Fig_2.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_7_3-2: Settings of the Inport </p>
+<p> <img src="MISRA_TL_R_7_3_Fig_3.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_7_3-3: Saturated output variable of the Gain block </p>
+<p> This results in the following code, containing functions for 64-bit arithmetic: </p>
+<p class="codeSample"> Void Subsystem(Void){<br /> /* SLLocal: Default storage class for local variables | Width: 32 */<br /> Int32 Aux_S32; UInt32 Aux_U32; </p>
+<p class="codeSample"> /* Gain: Subsystem/Gain */<br /> F__I64MULI32U32(Sa1_InPort, (UInt32) 3, &amp;(Aux_S32), &amp;(Aux_U32));<br /> C__I16DIVI64C32_SAT(Aux_S32, Aux_U32, 5, 0, 163835, 32767, Sa1_OutPort);<br /> } </p>
+<p class="imageCaption"> In order to avoid overflows under all circumstances, 64-bit calculation cannot be avoided entirely. However, if a constraint range is specified at the Inport, see Figure misra_tl_7_3-4: the calculations can be performed with a smaller bit length. In this case, even the saturation can be avoided and 64-bit operations are no longer necessary. This results in the following code without 64-bit arithmetic: </p>
+<p class="codeSample"> Void Subsystem(Void){<br /> /* Outport: Subsystem/out. # combined # Gain: Subsystem/Gain */<br /> Sa1_OutPort = (Int16) ((((Int16) Sa1_InPort) * 3)/5);<br /> } </p>
+<p> <img src="MISRA_TL_R_7_3_Fig_4.png" /> </p>
+<p class="imageCaption"> Figure misra_tl_7_3-4: Specification of Constraint Ranges for the Inport block </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>Compliance with MISRA C rules 4.1, 11.1 to 11.5, 14.8, 13.5, 13.6, 19.4, 19.10, 18.2 and 18.4</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1d Use of Defensive Implementation Techniques</value>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-2.2 Defensive Programming</value>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

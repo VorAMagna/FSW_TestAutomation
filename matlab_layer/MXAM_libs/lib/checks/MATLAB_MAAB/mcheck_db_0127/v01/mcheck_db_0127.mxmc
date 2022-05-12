@@ -1,0 +1,117 @@
+<check fileVersion="2">
+  <uid>892bb660-2de6-45ee-99f7-ff8641c1a8f3</uid>
+  <id>mcheck_db_0127</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Matlab Specific Commands in Stateflow</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0127.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Each chart that fulfills the following rules receives a pass:
+<br /> - no entry of MAAB.db_0127.ForbiddenSFVariableIdentifiers is used AND
+<br /> - no entry of MAAB.db_0127.ForbiddenSFMatlabCalls is used AND
+<br /> - no entry of MAAB.db_0127.ForbiddenSFFunctionIdentifiers is used.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- Using one of the forbidden identifiers, matlab calls or function
+<br /> identifiers could result in bad code generation.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Avoid the forbidden identifiers, matlab calls or function identifiers.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0127.ForbiddenSFMatlabCalls</name>
+      <description>List of forbidden Matlab calls.</description>
+      <defaultValue><![CDATA[{'matlab\(\w*\)','ml\(\w*\)','matlab\.\w+',...
+					'ml\.\w+'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0127.ForbiddenSFFunctionIdentifiers</name>
+      <description>List of forbidden function identifiers. These strings can be used as variables but should not be called as functions (if it does not  appear in the stateflow.data, then not allowed in label of transions, sates and function in the format as string(...).</description>
+      <defaultValue><![CDATA[{'ones','zeros','size',...
+					'why','accumarray','bsxfun',...
+					'cat','diag','eps',...
+					'length','eye','find',...
+					'inf','isempty','isequal',...
+					'isvector','isscalar','isinf',...
+					'isnan','nan','permute',...
+					'pi','rand','randn',...
+					'xor','any','all',...
+					'bitand','bitor','bitcmp',...
+					'bitxor'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0127.ForbiddenSFVariableIdentifiers</name>
+      <description>List of forbidden Stateflow variable names.</description>
+      <defaultValue><![CDATA[{'if','else','elseif',...
+					'end','switch','case',...
+					'otherwise','for','while',...
+					'continue','break','try',...
+					'catch','return','error',...
+					'warning'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

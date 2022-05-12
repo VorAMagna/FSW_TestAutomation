@@ -1,0 +1,125 @@
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/FoldingData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.FoldingData
+Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/FoldingData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.FoldingData
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=10752
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+<a href="matlab: opentoline('C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_execution_scripts\ExecuteBatch_MXAM.m',1,1)">1   </a>configuration_string = fileread(MXAM_MXRAY_BATCHCONFIG_FILEPATH);
+
+configuration = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    data_dictionary_path: {'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Composition.dd'}
+           magnalib_path: {'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\MagnaLib'}
+         modelparam_path: {'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Config'}
+               artifacts: [11 struct]
+         mxam_drive_path: 'C:\OtherPrograms\MXAM_DRIVE_5-1-0'
+              mxray_path: 'C:\Sandbox\Product_Group\SW\Development\FSW_Tools\mxray'
+       mxam_project_path: 'C:\Sandbox\FSW_TestAutomation\matlab_layer\MXAM_libs\fsw_test_automation.mxmp'
+          fsw_tools_path: 'C:\Sandbox\Product_Group\SW\Development\FSW_Tools'
+             mxam_active: 1
+            mxray_active: 1
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    model1: [11 struct]
+    model2: [11 struct]
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+                         model_name: 'PFMEndI10'
+                        source_file: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx'
+                         source_dir: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10'
+                         result_dir: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10'
+               report_filename_mxam: 'PFMEndI10_MXAM_Report'
+          report_filename_mxam_post: 'MXAM-Report_PFMEndI10'
+          report_filepath_mxam_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10_MXAM_Report.xlsx'
+           report_filepath_mxam_xml: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10_MXAM_Report.xml'
+     report_filepath_mxam_post_json: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\MXAM-Report_PFMEndI10.json'
+     report_filepath_mxam_post_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\MXAM-Report_PFMEndI10.xlsx'
+              report_filename_mxray: 'PFMEndI10_MXRAY_Report'
+         report_filename_mxray_post: 'MXRAY-Report_PFMEndI10'
+         report_filepath_mxray_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10_MXRAY_Report.xlsx'
+          report_filepath_mxray_xml: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10_MXRAY_Report.xml'
+    report_filepath_mxray_post_json: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\MXRAY-Report_PFMEndI10.json'
+    report_filepath_mxray_post_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\MXRAY-Report_PFMEndI10.xlsx'
+                  mxam_report_types: {'XML'}
+                    mxam_guidelines: {31 cell}
+                  mxray_eval_string: 'mxray_createReport('C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx', 'Directory', 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10', 'XML', 'NoHTML', 'AllColumns', 'KeepClose');'
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+                         model_name: 'PFMStartI10'
+                        source_file: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10.slx'
+                         source_dir: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10'
+                         result_dir: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10'
+               report_filename_mxam: 'PFMStartI10_MXAM_Report'
+          report_filename_mxam_post: 'MXAM-Report_PFMStartI10'
+          report_filepath_mxam_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10_MXAM_Report.xlsx'
+           report_filepath_mxam_xml: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10_MXAM_Report.xml'
+     report_filepath_mxam_post_json: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\MXAM-Report_PFMStartI10.json'
+     report_filepath_mxam_post_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\MXAM-Report_PFMStartI10.xlsx'
+              report_filename_mxray: 'PFMStartI10_MXRAY_Report'
+         report_filename_mxray_post: 'MXRAY-Report_PFMStartI10'
+         report_filepath_mxray_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10_MXRAY_Report.xlsx'
+          report_filepath_mxray_xml: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10_MXRAY_Report.xml'
+    report_filepath_mxray_post_json: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\MXRAY-Report_PFMStartI10.json'
+    report_filepath_mxray_post_xlsx: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\MXRAY-Report_PFMStartI10.xlsx'
+                  mxam_report_types: {'XML'}
+                    mxam_guidelines: {31 cell}
+                  mxray_eval_string: 'mxray_createReport('C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10.slx', 'Directory', 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10', 'XML', 'NoHTML', 'AllColumns', 'KeepClose');'
+
+
+ans =
+
+     2
+
+
+r_exec_opts = 
+
+  13 <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> array with fields:
+
+    s_mxam_path
+    s_project
+    cs_checks
+    cs_guidelines
+    cs_documents
+    cs_artifacts
+    cs_ignorelists
+    b_keep_open
+    s_mode
+    b_create_report
+    b_display_report
+    r_reports
+    s_callback
+    cs_callback_params
+    cs_cmdLineArgs
+

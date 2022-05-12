@@ -1,0 +1,86 @@
+<guidelineDocument fileVersion="2">
+  <uid>e10ad216-4be9-4fbb-bf06-073034ef6375</uid>
+  <id>tl_kpr_guidelines</id>
+  <title>dSPACE TargetLink Known Problems - Extended Version</title>
+  <access>protected</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright></copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="58e57888-bd25-451a-9b0b-de85a44fd913" title="Guidelines">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="3937c0a5-fe4e-4d5f-a007-4f37ee11466f" modifier="standard" refUid="e523c112-1a9e-47cf-89e7-f6f43dca29d6" refId="tl_pr20041110_13" refVersion="1" refTitle="State Variables with Local Scope are not Re-initialized">
+        <check uid="f1e9f7f1-9f94-402d-9623-5c810ee0f163" selectedForRun="true" refUid="0e2be9fc-7aa8-46ea-a7d2-743c019d9650" refId="mcheck_tl_pr20041110_13" refVersion="1" refTitle="State Variables with Local Scope are not Re-initialized"/>
+      </guideline>
+      <guideline uid="71ccfa5d-5f5e-4fcd-9b83-31a169c7ad04" modifier="standard" refUid="c1b21e46-40c1-4155-85d5-761ed284b96a" refId="tl_pr20050222_03" refVersion="1" refTitle="Variable Merge for Block Variables of Struct Types">
+        <check uid="803c97bf-0cee-4820-9e9d-b2c27a0a45ff" selectedForRun="true" refUid="29b6ab7c-f36b-431c-a1dd-a10c1b91fa7a" refId="mcheck_tl_pr20050222_03" refVersion="1" refTitle="Variable Merge for Block Variables of Struct Types"/>
+      </guideline>
+      <guideline uid="f8cb9ffa-7d3b-4f86-bc24-bd367fcd9d16" modifier="standard" refUid="87e7cf3e-f356-4b47-8cc4-08416e429dcd" refId="tl_pr20050721_08" refVersion="1" refTitle="Stateflow: Handling of Expr. w/ SF Int. Types Can Differ from SF Semantics">
+        <check uid="67c2b871-e181-4118-b190-57b3a8604ef9" selectedForRun="true" refUid="a04c40af-fa98-4b13-9f31-506efee158e0" refId="mcheck_tl_pr20050721_08" refVersion="1" refTitle="Stateflow: Handling of Expr. w/ SF Int. Types Can Differ from SF Semantics"/>
+      </guideline>
+      <guideline uid="27578fdc-1921-4a9f-8982-5f4b2eccd165" modifier="standard" refUid="21bc6a40-0bef-4b44-8816-f5ce61f93f1d" refId="tl_pr20050809_07" refVersion="1" refTitle="Nonpersistent Variable in Multirate Production Code">
+        <check uid="8b81edcd-3ef3-4348-81fc-706c6ac750ec" selectedForRun="true" refUid="44476ed0-0246-4a2c-8ea5-ace024ea76f3" refId="mcheck_tl_pr20050809_07" refVersion="1" refTitle="Nonpersistent Variable in Multirate Production Code"/>
+      </guideline>
+      <guideline uid="d5ba4822-2aa0-465d-827f-705ef9dd80c7" modifier="standard" refUid="5c37dd96-6350-4cc9-a89c-8aacf3260427" refId="tl_pr20051017_01" refVersion="1" refTitle="Stateflow: Overflow in Relational Operation">
+        <check uid="f9cafca6-e586-499f-ab26-f986aaa9fc08" selectedForRun="true" refUid="c2c6a226-5ad0-47ef-8826-29294db82e99" refId="mcheck_tl_pr20051017_01" refVersion="1" refTitle="Stateflow: Overflow in Relational Operation"/>
+      </guideline>
+      <guideline uid="04093039-54ab-4c29-9807-fdb151306659" modifier="standard" refUid="e8b633d6-126b-45f1-8de2-7d0ca96bd417" refId="tl_pr20060404_06" refVersion="1" refTitle="Unintentional optimization of relational or logical operations between code variable and constant value">
+        <check uid="74d5d674-b13b-40c3-a894-04cfb8066fdf" selectedForRun="true" refUid="3b47be5e-83a0-4fbe-97a4-885a01502243" refId="mcheck_tl_pr20060404_06" refVersion="1" refTitle="Unintentional optimization of relational or logical operations between code variable and constant value"/>
+      </guideline>
+      <guideline uid="072522d7-54fe-459d-b46a-5c3c2258c620" modifier="standard" refUid="65f93ec3-5033-4c9c-b4e6-38829eb06bc5" refId="tl_pr20060928_17" refVersion="1" refTitle="Components of DD Struct Variables May Get Incorrectly Merged in Generated Code">
+        <check uid="d2d22b3a-e4e8-420e-86ae-ed2145588fee" selectedForRun="true" refUid="81b72fa3-1f64-4346-b0ba-1098220c5667" refId="mcheck_tl_pr20060928_17" refVersion="1" refTitle="Components of DD Struct Variables May Get Incorrectly Merged in Generated Code"/>
+      </guideline>
+      <guideline uid="900b1da4-9077-4961-b85c-75b13ae498b4" modifier="standard" refUid="40b840d9-00b5-4617-9564-17866086795f" refId="tl_pr20061030_09" refVersion="1" refTitle="Wrong Code for a Relational Operation in Stateflow.">
+        <check uid="420af128-94e9-48c2-a76a-b728040358ee" selectedForRun="true" refUid="88e06373-83e4-443e-b3c1-9593f42e74f2" refId="mcheck_tl_pr20061030_09" refVersion="1" refTitle="Wrong Code for a Relational Operation in Stateflow."/>
+      </guideline>
+      <guideline uid="6d146929-f3a3-47ae-9527-58971e84a601" modifier="standard" refUid="640bd2b6-ff0a-4030-a587-60a1b2eb0501" refId="tl_pr20070320_01" refVersion="1" refTitle="TL Inport or Businport on Root Level May Cause Downsampling of Data">
+        <check uid="bcb57a87-f542-4556-af87-8edec6faff78" selectedForRun="true" refUid="003198b2-c3dc-4fac-810d-9b4ef50ff66f" refId="mcheck_tl_pr20070320_01" refVersion="1" refTitle="TL Inport or Businport on Root Level May Cause Downsampling of Data"/>
+      </guideline>
+      <guideline uid="ca0164be-df5c-4318-80e4-0388871970bf" modifier="standard" refUid="8df98cdd-0182-4a2c-815d-92e84b521681" refId="tl_pr20070704_01" refVersion="1" refTitle="Wrong Code Generated for Rate Limiter Block If Product of Slew Rate Scaling and Sample Time Is Whole-numbered">
+        <check uid="b254cdc8-dca6-4142-9c97-00b2e5650d61" selectedForRun="true" refUid="0254e09c-34ac-4bab-a183-180ae3fca04d" refId="mcheck_tl_pr20070704_01" refVersion="1" refTitle="Wrong Code Generated for Rate Limiter Block If Product of Slew Rate Scaling and Sample Time Is Whole-numbered"/>
+      </guideline>
+      <guideline uid="c8cd7ad4-464e-4f24-b7f5-d52d207e707f" modifier="standard" refUid="fbba2701-e9ce-4908-bfac-3ead39af279d" refId="tl_pr20070914_06" refVersion="1" refTitle="Wrong Code for an Enabled, Triggered and Enabled or Action Triggered Subsystem in Connection with Incremental Code Generation">
+        <check uid="d8df1e06-b9bd-4ae7-8c26-7ed6e56ec0dc" selectedForRun="true" refUid="fbbe9a13-a811-4a63-855e-24b8a74dfc25" refId="mcheck_tl_pr20070914_06" refVersion="1" refTitle="Wrong Code for an Enabled, Triggered and Enabled or Action Triggered Subsystem in Connection with Incremental Code Generation"/>
+      </guideline>
+      <guideline uid="63167699-4a7d-441f-bf0e-f8719b79d52d" modifier="standard" refUid="efc8e424-f6cf-4f86-9552-fa1c888d651e" refId="tl_pr20080125_07" refVersion="1" refTitle="Wrong Code Generated for While Iterator Block">
+        <check uid="5a4b05e5-f98b-4900-8842-0367a13f983c" selectedForRun="true" refUid="813fad11-3781-4e37-a306-9b724c75735b" refId="mcheck_tl_pr20080125_07" refVersion="1" refTitle="Wrong Code Generated for While Iterator Block"/>
+      </guideline>
+      <guideline uid="9c559093-7a54-49c3-b9ee-76954d0fa3ef" modifier="standard" refUid="6b9e8392-747b-4e88-acf0-78076d1108f0" refId="tl_pr20080214_11" refVersion="1" refTitle="Erroneous Elimination of Unscaled SF Relational Operation">
+        <check uid="ebfd8957-6dfe-4b51-accf-7424ffab5d24" selectedForRun="true" refUid="6e06b71f-caba-4060-ab52-7c209c602729" refId="mcheck_tl_pr20080214_11" refVersion="1" refTitle="Erroneous Elimination of Unscaled SF Relational Operation"/>
+      </guideline>
+      <guideline uid="a60d01c0-edf4-40ba-a4b4-4a16484bb518" modifier="standard" refUid="43d4f1bd-0e47-4bdd-a722-2fc05006a996" refId="tl_pr20080215_03" refVersion="1" refTitle="Interface Variable of Incremental May Be Eliminated in Surrounding System">
+        <check uid="9d40f40b-6236-40c0-ad35-e8037ca1f1e6" selectedForRun="true" refUid="29a7fb01-1111-4c53-ba59-fb63867ac9a1" refId="mcheck_tl_pr20080215_03" refVersion="1" refTitle="Interface Variable of Incremental May Be Eliminated in Surrounding System"/>
+      </guideline>
+      <guideline uid="f57e4b4b-c233-4809-9ab4-a0ebc09ed497" modifier="standard" refUid="b5d1092c-54a9-4cc5-9d29-b84763696df6" refId="tl_pr20141002_002" refVersion="1" refTitle="Incorrect code for Discrete Transfer Function block with non-zero initial state values">
+        <check uid="83073310-2631-4819-aac2-819880c64052" selectedForRun="true" refUid="fe9eb652-22ce-4f6e-82ff-82c85baf2be1" refId="mcheck_tl_pr20141002_002" refVersion="1" refTitle="Incorrect code for Discrete Transfer Function block with non-zero initial state values"/>
+      </guideline>
+      <guideline uid="402bbcac-77ce-4928-9df7-c112cd1ffefe" modifier="standard" refUid="341bfc84-0c32-4ac5-b2e1-c592e7a518d8" refId="tl_pr20141118_001" refVersion="1" refTitle="Preceding Blocks of Merge Blocks">
+        <check uid="50bfa4bb-828a-4084-a951-e0a9fa8e0570" selectedForRun="true" refUid="037d186a-79af-4ba8-be0f-5a46cc476cf3" refId="mcheck_tl_pr20141118_001" refVersion="1" refTitle="Preceding Blocks of Merge Blocks"/>
+      </guideline>
+      <guideline uid="11334a24-e177-40bb-a043-9613bb813e61" modifier="standard" refUid="5649f63b-d8ea-4f86-b320-4496142a87ad" refId="tl_pr20061101_03" refVersion="1" refTitle="Merge Blocks in Enabled Subsystems">
+        <check uid="84aaac47-7530-4474-b6f2-4c799e1e714e" selectedForRun="true" refUid="c5aff750-265c-4f3c-b10e-7cf67694f8e7" refId="mcheck_tl_pr20061101_03" refVersion="1" refTitle="Merge Blocks in Enabled Subsystems"/>
+      </guideline>
+      <guideline uid="2104dedc-e921-4dd6-8eaa-783c63f41353" modifier="standard" refUid="3f88cf45-7156-462f-a8aa-7f75cea4e54f" refId="tl_pr20100823_004" refVersion="1" refTitle="Erroneously Omitted Saturation Code of the Saturation Block">
+        <check uid="b55255b7-7562-47fb-8000-b61ee4e669d0" selectedForRun="true" refUid="8f611ab7-407d-4da9-82b4-d45cb6268c2c" refId="mcheck_tl_pr20100823_004" refVersion="1" refTitle="Erroneously Omitted Saturation Code of the Saturation Block"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/16/2015 09:23:31">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

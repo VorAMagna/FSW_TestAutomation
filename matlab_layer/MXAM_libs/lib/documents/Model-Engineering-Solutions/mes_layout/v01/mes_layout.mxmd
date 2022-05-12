@@ -1,0 +1,38 @@
+<guidelineDocument fileVersion="2">
+  <uid>07533ea6-24b6-419a-b65b-2961f129f40a</uid>
+  <id>mes_layout</id>
+  <title>MES Layout Modeling Guidelines</title>
+  <access>public</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="3a06c1af-98f8-4fd3-b9cf-1866f89c8ac9" title="Layout">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <guideline uid="2a220fda-b9ac-44fa-b81e-6396c121c02d" modifier="standard" refUid="6cb6df4f-63d3-41c1-b57f-90b7c76edf56" refId="mes_color_001" refVersion="1" refTitle="Color Layout of Simulink Models">
+        <check uid="5bc35c29-3d26-4237-8005-43d290113d1a" selectedForRun="true" refUid="e3a6b464-38e7-4ea8-8100-132fec937b1e" refId="mcheck_mes_color_001" refVersion="1" refTitle="Color Layout of Simulink Models"/>
+      </guideline>
+      <guideline uid="95156800-74a8-481d-8de9-26917f37bdef" modifier="standard" refUid="027d18b0-3375-47ce-bbe1-f01e09bf2190" refId="mes_sfcolor_001" refVersion="1" refTitle="Font and Color Settings of Stateflow Elements">
+        <check uid="18c046df-b1fd-4363-886d-70d64c99cb02" selectedForRun="true" refUid="1357ce2a-8c61-4762-99ba-436e8be99551" refId="mcheck_mes_sfcolor_001" refVersion="1" refTitle="Font and Color Settings of Stateflow Elements"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="09/16/2013 10:10:33">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

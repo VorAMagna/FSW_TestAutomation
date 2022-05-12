@@ -1,0 +1,57 @@
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+Changes: 
+#3520: tl_pr20060404_06: new implementation and guideline description for tl_pr20060404_06 according to the changed version of the dSpace TargetLink Known Problem report. 
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+Bugfix: 
+#3392: tl_pr20141002_002: An inital value of zero has been given a failed due to stringcomparison. This has been fixed.
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+New check:
+- tl_pr20100823_004: Erroneously Omitted Saturation Code of the Saturation Block
+
+Bugfixes:
+#2866: tl_pr20051017_01: Incorrect handling of shift operations << and >> in Statflow caused an aborted. This has been fixed now. 
+
+Version 3.6.0 ©2007-2015 30-Sept-2015
+Version 1.8.8 ©2007-2015 30-Sept-2015
+---------------------------------------------------------------------------
+New check (review check: only available in 3.6 Functional Safety Solution)
+- tl_pr20061101_03: Merge Blocks in Enabled Subsystems
+
+Version 3.5.0 ©2007-2015 30-Jun-2015
+Version 1.8.7 ©2007-2015 30-Jun-2015
+---------------------------------------------------------------------------
+New checks (only available in the Functional Safety Solution):
+- tl_pr20060404_06: Unintentional Optimization of Relational Operation
+- tl_pr20141002_002: Incorrect code for Discrete Transfer Function block with non-zero initial state values
+- tl_pr20141118_001: Preceding Blocks of Merge Blocks
+
+Version 1.8.3.0 ©2007-2014 13-Aug-2014
+---------------------------------------------------------------------------                          
+Bugfixes:
+- tl_pr20070914_06: This check can now handle more than one TargetLink subsystem.
+
+
+V1.7 build 0000.1 ©2007-2013   20-Jun-2013
+-------------------------------------------------------------------------------
+Changes:
+- tl_pr20060928_17: error message is improved.
+
+
+V1.7 build 0000.0 ©2007-2013   08-Apr-2013
+-------------------------------------------------------------------------------
+Changed Checks:
+- tl_knowProblems: Comparison of TL version with list of TL version changed. Patches are no longer considered.
+
+
+V1.4 build 0003.2 ©2007-2009   16-Jun-2010
+--------------------------------------------------------------------------------
+Changes:
+- tl_pr20080214_11,tl_pr20051017_01 error message such as the variable 
+used in chart is not defined will be shown by the check.

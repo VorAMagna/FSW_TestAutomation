@@ -1,0 +1,169 @@
+<guideline fileVersion="2">
+  <uid>5c5f0b7e-83c3-4a88-8120-52f06b27aad1</uid>
+  <id>misra_tl_7_9</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MIRA Limited, 2007</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Avoiding Shift Operations on Signed Types</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MISRA-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MISRA AC TL 1.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> avoid shift operations with option &quot;ShiftMode&quot; </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The TargetLink option ShiftMode can be used to suppress shift operations (&lt;&lt; and &gt;&gt;) and instead replace them with multiplications and divisions. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> By default, TargetLink tries to implement shift operations instead of multiplications and divisions. This makes the generated production code more efficient. However, this violates MISRA C Rule 12.7 if the underlying type of the operands is signed. The ShiftMode option can be used to suppress shift operators in the generated code. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> In order to get a list of TargetLink code generation options, type <em>tl_cg</em> in the MATLAB command window. Among other options, there is the ShiftMode property with the following valid settings: </p>
+<table title="" border="1" cellpadding="2" cellspacing="0" width="85%">
+ <tbody>
+  <tr>
+   <td> <p> 0 </p> </td>
+   <td> <p> no restrictions with regard to bitshifts - this is the default. </p> </td>
+  </tr>
+  <tr>
+   <td> <p> 1 </p> </td>
+   <td> <p> do not shift right </p> </td>
+  </tr>
+  <tr>
+   <td> <p> 2 </p> </td>
+   <td> <p> do not shift left </p> </td>
+  </tr>
+  <tr>
+   <td> <p> 3 </p> </td>
+   <td> <p> do not shift right or left </p> </td>
+  </tr>
+ </tbody>
+</table>
+<p> Code generation settings like the ShiftMode option have to be set in a hook file before code generation. For that purpose, each TargetLink installation contains a template file for the <em>pre-codegen.hook</em> function called <em>tl_pre_codegen_hook.m</em> function. The template file is named <em>tl_pre_codegen_hook.m</em> and it is located under <em>%TL_Root%\Matlab\Tl\config\codegen.</em> </p>
+<p> In order to replace bitshifts by multiplications/divisions, make the following adjustments in the above hook file: </p>
+<p class="codeSample"> tlcgOptions = { tlcgOptions{:} ...<br /> 'ShiftMode', 3, ...<br /> }; </p>
+<p> Note: Since TargetLink 2.2, code generation options such as <em>ShiftMode</em> are also available via GUI in the TargetLink Main Dialog. </p>
+<p> If the ShiftMode option is set to 3 in this way, the following code fragment generated for the <em>pipt1</em> TargetLink demonstration contains multiplications and divisions instead of bitwise shifts: </p>
+<p class="codeSample"> /* Sum: picontroller/sU<br /> # combined # Gain: picontroller/Kp<br /> # combined # Gain: picontroller/Ki */<br /> Sa1_sU = (Int16) (((UInt16) (Int16) ((((Int32) Sa1_e) * ((Int32) P_Sa1_Kp)) / 128)) + ((UInt16) (Int16)((((Int32) Sa1_x) * ((Int32) P_Sa1_Ki)) / 64))); </p>
+<p> If instead the <em>ShiftMod</em> option is set to 0, the generated code fragment makes use of bitshifts and looks like this: </p>
+<p class="codeSample"> /* Sum: picontroller/sU<br /> # combined # Gain: picontroller/Kp<br /> # combined # Gain: picontroller/Ki */<br /> Sa1_sU = (Int16) (((UInt16) (Int16) ((((Int32) Sa1_e) * ((Int32) P_Sa1_Kp)) &gt;&gt; 7)) + ((UInt16) (Int16) ((((Int32) Sa1_x) * ((Int32) P_Sa1_Ki)) &gt;&gt; 6))); </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>Compliance with MISRA C rule 12.7</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1c Enforcement of Strong Typing</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.2 Strongly Typed Programming Language</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="aee28a5f-244b-4890-a3b3-272f6c01d2eb" refId="mcheck_misra_tl_7_9" refTitle="Avoiding shift operations on signed types" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="12/01/2015 13:49:03">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,108 @@
+<check fileVersion="2">
+  <uid>cae0df38-55b7-42b0-921e-3b3c444db507</uid>
+  <id>mcheck_db_0143</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Similar Block Types on the Model Levels</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0143.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A pass is given to subsystems which contain only the same type of blocks
+<br /> or blocks that can be placed on every model level. Otherwise, a fail is
+<br /> given.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA['Same type' differentiate between subsystems and basic blocks, considering
+<br /> blocktypes]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Only use blocks of the same type per level or extend parameter
+<br /> MAAB.db_0143.GlobalAllowedBlockTypes with blocktypes that should be
+<br /> allowed on every level.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0143.GlobalAllowedBlockTypes</name>
+      <description><![CDATA[Contains blocktypes of blocks, that are allowed on every level.
+Syntax- {'blocktype1','blocktype2','blocktype3'....blocktypeN}
+Here 'blocktype1' is the blocktype of 'block1', 'blocktype2' is the blocktype of 'block2' and so on.]]></description>
+      <defaultValue><![CDATA[{'Inport','Outport','EnablePort',...
+					'TriggerPort','Ground','Terminator',...
+					'Mux','Demux','BusCreator',...
+					'BusSelector','Selector','Merge',...
+					'From','Goto','Switch',...
+					'MultiPortSwitch','Constant','UnitDelay',...
+					'DataTypeConversion','DataStoreMemory','If',...
+					'SwitchCase','RateTransition'}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0143.GlobalAllowedMaskTypes</name>
+      <description><![CDATA[Contains masktypes of blocks, that are allowed on every level.
+Syntax -  {'masktype1','masktype2','masktype3'....masktypeN}
+Here 'mastype1' is the masktype of 'block1', 'masktype2' is the masktype of 'block2' and so on.]]></description>
+      <defaultValue><![CDATA[{'TL_Function','TL_MainDialog','TL_MilHandler','TL_ToolSelector'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

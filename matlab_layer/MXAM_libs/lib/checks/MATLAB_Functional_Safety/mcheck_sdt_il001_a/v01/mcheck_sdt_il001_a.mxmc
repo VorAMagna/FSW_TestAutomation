@@ -1,0 +1,93 @@
+<check fileVersion="2">
+  <uid>d5e875cd-69c7-4fdf-8ae7-24a2b1b4997a</uid>
+  <id>mcheck_sdt_il001_a</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Avoidance of Duplicated Port Signals - Source Signal</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_il001_a.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>true</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the Inports and Outports of each subsystem.<br /> </p> 
+<ul> 
+ <li> Failed 1: Two or more Inports or two or more Outports in the subsystem have the same source signal. </li> 
+ <li> Review 2: Two or more Inports or two or more Outports in the subsystem have a Merge, Switch, or MultiportSwitch block as source.<br /> </li> 
+</ul> 
+<p> The check result is passed if all failed cases do not apply.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> If a Simulink Inport directly feeds into a single TargetLink Inport only the Simulink Inport is checked. Similarly, if a TargetLink Outport or bus Outport directly feeds into a Simulink Outport only the TargetLink Outport is checked. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<ul> 
+ <li> Solution 1: Do not use more than one Inport or Outport for the same signal. If a duplicate signal is needed, duplicate the signal within the system by creating a signal branch after the Inport. Regarding Output signals, duplicate an outgoing signal outside of the system. Further, remove any shadow Inport blocks and use signal branches instead. </li> 
+ <li> Solution 2: Review the concerning Inports or Outports if they have the same source signal. If they have the same source signal, follow Solution 1.<br /> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="07/29/2015 18:10:29">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="08/07/2015 13:00:38">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

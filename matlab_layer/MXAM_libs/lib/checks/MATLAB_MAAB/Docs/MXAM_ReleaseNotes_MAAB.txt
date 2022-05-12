@@ -1,0 +1,355 @@
+Version 4.0.1 ©2007-2016 09-Nov-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- jc_0231: The check result was aborted with the message 'Saturate block does not have a parameter named 'SrcBlockHandle'. This has been fixed (#4146).
+- jc_0281: Corrected name of parmeter jc_0281.LabelSignalLinesConnectingReusableSubsystem.
+
+Version 4.0.0 ©2007-2016 30-Oct-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- na_0038: Modified the string concatenation of an array to avoid a warning in the command window. Warning appears in latest versions of Matlab (#3748).
+- db_0146: Adapted the check to consider the coordinates of the model window of new Matlab version (#3791).
+- jc_0141: A check abort has been raised due to a wrong initialization. This has been fixed (#3832).
+- na_0002: Each block (Relational, Logical etc) with a Boolean output is checked if it is connected to a block that is able to receive Boolean input. In case 
+	it is connected to an inport (within a subsystem), the block is ignored from checking (#3954).
+- jc_0481: The check compared the data type of the Stateflow input even if the option 'createinputvariable' is not set. 
+        A util function has been adapted to consider the option 'createinputvariable' in Stateflow inports. If this option is enabled, 
+        the TL data type of this port is taken. If the option is disabled, the data type of the inport's source is taken (#3526).
+
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+Bugfixes:
+#3495: jm_0010_b: If an event was defined as output of a Stateflow, the Check reported a failed in case of signal propagation set to on. This is fixed now. 
+#3469: na_0013: An incorrect initialization of a variable caused an aborted. 
+#3526: jc_0481: If the option 'create input variable' is not set, the check still analyzed the scaling of the data item. The check 
+verifies now the datatype and scaling of the preceding block, if this option is not set. 
+
+Changes:
+db_0042_b: Rework of the check. The check considers weather a duplicated Inport is used on the toplevel (failed) or in a sublevel (review) according to the guideline. 
+na_0002: Check parameter 'BlockAcceptingLogicalAndNumericalSignals' adapted to include  enable, trigger and Ifaction.
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+Changes:
+na_0002: Changed default parameter MAAB.na_0002.BlockRequiringBooleanSignalAsInput: Removed trigger of Ifaction subsystems.
+		 Changed default parameter MAAB.na_0002.BlockHavingBooleanSignalsAsOutput: Removed If block.
+na_0005: Changed default parameter MAAB.na_0005.PortNameVisibility from 'off' to 'on'.
+		 
+Bugfixes:
+#3286: jc_0201: Single lines withour source and destination caused an aborted. This is handeled now. 
+#3285: db_0110: A failed result occured for trigger ports. Trigger ports are ignored now, because they do not have any tunable parameters.
+#3357: jc_0221: An aborted was caused by the function mes_block_has_businport. Util has been adapted for the switch case block.
+
+Version 3.7.1 ©2007-2016 24-Feb-2016
+Version 1.8.9.1 ©2007-2016 24-Feb-2016
+---------------------------------------------------------------------------
+Bugfixes:
+#3195: jc_0481: A missing initialization of a struct caused an aborted, this has been fixed. 
+#3248: jc_0141: failed results were issued for missing entries in the AFS of the block, which is not part of the guideline due to the changed behaviour of the MATLAB function boolean(). This has been fixed. 
+
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+Bugfixes:
+#2898: jc_0221: Signal Propagation symbols '<' and '>' are not reported as wrong chars anymore. 
+
+Changes:
+#2897: na_0027: Rework of check with new parameter MAAB.na_0027.Libs2Check. Can be parametrized now by a list of allowed libraries. 
+
+Version 3.6.0 ©2007-2015 30-Sept-2015
+Version 1.8.8 ©2007-2015 30-Sept-2015
+---------------------------------------------------------------------------
+New checks:
+- jm_0002_a: Block Resizing - Visibility of Parameters
+- jm_0002_b: Block Resizing - Visibility of Port Names
+Bugfixes:
+#2667: na_0001: Switch case Block has been added to the parameter. 
+#2685: jm_0011: Check has been adapted such that pointers to variables defined in the chart are passing. 
+#2693: na_0009: Parameter has been adapted such that the Switch block is ignored. 
+#2711: na_0040: An entry in the global parameter Global.IgnoredLibraries caused an error in the filter process. This has been fixed. 
+#2691: db_0140: Check has been revised such that only values different from the default values must be displayed. 
+#2738: na_0030: The check issued a failed result for signal names, too. Only bus signal names will be analyzed now. 
+
+Version 3.5.0 ©2007-2015 30-Jun-2015
+Version 1.8.7 ©2007-2015 30-Jun-2015
+---------------------------------------------------------------------------
+Improvements:
+#2220: db_0110: Added parameter 'AllowedDocumentationBlocks'. In this parameter documentation blocks can be defined. 
+
+Bugfixes:
+#2339: db_0129_c: An error 'index out of bounds' occured. This has been fixed.
+#2427: jc_0451: The check issued an internal error by referencing an empty variable. This has been fixed.
+#2472: jc_0281: An error (block_diagram does not have a parameter 'LineHandles') occured. This has been fixed now. 
+
+Version 1.8.5.0 ©2007-2014 02-Dec-2014
+---------------------------------------------------------------------------
+#1939: jc_0281, jm_0010_a: These checks reported a rule violation for Action Port, Enable, 
+       and Trigger blocks, although the incoming signal name was set correctly.
+       The incoming signal name can now be resolved and they are no longer reported as false postives.      
+        
+
+Version 1.8.4.0 ©2007-2014 29-Sep-2014
+---------------------------------------------------------------------------
+Improvements:
+- jc_0481: Checks the Simulink properties of Stateflow variables if the model is a 
+           TargetLink model and TargetLink is not installed. A warning will be reported.
+           
+
+Version 1.8.3.0 ©2007-2014 13-Aug-2014
+---------------------------------------------------------------------------
+New Check: 
+jc_0481 - Use of hard equality comparisons for floating point numbers in Stateflow
+              
+Improvements:
+#1557: db_0143: Parameter 'AllowedMaskTypes' has been added to use the mask 
+       type to define a list of allowed basic blocks.
+#1557: ar_0001: File extensions have been reported as error. This bug is fixed.
+#1557: ar_0002: Parameter 'IgnoredDirectoryName' has been added to exclude directory names from analysis. 
+       Default value of this parameter are the directories '_sfprj','_self','_sfun' which are automatically 
+       generated by TargetLink.  
+                                
+Bugfixes:
+- db_0127: Check if the forbidden string is a word in the given string. 
+       If the forbidden string is only part of a word in the given 
+       string no error is reported.
+   
+       
+Version 1.8.2.0 ©2007-2014 15-Apr-2014
+---------------------------------------------------------------------------
+Bugfixes:
+#1496: db_0129_b: uses the mes_proxi0098. If the parameter 'junction' was set, the
+		   check was not excecutable. 
+#1227: db_0137: will now give a pass, if default transition is indirectly 
+       connected to a state. 
+#1264: jc_0521: An error occurred when only one graphical function is used. 		
+       To avoid this, name of this graphical function is now transferred into 
+       a cellstring. 
+
+
+Version 1.8.1.0 ©2007-2014 17-Feb-2014
+---------------------------------------------------------------------------
+Changed Check Ids:
+- jc_0121_a --> new ID jc_0121_strict (all sum blocks must have 
+                   rectangular shape)
+- jc_0121_b --> new ID jc_0121 (All sum blocks in feedback loops might 
+                   have round shape, but they must hav only two input. Sum 
+                   blocks not in a feedback loop must have rectangular shape)
+
+Changes:
+#1193: db_0129_b: Transition crossings will only raise a fail if they are 
+		   unnecessary with regard to data flow. 
+#1195: jc_0541: Check only considers Stateflow data with scope 'Parameter'.
+		   A fail is given, if the parameter is not defined in the base workspace. 
+		   Inputs are not automatically checkable -> manual review is necessary
+		   
+Bugfixes:
+#1159: jc_0501: in combination with R2012, linebreaks were not identified 
+       correctly
+
+
+V1.8 build 0000.2 ©2007-2013   25-Nov-2013
+---------------------------------------------------------------------------
+Bugfixes:
+#1059:  db_0112: MultiportSwitch blocks are no longer ignored by this check
+
+
+V1.8 build 0000.1 ©2007-2013   13-Nov-2013
+---------------------------------------------------------------------------
+Bugfixes:
+#888:   db_0123, check now ignores brackets at function call outports. 
+        These were set by R2012b automatically. 
+
+Renamed Parameters:
+na_0002: *Parameter 'MAAB.na_0002.BlockRequiringBooleanInput' has been renamed to
+          'MAAB.na_0002.BlockRequiringBooleanSignalAsInput'
+         *Parameter 'MAAB.na_0002.BlockIssuingBooleanOutput' has been renamed to 
+          'MAAB.na_0002.BlockHavingBooleanSignalsAsOutput'
+         *Parameter 'MAAB.na_0002.BlockAcceptLogicaNumericalSignal' has been renamed to
+          'MAAB.na_0002.BlockAcceptingLogicalAndNumericalSignals'	     
+
+V1.8 build 0000.0 ©2007-2013   10-Oct-2013
+-------------------------------------------------------------------------------
+Deleted Check:
+- mes_jc_0232: Check does no longer exist, as its functionality was covered 
+  by mes_jc_0231. Difference between both checks could be managed by using 
+  parameters. As this check was not covered by a guideline it has been removed. 
+
+New MAAB 3.0 Checks:
+- mes_ar_0001.m - Filenames
+- mes_ar_0002.m - Directory names
+- mes_db_0110.m - Tunable parameters in basic blocks
+- mes_db_0112.m - Zero-based indexing
+- mes_db_0125.m - Scope of internal signals and local auxiliary variables
+- mes_db_0137.m - States in state machines
+- mes_db_0140.m - Display of basic block parameters string
+- mes_db_0141.m - Signal flow in Simulink models
+- mes_db_0146.m - Triggered, Enabled, Conditional Subsystems
+- mes_jc_0451.m - Use of unary minus on unsigned integers in Stateflow
+- mes_jc_0501.m - Format of entries in a State block
+- mes_jc_0511.m - Setting the return value from a graphical function
+- mes_jc_0521.m - Use of the return value from graphical functions
+- mes_jc_0531.m - Placement of the default transition
+- mes_jc_0541.m - Use of tunable parameters in Stateflow
+- mes_jm_0011.m - Pointers in Stateflow
+- mes_jm_0012.m - Event broadcasts
+- mes_na_0001.m - Bitwise Stateflow operators
+- mes_na_0002.m - Appropriate implementation of fundamental logical and numerical operations
+- mes_na_0003.m - Simple logical expressions in If Condition block
+- mes_na_0005.m - Port block name visibility in Simulink models
+- mes_na_0009.m - Entry versus propagation of signal labels
+- mes_na_0013.m - Comparison Operation in Stateflow
+- mes_na_0018.m - Number of nested if/else and case statement
+- mes_na_0020.m - Number of inputs to variant subsystems
+- mes_na_0026.m - Consistent software environment
+- mes_na_0027.m - Use of only standard library blocks
+- mes_na_0028.m - Use of If-Then-Else Action Subsystem to Replace Multiple Switches
+- mes_na_0030.m - Usable characters for Simulink Bus names
+- mes_na_0032_a.m - Use of Merge Blocks: Identical buses
+- mes_na_0032_b.m - Use of Merge Blocks: Signals/Buses entering Merge Block
+- mes_na_0036.m - Default variant
+- mes_na_0037.m - Use of single variable variant conditionals
+- mes_na_0038.m - Levels in Stateflow charts
+- mes_na_0039.m - Use of Simulink in Stateflow charts
+- mes_na_0040.m - Number of states per container
+
+Splitted MAAB 3.0 Checks:
+- mes_db_0032_a.m - Simulink signal appearance, Part1: Diagonal signal lines
+- mes_db_0032_b.m - Simulink signal appearance, Part2: Overlapses
+- mes_db_0032_c.m - Simulink signal appearance, Part3: Crossings
+- mes_db_0032_d.m - Simulink signal appearance, Part4: Branches
+- mes_db_0042_a.m - Port blocks in Simulink models: Position of Inports/Outports
+- mes_db_0042_b.m - Port blocks in Simulink models: Duplicate Inports
+- mes_db_0129_a.m - Stateflow transition appearance: Overlapping
+- mes_db_0129_b.m - Stateflow transition appearance: Crossings
+- mes_db_0129_c.m - Stateflow transition appearance: Associated labels
+- mes_jc_0121_a.m - Use of the Sum Block: Shape
+- mes_jc_0121_b.m - Use of the Sum Block: Exception for Feedbackloops 
+
+Renamed MAAB Checks:
+- mes_db_0042.m: Splitted into part a and b
+- mes_db_0129.m: Splittet into part a,b and c
+- mes_jc_0121.m: Splittet into part a and b
+- mes_jm_0010_c.m: Implementation of Guideline jm_0010 has been reconsidered and is now only 
+	divided into part a and b. 
+
+Improved MAAB 3.0 Checks:
+The implementation and documentation of the following checks have been 
+reconsidered and improved:
+- mes_db_0043.m - Simulink font style and size
+- mes_db_0081.m - Unconnected Ports and Signals (Ground and Terminator Blocks)
+- mes_db_0122.m - Stateflow/Simulink interface signals and parameters
+- mes_db_0123.m - Stateflow port names
+- mes_db_0126.m - Scope of events
+- mes_db_0127.m - Matlab Commands in Stateflow
+- mes_db_0142.m - Position of block names
+- mes_db_0143.m - Similar block types on the model levels
+- mes_hd_0001.m - Prohibited Simulink sinks
+- mes_jc_0011.m - Optimization parameters for Boolean data types
+- mes_jc_0021.m - Model diagnostic settings
+- mes_jc_0061.m - Display of block names
+- mes_jc_0081.m - Icon display for Port block
+- mes_jc_0111.m - Direction of Subsystem
+- mes_jc_0131.m - Use of Relational Operator block
+- mes_jc_0141.m - Use of the switch block
+- mes_jc_0201.m - Usable characters for Subsystem name
+- mes_jc_0211.m - Usable characters for Inport block and Outport block
+- mes_jc_0221.m - Usable characters for Signal line names
+- mes_jc_0231.m - Usable characters for block names
+- mes_jc_0281.m - Naming of Trigger Port block and Enable Port block 
+- mes_jm_0001.m - Prohibited Simulink standard blocks inside controllers
+- mes_jm_0010_a.m - Port names and corresponding signal names: Simulink Ports
+- mes_jm_0010_b.m - Port names and corresponding signal names: Stateflow Chart Ports
+- mes_jm_0013.m - Annotations
+- mes_na_0004.m - Simulink model appearance
+- mes_na_0008.m - Display of labels on signals
+- mes_na_0011.m - Scope of Goto and From blocks
+
+New Parameters for MAAB 3.0 Checks:
+Each new parameter is documented in the corresponding check. The corresponding 
+check can be easily identified as its ID is part of the parameter name.
+
+- MAAB.db_0042_a.IgnoredBlocks
+- MAAB.db_0042_a.Tolerance
+- MAAB.db_0043.BlockFont.Angle
+- MAAB.db_0043.BlockFont.Name
+- MAAB.db_0043.BlockFont.Size
+- MAAB.db_0043.BlockFont.Weight
+- MAAB.db_0043.LineFont.Angle
+- MAAB.db_0043.LineFont.Name
+- MAAB.db_0043.LineFont.Size
+- MAAB.db_0043.LineFont.Weight
+- MAAB.db_0129_a.ConsideredSFObjects
+- MAAB.db_0129_a.MinDistanceBetweenTwoParallelLines
+- MAAB.db_0129_b.ConsideredSFObjects
+- MAAB.db_0129_c.MaxDistBetweenTransitionAndLabel
+- MAAB.db_0140.AttributeFormatString.Attribute
+- MAAB.db_0140.AttributeFormatString.BlockType
+- MAAB.db_0140.AttributeFormatString.TLAttribute
+- MAAB.db_0140.AttributeFormatString.TLBlockType
+- MAAB.db_0140.DisplayMethod
+- MAAB.db_0143.GlobalAllowedBloecke
+- MAAB.hd_0001.ProhibitedSink
+- MAAB.jc_0061.Blocks2Check
+- MAAB.jc_0141.Criteria
+- MAAB.jc_0141.U2DataType
+- MAAB.jm_0001.ProhibitedBlocksByMAAB
+- MAAB.jm_0001.ProhibitedBlocksByMatlab
+- MAAB.jm_0010_a.IgnoreSimulinkPorts
+- MAAB.na_0001.EnableCBitOperations
+- MAAB.na_0002.BlockAcceptLogicaNumericalSignal
+- MAAB.na_0002.BlockIssuingBooleanOutput
+- MAAB.na_0002.BlockRequiringBooleanInput
+- MAAB.na_0005.PortNameVisibility
+- MAAB.na_0009.nonTransformativeBlocks
+- MAAB.na_0018.MaxNumberOfIfAndSwitchLevels
+- MAAB.na_0028.MaxNumberOfSwitchLevels
+- MAAB.na_0038.NumberOfNestedStates
+- MAAB.na_0040.NumberOfStatesPerContainer
+
+Deleted Parameters of MAAB 3.0 Checks:
+In most cases parameters have been deleted because the corresponding check has
+been splittet into several parts or to rename the parameter in order to clarify 
+its assignment.
+
+- MAAB.BlocksRequiringNamedInputsignal.BlockType
+- MAAB.BlocksRequiringNamedOutputsignal.BlockType
+- MAAB.ProhibitedSLBlocks
+- MAAB.ProhibitedSink
+- MAAB.SwitchBlock.Criteria
+- MAAB.SwitchBlock.U2DataType
+- MAAB.db_0042.IgnoredBlocks
+- MAAB.db_0042.Tolerance
+- MAAB.db_0129.MaxDistBetweenTransitionAndLabel
+- MAAB.db_0129.MinDistanceBetweenTwoParallelLines
+- MAAB.jc_0061.ConsideredBlocks
+- MAAB.jm_0010_b.IgnoreSimulinkPorts
+- MAAB.na_0005.NameVisibility
+
+
+V1.7 build 0000.0 ©2007-2013   08-Apr-2013
+-------------------------------------------------------------------------------
+Changed Checks:
+- db_0129: error is returned if parameter is not found 
+- ds_0097: changed error message
+- ds_0105: show warning to every selector block it it uses external index option in SL model
+
+
+V1.6 build 0005.2 ©2007-2013   15-Jan-2013
+--------------------------------------------------------------------------------
+New Checks:
+- db_0143: Similar Block Types on the Model Levels
+- db_0126: Scope of Events
+- db_0127: Matlab Specific Commands in Stateflow
+- ds_0061: Order Numbers for Parallel States
+
+Changed Checks:
+- jm_0013: improved error messages
+- db_0129: 
+- jc_0232, jc_0231: changed parameters
+- jm_0010_b: changed parameter name
+
+Parameters:
+added parameter for checks jc_0232 and jc_0231
+changed parameter name for jm_0010_b

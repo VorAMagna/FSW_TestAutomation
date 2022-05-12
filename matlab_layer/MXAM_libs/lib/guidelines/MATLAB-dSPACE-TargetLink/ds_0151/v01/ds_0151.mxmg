@@ -1,0 +1,144 @@
+<guideline fileVersion="2">
+  <uid>64d14b59-0015-4df6-abe1-35624c361a41</uid>
+  <id>ds_0151</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Uninitialized Variables and the Switch Block</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>verification/validation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 14.16), dSPACE 3.0 (section 14.15)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> do not use the <em>MultiPort Switch</em> blockto comply with MISRA C rule 30 </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The <em>MultiPort Switch</em> block should not be used if compliance to MISRA rule 30 is desired. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Adherence to this rule serves to comply with MISRA rule 30, which requires that all variables must be assigned a value before they are used. Code generated for the Multiport Switch block violates this rule, because there is no place to specify a default branch in the Simulink Multiport Switch block and TargetLink therefore simply reflects the behavior of the Simulink block. Note: Proper modeling of the control input of the MultiPort Switch block ensures that its output is always defined properly. Simple MISRA checkers will nevertheless signal a violation of rule 30 though. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> For the example model in Figure ds_0151-1: and no <em>constraint limits</em> specified for the control signal (the first input) of the <em>Multiport Switch</em> block, TargetLink generates the following code: </p>
+<p> <img src="ds_0151_1.png" /> </p>
+<p class="imageCaption"> Figure ds_0151-1: <em>Multiport Switch</em> Block. </p>
+<p class="codeSample"> /* Multiport switch: Subsystem/Multiport Switch */switch (Sa1_InPort) { case 1: { Sa1_Multiport_Switch = Sa1_InPort1; break; } case 2: { Sa1_Multiport_Switch = Sa1_InPort2; break; } case 3: { Sa1_Multiport_Switch = Sa1_InPort3; break; } default: { /* Default case could be executed! In case, the output value of the block 'Multiport switch : Subsystem/Multiport Switch' will be undefined */ }}/* Outport: Subsystem/out. */Sa1_OutPort = Sa1_Multiport_Switch; </p>
+<p> Should the control signal have a value unequal 1, 2 or 3, then the variable <em>Sa1_Multiport_Switch</em> is not initialized before its first use in an assignment in the last line. </p>
+<p> Since the Multiport Switch block in Simulink provides no way to specify the behavior for a default case, it has to be ensured that the control signal is clipped to one of the permissible values using additional input logic on the modeling level, see rule 2.12.7. </p>
+<p> The generation of a default branch without content in the code can be suppressed by specifying constraint limits for the control signal, see Figure ds_0151-2: but the generated code still violates MISRA rule 30: </p>
+<p class="codeSample"> /* Multiport switch: Subsystem/Multiport Switch */switch (Sa1_InPort) { case 1: { Sa1_Multiport_Switch = Sa1_InPort1; break; } case 2: { Sa1_Multiport_Switch = Sa1_InPort2; break; } case 3: { Sa1_Multiport_Switch = Sa1_InPort3; break; }}/* Outport: Subsystem/out. */Sa1_OutPort = Sa1_Multiport_Switch; </p>
+<p> <img src="ds_0151_2.png" /> </p>
+<p class="imageCaption"> Figure ds_0151-2: A specified constraint range for the control signal indicates the set of real values to the code generator. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value>30</value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

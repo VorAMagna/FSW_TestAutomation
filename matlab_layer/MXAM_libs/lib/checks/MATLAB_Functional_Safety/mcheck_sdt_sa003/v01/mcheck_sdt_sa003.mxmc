@@ -1,0 +1,100 @@
+<check fileVersion="2">
+  <uid>941a55d6-9ba4-4564-a4bf-1459953f3b2d</uid>
+  <id>mcheck_sdt_sa003</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Control Input of Switch Blocks</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sa003.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes each Simulink and TargetLink Switch block of the model. </p> 
+<ul> 
+ <li> Failed: The control signal of the Switch block is not of a Boolean data type. </li> 
+ <li> Warning 1: A Simulink Switch block is found in a TargetLink model. </li> 
+ <li> Warning 2: The control signal of the Switch block originates either from a Simulink Constant block or from a TargetLink Constant block with variable class that is neither CAL nor MERGEABLE CAL. </li> 
+</ul> 
+<p> The check result is passed if all failed and all warning cases do not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> The check needs to set the model into compiled mode to access the data type of the control signal of a Switch block (Simulink/TargetLink). Therefore, the check only compiles the model on demand.<br /> </p> 
+<p> The check identifies a variable as of category CAL/MERGEABLE CAL not by the variable class name but through the variable class properties Info (&quot;readwrite&quot;) and Scope (&quot;global&quot;), which define the calibratable category.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Review the Switch blocks in the model.<br /> </p> 
+<ul> 
+ <li> Solution 1: Adjust the control input of the Switch block to be of a Boolean data type. </li> 
+ <li> Solution 2: Enhance the Switch block to a TargetLink Switch block. </li> 
+ <li> Solution 3: Consider setting the variable class of the control input constant to 'CAL'. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>SDT.sa003.AllowedBaseTypesForSwitchControlInputs</name>
+      <description><![CDATA[Cell array of base type strings which are allowed for control inputs of switch blocks. Note: 'Bool' is always allowed and needs not to be specified here.
+Example - {'Bool','Int16','UInt32'}]]></description>
+      <defaultValue><![CDATA[{'Bool','Boolean'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/26/2015 15:22:01">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

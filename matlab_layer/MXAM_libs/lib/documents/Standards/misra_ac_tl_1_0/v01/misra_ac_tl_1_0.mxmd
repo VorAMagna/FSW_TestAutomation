@@ -1,0 +1,251 @@
+<guidelineDocument fileVersion="2">
+  <uid>5ea60e3d-77fc-4492-82fc-159cb4549a6e</uid>
+  <id>misra_ac_tl_1_0</id>
+  <title>MISRA AC TL Modelling Style Guidelines for the Application of TargetLink in the Context of Automatic Code Generation</title>
+  <access>public</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>MIRA Limited, 2007</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="2577e3c9-406b-4b47-85ad-a2c8a2b7f2d9" title="Background">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> The automotive industry has adopted model-based design methods and automatic code generation to bridge the gap between function specification and software development. The main advantage of this approach is that the specification is in the form of an executable model. This allows easy and early testability of the implementation and direct conversion of the implementation into production code by the code generator. </p>
+<p> This document specifies modelling guidelines that are intended to be suitable for the development of embedded automotive software using TargetLink from dSPACE for modelbased design and automatic production code generation. TargetLink is fully integrated in the MATLAB&reg;/Simulink&reg; environment and generates production code from Simulink block dagrams and Stateflow&reg; state charts. </p>
+<p> The modelling tools offer a wide variety of options and the guidelines in this document, hereafter referred to as the MISRA TargetLink Guidelines, specify options and language constructs that should be applied or avoided to ensure correct &quot;as modelled&quot; behaviour in the generated code. </p>]]></value>
+      </description>
+      <chapter uid="8fad303a-8027-43c9-82fa-47cadee05971" title="Purpose">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>The rules contained in the TargetLink MISRA guide are intended to help both function developers and software developers in using TargetLink to develop sotware for safety-related systems. Since function developers often start their development in Simulink and at a later stage convert to TargetLink, the rules in this document apply equally to Simulink and TargetLink models.</p>
+<p>The document is not intended to be an introduction or training aid to model-based design and automatic code generation. It is assumed, that the readers of this document are familiar with TargetLink and have access to primary reference documents.</p>
+<p>The MISRA TargetLink Guidelines are relevant only to those fragments of a model that form the controller part and that shall be implemented in code using TargetLink. The rules do not apply to plant models or other model fragments that are not subject to code generation using TargetLink.</p>
+<p>Although the primary motivation behind the guide is safety, many of the MISRA TargetLink Guidelines are generic enough to prove useful on other TargetLink projects.</p>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="72ffb158-3be5-4087-8699-fc31788f7c39" title="Relationship with other documents">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>The overall structure of the MISRA AC family of documents is described in the introductory document, MISRA AC INT [1]. The purpose of the MISRA TargetLink Guidelines is to help the developer in designing models with regard to high integrity systems. They can therefore be regarded as a TargetLink analogue of the MISRA-C. 2004 Guidelines [2] for manually created C code. They also support the MISRA AC ACG Guidelines [2] which provide specific guidance on the application of MISRA C to automatically generated code.</p>
+<p>The MISRA TargetLink Guidelines should not be regarded as a substitute for the product documentation supplied with TargetLink. The MISRA TargetLink Guidelines do not cover all aspects that are relevant to modelling and code generation with TargetLink.</p>
+<p>The use of additional guides in combination with the MISRA TargetLink Guidelines is encouraged. Specifically, this includes the use of any MISRA guidelines pertaining to the use of Simulink/Stateflow as well as any more generic modelling guidelines such as the MAAB Guidelines [4].</p>]]></value>
+        </description>
+      </chapter>
+    </chapter>
+    <chapter uid="1cf0b1bd-cefc-4615-b5a0-48a5f4f77156" title="Using the guidelines">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <chapter uid="995bec5b-92d5-427c-9a0e-0ea7af320e49" title="Structure">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>The MISRA TargetLink Guidelines are implemented as a set of rules. Each rule consists of the following elements:</p>
+<ul>
+ <li> A number and a title as a unique and concise identifier of each individual rule. </li>
+ <li> A rule attribute describing the importance of adherence to the individual rule. The attribute is one of the following:
+  <ul>
+   <li> required </li>
+   <li> recommended </li>
+   <li> advisory </li>
+  </ul> </li>
+ <li> The actual rule text describing what the rule entails. </li>
+ <li> An objective as to what shall be achieved through the rule. </li>
+ <li> A rationale explaining how the rule meets the objective. </li>
+ <li> A note on verification, describing whether compliance with the rule can be statically checked or not. </li>
+ <li> an optional reference to further documents. </li>
+ <li> An optional example, demonstrating the content of the rule. </li>
+</ul>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="c31b6719-a696-4690-8715-bba4ddd7c55b" title="Compliance">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>For the successful application of the MISRA TargetLink Guidelines in safety-related projects, the same principles apply as for the MISRA C. Adherence to each individual rule is expected although it is accepted that curcumstances will arise where a deviation is necessary. Whenever it is found appropriate to deviate from a rule, the need for this deviation should be carefully argued, documented, reviewed and approved, taking the category attribute of the rule (required, recommended or advisory, see above) into account.</p>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="ae5466d2-e46c-44a3-9cb1-17921e15ec51" title="Version dependency">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p>The MISRA TargetLink Guidelines in this document are primarily designed for function development with</p>
+<ul>
+ <li> MATLAB releases R13 and higher </li>
+ <li> TargetLink releases 2.0 and higher </li>
+</ul>
+<p>However, the guidelines can also be useful, with suitable interpretation, for older MATLAB versions and older TargetLink versions, such as 1.3.</p>]]></value>
+        </description>
+      </chapter>
+    </chapter>
+    <chapter uid="69b10761-a37d-4806-bae0-bce0ed264605" title="Rules">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <chapter uid="e6e0995e-4418-4303-a03b-47109595f38e" title="General modelling">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="51fe1bac-856e-4f47-960e-a09c09e4ddce" modifier="standard" refUid="a52bf273-a76a-43ff-ba3f-5b6d4b5bd130" refId="misra_tl_1_1" refVersion="1" refTitle="Use of Block Priorities">
+          <check uid="e3d171af-51de-4f73-8a6b-78e2ad060d5e" selectedForRun="true" refUid="87a33c48-2c2c-4e38-a84b-04f52ab08b6c" refId="mcheck_misra_tl_1_1" refVersion="1" refTitle="Use of Block Priorities"/>
+        </guideline>
+        <guideline uid="35b8299e-b8c2-4de7-ae38-637b78425c18" modifier="standard" refUid="4d525cb2-00d7-4f5b-9328-e2d2f073ec80" refId="misra_tl_1_2" refVersion="1" refTitle="Comments in Block Properties">
+          <check uid="a2d58334-a522-4cf0-a16e-126f044d565c" selectedForRun="true" refUid="c68d453f-40a5-482d-9dfc-71c88265ba8f" refId="mcheck_misra_tl_1_2_a" refVersion="1" refTitle="Comments in block properties"/>
+          <check uid="8705e99d-ce4d-4a19-9b3d-b21c46adbe23" selectedForRun="true" refUid="6697732d-1e3b-4a62-ae87-16d56af7534d" refId="mcheck_misra_tl_1_2_b" refVersion="1" refTitle="Umlaute in Block Properties"/>
+        </guideline>
+        <guideline uid="1d6ceca1-7f93-42e5-a8a4-7b0012f82cfd" modifier="standard" refUid="22403757-984b-4133-a1c9-fce7a8a8284a" refId="misra_tl_1_3" refVersion="1" refTitle="Restricting the Scope of Variables"/>
+      </chapter>
+      <chapter uid="05b5587d-aaf7-4809-8aed-94f47ac1fd5f" title="Naming Convention">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="14e7f4e1-1489-47f8-add2-98281677271b" modifier="standard" refUid="4a4d4a69-6780-490b-ba47-31ba2b25c324" refId="misra_tl_2_1" refVersion="1" refTitle="Signal Naming for Code Generation"/>
+        <guideline uid="d4587a09-8dc8-4f2a-ac41-ef85a75059d5" modifier="standard" refUid="86bdef6b-ca1c-43ae-9c6e-39080f3f070d" refId="misra_tl_2_2" refVersion="1" refTitle="Avoiding Identical Identifier Names"/>
+        <guideline uid="f71b899d-06a2-403f-a05c-b5ca9d95b7e8" modifier="standard" refUid="8fff9257-8107-45c5-8ab8-4e2a364b0617" refId="misra_tl_2_3" refVersion="1" refTitle="Restricting Identifiers to 31 Characters">
+          <check uid="247618ff-78c9-4925-8970-1e189a6d5d05" selectedForRun="true" refUid="f180ab79-979a-47df-a1c9-eace18c5d87a" refId="mcheck_misra_tl_2_3" refVersion="1" refTitle="Restricting identifiers to 31 characters"/>
+        </guideline>
+        <guideline uid="2b55e20f-de00-45cb-b440-a0c6bb270094" modifier="standard" refUid="7258ce58-7811-45e9-b816-9d4583786794" refId="misra_tl_2_4" refVersion="1" refTitle="Reserved Subsystem and Function Names"/>
+      </chapter>
+      <chapter uid="640ef833-1664-4faf-a2ab-a4eab5be44a0" title="Model Data">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="24d87275-1310-4c6b-96e0-1ee718499533" modifier="standard" refUid="e67f4a61-e738-41ae-8176-2b09d13999a8" refId="misra_tl_3_1" refVersion="1" refTitle="Definition of Global Variables"/>
+        <guideline uid="5ada34e5-5004-48a7-a5e3-dda8b0e5d08e" modifier="standard" refUid="a03cf67e-ec70-46b5-96bc-e7f1f8359ee6" refId="misra_tl_3_2" refVersion="1" refTitle="Definition of calibration constants in Simulink and Stateflow">
+          <check uid="54e07a66-4e1f-4eb1-8910-19d4e92e586a" selectedForRun="true" refUid="4b2e9066-1b0a-4b3d-84fb-9e096a132301" refId="mcheck_misra_tl_3_2" refVersion="1" refTitle="Definition of calibration constants in Simulink and Stateflow"/>
+        </guideline>
+        <guideline uid="1c7fa579-d5c3-4e85-9cf6-977b07a6be6e" modifier="standard" refUid="92c0abf1-80f6-4c91-8b4a-c574ae9eb8ab" refId="misra_tl_3_3" refVersion="1" refTitle="Use of Calibration Constraints">
+          <check uid="cf8f619e-22ab-4371-afde-5b535588583b" selectedForRun="true" refUid="b32f5dcc-05d6-4020-bf81-314293e5fa7c" refId="mcheck_misra_tl_3_3" refVersion="1" refTitle="Use of calibration constants"/>
+        </guideline>
+      </chapter>
+      <chapter uid="7e61391f-99e8-4307-a375-9069141f134b" title="Model Data Types">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="f46b4188-06d7-4951-8ecd-f615130bf6b5" modifier="standard" refUid="7953da1f-9941-42bc-926e-5ee855ca1475" refId="misra_tl_4_1" refVersion="1" refTitle="General Use of Data Types"/>
+        <guideline uid="7589e710-9ae3-411e-ad05-f20d8b98818b" modifier="standard" refUid="bd98ae74-8eb6-43e4-a4e0-c236dda8951a" refId="misra_tl_4_2" refVersion="1" refTitle="Permitted Data Types at the Stateflow Chart Interface">
+          <check uid="6aa613b2-3c0c-4bc7-a0a3-9635d9db3719" selectedForRun="true" refUid="31b61a11-2373-4773-959c-b7d46384bbd1" refId="mcheck_misra_tl_4_2" refVersion="1" refTitle="Permitted data types at the Stateflow Chart Interface"/>
+        </guideline>
+        <guideline uid="bebe79b8-c856-4513-b075-45a8b3539d62" modifier="standard" refUid="1f7c5bf1-0594-4f5d-a864-ec7f72f2e037" refId="misra_tl_4_3" refVersion="1" refTitle="Avoidance of Overflows"/>
+        <guideline uid="463d3ea1-0296-4cc5-8c20-8dc534ff8ad3" modifier="standard" refUid="d39d3b52-c09b-414b-8df2-d946b2c6cd3c" refId="misra_tl_4_4" refVersion="1" refTitle="Avoidance of Saturation in Integer Arithmetics">
+          <check uid="40965864-4960-4dc5-8cd2-980119028d78" selectedForRun="true" refUid="97927f70-f12d-4182-8ea4-b94636180691" refId="mcheck_misra_tl_4_4" refVersion="1" refTitle="Avoidance of Saturation in Integer Arithmetics"/>
+        </guideline>
+        <guideline uid="16ed7496-a0e4-47b9-8920-2f96bb713a37" modifier="standard" refUid="00ae89b8-8797-4c2b-9702-687bfa1932c7" refId="misra_tl_4_5" refVersion="1" refTitle="Avoidance of Rounding Operations">
+          <check uid="491b8a61-adc6-4db0-b409-6abeac782116" selectedForRun="true" refUid="141241e2-0946-4163-8a97-0f269fc8c585" refId="mcheck_misra_tl_4_5" refVersion="1" refTitle="Avoidance of Rounding Operations"/>
+        </guideline>
+        <guideline uid="d54a96b3-f571-4791-8cb1-4fbaac30fa64" modifier="standard" refUid="aeb7363a-8d0e-4c6d-a167-3c259f94e23d" refId="misra_tl_4_6" refVersion="1" refTitle="Use of User-Defined Min and Max Values">
+          <check uid="627228d6-5921-4854-b01d-fe4a7733bf0a" selectedForRun="true" refUid="ac708250-7afd-4757-b0b9-34f34dc0e8cd" refId="mcheck_misra_tl_4_6" refVersion="1" refTitle="Use of user-defined min and max values"/>
+        </guideline>
+      </chapter>
+      <chapter uid="393e4d19-f966-4229-bc3c-c7019746540c" title="Block Specific">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="99886250-fdd0-4c8b-99bb-e7aa910e8cd7" modifier="standard" refUid="53037376-dd3d-43d8-b1a2-cfb6a57af1a4" refId="misra_tl_5_1" refVersion="1" refTitle="Attributes of Look-Up table outputs">
+          <check uid="d3792414-e99c-449a-a1a3-8f0e98d6ccf5" selectedForRun="true" refUid="6b6b88b3-18a2-45cc-b0c2-4ff0d8fc44d2" refId="mcheck_misra_tl_5_1" refVersion="1" refTitle="Attributes of Look-Up table outputs"/>
+        </guideline>
+        <guideline uid="02c9805d-1344-4abc-91da-0201d526f3c7" modifier="standard" refUid="8158bcd5-30dc-4757-9d3b-6a73cba726a3" refId="misra_tl_5_2" refVersion="1" refTitle="Use of the Switch Case Block">
+          <check uid="9285be55-946d-4624-b475-916f60cbd2f7" selectedForRun="true" refUid="b822f148-bdec-4b08-bfd9-2de5fb4c5f8f" refId="mcheck_misra_tl_5_2_a" refVersion="1" refTitle="Use of the Switch Case block: Show default case"/>
+          <check uid="c2f6c567-d90f-4c80-9709-f803b15d26ab" selectedForRun="true" refUid="a1e8d34d-4d3f-4eb1-ab50-a7d65de5234b" refId="mcheck_misra_tl_5_2_b" refVersion="1" refTitle="Use of the Switch Case block: avoid unconnected default outputs"/>
+        </guideline>
+        <guideline uid="8401efcf-a972-40a3-9f76-a6e891d577d1" modifier="standard" refUid="e495b765-1f1a-4a85-a809-32cce5e1c012" refId="misra_tl_5_3" refVersion="1" refTitle="Use of Data Store Blocks Across TargetLink Subsystems">
+          <check uid="472de450-a7ff-4a7b-8c5c-c7e2a6ede7ed" selectedForRun="true" refUid="bf10d503-8285-41e0-ba2a-e0863c3cb369" refId="mcheck_misra_tl_5_3" refVersion="1" refTitle="Use of Data Store blocks across TargetLink subsystems"/>
+        </guideline>
+        <guideline uid="db010349-fdce-417e-b93d-9da862b31d0e" modifier="standard" refUid="f1b410f0-7fe3-438b-b7c9-409c82906457" refId="misra_tl_5_4" refVersion="1" refTitle="Use of from and Goto Blocks Across TargetLink Subsystems">
+          <check uid="cfa71e94-f87b-4bfc-b3d4-062485d231a8" selectedForRun="true" refUid="8541c376-6f31-4458-8c48-79a424fd1ba5" refId="mcheck_misra_tl_5_4" refVersion="1" refTitle="Use of From and Goto blocks across TargetLink subsystems"/>
+        </guideline>
+        <guideline uid="e591cbb9-c21f-49f5-9221-848caa662c57" modifier="standard" refUid="f8ae78f8-4db1-4bbf-9e7d-bfd63e0baa4c" refId="misra_tl_5_5" refVersion="1" refTitle="Inports and Outports at the TargetLink Subsystem Interface">
+          <check uid="239e2b4b-d769-4342-ac32-b3335c46977f" selectedForRun="true" refUid="b1a47398-c9c4-4f38-8042-d0b4a04cdaf3" refId="mcheck_misra_tl_5_5" refVersion="1" refTitle="Inports and Outports at the TargetLink subsystem interface"/>
+        </guideline>
+        <guideline uid="36335206-3c19-40cc-b930-56b82e8576c5" modifier="standard" refUid="898bcc26-6629-4e36-a19d-d12cfa04460d" refId="misra_tl_5_6" refVersion="1" refTitle="Use of the Multiport Switch Block">
+          <check uid="eb6d3cd2-de57-4f45-9725-f30fd88390f1" selectedForRun="true" refUid="bbc6e209-3734-40ed-9c1e-959ffb0dca92" refId="mcheck_misra_tl_5_6" refVersion="1" refTitle="Use of the Multiport Switch block"/>
+        </guideline>
+        <guideline uid="172713db-54a6-4e01-9acd-d8e13390548e" modifier="standard" refUid="14badf65-57d6-46d3-b78a-e29b05b5ef4a" refId="misra_tl_5_7" refVersion="1" refTitle="Use of Data Types for Multiport Switch Block">
+          <check uid="2c320f69-f22e-4a92-b17d-4a6e8665db44" selectedForRun="true" refUid="db750cae-1927-40ee-aba1-f4c022151b07" refId="mcheck_misra_tl_5_7" refVersion="1" refTitle="Use of data types for Multiport Switch block"/>
+        </guideline>
+        <guideline uid="060985ba-acbb-4903-955b-ba748701a1c8" modifier="standard" refUid="544d605a-53a7-4eea-aa44-fbdc7fba2a13" refId="misra_tl_5_8" refVersion="1" refTitle="Use of the Switch Block">
+          <check uid="ee76462e-63e7-4d4c-b42a-a2522fdcab83" selectedForRun="true" refUid="a11936af-acf6-4504-bec2-f63bb2ca26c0" refId="mcheck_misra_tl_5_8" refVersion="1" refTitle="Use of the Switch block"/>
+        </guideline>
+        <guideline uid="54add917-c5c3-4b7d-8632-b5db6bc5bda1" modifier="standard" refUid="5d471c4f-6492-40ec-90c7-90c7710c1738" refId="misra_tl_5_9" refVersion="1" refTitle="Use of the Fcn Block for Assigning Boolean Variables">
+          <check uid="3a4a28a9-f621-495b-ae72-4ca48628879f" selectedForRun="true" refUid="62c57b75-024b-4f98-bf5b-2442aca0c912" refId="mcheck_misra_tl_5_9" refVersion="1" refTitle="Use of the Fcn Block for assigning Boolean variables"/>
+        </guideline>
+        <guideline uid="23d06031-0ed0-41b8-b7d2-5b5e7b944e79" modifier="standard" refUid="5e5f9c9e-27a3-4fff-8201-770a54ffba41" refId="misra_tl_5_10" refVersion="1" refTitle="Use of Custom Code Blocks">
+          <check uid="65b64874-8873-45b2-b2ac-79dd4f935604" selectedForRun="true" refUid="01d59b3a-a67a-4d09-b7c8-99287cae6be2" refId="mcheck_misra_tl_5_10" refVersion="1" refTitle="Use of Custom Code blocks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="f27b68d1-96c4-4f97-af2e-a9e047ce2176" title="Fixed-point Implementation">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="f8e89b1f-e0e7-4714-84e3-5cd1cfae764e" modifier="standard" refUid="911f6c02-8cda-4e15-beb6-b0701c36fcf8" refId="misra_tl_6_1" refVersion="1" refTitle="Power of Two Scaling">
+          <check uid="03fa4d63-33f3-44ad-8586-566202513e09" selectedForRun="true" refUid="5805a359-5db9-4753-97d1-26c15e3f2397" refId="mcheck_misra_tl_6_1" refVersion="1" refTitle="Power of two scaling"/>
+        </guideline>
+        <guideline uid="0da3c7bf-4e50-451c-b59c-dc3517becab8" modifier="standard" refUid="bd35046e-58c9-4d9d-804d-0729c1f9dcbd" refId="misra_tl_6_2" refVersion="1" refTitle="Zero Offsets">
+          <check uid="0f95b1c1-02bb-4513-bbb8-756fa0daaf46" selectedForRun="true" refUid="e95163c5-97a8-4f5c-a6d7-c1357ea13e33" refId="mcheck_misra_tl_6_2" refVersion="1" refTitle="Zero offsets"/>
+        </guideline>
+        <guideline uid="ce8927c9-1438-443f-9a39-8cd60ef82d0e" modifier="standard" refUid="473e2917-96bb-4f1f-9d27-2ff838c2ca56" refId="misra_tl_6_3" refVersion="1" refTitle="Use of the Math Block Sqrt Function for Fixed-point Code Generation">
+          <check uid="9b77f01f-5548-415c-a5f6-c6dfa0e38f34" selectedForRun="true" refUid="d909dba1-0163-40ca-88c0-b19aca3df47d" refId="mcheck_misra_tl_6_3" refVersion="1" refTitle="Use of the Math block sqrt function for fixed-point code generation"/>
+        </guideline>
+        <guideline uid="7a9e9282-9070-4ef9-a8e9-c88989507fe2" modifier="standard" refUid="24122f65-7a83-4fba-84e9-4534434b0151" refId="misra_tl_6_4" refVersion="1" refTitle="Use of the FIR Filter Block for Fixed-point Code Generation">
+          <check uid="338f148d-c165-4cd1-800d-2c50a45b592d" selectedForRun="true" refUid="5750dd02-a42a-4b25-9a56-e3b1117f9bb0" refId="mcheck_misra_tl_6_4" refVersion="1" refTitle="Use of the FIR Filter block for fixed-point code generation"/>
+        </guideline>
+        <guideline uid="71580f2a-bdd1-49f0-b113-ff43b652fe18" modifier="standard" refUid="ff748c8c-4d4a-40c7-bbd1-df0580681264" refId="misra_tl_6_5" refVersion="1" refTitle="Use of Trigonometric Functions for Fixed-point Code Generation">
+          <check uid="613780fe-d436-4366-987f-3a8e4cd5d73d" selectedForRun="true" refUid="5c53436b-34a2-428f-a47a-3c7d5f561b37" refId="mcheck_misra_tl_6_5" refVersion="1" refTitle="Use of Trigonometric functions for fixed-point code generation"/>
+        </guideline>
+        <guideline uid="c524019f-8e78-4065-b6c9-1b87358434d2" modifier="standard" refUid="566ac214-a991-4589-b9f8-8d5cadae9d57" refId="misra_tl_6_6" refVersion="1" refTitle="Use of Custom Lookup Table Functions">
+          <check uid="65e43b53-66a3-465a-8ca2-109b480f06e8" selectedForRun="true" refUid="69bf2bb3-fc92-4339-b95d-40f7e1600b28" refId="mcheck_misra_tl_6_6" refVersion="1" refTitle="Use of custom Lookup table functions (advisory)"/>
+        </guideline>
+        <guideline uid="36e17a0a-3e60-404e-8332-bcdc12a74531" modifier="standard" refUid="4a9546d6-c0be-450d-8613-459183b22780" refId="misra_tl_6_7" refVersion="1" refTitle="Avoiding rescaling of input signals to LookupTables">
+          <check uid="14ca7259-7d01-4ba3-a7bb-53e419a2f413" selectedForRun="true" refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refVersion="1" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)"/>
+        </guideline>
+      </chapter>
+      <chapter uid="505c40ca-2450-4765-b16e-fab576d77c16" title="Code Configuration">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="646f74f0-a227-4b32-9c9c-a83ff88b2101" modifier="standard" refUid="43306328-f7bf-450f-bce5-fa233aff5ff3" refId="misra_tl_7_1" refVersion="1" refTitle="Generating Generic Code Without Pragmas">
+          <check uid="4835e6d5-b0fe-458b-b6c4-2aa5e7322483" selectedForRun="true" refUid="7b96410b-6116-4a4b-b728-875ab3fc9cd4" refId="mcheck_misra_tl_7_1" refVersion="1" refTitle="Generating generic code without pragmas"/>
+        </guideline>
+        <guideline uid="944aa262-d91b-4e32-b1e0-0d2f68a964aa" modifier="standard" refUid="79656a5b-02a6-43ab-a008-ce9f253138e7" refId="misra_tl_7_2" refVersion="1" refTitle="Avoiding Target-specific Assembly Code">
+          <check uid="ba54e81c-9f74-4a36-902a-0736ad68f5e7" selectedForRun="true" refUid="fd353c9e-f8ca-4965-a99b-140cd8540cd8" refId="mcheck_misra_tl_7_2" refVersion="1" refTitle="Avoiding target-specific assembly code"/>
+        </guideline>
+        <guideline uid="892fd547-ccdc-4979-9f46-2a37e058d8e2" modifier="standard" refUid="b3fa0adb-e478-49d6-a2fe-cd682a813a26" refId="misra_tl_7_3" refVersion="1" refTitle="Avoiding 64-bit Arithmetic"/>
+        <guideline uid="4c4c12fa-daee-496b-be55-a35ae0b7bf47" modifier="standard" refUid="ab16a7d8-9b50-4a85-9d76-f8972b0a3957" refId="misra_tl_7_4" refVersion="1" refTitle="Avoiding Function Calls in Logical Expressions"/>
+        <guideline uid="f56d6763-c9d2-469b-99c6-f8fe2bf1caa5" modifier="standard" refUid="869d9881-2e35-4bc0-b862-58c96e7538c5" refId="misra_tl_7_5" refVersion="1" refTitle="Avoiding Local Macros">
+          <check uid="fd2f6b80-d0c0-491d-a528-e080c1d7974e" selectedForRun="true" refUid="a731839e-437f-4766-8edb-05827d5e4be0" refId="mcheck_misra_tl_7_5" refVersion="1" refTitle="Local macros should not be used"/>
+        </guideline>
+        <guideline uid="324d197e-57ed-4b68-b5f8-5299e21a4369" modifier="standard" refUid="79159c82-fa98-442f-b5c8-bfd4c5699ee5" refId="misra_tl_7_6" refVersion="1" refTitle="Correct Declaration of External Variables">
+          <check uid="e8c2226a-ca7b-40c2-bb15-46246664af7d" selectedForRun="true" refUid="483e4e2a-18e3-42ec-af65-fdd6cb117931" refId="mcheck_misra_tl_7_6" refVersion="1" refTitle="Correct declaration of external variables"/>
+        </guideline>
+        <guideline uid="35871327-55ce-44ca-a8fb-f5889686bdd6" modifier="standard" refUid="7b3074d6-b5e0-4e90-bf70-c793b33cdb9a" refId="misra_tl_7_7" refVersion="1" refTitle="Use of Include Statements in Custom Code ">
+          <check uid="c76b19e3-88e1-4310-a0bf-d6aaa1423945" selectedForRun="true" refUid="759dedc1-9733-404e-bae9-404abdf00e0e" refId="mcheck_misra_tl_7_7" refVersion="1" refTitle="Use of Include Statements in Custom Code Block"/>
+        </guideline>
+        <guideline uid="79169df3-07b7-445c-ab91-d5066a384df7" modifier="standard" refUid="edc9834e-7f17-47f4-a29f-ddc3d6418bc8" refId="misra_tl_7_8" refVersion="1" refTitle="Avoiding the Use of Volatile Variables in Logical Expressions"/>
+        <guideline uid="c8cc6edb-ffc5-4ac3-8aed-6dd9b36389ba" modifier="standard" refUid="5c5f0b7e-83c3-4a88-8120-52f06b27aad1" refId="misra_tl_7_9" refVersion="1" refTitle="Avoiding Shift Operations on Signed Types">
+          <check uid="46591a37-ea03-4f50-9995-097f6860cae3" selectedForRun="true" refUid="aee28a5f-244b-4890-a3b3-272f6c01d2eb" refId="mcheck_misra_tl_7_9" refVersion="1" refTitle="Avoiding shift operations on signed types"/>
+        </guideline>
+      </chapter>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/13/2014 11:14:12">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

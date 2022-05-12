@@ -1,0 +1,123 @@
+<check fileVersion="2">
+  <uid>891baae2-cd5d-4888-aee6-b81533c5f261</uid>
+  <id>mcheck_ds_0036_whiteList</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Permissible Blocks of the Ports and Subsystems Library</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ds_0036_whiteList.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each block in the model.
+<br /> 
+<ul> 
+ <li> Failed 1: The block belongs to the Simulink library defined in dSPACE.checkds0036_whiteList.BeingCheckedSLLib but is not defined in the check parameter dSPACE.checkds0036_whiteList.AllowedBlocks. </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Review the block according to the guideline.
+<br /> 
+<ul> 
+ <li> Solution 1: Use only blocks from the library dSPACE.checkds0036_whiteList.BeingCheckedSLLib that are listed in dSPACE.checkds0036_whiteList.AllowedBlocks. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>dSPACE.checkds0036_whiteList.BeingCheckedSLLib</name>
+      <description>Simulink library that is checked.</description>
+      <defaultValue><![CDATA[['simulink/Ports &' char(10) 'Subsystems']]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>dSPACE.checkds0036_whiteList.AllowedBlocks</name>
+      <description>Allowed blocks within this library.</description>
+      <defaultValue><![CDATA[{['simulink/Ports &' char(10) 'Subsystems/In1'],...
+['simulink/Ports &' char(10) 'Subsystems/Out1'],...
+['simulink/Ports &' char(10) 'Subsystems/Trigger'],...
+['simulink/Ports &' char(10) 'Subsystems/Enable'],...
+['simulink/Ports &' char(10) 'Subsystems/Function-Call' char(10) 'Generator'],...
+['simulink/Ports &' char(10) 'Subsystems/Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Atomic Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/CodeReuseSubsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Configurable' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Triggered' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Enabled' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Enabled and' char(10) 'Triggered Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Function-Call' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/For Iterator' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/While Iterator' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/If'],...
+['simulink/Ports &' char(10) 'Subsystems/If Action' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Switch Case'],...
+['simulink/Ports &' char(10) 'Subsystems/Switch Case Action' char(10) 'Subsystem'],...
+['simulink/Ports &' char(10) 'Subsystems/Model'],...
+['simulink/Ports &' char(10) 'Subsystems/Model Variants'],...
+['simulink/Ports &' char(10) 'Subsystems/Variant Subsystem'],...
+}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="09/05/2016 16:29:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Permissible Blocks of the Ports and Subsystems Library' (ID: mcheck_ds_0036, Version: v01, Library: MATLAB_dSPACE_TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,60 @@
+<check fileVersion="2">
+  <uid>cc96905e-0350-4429-8e21-58c7cd50586d</uid>
+  <id>report_additional_annotation</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>No additional annotation</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_additional_annotation.v01.implementation.ReportAdditionalAnnotation</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="true" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[The check analyzes two reports and creates findings if an additional annotation in the second report was detected.
+<br /> 
+<br /> Annotations in the second report that do not have matching annotations in the first report are considered additional in the second report.
+<br /> 
+<br /> Two annotations do&nbsp;
+<span style="font-weight: bold;">not</span> match in any of the following cases:
+<br /> 
+<ul> 
+ <li> They target different findings. </li> 
+ <li> They are created on different dates. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="true" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check passes if no additional annotation is found.
+<br /> 
+<br /> Failed: An annotation in the second report has no matching annotation in the first report.]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.AggregatedResults</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.SameCheckIdPairs</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="05/05/2017 15:50:48">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:38:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

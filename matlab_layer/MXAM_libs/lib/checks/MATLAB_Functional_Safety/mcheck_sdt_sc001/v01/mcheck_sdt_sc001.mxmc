@@ -1,0 +1,155 @@
+<check fileVersion="2">
+  <uid>4e26b66c-dd40-45aa-846a-2e46d5d9ce2d</uid>
+  <id>mcheck_sdt_sc001</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Strong Data Typing at the TargetLink Function Interface</title>
+  <adapter version="2.1">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sc001.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value><![CDATA[>2.0]]></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check inspects every TargetLink Inport and TargetLink Outport of each TargetLink function whose class is set to &quot;FCN_ARG&quot;, &quot;FCN_REF_ARG&quot; or &quot;FCN_RETURN&quot;. For each such port, the check analyses the data flow and determines the system or block from which the current port signal in its present shape originates. Here, type inheritance is considered as well, when determining the data type of the source. </p> 
+<p> The check issues a failed to each port if either its data type, its scaling (LSB and Offset) or value range differs from its source block. </p> 
+<p> The following criteria are sequentially checked for each port. If any one criterion does not hold, that port or its source block is declared as failed or a note is issued. After an erroneous criterion is detected, the remaining criteria are not analyzed on that port or its source block anymore. </p> 
+<ol> 
+ <li> (failed) the port is not connected to a source signal. </li> 
+ <li> (note) the source block does not support TargetLink data types. Use the check parameter SDT.IgnoreNonTLSources to deactivate this finding. </li> 
+ <li> (failed) matching output port of Stateflow source chart not found. </li> 
+ <li> (failed) there is no TargetLink data type set for the port or its source. </li> 
+ <li> (failed) the base type of the TargetLink data type of the port or its source is not defined. </li> 
+ <li> (failed) the base types of the port and its source are different. </li> 
+ <li> (failed) the Data Dictionary scaling definition of the port or its source is invalid. </li> 
+ <li> (failed) the LSB value of the port and its source are different. </li> 
+ <li> (failed) the offsets (biases) of the port and its source differ. </li> 
+ <li> (failed) the LSB types (power of two vs. arbitrary) of the port and its source are different. </li> 
+ <li> (failed) the user-defined value range constraints (&quot;minimum&quot; and/or &quot;maximum&quot;) of the port and its source are different. Set the check parameter SDT.IgnoreUndefinedRanges to true to ignore this criterion. </li> 
+ <li> (failed) the TargetLink function is configured as scaling invariant, but the scaling propagation function is not defined in the scaling propagation edit field. </li> 
+</ol> 
+<p> Note: TargetLink functions are subsystems which contain a TargetLink Function block. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<ol> 
+ <li> For each block, only the first deviation which has been found is reported. Re-run the check after having repaired the deviation to make sure that no further deviations are present. </li> 
+ <li> If the TargetLink function is declared to be scaling invariant, the check evaluates the given scaling propagation function. However, it does not assess its functionality.<br /> </li> 
+ <li> The check needs to set the model into compiled mode to access the data type of the TargetLink port and its source block(Simulink / TargetLink), if the data type is not available in the block property dialog. Therefore, the check only compiles the model on demand. </li> 
+</ol>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Adjust the diverging signal properties accordingly. Please note that adjusting the data type of any source or destination blocks may require further, secondary adjustments involving other blocks. In this case, re-run the check. Add known range limits to the &quot;min&quot; and &quot;max&quot; values of the TargetLink and Stateflow output variables, whenever possible. </p> 
+<p> Do not use the inheritance mechanism for the size and type of Stateflow data if you are working with TargetLink versions &lt; 2.2. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value><![CDATA[<h4> Example 1: Inconsistent Scaling </h4> 
+<p> In the following example, an inconsistent scaling offset is detected. The check issues a fail for the Inport, providing a hyperlink to the Inport and showing the deviating property (the Offset) and the name and path of the source block and the involved output signal.<br /> </p> 
+<p> <img src="Ex1InconsistentScaling.png" /> </p> 
+<p class="imageCaption"> Figure mcheck_sdt_sc001-1: The Offset value of the Inport TLInPort_Offset (Offset value is 5) and its source InPort2 (Offset value is 0) differ. Either change the Offset value of TLInport_Offset according to its source, or the Offset value of InPort2 according to TL_Inport_Offset. </p> 
+<h4> Example 2: Inconsistent or missing user-defined ranges </h4> 
+<p> sdt_sc001 compares the user-defined range of the TargetLink Inports/Outports and their sources at the TargetLink Function interface, if provided. If both the source and the TargetLink port do not have user-defined ranges, the check does not issue a failure. However, if one range is defined and the other one is missing or inconsistent, the check reports a rule violation. </p> 
+<p> The following example shows a rule violation due to missing range definition in TL_Inport: </p> 
+<p> <img src="Ex2_a.png" /> </p> 
+<p> Similarly, a rule violation is reported in the reverse case. If the source has no range defined but the TL-Inport defines a range. </p> 
+<p> <img src="Ex2_b.png" /> </p> 
+<p> Please note that Stateflow ranges are usually not specified. Undefined ranges do not lead to wrong code. However, they make it difficult to detect and control overflows that occur at the interface between Stateflow and TargetLink.<br /> To ignore missing user-defined ranges, set the check parameter SDT.IgnoreUndefinedVariableRanges to true. In this case, only range definitions that are explicitly defined are checked. </p> 
+<h4> Example 3: Missing TargetLink output definition in Stateflow variables </h4> 
+<p> In the following example, a Stateflow output variable is scaled using the built-in data type mode. However, TargetLink ignores this type definition and uses a default double output type. If this double output type differs from the data type of the TL Inport, the check reports a rule violation and states that the Stateflow data type definition is ignored. </p> 
+<p> <img src="Ex3.png" /> </p> 
+<p> Refer to the TargetLink documentation on how to define the TargetLink output data types of all Stateflow outputs used in the TargetLink model. </p>]]></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value>TargetLink 2.0 or higher must be installed. A TargetLink license is not needed for running the check, but hyperlinks to open a faulty TargetLink block require a valid TargetLink license.</value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="boolean">
+      <name>SDT.sc001.IgnoreNonTLSources</name>
+      <description>If set to true, Simulink source blocks that are allowed to be used with TargetLink are not listed in the report. If set to false, the use of these Simulink source blocks raises a note (see item 2 in the check description).</description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>SDT.sc001.IgnoreTLDefaultDataTypes</name>
+      <description><![CDATA[This parameter determines whether a TargetLink source block with a default class and/or
+unspecified data type/base type is ignored (parameter is set to true) or not ignored (parameter is set to false).
+
+This applies to TargetLink Constants and Merge blocks whose output class is set to
+"default". Here, the datatype is specified by TargetLink at run-time/build-time. 
+In MIL mode, the output data type of these blocks is set to int16. In SIL mode, 
+the data type is adjusted to match the succeeding block.]]></description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>SDT.sc001.IgnoreUndefinedRanges</name>
+      <description>If set to true, only those ranges are checked for consistency that are defined. 
+
+If set to false, the check considers a pair of ranges to be inconsistent, if at least one range is not defined.</description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>SDT.sc001.ValidBaseTypeCombinations</name>
+      <description><![CDATA[Use the following format to specify each allowed pair of base types.
+
+{<source base type 1>, <inport base type 1>;<source base type 2>, <inport base type 2>; ... }
+
+The specification of 
+
+{'Int16','UInt8'}
+
+states that if the data type of an Inport is defined with base type UInt8, the data type of its source block should be defined with base type Int16 or UInt8.]]></description>
+      <defaultValue><![CDATA[{'Int16','UInt8';...
+'Int32','UInt16'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/26/2015 15:25:05">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

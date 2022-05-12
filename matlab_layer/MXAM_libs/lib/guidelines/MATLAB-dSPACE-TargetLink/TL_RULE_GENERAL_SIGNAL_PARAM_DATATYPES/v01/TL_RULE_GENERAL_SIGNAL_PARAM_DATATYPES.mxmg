@@ -1,0 +1,148 @@
+<guideline fileVersion="2">
+  <uid>a1d73d62-33e5-4232-ae43-e3cd4989ae11</uid>
+  <id>TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of Simulink Types for Signals and Parameters</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>simulation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 4.0 (section 1.2.3)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Proper data types for conversion to TargetLink model.
+<br />]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> For the use of Simulink data types in Simulink/Stateflow, the following rules apply (please note that TargetLink data types for code generation are a completely different matter): </p> 
+<ul> 
+ <li> TargetLink does not support Arrays of Busses. </li> 
+ <li> For TargetLink versions prior to TargetLink 3.5, Enumerations in Simulink and Stateflow must not be used. Since TargetLink 3.5, Simulink/Stateflow Enumerations are supported. </li> 
+ <li> All Integer data types for Simulink and Stateflow must have a word length of 8, 16 or 32 Bit. Arbitrary word lengths other than the above are not supported. </li> 
+ <li> Boolean/Logical signals are fully supported </li> 
+ <li> Single/Double data types are fully supported </li> 
+ <li> Simulink fixed-point data types of the above Integer word lengths can be used in combination with TargetLink models but it is recommended to consider such implementation specifics during the coding phase using TargetLink fixed-point data types. This also simplifies a smooth floating-point to fixed-point conversion. </li> 
+</ul> 
+<p> Generally speaking the following guidelines for the selection of Simulink data types should be applied: </p> 
+<ul> 
+ <li> All signals which are continuous by nature should be modeled using the double data type on the block level (in some cases also the single data type). Information with regard to a later fixed-point implementation should be added during the code generation phase later on, not on the Simulink block level. </li> 
+ <li> Signals which are discrete by nature and used for only a certain amount of arithmetic can be modeled using integer data types like int8, int16 etc. with a range that is sufficient to make sure that the integer arithmetic is devoid of any overflows, integer saturations etc. Those are implementation-specific characteristics which should be handled during the target implementation phase. In general, Simulink integer data types should only be used for very special cases like e.g. a counter block. In all other cases where arithmetic is performed, double (or single) should be used. </li> 
+ <li> Signals which are discrete by nature and are not used for any arithmetic but which should have symbolic names rather than values can be modeled using Simulink/Stateflow enumeration types in combination with TargetLink 3.5 or newer. </li> 
+ <li> Logical signals can be modeled using the data type boolean. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<ul> 
+ <li> Proper data types during modeling and Model-in-the-Loop (MIL) reference simulation </li> 
+ <li> Well-structured models without any unexpected MIL simulation behavior<br /> </li> 
+</ul> 
+<p> With regard to the use of data types, it is important to distinguish between two different phases: </p> 
+<ul> 
+ <li> Simulation on the block diagram level in Simulink/Stateflow when the actual control algorithm is designed and tested using model-in-the-loop (MIL) simulation. </li> 
+ <li> The code level, where implementation-specific details like fixed-point scalings are added and taken into consideration. The software-in-the-loop (SIL) and/or processor-in-the-loop (PIL) simulation are then the proper place to test the specifics of the implementation of the algorithm. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-1 shows the use of enumeration types in a Simulink Constant block, which is only supported since TargetLink 3.5. </p> 
+<p> <img src="TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES_Ex1.png" /> </p> 
+<p class="imageCaption"> Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-1: The use of enumeration types in Simulink blocks and Stateflow charts is not supported for TargetLink versions prior to TargetLink 3.5. </p> 
+<p> Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-2 and Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-3 show an example of some of the strange effects that happen, when Simulink Integer data types are used but the ranges are not sufficient to always ensure that no saturation/overflows occur. For that purpose, integer ranges should always be sufficiently large so that such effects never happen. </p> 
+<p> <img style="width: 794px; height: 288px;" src="TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES_Ex2.png" /> </p> 
+<p class="imageCaption"> Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-2: Saturated addition using integer arithmetic: The output of the Sum block is specified as int8 and the saturate on integer overflow option is set. Note that not the assumed result 100 + 100 - 100 = 100, which perfectly fits into an int8 variable, is calculated, but 27. This is a consequence of the saturation of intermediate results in Simulink, which leads to a rather unexpected result. Such a modeling style must not be used. </p> 
+<p> <img style="width: 793px; height: 300px;" src="TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES_Ex3.png" /> </p> 
+<p class="imageCaption"> Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-3: Saturated addition with swapped input signals compared to Figure TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES-2. Now the expected result 100 is calculated because no saturation of intermediate results occurs. Hence, the addition is far from being commutative and such a modeling style must not be used. </p>]]></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/26/2016 10:47:41">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,95 @@
+<check fileVersion="2">
+  <uid>5067a8bb-1e79-4e05-8d81-06fff198dd36</uid>
+  <id>mcheck_misra_slsf_050_c</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Stateflow Window and Text Appearance - Colour and Style</title>
+  <adapter version="2.0">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_050_c.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes every Stateflow chart.<br /> Failed: If the style scheme (R2011b: edit-&gt;style-&gt;schemes, R2013b: file-&gt;Stateflow preferences-&gt;Style-&gt;schemes) is not set to 'factory'.<br /> The check result is passed if the failed case does not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> Note, that the style scheme 'factory' differs in the different MATLAB versions. In MATLAB version &gt;=2013b, the following properties are checked<br /> </p>
+<ul class="noindent">
+ <li> ChartColor<br /> </li>
+ <li> StateColor </li>
+ <li> StateLabelColor </li>
+ <li> TransitionColor </li>
+ <li> TransitionLabelColor </li>
+ <li> JunctionColor. </li>
+</ul>
+<p> For the versions &lt;=2011b the following properties are checked additionally:<br /> </p>
+<ul>
+ <li> ErrorColor </li>
+ <li> SelectionColor. </li>
+</ul>
+<p> In addition, the colors differ in every MATLAB Version from Version 2011b on. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Select the style scheme (R2011b: edit-&gt;style-&gt;schemes, R2013b: file-&gt;Stateflow preferences-&gt;Style-&gt;schemes) as 'factory' in the chart. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> The automatic repair option set the color style of the chart as given in the style scheme 'factory'. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="02/10/2015 12:07:51">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+  </history>
+</check>

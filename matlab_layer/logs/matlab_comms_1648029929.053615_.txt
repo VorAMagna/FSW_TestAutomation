@@ -1,0 +1,96 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=15656
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '04a4a3af-702a-40c5-94d2-f957a321cbc0'
+        resultLink: 'http://127.0.0.1:62095/result?jobUid=04a4a3af-702a-40c5-94d2-f957a321cbc0'
+
+Upgrading library 'CounterResetSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt16' from revision 402 to 403 ...
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_1' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_1' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_2' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_2' of reference property 'variable' could not be resolved.
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b50a3091-2ae3-4fec-b483-8e06d921bc0f'
+        resultLink: 'http://127.0.0.1:62095/result?jobUid=b50a3091-2ae3-4fec-b483-8e06d921bc0f'
+
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/kmh2rpmCalc_Front/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/speed_calculations/kmh2rpmCalc_Rear/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/WheelSpeeds
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/trqCluReq/TrqRamp_noDCUVariant/RampTrigger
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b50a3091-2ae3-4fec-b483-8e06d921bc0f'
+    export: 'true'
+      file: 'C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10_MXAM_Report.xml'
+

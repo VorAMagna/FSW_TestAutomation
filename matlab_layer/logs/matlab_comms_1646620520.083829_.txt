@@ -1,0 +1,632 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=9512
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e85cca84-c3e6-4d68-bee9-8449364d7edf'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=e85cca84-c3e6-4d68-bee9-8449364d7edf'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '053ed5c6-456a-40f3-807a-a7e3f4225aa4'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=053ed5c6-456a-40f3-807a-a7e3f4225aa4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '053ed5c6-456a-40f3-807a-a7e3f4225aa4'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\FreezeFrameN10\FreezeFrameN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '456bd73c-f4af-40be-8758-e22e767bf535'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=456bd73c-f4af-40be-8758-e22e767bf535'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '456bd73c-f4af-40be-8758-e22e767bf535'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\FreezeFrameN10\FreezeFrameN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\FreezeFrameN10\FreezeFrameN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN01\InputN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '97bdaaad-d900-4a64-ab09-1160823e15ff'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=97bdaaad-d900-4a64-ab09-1160823e15ff'
+
+Description in the Autodoc block is too short!
+InputN01/stGear/Autodoc1
+Description in the Autodoc block is too short!
+InputN01/tmpAmb/Autodoc1
+Description in the Autodoc block is too short!
+InputN01/tmpAmb_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputN01/uExtSens/Autodoc1
+Description in the Autodoc block is too short!
+InputN01/xDcplPosSens/Autodoc1
+Description in the Autodoc block is too short!
+InputN01/xDcplPosSens_QF/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '97bdaaad-d900-4a64-ab09-1160823e15ff'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN01\InputN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN01\InputN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN10\InputN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f49eb631-2e6b-4bb4-bc5a-9f2087075dab'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=f49eb631-2e6b-4bb4-bc5a-9f2087075dab'
+
+Description in the Autodoc block is too short!
+InputN10/iSol/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tECUOff/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tECUOff_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tmpAmb/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tmpAmb_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tmpInvCltInput/Autodoc1
+Description in the Autodoc block is too short!
+InputN10/tmpInvCltInput_QF/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f49eb631-2e6b-4bb4-bc5a-9f2087075dab'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN10\InputN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN10\InputN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\MainN10\MainN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'fa665702-bfa2-45e1-8824-cf79947dea6b'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=fa665702-bfa2-45e1-8824-cf79947dea6b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'fa665702-bfa2-45e1-8824-cf79947dea6b'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\MainN10\MainN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\MainN10\MainN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN01\NVMReadN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'be9068da-ce1a-4afc-9c0c-2bb8c211e436'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=be9068da-ce1a-4afc-9c0c-2bb8c211e436'
+
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Composition.dd
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'be9068da-ce1a-4afc-9c0c-2bb8c211e436'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN01\NVMReadN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN01\NVMReadN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN10\NVMReadN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '741c270e-c8c7-4a60-b416-3e5dbba5856a'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=741c270e-c8c7-4a60-b416-3e5dbba5856a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '741c270e-c8c7-4a60-b416-3e5dbba5856a'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN10\NVMReadN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN10\NVMReadN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN01\NVMWriteN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '02a402d1-ed96-4ad7-b889-d5895c57f366'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=02a402d1-ed96-4ad7-b889-d5895c57f366'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '02a402d1-ed96-4ad7-b889-d5895c57f366'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN01\NVMWriteN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN01\NVMWriteN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN10\NVMWriteN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f0934316-2b47-4371-84f4-a82de4e7c947'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=f0934316-2b47-4371-84f4-a82de4e7c947'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f0934316-2b47-4371-84f4-a82de4e7c947'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN10\NVMWriteN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN10\NVMWriteN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN01\PFMEndN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '406d836c-8cde-4250-b5fe-7737b96234af'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=406d836c-8cde-4250-b5fe-7737b96234af'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '406d836c-8cde-4250-b5fe-7737b96234af'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN01\PFMEndN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN01\PFMEndN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN10\PFMEndN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '429f55d6-9a69-4439-8bd9-8903ebf3d7b4'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=429f55d6-9a69-4439-8bd9-8903ebf3d7b4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '429f55d6-9a69-4439-8bd9-8903ebf3d7b4'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN10\PFMEndN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN10\PFMEndN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN01\PFMStartN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd8872607-1d7f-449d-8248-b64e3c8c23e9'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=d8872607-1d7f-449d-8248-b64e3c8c23e9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd8872607-1d7f-449d-8248-b64e3c8c23e9'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN01\PFMStartN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN01\PFMStartN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN10\PFMStartN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b4bfa7ad-b1c4-437b-81f5-b35495b3a3d4'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=b4bfa7ad-b1c4-437b-81f5-b35495b3a3d4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b4bfa7ad-b1c4-437b-81f5-b35495b3a3d4'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN10\PFMStartN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN10\PFMStartN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\ShiftOpN01\ShiftOpN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a0d00917-4b49-4f86-a209-0598c657fbd0'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=a0d00917-4b49-4f86-a209-0598c657fbd0'
+
+Autodoc Block must be added to the subsystem!
+ShiftOpN01/ACTUATOR_STUCK
+Autodoc Block must be added to the subsystem!
+ShiftOpN01/SOLENOID_CURRENT_ERROR
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a0d00917-4b49-4f86-a209-0598c657fbd0'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\ShiftOpN01\ShiftOpN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\ShiftOpN01\ShiftOpN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolCtrlN01\SolCtrlN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'de8551a8-c826-40d6-a534-6a48826d310c'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=de8551a8-c826-40d6-a534-6a48826d310c'
+
+Autodoc Block must be added to the subsystem!
+SolCtrlN01/uReqSolSourceSel/Solenoid_current_controller
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'de8551a8-c826-40d6-a534-6a48826d310c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolCtrlN01\SolCtrlN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolCtrlN01\SolCtrlN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolSimN01\SolSimN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5f2c5780-817c-40e1-b4eb-eebfc0ba90eb'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=5f2c5780-817c-40e1-b4eb-eebfc0ba90eb'
+
+Description in the Autodoc block is too short!
+SolSimN01/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5f2c5780-817c-40e1-b4eb-eebfc0ba90eb'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolSimN01\SolSimN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolSimN01\SolSimN01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\StressCalcN10\StressCalcN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '83492535-ae0f-4c42-9d33-1590562c7939'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=83492535-ae0f-4c42-9d33-1590562c7939'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '83492535-ae0f-4c42-9d33-1590562c7939'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\StressCalcN10\StressCalcN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\StressCalcN10\StressCalcN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SvcJobN10\SvcJobN10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd98dcf8a-3db8-4f38-9823-8ce0c0d28582'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=d98dcf8a-3db8-4f38-9823-8ce0c0d28582'
+
+Autodoc Block must be added to the subsystem!
+SvcJobN10/GearActEval
+Autodoc Block must be added to the subsystem!
+SvcJobN10/RDBID
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd98dcf8a-3db8-4f38-9823-8ce0c0d28582'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SvcJobN10\SvcJobN10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SvcJobN10\SvcJobN10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\TestBenchN01\TestBenchN01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '89a4fc9f-0058-4d21-95f3-309864b2bf0f'
+        resultLink: 'http://127.0.0.1:59496/result?jobUid=89a4fc9f-0058-4d21-95f3-309864b2bf0f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '89a4fc9f-0058-4d21-95f3-309864b2bf0f'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\TestBenchN01\TestBenchN01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\TestBenchN01\TestBenchN01.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\DcplPosSensN01\DcplPosSensN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\FreezeFrameN10\FreezeFrameN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN01\InputN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\InputN10\InputN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\MainN10\MainN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN01\NVMReadN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMReadN10\NVMReadN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN01\NVMWriteN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\NVMWriteN10\NVMWriteN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN01\PFMEndN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMEndN10\PFMEndN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN01\PFMStartN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\PFMStartN10\PFMStartN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\ShiftOpN01\ShiftOpN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolCtrlN01\SolCtrlN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SolSimN01\SolSimN01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\StressCalcN10\StressCalcN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\SvcJobN10\SvcJobN10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SN_Group\SN_Composition\SN_Modules\TestBenchN01\TestBenchN01.slx
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...

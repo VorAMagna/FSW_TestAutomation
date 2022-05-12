@@ -1,0 +1,290 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=15240
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5efc00d4-d1ed-4e74-9838-e2b5ce307fd8'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5efc00d4-d1ed-4e74-9838-e2b5ce307fd8'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e9a2bb69-a307-4b87-bcec-dcad38789184'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e9a2bb69-a307-4b87-bcec-dcad38789184'
+
+The model 'BrakeDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e9a2bb69-a307-4b87-bcec-dcad38789184'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\ExtTrqCtrlS10\ExtTrqCtrlS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9c5a6b2c-ae42-47d4-9be7-c3acace3373a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=9c5a6b2c-ae42-47d4-9be7-c3acace3373a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9c5a6b2c-ae42-47d4-9be7-c3acace3373a'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\ExtTrqCtrlS10\ExtTrqCtrlS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\ExtTrqCtrlS10\ExtTrqCtrlS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'df5fff13-5f05-4a02-9f09-846d36b5f359'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=df5fff13-5f05-4a02-9f09-846d36b5f359'
+
+The model 'GearDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'df5fff13-5f05-4a02-9f09-846d36b5f359'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'eb48b87c-2959-4fb1-87fe-d64a1fc2ea87'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=eb48b87c-2959-4fb1-87fe-d64a1fc2ea87'
+
+The model 'MisuseDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'eb48b87c-2959-4fb1-87fe-d64a1fc2ea87'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Passed with Infos 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS05\PFMEndS05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '831bc73b-1cb2-418d-8143-7e39f6bb94ed'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=831bc73b-1cb2-418d-8143-7e39f6bb94ed'
+
+The model 'PFMEndS05' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '831bc73b-1cb2-418d-8143-7e39f6bb94ed'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS05\PFMEndS05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS05\PFMEndS05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS05\PFMStartS05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b8b583b4-2cc1-45e7-923e-256120db4c97'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b8b583b4-2cc1-45e7-923e-256120db4c97'
+
+The model 'PFMStartS05' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b8b583b4-2cc1-45e7-923e-256120db4c97'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS05\PFMStartS05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS05\PFMStartS05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV05\SigCondV05.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '83fee6d1-5463-4207-8a15-eb6057abfcb6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=83fee6d1-5463-4207-8a15-eb6057abfcb6'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '83fee6d1-5463-4207-8a15-eb6057abfcb6'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV05\SigCondV05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV05\SigCondV05.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7c0cb26c-c4ad-4c79-8b5f-a01c078a1e4b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7c0cb26c-c4ad-4c79-8b5f-a01c078a1e4b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '7c0cb26c-c4ad-4c79-8b5f-a01c078a1e4b'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\ExtTrqCtrlS10\ExtTrqCtrlS10.mdl
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl
+Overall result is 'Passed with Infos' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS05\PFMEndS05.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS05\PFMStartS05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV05\SigCondV05.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...

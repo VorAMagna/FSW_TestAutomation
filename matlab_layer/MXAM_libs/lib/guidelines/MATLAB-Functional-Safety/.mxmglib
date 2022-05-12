@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MATLAB-Functional-Safety" title="MES Functional Safety - MATLAB® Guidelines" uid="5c42bd7d-a4de-46fb-94ab-fd9cd22ef22c">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

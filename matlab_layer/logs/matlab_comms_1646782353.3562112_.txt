@@ -1,0 +1,454 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=4092
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "DiagV10" ...
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "DTWindupLDRV10" ...
+[Warning: The character encoding UTF-8 used by model 'DTWindupLDRV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "DTWindupV10" ...
+[Warning: The character encoding UTF-8 used by model 'DTWindupV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FricEstV10" ...
+[Warning: The character encoding UTF-8 used by model 'FricEstV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "ITCWhlTolChkV10" ...
+[Warning: The character encoding UTF-8 used by model 'ITCWhlTolChkV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "KinemCalcV10" ...
+[Warning: The character encoding UTF-8 used by model 'KinemCalcV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "LongSpdCalcV10" ...
+[Warning: The character encoding UTF-8 used by model 'LongSpdCalcV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MassVehEstV10" ...
+[Warning: The character encoding UTF-8 used by model 'MassVehEstV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MueSplitDetV10" ...
+[Warning: The character encoding UTF-8 used by model 'MueSplitDetV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMReadV10" ...
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMWriteV10" ...
+[Warning: The character encoding UTF-8 used by model 'NVMWriteV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "OffroadCalcV10" ...
+[Warning: The character encoding UTF-8 used by model 'OffroadCalcV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMEndBVCV10" ...
+[Warning: The character encoding UTF-8 used by model 'PFMEndBVCV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PFMStartBVCV10" ...
+[Warning: The character encoding UTF-8 used by model 'PFMStartBVCV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "RotSpdCalcV10" ...
+[Warning: The character encoding UTF-8 used by model 'RotSpdCalcV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TmpPTUV10" ...
+[Warning: The character encoding UTF-8 used by model 'TmpPTUV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TrqCardV10" ...
+[Warning: The character encoding UTF-8 used by model 'TrqCardV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "VelCalcV10" ...
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "WhlTolChkLDRV10" ...
+[Warning: The character encoding UTF-8 used by model 'WhlTolChkLDRV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "WhlTolChkV10" ...
+[Warning: The character encoding UTF-8 used by model 'WhlTolChkV10' differs from the MATLAB session character encoding US-ASCII. To check for problems which might
+corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+Using DD project file:   C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\BC\BC_Composition\BC_Composition.dd
+Step 2 of 2: Writing result files ...
+done

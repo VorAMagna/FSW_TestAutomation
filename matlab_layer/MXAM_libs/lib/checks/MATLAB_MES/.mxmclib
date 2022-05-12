@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_MES" title="MES - MATLAB® Checks" uid="c3ce0ee5-26a1-45d2-a978-163ee117c8a0">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

@@ -1,0 +1,640 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+Could not register DSMLConServer for MultipleUse in a second MATLAB instance.
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 failed
+========================================================================================
+
+PID=744
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "AdpTrqDrgC10" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "AFOC02" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "AngTubeC10" ...
+[Warning: The character encoding UTF-8 used by model 'AngTubeC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "BallPosRstC10" ...
+[Warning: The character encoding UTF-8 used by model 'BallPosRstC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "BckUpFcnC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CalC02" ...
+[Warning: The character encoding UTF-8 used by model 'CalC02' differs from the MATLAB session character encoding windows-1252. To check
+for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CDCluOpC02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CDInputC02" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CharCalcC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CharCorrC10" ...
+[Warning: The character encoding UTF-8 used by model 'CharCorrC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CluOpC02" ...
+[Warning: The character encoding UTF-8 used by model 'CluOpC02' differs from the MATLAB session character encoding windows-1252. To check
+for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "CtrlSwC02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "DTWindupC10" ...
+[Warning: The character encoding UTF-8 used by model 'DTWindupC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FltyAssmblyC10" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FreezeFrameC02" ...
+[Warning: The character encoding UTF-8 used by model 'FreezeFrameC02' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "Encoder_8Bit" which is referenced by at least one block! Maybe library/model is not on MATLAB
+search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FreezeFrameC10" ...
+[Warning: The character encoding UTF-8 used by model 'FreezeFrameC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "FullLockHistoC10" ...
+[Warning: The character encoding UTF-8 used by model 'FullLockHistoC10' differs from the MATLAB session character encoding windows-1252.
+To check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "GuardCluC10" ...
+[Warning: The character encoding UTF-8 used by model 'GuardCluC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "HistogramC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InitPosC02" ...
+[Warning: The character encoding UTF-8 used by model 'InitPosC02' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InputC02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "InputC10" ...
+[Warning: The character encoding UTF-8 used by model 'InputC10' differs from the MATLAB session character encoding windows-1252. To check
+for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: Failed to open library/model "CounterResetSave_UInt8" which is referenced by at least one block! Maybe library/model is not on
+MATLAB search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "ITCInputC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MainC10" ...
+[Warning: The character encoding UTF-8 used by model 'MainC10' differs from the MATLAB session character encoding windows-1252. To check
+for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "MisuseDetC10" ...
+[Warning: The character encoding UTF-8 used by model 'MisuseDetC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMReadC10" ...
+[Warning: The character encoding UTF-8 used by model 'NVMReadC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+[Warning: Failed to open library/model "SWC_CC_ClutchCtrlC02" which is referenced by at least one block! Maybe library/model is not on
+MATLAB search path. Content of all referenced library blocks or referenced model ignored in analysis!] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMWriteC02" ...
+[Warning: The character encoding UTF-8 used by model 'NVMWriteC02' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "NVMWriteC10" ...
+[Warning: The character encoding UTF-8 used by model 'NVMWriteC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "PosCtrlC02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "RngChngC02" ...
+[Warning: Error evaluating <sldiag objui="callback" objparam="LoadFcn"></sldiag> callback of TL_Function block (mask)
+'RngChngC02/RngChngC02'.
+Callback string is 'if exist('tl_loadfcn','file')==2,tl_loadfcn(gcbh);end'] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+[Warning: TL_Function block (mask) does not have a parameter named 'displayString'] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "RunInCompC10" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SetPosC02" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SpdCtrlC02" ...
+[Warning: The character encoding UTF-8 used by model 'SpdCtrlC02' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "StQualC10" ...
+[Warning: The character encoding UTF-8 used by model 'StQualC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "StressCalcC10" ...
+[Warning: The character encoding UTF-8 used by model 'StressCalcC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SvcJobC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SynchHistogramC10" ...
+Using DD project file:   C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC\CC_Composition\CC_Composition.dd
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TimeCalcC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "TrqModC10" ...
+Step 2 of 2: Writing result files ...
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "WearCalcC10" ...
+[Warning: The character encoding UTF-8 used by model 'WearCalcC10' differs from the MATLAB session character encoding windows-1252. To
+check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport
+  In mxray_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 13)
+  In startup (line 12)] 
+Step 2 of 2: Writing result files ...
+done

@@ -1,0 +1,147 @@
+<guideline fileVersion="2">
+  <uid>e8b633d6-126b-45f1-8de2-7d0ca96bd417</uid>
+  <id>tl_pr20060404_06</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Unintentional optimization of relational or logical operations between code variable and constant value</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value></value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.0.1, 3.1, 3.2, 3.3, 3.4, 3.5, 4.0, 4.1, 4.2, 4.3</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Unintentional optimization of relational or logical operations between code variable and constant value </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[For the generated code the TargetLink code generator simplifies a relational or logical operation between a generated C code variable and a constant value (which maybe a TargetLink so-called default constant or a pure Simulink/Stateflow block parameter value), if&nbsp; - the variable and constant value are combined for a Relation, Logic, Switch or If block code pattern or a Stateflow expression AND
+<br /> - the variable's variable class does not specify a macro (i.e. &quot;Macro&quot; property is set to &quot;off&quot;) AND only for relations:
+<br /> - the variable's user-specified Min/Max constraint limits do not contain the constant value OR - the variable class specifies the variable to be const via the &quot;Const&quot; property set to &quot;on&quot; AND
+<br /> - the &quot;Info&quot; property of this variable class is not set to &quot;adjustable&quot;, &quot;readwrite&quot; or &quot;offline_readwrite&quot;.
+<br /> only for logic:
+<br /> - the constant value at the second input port already defines the result, i.e. the variable's value does not influence the result.
+<br /> 
+<br /> In this case the relational or logical operation is simplified and possibly further depending code is erased from the production code (according to the operation and the values involved) even if the variable class has the &quot;Optimization&quot; property not set to &quot;ERASABLE&quot; or specifies the variable to be volatile by the &quot;Volatile&quot; property set to &quot;on&quot; (note that for TargetLink the C qualifier &quot;volatile&quot; does not influence optimization of code generation directly; to specify that the value of a variable is changeable and this needs to be considered for optimizing the production code during code generation, TargetLink provides the &quot;Info&quot; and &quot;Optimization&quot; properties at VariableClass objects).
+<br /> 
+<br /> Usually this optimization is wished. But in rare cases (if reading the variable leads to a desired side-effect), this may not be what the user intended. Then the model/settings can be changed as stated in the workaround to obtain the generated code including the operation and its depended code.
+<br /> 
+<br /> For example the simplification appears in a model situation where a Constant block drives the input of an If block and the variable class is set to &quot;CONST&quot; from the pre-defined DD file templates. In this case one or more of the If-Action subsystems are erased from the generated code, depending on the condition. Another modeling case is if one input of the Logical Operator block is a default constant 0 or 1 and thus the result is always true or false.
+<br /> 
+<br /> Workaround:
+<br /> 1) Do not specify or correct the Min/Max constraint limits for the variable.
+<br /> Or 2) Set the &quot;Info&quot; property of the associated variable class to &quot;adjustable&quot; (does not appear in the generated A2L file) or &quot;readwrite&quot; (appears in the generated A2L file for calibration).
+<br /> Or 3) unset the &quot;Const&quot; property in the associated variable class.
+<br /> Or 4) specify a variable instead of a constant value (e.g. change the variable class of the Switch block Threshold, or for the If block add another input).
+<br /> 
+<br /> Note that for logical operations only workaround 4 is possible.
+<br />]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[To generate correct code in TargetLink.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="3b47be5e-83a0-4fbe-97a4-885a01502243" refId="mcheck_tl_pr20060404_06" refTitle="Unintentional optimization of relational or logical operations between code variable and constant value" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

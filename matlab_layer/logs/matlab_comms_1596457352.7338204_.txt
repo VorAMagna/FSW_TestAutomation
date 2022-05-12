@@ -1,0 +1,43 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.4p0 				05-Apr-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1         12-Oct-2015 okay
+DSDD             Data Dictionary                            4.1         12-Oct-2015 okay
+========================================================================================
+
+PID=202464
+M-XRAY analysis and report creation ...
+Step 1 of 2: Analyzing system "SlipCtrlHo2RV10" ...
+[Warning: The character encoding UTF-8 used by model 'SlipCtrlHo2RV10' differs from the MATLAB session character encoding windows-1252.
+To check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the Model Advisor.] 
+[> In load_system (line 21)
+  In mxray_OpenSystemSecure
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLib
+  In mxray_mainPartOfSystemsAnalysis>loc_openModelOrLibraryOfRoot
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeNewRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_analyzeRootFollowingLinks
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystem
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStructForStartRootSystems
+  In mxray_mainPartOfSystemsAnalysis>loc_fillAnalysisResultsStruct
+  In mxray_mainPartOfSystemsAnalysis>loc_mainPartOfSystemsAnalysis
+  In mxray_mainPartOfSystemsAnalysis
+  In mxray_analyzeSystemsAndCreateReport>loc_analyzeSystems
+  In mxray_analyzeSystemsAndCreateReport
+  In mxray_createReport>loc_createReportWithLicenseCheckoutAndCheckin
+  In mxray_createReport>loc_createReport
+  In mxray_createReport
+  In ExecuteBatch_MXRAY (line 15)] 
+Using DD project file:   C:\Sandbox\Product_Group\SW\Development\VCb\VC_Composition\VC_Composition.dd
+Step 2 of 2: Writing result files ...
+done

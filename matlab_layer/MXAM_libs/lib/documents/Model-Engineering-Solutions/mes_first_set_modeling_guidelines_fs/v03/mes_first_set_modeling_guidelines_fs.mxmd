@@ -1,0 +1,658 @@
+<guidelineDocument fileVersion="2">
+  <uid>63bbdfc6-2631-421f-8acd-d6f4afc5d40a</uid>
+  <id>mes_first_set_modeling_guidelines_fs</id>
+  <title>MXAM Starter Set - Extended Version</title>
+  <access>public</access>
+  <version>3</version>
+  <status>released</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="326f7354-ed1b-4256-b241-0d416f89ff74" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> Adherence to modeling guidelines is best practice for improving the quality of your models. However with over 500 guidelines published by well-known consortia such as MISRA and MAAB, plus a huge number of tool vendor-specific guidelines, selecting the right guidelines can be a challenging task. </p>
+<p> The MXAM Starter Set provides you with a preselected set of best practice guidelines that are already in use in many serial projects. The MXAM Starter Set is designed to be a selection of guidelines that will help you get used to working with MXAM and performing compliance checking more effectively. Please be aware that additional guideline sets and company and project-specific adaptations will be necessary for compliance with safety and development standards. </p>
+<p> The MXAM Starter Set - Extended Version is a selection of guidelines from the following documents: </p>
+<ul>
+ <li> MISRA AC SLSF - Modelling Design and Style Guidelines for the Application of Simulink&reg; and Stateflow&reg; </li>
+ <li> MISRA AC TL Modelling Style Guidelines for the Application of TargetLink&reg; in the Context of Automatic Code Generation </li>
+ <li> MAAB - Control Algorithm Modeling Guidelines Using MATLAB&reg;, Simulink&reg;, and Stateflow&reg; Version 3.0 </li>
+ <li> dSPACE - Modeling Guidelines for MATLAB&reg;/Simulink&reg;/Stateflow&reg; and TargetLink&reg; </li>
+ <li> MES Functional Safety Modeling Guidelines </li>
+ <li> MES Layout Modeling Guidelines. </li>
+</ul>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="3cb20834-af18-44f5-abcb-7cecdd6bc8f3" title="Layout and Design">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<br />]]></value>
+      </description>
+      <chapter uid="3e9f8d14-d258-4dd6-b0f1-d9dffe640771" title="Naming Conventions">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="fd529c27-5813-48f4-9d21-909855d4eb6c" modifier="standard" refUid="7e39fbec-dbe5-4109-85b9-e94c78a2480f" refId="ar_0001" refVersion="1" refTitle="Filenames">
+          <check uid="8eafa375-0735-4e8c-a56e-27f688836ecf" selectedForRun="false" refUid="95144401-aacf-4ef6-ad90-8b6e88592bc3" refId="mcheck_ar_0001" refVersion="1" refTitle="Filenames"/>
+        </guideline>
+        <guideline uid="7cf7e87a-a5c5-4e97-abad-6dc97060a630" modifier="standard" refUid="babbb049-6819-48e7-9eac-56d32b012bac" refId="ar_0002" refVersion="1" refTitle="Directory Names">
+          <check uid="a57f5556-97d3-407f-88e9-c9c9fa34f97a" selectedForRun="false" refUid="ece938f0-e91d-46c6-97e1-53dcd4bb0912" refId="mcheck_ar_0002" refVersion="1" refTitle="Directory Names"/>
+        </guideline>
+        <guideline uid="86345856-9170-4e00-8bb0-1bdcaf8d674e" modifier="standard" refUid="4eaf9c89-3269-4f82-bb91-c991f358e6b1" refId="jc_0201" refVersion="1" refTitle="Usable Characters for Subsystem Names">
+          <check uid="14f8e8b3-f084-40ae-892f-f2c5d4dbfb31" selectedForRun="false" refUid="cc248994-c58c-4253-8852-021696c9dee1" refId="mcheck_jc_0201" refVersion="1" refTitle="Usable Characters for Subsystem Names"/>
+        </guideline>
+        <guideline uid="47490318-8cd9-45b6-81ba-7b495d8e35d9" modifier="standard" refUid="3e9bb6fb-3864-4414-aaad-69bf4299ce86" refId="jc_0221" refVersion="1" refTitle="Usable Characters for Signal Line Names">
+          <check uid="4da88a61-0ffb-4a85-a835-3ff5b061b34b" selectedForRun="false" refUid="22b6e970-a973-4824-936b-03539f528bf4" refId="mcheck_jc_0221" refVersion="1" refTitle="Usable Characters for Signal Line Names"/>
+        </guideline>
+      </chapter>
+      <chapter uid="da850029-cf2f-4976-893e-f5e93be1d983" title="Modeling of Data Flow">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="574687ef-50f9-4065-bf6c-03b3a1a2967f" modifier="standard" refUid="4aa4362c-0c01-4ca1-85cb-02a7ddd7e8c7" refId="misra_slsf_018_a" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Visibility">
+          <check uid="137a99cc-704f-4a9b-90cc-3d24167411f7" selectedForRun="true" refUid="a985bbef-4595-4ab3-a170-47237f3dda8d" refId="mcheck_misra_slsf_018_a" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Visibility"/>
+        </guideline>
+        <guideline uid="8e0fd490-aaeb-4d84-8738-0509ccd96e48" modifier="standard" refUid="0c09ece4-b3d9-497b-9a2f-87d0127c55cf" refId="misra_slsf_018_b" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Tag">
+          <check uid="1850087d-a3c2-40ca-84c2-99ce37317588" selectedForRun="true" refUid="5cf5fe6e-d08d-4353-8e32-24212980fa5b" refId="mcheck_misra_slsf_018_b_1" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Tag (Goto)"/>
+          <check uid="cd38abba-d7f2-43c4-bcf5-e92d1714c63b" selectedForRun="true" refUid="fd0a7069-46fe-4269-92d4-1a3cbcfa55bf" refId="mcheck_misra_slsf_018_b_2" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Tag (From)"/>
+        </guideline>
+        <guideline uid="84617292-4908-43c7-b7a4-8c660b55ae87" modifier="standard" refUid="19e59e4a-4668-460b-ae2d-c394ab98a33d" refId="misra_slsf_005_c" refVersion="1" refTitle="Allowable Simulink Blocks - Data Store Memory">
+          <check uid="bdb0ba53-48c9-45ac-b163-fc4e9b52e23f" selectedForRun="true" refUid="710f708e-5249-46f3-b5b2-c5efa4aa9002" refId="mcheck_misra_slsf_005_c" refVersion="1" refTitle="Allowable Simulink Blocks - Data Store Memory"/>
+        </guideline>
+        <guideline uid="53ebd4ba-ef3b-4d42-bad0-d65b1bb78ea8" modifier="standard" refUid="3d4416b9-aca0-41bd-bb42-c6e1e79a46f1" refId="db_0042" refVersion="1" refTitle="Port Block in Simulink Models">
+          <check uid="22d3ab0e-154b-4bf1-9bd8-30e18368f726" selectedForRun="true" refUid="2e705794-8dd8-40e6-a05c-c9a4fc3324eb" refId="mcheck_db_0042_a" refVersion="1" refTitle="Port Block in Simulink Models - Position of Inports/Outports"/>
+          <check uid="fabc3d8c-1644-425a-9f25-23f59a915bca" selectedForRun="true" refUid="b06bf6bb-118a-4587-a939-3935c88c1bb0" refId="mcheck_db_0042_b" refVersion="1" refTitle="Port Blocks in Simulink Models - Duplicate Inports"/>
+        </guideline>
+        <guideline uid="5bb41bc2-7ccb-4f48-876c-57d067e27a54" modifier="standard" refUid="2a972ef0-3dd3-43df-8e51-16351e0bc10d" refId="misra_slsf_029_a" refVersion="1" refTitle="Signal and Bus Line Positioning - Orientation">
+          <check uid="1a59a306-2c40-4d15-8418-51eca08a2150" selectedForRun="true" refUid="da9b4e7a-901f-44cb-94ec-09dfec73033a" refId="mcheck_misra_slsf_029_a" refVersion="1" refTitle="Signal and Bus Line Positioning - Orientation"/>
+        </guideline>
+        <guideline uid="91879647-4062-4042-bf8b-fb841dda7173" modifier="standard" refUid="83bf9f9f-7381-288b-9fec-d0f6c7782239" refId="misra_slsf_029_be" refVersion="1" refTitle="Signal and Bus Line Positioning - Overlaps and Branching">
+          <check uid="69cab9df-425b-435a-930b-1ce52b4afb95" selectedForRun="false" refUid="6b602751-9624-41be-aed3-4e7e0ffa5623" refId="mcheck_misra_slsf_029_be" refVersion="1" refTitle="Signal and Bus Line Positioning - Overlaps and Branching"/>
+        </guideline>
+        <guideline uid="cea9f767-35ea-4a82-9cb4-fd1ac551db9f" modifier="standard" refUid="0d3cccbc-bb03-4c62-b9a2-545b7d5ba83e" refId="misra_slsf_029_c" refVersion="1" refTitle="Signal and Bus Line Positioning - Crossings of line and block">
+          <check uid="eb07675d-0ac3-406d-a784-45ff7b5c641e" selectedForRun="false" refUid="aab2508a-7cab-438f-8e0c-354e391206f4" refId="mcheck_misra_slsf_029_c" refVersion="1" refTitle="Signal and Bus Line Positioning - Crossings between line and block"/>
+        </guideline>
+        <guideline uid="9d42babd-3792-4a4c-bea5-9f67f1801cb5" modifier="standard" refUid="be2542a1-0668-4eaa-b97c-c4be2fee168b" refId="misra_slsf_029_f" refVersion="1" refTitle="Signal and Bus Line Positioning - Branching">
+          <check uid="9adc683d-5d6c-437a-a6bb-579d9bf02439" selectedForRun="true" refUid="705e1633-e0a4-4739-b507-504a336be72b" refId="mcheck_misra_slsf_029_f" refVersion="1" refTitle="Signal and Bus Line Positioning - Branching"/>
+        </guideline>
+      </chapter>
+      <chapter uid="8a42d5f0-5fb3-4d3c-8c0f-95b9ded5d89d" title="Execution Order">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="af75e158-6cf3-4117-a03d-660610a9ec33" modifier="standard" refUid="09c721fc-0743-4857-bdac-8b508f3e03bd" refId="misra_slsf_009_b" refVersion="1" refTitle="Block Execution Frequency and Order - Block Priority">
+          <check uid="88b11bf7-cffa-4cfb-82a6-8262a3e9c397" selectedForRun="true" refUid="912b6538-f842-42ba-9ecd-d8d940b51a36" refId="mcheck_misra_slsf_009_b" refVersion="1" refTitle="Block Execution Frequency and Order - Block Priority"/>
+        </guideline>
+        <guideline uid="7f54f26e-1c2c-49a9-bef5-2ff567236f7c" modifier="standard" refUid="d949fec2-a2e5-4f19-83db-0ca5c9c2ba01" refId="misra_slsf_034_d" refVersion="1" refTitle="Chart Properties - Chart Initialization">
+          <check uid="5c53852d-568f-4523-93c3-537657e7bd3b" selectedForRun="true" refUid="cddfb94d-2e19-47af-8ea4-62bdc098f9e4" refId="mcheck_misra_slsf_034_d" refVersion="1" refTitle="Chart Properties - Chart Initialization"/>
+        </guideline>
+        <guideline uid="5f27aa85-7c32-4dca-b67f-554ca0be79a6" modifier="standard" refUid="1f04873d-90bb-49fa-8c58-bc5a94e5f3b1" refId="mes_is_0002" refVersion="1" refTitle="User-specified State/transition Execution Order">
+          <check uid="8b685cf5-e6e6-4a39-8336-a1900aac3e18" selectedForRun="true" refUid="f50db154-cbba-42fc-92eb-7fa2feaa5605" refId="mcheck_mes_is_0002" refVersion="1" refTitle="User-specified State/Transition execution order"/>
+        </guideline>
+      </chapter>
+      <chapter uid="a2348ec9-dff6-4cdd-b368-e084e2fe0be2" title="Block and Text Appearance">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<br />]]></value>
+        </description>
+        <guideline uid="c19d5d32-a56d-454c-97f9-0b98b72cc938" modifier="standard" refUid="aee88028-9c76-45g2-b30c-c85879e7e438" refId="misra_slsf_027_ab" refVersion="1" refTitle="Signal and Bus Label Usage - Label at Source">
+          <check uid="9b8f3ec2-4678-4077-bad2-644e64c9c8eb" selectedForRun="false" refUid="30d358b6-b718-4a1e-8071-3d6515a0fbc2" refId="mcheck_misra_slsf_027_ab" refVersion="1" refTitle="Signal and Bus Label Usage - Label at Source"/>
+        </guideline>
+        <guideline uid="ef00f4b7-5c85-409b-8fb7-372d6f6b5267" modifier="standard" refUid="1e10859e-e925-4864-84c2-3b55e1b56b34" refId="misra_slsf_027_e" refVersion="1" refTitle="Signal and Bus Label Usage - Re-Usable Subsystem">
+          <check uid="58b4f175-3fca-443f-8cbb-9a323f2ff56d" selectedForRun="false" refUid="01540d81-5d88-4397-bfc8-4ab3c8c92d10" refId="mcheck_misra_slsf_027_e" refVersion="1" refTitle="Signal and Bus Label Usage - Re-Usable Subsystem"/>
+        </guideline>
+        <guideline uid="306e0fd7-0d67-4ea5-a450-c50dbae9be49" modifier="standard" refUid="cb4e0393-67b8-4ef7-aeb5-2f45db3380fb" refId="misra_slsf_027_fgi" refVersion="1" refTitle="Signal and Bus Label Usage - Specific Blocks">
+          <check uid="79811c7b-eda8-438d-85c3-af7da9995a04" selectedForRun="false" refUid="299c89f4-8a91-4c34-aff2-45694b8da1ec" refId="mcheck_misra_slsf_027_fgi" refVersion="1" refTitle="Signal and Bus Label Usage - Specific Blocks"/>
+        </guideline>
+        <guideline uid="48f75319-0b57-46a0-8d7e-ce5381edac15" modifier="standard" refUid="2c2f005b-8837-49cd-be70-4d2ede5f6d99" refId="misra_slsf_027_h" refVersion="1" refTitle="Signal and Bus Label Usage - Visualization">
+          <check uid="01f8f9e8-8d67-487d-a5e1-46d912a4c326" selectedForRun="false" refUid="97106797-1969-4580-96dc-c50fa4689adb" refId="mcheck_misra_slsf_027_h" refVersion="1" refTitle="Signal and Bus Label Usage - Visualization"/>
+        </guideline>
+        <guideline uid="effb4026-c7a2-49ef-bca3-5a3f09c2061d" modifier="standard" refUid="44eb5e5b-cafb-4b5c-bd04-922bf337651c" refId="misra_slsf_027_j" refVersion="1" refTitle="Signal and Bus Label Usage - Uniqueness">
+          <check uid="2bb882b6-9194-4a29-ad45-aacded2b105b" selectedForRun="false" refUid="b24dbfa6-7ddc-4273-be61-a1c00ac31b22" refId="mcheck_misra_slsf_027_j" refVersion="1" refTitle="Signal and Bus Label Usage - Uniqueness"/>
+        </guideline>
+        <guideline uid="06ad522e-46e0-4e17-bf42-af844cd0acd8" modifier="standard" refUid="6cb6df4f-63d3-41c1-b57f-90b7c76edf56" refId="mes_color_001" refVersion="1" refTitle="Color Layout of Simulink Models">
+          <check uid="9bdd568d-0258-48c9-b849-dc64f16c3a62" selectedForRun="false" refUid="e3a6b464-38e7-4ea8-8100-132fec937b1e" refId="mcheck_mes_color_001" refVersion="1" refTitle="Color Layout of Simulink Models"/>
+        </guideline>
+        <guideline uid="7982a5d7-bfc1-4ec2-9141-4f0a931b14c9" modifier="standard" refUid="027d18b0-3375-47ce-bbe1-f01e09bf2190" refId="mes_sfcolor_001" refVersion="1" refTitle="Font and Color Settings of Stateflow Elements">
+          <check uid="3179c557-88b7-4594-b0fc-c7d2679b9c17" selectedForRun="false" refUid="1357ce2a-8c61-4762-99ba-436e8be99551" refId="mcheck_mes_sfcolor_001" refVersion="1" refTitle="Font and Color Settings of Stateflow Elements"/>
+        </guideline>
+        <guideline uid="2a6f7d68-f17d-4b74-b9a1-31289bd60499" modifier="standard" refUid="b6a5a715-a46d-43fc-81dd-6c556fa03332" refId="misra_slsf_022_a" refVersion="1" refTitle="Model, Subsystem and Library Information Appearance - General Information">
+          <check uid="40706a20-1902-4fec-82e8-762313d4d279" selectedForRun="false" refUid="4c2188d9-a372-4e93-ad12-516b937876e3" refId="mcheck_misra_slsf_022_a" refVersion="1" refTitle="Model, Subsystem and Library Information Appearance - General Information"/>
+        </guideline>
+        <guideline uid="91824995-cb59-4963-9490-cd5b1a9431a9" modifier="standard" refUid="51e4d6d3-c7bd-4511-8e94-898232269e7c" refId="misra_slsf_022_b" refVersion="1" refTitle="Model, Subsystem and Library Information Appearance - Tool Version Information">
+          <check uid="aa495c35-c62b-476e-8be6-ebc33af0d0c7" selectedForRun="false" refUid="a0e95447-c3e0-4d1a-a0eb-f17e8f129206" refId="mcheck_misra_slsf_022_b" refVersion="1" refTitle="Model, Subsystem and Library Information Appearance - Tool Version Information"/>
+        </guideline>
+        <guideline uid="ff84a654-0ec9-4586-9707-f5685392b829" modifier="standard" refUid="447ce7c2-f2f5-4e6e-bf96-4492631fa530" refId="db_0140" refVersion="1" refTitle="Display of Basic Block Parameters">
+          <check uid="e1429436-2111-425f-a645-47866868961c" selectedForRun="false" refUid="dad50ee4-90e2-4d7c-bbab-bed2fff4f127" refId="mcheck_db_0140" refVersion="1" refTitle="Display of Basic Block Parameters"/>
+        </guideline>
+        <guideline uid="3734ba23-4bd8-4076-bc02-4d6a429e9524" modifier="standard" refUid="5a3a3d19-0886-4867-9e3d-2b4cb7ba924a" refId="misra_slsf_016_b" refVersion="1" refTitle="Busses - Naming">
+          <check uid="13d530e3-8a5a-417e-8d0b-0c897ece494b" selectedForRun="false" refUid="34f04d90-52b9-4dd8-9089-d3cef7a4bb82" refId="mcheck_misra_slsf_016_b" refVersion="1" refTitle="Busses - Naming"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="202212b8-3643-4c0a-8592-14231aa03420" title="Functional Model">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="66828716-9434-4ca4-91eb-694f9a62748e" title="Simulink/TargetLink">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <chapter uid="2dd5eee7-abd4-4772-a376-dc27e005e638" title="Language Subset">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="a8828786-81a0-422f-a2f4-a0d14b8d2d52" modifier="standard" refUid="7d281ac5-52a9-4782-a17a-30084afa3632" refId="misra_slsf_005_b" refVersion="1" refTitle="Allowable Simulink Blocks - Prohibited Blocks">
+            <check uid="9f95bac8-cdfd-4e05-a6a2-121c2660531e" selectedForRun="true" refUid="249e7321-6b89-480d-9b50-8dc846d6a674" refId="mcheck_misra_slsf_005_b" refVersion="1" refTitle="Allowable Simulink Blocks - Prohibited Blocks"/>
+          </guideline>
+          <guideline uid="2df9981b-5599-4b30-a53e-b4e55fc88fc1" modifier="standard" refUid="25e9ff93-07b5-4dd9-bfad-aa41d86b4935" refId="misra_slsf_005_a" refVersion="1" refTitle="Allowable Simulink Blocks - Simulink Block Library">
+            <check uid="9a3a5242-7bd1-42d2-84e7-27d6d4b8fc73" selectedForRun="true" refUid="f68b171d-c8bf-4a7c-8e8a-0dffc653386b" refId="mcheck_misra_slsf_005_a" refVersion="1" refTitle="Allowable Simulink Blocks - Simulink Block Library"/>
+          </guideline>
+          <guideline uid="2219652c-49ff-4229-ac99-b8565c7c5904" modifier="standard" refUid="091957ea-5006-40ab-96a9-8f7225c51ff5" refId="jm_0001" refVersion="1" refTitle="Prohibited Simulink Standard Blocks Inside Controllers">
+            <check uid="f9307fdb-212d-4d86-a957-a261dd942a26" selectedForRun="true" refUid="7efdf5aa-88bb-43a2-9363-256dc9a44ebf" refId="mcheck_jm_0001" refVersion="1" refTitle="Prohibited Simulink Standard Blocks Inside Controllers"/>
+          </guideline>
+        </chapter>
+        <chapter uid="ed8a2cfc-130c-4c2d-ab87-19404b2cd962" title="Defensive Implementation Techniques">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="4cb00ecb-3611-45a7-abf3-1273c1f5918e" modifier="standard" refUid="8158bcd5-30dc-4757-9d3b-6a73cba726a3" refId="misra_tl_5_2" refVersion="1" refTitle="Use of the Switch Case Block">
+            <check uid="780379cc-07f2-4b23-b063-17d8905fe7ed" selectedForRun="true" refUid="b822f148-bdec-4b08-bfd9-2de5fb4c5f8f" refId="mcheck_misra_tl_5_2_a" refVersion="1" refTitle="Use of the Switch Case block: Show default case"/>
+            <check uid="f73ed15c-f8b9-4dda-a9cb-dd1e8cfe5326" selectedForRun="true" refUid="a1e8d34d-4d3f-4eb1-ab50-a7d65de5234b" refId="mcheck_misra_tl_5_2_b" refVersion="1" refTitle="Use of the Switch Case block: avoid unconnected default outputs"/>
+          </guideline>
+        </chapter>
+        <chapter uid="f31bc183-1982-401e-857f-19bb76ce0563" title="Established Design Principles">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="bba1899b-b6d5-477b-82ba-afd91e0683a9" modifier="standard" refUid="c586adb3-d31a-4ea1-b2a7-7750e56d692f" refId="misra_slsf_006_e" refVersion="1" refTitle="Block Parameters - Masked Subsystems">
+            <check uid="cc4db56a-e85c-4c91-b3a7-ecb86f59c8d0" selectedForRun="true" refUid="e6e5b38c-1ba0-4578-b880-90f62da2ef2e" refId="mcheck_misra_slsf_006_e" refVersion="1" refTitle="Block Parameters - Masked Subsystems"/>
+          </guideline>
+          <guideline uid="f3a761b6-551d-4607-b3ca-8ad6393ab410" modifier="standard" refUid="77ceb397-1a9e-4897-b065-16f9036cc8f1" refId="misra_slsf_017_a" refVersion="1" refTitle="Unconnected Blocks, Signal Lines and Busses - Blocks">
+            <check uid="65224877-9aa7-4e30-beca-75cac2e12bf8" selectedForRun="true" refUid="e44a5ed4-f77b-48bd-a6b7-a1b22505971c" refId="mcheck_misra_slsf_017_a" refVersion="1" refTitle="Unconnected Blocks, Signal Lines and Busses - Blocks"/>
+          </guideline>
+          <guideline uid="9fc8508b-5054-4c43-b7bc-2db4ae8dd381" modifier="standard" refUid="263dc603-9f8c-4077-b1e0-f7a5ff4b62a7" refId="misra_slsf_017_b" refVersion="1" refTitle="Unconnected Blocks, Signal Lines and Busses - Signals and Busses">
+            <check uid="aca35378-53b5-49ad-96e3-3cb461e32903" selectedForRun="true" refUid="e61abfcc-78eb-4cdb-87be-e199d9457125" refId="mcheck_misra_slsf_017_b" refVersion="1" refTitle="Unconnected Blocks, Signal Lines and Busses - Signals and Busses"/>
+          </guideline>
+          <guideline uid="ad3db663-262f-42cc-9618-f2ead8846c9d" modifier="standard" refUid="dea5b976-ad54-4528-afdd-b0535ec2a523" refId="misra_slsf_018_d" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Matching &quot;from&quot; Block">
+            <check uid="943d8557-12fa-4342-bfe9-b68d4d68d04e" selectedForRun="true" refUid="b03e4c9b-cbb7-4811-91e5-da4e5d38245b" refId="mcheck_misra_slsf_018_d" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Matching &quot;from&quot; Block"/>
+          </guideline>
+          <guideline uid="ac6e7a44-54d5-4097-8d5f-5ccc21ce9edc" modifier="standard" refUid="2ab8387c-4dd6-4e84-ac44-bc13a159622a" refId="misra_slsf_018_e" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Matching &quot;goto&quot; Block">
+            <check uid="eb549fa9-24f9-4ad6-98d2-a16a59a5b3f9" selectedForRun="true" refUid="a2fd72b0-a6a5-47af-aba1-e48dcb4e668e" refId="mcheck_misra_slsf_018_e" refVersion="1" refTitle="Usage of &quot;from&quot; and &quot;goto&quot; Blocks - Matching &quot;goto&quot; Block"/>
+          </guideline>
+          <guideline uid="074eacb1-48cd-47ba-93a0-ba9033ee7087" modifier="standard" refUid="87b9850f-b832-454c-a9b0-4b9bbf860e10" refId="sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names">
+            <check uid="14fb286b-26e5-4a46-bb74-5c990f2c0c67" selectedForRun="true" refUid="17544735-a087-4664-a7da-96553758f81b" refId="mcheck_sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names"/>
+          </guideline>
+          <guideline uid="8785b10a-7617-4913-8a49-933bc73a7346" modifier="standard" refUid="7d5f932e-79df-45ca-9201-bc7c88951080" refId="misra_slsf_006_a" refVersion="1" refTitle="Block Parameters - Runtime Numeric Values">
+            <check uid="de19a2a8-d908-41cc-8f82-c105636f4010" selectedForRun="true" refUid="b9b7b8c6-1291-4c21-a72b-6101c3683a1b" refId="mcheck_misra_slsf_006_a" refVersion="1" refTitle="Block Parameters - Runtime Numeric Values"/>
+          </guideline>
+          <guideline uid="08ab11a8-9472-4c23-a90f-5535e0449e8e" modifier="standard" refUid="70efc672-a717-4c00-90c8-cea06c4cd239" refId="db_0110" refVersion="1" refTitle="Tunable Parameters in Basic Blocks">
+            <check uid="495817b4-dac7-413c-9a7d-fa752072023f" selectedForRun="true" refUid="7373a801-3da8-403a-91e1-ebf7c01fc823" refId="mcheck_db_0110" refVersion="1" refTitle="Tunable Parameters in Basic Blocks"/>
+          </guideline>
+          <guideline uid="1458d7a2-da7c-446a-ac25-c0f541829d33" modifier="standard" refUid="e97e223b-6e27-433d-aab7-703261f7c717" refId="na_0032" refVersion="1" refTitle="Use of Merge Blocks">
+            <check uid="5cdbb13d-6642-4b43-a721-9200a4386ef0" selectedForRun="true" refUid="68d12632-3430-4e1d-b588-9407d7276123" refId="mcheck_na_0032_a" refVersion="1" refTitle="Use of Merge Blocks - Identical Buses"/>
+            <check uid="368d4319-42b8-42be-b5a3-e8285e0bd7a0" selectedForRun="true" refUid="ec5354ef-bdb5-4312-8036-38d38cb6060e" refId="mcheck_na_0032_b" refVersion="1" refTitle="Use of Merge Blocks - Signals Entering Merge Block"/>
+          </guideline>
+          <guideline uid="17e1624f-bfbc-49ab-b9f5-1e94fca13b8c" modifier="standard" refUid="bcf19a1a-5e80-46a8-b718-616653d7fbf1" refId="misra_slsf_006_b" refVersion="1" refTitle="Block Parameters - Calibration Parameters">
+            <check uid="34fd7566-6338-42ee-bf3e-e6f627d4b7c5" selectedForRun="true" refUid="feff64a0-4f7e-4fbc-8dbe-18bc73114685" refId="mcheck_misra_slsf_006_b" refVersion="1" refTitle="Block Parameters - Calibration Parameters"/>
+          </guideline>
+          <guideline uid="584dcfa4-d06f-4a58-bc3d-7623f85d8360" modifier="standard" refUid="220b0677-3436-4a6b-ae9b-a28bc9b9af18" refId="misra_slsf_013_b" refVersion="1" refTitle="Multiport Switch Block - Control Input">
+            <check uid="44614733-0487-4f38-80a5-2557c0fb00d4" selectedForRun="true" refUid="1e5587a5-cfb5-43bb-b557-0453180e9749" refId="mcheck_misra_slsf_013_b" refVersion="1" refTitle="Multiport Switch Block - Control Input"/>
+          </guideline>
+          <guideline uid="4d039517-8526-436c-b13e-1cad7a67aafd" modifier="standard" refUid="20fc6d1b-e01b-4f72-b133-74b7af495fe1" refId="misra_slsf_013_c" refVersion="1" refTitle="Multiport Switch Block - Value Range of Control Input">
+            <check uid="02531ad5-41e7-4582-a608-981f4b142e27" selectedForRun="true" refUid="20d3f6ce-4f98-4433-a56c-1bf6d5f87f1e" refId="mcheck_misra_slsf_013_c" refVersion="1" refTitle="Multiport Switch Block - Value Range of Control Input"/>
+          </guideline>
+          <guideline uid="97a5694e-b5d2-4c58-8861-dda51a006857" modifier="standard" refUid="c914863d-5437-4962-95cd-453e8e53ebea" refId="mes_sltl_001" refVersion="1" refTitle="Magic Constants in Constant Blocks">
+            <check uid="9373c920-52f4-4783-b018-134e972c6c5e" selectedForRun="true" refUid="997d4ad7-e704-4a58-ad74-157195496646" refId="mcheck_mes_sltl_001" refVersion="1" refTitle="Magic Constants in Constant Blocks"/>
+          </guideline>
+          <guideline uid="92648d1a-2a5e-48fc-941b-38af509ec777" modifier="standard" refUid="f4d6f9d5-8d9f-44e8-87ad-2bfeb2737eb5" refId="mes_sltl_002" refVersion="1" refTitle="Comparison of Floating-Point Signals">
+            <check uid="a68e0e52-ace8-4d6f-b70a-bcc81e691017" selectedForRun="true" refUid="d283c68e-c9a5-41df-909f-adb303e48aba" refId="mcheck_mes_sltl_002_a" refVersion="1" refTitle="Comparison of Floating-Point Signals in Simulink and TargetLink"/>
+            <check uid="a2ef3956-fb2d-40fb-b3b5-cc7c472ab815" selectedForRun="true" refUid="83a7a72d-cf21-46f4-9295-0d99f766547c" refId="mcheck_mes_sltl_002_b" refVersion="1" refTitle="Comparison of Floating-Point Signals in Stateflow"/>
+          </guideline>
+          <guideline uid="2c8a7677-4378-4bb9-9698-db4ca7073e08" modifier="standard" refUid="378dadca-b707-4912-9c8f-a5a8f67bfe0a" refId="misra_slsf_012_a" refVersion="1" refTitle="Switch Block">
+            <check uid="5509e02d-1b3f-4421-b3ca-0e0a746fbd64" selectedForRun="true" refUid="0f141d8e-7835-4235-97ad-941d93223a1a" refId="mcheck_misra_slsf_012_a" refVersion="1" refTitle="Switch Block"/>
+          </guideline>
+        </chapter>
+        <chapter uid="3fc1fa0e-f3c8-4376-a593-7625b927669d" title="Naming Conventions">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="6b70ba01-8cc7-477e-b755-2c3e122ad9ad" modifier="standard" refUid="a4414750-18ce-4b91-b574-5d1a066758d4" refId="misra_slsf_026_c" refVersion="1" refTitle="Simulink Block, Subsystem and Library Naming - Port Names">
+            <check uid="c3eb3ba5-30c6-4925-943d-4c0bb3c48033" selectedForRun="false" refUid="7a744c61-9fa8-43d0-8f85-8b58b75d9d37" refId="mcheck_misra_slsf_026_c" refVersion="1" refTitle="Simulink Block, Subsystem and Library Naming - Port Names"/>
+          </guideline>
+          <guideline uid="64fcc352-2827-4f51-972d-28b0c9518187" modifier="standard" refUid="8fff9257-8107-45c5-8ab8-4e2a364b0617" refId="misra_tl_2_3" refVersion="1" refTitle="Restricting Identifiers to 31 Characters">
+            <check uid="88bbda0e-6254-40e9-8c84-6d2ed195fe01" selectedForRun="false" refUid="f180ab79-979a-47df-a1c9-eace18c5d87a" refId="mcheck_misra_tl_2_3" refVersion="1" refTitle="Restricting identifiers to 31 characters"/>
+          </guideline>
+          <guideline uid="0a94aac1-9630-4ff5-8e75-af2eefc46d85" modifier="standard" refUid="4d525cb2-00d7-4f5b-9328-e2d2f073ec80" refId="misra_tl_1_2" refVersion="1" refTitle="Comments in Block Properties">
+            <check uid="e255d91d-6c6a-46f1-b2fa-2d2cd177b9cd" selectedForRun="true" refUid="c68d453f-40a5-482d-9dfc-71c88265ba8f" refId="mcheck_misra_tl_1_2_a" refVersion="1" refTitle="Comments in block properties"/>
+            <check uid="b79d7ef8-2720-4fa6-b4ad-fbecec7e6de5" selectedForRun="true" refUid="6697732d-1e3b-4a62-ae87-16d56af7534d" refId="mcheck_misra_tl_1_2_b" refVersion="1" refTitle="Umlaute in Block Properties"/>
+          </guideline>
+          <guideline uid="3a56a4f2-5a02-4877-b051-ad8b143a76bf" modifier="standard" refUid="ff0ca9f3-11d9-4fd9-b5e4-9f84542a028b" refId="TL_RULE_GENERAL_NAMING" refVersion="1" refTitle="General Naming Conventions">
+            <check uid="7cdb994e-99d5-4512-9840-e047078a031d" selectedForRun="false" refUid="4cd31c1c-a013-42dd-8858-4d63fcfc077d" refId="mcheck_ds_0055" refVersion="1" refTitle="Reserved Names in Stateflow"/>
+            <check uid="c599bdca-f4dc-44db-8a7c-87a403ece6f3" selectedForRun="false" refUid="8bde88f2-bbcd-4769-8e2d-621dd6aec72a" refId="mcheck_ds_0080" refVersion="1" refTitle="Reserved System Header File Names"/>
+            <check uid="20cb5001-7c8d-4288-8532-86b27bd62b63" selectedForRun="false" refUid="ca8be79c-8101-4985-bb4b-2c863034d79e" refId="mcheck_ds_0079_c" refVersion="1" refTitle="General Naming Conventions: Reserved Names"/>
+          </guideline>
+        </chapter>
+        <chapter uid="79efa5f9-dbe5-4215-bff3-e66a6b8b2398" title="Initialization of Variables">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="7fae856f-e3b4-49a0-8376-97e39c8de58b" modifier="standard" refUid="e4b56390-2ebc-48a2-8970-e3da6c7bb6a1" refId="sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks">
+            <check uid="1e5bbcb3-7768-4106-9e51-9813aa0488f5" selectedForRun="false" refUid="f6ee89e5-24cb-4428-b7cd-6221054a3f4a" refId="mcheck_sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks"/>
+          </guideline>
+          <guideline uid="6f1c57c8-0e7a-42f2-bd20-2ead3cb1ea2f" modifier="standard" refUid="e6d4b540-984b-470a-8f98-f174b406d7ea" refId="sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems">
+            <check uid="704af5af-60a1-494f-b95e-8584940af37c" selectedForRun="false" refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems"/>
+          </guideline>
+        </chapter>
+        <chapter uid="65219e77-ee17-4a17-8757-872cacd30cda" title="Configuration">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="116df195-92c1-44e4-8dd0-036662d2d974" modifier="standard" refUid="0ed4648d-65b3-462d-b138-36805941f88e" refId="mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink">
+            <check uid="2bfdafbc-de5f-45f7-9b23-50ad3ed42dd4" selectedForRun="true" refUid="91107659-d83c-40be-bfbb-b528043a5f14" refId="mcheck_mes_slsf_9001" refVersion="1" refTitle="Configuration Parameters for Simulink"/>
+          </guideline>
+        </chapter>
+      </chapter>
+      <chapter uid="6b5735c2-7254-4a7d-ac5c-24e3ff53a756" title="Stateflow">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <chapter uid="34b7ca14-3e15-4dc2-b948-63e222c11475" title="Language Subset">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="303f6b0a-1335-4d62-a480-d0863d2ce182" modifier="standard" refUid="b3770485-1daf-4a0e-8faf-374f2f873826" refId="misra_slsf_046_a" refVersion="1" refTitle="History Junction">
+            <check uid="819d0084-2de7-40c9-ab04-b253c4acd99d" selectedForRun="true" refUid="bf14ad9f-04e6-4b61-928b-dff59d7df272" refId="mcheck_misra_slsf_046_a" refVersion="1" refTitle="History Junction"/>
+          </guideline>
+          <guideline uid="01b977cd-cb5c-4c15-8a9d-ff5c7fc58915" modifier="standard" refUid="c93475d2-425d-44a5-ae8a-c99f54ef3582" refId="TL_RULE_STATEFLOW_MATLAB" refVersion="1" refTitle="MATLAB Functionality">
+            <check uid="aea04b71-4b8f-45b4-84b4-270024c598a0" selectedForRun="true" refUid="edd430c3-167d-4b53-b9dd-2486a00dbe27" refId="mcheck_ds_0064" refVersion="1" refTitle="MATLAB Functionality"/>
+          </guideline>
+        </chapter>
+        <chapter uid="ed47e94f-09e8-4bf6-a5ce-a5516b6c6828" title="Defensive Implementation Techniques">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="f9c2c7ff-831e-4e12-9f53-db920467509d" modifier="standard" refUid="3b656997-a0ba-4985-935e-915fdeb10f40" refId="misra_slsf_034_a" refVersion="1" refTitle="Chart Properties - C-like Bitwise Operators">
+            <check uid="5b01562b-d84d-495b-9b67-9684b683b9e2" selectedForRun="true" refUid="eddc585a-8aaf-40d8-9f2c-2e54322f955b" refId="mcheck_misra_slsf_034_a" refVersion="1" refTitle="Chart Properties - C-like Bitwise Operators"/>
+          </guideline>
+          <guideline uid="66a04272-1b62-4992-9d81-e89de2971f53" modifier="standard" refUid="7ee62163-b505-4031-910e-3b9b33ed6a69" refId="misra_slsf_038_b" refVersion="1" refTitle="Operators in State Machines - Permitted Operations">
+            <check uid="8271f053-bee7-4e04-9268-8b0233cc8965" selectedForRun="true" refUid="668c3a97-21db-407a-9a5f-7d5451703ae8" refId="mcheck_misra_slsf_038_b" refVersion="1" refTitle="Operators in State Machines - Permitted Operations"/>
+          </guideline>
+          <guideline uid="34581ee1-25d4-4d7a-b84d-4760c67ec55b" modifier="standard" refUid="6e670590-0140-4f55-a525-c5eb477d13ab" refId="misra_slsf_038_c" refVersion="1" refTitle="Operators in State Machines - C Library Functions">
+            <check uid="41f53c7f-3182-4008-84de-2a8caea5141c" selectedForRun="true" refUid="b3b1fb9e-02c4-4b22-a027-aba69b85b292" refId="mcheck_misra_slsf_038_c" refVersion="1" refTitle="Operators in State Machines - C Library Functions"/>
+          </guideline>
+          <guideline uid="7371b54e-67f8-40c8-b059-1113083a550c" modifier="standard" refUid="e79d5ec7-fbde-49f0-8447-12031a654059" refId="misra_slsf_041_a" refVersion="1" refTitle="Usage of Boxes">
+            <check uid="3e7795eb-7104-42f4-9d55-490fcebd92db" selectedForRun="false" refUid="f55c216b-9782-4cdd-86f6-f6ed9c12c97f" refId="mcheck_misra_slsf_041_a" refVersion="1" refTitle="Usage of Boxes"/>
+          </guideline>
+          <guideline uid="df8482cc-ba52-4d58-bfbe-7d8f431a1296" modifier="standard" refUid="279c9928-9dd1-4634-b4ea-afd7df90d733" refId="mes_sf_001" refVersion="1" refTitle="No Loops in Multi Segmented Transitions">
+            <check uid="cedbde38-5d53-4856-888b-470fb8623f6b" selectedForRun="false" refUid="a1308c10-3667-49e1-ad2a-8331cc272c0e" refId="mcheck_mes_sf_001" refVersion="1" refTitle="No Loops in Multi Segmented Transitions"/>
+          </guideline>
+          <guideline uid="cb6bf643-21fc-456f-98ac-89986b0c7a6e" modifier="standard" refUid="abf33eef-ab62-4dea-8eb9-abf769a54d79" refId="mes_sf_003" refVersion="1" refTitle="Interaction between Parallel States">
+            <check uid="82503dd8-5d28-4a13-a231-b38d3e7771fc" selectedForRun="false" refUid="67140efb-97ba-444f-91d0-0190e94ce5cb" refId="mcheck_mes_sf_003" refVersion="1" refTitle="Interaction between Parallel States"/>
+          </guideline>
+        </chapter>
+        <chapter uid="c57a4284-f4f5-45a4-9cd9-574cb905855d" title="Established Design Principles">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="327f8515-7440-4f2a-911a-7f85abf655e8" modifier="standard" refUid="453f26c4-7bea-4350-87e4-bbc306c0b396" refId="db_0137" refVersion="1" refTitle="States in State Machines">
+            <check uid="3cdfcd02-7f7a-4d4c-81fb-6cbf4055dc9b" selectedForRun="false" refUid="c6aeb570-654e-4d13-ab01-5733226d8a41" refId="mcheck_db_0137" refVersion="1" refTitle="States in State Machines"/>
+          </guideline>
+          <guideline uid="d2284e3a-090c-4dc0-81f8-ee9979a5e26a" modifier="standard" refUid="718d4456-8087-4d10-bc5d-0eb66004863a" refId="mes_sf_002" refVersion="1" refTitle="Variable Assignments in Transition Segments">
+            <check uid="17c74010-90bb-4b2b-8ea2-bacce682f32b" selectedForRun="false" refUid="a8110b76-442d-4118-bb93-2886ff542fd1" refId="mcheck_mes_sf_002" refVersion="1" refTitle="Variable Assignments in Transition Segments"/>
+          </guideline>
+          <guideline uid="384e88ae-d6c5-4dc3-987e-b793c00e2355" modifier="standard" refUid="c4473a96-588f-41ad-ac89-9b4dc31c2c8a" refId="misra_slsf_048_g" refVersion="1" refTitle="Stateflow Coding - Numbers">
+            <check uid="ee5d4d4c-94a2-4ce6-b3e9-be2b64baefbf" selectedForRun="false" refUid="723dfea8-c680-46b3-86ca-76092343537e" refId="mcheck_misra_slsf_048_g" refVersion="1" refTitle="Stateflow Coding - Numbers"/>
+          </guideline>
+        </chapter>
+        <chapter uid="8050ce7e-668d-497d-8ae0-1f9e6577577c" title="Enforcement of Strong Typing">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="131919b9-13ba-4fdd-8aa8-f04ba507114d" modifier="standard" refUid="f9c22074-fbed-4dc8-937f-47f5f57f5b21" refId="misra_slsf_036_a" refVersion="1" refTitle="Stateflow/Simulink Interface Signals, Parameters and Naming - Bus Inputs">
+            <check uid="03abb27e-27f4-47c4-b290-3eff8d213d84" selectedForRun="true" refUid="0d8a3526-1078-493f-ae41-a987d7724408" refId="mcheck_misra_slsf_036_a" refVersion="1" refTitle="Stateflow/Simulink Interface Signals, Parameters and Naming - Bus Inputs"/>
+          </guideline>
+          <guideline uid="29986525-9628-4eb1-90ec-bbdc81dc54ff" modifier="standard" refUid="90f3f2ab-f3eb-4b8b-be71-b6c7054e62cd" refId="misra_slsf_037_h" refVersion="1" refTitle="Internal Data - Type">
+            <check uid="4f9254a3-d9e1-48e0-ad1e-04dae19eab90" selectedForRun="true" refUid="15a55eff-5255-4cfd-bf84-d6fec63e1d3b" refId="mcheck_misra_slsf_037_h" refVersion="1" refTitle="Internal Data - Type"/>
+          </guideline>
+          <guideline uid="eb53b25d-b3e3-4861-8b34-f6a8b4c2ccef" modifier="standard" refUid="acc67c25-5fbe-46d5-87b3-d6ce14f09c56" refId="misra_slsf_048_e" refVersion="1" refTitle="Stateflow Coding - Custom Code Variables"/>
+        </chapter>
+        <chapter uid="ddc763f1-e13a-4a8e-8801-f6726b434279" title="Style Guides">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="d4f7e8f0-731d-4825-9496-720375e67c97" modifier="standard" refUid="cdd0badb-25ca-4bca-900c-26189fdf9634" refId="misra_slsf_036_c" refVersion="1" refTitle="Stateflow/Simulink Interface Signals, Parameters and Naming - Name of Inputs/Outputs">
+            <check uid="9a06c3e1-5527-45fa-a3e7-b06459685dd0" selectedForRun="false" refUid="99b8111d-9507-4fb7-8c0b-2e39564b1fe4" refId="mcheck_misra_slsf_036_c" refVersion="1" refTitle="Stateflow/Simulink Interface Signals, Parameters and Naming - Name of Inputs/Outputs"/>
+          </guideline>
+          <guideline uid="8aaf2acf-63f8-41f0-ad07-1364812c5d0d" modifier="standard" refUid="6af6c419-b307-41fe-9ec1-1234da4cd93b" refId="db_0129" refVersion="1" refTitle="Stateflow Transition Appearance">
+            <check uid="17b2b0fb-ca51-43dd-90f1-8c30d9e51483" selectedForRun="false" refUid="e3a58e3c-c241-403f-822f-e1a2caa56173" refId="mcheck_db_0129_a" refVersion="1" refTitle="Stateflow Transition Appearance - Overlaps"/>
+            <check uid="80d7d5f3-560e-41e9-9d65-532a4fb7a582" selectedForRun="false" refUid="93a3db34-fe95-41f8-aea2-689fb5a71bd2" refId="mcheck_db_0129_b" refVersion="1" refTitle="Stateflow Transition Appearance - Crossings"/>
+            <check uid="5271a98b-4486-4dba-ae60-6e18ef77daab" selectedForRun="false" refUid="0308b3f3-69f0-48d8-ac00-1db87435c51f" refId="mcheck_db_0129_c" refVersion="1" refTitle="Stateflow Transition Appearance - Associated Labels"/>
+          </guideline>
+        </chapter>
+        <chapter uid="701fbb14-2752-48a5-95c4-77cd4765be4f" title="No Hidden Data Flow or Control Flow">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="18bf4114-f6ab-4523-a468-e91af99459fb" modifier="standard" refUid="e90048b1-7fea-42ef-a777-3bfd8bb8fd88" refId="db_0125" refVersion="1" refTitle="Scope of Internal Signals and Local Auxiliary Variables">
+            <check uid="41716bcf-5d19-4b7e-aab9-09fcf2fceb96" selectedForRun="true" refUid="6d3a3fb6-5c70-4118-aecf-8ce18e5ecab3" refId="mcheck_db_0125" refVersion="1" refTitle="Scope of Internal Signals and Local Auxiliary Variables"/>
+          </guideline>
+          <guideline uid="05ea4579-d96d-473d-9929-9d91b6fe2be1" modifier="standard" refUid="0c433e83-5d4d-4679-a4b9-416b728b840f" refId="misra_slsf_037_b" refVersion="1" refTitle="Internal Data - Local Data">
+            <check uid="d2556687-575d-42f9-8809-c416879576b7" selectedForRun="true" refUid="296c065e-63e3-4f3f-b735-f05e2c72144a" refId="mcheck_misra_slsf_037_b" refVersion="1" refTitle="Internal Data - Local Data"/>
+          </guideline>
+        </chapter>
+        <chapter uid="1aaf13f4-914b-4050-819d-41c6439bdc88" title="Events">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="a31875fa-2333-4cc0-bfc0-660eb25731ef" modifier="standard" refUid="fabe79b9-f248-520c-89c8-cc5dfb15e31b" refId="misra_slsf_047_ab" refVersion="1" refTitle="Stateflow Events">
+            <check uid="74f928bf-0ff0-4ae7-a06f-fb4f6d6836cf" selectedForRun="true" refUid="042f25b1-a87a-41b3-a056-c86b24bdcd80" refId="mcheck_misra_slsf_047_ab" refVersion="1" refTitle="Stateflow Events"/>
+          </guideline>
+          <guideline uid="2600f619-9c14-4bdc-b22d-3db27074d403" modifier="standard" refUid="1a05a16f-3d69-45d9-96d0-4b785a9b2173" refId="db_0126" refVersion="1" refTitle="Scope of Events">
+            <check uid="1a1f2d85-cf05-4535-86cb-a5e85be91a11" selectedForRun="true" refUid="f9a89aa3-4cf2-4a7f-b245-4ef13ff68ed2" refId="mcheck_db_0126" refVersion="1" refTitle="Scope of Events"/>
+          </guideline>
+          <guideline uid="0cda52fa-c2c6-46e3-9396-4ad9090e31f4" modifier="standard" refUid="ffad338d-1a82-47cc-8512-7a8bf931c67f" refId="TL_RULE_STATEFLOW_IMPLICIT_EVENTS" refVersion="1" refTitle="No Use of Implicit Events">
+            <check uid="84f67ab4-80b3-4af2-8e06-d11be65d71bb" selectedForRun="false" refUid="c8916c22-c6ad-4030-835d-efb0cd7aa982" refId="mcheck_ds_0063" refVersion="1" refTitle="No Use of Implicit Events"/>
+          </guideline>
+          <guideline uid="7f8ac66d-a413-47df-a324-3e8a38890051" modifier="standard" refUid="f71c182f-85e9-4890-b770-eec801315115" refId="TL_RULE_STATEFLOW_ORDER_PARALLEL_STATES" refVersion="1" refTitle="Order Numbers for Parallel States">
+            <check uid="61ce290e-3713-4dd6-94ff-35f37404bdfd" selectedForRun="false" refUid="24327c6f-c641-4fcb-8203-89aca5926c4a" refId="mcheck_ds_0061" refVersion="1" refTitle="Order Numbers for Parallel States"/>
+          </guideline>
+        </chapter>
+      </chapter>
+    </chapter>
+    <chapter uid="0ac389d1-29e6-4058-a2f6-87c6cdfee5b3" title="Implementation Model">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="8d78c451-d06f-4c04-80c5-35ae7532a469" title="Simulink/TargetLink">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <chapter uid="3d1503d4-6e63-4d6c-a387-d58e29a67232" title="Language Subset">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="b29fccf9-1458-4f4b-bde1-32d9bbec6828" modifier="standard" refUid="00c60bfe-f69a-4466-aee4-c64eebd37bcb" refId="hd_0001" refVersion="1" refTitle="Prohibited Simulink Sinks">
+            <check uid="37415349-0cb2-42d6-adee-f3563404f57a" selectedForRun="false" refUid="2c012f85-3aff-4a0d-8d44-21820ed4d019" refId="mcheck_hd_0001" refVersion="1" refTitle="Prohibited Simulink Sinks"/>
+          </guideline>
+          <guideline uid="be28a0b8-f255-420a-9251-62a850784608" modifier="standard" refUid="8112e728-a888-4fac-b1fb-4a9a5aff2999" refId="TL_RULE_CONT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="No Blocks from the Continuous Library">
+            <check uid="bc62ef60-aec0-4600-98d4-3ead958a907d" selectedForRun="false" refUid="a80be4ce-a522-4e24-8a2e-e943b9633976" refId="mcheck_ds_0019" refVersion="1" refTitle="No Blocks from the Continuous Library"/>
+          </guideline>
+          <guideline uid="532634ad-541b-406e-a9b7-10a5832a4c37" modifier="standard" refUid="c4cdf080-3512-4008-bcdb-a00a9d4eb695" refId="TL_RULE_DISCONT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Discontinuities Library">
+            <check uid="a2a172f1-3e2e-445a-ad44-86c5b99d97f5" selectedForRun="false" refUid="6450eb13-58bf-4847-ad02-3f69fdba726f" refId="mcheck_ds_0020" refVersion="1" refTitle="Permissible Blocks of the Discontinuities Library"/>
+          </guideline>
+          <guideline uid="74398391-be3c-46d9-aae5-26abb3b0bde1" modifier="standard" refUid="29636842-6b55-468f-b673-7529129bad5a" refId="TL_RULE_DISC_LIB_INTEGRATOR_SETTINGS" refVersion="1" refTitle="Limitations with Regard to the Discrete-Time Integrator Block">
+            <check uid="38fa0e9d-8319-4f91-b0e4-42f6cafaab37" selectedForRun="false" refUid="f163decd-8dea-4cd1-97ae-142a951f400e" refId="mcheck_ds_0023_b_v3_0" refVersion="1" refTitle="Limitations with Regard to the Discrete-Time Integrator Block - External Reset"/>
+          </guideline>
+          <guideline uid="1d950bd5-13cc-4afc-965c-2052971f5a51" modifier="standard" refUid="73b07597-41f7-402d-984d-02732bf678bf" refId="TL_RULE_DISC_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Discrete Library">
+            <check uid="9caf8808-add8-45d7-ab06-5bdc92365343" selectedForRun="false" refUid="b0b67d53-8a1c-4c65-ae64-9ec7b3c32fe5" refId="mcheck_ds_0022" refVersion="1" refTitle="Permissible Blocks of the Discrete Library"/>
+          </guideline>
+          <guideline uid="0cd733d8-8c8f-4df7-be37-7f19f3b3d38d" modifier="standard" refUid="b455447e-1382-430b-8735-598f55ca5218" refId="TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Logic and Bit Operations Library">
+            <check uid="027d42a8-9f55-4a3a-8aee-851b3cffef75" selectedForRun="false" refUid="7d62d010-aeed-45be-ab3c-6205e596f616" refId="mcheck_ds_0024" refVersion="1" refTitle="Permissible Blocks of the Logic and Bit Operations Library"/>
+          </guideline>
+          <guideline uid="f4fe32fa-13af-4c04-974f-78e8316dc1d1" modifier="standard" refUid="47e42ddf-a609-4abd-a444-dd2bcd0f9760" refId="TL_RULE_LUT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Look-up Tables Library">
+            <check uid="8fb63199-0f01-47a5-b445-9c94a48b689a" selectedForRun="false" refUid="e6ec1a21-db2b-4477-9bfd-f7bacdf215eb" refId="mcheck_ds_0026" refVersion="1" refTitle="Permissible Blocks of the Look-up Tables Library"/>
+          </guideline>
+          <guideline uid="4c9d21be-a456-4a80-906b-b9253918d0b4" modifier="standard" refUid="efcdff74-66a7-499c-83e0-4a3ad594c6a7" refId="TL_RULE_MATH_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Math Library">
+            <check uid="f50046c9-22ff-455a-9452-3e2955b32aae" selectedForRun="false" refUid="7f2fdbca-ac57-4012-bae0-be7f0852ed12" refId="mcheck_ds_0028" refVersion="1" refTitle="Permissible Blocks of the Math Library"/>
+          </guideline>
+          <guideline uid="d43fce69-a688-4c5b-b7db-2a43f7ef726b" modifier="standard" refUid="198e1ad7-903a-4ce6-82cd-221bebe92a2f" refId="TL_RULE_MODELUTIL_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Model-Wide Utilities Library">
+            <check uid="cdc2309d-dd14-4a39-8954-11816321c1d5" selectedForRun="false" refUid="f9f5ce68-9a66-4303-8ff4-500cd4eaf150" refId="mcheck_ds_0035" refVersion="1" refTitle="Permissible Blocks of the Model-Wide Utilities Library"/>
+          </guideline>
+          <guideline uid="96ff5fa7-0aab-4896-98cd-41afaad39c70" modifier="standard" refUid="6fd0d382-20c6-4209-84bb-62af014e7713" refId="TL_RULE_MODELVERIFY_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Model Verification Library">
+            <check uid="49cd8367-388c-4d87-9ab0-9965c1621aab" selectedForRun="false" refUid="9ed44df4-7d1d-4d20-9aae-0392803b4a0f" refId="mcheck_ds_0034" refVersion="1" refTitle="Permissible Blocks of the Model Verification Library"/>
+          </guideline>
+          <guideline uid="70dbbecd-8619-47ea-a3cf-097972f13125" modifier="standard" refUid="6a3f63f2-6a4b-4648-8459-5bd67988ba9c" refId="TL_RULE_PORTSYSTEM_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Ports and Subsystems Library">
+            <check uid="f1720bc9-e9c4-4262-8b7d-8dc2eb754d2f" selectedForRun="false" refUid="891baae2-cd5d-4888-aee6-b81533c5f261" refId="mcheck_ds_0036_whiteList" refVersion="1" refTitle="Permissible Blocks of the Ports and Subsystems Library"/>
+          </guideline>
+          <guideline uid="0b17a7ed-31fe-41ae-a18e-78ddf1f5aae0" modifier="standard" refUid="f6681436-2b1f-4bfd-b6ea-581b5606060b" refId="TL_RULE_SIGNALATT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Signal Attributes Library">
+            <check uid="26715cf0-43e8-4dc0-ab3e-4018e639f968" selectedForRun="false" refUid="ca550d9e-3e98-4184-85db-afd34a352b58" refId="mcheck_ds_0039" refVersion="1" refTitle="Permissible Blocks of the Signal Attributes Library"/>
+          </guideline>
+          <guideline uid="a5e69f13-b43b-4613-815b-cd377eae5848" modifier="standard" refUid="6db9ad6f-f5cc-440e-ae98-5a93ca37a44f" refId="TL_RULE_SIGNALROUT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Signal Routing Library">
+            <check uid="6e308a67-56de-48ee-9657-1c18703acab2" selectedForRun="false" refUid="1b2ea8e8-e1bc-4da0-a637-d763c9565910" refId="mcheck_ds_0041" refVersion="1" refTitle="Permissible Blocks of the Signal Routing Library"/>
+          </guideline>
+          <guideline uid="4247a6db-1f94-4b15-9e94-51e98d3aab78" modifier="standard" refUid="a15a206d-df50-491a-affd-b74147f6b88b" refId="TL_RULE_SINKS_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Sinks Library">
+            <check uid="b9156369-5495-4c7c-b7b5-09ab172bdc0f" selectedForRun="false" refUid="fc5715a6-eb01-42a0-a9d5-2c2ff5aa31f5" refId="mcheck_ds_0050" refVersion="1" refTitle="Permissible Blocks of the Sinks Library"/>
+          </guideline>
+          <guideline uid="93c116d5-dd8d-496f-9038-aae683890fa7" modifier="standard" refUid="48447285-3f81-40c0-9d53-5c1e758083d8" refId="TL_RULE_SOURCES_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Sources Library">
+            <check uid="1271aa91-efc3-45a4-9c1f-3e4fb623c919" selectedForRun="false" refUid="bd479e02-7ee7-4986-abc4-921a26481c30" refId="mcheck_ds_0051" refVersion="1" refTitle="Permissible Blocks of the Sources Library"/>
+          </guideline>
+          <guideline uid="06dd063c-fed2-4d22-8213-57bfaee87214" modifier="standard" refUid="e18282ce-0178-418b-8c75-4f0164f8df9c" refId="TL_RULE_USERFUNC_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks from the User-Defined Functions Library">
+            <check uid="decc66aa-99f7-4f2f-be08-25b73d7ab3d2" selectedForRun="false" refUid="14c8cd78-8f02-4a46-81bf-7ed32495e1f0" refId="mcheck_ds_0052" refVersion="1" refTitle="Permissible Blocks from the User-Defined Functions Library"/>
+          </guideline>
+          <guideline uid="4ac6d00e-c6cd-4bfc-b480-b1e53eb4570c" modifier="standard" refUid="7bdc12b0-f355-4f4b-a3d7-c8ffe505f1d3" refId="TL_RULE_LUT_LIB_NO_GENERAL_TENSORS" refVersion="1" refTitle="Limitations with Regard to the Look-up Table (n-D) and Direct Look-up Table (n-D) Blocks">
+            <check uid="ccd92fb9-5a2f-48f0-b7a5-2eda2a51f441" selectedForRun="false" refUid="dd215498-d205-4e2a-ae07-2f2831b1253b" refId="mcheck_ds_0027" refVersion="1" refTitle="Limitations with Regard to the Look-up Table (n-D) and Direct Look-up Table (n-D) Blocks"/>
+          </guideline>
+          <guideline uid="49605f9d-3f31-4707-9b8f-447020feb028" modifier="standard" refUid="b9293589-717b-4a53-8378-c86e6d26233c" refId="TL_RULE_MATH_LIB_PROD_BLOCK_NUMBER_INPORTS" refVersion="1" refTitle="Limitations with Regard to Operand Numbers for the Product Block">
+            <check uid="38a2ffeb-c1fc-4daf-a9d6-6afd3b09a1e9" selectedForRun="false" refUid="e2ca96b0-4b9e-4890-a684-73086e267d79" refId="mcheck_ds_0029" refVersion="1" refTitle="Limitations with Regard to Operand Numbers for the Product Block"/>
+          </guideline>
+          <guideline uid="02d948f5-2c1a-4d46-b4e6-90333e8b9a8d" modifier="standard" refUid="fbc9f517-9876-4340-be5a-3c0b66cb9743" refId="TL_RULE_MATH_LIB_PROD_BLOCK_SETTINGS" refVersion="1" refTitle="Limitations with Regard to Parameters for the Product Block">
+            <check uid="f7ee31cb-5501-49b5-95b9-4e82aedc09cf" selectedForRun="false" refUid="403de88a-c62a-4e38-8226-f031ae073b91" refId="mcheck_ds_0030" refVersion="1" refTitle="Limitations with Regard to Parameters for the Product Block"/>
+          </guideline>
+          <guideline uid="1b18523d-74f7-4e2a-b51e-d587bf979ed8" modifier="standard" refUid="0aa4fc3a-841c-40df-a660-4f784dae99be" refId="TL_RULE_MATH_LIB_TRIGO_DATATYPES" refVersion="1" refTitle="Use of Data Types for Trigonometric Blocks">
+            <check uid="c498f22e-a1c2-407b-8c72-3894d4ddd6df" selectedForRun="false" refUid="b5aadb20-ed36-4f45-a060-59bb1b41cd09" refId="mcheck_ds_0102" refVersion="1" refTitle="Use of Data Types for Trigonometric Blocks"/>
+          </guideline>
+          <guideline uid="e7edef36-23e9-46a8-9d3b-d4d509ba68a7" modifier="standard" refUid="e4b11d62-9136-4cde-8667-fddebc8fb5f3" refId="TL_RULE_SIGNALATT_LIB_DATA_TYPE_CONV" refVersion="1" refTitle="Use of the Data Type Conversion Block">
+            <check uid="d7134534-a571-4f52-8f50-3d18a2d2f4e9" selectedForRun="false" refUid="33ca08f9-754e-45f1-a1c6-7c11a7b8d655" refId="mcheck_mes_cgtl_4108" refVersion="1" refTitle="Use of the Data Type Conversion Block"/>
+          </guideline>
+          <guideline uid="450ea43c-de7f-4e93-ab23-c04713f34286" modifier="standard" refUid="9cd7eca1-c6c7-48d1-8667-228b79afa671" refId="TL_RULE_SIGNALROUT_LIB_SELECTOR" refVersion="1" refTitle="Use of Data Types for Selector Blocks">
+            <check uid="809ced50-5997-4664-85ea-292a41f1f4bb" selectedForRun="false" refUid="d81a8ee1-1037-4d80-9eec-2df7598dbade" refId="mcheck_ds_0105" refVersion="1" refTitle="Use of Data Types for Selector Blocks"/>
+          </guideline>
+        </chapter>
+        <chapter uid="6b5d56c3-9bfa-41cb-beda-f00adbe13cde" title="Defensive Implementation Techniques">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="4d3ef11b-3cf6-408e-8ac7-f8035f778e77" modifier="standard" refUid="00ae89b8-8797-4c2b-9702-687bfa1932c7" refId="misra_tl_4_5" refVersion="1" refTitle="Avoidance of Rounding Operations">
+            <check uid="bd68abbd-5c57-4de7-94f6-9fd02cdc355f" selectedForRun="false" refUid="141241e2-0946-4163-8a97-0f269fc8c585" refId="mcheck_misra_tl_4_5" refVersion="1" refTitle="Avoidance of Rounding Operations"/>
+          </guideline>
+        </chapter>
+        <chapter uid="ba613eff-a7d6-4beb-9c8b-103b059815ea" title="Established Design Principles">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="66d111e3-987d-4ee8-bfb5-4226e0b2f33e" modifier="standard" refUid="d39d3b52-c09b-414b-8df2-d946b2c6cd3c" refId="misra_tl_4_4" refVersion="1" refTitle="Avoidance of Saturation in Integer Arithmetics">
+            <check uid="3b5b7f17-99b8-40f6-834c-1867b584212e" selectedForRun="false" refUid="97927f70-f12d-4182-8ea4-b94636180691" refId="mcheck_misra_tl_4_4" refVersion="1" refTitle="Avoidance of Saturation in Integer Arithmetics"/>
+          </guideline>
+        </chapter>
+        <chapter uid="642a8923-3f6d-4ecd-ae74-dd80c4f12a2d" title="Enforcement of Strong Typing">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="aa38a436-74ec-46ae-9aed-70ab005b70e9" modifier="standard" refUid="53037376-dd3d-43d8-b1a2-cfb6a57af1a4" refId="misra_tl_5_1" refVersion="1" refTitle="Attributes of Look-Up table outputs">
+            <check uid="fded2b2e-c880-483a-80f5-51c9a6b27b5d" selectedForRun="false" refUid="6b6b88b3-18a2-45cc-b0c2-4ff0d8fc44d2" refId="mcheck_misra_tl_5_1" refVersion="1" refTitle="Attributes of Look-Up table outputs"/>
+          </guideline>
+          <guideline uid="20ec695b-f46a-4c82-beaa-93980494e103" modifier="standard" refUid="4a9546d6-c0be-450d-8613-459183b22780" refId="misra_tl_6_7" refVersion="1" refTitle="Avoiding rescaling of input signals to LookupTables">
+            <check uid="1118b3ef-c2f8-4339-874c-928696583bbc" selectedForRun="false" refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refVersion="1" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)"/>
+          </guideline>
+          <guideline uid="ca4fab17-60b3-4b03-98a3-6fdadd7e6d38" modifier="standard" refUid="ea7ace1d-1005-413d-9d2c-c7c3b6cb7230" refId="sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks">
+            <check uid="1935d3fd-6854-4144-a01e-ad5c553530c1" selectedForRun="false" refUid="fe41ad15-6f09-46c5-aa8b-8632402a1c2a" refId="mcheck_sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks"/>
+          </guideline>
+          <guideline uid="799e9661-57da-4877-89f1-aba8cc03a93b" modifier="standard" refUid="f8f2f09b-502f-4abe-8ecc-eb8751b81639" refId="sdt_sa002" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks">
+            <check uid="e561f26a-d511-4ba6-9f50-184da8d6dd97" selectedForRun="false" refUid="f89981e7-333a-4c75-af33-0d11724c2e1b" refId="mcheck_sdt_sa002_a" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Logical Operator Blocks"/>
+            <check uid="a412590d-4418-483e-bd48-c277afd950e4" selectedForRun="false" refUid="7db5dcd8-f8de-4d9a-8046-83a65c00a247" refId="mcheck_sdt_sa002_b" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Relational Operator Blocks"/>
+          </guideline>
+          <guideline uid="60a87598-3f06-45b9-9377-1017c4a1f39c" modifier="standard" refUid="b5931ff0-a4e8-4cdd-98d4-a6180ad8900c" refId="sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface">
+            <check uid="0230b8dd-c298-4f63-adcb-a5cd8b1f46bc" selectedForRun="false" refUid="4e26b66c-dd40-45aa-846a-2e46d5d9ce2d" refId="mcheck_sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface"/>
+          </guideline>
+          <guideline uid="8cc5e89a-66ff-43bd-a484-c8cd97a02ff2" modifier="standard" refUid="8d12be9e-9122-490d-a3ac-b8a0f6440891" refId="sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks">
+            <check uid="79c6840a-d012-49f4-a409-23c53454b57a" selectedForRun="false" refUid="c3db96f2-ebce-47d1-bae4-b1a33c72d021" refId="mcheck_sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks"/>
+          </guideline>
+          <guideline uid="06e71de5-4221-46e2-8e38-0566c760065d" modifier="standard" refUid="8482f987-6dee-407c-b50b-a0d844984c3a" refId="sdt_sc004" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks">
+            <check uid="29643718-57b6-49a9-9a3e-41d1c6d6c4a6" selectedForRun="false" refUid="ebd053c1-fcd2-426d-9376-bcf1b02b0a21" refId="mcheck_sdt_sc004_a" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Option &quot;Require all inputs to have the same data type&quot;"/>
+            <check uid="68409462-9191-482e-902f-c7e64c6c3efb" selectedForRun="false" refUid="49963ec7-8c8e-4928-81f0-261acab47eec" refId="mcheck_sdt_sc004_b" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Scaling and Min/Max"/>
+            <check uid="b8051f12-2d9b-426c-afa2-1b5101a18f3d" selectedForRun="false" refUid="ad747466-21a7-4eb8-a908-b9d3db172946" refId="mcheck_sdt_sc004_c" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Data Range Output Data Type"/>
+          </guideline>
+          <guideline uid="09281464-6dee-4ed6-ab22-3e1e27e96113" modifier="standard" refUid="e82ce60b-b5e8-4412-8d70-ad3500e8aaef" refId="na_0002" refVersion="1" refTitle="Appropriate Implementation of Fundamental Logical and Numerical Operations">
+            <check uid="45b09449-aa7d-4c6a-9e22-9ee898ecc867" selectedForRun="false" refUid="29081d4f-ae9a-4f89-9cfa-c955daa698f6" refId="mcheck_na_0002" refVersion="1" refTitle="Appropriate Implementation of Fundamental Logical and Numerical Operations"/>
+          </guideline>
+        </chapter>
+        <chapter uid="18b28a5e-5f24-4f70-a4d2-d395187ee366" title="Naming Conventions">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="a4a2004a-c986-4f23-8dd5-34f75f56124d" modifier="standard" refUid="7258ce58-7811-45e9-b816-9d4583786794" refId="misra_tl_2_4" refVersion="1" refTitle="Reserved Subsystem and Function Names"/>
+          <guideline uid="ba664c38-ee77-4d9f-93af-361c3a3edc14" modifier="standard" refUid="0d18911f-31e3-4732-bf62-499ff4aaf586" refId="ds_0080" refVersion="1" refTitle="Reserved System Header File Names">
+            <check uid="e05bf6fe-7cea-4f01-8f4b-117fc265c205" selectedForRun="false" refUid="8bde88f2-bbcd-4769-8e2d-621dd6aec72a" refId="mcheck_ds_0080" refVersion="1" refTitle="Reserved System Header File Names"/>
+          </guideline>
+        </chapter>
+        <chapter uid="91af14cc-a0b0-4743-af21-dd0fde68cb1f" title="Configuration">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="824a772a-b74e-4682-9070-01d2f5f8ef4e" modifier="standard" refUid="1d63ff41-7318-4f43-a413-e9ca99e29e98" refId="mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink">
+            <check uid="c9082f97-bf9a-403c-b304-209bc8741ae3" selectedForRun="false" refUid="fbba4c97-2d04-4f95-a65d-14735ab44bd4" refId="mcheck_mes_cgtl_9002" refVersion="1" refTitle="Advanced Parameters and Configuration Settings for TargetLink"/>
+          </guideline>
+        </chapter>
+      </chapter>
+      <chapter uid="b2bb5bb9-8e73-4f11-87e2-e852643a53a9" title="Stateflow">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <chapter uid="05e085f4-d684-4056-8e55-3315fef72583" title="Language Subset">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="a099727e-b93d-4aff-ac94-a402b0f25ac5" modifier="standard" refUid="16f3ddd6-2628-4f61-9ff5-bcffb6eb608b" refId="ds_0055" refVersion="1" refTitle="Reserved Names in Stateflow">
+            <check uid="118cf873-086e-4de3-9304-d0c85a4a3fb6" selectedForRun="false" refUid="4cd31c1c-a013-42dd-8858-4d63fcfc077d" refId="mcheck_ds_0055" refVersion="1" refTitle="Reserved Names in Stateflow"/>
+          </guideline>
+          <guideline uid="fe204eb1-eae5-4930-b7c5-7b1a64ebea26" modifier="standard" refUid="b1a380d2-2ef9-46a3-bb3e-8a1ea8aa29f4" refId="ds_0057" refVersion="1" refTitle="Usage of Constants">
+            <check uid="943328e6-bc59-4b11-95fa-6a8c0cce8e43" selectedForRun="false" refUid="5545c6ed-0251-494c-ae0e-78ab7193ae16" refId="mcheck_ds_0057" refVersion="1" refTitle="Usage of Constants"/>
+          </guideline>
+          <guideline uid="3ae22008-cce3-44b2-a09e-c0a3ca52185b" modifier="standard" refUid="2d7dec6f-88e0-4564-9352-927c44fa5a34" refId="ds_0065" refVersion="1" refTitle="Alias Types">
+            <check uid="41e6168e-0c9a-4ce1-a8b4-48ec5a83c53e" selectedForRun="false" refUid="c1e3b663-6536-4054-8b19-3101283867e8" refId="mcheck_ds_0065" refVersion="1" refTitle="Alias Types"/>
+          </guideline>
+          <guideline uid="f4fad0eb-3566-4f79-9e80-89f959d834bc" modifier="standard" refUid="bb7b3588-02f2-4ea2-8a04-039d5b2e7f60" refId="misra_slsf_043_b" refVersion="1" refTitle="Transitions - Transition-Actions">
+            <check uid="2669a3a7-8318-4ae1-ba1d-428a66f0904f" selectedForRun="false" refUid="efdba304-f56f-416b-932e-9b93f05ce66c" refId="mcheck_misra_slsf_043_b" refVersion="1" refTitle="Transitions - Transition-Actions"/>
+          </guideline>
+        </chapter>
+        <chapter uid="268faddd-9e62-4435-9b27-49133ebf8b66" title="Enforcement of Strong Typing">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value></value>
+          </description>
+          <guideline uid="77dcabbf-627c-437e-8874-943af9083d59" modifier="standard" refUid="d82a9a48-cdfc-47cd-a021-254f9218395f" refId="sdt_sc002" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface">
+            <check uid="3831dc1d-3351-415f-91ee-de10c9b140ac" selectedForRun="false" refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Chart Option &quot;Strong Data Typing with Simulink I/O&quot;"/>
+            <check uid="a47dbdac-a2c8-4975-ada4-4f7f991d9335" selectedForRun="false" refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Input Interface"/>
+            <check uid="ddd1df2e-ae17-45d9-a651-2ff3d24d86cd" selectedForRun="false" refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Output Interface"/>
+            <check uid="668134bc-03a7-4630-9de8-f415979a2221" selectedForRun="false" refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Data Range"/>
+            <check uid="19a0b41f-1a14-4570-aa3f-a9e2665a5fae" selectedForRun="false" refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Variable Range"/>
+          </guideline>
+        </chapter>
+      </chapter>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="02/03/2016 15:57:30">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="02/03/2016 15:57:32">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>A new version [2] of [mes_first_set_modeling_guidelines_fs: MXAM Starter Set - Extended Version (v01)] has been created.</comment>
+    </record>
+    <record timestamp="03/16/2016 17:08:29">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Added:
+- db_0140: Display of Basic Block Parameters
+- misra_slsf_048_g: Stateflow Coding - Numbers
+- mes_is_0002: User-specified State/Transition Execution Order
+- mes_sk_001: Configuration Parameters for Simulink
+- mes_sk_002: Advanced Parameters and Configuration Settings for TargetLink
+
+Changed:
+- mes_sltl_002 replaces jc_0481: This guideline extends the handling of floating point comparisons to Simulink.
+- misra_slsf_012_b replaces jc_0141: This guideline provides a rational, functionality itself is preserved.
+- misra_slsf_009_b replaces misra_tl_1_1: General guideline not only for TargetLink, functionality itself is preserved.
+- misra_tl_1_2 replaces ds_0082: This check provides additionally the analysis of the description of TargetLink DD variables if these occur.  
+
+Removed:
+- mes_sf_004: This guideline is very strict and not recommended for the StarterSet.</comment>
+    </record>
+    <record timestamp="03/17/2016 18:12:00">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="06/20/2017 17:27:39">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>A new version [3] of [mes_first_set_modeling_guidelines_fs: MXAM Starter Set - Extended Version (v02)] has been created.</comment>
+    </record>
+    <record timestamp="06/20/2017 18:10:14">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Removed obsolete TargetLink Guidelines:
+- ds_0021, ds_0031, ds_0032, ds_0103, ds_0106
+Replaced TargetLink Guidelines:
+- ds_0064 by TL_RULE_STATEFLOW_MATLAB
+- ds_0036 by TL_RULE_STATEFLOW_IMPLICIT_EVENTS
+- ds_0061 by TL_RULE_STATEFLOW_ORDER_PARALLEL_STATES
+- ds_0019 by TL_RULE_CONT_LIB_PERMITTED_BLOCKS
+- ds_0020 by TL_RULE_DISCONT_LIB_PERMITTED_BLOCKS
+- ds_0023 by TL_RULE_DISC_LIB_INTEGRATOR_SETTINGS
+- ds_0024 by TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS
+- ds_0026 by TL_RULE_LUT_LIB_PERMITTED_BLOCKS
+- ds_0028 by TL_RULE_MATH_LIB_PERMITTED_BLOCKS
+- ds_0035 by TL_RULE_MODELUTIL_LIB_PERMITTED_BLOCKS
+- ds_0034 by TL_RULE_MODELVERIFY_LIB_PERMITTED_BLOCKS
+- ds_0036 by TL_RULE_PORTSYSTEM_LIB_PERMITTED_BLOCKS
+- ds_0039 by TL_RULE_SIGNALATT_LIB_PERMITTED_BLOCKS
+- ds_0041 by TL_RULE_SIGNALROUT_LIB_PERMITTED_BLOCKS
+- ds_0050 by TL_RULE_SINKS_LIB_PERMITTED_BLOCKS
+- ds_0051 by TL_RULE_SOURCES_LIB_PERMITTED_BLOCKS
+- ds_0052 by TL_RULE_USERFUNC_LIB_PERMITTED_BLOCKS
+- ds_0027 by TL_RULE_LUT_LIB_NO_GENERAL_TENSORS
+- ds_0029 by TL_RULE_MATH_LIB_PROD_BLOCK_NUMBER_INPORTS
+- ds_0030 by TL_RULE_MATH_LIB_PROD_BLOCK_SETTINGS
+- ds_0102 by TL_RULE_MATH_LIB_TRIGO_DATATYPES
+- ds_0040 by TL_RULE_SIGNALATT_LIB_DATA_TYPE_CONV
+- ds_0105 by TL_RULE_SIGNALROUT_LIB_SELECTOR
+- ds_0055, ds_0080, ds_0079_c by TL_RULE_GENERAL_NAMING
+</comment>
+    </record>
+    <record timestamp="06/21/2017 09:27:57">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="09/18/2018 13:27:07">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guidelineDocument>

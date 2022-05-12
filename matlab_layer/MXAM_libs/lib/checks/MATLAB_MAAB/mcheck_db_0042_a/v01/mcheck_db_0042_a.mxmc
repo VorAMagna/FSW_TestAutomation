@@ -1,0 +1,124 @@
+<check fileVersion="2">
+  <uid>2e705794-8dd8-40e6-a05c-c9a4fc3324eb</uid>
+  <id>mcheck_db_0042_a</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>MAAB</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Port Block in Simulink Models - Position of Inports/Outports</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_db_0042_a.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the placement of each Inport and Outport block of the model. </p> 
+<ul> 
+ <li> Failed1: The left edge of an Inport block is positioned to the right of the left most block. </li> 
+ <li> Failed2: The right edge of an Outport block is positioned to the left of the right most block. </li> 
+</ul> 
+<p> The left (right) most block that is actually considered in cases Failed1 and Failed2 depends on the check parameter MAAB.db_0042_a.IgnoredBlocks. That parameter defines all those blocks that may be placed to the left of any Inport block or to the right of any Outport block. </p> 
+<ul> 
+ <li> Failed3: A subsystem receives a failed if its Inports are not aligned vertically with respect to a tolerance value. </li> 
+ <li> Failed4: A subsystem receives a failed if its Outports are not aligned vertically with respect to a tolerance value. </li> 
+</ul> 
+<p> The tolerance value can be specified in pixels in the check parameter MAAB.db_0042_a.Tolerance </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[- Corresponding guideline allows Inports/ Outports to move to the
+<br /> right/left in order to avoid signal crossings. This is not supported by
+<br /> this check, as a consistent placement of ports increases much more the
+<br /> readability of a chart than the avoidance of a few signal crossings.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Position Inports and Outports according to this guideline.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[User has the possibility to choose one Inport/ Outport, which becomes a
+<br /> reference block. Each other block of its kind will be aligned with it.
+<br /> 
+<br /> Fix does not check, if the users choice is correct in the sense of this
+<br /> guideline, so a rerun of this check is advisable!]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.db_0042_a.Tolerance</name>
+      <description>The aligment of the inports and outports is not checked sharp -  this would produce to many unnecessary failures. This tolerance  represents the value to what the vertical position of all inports (and outports) might differ.</description>
+      <defaultValue>10</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.db_0042_a.IgnoredBlocks</name>
+      <description><![CDATA[Each row describes a block, first column represents the blocktype, second the masktype. Per row only ONE block. 
+Example: {'EnablePort' ''; 'Constant' ''} -> all Enable and Constant blocks will be ignored.]]></description>
+      <defaultValue><![CDATA[{'EnablePort','';
+                                    'TriggerPort','';
+                                    'ActionPort','';
+                                    'SubSystem','TL_Function';
+                                    'SubSystem','DocBlock';
+                                    'SubSystem','TL_MainDialog';
+                                    'SubSystem','TL_ToolSelector';
+                                    'SubSystem','TL_MilHandler';
+                                    'SubSystem','HLF_FlowControl_CRC';
+                                    'Goto','';
+                                    'From',''}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="02/03/2015 08:09:52">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

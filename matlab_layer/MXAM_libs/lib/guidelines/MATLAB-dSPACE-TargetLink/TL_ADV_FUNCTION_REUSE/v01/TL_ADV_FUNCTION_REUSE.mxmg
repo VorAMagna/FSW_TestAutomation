@@ -1,0 +1,151 @@
+<guideline fileVersion="2">
+  <uid>887a4fe3-6b4e-4fd3-b4f0-281b6eacd703</uid>
+  <id>TL_ADV_FUNCTION_REUSE</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Reuse of Functions</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 10.3), dSPACE 3.0 (section 10.3), dSPACE 4.0 (section 5.3.3)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value><![CDATA[TargetLink Advanced Practices Guide [2], Mapping of Subsystems and Functions > Function Reuse]]></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> for multiple identical subsystems or state charts, let TargetLink (re)use functions </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> If a TargetLink model contains multiple identical subsystems/state charts, code for them should be generated in the form of one function only, which should be reused for each instance (function reuse). If the subsystems are structurally identical but differ in the parameter set used, function reuse should be applied as well. To make TargetLink generate reused functions, the prototype must be placed in a library and special settings are required. Since TargetLink 4.1, reusable functions can also be applied using model referencing. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Function reuse reduces code size, i.e. ROM consumption. Please note that TargetLink does not automatically reuse parts of a model unless they are placed in a library. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_ADV_FUNCTION_REUSE-1 shows a model with multiple instances of a filter block. Function reuse makes sure that code for the subsystem is generated only once and called for each instance. </p>
+<p> To enable function reuse for the filter blocks, they must be taken from a library into which the block prototype was previously placed. In the case of a Simulink subsystem, a Function block and TargetLink <span style="font-style: italic;">Inports</span> and <span style="font-style: italic;">Outports</span> have to be placed within the subsystem. In addition, the <span style="font-style: italic;">Make function reusable</span> option also has to be specified, see TL_ADV_FUNCTION_REUSE-2. Moreover, each instance must be assigned a common name for the function to be generated and a proper function interface. For state charts which can also be reused as a whole, the corresponding settings can be specified using the property manager. </p>
+<p> For the model in Figure TL_ADV_FUNCTION_REUSE-1 TargetLink generates the following code, applying function reuse: </p>
+<p class="codeSample"> /* call of function: NRadMittel/Tp1Filter */<br /> Tp1Filter(Sa1_NRadVR, 32 /* 0.25 */, &amp;(SFTP11_SignalGefiltert),<br /> &amp;(tagISV_SFTP11_Tp1Filter)); </p>
+<p class="codeSample"> /* call of function: NRadMittel/Tp1Filter1 */<br /> Tp1Filter(Sa1_NRadVL, 32 /* 0.25 */, &amp;(SFTP11_SignalGefiltert_a),<br /> &amp;(tagISV_SFTP11_Tp1Filter1)); </p>
+<p class="codeSample"> /* call of function: NRadMittel/Tp1Filter2 */<br /> Tp1Filter(Sa1_NRadHR, 32 /* 0.25 */, &amp;(SFTP11_SignalGefiltert_b),<br /> &amp;(tagISV_SFTP11_Tp1Filter2)); </p>
+<p class="codeSample"> /* call of function: NRadMittel/Tp1Filter3 */<br /> Tp1Filter(Sa1_NRadHL, 32 /* 0.25 */, &amp;(SFTP11_SignalGefiltert_c),<br /> &amp;(tagISV_SFTP11_Tp1Filter3)); </p>
+<p> <img style="width: 898px; height: 385px;" src="TL_ADV_FUNCTION_REUSE-1.png" /> </p>
+<p class="imageCaption"> Figure TL_ADV_FUNCTION_REUSE-1: Function reuse of a subsystem: There are multiple instances, <em>TplFilter, TplFilter1, TplFilter2</em> and <em>TplFilter</em> for which only one function should be generated. </p>
+<p> <img style="width: 460px; height: 725px;" src="TL_ADV_FUNCTION_REUSE-2.png" /> </p>
+<p class="imageCaption"> Figure TL_ADV_FUNCTION_REUSE-2: Settings in the dialog of the <em>Function</em> block to enable function reuse. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+        <value>T1.1g Use of Style Guides</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/15/2016 15:06:35">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Reuse of Functions' (ID: ds_0113, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</guideline>

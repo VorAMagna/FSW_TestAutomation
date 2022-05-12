@@ -1,0 +1,27 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.4p0 				05-Apr-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1         12-Oct-2015 okay
+DSDD             Data Dictionary                            4.1         12-Oct-2015 okay
+========================================================================================
+
+PID=29580
+[Warning: Directory access failure: C:\Sandbox\Product_Group\SW\Development\VCa\VC_Composition\MagnaLib\MagnaLib.slx] 
+[> In path (line 109)
+  In addpath (line 88)
+  In load_required_models (line 4)
+  In ExecuteBatch_MXAM (line 66)] 
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\vladvojn\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+MXAM is already running.

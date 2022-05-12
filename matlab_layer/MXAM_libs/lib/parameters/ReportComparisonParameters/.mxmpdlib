@@ -1,0 +1,7 @@
+<library type="ParameterDefinitionLibrary" id="ReportComparisonParameters" title="Report Comparison Parameters" uid="67220173-3d44-47c5-9c41-5bfb58c3a953">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

@@ -1,0 +1,321 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=6404
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c5a6e938-0159-400d-996c-e8a6283ed9d1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c5a6e938-0159-400d-996c-e8a6283ed9d1'
+
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bee87f12-7e07-4a59-966f-2321b8e76970'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=bee87f12-7e07-4a59-966f-2321b8e76970'
+
+The model 'BrakeDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bee87f12-7e07-4a59-966f-2321b8e76970'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '8282f679-0b17-4e65-b0c8-7b6406ea81e1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=8282f679-0b17-4e65-b0c8-7b6406ea81e1'
+
+The model 'GearDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '8282f679-0b17-4e65-b0c8-7b6406ea81e1'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '177556b8-b9de-4aca-b88d-a20271cc29b4'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=177556b8-b9de-4aca-b88d-a20271cc29b4'
+
+The model 'MisuseDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '177556b8-b9de-4aca-b88d-a20271cc29b4'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '11db8120-362a-44be-80b0-a6800c32ea04'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=11db8120-362a-44be-80b0-a6800c32ea04'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '11db8120-362a-44be-80b0-a6800c32ea04'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3d3de913-be62-4311-a193-6ca2ee6e7851'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3d3de913-be62-4311-a193-6ca2ee6e7851'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3d3de913-be62-4311-a193-6ca2ee6e7851'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f6b04143-9a4e-4c07-8c96-f7fdb615528d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f6b04143-9a4e-4c07-8c96-f7fdb615528d'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f6b04143-9a4e-4c07-8c96-f7fdb615528d'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b5c63074-bf01-4b73-ad35-0316e8a78183'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b5c63074-bf01-4b73-ad35-0316e8a78183'
+
+Upgrading library 'Decoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'CounterResetSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 402 to 403 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'Decoder_16Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_16Bit' from revision 402 to 403 ...
+Upgrading library 'Decoder_16Bit_Boolean_Output' from revision 401 to 402 ...
+Upgrading library 'Decoder_16Bit_Boolean_Output' from revision 402 to 403 ...
+Upgrading library 'Decoder_8Bit_Boolean_Output' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit_Boolean_Output' from revision 402 to 403 ...
+Upgrading library 'EdgeDetect_Bool' from revision 401 to 402 ...
+Upgrading library 'EdgeDetect_Bool' from revision 402 to 403 ...
+Upgrading library 'Encoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Encoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'HysteresisPosNeg_Unscaled' from revision 401 to 402 ...
+Upgrading library 'HysteresisPosNeg_Unscaled' from revision 402 to 403 ...
+Upgrading library 'Hysteresis_AllDatatypes' from revision 401 to 402 ...
+Upgrading library 'Hysteresis_AllDatatypes' from revision 402 to 403 ...
+Upgrading library 'Limit_UInt16' from revision 401 to 402 ...
+Upgrading library 'Limit_UInt16' from revision 402 to 403 ...
+Upgrading library 'LimitGrad_Int16' from revision 401 to 402 ...
+Upgrading library 'LimitGrad_Int16' from revision 402 to 403 ...
+Upgrading library 'MeanMovingCalc_65k_Unscaled' from revision 401 to 402 ...
+Upgrading library 'MeanMovingCalc_65k_Unscaled' from revision 402 to 403 ...
+Upgrading library 'PT1_Unscaled' from revision 401 to 402 ...
+Upgrading library 'PT1_Unscaled' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 402 to 403 ...
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_1' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_1' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_2' of reference property 'variable' could not be resolved.
+*** E06273: TARGETLINK BLOCK DATA SYNCHRONISATION WITH DATA DICTIONARY FAILED.:
+***         The reference path 'Dummy_Parameter_2' of reference property 'variable' could not be resolved.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b5c63074-bf01-4b73-ad35-0316e8a78183'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMEndS10\PFMEndS10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\PFMStartS10\PFMStartS10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

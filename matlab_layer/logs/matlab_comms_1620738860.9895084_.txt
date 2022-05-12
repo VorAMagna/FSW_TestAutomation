@@ -1,0 +1,305 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.9p0 				23-Apr-2021
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p3       16-Oct-2018 okay
+DSDD             Data Dictionary                            4.3p3       16-Oct-2018 okay
+Model Compare    Model Comparison Tool (win64)              2.8         07-Nov-2017 okay
+DSMLCON24        dSPACE MATLAB Connection 2.4 (win64)       2.4         01-Jun-2012 okay
+========================================================================================
+
+PID=10532
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f57aece5-b989-4538-ab75-edb178e8de2d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f57aece5-b989-4538-ab75-edb178e8de2d'
+
+Using DD project file:   C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Composition.dd
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3be01a82-fdf7-4289-beda-e6a56d63fab0'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3be01a82-fdf7-4289-beda-e6a56d63fab0'
+
+The model 'BrakeDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3be01a82-fdf7-4289-beda-e6a56d63fab0'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd81df5b7-5d95-48ba-ae99-c9762bfc9d12'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d81df5b7-5d95-48ba-ae99-c9762bfc9d12'
+
+The model 'GearDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd81df5b7-5d95-48ba-ae99-c9762bfc9d12'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c8734b97-5850-484b-9fde-332b5c470a96'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c8734b97-5850-484b-9fde-332b5c470a96'
+
+Description in the Autodoc block is too short!
+MisuseDetS10/HighTorqueReq/Autodoc_Customization
+Description in the Autodoc block is too short!
+MisuseDetS10/Manual_cntHighTrqMnvrMax/Autodoc_Customization
+The model 'MisuseDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c8734b97-5850-484b-9fde-332b5c470a96'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2477db43-6c56-4731-bca3-69ed71811356'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2477db43-6c56-4731-bca3-69ed71811356'
+
+Description in the Autodoc block is too short!
+SaFuS10/Autodoc
+Customization1
+Autodoc Block must be added to the subsystem!
+SaFuS10/SafetyFunc Module
+Autodoc Block must be added to the subsystem!
+SaFuS10/SafetyFunc Module/SaFU Modul 1
+Autodoc Block must be added to the subsystem!
+SaFuS10/SafetyFunc Module/SaFU Modul 2
+Autodoc Block must be added to the subsystem!
+SaFuS10/Sicherheitsfunktion/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SaFuS10/Sicherheitsfunktion/Sicherheitsziel 01a
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/Antriebsmoment
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/Farhtrichtung Einzelrad
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/Gierrate
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/Lenkradwinkel
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/PSM_Limitierung
+Autodoc Block must be added to the subsystem!
+SaFuS10/Signalaufbereitung/QualifierAuswertung
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2477db43-6c56-4731-bca3-69ed71811356'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd3641aa6-8b85-4df5-9b53-fbeb02b4ac8a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=d3641aa6-8b85-4df5-9b53-fbeb02b4ac8a'
+
+Upgrading library 'Decoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit' from revision 402 to 403 ...
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/Autodoc
+Customization1
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/FF_Data_EFP_FDR_SafetyErr/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/FF_Data_SAFETY_SIGNALBASIS_NIO/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/FF_Data_SAFETY_TARGET_SZ01A/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/FF_Data_SAFETY_TARGET_SZ0304/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/Freezeframe_Data_EFP_FDR_SafetyErr/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames/Freezeframe_Data_SAFETY_SIGNALBASIS_NIO/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/DynInfo_Calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/DynInfo_Calc/BrakeSystemInformation
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/DynInfo_Calc/BrakeSystemInformation1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/DynInfo_Calc/SuspensionEvaluation
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PAG_Signals
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PAG_Signals/Ball_position_reset_logic_PL73
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PtInfo_Calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PtInfo_Calc/GearInformation1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PtInfo_Calc/GearboxInfo1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/PtInfo_Calc/trqEngCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/EFP_FDR_safety_error
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/SC_Diag/FreezeFrames
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/Vehicle_conditions
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/Wheelspeeds_Calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SigCondV10/Wheelspeeds_Calc/DrvDirection__Calc
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd3641aa6-8b85-4df5-9b53-fbeb02b4ac8a'
+    export: 'true'
+      file: 'C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\GearDetS10\GearDetS10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\MisuseDetS10\MisuseDetS10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SaFuS10\SaFuS10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\X01993_PORSC_PL73_HO_PA_Actimax\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10\SigCondV10.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

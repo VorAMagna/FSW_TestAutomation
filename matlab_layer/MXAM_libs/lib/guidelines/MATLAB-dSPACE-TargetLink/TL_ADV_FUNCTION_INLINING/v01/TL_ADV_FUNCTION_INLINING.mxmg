@@ -1,0 +1,145 @@
+<guideline fileVersion="2">
+  <uid>2709e136-d99c-440d-8b70-30c46c1ad2e0</uid>
+  <id>TL_ADV_FUNCTION_INLINING</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Inlining of Functions</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>required</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 10.1), dSPACE 3.0 (section 10.1), dSPACE 4.0 (section 5.3.1)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value><![CDATA[TargetLink Advanced Practices Guide [2], Mapping of Subsystems and Functions > TargetLink Subsystems and Function Inlining]]></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> use the CompilerInline and Optimization properties for function classes to enable/disable function inlining in the generated code </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The Optimization properties for function classes along with the global Inlining threshold code generator option are used to control TargetLink’s function inlining mechanisms in order to improve code efficiency by balancing code size vs. execution time. The following options are available </p> 
+<ul> 
+ <li> CG_AUTO_INLINE: The function is inlined according to an internally calculated cost function and the global inlining threshold. </li> 
+ <li> CG_FORCE_INLINE: The function is inlined regardless of the value of the internal cost function. </li> 
+ <li> CG_NO_INLINE: The function is not inlined. </li> 
+</ul> 
+<p> If the function class is set to default, TargetLink’s internal inlining mechanisms control whether inlining is performed or not based on the Inlining threshold option. The same is true for functions which are generated implicitly by TargetLink rather than being specified explicitly by the user. </p> 
+<p> In order to perform compiler inlining (generating an inline keyword before the function definition) can be accomplished by entering the inline keyword at the TypePrefix property of a function class </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> Since the function call is eliminated when function inlining is performed, the execution time is reduced at the expense of increased code size. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> When the TypePrefix property is set to inline for a function class in the Data Dictionary, TargetLink creates an inline keyword as a prefix for the function definition, see Figure TL_ADV_FUNCTION_INLINING-1, which is a recommendation to the compiler to inline the function. Please note that not all C compilers might support the inline keyword. </p> 
+<p> For functions which reside in the <em>TargetLink Subsystem</em> and are called from there, it is also possible to let TargetLink do the function inlining. This behavior is specified via the Optimization property and an inlining threshold, see Figure TL_ADV_FUNCTION_INLINING-2: The following options are available: </p> 
+<p> <img style="width: 535px; height: 305px;" src="TL_ADV_FUNCTION_INLINING_1.png" /> </p> 
+<p class="imageCaption"> Figure TL_ADV_FUNCTION_INLINING-1: Function class with settings for the <em>Compiler Inline</em> and <em>Optimization</em> properties. </p> 
+<p> <img style="width: 445px; height: 520px;" src="TL_ADV_FUNCTION_INLINING_2.png" /> </p> 
+<p class="imageCaption"> Figure TL_ADV_FUNCTION_INLINING-2: Global setting for the <em>Inlining Threshold</em> in the <em>TargetLink Main Dialog</em>. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/29/2016 12:06:12">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Inlining of Functions' (ID: ds_0111, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+    <record timestamp="08/29/2016 13:24:01">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

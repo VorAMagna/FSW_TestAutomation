@@ -1,0 +1,146 @@
+<guideline fileVersion="2">
+  <uid>4af077c6-3dd0-4604-b4e6-85c17ead92b5</uid>
+  <id>TL_ADV_OPTI_VARIABLES_MOVABLE</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Moving of Variables</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 11.6), dSPACE 3.0 (section 11.6), dSPACE 4.0 (section 5.4.5)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value><![CDATA[TargetLink Advanced Practices Guide [2], Optimizing the Production Code >Optimizing an Entire TargetLink System &gt; Optimizing Logging > The Variable Class Attribute 'Movable']]></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>not applicable</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<em>MOVABLE</em> optimization attribute can be moved into dependent branches]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The <em>MOVABLE</em> optimization attribute for variable classes signals to the code generator that the code for variables of that particular class can be moved into dependent branches whenever possible. Hence, in order to decrease execution time of the generated code, set the MOVABLE attribute of variables or use default for the variable class. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> When code is moved into dependent branches, intermediate results are calculated only if they are really required. This reduces execution time. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_ADV_OPTI_VARIABLES_MOVABLE-1: shows a subsystem which contains branches that do not need to be calculated. The <em>MOVABLE</em> optimization attribute is set for the <em>DISP</em> variable class, see Figure TL_ADV_OPTI_VARIABLES_MOVABLE-2. </p>
+<p> TargetLink generates the following code: </p>
+<p class="codeSample"> Void Subsystem(Void)<br /> {<br /> &nbsp;&nbsp;&nbsp; /* Gain: Subsystem/Class DISP_NOT_MOVABLE<br /> &nbsp;&nbsp;&nbsp; Sa1_Class_DISP_NOT_MOVABLE = Sa1_In * 5;<br /> &nbsp;&nbsp;&nbsp; /* SwitchSubsystem/u2 &gt;= 0 */<br /> &nbsp;&nbsp;&nbsp; if (Sa1_In &gt;= 0) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Gain: Subsystem/Class DISP */<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sa1_Class_DISP = Sa1_In * 3;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* # combined # Outport: Subsystem/Out. */ Sa1_Out = Sa1_Class_DISP;<br /> &nbsp;&nbsp; }<br /> &nbsp;&nbsp; else {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* # combined # Outport: Subsystem/Out. */ Sa1_Out = Sa1_Class_DISP_NOT_MOVABLE;<br /> &nbsp;&nbsp; }<br /> } </p>
+<p> As a consequence, the Sa1_Class_DISP variable is calculated only if it is really required, whereas the DISP_NOT_MOVABLE variable, which stems from a non-movable class, is calculated in each time step whether it is required or not. </p>
+<p> <img style="width: 615px; height: 390px;" src="TL_ADV_OPTI_VARIABLES_MOVABLE-1.png" /> </p>
+<p class="imageCaption"> Figure TL_ADV_OPTI_VARIABLES_MOVABLE-1: Model with two <em>Gain</em> blocks, only one of which has a movable output variable that can be moved into a dependent branch. As a consequence, the variable is only calculated if the result is required for the subsequent Switch block. </p>
+<p> <img style="width: 798px; height: 539px;" src="TL_ADV_OPTI_VARIABLES_MOVABLE-2.png" /> </p>
+<p class="imageCaption"> Figure TL_ADV_OPTI_VARIABLES_MOVABLE-2: The <em>MOVABLE</em> optimization attribute is set for the <em>DISP</em> variable class. As a consequence, variables of that class can be moved into dependent branches </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/15/2016 16:30:38">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Moving of Variables' (ID: ds_0119, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,96 @@
+<check fileVersion="2">
+  <uid>44476ed0-0246-4a2c-8ea5-ace024ea76f3</uid>
+  <id>mcheck_tl_pr20050809_07</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Nonpersistent Variable in Multirate Production Code</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_tl_pr20050809_07.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.0.1, 3.1, 3.2, 3.3, 3.4, 3.5, 4.0, 4.1, 4.2, 4.3</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check fails when all the following conditions are fulfilled:
+<br /> - Cond_0001: TL Main Dialog RTOS code generation (rtos.enablemultirate)
+<br /> (TL Main Dialog/RTOS/Enable multirate code generation) activated
+<br /> - Cond_0002: ALL TL_Inport, TL_Outport: var class = default
+<br /> are mapped to a DD VariableClassTemplate with the following properties:
+<br /> FilterVariableClassSpec = SLGlobal ||SLGlobalInit ||SLFcnInput || SLFcnOutput
+<br /> SettinigsVariableClass = FCN_ARG or FCN_REF_ARG or class with
+<br /> Scope value_param or _ref_param)
+<br /> - Cond_0003: Subsystems (block path) use the same task
+<br /> by means of a task block
+<br /> - Cond_0004: subsystems using the same task are directly or indirectly
+<br /> nested.
+<br /> - TL inports and outports of the subsystems from Cond_0004: Variable Class of the variable class
+<br /> templates defines a ArgClass with local scope and not static storage.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Select at least a static local variable class for the ArgClass property
+<br /> for the inputs/outputs of subsystems described above.
+<br /> You may set the Scope_reducible flag to obtain efficient production code.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

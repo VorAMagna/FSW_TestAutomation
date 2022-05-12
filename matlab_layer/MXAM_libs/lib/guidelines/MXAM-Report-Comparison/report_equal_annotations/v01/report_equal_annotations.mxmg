@@ -1,0 +1,50 @@
+<guideline fileVersion="2">
+  <uid>7f26f317-2e14-4d55-b00f-94cccceb6ea0</uid>
+  <id>report_equal_annotations</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>0b2d6bb6-4130-40b7-aa48-d5e191eb19ac</templateUid>
+  <title>Equal Annotations</title>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[Differences in the set of annotations are analyzed.
+<br /> 
+<br /> Differences are categorized as follows:
+<br /> 
+<br /> 
+<ul> 
+ <li> Details of same annotations are different<br /> </li> 
+ <li> Additional annotations </li> 
+ <li> Missing annotations </li> 
+</ul>]]></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="35c2d182-f5fd-4954-9a70-7db992c3daf7" refId="report_annotation_differences" refTitle="No differences in matched annotations" refVersion="1"/>
+    <reference refUid="cc96905e-0350-4429-8e21-58c7cd50586d" refId="report_additional_annotation" refTitle="No additional annotation" refVersion="1"/>
+    <reference refUid="c127a9c6-d971-4341-aaab-978c96f5eaf0" refId="report_missing_annotation" refTitle="No missing annotation" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/25/2018 13:38:09">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="07/25/2018 13:39:58">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:37:09">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

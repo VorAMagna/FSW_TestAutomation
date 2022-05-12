@@ -1,0 +1,44 @@
+<guideline fileVersion="2">
+  <uid>6d6a8fe7-13f4-4a55-8800-def1917fc076</uid>
+  <id>report_equal_document_structure</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>0b2d6bb6-4130-40b7-aa48-d5e191eb19ac</templateUid>
+  <title>Equal Document Structure</title>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[Differences in the structure of guideline documents are analyzed, specifically, chapters, guidelines, and checks.
+<br /> 
+<br /> Changes are categorized as follows:
+<br /> 
+<br /> 
+<ul> 
+ <li> New elements<br /> </li> 
+ <li> Removed elements </li> 
+ <li> Modified elements<br /> </li> 
+</ul>]]></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="46b13604-24e7-46bd-aff2-f2662bc73cd9" refId="report_document_structure_differences" refTitle="No differences in structure of documents" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/29/2018 13:12:59">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:37:17">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

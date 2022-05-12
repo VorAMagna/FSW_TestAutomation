@@ -1,0 +1,60 @@
+<check fileVersion="2">
+  <uid>6731b715-b3ea-40a1-a362-7b1170d127b2</uid>
+  <id>report_missing_finding</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>No missing finding</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_missing_finding.v01.implementation.ReportMissingFinding</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[The check analyzes two reports and creates findings if a missing finding in the second report was detected.
+<br /> 
+<br /> Findings of the first report that do not have matching findings in the second report are considered missing in the second report.
+<br /> 
+<br /> Two findings do&nbsp;
+<span style="font-weight: bold;">not</span> match in any of the following cases:
+<br /> 
+<ul> 
+ <li> They are created by different checks <span style="font-weight: bold;">not</span> mapped with the 'ReportComparison.SameCheckIdPairs' parameter. </li> 
+ <li> They target different model elements. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check passes if all findings are found.
+<br /> 
+<br /> Failed: A finding in the first report has no matching finding in the second report.]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.AggregatedResults</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.SameCheckIdPairs</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="02/18/2016 14:21:35">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:37:58">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

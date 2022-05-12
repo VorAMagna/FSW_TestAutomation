@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MXAM_Report_Comparison" title="MXAM Report Comparator Checks" uid="0bed8489-cbbb-4adf-ae08-8d1f255ghc47">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_MAAB" title="MAAB - MATLAB® Checks" uid="da073294-50c2-480a-a7a0-6298a1e80973">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

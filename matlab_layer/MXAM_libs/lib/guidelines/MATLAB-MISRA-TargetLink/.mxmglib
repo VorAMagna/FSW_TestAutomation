@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MATLAB-MISRA-TargetLink" title="MISRA AC TargetLink® - MATLAB® Guidelines" uid="5c952fa6-5692-4308-aa85-35ec97e9f7e5">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

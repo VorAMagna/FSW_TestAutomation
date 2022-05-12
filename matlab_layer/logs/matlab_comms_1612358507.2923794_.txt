@@ -1,0 +1,879 @@
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\001_CM] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\002_Specification] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\003_Testing] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\004_UserDocs\Help] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\005_ReleaseNotes] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\006_ToolQualification] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\007_Extensions] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\008_ReportTemplates] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\CC\modules\..\..\..\..\..\Development\FSW_Tools\TestOracle\Help] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\AR_Interface_VCa_PF] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\BTC_scripts] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_cfg] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_plugin] 
+[Warning: Name is nonexistent or not a directory:
+C:\Sandbox\Product_Group\SW\Verification\Module_Test\FSW\tools\BTC_EmbeddedTester\matlab_helpscripts\mdl_format\mdl_format_private] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In RTW.TargetRegistry.getInstance
+  In codertarget.TargetBoardRegistry.manageInstance
+  In codertarget.targethardware.getRegisteredTargetHardware
+  In codertarget.targethardware.getRegisteredSimulinkTargetHardwareNames
+  In coder.oneclick.Utils.isAnySimulinkTargetInstalled (line 96)
+  In coder.oneclick.Utils.isRTTInstalled (line 87)
+  In coder.oneclick.Utils.isOnTargetOneClickEnabled (line 117)
+  In Simulink.Preferences/updateConfigSetCopy
+  In Simulink.Preferences.getInstance
+  In slinstallprefs (line 18)
+  In simulinkrc (line 38)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In slcustomize (line 4)
+  In simulinkrc (line 48)
+  In tl_config>FcnGetSearchPath (line 258)
+  In tl_config (line 170)
+  In dsmint_getpath
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 24)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 25)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 26)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+[Warning: A duplicate function handle encountered in addCustomMenuFcn] 
+[> In sl_customization (line 27)
+  In slCustomizer/callAll
+  In slCustomizer/refresh
+  In slCustomizer.staticRefresh
+  In sl_refresh_customizations (line 18)
+  In dsmint_dspacesetup>FcnRefreshSLCustomization
+  In dsmint_dspacesetup
+  In dsmint_startup_main
+  In dsmint_fcnlib>FcnExecuteMatlabIntegrationMainStartup
+  In dsmint_fcnlib
+  In dsmint_startup (line 45)
+  In dspacerc (line 47)
+  In startup (line 5)
+  In matlabrc (line 227)] 
+PID=20276
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\__MyScripts\mxam_proj\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Controls\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Dialogs\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+[Warning: Private directories not allowed in MATLAB path:
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\venv\Library\qml\QtQuick\Extras\Private] 
+[> In path (line 109)
+  In addpath (line 88)
+  In ExecuteBatch_MXAM (line 60)
+  In startup (line 12)
+  In matlabrc (line 227)] 
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\m000aaqk\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.5p0 				06-Dec-2019
+========================================================================================
+
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\491_VW_MQB_Twin_RDM\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '17f50a6a-e194-4129-9289-8d1917e10af7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=17f50a6a-e194-4129-9289-8d1917e10af7'
+
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiDown
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiUp
+Block gefunden  AngTubeC10V_T010ms_CharCalc_trqCluAct
+Block gefunden  AngTubeC10V_T010ms_CharCalc_phiSetPoint
+Block gefunden  AngTubeC10V_T010ms_Input_phiAtr
+Block gefunden  AngTubeC10V_T010ms_CluOp_stCluCtrl
+Block gefunden  AngTubeC10V_T010ms_Cal_dltPhiCal
+Block gefunden  AngTubeC10V_T010ms_SetPos_phiAtrSetPnt
+Block gefunden  AngTubeC10V_T010ms_TrqMod_stActCtrl
+Block gefunden  AngTubeC10V_InputC10_tmpBridge
+Block gefunden  AngTubeC10V_BallPosRstC10_phiBallTravel
+Block gefunden  AngTubeC10V_BallPosRstC10_stBallPosRstFin
+Block gefunden  AngTubeC10V_TrqDgrdC10_stReqPos
+Block gefunden  AngTubeC10V_TrqDgrdC10_stActCtrl
+Block gefunden  AngTubeC10In_CC10_en_PHI_TUBE
+Block gefunden  AngTubeC10In_CC10_enOpCyc_PHI_TUBE
+Block gefunden  AngTubeC10function
+Block gefunden  AngTubeC10AngTubeC10
+Block gefunden  AngTubeC10Autodoc_Customization1
+Block gefunden  AngTubeC10/Autodoc_Customization1dSPACE logo
+Block gefunden  AngTubeC10Data_Type_Conversion1
+Block gefunden  AngTubeC10Data_Type_Conversion2
+Block gefunden  AngTubeC10Data_Type_Conversion3
+Block gefunden  AngTubeC10Data_Type_Conversion5
+Block gefunden  AngTubeC10Data_Type_Conversion6
+Block gefunden  AngTubeC10Data_Type_Conversion7
+Block gefunden  AngTubeC10Data_Type_Conversion8
+Block gefunden  AngTubeC10Data_Type_Conversion9
+Block gefunden  AngTubeC10From
+Block gefunden  AngTubeC10From1
+Block gefunden  AngTubeC10From2
+Block gefunden  AngTubeC10From3
+Block gefunden  AngTubeC10From4
+Block gefunden  AngTubeC10Goto
+Block gefunden  AngTubeC10Goto1
+Block gefunden  AngTubeC10Goto2
+Block gefunden  AngTubeC10Integrator
+Block gefunden  AngTubeC10/IntegratorUpLimTolSafe
+Block gefunden  AngTubeC10/IntegratorLowLimTolSafe
+Block gefunden  AngTubeC10/IntegratorphiAtr
+Block gefunden  AngTubeC10/IntegratorangTubeActv
+Block gefunden  AngTubeC10/IntegratortrqCluAct
+Block gefunden  AngTubeC10/IntegratorphiBallTravel
+Block gefunden  AngTubeC10/IntegratorstBallPosRstFin
+Block gefunden  AngTubeC10/IntegratorrstNewOpCycle
+Block gefunden  AngTubeC10/IntegratorAutodoc_Customization1
+Block gefunden  AngTubeC10/Integrator/Autodoc_Customization1dSPACE logo
+Block gefunden  AngTubeC10/IntegratorConstant1
+Block gefunden  AngTubeC10/IntegratorConstant12
+Block gefunden  AngTubeC10/IntegratorConstant_Gain2
+Block gefunden  AngTubeC10/IntegratorLogical_Operator1
+Block gefunden  AngTubeC10/IntegratorLogical_Operator2
+Block gefunden  AngTubeC10/IntegratorLogical_Operator4
+Block gefunden  AngTubeC10/IntegratorLogical_Operator6
+Block gefunden  AngTubeC10/IntegratorP_AngTubeC10_enLowAngLmtVioFilt
+Block gefunden  AngTubeC10/IntegratorP_AngTubeC10_phiThrs
+Block gefunden  AngTubeC10/IntegratorRelational_Operator1
+Block gefunden  AngTubeC10/IntegratorRelational_Operator8
+Block gefunden  AngTubeC10/IntegratorSum1
+Block gefunden  AngTubeC10/IntegratorSwitch
+Block gefunden  AngTubeC10/IntegratorSwitch6
+Block gefunden  AngTubeC10/IntegratorSwitch8
+Block gefunden  AngTubeC10/IntegratorUnit_Delay3
+Block gefunden  AngTubeC10/IntegratorangTubeVioChk
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkphiAtr
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkUpLimTolSafe
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkLowLimTolSafe
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkConstant3
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkConstant4
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkConstant_Gain
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkConstant_Gain1
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkLogical_Operator3
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkLogical_Operator5
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkRelational_Operator2
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkRelational_Operator3
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkSum2
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkSum3
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkSum4
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkSwitch1
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkSwitch2
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkvioIntInc
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkangTubePlau
+Block gefunden  AngTubeC10/Integrator/angTubeVioChkupLimVio
+Block gefunden  AngTubeC10/Integrator/angTubeVioChklowLimVio
+Block gefunden  AngTubeC10/IntegratorboolToUint8_1
+Block gefunden  AngTubeC10/Integrator/boolToUint8_1In1
+Block gefunden  AngTubeC10/Integrator/boolToUint8_1Constant2
+Block gefunden  AngTubeC10/Integrator/boolToUint8_1Constant3
+Block gefunden  AngTubeC10/Integrator/boolToUint8_1Switch1
+Block gefunden  AngTubeC10/Integrator/boolToUint8_1Out1
+Block gefunden  AngTubeC10/IntegratorboolToUint8_2
+Block gefunden  AngTubeC10/Integrator/boolToUint8_2In1
+Block gefunden  AngTubeC10/Integrator/boolToUint8_2Constant2
+Block gefunden  AngTubeC10/Integrator/boolToUint8_2Constant3
+Block gefunden  AngTubeC10/Integrator/boolToUint8_2Switch1
+Block gefunden  AngTubeC10/Integrator/boolToUint8_2Out1
+Block gefunden  AngTubeC10/IntegratorlowAngLmtVioFilt
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltstPhiSoftMin
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilttrqCluAct
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltstBallPosRstFin
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltphiBallTravel
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltrstNewOpCycle
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltLogical_Operator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltlowTrqCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCritstPhiSoftMin_In
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCrittrqCluAct_In
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCritP_AngTubeC10_trqLimLow
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCritRelational_Operator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCritW_AngTubeC10_stLowTrqCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/lowTrqCritlowTrqCritOut
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltnoRstCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritvioAfterRstTrig
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritstBallPosRstFin
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritphiBallTravel
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritAutodoc
+Customization
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritConstant
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritP_AngTubeC10_dltPhiBallTravelMax
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritRelational_Operator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritSwitch
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritTerminator1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritUnit_Delay
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritW_AngTubeC10_dltPhiBallTravel
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritW_AngTubeC10_stNoRstCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritvioAfterRstActv
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/noRstCritnoRstCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltrepVioCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritstPhiSoftMin
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritstBallPosRstFin
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritrstNewOpCycle
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritAutodoc
+Customization
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritBoolRisingEdge
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/BoolRisingEdgeIn1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/BoolRisingEdgeLogical_Operator1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/BoolRisingEdgeLogical_Operator3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/BoolRisingEdgeUnit_Delay1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/BoolRisingEdgeOut1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritCounterResetSave_UInt8
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8EnCnt_BooleanInput
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8rst
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Autodoc_Customization
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8/Autodoc_CustomizationdSPACE logo
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Constant1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Constant2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Constant3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Relational_Operator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Sum2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Switch1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Switch2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Switch3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8UINT8_OverflowProt
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Unit_Delay
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCrit/CounterResetSave_UInt8Out0_255
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritDetActv
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritP_AngTubeC10_cntTubeVioMax
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritTerminator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritUnit_Delay
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritW_AngTubeC10_stRepVioCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritW_AngTubeC10_vioAfterRstTrig
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritrepVioCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/repVioCritvioAfterRstTrig
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilttimeDepCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritstPhiSoftMin_In
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritConstant
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritP_AngTubeC10_tLimLowPrmt
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritProduct1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritTurnOnDelay_UInt16
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16BooleanInput
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16TurnOnDelaySteps0_65534
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16255
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16Autodoc_Customization
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/Autodoc_CustomizationdSPACE logo
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16CounterResetSave_UInt16_Init65535
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535EnCnt_BooleanInput
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Autodoc_Customization
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535/Autodoc_CustomizationdSPACE logo
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Constant2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Constant3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535CounterResetValue
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Relational_Operator
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Sum2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Switch1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Switch2
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535UINT16_OverflowProt
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Unit_Delay_Init65535
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16/CounterResetSave_UInt16_Init65535Out0_65535
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16Data_Type_Conversion1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16Logical_Operator3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16Relational_Operator1
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16Relational_Operator3
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16W_AngTubeC10_stTimeDepCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCrit/TurnOnDelay_UInt16BoolOnDelayed
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFilt/timeDepCritstTimeDepCritOut
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltreqVioCrit
+Block gefunden  AngTubeC10/Integrator/lowAngLmtVioFiltstTrqSoftLowFlt
+Block gefunden  AngTubeC10/IntegratorstTrqSoftUp
+Block gefunden  AngTubeC10/IntegratorstTrqSoftLowTrigDTC
+Block gefunden  AngTubeC10/IntegratorInt_Out
+Block gefunden  AngTubeC10/IntegratorflgForceAngTube
+Block gefunden  AngTubeC10/IntegratorstTrqSoftLow
+Block gefunden  AngTubeC10Logical_Operator3
+Block gefunden  AngTubeC10Tool_Selector
+Block gefunden  AngTubeC10Tool_Selector1
+Block gefunden  AngTubeC10errDbncr
+Block gefunden  AngTubeC10/errDbncrenable
+Block gefunden  AngTubeC10/errDbncrerrActive
+Block gefunden  AngTubeC10/errDbncrnewOpCyc
+Block gefunden  AngTubeC10/errDbncrpreCond
+Block gefunden  AngTubeC10/errDbncrAutodoc_Customization
+Block gefunden  AngTubeC10/errDbncr/Autodoc_CustomizationdSPACE logo
+Block gefunden  AngTubeC10/errDbncrConst1
+Block gefunden  AngTubeC10/errDbncrData Type Conversion5
+Block gefunden  AngTubeC10/errDbncrEncoder8Bit
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit0
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit1
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit2
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit3
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit4
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit5
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit6
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitBit7
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitEncoder8Bit
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit07
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit06
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit05
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit04
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit03
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit02
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit01
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitBit00
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitAutodoc_Customization
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8Bit/Autodoc_CustomizationdSPACE logo
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain10
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain11
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain12
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain13
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain14
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain15
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain16
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain17
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain18
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain19
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain20
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain21
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain22
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain23
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain8
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitGain9
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitSum
+Block gefunden  AngTubeC10/errDbncr/Encoder8Bit/Encoder8BitOut1
+Block gefunden  AngTubeC10/errDbncr/Encoder8BitEncoded
+Block gefunden  AngTubeC10/errDbncrFunction
+Block gefunden  AngTubeC10/errDbncrLogMaximum
+Block gefunden  AngTubeC10/errDbncr/LogMaximumCnt
+Block gefunden  AngTubeC10/errDbncr/LogMaximumcntMax
+Block gefunden  AngTubeC10/errDbncr/LogMaximumMinMax
+Block gefunden  AngTubeC10/errDbncr/LogMaximumW_AngTubeC10_cntMax_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncr/LogMaximumcntMaxOut
+Block gefunden  AngTubeC10/errDbncrManOverwrite
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteESQIn
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteAutoval
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteP_AngTubeC10_ESQ_PHI_TUBE_Man
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteRelationalOperator
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteSwitch
+Block gefunden  AngTubeC10/errDbncr/ManOverwriteESQOut
+Block gefunden  AngTubeC10/errDbncrMerge
+Block gefunden  AngTubeC10/errDbncrProduct
+Block gefunden  AngTubeC10/errDbncrRelationalOperator1
+Block gefunden  AngTubeC10/errDbncrSampleTime
+Block gefunden  AngTubeC10/errDbncrSampleTimeOfESQReceiverMS
+Block gefunden  AngTubeC10/errDbncrSaturation
+Block gefunden  AngTubeC10/errDbncrTerminator
+Block gefunden  AngTubeC10/errDbncrTerminator1
+Block gefunden  AngTubeC10/errDbncrUnit Delay
+Block gefunden  AngTubeC10/errDbncrW_AngTubeC10_cnt_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncrW_AngTubeC10_curState_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncrW_AngTubeC10_flgErrActive_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncrW_AngTubeC10_flgPreCond_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncrcntConfig
+Block gefunden  AngTubeC10/errDbncrcntDec
+Block gefunden  AngTubeC10/errDbncr/cntDecerrCnt
+Block gefunden  AngTubeC10/errDbncr/cntDecpreCondition
+Block gefunden  AngTubeC10/errDbncr/cntDecTrigger
+Block gefunden  AngTubeC10/errDbncr/cntDecConstant
+Block gefunden  AngTubeC10/errDbncr/cntDecConstant1
+Block gefunden  AngTubeC10/errDbncr/cntDecData Type Conversion
+Block gefunden  AngTubeC10/errDbncr/cntDecMinMax
+Block gefunden  AngTubeC10/errDbncr/cntDecP_AngTubeC10_tOut_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncr/cntDecProduct
+Block gefunden  AngTubeC10/errDbncr/cntDecSaturation
+Block gefunden  AngTubeC10/errDbncr/cntDecSaturation1
+Block gefunden  AngTubeC10/errDbncr/cntDecSum
+Block gefunden  AngTubeC10/errDbncr/cntDecSum1
+Block gefunden  AngTubeC10/errDbncr/cntDecSwitch
+Block gefunden  AngTubeC10/errDbncr/cntDecerrCntOut
+Block gefunden  AngTubeC10/errDbncrcntExt
+Block gefunden  AngTubeC10/errDbncrcntInc
+Block gefunden  AngTubeC10/errDbncr/cntIncerrCnt
+Block gefunden  AngTubeC10/errDbncr/cntIncpreCondition
+Block gefunden  AngTubeC10/errDbncr/cntIncTrigger
+Block gefunden  AngTubeC10/errDbncr/cntIncConstant
+Block gefunden  AngTubeC10/errDbncr/cntIncConstant1
+Block gefunden  AngTubeC10/errDbncr/cntIncData Type Conversion
+Block gefunden  AngTubeC10/errDbncr/cntIncMinMax
+Block gefunden  AngTubeC10/errDbncr/cntIncP_AngTubeC10_tIn_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/errDbncr/cntIncProduct
+Block gefunden  AngTubeC10/errDbncr/cntIncSaturation
+Block gefunden  AngTubeC10/errDbncr/cntIncSaturation1
+Block gefunden  AngTubeC10/errDbncr/cntIncSum
+Block gefunden  AngTubeC10/errDbncr/cntIncSum1
+Block gefunden  AngTubeC10/errDbncr/cntIncSwitch
+Block gefunden  AngTubeC10/errDbncr/cntIncerrCntOut
+Block gefunden  AngTubeC10/errDbncrcntMaxIn
+Block gefunden  AngTubeC10/errDbncrcntMaxOut
+Block gefunden  AngTubeC10/errDbncrcntRst
+Block gefunden  AngTubeC10/errDbncr/cntRsterrCnt
+Block gefunden  AngTubeC10/errDbncr/cntRstTrigger
+Block gefunden  AngTubeC10/errDbncr/cntRstConstant
+Block gefunden  AngTubeC10/errDbncr/cntRstData Type Conversion
+Block gefunden  AngTubeC10/errDbncr/cntRstTerminator
+Block gefunden  AngTubeC10/errDbncr/cntRsterrCntOut
+Block gefunden  AngTubeC10/errDbncresqErrDbcr
+Block gefunden  AngTubeC10/errDbncrfalse
+Block gefunden  AngTubeC10/errDbncrESQ_Out
+Block gefunden  AngTubeC10limTolSaveCalc
+Block gefunden  AngTubeC10/limTolSaveCalcdltphiCal
+Block gefunden  AngTubeC10/limTolSaveCalcphiMax
+Block gefunden  AngTubeC10/limTolSaveCalcphiMin
+Block gefunden  AngTubeC10/limTolSaveCalcAutodoc_Customization1
+Block gefunden  AngTubeC10/limTolSaveCalc/Autodoc_Customization1dSPACE logo
+Block gefunden  AngTubeC10/limTolSaveCalcConstant
+Block gefunden  AngTubeC10/limTolSaveCalcConstant1
+Block gefunden  AngTubeC10/limTolSaveCalcConstant_Gain
+Block gefunden  AngTubeC10/limTolSaveCalcConstant_Gain1
+Block gefunden  AngTubeC10/limTolSaveCalcP_AngTubeC10_dltPhiOff
+Block gefunden  AngTubeC10/limTolSaveCalcP_AngTubeC10_phiAbsTolHi
+Block gefunden  AngTubeC10/limTolSaveCalcP_AngTubeC10_phiAbsTolLo
+Block gefunden  AngTubeC10/limTolSaveCalcP_AngTubeC10_prcPhiTolHi
+Block gefunden  AngTubeC10/limTolSaveCalcP_AngTubeC10_prcPhiTolLo
+Block gefunden  AngTubeC10/limTolSaveCalcProduct1
+Block gefunden  AngTubeC10/limTolSaveCalcProduct2
+Block gefunden  AngTubeC10/limTolSaveCalcRelational_Operator1
+Block gefunden  AngTubeC10/limTolSaveCalcRelational_Operator2
+Block gefunden  AngTubeC10/limTolSaveCalcSat_m512_p512
+Block gefunden  AngTubeC10/limTolSaveCalcSat_m512_p512_2
+Block gefunden  AngTubeC10/limTolSaveCalcSum1
+Block gefunden  AngTubeC10/limTolSaveCalcSum2
+Block gefunden  AngTubeC10/limTolSaveCalcSum3
+Block gefunden  AngTubeC10/limTolSaveCalcSum5
+Block gefunden  AngTubeC10/limTolSaveCalcSum6
+Block gefunden  AngTubeC10/limTolSaveCalcSwitch1
+Block gefunden  AngTubeC10/limTolSaveCalcSwitch2
+Block gefunden  AngTubeC10/limTolSaveCalcUpLimTolSafe
+Block gefunden  AngTubeC10/limTolSaveCalcLowLimTolSafe
+Block gefunden  AngTubeC10phiAtrSetPointSel
+Block gefunden  AngTubeC10/phiAtrSetPointSelphiAtrSetPnt
+Block gefunden  AngTubeC10/phiAtrSetPointSelphiSetPoint
+Block gefunden  AngTubeC10/phiAtrSetPointSelstActCtrl
+Block gefunden  AngTubeC10/phiAtrSetPointSelstReqPosTrqDgrd
+Block gefunden  AngTubeC10/phiAtrSetPointSelstActCtrlTrqDgrd
+Block gefunden  AngTubeC10/phiAtrSetPointSelphiAtr
+Block gefunden  AngTubeC10/phiAtrSetPointSelforceAngTube
+Block gefunden  AngTubeC10/phiAtrSetPointSelAutodoc
+Customization
+Block gefunden  AngTubeC10/phiAtrSetPointSelC_Global_stActCtrlABSPos
+Block gefunden  AngTubeC10/phiAtrSetPointSelC_Global_stActCtrlSet2Hi
+Block gefunden  AngTubeC10/phiAtrSetPointSelC_Global_stActCtrlSetToShutdown
+Block gefunden  AngTubeC10/phiAtrSetPointSelC_Global_stActCtrlTRQCTL
+Block gefunden  AngTubeC10/phiAtrSetPointSelInactive
+Block gefunden  AngTubeC10/phiAtrSetPointSelLogical_Operator2
+Block gefunden  AngTubeC10/phiAtrSetPointSelLogical_Operator3
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator2
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator3
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator4
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator5
+Block gefunden  AngTubeC10/phiAtrSetPointSelRelational_Operator6
+Block gefunden  AngTubeC10/phiAtrSetPointSelUnit_Delay3
+Block gefunden  AngTubeC10/phiAtrSetPointSelW_AngTubeC10_phiAtrSetPoint
+Block gefunden  AngTubeC10/phiAtrSetPointSelholdMinSW
+Block gefunden  AngTubeC10/phiAtrSetPointSelphiAtrSetPointOut
+Block gefunden  AngTubeC10/phiAtrSetPointSelangTubeActv
+Block gefunden  AngTubeC10phiTolCalc
+Block gefunden  AngTubeC10/phiTolCalctmpBridge
+Block gefunden  AngTubeC10/phiTolCalcstCluCtrl
+Block gefunden  AngTubeC10/phiTolCalcphiAtrSetPoint
+Block gefunden  AngTubeC10/phiTolCalcphiAtr
+Block gefunden  AngTubeC10/phiTolCalcStartMoveDelay
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayphiAtrMax
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayphiAtrMin
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayphiAtr
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayMax
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayMin
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayUnit_Delay
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayUnit_Delay1
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayUnit_Delay2
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayUnit_Delay3
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayUnit_Delay4
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayphiAtrMaxOut
+Block gefunden  AngTubeC10/phiTolCalc/StartMoveDelayphiAtrMinOut
+Block gefunden  AngTubeC10/phiTolCalcphiMaxMinCalc
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiAtrMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiAtrMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcstCluCtrl
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiAtr
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalctmpBridge
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcP_AngTubeC10_enStatLoLim
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiMaxCalc
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcphiAtrMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcslowIncMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcslowDecMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcphiAtr
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcstCluOpHold
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcenStatLoLim
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcLogical_Operator
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcMax2
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcMaxCntrLogic
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicslowIncMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicslowDecMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicdeltaMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicGain
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicMinSW3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicMinSW4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicRelational_Operator4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicRelational_Operator5
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalc/MaxCntrLogicincMaxOut
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcMin1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcSum4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcSum5
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcUnit_Delay2
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcholdMaxSW
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMaxCalcphiMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiMinCalc
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcstCluOpHold
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcphiAtr
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcslowIncMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcslowDecMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcenStatLoLim
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcphiAtrMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcLogical_Operator
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcMax1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcMin2
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcMinCntrLogic
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicslowIncMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicslowDecMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicdeltaMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicGain
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicMinSW3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicMinSW4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicRelational_Operator4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicRelational_Operator5
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalc/MinCntrLogicincMinOut
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcSum6
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcSum7
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcUnit_Delay3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcholdMinSW
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/phiMinCalcphiMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcstCluOpHoldCalc
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcstCluCtrl
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcC_CluOpC02_stCluOpHold
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcConstant1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcConstant2
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcConstant3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcMin3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcP_AngTubeC10_holdDly
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcRelational_Operator1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcSum1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcSum3
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcUnit_Delay1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcreloadSW
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcstCluOpHoldDly
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/stCluOpHoldCalcstCluOpHold
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalctmpDepIncCalc
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalctmpBridge
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcstCluOpHoldDly
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcenStatLoLim
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcConstant4
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiDown
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiUp
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcP_AngTubeC10_phiDownSlow
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcP_AngTubeC10_phiUpSlow
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcRelational_Operator2
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowDecSW
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowDecSW1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowIncSW
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowIncSW1
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowIncMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowDecMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowIncMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcslowDecMin
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiMax
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalcphiMin
+Block gefunden  AngTubeC10/phiTolCalcphiMax
+Block gefunden  AngTubeC10/phiTolCalcphiMin
+Block gefunden  AngTubeC10V_AngTubeC10_stTrqSoftUp
+Block gefunden  AngTubeC10V_AngTubeC10_stTrqSoftLow
+Block gefunden  AngTubeC10V_AngTubeC10_phiIntOut
+Block gefunden  AngTubeC10V_AngTubeC10_phiMax
+Block gefunden  AngTubeC10V_AngTubeC10_phiMin
+Block gefunden  AngTubeC10V_AngTubeC10_UpLim
+Block gefunden  AngTubeC10V_AngTubeC10_LowLim
+Block gefunden  AngTubeC10V_AngTubeC10_ESQ_PHI_TUBE
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiDown
+Block gefunden  AngTubeC10/phiTolCalc/phiMaxMinCalc/tmpDepIncCalcL_AngTubeC10_phiUp
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\491_VW_MQB_Twin_RDM\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\491_VW_MQB_Twin_RDM\SW\Development\CC\CC_Composition\CC_Modules\AngTubeC10\AngTubeC10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c99dc2a7-68a0-4914-8ee8-e01deaa8569d'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c99dc2a7-68a0-4914-8ee8-e01deaa8569d'
+

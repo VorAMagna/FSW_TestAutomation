@@ -1,0 +1,69 @@
+<check fileVersion="2">
+  <uid>8d56c44e-d746-4a19-8c27-fd8f600b6ee5</uid>
+  <id>mcheck_us_0029</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Beermara" domain="MAGNA"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-4a1d-a982-901a9fd65b09</templateUid>
+  <title>Test the Subsystem names</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_us_0029.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check reuires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A Subsystem should not contain the word &quot;Subsystem&quot; in its name. 
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Use a Subsystem name without the expression &quot;Subsystem&quot; or &quot;Subsys&quot;.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> Use a Subsystem name without the expression &quot;Subsystem&quot; or &quot;Subsys&quot;. </p>]]></value>
+    </richtext>
+    <enumeration name="Analysed Element Type" optional="false" private="false" multi="true">
+      <description>The element types which the checks analyses.</description>
+      <enums>
+        <value>block</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="01/10/2017 14:56:52">
+      <author username="Beermara" domain="MAGNA"/>
+      <comment>Check created.</comment>
+    </record>
+  </history>
+</check>

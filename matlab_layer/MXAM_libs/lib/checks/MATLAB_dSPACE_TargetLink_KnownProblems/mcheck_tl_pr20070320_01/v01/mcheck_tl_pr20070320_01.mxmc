@@ -1,0 +1,102 @@
+<check fileVersion="2">
+  <uid>003198b2-c3dc-4fac-810d-9b4ef50ff66f</uid>
+  <id>mcheck_tl_pr20070320_01</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>TL Inport or Businport on Root Level May Cause Downsampling of Data</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_tl_pr20070320_01.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.0.1, 3.1, 3.2, 3.3, 3.4, 3.5, 4.0, 4.1</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[In the following case, the model will get a fail:
+<br /> 1. the rtos.enablemultirate of Targetlink main dialog is on;
+<br /> and
+<br /> 2. the output of a TLinport or TLbusinport on the top level of a Targetlink
+<br /> subsystem is connected with two or more subsystems which belong to
+<br /> different tasks.
+<br /> 
+<br /> Note: Rules of Targelink task partitioning:
+<br /> 1. Subsystems with a task block that has the same task name belong to the same task,
+<br /> 2. All atomic subsystems and virtual subsystems containing a function block
+<br /> with the same sample time belong to the same task,
+<br /> 3. Each function-call subsystem (containing a trigger port with
+<br /> triggertype=function-call), that is triggered from outside the
+<br /> TargetLink subsystem (called external function -call triggered subsystem)
+<br /> becomes a separate task.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[For each Simulink Inport which receives data from outside the TargetLinksubsystem:
+<br /> Specify the Simulink Inport by adding a TargetLink InPort or BusInport.
+<br /> Create a One to One connection to the border of the TargetLink subsystem.
+<br /> [only TargetLink 2.0.x] Add TargetLink InPorts to the newly created Simulink Inports on root level.
+<br /> Set variable class to default.
+<br /> Set datatype and scaling as set at the succeeding TargetLink InPort.
+<br /> [only TargetLink 2.1.x or TargetLink 2.2] Do not add TargetLink Inports or BusInports to the newly created Simulink Inports on root level.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

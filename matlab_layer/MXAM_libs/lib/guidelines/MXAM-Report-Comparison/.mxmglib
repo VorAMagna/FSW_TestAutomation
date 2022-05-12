@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MXAM-Report-Comparison" title="MXAM Report Comparison Guidelines" uid="8717cbdc-e005-4956-9d0b-6260a2c06dfc">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

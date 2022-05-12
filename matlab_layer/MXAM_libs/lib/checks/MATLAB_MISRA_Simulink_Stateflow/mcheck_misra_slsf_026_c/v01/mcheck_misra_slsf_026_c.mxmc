@@ -1,0 +1,110 @@
+<check fileVersion="2">
+  <uid>7a744c61-9fa8-43d0-8f85-8b58b75d9d37</uid>
+  <id>mcheck_misra_slsf_026_c</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Simulink Block, Subsystem and Library Naming - Port Names</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_026_c.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The names of Inports and Outports match the labels of the connected signals except for the following cases:
+<br /> - Reusable library blocks use generic port names. Connected signals have no label.
+<br /> - Input and output port blocks connected to the same signal use the same signal name plus prefix or suffix.
+<br /> - Also use prefix or suffix if the port block name would be the same as any other block name, i.e. any block has the same name as a signal connected to a port.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Adapt signal or block names.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_026_c.IgnoreSimulinkPorts</name>
+      <description>If true, Simulink ports will be ignored and only TargetLink will be considered by this check.</description>
+      <defaultValue>0</defaultValue>
+      <allowedValues>
+        <entry>0</entry>
+        <entry>1</entry>
+      </allowedValues>
+    </specification>
+    <specification type="boolean">
+      <name>MISRA_SL_SF.misra_slsf_026_c.LabelSignalLinesConnectingReusableSubsystem</name>
+      <description><![CDATA[If set to true and parameter 'CheckEmptySignalNames' = false, the labels of signal lines connecting reusable subsystems can be named 
+but if they are named, their label and the name of the corresponding port must match.
+
+If set to true and parameter 'CheckEmptySignalNames' = true, the labels of signal lines connecting reusable subsystems must be named.
+
+If set to false, the labels of signal lines connecting reusable subsystems should not be named.
+Default value of this parameter is set to false, to adhere to the guideline.]]></description>
+      <defaultValue>false</defaultValue>
+    </specification>
+    <specification type="boolean">
+      <name>MISRA_SL_SF.misra_slsf_026_c.CheckEmptySignalNames</name>
+      <description>MISRA_SL_SF.misra_slsf_026_c.CheckEmptySignalNames</description>
+      <defaultValue>false</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

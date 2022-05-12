@@ -1,0 +1,123 @@
+<check fileVersion="2">
+  <uid>64daff9e-19b8-45a4-a989-fe91d892610d</uid>
+  <id>mcheck_sdt_sc006</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Signal Naming and Propagation</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sc006.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes each signal line in the model. </p> 
+<ul> 
+ <li> Failed 1: The signal originates from a source block, it is not named at the source block, and the source block is not listed in the check parameter SDT.sc006.BlacklistSourceBlocks. </li> 
+ <li> Failed 2: The signal does not originate from a source block, and the signal name is not propagated through the chain, or it is named again.<br /> </li> 
+</ul> 
+<p> The check result is passed if all failed cases do not apply.<br /> </p> 
+<p> Exceptions: </p> 
+<ol> 
+ <li> Library blocks are considered as source blocks in the model, irrespective of global parameter setting in 'FollowLinks'. </li> 
+ <li> When global parameter 'FollowLinks' is set to 'on', the Library blocks are analyzed as an independent entity, which means that the signal name and propagation is verified within the boundary of each Library block.<br /> </li> 
+</ol>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[As of Matlab 2018b the model option &quot;Display -&gt; Signals &amp; Ports -&gt; Propagated Signal Labels&quot; is not recommended for use because it is not consistent with the individual signal property &quot;Show Propagated Signals&quot;. In addition, it is not updated when single changes in the individual property take place. Therefore, the check analyzes only the individual property and it could return failed findings if only the model option is set to &quot;on&quot;.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<ul> 
+ <li> Solution 1: Explicitly name the signal at the source block. </li> 
+ <li> Solution 2: For subsequent signal lines in the chain, set the property &quot;Show propagated signals&quot; to &quot;on&quot;. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> Follow these steps to repair: </p> 
+<ol> 
+ <li> Sort the failed messages in the 'Findings' section of the Report perspective.<br /> </li> 
+ <li> Manually fix the failed messages which is to name the signals from source blocks. </li> 
+ <li> Delete any other signal names in the subsequent signal lines after the named signal from the source block. </li> 
+ <li> Apply autofix, which sets the signal property &quot;Show propagated signals&quot; of the subsequent signals to 'on'. </li> 
+</ol>Note: In some cases, the number of failed messages may differ from the number of repaired messages. This is because the repair action of setting the property 'Show propagated signals' to 'on' in the complete signal chain from source to destination would have fixed other failed cases.
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>SDT.sc006.BlacklistSourceBlocks</name>
+      <description><![CDATA[A list (cell array) of pairs that specifies the blocks which are not source blocks. Each pair defines a block type and a mask type string. The check ignores these user blacklisted blocks and search further for the source blocks.
+
+Note: 1. If the block has no mask type, leave the second entry of the pair empty.
+Syntax: SDT.sc006.BlacklistSourceBlocks = {{'blocktype1','masktype1'};{'blocktype2'‚'masktype2'}}.
+Example : {'Constant','TL_Constant';...
+			'Inport','TL_Inport'}
+Note: 2. Default value of SDT.sc006.BlacklistSourceBlocks = {'Inport','TL_Inport'}
+Note: 3.To keep this parameter empty ie., when there is no block to be blacklisted,                                      SDT.sc006.BlacklistSourceBlocks = {'',''}]]></description>
+      <defaultValue><![CDATA[{'Inport','TL_Inport'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="06/26/2015 15:00:51">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+    <record timestamp="06/26/2015 15:38:36">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

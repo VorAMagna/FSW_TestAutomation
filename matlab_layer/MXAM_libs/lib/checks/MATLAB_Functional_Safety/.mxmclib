@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="MATLAB_Functional_Safety" title="MES Functional Safety - MATLAB® Checks" uid="b658067f-cf91-4a15-b4d6-a217ca199124">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

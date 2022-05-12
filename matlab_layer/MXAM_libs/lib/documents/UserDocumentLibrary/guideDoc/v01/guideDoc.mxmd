@@ -1,0 +1,69 @@
+<guidelineDocument fileVersion="2">
+  <uid>b5973ae4-d3a0-494c-a672-cfb9422ab321</uid>
+  <id>guideDoc</id>
+  <title>guideDoc</title>
+  <access>protected</access>
+  <version>1</version>
+  <status>draft</status>
+  <author username="svc_jenkins" domain="MAGNA"/>
+  <copyright></copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="98cddf98-850c-4bf4-933a-f0474729566b" title="new">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="d86f7a8d-9d5a-44c6-92c2-8f21cb039d91" modifier="standard" refUid="b0496714-c931-48d3-9d9b-d7c55b60fdfe" refId="Only_User_Checks" refVersion="1" refTitle="Only the selfmade checks">
+        <check uid="68e410bf-8e43-492b-8966-fa4f54a8a42f" selectedForRun="true" refUid="b85e24ba-70c3-4618-9255-ee1dac51b8ce" refId="mcheck_us_0001" refVersion="1" refTitle="Test the Input block Backgroundcolor"/>
+        <check uid="dc02414d-2ad8-48a0-be25-13405bdbe48f" selectedForRun="true" refUid="d01fbca9-a6a3-4b6f-95ee-1ef5dc7f6aae" refId="mcheck_us_0002" refVersion="1" refTitle="Test the Output block Backgroundcolor"/>
+        <check uid="83e08ade-d8b6-4d73-aa2e-59618f5b684c" selectedForRun="true" refUid="5e739887-1ed4-447d-83ab-5c552a615246" refId="mcheck_us_0003" refVersion="1" refTitle="Test of the Terminator Backgroundcolor"/>
+        <check uid="e82aad59-f277-478a-bd75-0d32ed4c83ce" selectedForRun="true" refUid="4acec49c-33ea-4479-8644-9f756d4ff476" refId="mcheck_us_0004" refVersion="1" refTitle="Test of LUT Block LSB"/>
+        <check uid="5c58e655-37ac-4609-850c-8a3d393a312d" selectedForRun="true" refUid="1caa7e25-5e0c-4d67-969c-3ff29fb77cb9" refId="mcheck_us_0005" refVersion="1" refTitle="Test of Saturate BackgroundColor"/>
+        <check uid="865c6220-fdb4-4df6-9845-9b871022f03e" selectedForRun="true" refUid="7f650601-bee9-44b4-9f5a-1cfd14bc0b28" refId="mcheck_us_0006" refVersion="1" refTitle="Test of the Saturate Output values"/>
+        <check uid="c99132d1-0658-4637-b7fc-798c2ee7ffc8" selectedForRun="true" refUid="8781532b-1984-4b37-b2c3-d2f3150ded65" refId="mcheck_us_0007" refVersion="1" refTitle="Test of the connection of constant with relational operator"/>
+        <check uid="2ab7cca1-10d6-4257-aca8-a0222ed6b4ff" selectedForRun="true" refUid="58bec37c-2532-45d9-be35-e3b9f3480958" refId="mcheck_us_0008" refVersion="1" refTitle="Test of Linked block`s port"/>
+        <check uid="3e12df67-a257-463f-a7a7-b75d70816b3c" selectedForRun="true" refUid="0277060a-f116-4b82-a8a4-ef0536356fe0" refId="mcheck_us_0009" refVersion="1" refTitle="Test of the Linked block`s port type"/>
+        <check uid="353e5831-9870-46bf-aa10-e7d5e1754a25" selectedForRun="true" refUid="6b74c822-b13d-486f-91e6-275bc8768867" refId="mcheck_us_0010" refVersion="1" refTitle="Test of Class of TL_Inport/TL_Outport"/>
+        <check uid="b3c38ea6-bc1a-45fe-b4ad-ff96e9c2bfac" selectedForRun="true" refUid="d0dd6724-faa3-4655-9c5b-e556909ada50" refId="mcheck_us_0011" refVersion="1" refTitle="Test of the Linked block`s port about lsb, type or scaling"/>
+        <check uid="1112936a-261c-4087-93f0-0decbc9bf74b" selectedForRun="true" refUid="d2c6b363-3063-4b96-9bf6-d2b5465db4dc" refId="mcheck_us_0012" refVersion="1" refTitle="Test of the Abs Block type"/>
+        <check uid="d0b21049-a4b0-44b3-b150-3332484e7df7" selectedForRun="true" refUid="e00df7fe-178a-4f22-a42e-1923635942f9" refId="mcheck_us_0013" refVersion="1" refTitle="Test of the BackgroundColor of P_,L_,C_"/>
+        <check uid="0427a457-ba20-4907-ac68-dc6c0930fbae" selectedForRun="true" refUid="45f9a5af-18e1-4a66-9563-b57a40dba76e" refId="mcheck_us_0014" refVersion="1" refTitle="Test of the name and constant of P_,C_ Block"/>
+        <check uid="fef65f34-74f9-40f9-92f1-fca6e8390d18" selectedForRun="true" refUid="6c407825-f6ae-4537-8049-b9611938d002" refId="mcheck_us_0015" refVersion="1" refTitle="Test of the name and variable of L_ Block"/>
+        <check uid="747c86c6-cde0-4334-8a95-6d93ed84dc07" selectedForRun="true" refUid="94603230-303d-42d3-bc62-d211a3673bf1" refId="mcheck_us_0016" refVersion="1" refTitle="Test of LSB or type of LUT"/>
+        <check uid="26d1c393-88cb-4742-837f-d0fe6454ee11" selectedForRun="true" refUid="84748b0c-9e6d-4917-96cd-8290b621b43a" refId="mcheck_us_0018" refVersion="1" refTitle="Test of the name and variable of targetlink inport"/>
+        <check uid="71100fa4-7ad7-4f62-81de-72bba067c5d5" selectedForRun="true" refUid="5dc156bb-8e89-4473-a56e-a7ec2612f98a" refId="mcheck_us_0019" refVersion="1" refTitle="Test of the name and variable of targetlink outport"/>
+        <check uid="72283495-cfe6-4691-b401-55b330b820ce" selectedForRun="true" refUid="9742f260-6abc-4397-bea3-f928aba6143d" refId="mcheck_us_0020" refVersion="1" refTitle="Test of the Look-Up method"/>
+        <check uid="9a9c56a7-f1c4-4f06-a6e0-4fa88e9bba4a" selectedForRun="true" refUid="31786f03-23c1-4c21-b826-a882042f0285" refId="mcheck_us_0022" refVersion="1" refTitle="Test of the name and constant of interrunnables"/>
+        <check uid="314764d9-4168-42d6-8d3d-f4fe7af9af4f" selectedForRun="true" refUid="dc67212e-3079-45ec-907d-95fa834ad71d" refId="mcheck_us_0023" refVersion="1" refTitle="Test of the use of &quot;Mergeable Disp&quot;"/>
+        <check uid="6ae7000e-5d20-4f49-bc5c-f9f4db025447" selectedForRun="true" refUid="65ce0cd8-aacf-46c1-b6f0-29d0618fde38" refId="mcheck_us_0024" refVersion="1" refTitle="Test the names of the blocks and the modules for blanks and special characters."/>
+        <check uid="3323d892-6187-453c-8b54-4e3aec830088" selectedForRun="true" refUid="e3de08e5-c641-4446-a578-c9d13b6e8c36" refId="mcheck_us_0025" refVersion="1" refTitle="Test the names of the blocks with calibratables for the right prefix"/>
+        <check uid="8bf09beb-59b2-44ef-a1eb-8af233b20b76" selectedForRun="true" refUid="ec28b36a-2efc-47cf-920e-30b9732548a7" refId="mcheck_us_0026" refVersion="1" refTitle="Test the names of the blocks with DISP for the right prefix (W_moduleName)."/>
+        <check uid="9001b06b-c218-4e5a-be18-a8ff76cb0bce" selectedForRun="true" refUid="c209c664-61dd-472a-8cee-e649fef9b0dc" refId="mcheck_us_0027" refVersion="1" refTitle="Test the names of the inports and outports which are module outputs or EEPROM signals"/>
+        <check uid="afd17850-c3a7-450f-9421-52581a3bab75" selectedForRun="true" refUid="27d69b5b-cbbb-4a98-9015-e72166386803" refId="mcheck_us_0028" refVersion="1" refTitle="Test the LUT block name"/>
+        <check uid="b41f7dbe-8bda-4346-8fe8-c886963e4d68" selectedForRun="true" refUid="8d56c44e-d746-4a19-8c27-fd8f600b6ee5" refId="mcheck_us_0029" refVersion="1" refTitle="Test the Subsystem names"/>
+        <check uid="7b30fdaa-f1d2-4199-90f4-9b33de18133c" selectedForRun="true" refUid="3574fd51-81dd-4573-b706-0d9b3b4ab276" refId="mcheck_us_0030" refVersion="1" refTitle="Test the link status of a block"/>
+        <check uid="670c2e5a-8843-4ea1-bfd6-28583b466544" selectedForRun="true" refUid="e57ad77e-785e-4bef-b736-d75183e40449" refId="mcheck_us_0031" refVersion="1" refTitle="Test the status of the linked requirements."/>
+        <check uid="261caa55-7317-48b4-8d8d-fa23fc8bb577" selectedForRun="true" refUid="19c321a8-e817-448e-9e0b-efa8a18d20ea" refId="mcheck_us_0032" refVersion="1" refTitle="Test LUT property deposit"/>
+        <check uid="f0d3dba7-8131-4e88-b56d-fedb296c89dc" selectedForRun="true" refUid="a85ca453-1f92-44e4-a494-319bcc2bd849" refId="mcheck_us_0033" refVersion="1" refTitle="Test the Autodoc blocks"/>
+        <check uid="e97e993f-c25e-4ab0-82d1-ff3be2b2fb20" selectedForRun="true" refUid="e5e34095-f12a-4605-b3e8-e6212c98c59d" refId="mcheck_us_0034" refVersion="1" refTitle="Test the use of dd parameters"/>
+        <check uid="f25bafe0-873c-4a89-9c73-935c5ad74576" selectedForRun="true" refUid="22b5a571-e211-4d06-9356-d8aba87042c4" refId="mcheck_us_0035" refVersion="1" refTitle="Test if library links are disabled"/>
+        <check uid="8f8927a1-af48-4e2a-abfa-37d4ce17fbac" selectedForRun="true" refUid="86073815-91e6-4159-beef-84705b779fc5" refId="mcheck_us_0036" refVersion="1" refTitle="Test if division by zero is possible"/>
+        <check uid="9b4e15fd-8ddc-471a-92d8-80d122c75a9b" selectedForRun="true" refUid="6fdf7af7-7d4b-4e01-8ea2-b0d465d7720c" refId="mcheck_us_0037" refVersion="1" refTitle="Test the character encoding property"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="12/12/2019 13:24:59">
+      <author username="svc_jenkins" domain="MAGNA"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

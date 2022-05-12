@@ -1,0 +1,124 @@
+<check fileVersion="2">
+  <uid>ece938f0-e91d-46c6-97e1-53dcd4bb0912</uid>
+  <id>mcheck_ar_0002</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Directory Names</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_ar_0002.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the name of each directory found within the given root directory and its sub directories. The root directory is defined by the check parameter MAAB.ar_0002.ParentDirectory. The directory names specified in the check parameter MAAB.ar_0002.IgnoredDirectoryNames are not analyzed. </p> 
+<ul> 
+ <li> Failed 1: At least one of the following cases hold for a directory name: </li> 
+</ul> 
+<div style="margin-left: 2em"> 
+ <ul> 
+  <li> starts with a digit or an underscore </li> 
+  <li> has more than one consecutive underscore </li> 
+  <li> ends with an underscore </li> 
+ </ul> 
+</div> 
+<ul> 
+ <li> Failed 2: The directory name consists of at least one character that is not allowed or it contains at least one blank. </li> 
+</ul> 
+<ul> 
+ <li> Failed 3: The same directory name is assigned more than once to a directory within the given root directory and its sub directories. </li> 
+</ul> 
+<ul> 
+ <li> Warning: The given root directory does not exist.<br /> </li> 
+</ul> 
+<p> The check result is passed if no failed case applies. </p> 
+<p> The allowed characters are: </p> 
+<ul> 
+ <li> a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 _ </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> By default, the parameter is set to 'modelroot'.<br /> </p> 
+<p> The check might be time consuming as the analysis depends on the number of directories found within the root directory and its sub directories. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Rename each reported directory according to the rules set by the guideline ar_0002. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MAAB.ar_0002.ParentDirectory</name>
+      <description><![CDATA[Defines the root directory from which the check searches recursively. Default value 'modelroot' is the directory path of the model (artifact). If the parameter is set to 'pwd' the current directory is analyzed. The parameter must not be empty.
+Syntax:
+ '<Full path of the directory to be checked>']]></description>
+      <defaultValue><![CDATA['modelroot']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MAAB.ar_0002.IgnoredDirectoryNames</name>
+      <description><![CDATA[Defines the names of the directories to be ignored.
+Syntax: {'directory name1','directory name2',.....'directory nameN'}]]></description>
+      <defaultValue><![CDATA[{'_sfprj','_self','_sfun'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:44">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="02/04/2015 15:34:22">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

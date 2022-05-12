@@ -1,0 +1,7 @@
+<library type="ParameterDefinitionLibrary" id="UserParameterLibrary" title="Public library for user parameter definitions" uid="e81001df-bb91-4c7e-bec3-9ee47be2e087">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>

@@ -1,0 +1,166 @@
+<guideline fileVersion="2">
+  <uid>35b5161e-d511-4161-830d-a93b9df3db80</uid>
+  <id>db_0143</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Similar Block Types on the Model Levels</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>NA-MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+        <value>verification/validation</value>
+        <value>workflow</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> every model level must only contain blocks of the same type or blocks that may be placed on every level </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> To allow partitioning of the model into discrete units, every level of a model must be designed with building blocks of the same type (i.e. only Subsystems or only basic blocks). The blocks listed below are used for signal routing and may be placed at any level of the model. </p> 
+<ul> 
+ <li> Inport, Outport, </li> 
+ <li> Mux, Demux, </li> 
+ <li> Bus Selector, Bus Creator, </li> 
+ <li> Selector, </li> 
+ <li> Ground,Terminator, </li> 
+ <li> From, Goto, </li> 
+ <li> Merge, </li> 
+ <li> Unit Delay, </li> 
+ <li> Rate Transition, </li> 
+ <li> Data Type Conversion, </li> 
+ <li> Data Store Memory, </li> 
+ <li> If block, </li> 
+ <li> Case block, </li> 
+ <li> Function-Call Generator, </li> 
+ <li> Function-Call Split, </li> 
+ <li> Trigger (Starting in R2009a, the Trigger block is allowed at the root level of the model), </li> 
+ <li> Enable (Starting in R2011b, the Enabled block is allowed at the root level of the model), </li> 
+ <li> Action port (Action ports are not allowed at the root level of a model). </li> 
+</ul> 
+<p> If the Trigger and Enable blocks are placed at the root level, the model does not simulate in a standalone mode. The model must be referenced using the Model block. </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> The use of this guideline ensures a clear structure of the model with well-defined layers of abstraction. Further, it ensures integrability of the model. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="db_0143_example.png" /> </p> 
+<p class="imageCaption"> Figure db_0143-1: Only blocks of the same type and blocks that are allowed on every level of the model are used </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="db_0143_counterExample.png" /> </p> 
+<p class="imageCaption"> Figure db_0143-2: Usage of blocks with different types. The blocks Abs and Sum are not to be used on the same level as Subsystems because they manipulate values that are passed into Subsystem1. </p>]]></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1g Use of Style Guides</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-2.3 Structured Programming</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="cae0df38-55b7-42b0-921e-3b3c444db507" refId="mcheck_db_0143" refTitle="Similar Block Types on the Model Levels" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/15/2016 12:33:41">
+      <author username="Model Engineering Solutions GmbH" domain="MES"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

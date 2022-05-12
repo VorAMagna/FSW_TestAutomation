@@ -1,0 +1,56 @@
+<check fileVersion="2">
+  <uid>88012653-eeee-49d8-a0dd-20e97f5e58f3</uid>
+  <id>report_number_of_findings</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>Difference in number of findings</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_number_of_findings.v01.implementation.ReportNumberOfFindings</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[The number of findings for each check is analyzed.
+<br />]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check always passes with additional information.
+<br /> 
+<ul> 
+ <li> Info 1: An additional check is found. </li> 
+ <li> Info 2: A check is missing. </li> 
+ <li> Info 3: The amount of findings is equal. </li> 
+ <li> Info 4: The amount of findings is different. </li> 
+</ul>]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.AggregatedResults</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>ReportComparison.SameCheckIdPairs</parameterName>
+      <sourceIdentifier>0e1ddf2e-e4f9-4230-8f4b-676c8f062699</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="03/29/2016 15:59:58">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:38:34">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

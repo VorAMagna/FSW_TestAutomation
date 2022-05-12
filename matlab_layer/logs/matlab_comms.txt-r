@@ -1,0 +1,36 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.4p0 				05-Apr-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1         12-Oct-2015 okay
+DSDD             Data Dictionary                            4.1         12-Oct-2015 okay
+========================================================================================
+
+
+.                                                         load_required_ddparams.m                                  
+..                                                        load_required_models.m                                    
+ExecuteBatch_MXAM.m                                       logs                                                      
+MXAM_Configurations                                       make_me_a_json.py                                         
+__init__.py                                               models_to_be_checked.json                                 
+configuration.json                                        mxam_controller.py                                        
+fsw_test_automation_default_mxam_project_config.mxmp      mxam_execute_batch_tests.m                                
+fsw_test_automation_default_mxam_project_config_old.mxmp  mxam_mxray_exec_main.py                                   
+leastrobino-matlab-json-a392c41                           setup_configuration_run.py                                
+leastrobino-matlab-json-a392c41.zip                       shellcomms                                                
+load_required_data_dict.m                                 
+
+
+ans =
+
+C:\Sandbox\Product_Group\SW\Development\FSW_Tools\FSW_TestAutomation\matlab_layer
+

@@ -1,0 +1,676 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=7740
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6a1c6a78-3a18-4183-8699-a8bb4827bc02'
+        resultLink: 'http://127.0.0.1:50210/result?jobUid=6a1c6a78-3a18-4183-8699-a8bb4827bc02'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd759da24-80e5-47b6-a5b0-f62373506002'
+        resultLink: 'http://127.0.0.1:50210/result?jobUid=d759da24-80e5-47b6-a5b0-f62373506002'
+
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/Vehicle Variant Information/Vehicle Variant Information/kmh2rpmCalc/Autodoc
+Customization
+Description in the Autodoc block is too short!
+SigCondV10/SigCondV10/SignalConditioning/Vehicle Variant Information/Vehicle Variant Information/kmh2rpmCalc1/Autodoc
+Customization
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_AirTemp_Outsd_Disp
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_AirTemp_Outsd_Disp/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_AirTemp_Outsd_Disp/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_AirTemp_Outsd_Disp/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_EngShutOffTm
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_EngShutOffTm/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_EngShutOffTm/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_EngShutOffTm/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_Odo
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_Odo/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_Odo/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_Odo/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_TxOilTemp
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_TxOilTemp/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_TxOilTemp/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/2_CC_Calc/Port_2_CC/eval_TxOilTemp/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Age_Filter_Times/Age_Filter_Times
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Coding_CC_Calc/Coding_CC
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation/eval_BrkIntrvntn
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation/eval_BrkIntrvntn/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation/eval_BrkIntrvntn/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation/eval_BrkIntrvntn/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkIntrvntn_Actv_EPKP
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkIntrvntn_Actv_EPKP/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkIntrvntn_Actv_EPKP/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkIntrvntn_Actv_EPKP/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkPdl_Stat
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkPdl_Stat/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkPdl_Stat/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkPdl_Stat/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V2
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V2/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V2/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_D_V2/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_V2
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_V2/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_V2/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_BrkTrq_V2/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Disp_Rq1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Disp_Rq1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Disp_Rq1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Disp_Rq1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_FullBrk_Actv
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_FullBrk_Actv/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_FullBrk_Actv/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_FullBrk_Actv/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_PkBrk_Stat
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_PkBrk_Stat/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_PkBrk_Stat/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_PkBrk_Stat/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Actv
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Actv/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Actv/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/BrakeSystemInformation1/eval_DSR_Actv/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/OffroadScoreReset/eval_OffRoad_Rating_Reset_Rq
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/OffroadScoreReset/eval_OffRoad_Rating_Reset_Rq/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/OffroadScoreReset/eval_OffRoad_Rating_Reset_Rq/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/OffroadScoreReset/eval_OffRoad_Rating_Reset_Rq/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FL
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FL/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FL/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FL/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FR
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FR/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FR/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_FR/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RL
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RL/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RL/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RL/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/SuspensionEvaluation/eval_VehLvl_RR1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_Offset
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_Offset/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_Offset/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_Offset/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_V2
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_V2/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_V2/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/aLatCalc/eval_VehAccel_Y_V2/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_AnglSpd
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_AnglSpd/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_AnglSpd/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_AnglSpd/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl_Stat
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl_Stat/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl_Stat/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/degSWACalc/eval_StWhl_Angl_Stat/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/vVehBus1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/vVehBus1/eval_VehSpd_Disp
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/vVehBus1/eval_VehSpd_Disp/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/vVehBus1/eval_VehSpd_Disp/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/vVehBus1/eval_VehSpd_Disp/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Offset_V2
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Offset_V2/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Offset_V2/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Offset_V2/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Raw
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Raw/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Raw/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/DynInfo_Calc/yawRateCalc/eval_VehYawRate_Raw/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_ESP
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_ESP/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_ESP/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_ESP/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_PT
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_PT/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_PT/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_LkTrq_Rq_PT/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_Md_Rq_ESP
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_Md_Rq_ESP/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_Md_Rq_ESP/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/DiffLk_M_Md_Rq_ESP/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DSC intervention mode and requested torque of ESP/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DrvMode_calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DrvMode_calc/eval_Drvmode
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DrvMode_calc/eval_Drvmode/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DrvMode_calc/eval_Drvmode/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/DrvMode_calc/eval_Drvmode/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearAct
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearAct/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearAct/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearAct/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel2
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel2/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel2/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearSel2/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearTarget
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearTarget/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearTarget/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/eval_GearTarget/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearInformation1/stNeutralCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/GearboxInfo1/eval_TxOutRPM1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_X_Num
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_X_Num/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_X_Num/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_X_Num/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_Y_Num
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_Y_Num/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_Y_Num/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/Incl_X_Num_calc/eval_Incl_Y_Num/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/SSA_EngSp_calc/eval_SSA_EngSp1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosn
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosn/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosn/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosn/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosnSens_Flt
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosnSens_Flt/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosnSens_Flt/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/prcAccPedCalc/eval_AccelPdlPosnSens_Flt/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/stTrailer_calc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/stTrailer_calc/eval_SSA_EngSp
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/stTrailer_calc/eval_SSA_EngSp/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/stTrailer_calc/eval_SSA_EngSp/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/stTrailer_calc/eval_SSA_EngSp/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EM01_RPM
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EM01_RPM/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EM01_RPM/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EM01_RPM/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngRPM
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngRPM/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngRPM/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngRPM/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq1
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq1/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq1/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrq1/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_AS
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_AS/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_AS/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_AS/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_D
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_D/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_D/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqSel_D/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqStatic
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqStatic/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqStatic/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_EngTrqStatic/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_PT_AS_Actv
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_PT_AS_Actv/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_PT_AS_Actv/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/PtInfo_Calc/trqEngCalc/eval_PT_AS_Actv/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFL/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFL/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFL/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFL/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFR/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFR/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFR/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirFR/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRL/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRL/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRL/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRL/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRR/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRR/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRR/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/stDrvDirRR/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFL
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFL/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFL/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFL/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFL/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFR
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFR/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFR/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFR/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcFR/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRL
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRL/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRL/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRL/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRL/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRR
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRR/eval_Signal
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRR/eval_Signal/Subsystem
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRR/eval_Signal/Subsystem/Encoder8Bit/Encoder8Bit
+Autodoc Block must be added to the subsystem!
+SigCondV10/SigCondV10/SignalConditioning/Wheelspeeds_Calc/WheelSpeeds_Calc/vWhlCalcRR/eval_Signal/Subsystem/Encoder8Bit1/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd759da24-80e5-47b6-a5b0-f62373506002'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'dbf00768-f746-477d-9eac-8343666ec4b0'
+        resultLink: 'http://127.0.0.1:50210/result?jobUid=dbf00768-f746-477d-9eac-8343666ec4b0'
+
+Autodoc Block must be added to the subsystem!
+BrakeDetS10/pBrkCond
+The model 'BrakeDetS10' will use a fixed step size of (0.2) based on start and stop times.  You can disable this diagnostic by setting the 'Automatic solver parameter selection' diagnostic to 'none' in the Solver group on the Diagnostics pane of the Configuration Parameters dialog box.
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'dbf00768-f746-477d-9eac-8343666ec4b0'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\SigCondV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\SC\SC_Composition\SC_Modules\BrakeDetS10\BrakeDetS10.mdl
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...

@@ -1,0 +1,36 @@
+<guideline fileVersion="2">
+  <uid>c8f3ede0-12fa-4bdf-a137-322841f72470</uid>
+  <id>report_statistics</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>0b2d6bb6-4130-40b7-aa48-d5e191eb19ac</templateUid>
+  <title>Report Statistics</title>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[Statistical information about the compared reports is provided.
+<br />]]></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="88012653-eeee-49d8-a0dd-20e97f5e58f3" refId="report_number_of_findings" refTitle="Difference in number of findings" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/02/2018 09:11:07">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:37:24">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guideline>

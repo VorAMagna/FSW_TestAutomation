@@ -1,0 +1,221 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=17900
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2b36b416-adf4-46f0-a84f-9a0d60dcc2fe'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=2b36b416-adf4-46f0-a84f-9a0d60dcc2fe'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f012d561-7bf6-4929-b169-c277fe7392e7'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=f012d561-7bf6-4929-b169-c277fe7392e7'
+
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK3Calc/dmgCalcRngK3Trq
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK5Calc/dmgCalcRngK5Trq
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK5Calc/dmgCalcRngK5Trq/dmgCalcRngK5Trq/EE_dmgCalcRngK5TrqCalc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK5Calc/dmgCalcRngK5Trq/dmgCalcRngK5Trq/EE_dmgCalcRngK5TrqCalc/ResidualCalc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK5Calc/dmgCalcRngK5Trq/dmgCalcRngK5Trq/dmgCalcRngK5TrqCalc/Index_Calc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK8Calc/dmgCalcRngK8Trq
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK8Calc/dmgCalcRngK8Trq/dmgCalcRngK8Trq/EE_dmgCalcRngK8TrqCalc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK8Calc/dmgCalcRngK8Trq/dmgCalcRngK8Trq/EE_dmgCalcRngK8TrqCalc/ResidualCalc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/GearDrvRevDmgK8Calc/dmgCalcRngK8Trq/dmgCalcRngK8Trq/dmgCalcRngK8TrqCalc/Index_Calc
+Autodoc Block must be added to the subsystem!
+HistogramH10/CC_1S/NeedleBearRevDmgCalc/dmgCalcNeedleBearRngTrq
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f012d561-7bf6-4929-b169-c277fe7392e7'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\MainH10\MainH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6569990e-8f1b-4e82-89ba-061d539ea684'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=6569990e-8f1b-4e82-89ba-061d539ea684'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6569990e-8f1b-4e82-89ba-061d539ea684'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\MainH10\MainH10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\MainH10\MainH10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMEndH10\PFMEndH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '106b023f-4b2c-42ab-9004-3fa972c29d32'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=106b023f-4b2c-42ab-9004-3fa972c29d32'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '106b023f-4b2c-42ab-9004-3fa972c29d32'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMEndH10\PFMEndH10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMEndH10\PFMEndH10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMStartH10\PFMStartH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd9fe19de-49a6-4f3f-bfb5-bc10fa668255'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=d9fe19de-49a6-4f3f-bfb5-bc10fa668255'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd9fe19de-49a6-4f3f-bfb5-bc10fa668255'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMStartH10\PFMStartH10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMStartH10\PFMStartH10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\SvcJobH10\SvcJobH10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b70e6aac-38cd-43ef-bc5c-379ee3631285'
+        resultLink: 'http://127.0.0.1:62463/result?jobUid=b70e6aac-38cd-43ef-bc5c-379ee3631285'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b70e6aac-38cd-43ef-bc5c-379ee3631285'
+    export: 'true'
+      file: 'C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\SvcJobH10\SvcJobH10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\SvcJobH10\SvcJobH10.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\HistogramH10\HistogramH10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\MainH10\MainH10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMEndH10\PFMEndH10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\PFMStartH10\PFMStartH10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\481_BMW_CLAR_WE_ATC14_1\SW\Development\HG\HG_Composition\HG_Modules\SvcJobH10\SvcJobH10.mdl
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...

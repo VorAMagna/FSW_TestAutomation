@@ -1,0 +1,428 @@
+<guideline fileVersion="2">
+  <uid>90e85a6d-10c2-4d35-942f-9263342e6a66</uid>
+  <id>All_Defined_Checks</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Beermara" domain="EU"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>All Checks which are selected to be used for analysing the models.</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>-</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value></value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[tbd
+<br />]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[tbd
+<br />]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[tbd
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Classification" optional="true" private="true" multi="true">
+      <description>The guideline is associated with ISO 26262-6 categories as described in table 1 (T1) and table 8 (T8).</description>
+      <enums/>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="2e705794-8dd8-40e6-a05c-c9a4fc3324eb" refId="mcheck_db_0042_a" refTitle="Port Blocks in Simulink Models: Position of Inports/Outports" refVersion="1"/>
+    <reference refUid="b06bf6bb-118a-4587-a939-3935c88c1bb0" refId="mcheck_db_0042_b" refTitle="Port Blocks in Simulink Models - Duplicate Inports" refVersion="1"/>
+    <reference refUid="1069b0a8-5cc7-49e0-afb8-325344515347" refId="mcheck_db_0081" refTitle="Unconnected signals and block inputs / outputs" refVersion="1"/>
+    <reference refUid="0668806f-0f80-4571-9fd1-7aed52e2e77e" refId="mcheck_db_0112" refTitle="Zero-based indexing" refVersion="1"/>
+    <reference refUid="49f6eabc-b59c-40f4-90f7-8fba896dd457" refId="mcheck_db_0122" refTitle="Stateflow/Simulink interface signals and parameters" refVersion="1"/>
+    <reference refUid="37c65d1d-bb0d-44a6-99f4-f3d7c4bca3c3" refId="mcheck_db_0123" refTitle="Stateflow port names" refVersion="1"/>
+    <reference refUid="6d3a3fb6-5c70-4118-aecf-8ce18e5ecab3" refId="mcheck_db_0125" refTitle="Scope of internal signals and local auxiliary variables" refVersion="1"/>
+    <reference refUid="f9a89aa3-4cf2-4a7f-b245-4ef13ff68ed2" refId="mcheck_db_0126" refTitle="Scope of events" refVersion="1"/>
+    <reference refUid="892bb660-2de6-45ee-99f7-ff8641c1a8f3" refId="mcheck_db_0127" refTitle="Matlab Commands in Stateflow" refVersion="1"/>
+    <reference refUid="e3a58e3c-c241-403f-822f-e1a2caa56173" refId="mcheck_db_0129_a" refTitle="Stateflow transition appearance: Overlapping" refVersion="1"/>
+    <reference refUid="93a3db34-fe95-41f8-aea2-689fb5a71bd2" refId="mcheck_db_0129_b" refTitle="Stateflow transition appearance: Crossings" refVersion="1"/>
+    <reference refUid="0308b3f3-69f0-48d8-ac00-1db87435c51f" refId="mcheck_db_0129_c" refTitle="Stateflow transition appearance: Associated labels" refVersion="1"/>
+    <reference refUid="c6aeb570-654e-4d13-ab01-5733226d8a41" refId="mcheck_db_0137" refTitle="States in state machines" refVersion="1"/>
+    <reference refUid="46a722e0-cc27-4b3c-8e81-569e3d232520" refId="mcheck_db_0141" refTitle="Signal flow in Simulink models" refVersion="1"/>
+    <reference refUid="fffe36ac-1a69-4b21-9440-b76c5015fd1b" refId="mcheck_db_0142" refTitle="Position of block names" refVersion="1"/>
+    <reference refUid="2a39368f-fbde-4bae-9d95-032826fd3149" refId="mcheck_ds_0012" refTitle="Block Priorities" refVersion="1"/>
+    <reference refUid="ff8d9c75-7841-40b7-b712-bd49eb4ed354" refId="mcheck_ds_0016" refTitle="Bus-capable blocks" refVersion="1"/>
+    <reference refUid="a80be4ce-a522-4e24-8a2e-e943b9633976" refId="mcheck_ds_0019" refTitle="No Blocks from the Continuous Library" refVersion="1"/>
+    <reference refUid="6450eb13-58bf-4847-ad02-3f69fdba726f" refId="mcheck_ds_0020" refTitle="Permissible Blocks of the Discontinuities Library" refVersion="1"/>
+    <reference refUid="ba7fef4e-001f-4c26-8339-75c13f880e8b" refId="mcheck_ds_0021" refTitle="Dead Zone Block limitations" refVersion="1"/>
+    <reference refUid="b0b67d53-8a1c-4c65-ae64-9ec7b3c32fe5" refId="mcheck_ds_0022" refTitle="Permissible Blocks of the Discrete Library" refVersion="1"/>
+    <reference refUid="8f25348b-345c-49df-acd5-3465f5e419b6" refId="mcheck_ds_0023_a" refTitle="Limitations with Regard to the Discrete-Time Integrator Block: Vector Signals" refVersion="1"/>
+    <reference refUid="0196823c-ebec-416f-9fb2-3b6726041d93" refId="mcheck_ds_0023_b_v2_1" refTitle="Limitations with Regard to the Discrete-Time Integrator Block: External Reset" refVersion="1"/>
+    <reference refUid="f163decd-8dea-4cd1-97ae-142a951f400e" refId="mcheck_ds_0023_b_v3_0" refTitle="Limitations with Regard to the Discrete-Time Integrator Block: External Reset" refVersion="1"/>
+    <reference refUid="7d62d010-aeed-45be-ab3c-6205e596f616" refId="mcheck_ds_0024" refTitle="Permissible Blocks of the Logic and Bit Operations Library" refVersion="1"/>
+    <reference refUid="d0b08abc-5142-40c1-a68b-eef6d4d9d8b8" refId="mcheck_ds_0025" refTitle="Limitations with Regard to the Relational Operator and Logical Operator Blocks" refVersion="1"/>
+    <reference refUid="e6ec1a21-db2b-4477-9bfd-f7bacdf215eb" refId="mcheck_ds_0026" refTitle="Permissible Blocks of the Look-up Tables Library" refVersion="1"/>
+    <reference refUid="dd215498-d205-4e2a-ae07-2f2831b1253b" refId="mcheck_ds_0027" refTitle="Limitations with Regard to the Look-up Table (n-D) and Direct Look-up Table (n-D) Blocks" refVersion="1"/>
+    <reference refUid="7f2fdbca-ac57-4012-bae0-be7f0852ed12" refId="mcheck_ds_0028" refTitle="Permissible Blocks of the Math Library" refVersion="1"/>
+    <reference refUid="e2ca96b0-4b9e-4890-a684-73086e267d79" refId="mcheck_ds_0029" refTitle="Limitations with regard to operand numbers for the Product block" refVersion="1"/>
+    <reference refUid="403de88a-c62a-4e38-8226-f031ae073b91" refId="mcheck_ds_0030" refTitle="Limitations with regard to parameters for the Product block" refVersion="1"/>
+    <reference refUid="47fc8c66-c17b-452c-9364-468401e8318d" refId="mcheck_ds_0031" refTitle="Limitations with regard to the Sum Block" refVersion="1"/>
+    <reference refUid="c51e326b-e28d-4b7e-b5bb-d91d724af6e9" refId="mcheck_ds_0032_v2_1" refTitle="Limitations with regard to the math function block" refVersion="1"/>
+    <reference refUid="b37a5a0b-662c-40ad-90b4-33767f22d2e6" refId="mcheck_ds_0032_v3_0" refTitle="Limitations with regard to the math function block" refVersion="1"/>
+    <reference refUid="9ed44df4-7d1d-4d20-9aae-0392803b4a0f" refId="mcheck_ds_0034" refTitle="Permissible Blocks of the Model Verification Library" refVersion="1"/>
+    <reference refUid="f9f5ce68-9a66-4303-8ff4-500cd4eaf150" refId="mcheck_ds_0035" refTitle="Permissible Blocks of the Model-Wide Utilities Library" refVersion="1"/>
+    <reference refUid="de2666fa-a2cf-4303-ab6a-53537b7c1424" refId="mcheck_ds_0036" refTitle="Permissible Blocks of the Ports and Subsystems Library" refVersion="1"/>
+    <reference refUid="870c8408-36b6-4a62-9f9f-0510c235b7e1" refId="mcheck_ds_0037_a" refTitle="Switch Case Blocks: Show default case shall be set" refVersion="1"/>
+    <reference refUid="c8ea2798-3f29-43f5-a2bb-dd1bd9aa56b3" refId="mcheck_ds_0037_b" refTitle="Switch Case Blocks: Proper connection of default output" refVersion="1"/>
+    <reference refUid="f8278c80-6448-4567-b66a-f567a08c0744" refId="mcheck_ds_0038" refTitle="Absence of duplicated Inports" refVersion="1"/>
+    <reference refUid="ca550d9e-3e98-4184-85db-afd34a352b58" refId="mcheck_ds_0039" refTitle="Permissible Blocks of the Signal Attributes Library" refVersion="1"/>
+    <reference refUid="901e75d4-3736-42cf-89ab-7e12e12e2f5c" refId="mcheck_ds_0040" refTitle="Use of the Data Type Conversion block" refVersion="1"/>
+    <reference refUid="1b2ea8e8-e1bc-4da0-a637-d763c9565910" refId="mcheck_ds_0041" refTitle="Permissible Blocks of the Signal Routing Library" refVersion="1"/>
+    <reference refUid="2cd34cc4-7a10-4bbf-bfaa-eee6acecd195" refId="mcheck_ds_0042" refTitle="Restrictions with Regard to the Data Store Memory,Read,Write Blocks" refVersion="1"/>
+    <reference refUid="10a4f238-a158-4d47-afa9-e86757e4558e" refId="mcheck_ds_0044" refTitle="Restrictions with regard to the Merge Block" refVersion="1"/>
+    <reference refUid="bd915c72-b839-40e4-8f79-7df18290d550" refId="mcheck_ds_0045" refTitle="No Cascades of Merge Blocks prior to TargetLink 2.1.6" refVersion="1"/>
+    <reference refUid="ae0f1287-7a23-484b-bdcf-1a9461d7dddf" refId="mcheck_ds_0047" refTitle="Use of the Multiport Switch block" refVersion="1"/>
+    <reference refUid="64939c4d-18d3-4fb6-b5c4-16c7106d0ec5" refId="mcheck_ds_0048" refTitle="Restrictions with regard to the Multiport Switch block" refVersion="1"/>
+    <reference refUid="cce48748-7ac2-4ed6-a7ee-938f12f8f64e" refId="mcheck_ds_0049" refTitle="Limitations with regard to the Bus Creator block" refVersion="1"/>
+    <reference refUid="fc5715a6-eb01-42a0-a9d5-2c2ff5aa31f5" refId="mcheck_ds_0050" refTitle="Permissible Blocks of the Sinks Library" refVersion="1"/>
+    <reference refUid="bd479e02-7ee7-4986-abc4-921a26481c30" refId="mcheck_ds_0051" refTitle="Permissible Blocks of the Sources Library" refVersion="1"/>
+    <reference refUid="14c8cd78-8f02-4a46-81bf-7ed32495e1f0" refId="mcheck_ds_0052" refTitle="Permissible Blocks from the User-Defined Functions Library" refVersion="1"/>
+    <reference refUid="8fc97261-f7e1-474d-bf89-cdbe1af30aa7" refId="mcheck_ds_0054" refTitle="Initializations of a Stateflow Chart" refVersion="1"/>
+    <reference refUid="4cd31c1c-a013-42dd-8858-4d63fcfc077d" refId="mcheck_ds_0055" refTitle="Reserved names in Stateflow" refVersion="1"/>
+    <reference refUid="abb1bef9-2b7b-4561-8bd4-dd1855a4fd8a" refId="mcheck_ds_0056" refTitle="Permitted dimensionality at the Stateflow Chart interface" refVersion="1"/>
+    <reference refUid="5545c6ed-0251-494c-ae0e-78ab7193ae16" refId="mcheck_ds_0057" refTitle="Usage of Constants" refVersion="1"/>
+    <reference refUid="b67f68bf-d991-4662-a028-68702540a1be" refId="mcheck_ds_0058" refTitle="Permitted data types at the Stateflow Chart Interface" refVersion="1"/>
+    <reference refUid="98f7b25b-0818-4fbc-b7d1-8922522ef60b" refId="mcheck_ds_0059" refTitle="Transition Actions" refVersion="1"/>
+    <reference refUid="24327c6f-c641-4fcb-8203-89aca5926c4a" refId="mcheck_ds_0061" refTitle="Order Numbers for Parallel States" refVersion="1"/>
+    <reference refUid="c8916c22-c6ad-4030-835d-efb0cd7aa982" refId="mcheck_ds_0063" refTitle="No Use of Implicit Events" refVersion="1"/>
+    <reference refUid="edd430c3-167d-4b53-b9dd-2486a00dbe27" refId="mcheck_ds_0064" refTitle="MATLAB Functionality" refVersion="1"/>
+    <reference refUid="c1e3b663-6536-4054-8b19-3101283867e8" refId="mcheck_ds_0065" refTitle="Alias Types" refVersion="1"/>
+    <reference refUid="7eb9ef28-f2bb-4770-a684-369f57346fac" refId="mcheck_ds_0067" refTitle="Arrays at Interfaces of Graphical Functions" refVersion="1"/>
+    <reference refUid="cd2af6ca-529c-45f5-b80d-3b58ea2a85a9" refId="mcheck_ds_0069" refTitle="Data on the Level of Stateflow boxes" refVersion="1"/>
+    <reference refUid="516578d2-0e3e-4c28-b6b6-32c53056ae59" refId="mcheck_ds_0070" refTitle="Embedded MATLAB functionality" refVersion="1"/>
+    <reference refUid="aaa278ac-2c19-4fc5-a27a-c126d515a4db" refId="mcheck_ds_0071" refTitle="Complex expressions for the size property" refVersion="1"/>
+    <reference refUid="70e882a7-b025-4e33-8647-93d367f71b72" refId="mcheck_ds_0072" refTitle="Simulink/Stateflow inheritance" refVersion="1"/>
+    <reference refUid="ca8be79c-8101-4985-bb4b-2c863034d79e" refId="mcheck_ds_0079_c" refTitle="General Naming Conventions: Reserved Names" refVersion="1"/>
+    <reference refUid="8bde88f2-bbcd-4769-8e2d-621dd6aec72a" refId="mcheck_ds_0080" refTitle="Reserved System Header File Names" refVersion="1"/>
+    <reference refUid="24ffe0a4-cb5a-4b38-8807-59a77ede971f" refId="mcheck_ds_0082" refTitle="Comments in block properties" refVersion="1"/>
+    <reference refUid="bb22c99a-5bd2-4a1a-a47c-fb2a1edafdd8" refId="mcheck_ds_0092" refTitle="Solver Settings" refVersion="1"/>
+    <reference refUid="12f98093-1483-4641-918a-6b2ae925fb96" refId="mcheck_ds_0096" refTitle="Data Types for Relational and Logical Operator" refVersion="1"/>
+    <reference refUid="372bdc72-d13b-4eaf-8939-65230447c1dc" refId="mcheck_ds_0097" refTitle="Data Types for Signal Busses at the TargetLink-Simulink Interface" refVersion="1"/>
+    <reference refUid="b8e49488-6900-4e1e-b749-e7e8be025f6e" refId="mcheck_ds_0098" refTitle="Avoidance of Overflows" refVersion="1"/>
+    <reference refUid="93cf36c5-4f6f-4b56-8a14-808ac4674dcd" refId="mcheck_ds_0099" refTitle="Avoidance of Saturation in Integer Arithmetics" refVersion="1"/>
+    <reference refUid="0d3906d0-97b0-4a0f-b350-dcf97035a0bf" refId="mcheck_ds_0100" refTitle="Avoidance of Rounding Operations" refVersion="1"/>
+    <reference refUid="b5aadb20-ed36-4f45-a060-59bb1b41cd09" refId="mcheck_ds_0102" refTitle="Use of Data Types for Trigonometric Blocks" refVersion="1"/>
+    <reference refUid="0356347c-e9aa-4f8a-9636-35d04669d567" refId="mcheck_ds_0103" refTitle="Use of Data Types for Math Blocks" refVersion="1"/>
+    <reference refUid="d81a8ee1-1037-4d80-9eec-2df7598dbade" refId="mcheck_ds_0105" refTitle="Use of Data Types for Selector Blocks" refVersion="1"/>
+    <reference refUid="8222398e-5073-4eba-b657-cb25b5bcfc2f" refId="mcheck_ds_0106" refTitle="Use of data types for Look-Up Table and Look-Up Table (2D) blocks" refVersion="1"/>
+    <reference refUid="23eec713-4599-4fd4-aac9-3acab9b9179f" refId="mcheck_ds_0107" refTitle="Use of data types for Multiport Switch block" refVersion="1"/>
+    <reference refUid="2c012f85-3aff-4a0d-8d44-21820ed4d019" refId="mcheck_hd_0001" refTitle="Prohibited Simulink sinks" refVersion="1"/>
+    <reference refUid="00057888-ce04-41ca-b47e-f5af7217b96a" refId="mcheck_jc_0011" refTitle="Optimization parameters for Boolean data types" refVersion="1"/>
+    <reference refUid="768fe8c6-97d4-48d5-aa82-c5c1eeb273c7" refId="mcheck_jc_0061" refTitle="Display of block names" refVersion="1"/>
+    <reference refUid="348de4d2-ef8d-401f-a6d7-f60a342e5e1f" refId="mcheck_jc_0081" refTitle="Icon display for Port block" refVersion="1"/>
+    <reference refUid="d89f6850-9c82-4544-b962-3b05136bab8d" refId="mcheck_jc_0111" refTitle="Direction of Subsystem" refVersion="1"/>
+    <reference refUid="949393b6-e450-44fd-ad53-0302da01d593" refId="mcheck_jc_0121" refTitle="Use of the Sum Block: Shape including Feedback-Loop exception" refVersion="1"/>
+    <reference refUid="5fda925e-b98a-4d4a-a125-85a1a5739ed5" refId="mcheck_jc_0131" refTitle="Use of Relational Operator block" refVersion="1"/>
+    <reference refUid="bace10d1-86f0-4711-94b8-0ab3ba79aa1d" refId="mcheck_jc_0141" refTitle="Use of the switch block" refVersion="1"/>
+    <reference refUid="22b6e970-a973-4824-936b-03539f528bf4" refId="mcheck_jc_0221" refTitle="Usable characters for Signal line names" refVersion="1"/>
+    <reference refUid="d548d815-5bef-4fd2-b1e3-9442568d2d9e" refId="mcheck_jc_0281" refTitle="Naming of Trigger Port block and Enable Port block" refVersion="1"/>
+    <reference refUid="9de9a30b-b56d-48a8-9c6d-2573df05ebf2" refId="mcheck_jc_0451" refTitle="Use of unary minus on unsigned integers in Stateflow" refVersion="1"/>
+    <reference refUid="29c76b77-a988-4d1e-bed1-6b8d4c4be1e0" refId="mcheck_jc_0481" refTitle="Use of hard equality comparisons for floating point numbers in Stateflow" refVersion="1"/>
+    <reference refUid="aeee0a93-b56f-4d81-9416-1b36a70bd395" refId="mcheck_jc_0501" refTitle="Format of entries in a State block" refVersion="1"/>
+    <reference refUid="3eb02451-a203-42ce-9612-3e8d2bcc3b9d" refId="mcheck_jc_0511" refTitle="Setting the return value from a graphical function" refVersion="1"/>
+    <reference refUid="739851cf-0dfd-4a77-86b9-fd3707ca16e6" refId="mcheck_jc_0521" refTitle="Use of the return value from graphical functions" refVersion="1"/>
+    <reference refUid="f04b5b80-6f44-4363-8a66-365eb1757d31" refId="mcheck_jc_0531" refTitle="Placement of the default transition" refVersion="1"/>
+    <reference refUid="a90b58b5-9370-4c5b-bae7-3c26d6cf493d" refId="mcheck_jc_0541" refTitle="Use of tunable parameters in Stateflow" refVersion="1"/>
+    <reference refUid="7efdf5aa-88bb-43a2-9363-256dc9a44ebf" refId="mcheck_jm_0001" refTitle="Prohibited Simulink standard blocks inside controllers" refVersion="1"/>
+    <reference refUid="baf2f4da-9408-4412-98ee-bb80b02e2d48" refId="mcheck_jm_0011" refTitle="Pointers in Stateflow" refVersion="1"/>
+    <reference refUid="c309925a-aad8-442f-a4c7-65f4ddba72c9" refId="mcheck_jm_0012" refTitle="Event broadcasts" refVersion="1"/>
+    <reference refUid="1357ce2a-8c61-4762-99ba-436e8be99551" refId="mcheck_mes_sfcolor_001" refTitle="Layout settings in Stateflow" refVersion="1"/>
+    <reference refUid="79454cf3-1637-4ccc-81cd-46c5ccadb10d" refId="mcheck_misra_slsf_003_a" refTitle="Solver Settings" refVersion="1"/>
+    <reference refUid="2d42aa77-27f8-4255-8dda-ec65725ece26" refId="mcheck_misra_slsf_004_a" refTitle="Diagnostic settings" refVersion="1"/>
+    <reference refUid="249e7321-6b89-480d-9b50-8dc846d6a674" refId="mcheck_misra_slsf_005_b" refTitle="Allowable Simulink Blocks - Prohibited Blocks" refVersion="1"/>
+    <reference refUid="710f708e-5249-46f3-b5b2-c5efa4aa9002" refId="mcheck_misra_slsf_005_c" refTitle="Allowable Simulink Blocks - Data Store Memory" refVersion="1"/>
+    <reference refUid="feff64a0-4f7e-4fbc-8dbe-18bc73114685" refId="mcheck_misra_slsf_006_b" refTitle="Block parameters--Proper Parameter Management" refVersion="1"/>
+    <reference refUid="87e06ca5-92e1-49f7-8068-4ad9fbc7122b" refId="mcheck_misra_slsf_006_c" refTitle="Block Parameters - Numerical Values" refVersion="1"/>
+    <reference refUid="e6e5b38c-1ba0-4578-b880-90f62da2ef2e" refId="mcheck_misra_slsf_006_e" refTitle="Block parameters - Passing through Masked Subsystems" refVersion="1"/>
+    <reference refUid="c2478b7c-16c1-4b69-a6f1-a568a4599b5d" refId="mcheck_misra_slsf_007" refTitle="Initialization" refVersion="1"/>
+    <reference refUid="65bfb99c-d943-421d-960b-044dd8794a99" refId="mcheck_misra_slsf_008_a" refTitle="Rounding and saturation in Simulink blocks part A" refVersion="1"/>
+    <reference refUid="cc66aa77-3a35-4173-9ab6-80acf1c79862" refId="mcheck_misra_slsf_008_b" refTitle="Rounding and saturation in Simulink blocks part B" refVersion="1"/>
+    <reference refUid="912b6538-f842-42ba-9ecd-d8d940b51a36" refId="mcheck_misra_slsf_009_b" refTitle="Block execution frequency and order - Block Priority" refVersion="1"/>
+    <reference refUid="295ad0cf-c173-4a2a-b763-7d00ad75a76a" refId="mcheck_misra_slsf_009_d" refTitle="Block execution frequency and order - Sample Time" refVersion="1"/>
+    <reference refUid="ebc0158f-4e2a-472d-9a34-64c1df33aa69" refId="mcheck_misra_slsf_010_a" refTitle="Arithmetic operation order part A" refVersion="1"/>
+    <reference refUid="b341cca2-e4e9-438d-84d0-0c3d2d05f50a" refId="mcheck_misra_slsf_010_b" refTitle="Arithmetic operation order part B" refVersion="1"/>
+    <reference refUid="11ad19ec-26ae-45b2-8805-b2a55fdc63d2" refId="mcheck_misra_slsf_010_c" refTitle="Arithmetic operation order part C" refVersion="1"/>
+    <reference refUid="d2df1950-0c71-465d-adf3-072ddb96d4ab" refId="mcheck_misra_slsf_011_b" refTitle="Control flow blocks in Simulink part B" refVersion="1"/>
+    <reference refUid="0f141d8e-7835-4235-97ad-941d93223a1a" refId="mcheck_misra_slsf_012_a" refTitle="Switch Block" refVersion="1"/>
+    <reference refUid="94548821-e0cc-4c44-993a-3ff2fdb66351" refId="mcheck_misra_slsf_013_a" refTitle="Multiport switch block part A" refVersion="1"/>
+    <reference refUid="1e5587a5-cfb5-43bb-b557-0453180e9749" refId="mcheck_misra_slsf_013_b" refTitle="Multiport switch block parts B" refVersion="1"/>
+    <reference refUid="20d3f6ce-4f98-4433-a56c-1bf6d5f87f1e" refId="mcheck_misra_slsf_013_c" refTitle="Multiport switch block parts C" refVersion="1"/>
+    <reference refUid="e781beff-5779-485f-a240-72fb82715245" refId="mcheck_misra_slsf_015_b" refTitle="Vector and Matrix Signals - Creation of Matrix Signal" refVersion="1"/>
+    <reference refUid="1ff3c3af-b47c-4091-8c2e-0fd82f9e097c" refId="mcheck_misra_slsf_016_a" refTitle="Busses - Creation" refVersion="1"/>
+    <reference refUid="34f04d90-52b9-4dd8-9089-d3cef7a4bb82" refId="mcheck_misra_slsf_016_b" refTitle="Busses - Naming" refVersion="1"/>
+    <reference refUid="929276d8-5db3-4ec9-9ca0-8d8ef56b58be" refId="mcheck_misra_slsf_016_c" refTitle="Busses - Contained Signals" refVersion="1"/>
+    <reference refUid="0d858603-08cb-43d4-98f6-47b51e1fdd17" refId="mcheck_misra_slsf_016_d" refTitle="Busses - Operation" refVersion="1"/>
+    <reference refUid="b97bbd3d-b5bc-4da7-abfc-57b520e09276" refId="mcheck_misra_slsf_016_e" refTitle="Busses - Split up" refVersion="1"/>
+    <reference refUid="e44a5ed4-f77b-48bd-a6b7-a1b22505971c" refId="mcheck_misra_slsf_017_a" refTitle="Unconnected blocks, signal lines and busses part A" refVersion="1"/>
+    <reference refUid="e61abfcc-78eb-4cdb-87be-e199d9457125" refId="mcheck_misra_slsf_017_b" refTitle="Unconnected blocks, signal lines and busses part B" refVersion="1"/>
+    <reference refUid="a985bbef-4595-4ab3-a170-47237f3dda8d" refId="mcheck_misra_slsf_018_a" refTitle="Use of Goto blocks: Tag Visibility" refVersion="1"/>
+    <reference refUid="5cf5fe6e-d08d-4353-8e32-24212980fa5b" refId="mcheck_misra_slsf_018_b_1" refTitle="Use of Goto blocks: Incoming signals and Tag names" refVersion="1"/>
+    <reference refUid="fd0a7069-46fe-4269-92d4-1a3cbcfa55bf" refId="mcheck_misra_slsf_018_b_2" refTitle="Use of From blocks: Outgoing signals and Tag names" refVersion="1"/>
+    <reference refUid="b0dc8103-21d7-4533-8488-d9f0ef793c41" refId="mcheck_misra_slsf_018_c" refTitle="Use of Goto blocks: Uniqueness of Tags" refVersion="1"/>
+    <reference refUid="b03e4c9b-cbb7-4811-91e5-da4e5d38245b" refId="mcheck_misra_slsf_018_d" refTitle="Use of Goto blocks: Corresponding From block" refVersion="1"/>
+    <reference refUid="a2fd72b0-a6a5-47af-aba1-e48dcb4e668e" refId="mcheck_misra_slsf_018_e" refTitle="Use of From blocks: Corresponding Goto block" refVersion="1"/>
+    <reference refUid="78b7c3ab-1a21-43fc-b23b-9d74d3a69e1e" refId="mcheck_misra_slsf_020" refTitle="Simulink font and font size" refVersion="1"/>
+    <reference refUid="b1e04899-4d6d-49a5-8326-c100f162693c" refId="mcheck_misra_slsf_021_a" refTitle="Annotation Appearance - Drop Shadow" refVersion="1"/>
+    <reference refUid="4c2188d9-a372-4e93-ad12-516b937876e3" refId="mcheck_misra_slsf_022_a" refTitle="Model, Subsystem and Library Information Appearance - Model Information" refVersion="1"/>
+    <reference refUid="a0e95447-c3e0-4d1a-a0eb-f17e8f129206" refId="mcheck_misra_slsf_022_b" refTitle="Model, Subsystem and Library Information Appearance - Tool Information" refVersion="1"/>
+    <reference refUid="a7d8da02-f46b-48aa-9551-24814e008ff9" refId="mcheck_misra_slsf_023_a" refTitle="Simulink Block, Subsystem and Library Colour" refVersion="1"/>
+    <reference refUid="3e1d7dc6-7a34-4bcd-8d7d-3d73cbf826a7" refId="mcheck_misra_slsf_024_a" refTitle="Simulink block, subsystem and library drop shadow" refVersion="1"/>
+    <reference refUid="48e33072-f682-4fb0-832c-824b8baa762c" refId="mcheck_misra_slsf_025_a_2" refTitle="Simulink Block From and Goto: Matching Sizes" refVersion="1"/>
+    <reference refUid="52fcd2ea-bab6-49af-b804-f072c6c623a4" refId="mcheck_misra_slsf_025_a_3" refTitle="Simulink Ports: Option IconDisplay" refVersion="1"/>
+    <reference refUid="64389a94-e5ed-4c7a-808f-c0de10d12ba1" refId="mcheck_misra_slsf_025_a_4" refTitle="Simulink Sum blocks: Shape" refVersion="1"/>
+    <reference refUid="0d1657e7-09b7-4f41-85e9-ef0840fced1f" refId="mcheck_misra_slsf_025_a_5" refTitle="Simulink Subsystems: Sufficient Size to display Portnames" refVersion="1"/>
+    <reference refUid="7ddb8b93-74ff-4604-83df-2fabaee66ab6" refId="mcheck_misra_slsf_025_a_6" refTitle="Simulink blocks: Overlapping block labels" refVersion="1"/>
+    <reference refUid="5669ad88-4c1c-4838-ba02-739053c6d6cc" refId="mcheck_misra_slsf_026_a" refTitle="Simulink Blocks: Appearance" refVersion="1"/>
+    <reference refUid="d5c815b4-3001-445f-934b-d84cbf374dc8" refId="mcheck_misra_slsf_026_b" refTitle="Simulink Blocks: Block names matching Parameter names" refVersion="1"/>
+    <reference refUid="7a744c61-9fa8-43d0-8f85-8b58b75d9d37" refId="mcheck_misra_slsf_026_c" refTitle="Port names and corresponding signal names, Part C" refVersion="1"/>
+    <reference refUid="01540d81-5d88-4397-bfc8-4ab3c8c92d10" refId="mcheck_misra_slsf_027_e" refTitle="Signal and bus label usage--Signals from inside reuseable subsystem" refVersion="1"/>
+    <reference refUid="97106797-1969-4580-96dc-c50fa4689adb" refId="mcheck_misra_slsf_027_h" refTitle="Signal and bus label usage--Signals and busses that will be visualized must be labelled." refVersion="1"/>
+    <reference refUid="2d000154-3e60-4778-aaaa-db326b39b77a" refId="mcheck_misra_slsf_029_af" refTitle="Signal and bus line positioning, Part 1: Branches and diagonal signal lines" refVersion="1"/>
+    <reference refUid="6b602751-9624-41be-aed3-4e7e0ffa5623" refId="mcheck_misra_slsf_029_be" refTitle="Signal and bus line positioning, Part2: Overlapses" refVersion="1"/>
+    <reference refUid="aab2508a-7cab-438f-8e0c-354e391206f4" refId="mcheck_misra_slsf_029_c" refTitle="Signal and bus line positioning,  Part3: Crossings" refVersion="1"/>
+    <reference refUid="6cc73d8b-14ae-4105-831b-2bc08996cf29" refId="mcheck_misra_slsf_029_d" refTitle="Avoidance of signal crossings" refVersion="1"/>
+    <reference refUid="f209a318-0e26-4316-a042-964771bddc1a" refId="mcheck_misra_slsf_031_a" refTitle="Data flow and block orientation part A" refVersion="1"/>
+    <reference refUid="eddc585a-8aaf-40d8-9f2c-2e54322f955b" refId="mcheck_misra_slsf_034_a" refTitle="Stateflow Chart properties Part A" refVersion="1"/>
+    <reference refUid="3436debe-0be4-4638-b5b3-97a5ceede8e3" refId="mcheck_misra_slsf_034_b" refTitle="Chart Properties - Transition Execution" refVersion="1"/>
+    <reference refUid="b7d07457-ed6f-40cc-99f5-5a5f07af2f6c" refId="mcheck_misra_slsf_034_c" refTitle="Stateflow Chart properties Part C" refVersion="1"/>
+    <reference refUid="cddfb94d-2e19-47af-8ea4-62bdc098f9e4" refId="mcheck_misra_slsf_034_d" refTitle="Stateflow Chart properties Part D" refVersion="1"/>
+    <reference refUid="94b41067-c356-4c2a-8b2b-e08276c4a5a4" refId="mcheck_misra_slsf_035_a" refTitle="Usage of state-charts, flow-charts" refVersion="1"/>
+    <reference refUid="b3ceba26-48ac-43b6-b0c6-b2ec825da73d" refId="mcheck_misra_slsf_035_b" refTitle="Usage of truth tables in a state machine" refVersion="1"/>
+    <reference refUid="0d8a3526-1078-493f-ae41-a987d7724408" refId="mcheck_misra_slsf_036_a" refTitle="Stateflow/Simulink interface signals, parameters and naming part A" refVersion="1"/>
+    <reference refUid="dc7fadd1-8e06-415f-813b-c43ca5952ccd" refId="mcheck_misra_slsf_036_b" refTitle="Stateflow/Simulink interface signals, parameters and naming part B" refVersion="1"/>
+    <reference refUid="99b8111d-9507-4fb7-8c0b-2e39564b1fe4" refId="mcheck_misra_slsf_036_c" refTitle="Stateflow/Simulink Interface Signals, Parameters and Naming - Name of Inputs/Outputs" refVersion="1"/>
+    <reference refUid="be8f28d2-1b8e-4285-ba9a-87182e93cf27" refId="mcheck_misra_slsf_037_a" refTitle="Internal data - Definition in the Stateflow Hierarchy" refVersion="1"/>
+    <reference refUid="296c065e-63e3-4f3f-b735-f05e2c72144a" refId="mcheck_misra_slsf_037_b" refTitle="Internal data - Scope of Local Data Items" refVersion="1"/>
+    <reference refUid="90596225-18d4-4146-9969-80ebeff59ba5" refId="mcheck_misra_slsf_037_c" refTitle="Internal Data - Naming of Local Data" refVersion="1"/>
+    <reference refUid="15a55eff-5255-4cfd-bf84-d6fec63e1d3b" refId="mcheck_misra_slsf_037_h" refTitle="Internal data - Inheritance for Data Types" refVersion="1"/>
+    <reference refUid="a50f69c3-755b-4403-9397-3a58bec95e8b" refId="mcheck_misra_slsf_038_a" refTitle="Operators in state machines--Simple Mathematical Operations" refVersion="1"/>
+    <reference refUid="668c3a97-21db-407a-9a5f-7d5451703ae8" refId="mcheck_misra_slsf_038_b" refTitle="Operators in state machines--Permitted Operations" refVersion="1"/>
+    <reference refUid="b3b1fb9e-02c4-4b22-a027-aba69b85b292" refId="mcheck_misra_slsf_038_c" refTitle="Operators in state machines--C Library Functions" refVersion="1"/>
+    <reference refUid="a4b292b2-c08f-4e8e-af4c-56017c3b48fe" refId="mcheck_misra_slsf_039_a" refTitle="States - Sub-States" refVersion="1"/>
+    <reference refUid="6b40a0de-d77c-4ab9-ae75-27c363b402ce" refId="mcheck_misra_slsf_039_c" refTitle="States - Hierarchy of Sub-Charts" refVersion="1"/>
+    <reference refUid="e15010d5-c0e6-4b2b-bd33-cde3019ce3c6" refId="mcheck_misra_slsf_040_a" refTitle="Parallel States - Top-Level" refVersion="1"/>
+    <reference refUid="705046bb-da43-4afb-9b26-c8eae5196c72" refId="mcheck_misra_slsf_040_b" refTitle="Parallel States - Grouping" refVersion="1"/>
+    <reference refUid="f55c216b-9782-4cdd-86f6-f6ed9c12c97f" refId="mcheck_misra_slsf_041_a" refTitle="Usage of Boxes in Stateflow" refVersion="1"/>
+    <reference refUid="7e1cefc8-e241-4b35-a40b-d1e8b58c081e" refId="mcheck_misra_slsf_042_a" refTitle="Default Transitions - Super-State" refVersion="1"/>
+    <reference refUid="8904a7ca-b4b4-4076-a8d7-236df0ff5b5d" refId="mcheck_misra_slsf_042_b" refTitle="Default Transitions - One State" refVersion="1"/>
+    <reference refUid="8b837613-a74e-4206-ae83-168c3d6a0dbc" refId="mcheck_misra_slsf_042_c" refTitle="Default Transitions - Top-Level" refVersion="1"/>
+    <reference refUid="56a14f9a-4902-4aa6-b324-4129400fd79c" refId="mcheck_misra_slsf_042_d" refTitle="Default Transitions - Unguarded Path" refVersion="1"/>
+    <reference refUid="91812fab-a802-4fb8-9c9c-e35deb2935b4" refId="mcheck_misra_slsf_042_e" refTitle="Default Transitions - Crossings" refVersion="1"/>
+    <reference refUid="f0d45290-a2c7-459e-af2b-68b0a20bceb6" refId="mcheck_misra_slsf_043_a" refTitle="Transitions - Condition-actions and Transition-actions" refVersion="1"/>
+    <reference refUid="efdba304-f56f-416b-932e-9b93f05ce66c" refId="mcheck_misra_slsf_043_b" refTitle="Transitions - Transition-actions" refVersion="1"/>
+    <reference refUid="22c0cb94-f7a1-473b-b775-ef41e9a96170" refId="mcheck_misra_slsf_043_c" refTitle="Transitions - Conditional Transitions" refVersion="1"/>
+    <reference refUid="0ae40871-533b-4ae8-81d9-83cf31af75cc" refId="mcheck_misra_slsf_043_d" refTitle="Transitions - Actions" refVersion="1"/>
+    <reference refUid="db3eace3-bf1f-493c-aeb9-c28a159ba614" refId="mcheck_misra_slsf_043_i" refTitle="Transitions in flowcharts" refVersion="1"/>
+    <reference refUid="8285b5b1-c60e-4ee0-abb3-e1192d469820" refId="mcheck_misra_slsf_044_a" refTitle="State-Actions - During" refVersion="1"/>
+    <reference refUid="bf14ad9f-04e6-4b61-928b-dff59d7df272" refId="mcheck_misra_slsf_046" refTitle="History junction" refVersion="1"/>
+    <reference refUid="042f25b1-a87a-41b3-a056-c86b24bdcd80" refId="mcheck_misra_slsf_047" refTitle="Stateflow events" refVersion="1"/>
+    <reference refUid="f02db6d5-e1ac-468f-b7fc-9624e380d625" refId="mcheck_misra_slsf_048_b" refTitle="Stateflow coding - Embedded MATLAB Function" refVersion="1"/>
+    <reference refUid="bfa2ee6c-9e54-4be9-a5d6-77de941aaba4" refId="mcheck_misra_slsf_048_c" refTitle="Stateflow Coding - C Code" refVersion="1"/>
+    <reference refUid="1f67e4e1-9450-419e-bfed-776356a1e192" refId="mcheck_misra_slsf_050_a" refTitle="Stateflow Window and Text Appearance - Text Font" refVersion="1"/>
+    <reference refUid="0cbc5a78-625c-4c23-b7e5-cd3263be68a9" refId="mcheck_misra_slsf_050_b" refTitle="Stateflow Window and Text Appearance - Text Size" refVersion="1"/>
+    <reference refUid="5067a8bb-1e79-4e05-8d81-06fff198dd36" refId="mcheck_misra_slsf_050_c" refTitle="Stateflow Window and Text Appearance - Colour and Style" refVersion="1"/>
+    <reference refUid="fa6aad62-a06e-4583-9c39-4e100ddadd1e" refId="mcheck_misra_slsf_050_d" refTitle="Stateflow Window and Text Appearance - Note Text" refVersion="1"/>
+    <reference refUid="4484270e-f4f6-43ce-a320-18932eeeb974" refId="mcheck_misra_slsf_053_a" refTitle="Stateflow transition appearance, part A" refVersion="1"/>
+    <reference refUid="20fbae75-c46e-483e-99b8-3f3bcba90428" refId="mcheck_misra_slsf_053_b" refTitle="Stateflow transition appearance, part B" refVersion="1"/>
+    <reference refUid="445734e7-53d6-4c96-8da3-1e259c66e339" refId="mcheck_misra_slsf_053_c" refTitle="Stateflow transition appearance, part C" refVersion="1"/>
+    <reference refUid="5501f69e-b9d4-40e7-a8e4-7cb6def54568" refId="mcheck_misra_slsf_053_j" refTitle="Stateflow transition appearance, part J" refVersion="1"/>
+    <reference refUid="15c457bb-0bb4-4f62-9a26-f8cb4a1acaed" refId="mcheck_misra_slsf_054_a" refTitle="Transition Labelling - Positioning" refVersion="1"/>
+    <reference refUid="1a74de59-d52e-4b53-a82f-0bd0794219ff" refId="mcheck_misra_slsf_054_b" refTitle="Transition Labelling - Placement" refVersion="1"/>
+    <reference refUid="eab9b8ab-5a13-4892-be81-067381e7f8a8" refId="mcheck_misra_slsf_054_c" refTitle="Transition Labelling - Conditions and Actions" refVersion="1"/>
+    <reference refUid="ba058f10-f137-45d8-b277-46ad71db27ca" refId="mcheck_misra_slsf_054_d" refTitle="Transition Labelling - Actions" refVersion="1"/>
+    <reference refUid="41783821-ffaf-475a-bf52-7a2a55a87b48" refId="mcheck_misra_slsf_054_f" refTitle="Transition Labelling - Sub-Conditions" refVersion="1"/>
+    <reference refUid="82ebe0e4-a324-4d20-93cf-787f6be61026" refId="mcheck_misra_slsf_055_a" refTitle="State-Action Formatting - Order of State-Actions" refVersion="1"/>
+    <reference refUid="dbdb5f19-5627-4f3f-8e9e-8b4231116481" refId="mcheck_misra_slsf_055_b" refTitle="State-Action Formatting - New Lines for State-Actions" refVersion="1"/>
+    <reference refUid="36ed5a0d-1c8c-4b1c-acf1-d0d013ca2d78" refId="mcheck_misra_slsf_055_c" refTitle="State-Action Formatting - New Lines for Actions" refVersion="1"/>
+    <reference refUid="87a33c48-2c2c-4e38-a84b-04f52ab08b6c" refId="mcheck_misra_tl_1_1" refTitle="Use of Block Priorities" refVersion="1"/>
+    <reference refUid="c68d453f-40a5-482d-9dfc-71c88265ba8f" refId="mcheck_misra_tl_1_2_a" refTitle="Comments in block properties" refVersion="1"/>
+    <reference refUid="f180ab79-979a-47df-a1c9-eace18c5d87a" refId="mcheck_misra_tl_2_3" refTitle="Restricting identifiers to 31 characters" refVersion="1"/>
+    <reference refUid="b32f5dcc-05d6-4020-bf81-314293e5fa7c" refId="mcheck_misra_tl_3_3" refTitle="Use of calibration constants" refVersion="1"/>
+    <reference refUid="31b61a11-2373-4773-959c-b7d46384bbd1" refId="mcheck_misra_tl_4_2" refTitle="Permitted data types at the Stateflow Chart Interface" refVersion="1"/>
+    <reference refUid="97927f70-f12d-4182-8ea4-b94636180691" refId="mcheck_misra_tl_4_4" refTitle="Avoidance of Saturation in Integer Arithmetics" refVersion="1"/>
+    <reference refUid="141241e2-0946-4163-8a97-0f269fc8c585" refId="mcheck_misra_tl_4_5" refTitle="Avoidance of Rounding Operations" refVersion="1"/>
+    <reference refUid="ac708250-7afd-4757-b0b9-34f34dc0e8cd" refId="mcheck_misra_tl_4_6" refTitle="Use of user-defined min and max values" refVersion="1"/>
+    <reference refUid="6b6b88b3-18a2-45cc-b0c2-4ff0d8fc44d2" refId="mcheck_misra_tl_5_1" refTitle="Attributes of Look-Up table outputs" refVersion="1"/>
+    <reference refUid="01d59b3a-a67a-4d09-b7c8-99287cae6be2" refId="mcheck_misra_tl_5_10" refTitle="Use of Custom Code blocks" refVersion="1"/>
+    <reference refUid="b822f148-bdec-4b08-bfd9-2de5fb4c5f8f" refId="mcheck_misra_tl_5_2_a" refTitle="Use of the Switch Case block: Show default case" refVersion="1"/>
+    <reference refUid="a1e8d34d-4d3f-4eb1-ab50-a7d65de5234b" refId="mcheck_misra_tl_5_2_b" refTitle="Use of the Switch Case block: avoid unconnected default outputs" refVersion="1"/>
+    <reference refUid="bf10d503-8285-41e0-ba2a-e0863c3cb369" refId="mcheck_misra_tl_5_3" refTitle="Use of Data Store blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="8541c376-6f31-4458-8c48-79a424fd1ba5" refId="mcheck_misra_tl_5_4" refTitle="Use of From and Goto blocks across TargetLink subsystems" refVersion="1"/>
+    <reference refUid="b1a47398-c9c4-4f38-8042-d0b4a04cdaf3" refId="mcheck_misra_tl_5_5" refTitle="Inports and Outports at the TargetLink subsystem interface" refVersion="1"/>
+    <reference refUid="bbc6e209-3734-40ed-9c1e-959ffb0dca92" refId="mcheck_misra_tl_5_6" refTitle="Use of the Multiport Switch block" refVersion="1"/>
+    <reference refUid="db750cae-1927-40ee-aba1-f4c022151b07" refId="mcheck_misra_tl_5_7" refTitle="Use of data types for Multiport Switch block" refVersion="1"/>
+    <reference refUid="a11936af-acf6-4504-bec2-f63bb2ca26c0" refId="mcheck_misra_tl_5_8" refTitle="Use of the Switch block" refVersion="1"/>
+    <reference refUid="5805a359-5db9-4753-97d1-26c15e3f2397" refId="mcheck_misra_tl_6_1" refTitle="Power of two scaling" refVersion="1"/>
+    <reference refUid="e95163c5-97a8-4f5c-a6d7-c1357ea13e33" refId="mcheck_misra_tl_6_2" refTitle="Zero offsets" refVersion="1"/>
+    <reference refUid="d909dba1-0163-40ca-88c0-b19aca3df47d" refId="mcheck_misra_tl_6_3" refTitle="Use of the Math block sqrt function for fixed-point code generation" refVersion="1"/>
+    <reference refUid="5750dd02-a42a-4b25-9a56-e3b1117f9bb0" refId="mcheck_misra_tl_6_4" refTitle="Use of the FIR Filter block for fixed-point code generation" refVersion="1"/>
+    <reference refUid="5c53436b-34a2-428f-a47a-3c7d5f561b37" refId="mcheck_misra_tl_6_5" refTitle="Use of Trigonometric functions for fixed-point code generation" refVersion="1"/>
+    <reference refUid="fac80637-0ae0-4d4b-a1ae-cd4b92141441" refId="mcheck_misra_tl_6_7" refTitle="Avoiding rescaling of input signals to LookupTables (advisory)" refVersion="1"/>
+    <reference refUid="7b96410b-6116-4a4b-b728-875ab3fc9cd4" refId="mcheck_misra_tl_7_1" refTitle="Generating generic code without pragmas" refVersion="1"/>
+    <reference refUid="fd353c9e-f8ca-4965-a99b-140cd8540cd8" refId="mcheck_misra_tl_7_2" refTitle="Avoiding target-specific assembly code" refVersion="1"/>
+    <reference refUid="a731839e-437f-4766-8edb-05827d5e4be0" refId="mcheck_misra_tl_7_5" refTitle="Local macros should not be used" refVersion="1"/>
+    <reference refUid="483e4e2a-18e3-42ec-af65-fdd6cb117931" refId="mcheck_misra_tl_7_6" refTitle="Correct declaration of external variables" refVersion="1"/>
+    <reference refUid="759dedc1-9733-404e-bae9-404abdf00e0e" refId="mcheck_misra_tl_7_7" refTitle="Use of Include Statements in Custom Code Block" refVersion="1"/>
+    <reference refUid="aee28a5f-244b-4890-a3b3-272f6c01d2eb" refId="mcheck_misra_tl_7_9" refTitle="Avoiding shift operations on signed types" refVersion="1"/>
+    <reference refUid="249d15ad-c680-4f81-90c9-ae4c6c04d90d" refId="mcheck_na_0001" refTitle="Bitwise Stateflow operators" refVersion="1"/>
+    <reference refUid="3ae7a0db-7655-4368-9c09-9d7efdf77c57" refId="mcheck_na_0003" refTitle="Simple logical expressions in If Condition block" refVersion="1"/>
+    <reference refUid="9e9d57b2-ec33-435f-a65c-7edb88f2a422" refId="mcheck_na_0005" refTitle="Port block name visibility in Simulink models" refVersion="1"/>
+    <reference refUid="7e9be932-7a25-40b8-abea-fe5e1891223e" refId="mcheck_na_0011" refTitle="Scope of Goto and From blocks" refVersion="1"/>
+    <reference refUid="d0aca577-2f33-4acf-8e5c-0cfa75dc7121" refId="mcheck_na_0013" refTitle="Comparison Operation in Stateflow" refVersion="1"/>
+    <reference refUid="bda929a4-8eec-4276-a9bf-96a650d3fc04" refId="mcheck_na_0018" refTitle="Number of nested if/else and case statement" refVersion="1"/>
+    <reference refUid="5e8693ee-21d9-4fc4-8dfd-1bb868f608d8" refId="mcheck_na_0020" refTitle="Number of inputs to variant subsystems" refVersion="1"/>
+    <reference refUid="0e05bea5-1096-4622-a4ec-e077f2222396" refId="mcheck_na_0026" refTitle="Consistent software environment" refVersion="1"/>
+    <reference refUid="6bffbef7-2687-4b9d-a1f9-066997a3dca7" refId="mcheck_na_0027" refTitle="Use of only standard library blocks" refVersion="1"/>
+    <reference refUid="993904af-5ea7-42fc-ae9f-cd2154c78b88" refId="mcheck_na_0028" refTitle="Use of If-Then-Else Action Subsystem to Replace Multiple Switches" refVersion="1"/>
+    <reference refUid="d548e7bb-b8de-48c4-804e-7261726426aa" refId="mcheck_na_0030" refTitle="Usable characters for Simulink Bus names" refVersion="1"/>
+    <reference refUid="68d12632-3430-4e1d-b588-9407d7276123" refId="mcheck_na_0032_a" refTitle="Use of Merge Blocks: Identical buses" refVersion="1"/>
+    <reference refUid="ec5354ef-bdb5-4312-8036-38d38cb6060e" refId="mcheck_na_0032_b" refTitle="Use of Merge Blocks: Signals/Buses entering Merge Block" refVersion="1"/>
+    <reference refUid="b2d29848-eaff-4665-990d-840ce29b69d5" refId="mcheck_na_0036" refTitle="Default variant" refVersion="1"/>
+    <reference refUid="23da0c4a-a30b-4399-85e7-f3af95c30954" refId="mcheck_na_0037" refTitle="Use of single variable variant conditionals" refVersion="1"/>
+    <reference refUid="53501fcb-c096-4a8b-b76b-917ec7d1cd51" refId="mcheck_na_0038" refTitle="Levels in Stateflow charts" refVersion="1"/>
+    <reference refUid="37fa594c-1326-45af-9b86-42b24f9e7f0f" refId="mcheck_na_0039" refTitle="Use of Simulink in Stateflow charts" refVersion="1"/>
+    <reference refUid="ed778bbc-b067-488e-af4d-ad1f83e628b0" refId="mcheck_na_0040" refTitle="Number of states per container" refVersion="1"/>
+    <reference refUid="f6ee89e5-24cb-4428-b7cd-6221054a3f4a" refId="mcheck_sdt_ic001" refTitle="Initial Value of the Output of Merge Blocks" refVersion="1"/>
+    <reference refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refTitle="Initial Value of the Output of Conditional Subsystems" refVersion="1"/>
+    <reference refUid="494723f9-2422-4893-9286-375171e46ca1" refId="mcheck_sdt_ic003" refTitle="Default Paths of Switch-Case Blocks" refVersion="1"/>
+    <reference refUid="4e3c4af6-df60-4d3a-9a47-d9826e7861a5" refId="mcheck_sdt_ic004" refTitle="If-Blocks: Default Path" refVersion="1"/>
+    <reference refUid="07f4bc31-6985-40cd-ba2a-5089b610c78c" refId="mcheck_sdt_il001" refTitle="Avoidance of Duplicated Port Signals" refVersion="1"/>
+    <reference refUid="f89981e7-333a-4c75-af33-0d11724c2e1b" refId="mcheck_sdt_sa002_a" refTitle="Logical Operator Blocks: Output Data Type" refVersion="1"/>
+    <reference refUid="7db5dcd8-f8de-4d9a-8046-83a65c00a247" refId="mcheck_sdt_sa002_b" refTitle="Relational Operator Blocks: Output Data Type" refVersion="1"/>
+    <reference refUid="941a55d6-9ba4-4564-a4bf-1459953f3b2d" refId="mcheck_sdt_sa003" refTitle="Control Input of Switch- and Multiport Switch Blocks" refVersion="1"/>
+    <reference refUid="ec162622-293c-4d21-a7b2-e15f96b7985f" refId="mcheck_sdt_sa004_a" refTitle="Multiport Switch Blocks: Data Type of Control Input" refVersion="1"/>
+    <reference refUid="1438d075-c533-426a-a28b-14e85cad229c" refId="mcheck_sdt_sa004_b" refTitle="Multiport Switch Blocks: Range of Control Input" refVersion="1"/>
+    <reference refUid="4e26b66c-dd40-45aa-846a-2e46d5d9ce2d" refId="mcheck_sdt_sc001" refTitle="Strong Data Typing at the TargetLink Function Interface" refVersion="1"/>
+    <reference refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refTitle="Stateflow: Chart Option &apos;Strong Data Typing with Simulink I/O&apos;" refVersion="1"/>
+    <reference refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refTitle="Stateflow:  Strong Data Typing at the Input Interface" refVersion="1"/>
+    <reference refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refTitle="Stateflow: Strong Data Typing at the Output Interface" refVersion="1"/>
+    <reference refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refTitle="Stateflow: Chart Option &apos;Data Range&apos;" refVersion="1"/>
+    <reference refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refTitle="Stateflow: Undefined SF Variable Range" refVersion="1"/>
+    <reference refUid="c3db96f2-ebce-47d1-bae4-b1a33c72d021" refId="mcheck_sdt_sc003" refTitle="Strong Data Typing of Merge Blocks" refVersion="1"/>
+    <reference refUid="ebd053c1-fcd2-426d-9376-bcf1b02b0a21" refId="mcheck_sdt_sc004_a" refTitle="Arithmetical Operators: Option &apos;Require all Inputs to have same data type&apos;" refVersion="1"/>
+    <reference refUid="49963ec7-8c8e-4928-81f0-261acab47eec" refId="mcheck_sdt_sc004_b" refTitle="Arithmetical Operators: Scalings and Max/Min values." refVersion="1"/>
+    <reference refUid="ad747466-21a7-4eb8-a908-b9d3db172946" refId="mcheck_sdt_sc004_c" refTitle="Arithmetical Operators: Data Range of the Output Data Type" refVersion="1"/>
+    <reference refUid="0e2be9fc-7aa8-46ea-a7d2-743c019d9650" refId="mcheck_tl_pr20041110_13" refTitle="State variables with local scope are not re-initialized" refVersion="1"/>
+    <reference refUid="a04c40af-fa98-4b13-9f31-506efee158e0" refId="mcheck_tl_pr20050721_08" refTitle="Stateflow: handling of expr. w/ SF int. types can differ from SF semantics" refVersion="1"/>
+    <reference refUid="44476ed0-0246-4a2c-8ea5-ace024ea76f3" refId="mcheck_tl_pr20050809_07" refTitle="Nonpersistent variable in multirate production code" refVersion="1"/>
+    <reference refUid="c2c6a226-5ad0-47ef-8826-29294db82e99" refId="mcheck_tl_pr20051017_01" refTitle="Stateflow: overflow in relational operation" refVersion="1"/>
+    <reference refUid="81b72fa3-1f64-4346-b0ba-1098220c5667" refId="mcheck_tl_pr20060928_17" refTitle="Components of DD struct variables may get incorrectly merged in generated code" refVersion="1"/>
+    <reference refUid="88e06373-83e4-443e-b3c1-9593f42e74f2" refId="mcheck_tl_pr20061030_09" refTitle="Wrong code for a relational operation in Stateflow." refVersion="1"/>
+    <reference refUid="003198b2-c3dc-4fac-810d-9b4ef50ff66f" refId="mcheck_tl_pr20070320_01" refTitle="TL Inport or Businport on root level may cause downsampling of data" refVersion="1"/>
+    <reference refUid="0254e09c-34ac-4bab-a183-180ae3fca04d" refId="mcheck_tl_pr20070704_01" refTitle="Wrong code generated for Rate Limiter block if product of slew rate scaling and sample time is whole-numbered" refVersion="1"/>
+    <reference refUid="fbbe9a13-a811-4a63-855e-24b8a74dfc25" refId="mcheck_tl_pr20070914_06" refTitle="Wrong code for an Enabled, Triggered and Enabled or Action triggered subsystem in connection with incremental code generation" refVersion="1"/>
+    <reference refUid="813fad11-3781-4e37-a306-9b724c75735b" refId="mcheck_tl_pr20080125_07" refTitle="Wrong code generated for While Iterator block" refVersion="1"/>
+    <reference refUid="6e06b71f-caba-4060-ab52-7c209c602729" refId="mcheck_tl_pr20080214_11" refTitle="Erroneous elimination of unscaled SF relational operation" refVersion="1"/>
+    <reference refUid="29a7fb01-1111-4c53-ba59-fb63867ac9a1" refId="mcheck_tl_pr20080215_03" refTitle="Interface variable of incremental may be eleminated in surrounding system" refVersion="1"/>
+    <reference refUid="b85e24ba-70c3-4618-9255-ee1dac51b8ce" refId="mcheck_us_0001" refTitle="Test the Input block Backgroundcolor" refVersion="1"/>
+    <reference refUid="d01fbca9-a6a3-4b6f-95ee-1ef5dc7f6aae" refId="mcheck_us_0002" refTitle="Test the Output block Backgroundcolor" refVersion="1"/>
+    <reference refUid="5e739887-1ed4-447d-83ab-5c552a615246" refId="mcheck_us_0003" refTitle="Test of the Terminator Backgroundcolor" refVersion="1"/>
+    <reference refUid="94603230-303d-42d3-bc62-d211a3673bf1" refId="mcheck_us_0016" refTitle="Test of LSB or type of LUT" refVersion="1"/>
+    <reference refUid="84748b0c-9e6d-4917-96cd-8290b621b43a" refId="mcheck_us_0018" refTitle="Test of the name and variable of targetlink inport" refVersion="1"/>
+    <reference refUid="5dc156bb-8e89-4473-a56e-a7ec2612f98a" refId="mcheck_us_0019" refTitle="Test of the name and variable of targetlink outport" refVersion="1"/>
+    <reference refUid="9742f260-6abc-4397-bea3-f928aba6143d" refId="mcheck_us_0020" refTitle="Test of the Look-Up method" refVersion="1"/>
+    <reference refUid="31786f03-23c1-4c21-b826-a882042f0285" refId="mcheck_us_0022" refTitle="Test of the name and constant of interrunnables" refVersion="1"/>
+    <reference refUid="4acec49c-33ea-4479-8644-9f756d4ff476" refId="mcheck_us_0004" refTitle="Test of LUT Block LSB" refVersion="1"/>
+    <reference refUid="1caa7e25-5e0c-4d67-969c-3ff29fb77cb9" refId="mcheck_us_0005" refTitle="Test of Saturate BackgroundColor" refVersion="1"/>
+    <reference refUid="7f650601-bee9-44b4-9f5a-1cfd14bc0b28" refId="mcheck_us_0006" refTitle="Test of the Saturate Output values" refVersion="1"/>
+    <reference refUid="8781532b-1984-4b37-b2c3-d2f3150ded65" refId="mcheck_us_0007" refTitle="Test of the Connection of Consant with Relational Operator" refVersion="1"/>
+    <reference refUid="58bec37c-2532-45d9-be35-e3b9f3480958" refId="mcheck_us_0008" refTitle="Test of Linked block`s port" refVersion="1"/>
+    <reference refUid="0277060a-f116-4b82-a8a4-ef0536356fe0" refId="mcheck_us_0009" refTitle="Test of the Linked block`s port type" refVersion="1"/>
+    <reference refUid="6b74c822-b13d-486f-91e6-275bc8768867" refId="mcheck_us_0010" refTitle="Test of Class of TL_Inport/TL_Outport" refVersion="1"/>
+    <reference refUid="d0dd6724-faa3-4655-9c5b-e556909ada50" refId="mcheck_us_0011" refTitle="Test of the Linked block`s port about lsb, type or scaling" refVersion="1"/>
+    <reference refUid="d2c6b363-3063-4b96-9bf6-d2b5465db4dc" refId="mcheck_us_0012" refTitle="Test of the Abs Block type" refVersion="1"/>
+    <reference refUid="e00df7fe-178a-4f22-a42e-1923635942f9" refId="mcheck_us_0013" refTitle="Test of the BackgroundColor of P_,L_,C_" refVersion="1"/>
+    <reference refUid="45f9a5af-18e1-4a66-9563-b57a40dba76e" refId="mcheck_us_0014" refTitle="Test of the name and constant of P_,C_ Block" refVersion="1"/>
+    <reference refUid="6c407825-f6ae-4537-8049-b9611938d002" refId="mcheck_us_0015" refTitle="Test of the name and variable of L_ Block" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="05/04/2015 12:57:56">
+      <author username="Beermara" domain="EU"/>
+      <comment><![CDATA[Copied from 'MynewGuideline' (ID: MynewGuidline, Version: v01, Library: UserGuidelineLibrary, Author: Beermara)]]></comment>
+    </record>
+  </history>
+</guideline>

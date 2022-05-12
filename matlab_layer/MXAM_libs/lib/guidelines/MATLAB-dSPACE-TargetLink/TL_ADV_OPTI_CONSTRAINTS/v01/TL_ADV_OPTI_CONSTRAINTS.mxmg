@@ -1,0 +1,145 @@
+<guideline fileVersion="2">
+  <uid>81104941-b275-422b-b64c-6d8d13ad9420</uid>
+  <id>TL_ADV_OPTI_CONSTRAINTS</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of Constraint Limits</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSpace 4.0 (section 5.5.4)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value>TargetLink Production Code Generation Guide [1], TargetLink Basics, Integer Calculation Basics, Implementation of Integer Calculation Operations, Range Determination Basics</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Use min and max constraints if the range is known in advance.
+<br />]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> It is sometimes advisable to specify TargetLink min and max values for block variables where those ranges are known in advance and where the user can guarantee that they will never be exceeded. This helps to increase code efficiency. Typical examples for the specification of TargetLink min and max values are for calibration parameters and Inports of a model. Please note that TargetLink takes those min/max values as user specified constraints but does nothing to ensure compliance with those values. </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> The code generator evaluates range information and propagates them as far as possible through the model. Giving the code generator these information might prevent the necessity to use wider data types, particularly 64-bit, to avoid overflows. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> The generation of 64-bit code contained in the called functions can be avoided by specifying constraint limits for the input variables if these are known in advance, see Figure TL_ADV_OPTI_CONSTRAINTS-1. The code generator now detects that the result of the multiplication can be stored in an Int32 variable under all circumstances, thereby avoiding the use of 64-bit arithmetic: </p> 
+<p class="codeSample"> Sa1_OutPort = (Int32) ((Sa1_InPort1 * ((Int32) Sa1_InPort2)) &gt;&gt; 2);<br /> </p> 
+<p> <img src="TL_ADV_OPTI_CONSTRAINTS.PNG" /><br /> </p> 
+<p class="imageCaption"> Figure TL_ADV_OPTI_CONSTRAINTS-1: Specification of constraint limits for the Inports. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> Figure TL_ADV_OPTI_CONSTRAINTS-2 shows a model with specified scaling that requires the generation of a 64-bit multiplication. It leads to the generation of the following code: </p> 
+<p class="codeSample"> Int32 Aux_S32 /* LSB: 2^2 OFF: 0 MIN/MAX: -8589934592 .. 8589934588 */;<br /> UInt32 Aux_U32 /* LSB: 2^2 OFF: 0 MIN/MAX: 0 .. 17179869180 */; </p> 
+<p class="codeSample"> /* Product: subsystem/Product */<br /> F__I64MULI32I32(Sa1_InPort1, (Int32) Sa1_InPort2, &amp;(Aux_S32), &amp;(Aux_U32)); </p> 
+<p class="codeSample"> /* Outport: subsystem/Out */<br /> Sa1_OutPort = C__I32SHRI64C6_LT32(Aux_S32, Aux_U32, 2, 30); </p> 
+<p class="codeSample"> <img src="TL_ADV_OPTI_CONSTRAINTS_2.PNG" /><br /> </p>Figure TL_ADV_OPTI_CONSTRAINTS-2: Model with specified data types and scalings.
+<br /> 
+<br /> 
+<br />]]></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value><![CDATA[Consider specifying min/max values for the TargetLink block in case they are known in advance and the user can guarantee that they will never be exceeded.
+<br />]]></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>implementation model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1e Use of Established Design Principles</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="328d2cc3-b496-488a-8152-73b2dcb0ccce" refId="mcheck_mes_cgtl_4203" refTitle="Use of Constraint Limits" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/26/2016 13:48:30">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="01/18/2018 18:08:34">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,228 @@
+Version 4.0.1 ©2007-2016 09-Nov-2016
+---------------------------------------------------------------------------
+Bugfixes:
+- ds_0029: The check caused an aborted if the output data type has not been analysed correctly. This can have multiple causes. 
+To avoid the aborted of the check, a warning is raised for the singel block if an error occurs, but the check is not aborted (#4054). 
+
+Version 3.9.0 ©2007-2016 30-Jun-2016
+---------------------------------------------------------------------------
+Changes:
+#3374: ds_0079_c: Check has been adapted such that the TargetLink DD items like 'Variable', 'Class' and 'Scaling' are also checked for forbidden keywords.
+
+Version 3.8.0 ©2007-2016 18-Mar-2016
+Version 1.9.0 ©2007-2016 18-Mar-2016
+---------------------------------------------------------------------------
+Changes:
+ds_0028: Changed parameter checkds0028.AllowedBlocks: Added block 'Sqrt' according to guideline. 
+
+Version 3.7.0 ©2007-2015 31-Dec-2015
+Version 1.8.9 ©2007-2015 31-Dec-2015
+---------------------------------------------------------------------------
+Changes:
+#2862: ds_0047: Updated check/guideline description: is only relevant for MATLAb <2010.
+#2863: ds_0100: Code modified to support targetlink blocks.
+#3017: ds_0027: If the table data is given by an inport to the Lookuptable than the check caused an aborted if the size cannot be derived directly. This will issue a warning now. 
+
+Version 3.5.0 ©2007-2015 30-Jun-2015
+Version 1.8.7 ©2007-2015 30-Jun-2015
+---------------------------------------------------------------------------
+Bugfixes:
+#2312: ds_0107: The check has been modified such that inherited properties in feedback loops are handeled correctly.
+#2323: ds_0105: A stack space error was issued if a a feedback loop contains only a min/max block 
+				and the option 'inherit properties' is selected for all blocks within the feedback loop. 
+				The check has been modified such that the analysis stops after determine all blocks within the loop. 
+#2500: ds_0105: Multiple inputs of the selector using busses or arrays can now be handeled by the check. 
+#2512: ds_0079: The check handles keywords case sensitive now.
+				
+Version 3.4.0 ©2007-2015 31-Mar-2015
+Version 1.8.6 ©2007-2015 31-Mar-2015
+---------------------------------------------------------------------------
+#2104: ds_0100: Check reported an error for Shift_Arithmetic blocks. The handling has been fixed.
+
+Version 1.8.5.0 ©2007-2014 02-Dec-2014
+---------------------------------------------------------------------------
+#2039: ds_0097: If a bus coming out of a TargetLink subsystem is connected to a terminator    
+        block or to blocks with the data type set to 'auto', the check will no longer 
+        report a rule violation.
+#1998: ds_0019, ds_0020, ds_0022, ds_0024, ds_0026, ds_0028, ds_0034, ds_0035, ds_0036, 
+       ds_0039, ds_0041, ds_0050, ds_0051, ds_0052:
+       These checks reported an error if a block defined as permissible does not exist in the 
+       running MATLAB version. These blocks will now be ignored. 
+#1974: ds_0024, ds_0028, ds_0035,ds_0050: Definition of allowed blocks in the parameter 
+       file has changed. 
+#1932,#1997: ds_0052: The check reported a rule violation for the internal S-Function  
+       block of a chart. The stateflow filter function has been fixed to ignore 
+       this S-Function block.      
+
+Version 1.8.4.0 ©2007-2014 29-Sep-2014
+---------------------------------------------------------------------------
+Improvements:
+- ds_0061: The check can now find elements at any level even if parent elements have no name.
+
+
+Version 1.8.3.0 ©2007-2014 13-Aug-2014
+---------------------------------------------------------------------------
+Changes:
+All dSPACE checks cover the dSPACE guideline document 2.1 as well as 3.0. 
+Due to differences between the two versions of this document:
+- some checks have been substituted with two document-version-specific checks
+- some checks use different parameter settings
+#1796: ds_0032 renamed: 
+       ds_0032_v3_0 covers guideline ds_0032 for the dSPACE guideline document version 3.0. 
+       ds_0032_v2_1 covers guideline ds_0032 for the dSPACE guideline document version 2.1.
+#1794: ds_0023_b renamed: 
+       ds_0023_b_v3_0 covers guideline ds_0032 for the dSPACE guideline document version 3.0. 
+       ds_0023_b_v2_1 covers guideline ds_0032 for the dSPACE guideline document version 2.1.
+The following checks use different parameters for version 2.1 and 3.0:
+#1477: ds_0024: Parameter 'checkds0024.AllowedBlocksPrior31' added to define allowed 
+       blocks for TargetLink version < 3.1.
+       Parameter 'checkds0024.AllowedBlocksAfter31' added to define allowed 
+       blocks for TargetLink version >= 3.1.
+The following checks verify the TargetLink version as required in guideline version 2.1 and 3.0:       
+#1480: ds_0049: The system's TargetLink version is checked against the TargetLink version 
+       specified in the guideline (< 3.0)
+#1481: ds_0071: The system's TargetLink version is checked against the TargetLink version 
+       specified in the guideline (< 3.0.1)  
+              
+Improvements:
+#1479: ds_0041: The check description has been corrected. The following default 
+       values for parameter 'checkds0041.ProhibitedBlocks' have been added:       
+       Routing/Bus Assignment, Routing/Environment Controller, Routing/Vector Concatenate 
+                           
+Bugfixes:
+#1558: ds_0110: If 'ddv' is used, a pass will be given.
+#1541: ds_0023_b: Check was giving a fail to some correct gain blocks.
+#1681: ds_0032: Did not find all rule violations if more than one math function block was used.
+#1542: ds_0025: The naming of data types changed in newer Matlab versions.
+       The check has been adapted to handle the new names.
+#1558: ds_0100: Handling of the Shift Arithmetic block and the Bitwise Operator block 
+       has been corrected.
+- ds_0063: Check if the forbidden string is a word in the given string. 
+       If the forbidden string is only part of a word in the given 
+       string no error is reported.
+
+
+Version 1.8.1.0 ©2007-2014 17-Feb-2014
+---------------------------------------------------------------------------
+Bugfixes:
+#1034: ds_0032: Check does no longer fails with wrong math functions.
+
+Changes:
+#1147: ds_0047: Since the mulitportswitch block has been 
+      changed in simulink sinde Matlab R2010b, check will work as follows
+      - if your version is R2010b or older: datatype as well as datarange 
+        of control input of mulitport switches are checks
+      - if your version is newer than R2010b, only datatype is checked. 
+
+
+V1.8 build 0000.1 ©2007-2013   13-Nov-2013
+---------------------------------------------------------------------------
+Bugfixes:
+#951: ds_0105: 'Index exceeds matrix dimension' error is fixed
+#616: ds_0079_c: The detection of reserved names is now case sensitive
+
+
+V1.6 build 0005.2 ©2007-2013   15-Jan-2013
+--------------------------------------------------------------------------------
+New Checks:
+- db_0143: Similar Block Types on the Model Levels
+- db_0126: Scope of Events
+- db_0127: Matlab Specific Commands in Stateflow
+- ds_0061: Order Numbers for Parallel States
+
+Changes:
+- ds_0082: enhanced functioning of the progress bar
+- ds_0063: check output messages are no longer duplicated
+- ds_0098: not defined variables are now accurately treated
+- ds_0105: only consider SL models that have a selector block inside
+- ds_0079_c: 
+-- correct variable naming and check output messages
+-- corrected initialization
+- ds_0023_b: added integrator method
+- ds_0061: 
+-- corrected handling of non-existing fields of return value of mes_splitSFTransitionLabel
+-- improved check output messages
+-- checks actions of substates as well
+-- added progress bar indicator
+-- on event can be a function call
+
+
+V1.6 build 0004.0 ©2007-2012   19-Oct-2012
+--------------------------------------------------------------------------------
+Changes:
+- ds_0079_c:     
+-- description improved
+-- bugfix: Blockparameter-names matches blockparameter-values in errormessages 
+-- local function flatten improved. 
+
+- ds_0105:
+-- Simulink data types are no longer checked. To control simulink data types,  
+   use the compile mode of your model (strg+d). If several data types are used  
+   as inputs to a selector block, simulink throws an error
+
+
+V1.6 build 0003.1 ©2007-2012   24-Sep-2012
+--------------------------------------------------------------------------------
+- ds_079_c: parameter names and line labels are now considered.
+
+
+V1.6 build 0002.0 ©2007-2012   29-Aug-2012
+--------------------------------------------------------------------------------
+Changes:
+- ds_0105: scaling conversion is now ignored
+
+
+V1.6 build 0000.0 ©2007-2012   03-Jul-2012
+--------------------------------------------------------------------------------
+New dSPACE Checks:
+ds_0019	No Blocks from the Continuous Library
+ds_0020	Permissible Blocks of the Discontinuities Library
+ds_0022	Permissible Blocks of the Discrete Library
+ds_0024	Permissible Blocks of the Logic and Bit Operations Library
+ds_0026	Permissible Blocks of the Look-up Tables Library
+ds_0028	Permissible Blocks of the Math Library
+ds_0034	Permissible Blocks of the Model Verification Library
+ds_0035	Permissible Blocks of the Model-Wide Utilities Library
+ds_0036	Permissible Blocks of the Ports and Subsystems Library
+ds_0039	Permissible Blocks of the Signal Attributes Library
+ds_0041	Permissible Blocks of the Signal Routing Library
+ds_0050	Permissible Blocks of the Sinks Library
+ds_0051	Permissible Blocks of the Sources Library
+ds_0052	Permissible Blocks from the User-Defined Functions Library
+ds_0102	Use of Data Types for Trigonometric Blocks
+ds_0103	Use of Data Types for Math Blocks
+ds_0105	Use of Data Types for Selector Blocks
+ds_0106	Use of data types for Look-Up Table and Look-Up Table (2D) blocks
+
+
+V1.5 build 0007.0 ©2007-2012   28-Jun-2012
+--------------------------------------------------------------------------------
+Bugfixes:
+- ds_0040 Check only Simulink data type conversion blocks but not 
+          TargetLink data type conversion blocks.
+- ds_0100 Initialisation of variable s_err has been fixed.
+
+
+V1.5 build 0005.1 ©2007-2012   09-Mar-2012
+--------------------------------------------------------------------------------
+Changes:
+- ds_0100 All Simulink and TargetLink blocks with the option 
+'Round Integer Calculation towards...' will be checked. The previous version
+only checked a specific list of blocks. TL blocks and PreLookup blocks 
+will not be checked.
+
+
+V1.5 build 0004.0 ©2007-2011   08-Feb-2012
+--------------------------------------------------------------------------------
+Checks:
+- ds_0016: scope constrained to tl versions < 2.2, ignores blocks with 
+           nonempty masktypes and blocks outside of TL-Subsystems
+
+
+V1.4 build 0005.1 ©2007-2010   06-Jan-2011
+--------------------------------------------------------------------------------
+Bugfixes:
+- mes_ds_0100: handling of muxed sources: TL data types of muxed source signals
+               were not regognized but wrongly treated as double.
+
+

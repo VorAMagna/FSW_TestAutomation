@@ -1,0 +1,142 @@
+<check fileVersion="2">
+  <uid>f38f5f39-713d-4c93-b1be-d6039f85b888</uid>
+  <id>mcheck_misra_slsf_030_c</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Port Location - Trigger, Enable, and Action Ports</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_030_c.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[A trigger block gets a fail, if its position is not within the region given by the two parameters MISRA_SL_SF.misra_slsf_030.Trigger.Region and MISRA_SL_SF.misra_slsf_030.Trigger.Range.
+<br /> The same holds true for Enable blocks and Action blocks in combination with the corresponding parameters.
+<br /> 
+<br /> Additionally, each enable block gets a fail, which is positioned more right than a Trigger block (if one exists).
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Move the ports to the proposed positions.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[No automatic repair action available.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Trigger.Region</name>
+      <description>This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink workspace. The range of the workspace is given by the distance between the most left and the most right block.</description>
+      <defaultValue>left</defaultValue>
+      <allowedValues>
+        <entry>left</entry>
+        <entry>center</entry>
+        <entry>right</entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Trigger.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue>[100 100]</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Enable.Region</name>
+      <description>This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink workspace. The range of the workspace is given by the distance between the most left and the most right block.</description>
+      <defaultValue>left</defaultValue>
+      <allowedValues>
+        <entry>left</entry>
+        <entry>center</entry>
+        <entry>right</entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Enable.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue>[100 100]</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Action.Region</name>
+      <description>This parameter defines the region, where a trigger block has to be positioned. Each region is a third of the used simulink workspace. The range of the workspace is given by the distance between the most left and the most right block.</description>
+      <defaultValue>left</defaultValue>
+      <allowedValues>
+        <entry>left</entry>
+        <entry>center</entry>
+        <entry>right</entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_030.Action.Range</name>
+      <description>Value of this parameter gives the height(x) and the width(y) relative to the top left corner of the corresponding region of the rectangular, within a trigger might be positioned.</description>
+      <defaultValue>[100 100]</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>MISRA_SL_SF.misra_slsf_030.IgnoredBlocks</parameterName>
+      <sourceIdentifier>a3fa1599-5f03-4b4a-b174-a2c7285ab8d7</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="08/15/2018 11:20:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="08/15/2018 11:23:08">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

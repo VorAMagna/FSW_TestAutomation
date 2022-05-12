@@ -1,0 +1,27 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+========================================================================================
+Configuring BTC EmbeddedPlatform ...
+
+BTC EmbeddedPlatform 								2.4p0 				05-Apr-2019
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1         12-Oct-2015 okay
+DSDD             Data Dictionary                            4.1         12-Oct-2015 okay
+========================================================================================
+
+PID=267316
+{Error using get_limits (line 12)
+Error due to one of the following:
+ * The system 'SlipCtrlV10' is not loaded.
+ * The property 'MXRAYLimits' has no value specified.
+
+Error in PostProcessing_MXRAY (line 14)
+    limits_to_export.(spec_artifact.model_name) = get_limits(spec_artifact);
+} 

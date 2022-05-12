@@ -1,0 +1,853 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+PID=10012
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 8.6.0.267246 (R2015b) ...
+
+TargetLink       Production Code Generator                  4.1p3       19-Oct-2016 okay
+DSDD             Data Dictionary                            4.1p3       19-Oct-2016 okay
+========================================================================================
+
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7d29d750-533b-467a-8990-33a219fce54a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=7d29d750-533b-467a-8990-33a219fce54a'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '72c6ef4d-a6bc-4b27-a2b9-f82c33b5fb6f'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=72c6ef4d-a6bc-4b27-a2b9-f82c33b5fb6f'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '72c6ef4d-a6bc-4b27-a2b9-f82c33b5fb6f'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockV10\AdpLockV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c0accd3c-cc11-4b4e-8762-61f92656e058'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=c0accd3c-cc11-4b4e-8762-61f92656e058'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c0accd3c-cc11-4b4e-8762-61f92656e058'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockV10\AdpLockV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockV10\AdpLockV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpPreCtrlV10\AdpPreCtrlV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '769ab5e0-7ea0-4020-93a8-f290c7daadce'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=769ab5e0-7ea0-4020-93a8-f290c7daadce'
+
+Autodoc Block must be added to the subsystem!
+AdpPreCtrlV10/Torque_limitation_during_uncritical_vehicle_operation/Torque_calculation_during_uncritical_vehicle_operation/trqCluSafeOpModeTrqCardReq
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '769ab5e0-7ea0-4020-93a8-f290c7daadce'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpPreCtrlV10\AdpPreCtrlV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpPreCtrlV10\AdpPreCtrlV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnRDLV10\AdpSlipLrnRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '973fda09-ceac-415a-a8be-9d115ea436f2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=973fda09-ceac-415a-a8be-9d115ea436f2'
+
+Description in the Autodoc block is too short!
+AdpSlipLrnRDLV10/AdpSlipLrn_RDL/Autodoc_Customization2
+Description in the Autodoc block is too short!
+AdpSlipLrnRDLV10/AdpSlipLrn_RDL/Slip_learning_functionality_RDL_and_driving_conditions/Conditions_for_high_and_low_vehicle_speeds/Autodoc_Customization4
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '973fda09-ceac-415a-a8be-9d115ea436f2'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnRDLV10\AdpSlipLrnRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnRDLV10\AdpSlipLrnRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnV10\AdpSlipLrnV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'feabc113-6b05-44d5-95df-3098c69db65e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=feabc113-6b05-44d5-95df-3098c69db65e'
+
+Description in the Autodoc block is too short!
+AdpSlipLrnV10/AdpSlipLrn_CDiff/Autodoc_Customization1
+Description in the Autodoc block is too short!
+AdpSlipLrnV10/AdpSlipLrn_CDiff/Slip_learning_functionality_and_driving_conditions/Conditions_for_high_and_low_vehicle_speeds/Autodoc_Customization1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'feabc113-6b05-44d5-95df-3098c69db65e'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnV10\AdpSlipLrnV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnV10\AdpSlipLrnV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlRDLV10\BrakeCtrlRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'de5f74d0-4d25-4cfe-92ba-b9562320a105'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=de5f74d0-4d25-4cfe-92ba-b9562320a105'
+
+Description in the Autodoc block is too short!
+BrakeCtrlRDLV10/ABS_intervention/Autodoc_Customization
+Description in the Autodoc block is too short!
+BrakeCtrlRDLV10/HDC_intervention/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'de5f74d0-4d25-4cfe-92ba-b9562320a105'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlRDLV10\BrakeCtrlRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlRDLV10\BrakeCtrlRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlV10\BrakeCtrlV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9a888edc-b9fd-41a5-9d59-403c7c878cf2'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=9a888edc-b9fd-41a5-9d59-403c7c878cf2'
+
+Description in the Autodoc block is too short!
+BrakeCtrlV10/Torque_limitiation_during_deceleration/Autodoc_Customization
+Description in the Autodoc block is too short!
+BrakeCtrlV10/Torque_priorization_and_gradient_limitation/Autodoc_Customization
+Description in the Autodoc block is too short!
+BrakeCtrlV10/Torque_priorization_and_gradient_limitation/Gradient_limitation/FinalTrqBrkMaxGradientLim/Autodoc_Customization
+Description in the Autodoc block is too short!
+BrakeCtrlV10/Torque_priorization_and_gradient_limitation/Gradient_limitation/enTrqHoldBrkMax/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9a888edc-b9fd-41a5-9d59-403c7c878cf2'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlV10\BrakeCtrlV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlV10\BrakeCtrlV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncRDLV10\HoldFuncRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '18b52233-f587-43cf-bec2-c7d18004d748'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=18b52233-f587-43cf-bec2-c7d18004d748'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '18b52233-f587-43cf-bec2-c7d18004d748'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncRDLV10\HoldFuncRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncRDLV10\HoldFuncRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncV10\HoldFuncV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '61c52662-672c-4f81-8939-5cab1f3425f1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=61c52662-672c-4f81-8939-5cab1f3425f1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '61c52662-672c-4f81-8939-5cab1f3425f1'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncV10\HoldFuncV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncV10\HoldFuncV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\NVMWriteV10\NVMWriteV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5200a982-b405-434d-8f63-8993697e2926'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5200a982-b405-434d-8f63-8993697e2926'
+
+Autodoc Block must be added to the subsystem!
+NVMWriteV10/NVM_Block_00/NVM_Block_00
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5200a982-b405-434d-8f63-8993697e2926'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\NVMWriteV10\NVMWriteV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\NVMWriteV10\NVMWriteV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\OutputV10\OutputV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f0a1abfa-92c1-4da6-a86c-eaf008e15c3e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f0a1abfa-92c1-4da6-a86c-eaf008e15c3e'
+
+Autodoc Block must be added to the subsystem!
+OutputV10/Output_filter_for_torque_request/Ho2R
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f0a1abfa-92c1-4da6-a86c-eaf008e15c3e'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\OutputV10\OutputV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\OutputV10\OutputV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMEndVDCV10\PFMEndVDCV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f5adc510-e996-4cd0-b9b3-b9201ce958d6'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f5adc510-e996-4cd0-b9b3-b9201ce958d6'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f5adc510-e996-4cd0-b9b3-b9201ce958d6'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMEndVDCV10\PFMEndVDCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMEndVDCV10\PFMEndVDCV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMStartVDCV10\PFMStartVDCV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'aac41747-9a41-4aa1-9318-744187ab8fa9'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=aac41747-9a41-4aa1-9318-744187ab8fa9'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'aac41747-9a41-4aa1-9318-744187ab8fa9'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMStartVDCV10\PFMStartVDCV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMStartVDCV10\PFMStartVDCV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlRDLV10\PreCtrlRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '06849219-e7f3-4a4d-9b7e-d025d9767ff4'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=06849219-e7f3-4a4d-9b7e-d025d9767ff4'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '06849219-e7f3-4a4d-9b7e-d025d9767ff4'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlRDLV10\PreCtrlRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlRDLV10\PreCtrlRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlV10\PreCtrlV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f13ae0f0-ac7f-4e18-bfd8-95b3880912df'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f13ae0f0-ac7f-4e18-bfd8-95b3880912df'
+
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/EnableIncreaseTorqueDrive/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/ExceedDebounceTimeDetection/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/InitDebounceTimeDetection/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/MainDebounceFilter/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/MainDebounceFilter/DebounceTimeMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/MainDebounceFilter/DebounceTimeMaxFilter/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/MainDebounceFilter/DebounceTorqueMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Initial_drive_torque_debounce_filter/MainDebounceFilter/DebounceTorqueMaxFilter/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Vehicle_speed_influence_for_driving_case/Autodoc_Customization
+Description in the Autodoc block is too short!
+PreCtrlV10/Torque_dependent_minimum_feed_forward_control/Feed_forward_torque_at_driving/Yaw_rate_influence_calculation/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f13ae0f0-ac7f-4e18-bfd8-95b3880912df'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlV10\PreCtrlV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlV10\PreCtrlV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlCDLV10\SlipCtrlCDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6cb90cbb-33d9-4966-bb7b-25eb65fd575e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=6cb90cbb-33d9-4966-bb7b-25eb65fd575e'
+
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Filter_for_drive_slip_gradient_and_slip_drive_tendency_calculation/ddv_Filter/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/SlipDriveCalculation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Status_rearWheelSpeed/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Substitue_SlipdrvCaclulation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_drive_slip/SlipDrvHold_Activation/dvCurvAdpSlipMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_drive_slip/SlipDrvHold_Activation/vVehAdpSlipMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Torque_request_calculation_drive_slip/Status at rear axle vibrations/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Twist_filter_for_drive_slip/IntegratorLimitation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_driven_state_3_2_1/Twist_filter_for_drive_slip/SlipDrvIntegrator/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_trailing_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/Calculation_of_Hold_time_and_Hold_torque/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_trailing_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/SlipDrvDeactivation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlCDLV10/Slip_controller_in_trailing_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/SlipTrailHold_Activation/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6cb90cbb-33d9-4966-bb7b-25eb65fd575e'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlCDLV10\SlipCtrlCDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlCDLV10\SlipCtrlCDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlRDLV10\SlipCtrlRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e028e91c-1aa3-49cf-99ea-3eca7046422b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e028e91c-1aa3-49cf-99ea-3eca7046422b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e028e91c-1aa3-49cf-99ea-3eca7046422b'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlRDLV10\SlipCtrlRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlRDLV10\SlipCtrlRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlV10\SlipCtrlV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3c460a6c-b74e-4235-94cd-1c33c8c6f3f7'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=3c460a6c-b74e-4235-94cd-1c33c8c6f3f7'
+
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Filter_for_drive_slip_gradient_and_slip_drive_tendency_calculation/ddv_Filter/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/SlipDriveCalculation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Status_rearWheelSpeed/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Slip_Controller/Substitue_SlipdrvCaclulation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_driven_state/Slip_control_torque_shifting_logic/dvCurvAdpSlipMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_driven_state/Slip_control_torque_shifting_logic/vVehAdpSlipMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Twist_filter_for_drive_slip/IntegratorLimitation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_driven_state_3_2_1/Twist_filter_for_drive_slip/SlipDrvIntegrator/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_trailing_state_3_2_2/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/Calculation_of_Hold_time_and_Hold_torque/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_trailing_state_3_2_2/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/SlipDrvDeactivation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/Slip_controller_in_trailing_state_3_2_2/Torque_gradient_calculation/Torque_decrease_and_deactivation_of_slip_controller_coast_slip/SlipTrailHold_Activation/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/AbsMax/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/AbsMax1/Autodoc_Customization
+Description in the Autodoc block is too short!
+SlipCtrlV10/AbsMax2/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3c460a6c-b74e-4235-94cd-1c33c8c6f3f7'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlV10\SlipCtrlV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlV10\SlipCtrlV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TracStabRDLV10\TracStabRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '1a203426-f921-408a-93b0-7a28a8efb60a'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=1a203426-f921-408a-93b0-7a28a8efb60a'
+
+Description in the Autodoc block is too short!
+TracStabRDLV10/Cornering_with_low_drive_torque/Autodoc_Customization
+Description in the Autodoc block is too short!
+TracStabRDLV10/Middle_speed_and_low_torque/Autodoc_Customization
+Description in the Autodoc block is too short!
+TracStabRDLV10/enabling_traction_stability_function/Autodoc_Customization
+Description in the Autodoc block is too short!
+TracStabRDLV10/high_aLat/Autodoc_Customization
+Description in the Autodoc block is too short!
+TracStabRDLV10/higher_speeds/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '1a203426-f921-408a-93b0-7a28a8efb60a'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TracStabRDLV10\TracStabRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TracStabRDLV10\TracStabRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordRDLV10\TrqCoordRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ebcc304c-ed64-4fdd-b852-b5e303181595'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=ebcc304c-ed64-4fdd-b852-b5e303181595'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ebcc304c-ed64-4fdd-b852-b5e303181595'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordRDLV10\TrqCoordRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordRDLV10\TrqCoordRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordV10\TrqCoordV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46b3f6bf-40d6-4792-a894-c70746c27272'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=46b3f6bf-40d6-4792-a894-c70746c27272'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46b3f6bf-40d6-4792-a894-c70746c27272'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordV10\TrqCoordV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordV10\TrqCoordV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampRDLV10\VibDampRDLV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e36adadf-9e23-4431-97c2-cc99dc4147f1'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=e36adadf-9e23-4431-97c2-cc99dc4147f1'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e36adadf-9e23-4431-97c2-cc99dc4147f1'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampRDLV10\VibDampRDLV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampRDLV10\VibDampRDLV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f19170c0-2807-4561-ba70-4bca1b0e6f62'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=f19170c0-2807-4561-ba70-4bca1b0e6f62'
+
+Description in the Autodoc block is too short!
+VibDampV10/Autodoc_Customization
+Description in the Autodoc block is too short!
+VibDampV10/Drivetrain_Oscillation_Detection_and_Damping/Autodoc_Customization
+Description in the Autodoc block is too short!
+VibDampV10/Drivetrain_Oscillation_Detection_and_Damping/Drivetrain_Oscillation_Detection_and_Damping_DiffLocks_ITC/Autodoc_Customization
+Description in the Autodoc block is too short!
+VibDampV10/Drivetrain_Oscillation_Detection_and_Damping/Drivetrain_Oscillation_Detection_and_Damping_HangOn2Front_ATC/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f19170c0-2807-4561-ba70-4bca1b0e6f62'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10.mdl
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks]'
+          artifact: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10_Min.mdl'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '621cf2d5-a5cc-4672-9909-bae3b30c1945'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=621cf2d5-a5cc-4672-9909-bae3b30c1945'
+
+Description in the Autodoc block is too short!
+VibDampV10_Min/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '621cf2d5-a5cc-4672-9909-bae3b30c1945'
+    export: 'true'
+      file: 'C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10_Min_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10_Min.mdl
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockRDLV10\AdpLockRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpLockV10\AdpLockV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpPreCtrlV10\AdpPreCtrlV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnRDLV10\AdpSlipLrnRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\AdpSlipLrnV10\AdpSlipLrnV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlRDLV10\BrakeCtrlRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\BrakeCtrlV10\BrakeCtrlV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncRDLV10\HoldFuncRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\HoldFuncV10\HoldFuncV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\NVMWriteV10\NVMWriteV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\OutputV10\OutputV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMEndVDCV10\PFMEndVDCV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PFMStartVDCV10\PFMStartVDCV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlRDLV10\PreCtrlRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\PreCtrlV10\PreCtrlV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlCDLV10\SlipCtrlCDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlRDLV10\SlipCtrlRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\SlipCtrlV10\SlipCtrlV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TracStabRDLV10\TracStabRDLV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordRDLV10\TrqCoordRDLV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\TrqCoordV10\TrqCoordV10.mdl
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampRDLV10\VibDampRDLV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10.mdl
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\391_DAIMLER_AMG_BR167_1sp_TonD\SW\Development\VC\VC_Composition\VC_Modules\VibDampV10\VibDampV10_Min.mdl
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...

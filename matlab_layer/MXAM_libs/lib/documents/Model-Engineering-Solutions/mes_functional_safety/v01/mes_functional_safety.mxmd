@@ -1,0 +1,216 @@
+<guidelineDocument fileVersion="2">
+  <uid>97515cdb-27e6-4523-b644-2c786f9bfaba</uid>
+  <id>mes_functional_safety</id>
+  <title>Functional Safety Modeling Guidelines</title>
+  <access>public</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES"/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="df0b7871-ef17-4319-bac2-ff301d3a9291" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> The Model Examiner (MXAM) is designed to support automated analysis and correction of guideline violations for Simulink&reg;, Stateflow&reg;, and TargetLink&reg; models. Guidelines that require checking are frequently those used in the safety-critical environment of software modeling. For this reason it is also advisable to check the safety-relevant properties of Simulink&reg;, Stateflow&reg;, and TargetLink&reg; models. </p>
+<p> Potential issues include incorrect data type allocation, missing value initialization, and unsuitable adaptation of value ranges to the module interfaces of the model, all of which can ultimately have a negative effect on model simulation and code generation. </p>
+<p> MXAM’s MES Functional Safety Guidelines safeguards the modeling process with respect to properties that are crucial to the modeling, simulation, and automated code generation of safety-relevant software. </p>
+<p> The MES Functional Safety Guidelines check signal exchange at module interfaces and wherever signals merge and are combined. Furthermore, TargetLink function interfaces are investigated to see whether, for example, the types of incoming and outgoing signals, in other words their function parameters, are correctly allocated to data type, converted, and dimensioned. In addition, the MES Functional Safety Guidelines ensure that the initialization of conditionally executable Simulink subsystems is consistent and correct. </p>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="5afd5a1f-5aa9-49ac-be08-f10794fd1ee5" title="Framework">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> This chapter examines the conceptual background behind individual problem classes in modeling and code generation, which the MES Functional Safety Guidelines have been designed to solve. </p>
+<p> An initial emphasis lies on characterizing the respective problem classes. For each examined problem class, criteria for suitable modeling are listed and explained. </p>
+<p> The modeling guidelines that are derived from this process will then be discussed in the next chapter in the context of the respective MXAM checking routine (or 'check'). </p>
+<p> The short name of the problem classes is given in brackets with the derived category abbreviation. </p>]]></value>
+      </description>
+      <chapter uid="61a466cc-cc7f-45e0-987b-f916b7c9f0ab" title="Consistency of Interface Signals (signal consistency, sc)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> All signals that mediate data exchange beyond system boundaries are termed interface signals. In principle, this applies to every Simulink subsystem as well as its inputs and outputs (inports and outports). Signals that are located at the interface between different system architectures (i.e. between Simulink, TargetLink, and Stateflow) must fulfill particular requirements, as this is where implicit data conversions can take place or missing signal properties are added. </p>
+<p> Taken in this context, consistency means that all the properties of a source signal (data type, scaling, dimension, etc.) must comply with the properties specified at the system input, or at the very least, be compatible with them. Compatible means that conversions are possible without any significant loss of accuracy, inefficient code, or the danger of a value range violation. </p>
+<p> To properly check consistency, it is also necessary that all relevant properties are specified at the system input. Missing specifications can hinder the optimization of generated code and make it more difficult to recognize value range violations. </p>
+<p> The conversion and combination of interface signals requires consistency of: </p>
+<ul>
+ <li> Signal type and dimensionality </li>
+ <li> Value range information (min and max values of signals), if available </li>
+ <li> Scaling information (Gain/LSB, Offset) </li>
+</ul>
+<p> Between: </p>
+<ul>
+ <li> Inport and source </li>
+ <li> Outport and sink(s) </li>
+ <li> Inputs that are combined together </li>
+</ul>
+<p> Input and output, dependent on signal calculation (e.g. the value range of the result of a multiplication is the same as the product of the value ranges of its factors) </p>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="bca5c1d0-5212-4aca-97d6-8f19447fd2c8" title="Adequacy of Signal Properties (signal adequacy, sa)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> It is important to ensure that signals are always adequate for the respective block type. Signals with incorrect data types, scaling and dimensions can result in undefined states, value range violations, or losses in accuracy. Furthermore, the associated type conversions can result in implementation-dependent side effects. </p>
+<p> Signals with the correct data type and scaling, on the other hand, increase the comprehensibility, transparency, and adaptability of a model. </p>]]></value>
+        </description>
+        <chapter uid="9d995fbe-e8e3-420b-b4cf-04b50c5ec7ff" title="Control signal requirements">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> Switch signals (switch block, conditionally executable subsystems) must be of a Boolean type, or of a discrete numeric type with an adequate value range [0 | &gt;0]. </li>
+ <li> Routing signals (e.g. index signals from multiport switches, variables in Stateflow transition conditions) may only display a discrete data type. Their value range must match the range of the index used to route the signal. If, for example, a control signal of a multiport switch routes three data lines, its' value range must be restricted to [1..3], or, if zero-based indexing is used, to [0..2]. Moreover, the value range must cover the entire index range. Thus, a Boolean control signal would be inadequate, because it is not able to route the third data line. </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+        <chapter uid="f8442364-3a8d-4f49-85cd-978b8fa68132" title="Numerical and logical signal requirements">
+          <description name="description" optional="false" private="false">
+            <description>This is the description of the chapter.</description>
+            <value><![CDATA[<ul>
+ <li> Value ranges should be defined as a signal property if they are known at the time of design. The availability of value ranges enables a precise scaling of data. Moreover, their definition safeguards the integrity of data and simplifies the analysis of dataflow as well as system dynamics. </li>
+ <li> Scaling should always be adapted to the respective value range. </li>
+ <li> Continual signals may not feed into discrete operators. If this cannot be avoided, an explicit type conversion should be carried out. This restriction ensures clear semantics of discrete operations (e.g., what is the result of 0.4 AND -0.01?) and avoids implementation-specific dependencies, e.g. due to rounding. </li>
+ <li> The scaling (accuracy) of the signal must be taken into account in the case of continual relational and arithmetic operations (e.g. with divisions or zero comparisons). For example, avoid dividing by low-resolution signals if their values can get close to zero. In this case, the signal may have to be rescaled. When comparing continual signals, their scaling have to be adjusted. </li>
+</ul>]]></value>
+          </description>
+        </chapter>
+      </chapter>
+      <chapter uid="da739e5f-b4cb-4bae-b9cd-3acda46f2065" title="Initialization of Conditionally Executed Subsystems and States (ic)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> Conditionally executed subsystems, conditionally routed signals (merge blocks), block states, and state diagrams must always be initialized in a comprehensible, correct, and consistent manner. This applies to internal and output values. </p>
+<p> Correct initialization comprises of: </p>
+<ul>
+ <li> Checking of definition and propagation of default values (type checking, if necessary) </li>
+ <li> Definition and recognizability of default paths (switch case blocks) </li>
+ <li> Initialization of output values from conditionally executed subsystems and merge blocks </li>
+ <li> Existence of default transitions in state diagrams </li>
+ <li> Recognition of non-disjoint transition conditions in state diagrams </li>
+ <li> Safeguarding of consistent initialization in the model simulation (Simulink) and generated code (TargetLink) </li>
+</ul>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="7bb43d31-df15-4e32-b8f7-413bd693ed36" title="Interface Layout (il)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> Interfaces between system boundaries should be kept as narrow as possible. Duplication of identical signals should be avoided. </p>
+<p> Narrow interfaces are not only clearer, they also greatly simplify interface maintenance and documentation. Duplicated signals, on the other hand, can easily lead to misunderstandings, as their common source and the resultant value coupling is no longer identifiable on the other side of the system boundary. Furthermore, they increase the interface overhead unnecessarily (thereby increasing the generated code) without any associated gain in functionality. </p>]]></value>
+        </description>
+      </chapter>
+      <chapter uid="7ef803b7-e6a3-4737-bc31-942a77888e5c" title="Control of Range Violations at Run-Time (range control, rc)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> Adequate error routines should be implemented for value range violations at runtime. </p>
+<ul>
+ <li> If min/max information for the signal exists, overruns and underruns shall be identified and suitably processed (by replacing the invalid signal with default values and activating error states, if necessary). </li>
+ <li> The range check of the signal value should depend on the usage of the respective signal, e.g. from the type of arithmetic operation applied to the signal. </li>
+ <li> The use of saturation blocks should always be justified. </li>
+ <li> Divide-by-zero: may be prevented by suitable scaling when min/max values are known and information on the signal resolution is given or can be inferred. </li>
+</ul>]]></value>
+        </description>
+      </chapter>
+    </chapter>
+    <chapter uid="d78b1cfc-e37a-43f5-b9b9-8f0bf6cff97a" title="Guidelines">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="5c131395-4244-4d43-a167-3576bf10efc9" title="Signal Consistency (sc)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="f5a0a566-f97a-4264-8c8d-6ad86391c2bb" modifier="standard" refUid="b5931ff0-a4e8-4cdd-98d4-a6180ad8900c" refId="sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface">
+          <check uid="5cc9636b-a4f6-4fbb-aa68-929e2990a4cd" selectedForRun="true" refUid="4e26b66c-dd40-45aa-846a-2e46d5d9ce2d" refId="mcheck_sdt_sc001" refVersion="1" refTitle="Strong Data Typing at the TargetLink Function Interface"/>
+        </guideline>
+        <guideline uid="f28e23ea-d2e8-48c2-a4bf-f8463b85ae16" modifier="standard" refUid="d82a9a48-cdfc-47cd-a021-254f9218395f" refId="sdt_sc002" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface">
+          <check uid="169f371d-fec8-4b56-ac63-60c3ce6b2abe" selectedForRun="true" refUid="4b51f1f9-6cee-41e5-8c1a-f85c70268acd" refId="mcheck_sdt_sc002_a" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Chart Option &quot;Strong Data Typing with Simulink I/O&quot;"/>
+          <check uid="a11358c9-36ee-411e-a0e6-628e16df5d1f" selectedForRun="true" refUid="b4261b43-7422-46b4-a11f-f81283f751bd" refId="mcheck_sdt_sc002_b" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Input Interface"/>
+          <check uid="86a99a61-990c-40dc-8e52-470fa83c688f" selectedForRun="true" refUid="e20b0d5f-b14e-43e3-9200-1e91ccef0545" refId="mcheck_sdt_sc002_c" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Output Interface"/>
+          <check uid="e0817760-1a2d-49e0-92c7-f3844e096eba" selectedForRun="true" refUid="af35c8ac-e040-4b47-b201-d6e1fb3a2b9b" refId="mcheck_sdt_sc002_d" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Data Range"/>
+          <check uid="617af0a9-79e3-4213-90c9-a3c131bb75b6" selectedForRun="true" refUid="23156cf0-b86b-49af-86d8-49263451707c" refId="mcheck_sdt_sc002_e" refVersion="1" refTitle="Strong Data Typing at the Stateflow Interface - Variable Range"/>
+        </guideline>
+        <guideline uid="02431f75-4dd3-4b2c-be4b-82eac1a9aa6d" modifier="standard" refUid="8d12be9e-9122-490d-a3ac-b8a0f6440891" refId="sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks">
+          <check uid="9a049b1f-6dd5-4639-b86a-5f12fe03bceb" selectedForRun="true" refUid="c3db96f2-ebce-47d1-bae4-b1a33c72d021" refId="mcheck_sdt_sc003" refVersion="1" refTitle="Strong Data Typing of Merge Blocks"/>
+        </guideline>
+        <guideline uid="0f3a5b05-1fa2-4e4e-8fe3-f4820c7b3a0a" modifier="standard" refUid="8482f987-6dee-407c-b50b-a0d844984c3a" refId="sdt_sc004" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks">
+          <check uid="6a524aca-5505-4f99-94c6-06a4a06db2f7" selectedForRun="true" refUid="ebd053c1-fcd2-426d-9376-bcf1b02b0a21" refId="mcheck_sdt_sc004_a" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Option &quot;Require all inputs to have the same data type&quot;"/>
+          <check uid="4fdebaaf-460a-4a6e-95c3-03913be2884a" selectedForRun="true" refUid="49963ec7-8c8e-4928-81f0-261acab47eec" refId="mcheck_sdt_sc004_b" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Scaling and Min/Max"/>
+          <check uid="266643f4-48fc-4658-8072-c731739f4895" selectedForRun="true" refUid="ad747466-21a7-4eb8-a908-b9d3db172946" refId="mcheck_sdt_sc004_c" refVersion="1" refTitle="Strong Data Typing of Arithmetic Blocks - Data Range Output Data Type"/>
+        </guideline>
+        <guideline uid="74cb38cd-05e3-4a42-8193-2054b0a4476d" modifier="standard" refUid="87b9850f-b832-454c-a9b0-4b9bbf860e10" refId="sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names">
+          <check uid="f8ea8ccd-e142-4b5c-9a6a-b89bfc502b5b" selectedForRun="true" refUid="17544735-a087-4664-a7da-96553758f81b" refId="mcheck_sdt_sc005" refVersion="1" refTitle="Propagation of Signal Names"/>
+        </guideline>
+        <guideline uid="78c243be-7991-471a-9beb-1237f32e696c" modifier="standard" refUid="3954f4c8-afef-454e-a2e5-fc57217c1c44" refId="sdt_sc006" refVersion="1" refTitle="Signal Naming and Propagation">
+          <check uid="b7a39340-6499-4baa-9d27-a178a3d227ce" selectedForRun="true" refUid="64daff9e-19b8-45a4-a989-fe91d892610d" refId="mcheck_sdt_sc006" refVersion="1" refTitle="Signal Naming and Propagation"/>
+        </guideline>
+      </chapter>
+      <chapter uid="35697098-4ce7-4f41-a752-43840e57ab47" title="Adequacy of Signal Properties (sa)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="54a34656-62ef-4dab-b138-01e314e61378" modifier="standard" refUid="ea7ace1d-1005-413d-9d2c-c7c3b6cb7230" refId="sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks">
+          <check uid="0dd9c849-7757-4d96-ad88-7f477856e8d4" selectedForRun="true" refUid="fe41ad15-6f09-46c5-aa8b-8632402a1c2a" refId="mcheck_sdt_sa001" refVersion="1" refTitle="Strong Data Typing at the Input of Logical Operator Blocks"/>
+        </guideline>
+        <guideline uid="77932d8e-886b-4f9a-bcc9-c4557cca67e1" modifier="standard" refUid="f8f2f09b-502f-4abe-8ecc-eb8751b81639" refId="sdt_sa002" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks">
+          <check uid="ebb5d082-6781-44b8-93c4-57f54d0cfd00" selectedForRun="true" refUid="f89981e7-333a-4c75-af33-0d11724c2e1b" refId="mcheck_sdt_sa002_a" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Logical Operator Blocks"/>
+          <check uid="63fd71fd-73f7-4545-8389-d63bf714bc18" selectedForRun="true" refUid="7db5dcd8-f8de-4d9a-8046-83a65c00a247" refId="mcheck_sdt_sa002_b" refVersion="1" refTitle="Output Type of Logical and Relational Operator Blocks - Relational Operator Blocks"/>
+        </guideline>
+        <guideline uid="96c5f470-0cf4-4ff2-8ea2-054a886d02a5" modifier="standard" refUid="fa33826c-2b14-4b6a-9256-585a0d6f1f47" refId="sdt_sa003" refVersion="1" refTitle="Control Input of Switch Blocks">
+          <check uid="d241b3bb-357d-4a5b-980d-b7f50171080f" selectedForRun="true" refUid="941a55d6-9ba4-4564-a4bf-1459953f3b2d" refId="mcheck_sdt_sa003" refVersion="1" refTitle="Control Input of Switch Blocks"/>
+        </guideline>
+        <guideline uid="fb3253cf-1584-4c7e-816a-d8526e518947" modifier="standard" refUid="800d61d9-5586-494b-8521-d86f1b6f51d8" refId="sdt_sa004" refVersion="1" refTitle="Control Input of Multiport Switch Blocks">
+          <check uid="ac16399b-bf48-435e-95cf-1d80e2da46e6" selectedForRun="true" refUid="ec162622-293c-4d21-a7b2-e15f96b7985f" refId="mcheck_sdt_sa004_a" refVersion="1" refTitle="Control Input of Multiport Switch Blocks - Data Type"/>
+          <check uid="17f3649e-9f46-4302-9416-9f4cc48fce12" selectedForRun="true" refUid="1438d075-c533-426a-a28b-14e85cad229c" refId="mcheck_sdt_sa004_b" refVersion="1" refTitle="Control Input of Multiport Switch Blocks - Data Range"/>
+        </guideline>
+      </chapter>
+      <chapter uid="33b5951a-e193-4702-9069-9065d04591f5" title="Initialization of Conditionally Executed Subsystems (ic)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="e61b9ef6-7592-46d4-ae45-e00836f15614" modifier="standard" refUid="e6d4b540-984b-470a-8f98-f174b406d7ea" refId="sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems">
+          <check uid="2ae031b0-81a8-4069-b03f-badbb9ee2085" selectedForRun="true" refUid="927019ea-714a-4493-9d70-5affa1c08d2f" refId="mcheck_sdt_ic002" refVersion="1" refTitle="Initial Value of the Output of Conditional Subsystems"/>
+        </guideline>
+        <guideline uid="5d70bcfc-a2a9-4f28-a16f-5a27eb33658f" modifier="standard" refUid="e4b56390-2ebc-48a2-8970-e3da6c7bb6a1" refId="sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks">
+          <check uid="4830a032-aca7-42b5-ae10-8d0d667248c0" selectedForRun="true" refUid="f6ee89e5-24cb-4428-b7cd-6221054a3f4a" refId="mcheck_sdt_ic001" refVersion="1" refTitle="Initial Value of the Output of Merge Blocks"/>
+        </guideline>
+        <guideline uid="0965221c-2633-42fe-ae8c-08d4b3204434" modifier="standard" refUid="8a3d85f1-ebb6-4e78-b384-496fa577faf4" refId="sdt_ic003" refVersion="1" refTitle="Default Paths of Switch Case Blocks">
+          <check uid="6491806b-5904-4dcf-ae3e-084e2aa37f63" selectedForRun="true" refUid="494723f9-2422-4893-9286-375171e46ca1" refId="mcheck_sdt_ic003" refVersion="1" refTitle="Default Paths of Switch Case Blocks"/>
+        </guideline>
+        <guideline uid="2fdcf596-be24-4253-8038-7f4fb5ddd600" modifier="standard" refUid="7ec9f904-9028-4b97-ac50-de092b6bb2a5" refId="sdt_ic004" refVersion="1" refTitle="Else Paths of If Blocks">
+          <check uid="67952cde-de61-45b0-af00-c480bf6c7d1e" selectedForRun="true" refUid="4e3c4af6-df60-4d3a-9a47-d9826e7861a5" refId="mcheck_sdt_ic004" refVersion="1" refTitle="Else Paths of If Blocks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="bf630316-0647-4198-a7d4-a36fd6847174" title="Interface Layout (il)">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="edc73dee-d535-4efc-8bc7-968838ea926e" modifier="standard" refUid="377394ba-be81-405e-9ff2-cda40c2f8e53" refId="sdt_il001" refVersion="1" refTitle="Avoidance of Duplicated Port Signals">
+          <check uid="c4b245bb-87ba-45d6-ad0a-968ba45354ea" selectedForRun="true" refUid="d5e875cd-69c7-4fdf-8ae7-24a2b1b4997a" refId="mcheck_sdt_il001_a" refVersion="1" refTitle="Avoidance of Duplicated Port Signals - Source Signal"/>
+          <check uid="3353ae55-4de0-4d7d-a3b8-2461d5c5eacc" selectedForRun="true" refUid="65a25f2a-ad4c-467b-a8c6-5e30e9c10eaa" refId="mcheck_sdt_il001_b" refVersion="1" refTitle="Avoidance of Duplicated Port Signals - Shadow Inports"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="1d662d03-1825-438f-b411-62aa381c609d" title="Appendix">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/20/2013 15:13:50">
+      <author username="Model Engineering Solutions GmbH" domain="MES"/>
+      <comment>Guideline document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

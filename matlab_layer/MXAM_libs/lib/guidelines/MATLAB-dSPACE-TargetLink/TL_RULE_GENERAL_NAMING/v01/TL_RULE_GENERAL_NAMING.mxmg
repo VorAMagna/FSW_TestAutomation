@@ -1,0 +1,188 @@
+<guideline fileVersion="2">
+  <uid>ff0ca9f3-11d9-4fd9-b5e4-9f84542a028b</uid>
+  <id>TL_RULE_GENERAL_NAMING</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>General Naming Conventions</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+        <value>verification/validation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 4.1), dSPACE 3.0 (section 4.1), dSPACE 4.0 (section 1.2.1)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value>TargetLink Production Code Generation Guide [1], TargetLink Limitations, General Limitations, Reserved identifiers</value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> identifiers within a model should conform to ANSI C, the first character must be a letter, should be unique within the first 31 characters and be different from a set of reserved names </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> For all identifiers within a model, be it for Simulink parameters, block models, subsystems, ports and Stateflow data and events, the following rules apply: </p> 
+<ul> 
+ <li> Identifiers within a model (in particular for parameters, subsystem names and port names) should be valid ANSI C identifiers, i.e. they should contain the letters a - z, A - Z, the digits 0 - 9 and an underscore but nothing else. The first character has to be a letter. </li> 
+ <li> Names should be unique within the first 31 characters </li> 
+ <li> Names should be different from reserved names of the C language, standard compiler and library functions, reserved MATLAB/Simulink/Stateflow keywords and names as well as TargetLink system header files as there are: 
+  <ul> 
+   <li> auto, break, case, catch, char, const, continue, default, do, double, else, elseif, end, enum, extern, float, for, function, global, goto, if, int, long, otherwise, persistent, register, return, short, signed, sizeof, static, struct, switch, try, typedef, union, unsigned, void, volatile, while </li> 
+   <li> abs, acos, after, asin, at, atan, atan2, before, ceil, chg, change, cos, cosh, du, during, en, enter, entry, every, ex, exp, exit, fabs, floor, fmod, in, log, log10, max, min, matlab, ml, pow, send, sgn, sin, sinh, sqrt, sqrt, t, tan, tanh, tc&lt; digits&gt;, trigger_id. </li> 
+   <li> TargetLink pre-defined modules and system header files like tl_types, tllimits, dsfxp, or any other compiler or standard library </li> 
+  </ul> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value><![CDATA[<p> NOTE:<br /> - The check ds_0079_c only covers the reserved names.<br /> - The check ds_0079_c is not case-sensitiv, i.e. Else would produce a fail.<br /> - This check only gives a fail, if the whole string (i.e. value, label, identifier) is a member of the blacklist. So 'else' produces a fail, but not 'welse' nor 'this else'. </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> The rule enables seamless conversion and code generation for Simulink models with TargetLink. The generated code then contains only valid C identifiers that avoid name collisions. Compliance with MISRA C rule 20.2: &acirc;€œStandard library function names shall not be reused.&acirc;€� </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1h Use of Naming Conventions</value>
+        <value>T8.1d No Multiple Use of Variable Names</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.1 Suitable Programming Language</value>
+        <value>T3-1.3 Language Subset</value>
+        <value>T3-3.1 Use of Coding Standard</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value>20.2</value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="4cd31c1c-a013-42dd-8858-4d63fcfc077d" refId="mcheck_ds_0055" refTitle="Reserved Names in Stateflow" refVersion="1"/>
+    <reference refUid="8bde88f2-bbcd-4769-8e2d-621dd6aec72a" refId="mcheck_ds_0080" refTitle="Reserved System Header File Names" refVersion="1"/>
+    <reference refUid="ca8be79c-8101-4985-bb4b-2c863034d79e" refId="mcheck_ds_0079_c" refTitle="General Naming Conventions: Reserved Names" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>dSPACE.ForbiddenIdentifierNames</parameterName>
+          <sourceIdentifier>mcheck_ds_0079_c</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'auto','break','case','catch',...
+'char','const','continue','default',...
+'do','double','else','elseif',...
+'end','enum','extern','float',...
+'for','function','global','goto',...
+'if','int','long','otherwise',...
+'persistent','register','return','short',...
+'signed','sizeof','static','struct',...
+'switch','try','typedef','union',...
+'unsigned','void','volatile','while'
+'abs','acos','after','asin',...
+'at','atan','atan2','before',...
+'ceil','chg','change','cos','cosh',...
+'du','during','en','enter',...
+'entry','every','ex','exp',...
+'exit','fabs','floor','fmod',...
+'in','log','log10','max',...
+'min','matlab','ml','pow',...
+'send','sgn','sin','sinh',...
+'sqrt','sqrt','t','tan',...
+'tanh','tc<digits>','trigger_id',...
+'tl_types','tllimits','dsfxp'}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/26/2016 10:29:20">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'General Naming Conventions: Reserved Names' (ID: ds_0079, Version: v01, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</guideline>

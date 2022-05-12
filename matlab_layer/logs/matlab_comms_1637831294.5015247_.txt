@@ -1,0 +1,119 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=17000
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM_DRIVE\5_1_0_6262ba34\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM Drive...
+Initializing MXAM Drive dependencies...
+Setting up MXAM Drive environment...
+Starting jmbridge server...
+Opening MXAM Drive...
+MXAM Drive started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b4fe9743-fa84-40ff-b1c8-5d5dc3e5944e'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=b4fe9743-fa84-40ff-b1c8-5d5dc3e5944e'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5b2cf754-82f4-4b47-a842-0442e24eea4b'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=5b2cf754-82f4-4b47-a842-0442e24eea4b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5b2cf754-82f4-4b47-a842-0442e24eea4b'
+    export: 'true'
+      file: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'MXAM Guideline Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2db14f3f-5593-4f10-946f-3ced61de9705'
+        resultLink: 'http://127.0.0.1:10117/result?jobUid=2db14f3f-5593-4f10-946f-3ced61de9705'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2db14f3f-5593-4f10-946f-3ced61de9705'
+    export: 'true'
+      file: 'C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMEndI10\PFMEndI10.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\MPT_012_Daimler_BR465_eG-Wagon\SW\STD\Development\EM_EV\SI\SI_Composition\SI_Modules\PFMStartI10\PFMStartI10.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...
+Deinitializing MXAM Drive dependencies...
+MXAM Drive shut down.

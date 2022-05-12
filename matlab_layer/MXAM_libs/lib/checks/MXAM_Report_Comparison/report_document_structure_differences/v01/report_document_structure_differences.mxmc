@@ -1,0 +1,53 @@
+<check fileVersion="2">
+  <uid>46b13604-24e7-46bd-aff2-f2662bc73cd9</uid>
+  <id>report_document_structure_differences</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>2c5a44f0-b73b-4883-8b5d-0e7fa3e84baa</templateUid>
+  <title>No differences in structure of documents</title>
+  <adapter version="0.1">com.modelengineers.mxam.tooladapter.mxamreport</adapter>
+  <executable>mxamreport.MXAM_Report_Comparison.report_document_structure_differences.v01.implementation.ReportDocumentStructureDifferences</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="true" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[The check analyzes two reports and creates findings for structure elements on each level in the document.
+<br /> 
+<br /> Two structure elements match if:
+<br /> 
+<ul> 
+ <li> They have the same structure type (Report, Guideline Document, Chapter, Guideline, Check). </li> 
+ <li> They have the same ID. </li> 
+ <li> They are contained in parents that match according to this definition.<br /> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="true" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check passes if the document structures are the same.
+<br /> 
+<ul> 
+ <li> Warning 1: A matching check is selected in only one report. </li> 
+ <li> Failed 1: There was no matching element found in the first report for an element in the second report - this is an additional element. </li> 
+ <li> Failed 2: There was no matching element found in the second report for an element in the first report - this is a missing element. </li> 
+</ul>]]></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="04/04/2017 08:54:32">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="09/26/2018 10:38:26">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,104 @@
+<check fileVersion="2">
+  <uid>a35f5639-7f24-45a6-bab2-f2e3ec3b41fa</uid>
+  <id>mcheck_jm_0010_b</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Signal Names of Inports and Outports of Stateflow Charts - Stateflow Chart Ports</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_jm_0010_b.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[This check analyzes that the names of Inport and Outport Stateflow Charts match the correspondent signal name/label.
+<br /> 
+<ul> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Failed 1: Name of Chart Inport/Outport is not identical with the name of its signal. </li> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Failed 2: Signal from/to Chart Inport/Outport has no label. </li> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Failed 3:&nbsp;Signal from/to Chart Inport/Outport has no label, but has inherited name. The setting ''show propagated signals'' should be set to ''on''.<br /> </li> 
+</ul>The check result is passed if:
+<br /> 
+<ul> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Passed 1: The fail cases do not apply. </li> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Passed 2: Library blocks and reusable subsystems that encapsulate generic functionality are not checked. </li> 
+ <li style="list-style: none"> <br /> </li> 
+ <li> Passed 3: The Signal label and the name of Chart Inport/Outpot differ only by angle brackets, which indicates propagated signal. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[Leading and trailing whitespace and case is significant, i.e.
+<br /> PortName= 'v_Fzg' is NOT identical with
+<br /> SignalName= 'v_Fzg ' or
+<br /> SignalName= 'v_fzg' or
+<br /> SignalName= ' v_Fzg' and vice versa]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Match the names of signal or Stateflow chart port names.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

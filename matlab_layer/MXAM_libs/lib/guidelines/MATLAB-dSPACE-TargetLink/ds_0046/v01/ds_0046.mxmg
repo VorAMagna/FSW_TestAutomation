@@ -1,0 +1,132 @@
+<guideline fileVersion="2">
+  <uid>c9fd8547-e170-4387-9787-55de37be8a74</uid>
+  <id>ds_0046</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Cascades of Merge Blocks</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value></value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums/>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 2.1 (section 2.12.6), dSPACE 3.0 (section 2.12.6)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Since TargetLink 2.1.6, cascades of <em>Merge</em> blocks, that is, <em>Merge</em> blocks which are arranged hierarchically, are supported. </p>
+<p> With regard to the <em>inherit scaling from merged variables</em> option of the TargetLink Merge block, the following two options are supported for <em>Merge</em> blocks in cascades: </p>
+<ol>
+ <li> The <em>inherit scaling from merged variables</em> option is set for each block in the cascade, see Figure ds_0046-1: To enable inheritance, scaling/type information must be specified for at least one of the inputs of the cascade (it does not matter for which input; if scaling/data types are specified for multiple inputs, they need to be consistent). If no input signal of the cascade provides the necessary scaling/type information, TargetLink flags an error.<br /> <br /> </li>
+ <li> The <em>inherit scaling from merged variables</em> option is set for each block in the cascade, except for the last <em>Merge</em> block in the hierarchy, see Figure ds_0046-2: Consequently data type/scaling information has to be provided only for the last block in the hierarchy. Unlike the first option, it is not necessary that scaling/data type information is provided for at least one of the input signals of the cascade. The scaling/type information for the last merge block in the cascade is sufficient. </li>
+</ol>
+<p> Since it is not really suitable to specify scaling/type information for a <em>Merge</em> block inside the cascade (which is not the last <em>Merge</em> block in the hierarchy), this is not supported by TargetLink and should never be required either.<br /> <br /> Please note also, that whenever the <em>inherit scaling from merged variables</em> option is set for a TargetLink <em>Merge</em> block, the data types/scaling for all inputs must be identical if they are specified.<br /> <br /> The initial condition can be specified for each <em>Merge</em> block inside the cascade. If the specifications are not consistent, a warning is flagged by MATLAB. It is of course recommended to specify the initial condition property only for the last <em>Merge</em> block in the hierarchy. </p>
+<p> <img src="ds_0046_1.png" /> </p>
+<p class="imageCaption"> Figure ds_0046-1: Modeling option 1 for cascaded <em>Merge</em> blocks: The option <em>inherit scaling from merged variables</em> is set for each <em>Merge</em> block in the cascade. </p>
+<p> <img src="ds_0046_2.png" /> </p>
+<p class="imageCaption"> Figure ds_0046-2: Modeling option 2 for cascaded <em>Merge</em> blocks: The option <em>inherit scaling from merged variables</em> is set for each <em>Merge</em> block in the cascade (top) except for the last one, which contains scaling/data type information (bottom). </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences/>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history/>
+</guideline>

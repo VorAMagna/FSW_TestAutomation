@@ -1,0 +1,101 @@
+<check fileVersion="2">
+  <uid>29b6ab7c-f36b-431c-a1dd-a10c1b91fa7a</uid>
+  <id>mcheck_tl_pr20050222_03</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Variable Merge for Block Variables of Struct Types</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_tl_pr20050222_03.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 4.0, 4.1, 4.2, 4.3</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each Look-Up Table, Discrete State-Space, Discrete Filter and Discrete Transfer Function block in the model.
+<br /> 
+<ul> 
+ <li> Passed1: None of the mentioned blocks are in the model. </li> 
+ <li> Passed2: For Look-Up Table blocks (1-D and 2-D) the option 'Generate map struct' is disabled. </li> 
+ <li> Passed3: For Discrete State-Space blocks the option 'Keep matrix structure' is enabled. </li> 
+ <li> Passed4: For Discrete Filter blocks the option '<span>Keep vector structure</span>' is enabled. </li> 
+ <li> Passed5: For Discrete Transfer Function blocks the option '<span>Keep vector structure</span>' is enabled. </li> 
+ <li> Passed6: The referenced variable class is not mergeable.<br /> </li> 
+ <li> Passed7: The name of the variable in the generated production code is not used multiple times.<br /> </li> 
+</ul> 
+<p> The check result is Review if all passed cases do not apply. </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[The check handles the described passed cases step-by-step as a logical chain: A case is checked if and only if its predecessor was not passed.
+<br />]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<ul> 
+ <li> Solution1: Review the block and change the corresponding option in compliance with the passed cases </li> 
+ <li> Solution2: Ensure that all blocks that share the same name for the variable struct have the same values. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[No automatic repair action available.
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="05/31/2017 10:52:30">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="06/21/2017 15:58:04">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<NamingConventions>
+	<Template>Source_[Prefix]_Label_[Suffix]</Template>
+	<Fragments>
+		<fragment>
+			<FragmentName>Source</FragmentName>
+			<Capitalization>all</Capitalization>
+			<min_width>2</min_width>
+			<max_width>4</max_width>
+			<Description>Source of signal or parameter (mandatory).</Description>
+			<Patterns>
+				<Pattern>
+					<PatternName>PAR</PatternName>
+					<Description>PARAMETER</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>PRE</PatternName>
+					<Description>PreProcessing</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>PST</PatternName>
+					<Description>PostProcessing</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>DMN</PatternName>
+					<Description>DataManagement</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>CTL</PatternName>
+					<Description>Control</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>TC</PatternName>
+					<Description>For Testcases</Description>
+				</Pattern>
+			</Patterns>
+		</fragment>
+		<fragment>
+			<FragmentName>Prefix</FragmentName>
+			<Capitalization>no capital letters</Capitalization>
+			<min_width>1</min_width>
+			<max_width>inf</max_width>
+			<Description>Physical unit (optional and free).</Description>
+			<Patterns>
+			</Patterns>
+		</fragment>
+		<fragment>
+			<FragmentName>Label</FragmentName>
+			<Capitalization>first letter</Capitalization>
+			<min_width>1</min_width>
+			<max_width>inf</max_width>
+			<Description>Specific name of signal or parameter (mandatory).</Description>
+			<Patterns>
+				<Pattern>
+					<PatternName>Steering</PatternName>
+					<Description></Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>Tyre</PatternName>
+					<Description></Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>Engine</PatternName>
+					<Description></Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>ECU</PatternName>
+					<Description></Description>
+				</Pattern>
+			</Patterns>
+		</fragment>
+		<fragment>
+			<FragmentName>Suffix</FragmentName>
+			<Capitalization>all</Capitalization>
+			<min_width>1</min_width>
+			<max_width>inf</max_width>
+			<Description>Additional characteristics (optional).</Description>
+			<Patterns>
+				<Pattern>
+					<PatternName>FL</PatternName>
+					<Description>Front Left</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>FR</PatternName>
+					<Description>Front Right</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>MIN</PatternName>
+					<Description>Minimum</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>MAX</PatternName>
+					<Description>Maximum</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>NEG</PatternName>
+					<Description>Negativ</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>OFS</PatternName>
+					<Description>Offset</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>POS</PatternName>
+					<Description>Positive</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>REV</PatternName>
+					<Description>Reverse</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>RL</PatternName>
+					<Description>Rear Left</Description>
+				</Pattern>
+				<Pattern>
+					<PatternName>RR</PatternName>
+					<Description>Rear Right</Description>
+				</Pattern>
+			</Patterns>
+		</fragment>
+	</Fragments>
+</NamingConventions>

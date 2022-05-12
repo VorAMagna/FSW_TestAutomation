@@ -1,0 +1,161 @@
+<guideline fileVersion="2">
+  <uid>6a0f757b-6237-4cb1-bf95-a1b0af0a23ec</uid>
+  <id>jc_0121</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>MathWorks Automotive Advisory Board (MAAB)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Use of the Sum Block</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>MAAB</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>readability</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>MAAB 2.1, MAAB 3.0</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> sum block must use rectangular shape, signals should not overlap; round shape if no more than 3 inputs </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Sum blocks should: </p>
+<ul>
+ <li> Use the &quot;rectangular&quot; shape. </li>
+ <li> Be sized so that the input signals do not overlap. </li>
+ <li> <p> You may use the round shape in feedback loops. </p>
+  <ul>
+   <li> There should be no more than 3 inputs. </li>
+   <li> The inputs may be positioned at 90,180,270 degrees. </li>
+   <li> The output should be positioned at 0 degrees. </li>
+  </ul> </li>
+</ul>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="jc_0121_ex1.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-1: The sum block is of rectangular shape and all input signals are clearly distinguishable </p>
+<p> <img src="jc_0121_ex2.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-2: The sum blocks are depicted as a circle, but they are positioned within a feedback loop. All input signals are clearly distinguishable. </p>
+<p> <img src="jc_0121_ex3.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-3: The sum block is of rectangular shape and all input signals are clearly distinguishable. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="jc_0121_counterEx1.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-4: (1) The sum block is depicted as a circle, but more than 3 inputs are used. (2) The input signals of the sum block are not clearly distinguishable. </p>
+<p> <img src="jc_0121_counterEx2.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-5: The sum block is depicted as a circle within a feedback loop, but more than 3 inputs are used. </p>
+<p> <img src="jc_0121_counterEx3.png" /> </p>
+<p class="imageCaption"> Figure jc_0121-6: The sum block is depicted as a circle within a feedback loop, but the inputs are not positioned at 90, 180 and 270 degrees. </p>]]></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1d Use of Defensive Implementation Techniques</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-2.2 Defensive Programming</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>2.00</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="949393b6-e450-44fd-ad53-0302da01d593" refId="mcheck_jc_0121" refTitle="Use of the Sum Block" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/15/2016 17:19:02">
+      <author username="Model Engineering Solutions GmbH" domain="MES"/>
+      <comment>Status changed from [ACCEPTED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

@@ -1,0 +1,114 @@
+<check fileVersion="2">
+  <uid>ff4c31dd-1834-48a7-ac2c-50321fafbd4d</uid>
+  <id>mcheck_mes_slsf_9100</id>
+  <version>1</version>
+  <status>accepted</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Naming Conventions</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_mes_slsf_9100.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> The check analyzes the name of each item in the model whose type is listed in the check parameter 'MES.mes_slsf_9100.Types2Check'.<br /> </p> 
+<ul> 
+ <li> Failed: The name of the item does not follow the naming convention described in the XML file, which is defined in the check parameter 'MES.mes_slsf_9100.pathXMLFile'.<br /> </li> 
+</ul>The check result is passed if all failed cases do not apply.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> The naming convention is described in an XML file. The name and path of the XML file are defined in the check parameter 'MES.mes_slsf_9100.pathXMLFile'. </p> 
+<p> The Excel file must follow a specific scheme consisting of optional and mandatory fragments. The scheme is defined in an example Excel file that can be found in the folder where this check resides. </p> 
+<p> The template for the naming convention is a string with fragments and separators, e.g., 'Prefix_Source_[Label]_Suffix'.<br /> </p> 
+<ul> 
+ <li> Mandatory fragments have no indicators. In the example above, 'Prefix', 'Source' and 'Suffix' are mandatory fragments. The mandatory fragment is always checked with the separator to its right.<br /> </li> 
+ <li> Optional fragments are marked with [], such as '[Label]'. Optional fragments are not separated in the finding message.<br /> </li> 
+ <li> Free-text fragments accept any string, but they must be followed by a mandatory fragment or be placed at the end of the template, and must not include separators. They are indicated by leaving the column empty in its corresponding Excel tab. </li> 
+ <li> Do not use the symbol '&amp;' in the names of the fragments, patterns nor separators.<br /> </li> 
+</ul> 
+<p> The value of the check parameter 'MES.mes_slsf_9100.Types2Check' may be any key-value pair that is valid for the Simulink function 'find_system'. </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Review the name of the item and rename it according to the fragment pattern. The finding message identifies the first mandatory fragment which does not follow the naming convention given in the template or which is missing.<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MES.mes_slsf_9100.pathXMLFile</name>
+      <description>pathXMLFile defines the path and file name of the XML-file containing the naming convention.
+The path can be absolute or relative to current matlab folder.</description>
+      <defaultValue><![CDATA['NamingConventions.xml']]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MES.mes_slsf_9100.Types2Check</name>
+      <description><![CDATA[Types2Check defines the object types to be checked.
+These object types are defined by key-value list.
+All lines  must have the same number of entries. Fill up non-used fields with ''.
+The default value corresponds to all blocks in the model.
+
+      Example : Check all signals and constant blocks.
+      Types2Check = {
+          'type' 'line' 'segmenttype' 'trunk';
+          'type' 'block' 'blocktype' 'constant'}]]></description>
+      <defaultValue><![CDATA[{'type','block'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="09/30/2016 12:46:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [ACCEPTED]. </comment>
+    </record>
+  </history>
+</check>

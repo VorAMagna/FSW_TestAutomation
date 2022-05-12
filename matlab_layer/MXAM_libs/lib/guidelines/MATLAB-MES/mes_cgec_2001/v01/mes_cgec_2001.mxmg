@@ -1,0 +1,271 @@
+<guideline fileVersion="2">
+  <uid>eb7db4d4-0edd-461c-96fb-2bce0f67995b</uid>
+  <id>mes_cgec_2001</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH (MES)</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Prohibited Simulink Blocks for Code Generation</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>Embedded Coder</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value><![CDATA[Embedded Coder > Code Generation from Simulink Models > Model Architecture and Design > Modeling > Supported Products and Block Usage > Block Usage > Simulink Built-In Blocks That Support Code Generation]]></value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>irrelevant</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>all</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[The prohibited blocks described in this guideline are not supported or not recommended for code generation.
+<br />]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[The MathWorks &quot;Simulink Block Data Type Support&quot; table specifies the data types that the blocks in the main Simulink library support.
+<br /> The prohibited blocks described in this guideline are not supported or not recommended for code generation. Blocks, whose usage is not supported or is recommended under only specific conditions, are not covered by this guideline.
+<br /> 
+<br /> 
+<ul> 
+ <li> Prohibited Blocks </li> 
+ <li style="list-style: none outside none;"> 
+  <div style="margin-left: 2em;"> 
+   <ul> 
+    <li> Sublibrary: Continuous </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Derivative
+    <br /> Integrator
+    <br /> Integrator Limited
+    <br /> Integrator, Second-Order
+    <br /> Integrator, Second-Order Limited
+    <br /> PID Controller (Continuous-time)
+    <br /> PID Controller (2DOF) (Continuous-time)
+    <br /> State-Space
+    <br /> Transfer Fcn
+    <br /> Transport Delay
+    <br /> Variable Time Delay
+    <br /> Variable Transport Delay
+    <br /> Zero-Pole
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Discontinuites </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Hit Crossing
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Discrete </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Difference
+    <br /> First-Order Hold
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Math Operations </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Algebraic Constraint
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Model Verification </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Check Discrete Gradient
+    <br /> Check Static Gap
+    <br /> Check Static Range
+    <br /> Check Input Resolution
+    <br /> Check Static Lower Bound
+    <br /> Check Static Upper Bound
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Model-Wide Utilities </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Timed-Based Linearization
+    <br /> Trigger-Based Linearization
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Signal Attributes </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     IC
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Signal Routing </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Environment Controller
+    <br /> Manual Switch
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Sinks </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     To File
+    <br /> Stop Simulation
+    <br /> Display
+    <br /> Floating Scope
+    <br /> Scope
+    <br /> To Workspace
+    <br /> XY Graph
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: Sources </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     From File
+    <br /> Repeating Sequence
+    <br /> Chirp Signal
+    <br /> Clock
+    <br /> Counter Free-Running
+    <br /> Counter Limited
+    <br /> Digital Clock
+    <br /> Ramp
+    <br /> Signal Generator
+    <br /> Signal Builder
+    <br /> Step
+    <br /> Waveform Generator
+    <br /> From Workspace
+    <br /> 
+   </div> 
+   <ul> 
+    <li> Sublibrary: User-Defined Functions </li> 
+   </ul> 
+   <div style="margin-left: 80px;">
+     Interpreted MATLAB Function
+    <br /> Level-2 MATLAB S-Function 
+   </div> 
+  </div> </li> 
+</ul> 
+<p> This guideline refers to code generation in Matlab version R2015b. It is important to note that in Matlab R2009b additionally the following blocks are not recommended or supported: </p> 
+<ul> 
+ <li> Sublibrary: Model-Wide Utilities </li> 
+ <li style="list-style: none"> 
+  <ul> 
+   <li> Block Support Table </li> 
+   <li> DocBlock </li> 
+   <li> Model Info </li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> Sublibrary: User-Defined Functions </li> 
+ <li style="list-style: none"> 
+  <ul> 
+   <li> MATLAB Fcn<br /> </li> 
+  </ul> </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value>The blocks described in this guideline are not supported or recommended for code generation in Embedded Coder, MathWorks.</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value>jm_0001: Prohibited Simulink Standard Blocks Inside Controllers</value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="06d0eefd-445a-4c07-88fb-3e9ba6510565" refId="mcheck_mes_cgec_2001" refTitle="Prohibited Simulink Blocks for Code Generation" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="05/24/2017 12:48:51">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="06/08/2017 10:18:17">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

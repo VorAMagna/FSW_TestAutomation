@@ -1,0 +1,113 @@
+<check fileVersion="2">
+  <uid>0e2be9fc-7aa8-46ea-a7d2-743c019d9650</uid>
+  <id>mcheck_tl_pr20041110_13</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>State Variables with Local Scope are not Re-initialized</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_tl_pr20041110_13.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>3.0, 3.0.1, 3.1</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Failures for blocks:
+<br /> - Stateflow: data objects of local scope exist
+<br /> - FIR Filter: Variable Class of Delay Line has local scope
+<br /> - Unit Delay, Discrete-Time Integrator, Unit Delay Reset Enabled: Variable Class of state variable has local scope. Property
+<br /> state.variable can be directly specified by the user
+<br /> - Rate Limiter Block, J-K-FlipFlop,D-FlipFlop (Blocks which need a FirstRun Symbol):
+<br /> Variable class template with VarClassSpec FirstRun exists and has a variable
+<br /> class of local scope
+<br /> - Getriggerte Chart: event with Input from Simulink scope exists which
+<br /> means a FirstRun symbol is needed. Faulty if variable class template
+<br /> with VarClassSpec FirstRun exists and has a variable class of local scope
+<br /> NOTE:
+<br /> - A block or variable which uses a default class is mapped to a template.
+<br /> The check looks for variable class templates in the DD which has a
+<br /> variable class with local scope.
+<br /> For SL blocks: Template VariableClassSpec = SLGlobal || SLGlobalInit ||
+<br /> SLFcnInput || SLFcnOutput
+<br /> For SF blocks: Template VariableClassSpec = SFGlobal || SFGlobalInit ||
+<br /> SFFcnInput || SFFcnOutput
+<br /> - Custom Code block is checked by TL
+<br /> - MATLAB will give warnings when the state of a stateflow data object is
+<br /> deficient. Nevertheless the check will give a failure in this case.
+<br /> - For discrete blocks TL_DiscreteTransferFcn, TL_DiscreteFilter, Discrete
+<br /> State-Space: the state variable is not directly accessible but via the default variable
+<br /> class (DD). TargetLink detects scopes which are too small when reading the template.
+<br /> (checked b TL)
+<br /> - Blocks which need a FirstRun Symbol:
+<br /> - Triggered Subsystems (checked by TL)
+<br /> - Triggered Charts,Rate Limiter
+<br /> Blocks,J-K-FlipFlops, D-FlipFlops(checked)]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Select global scope for block state variables which have to
+<br /> be reset or keep their variable classes set to default.
+<br /> If the FirstRun symbol is specified via a template in the Data Dictionary,
+<br /> select here global scope or keep the variable class set to default.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:47">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

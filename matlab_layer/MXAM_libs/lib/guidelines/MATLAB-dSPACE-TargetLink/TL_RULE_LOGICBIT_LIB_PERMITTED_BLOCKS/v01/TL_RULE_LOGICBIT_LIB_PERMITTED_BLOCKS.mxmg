@@ -1,0 +1,193 @@
+<guideline fileVersion="2">
+  <uid>b455447e-1382-430b-8735-598f55ca5218</uid>
+  <id>TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright>dSPACE GmbH</copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Permissible Blocks of the Logic and Bit Operations Library</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>mandatory</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>dSPACE-TargetLink</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value>dSPACE 3.0 (section 2.5.1), dSPACE 4.0 (section 2.4.1)</value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> only use certain blocks from the Logic and Bit Operations Library </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> The following blocks from the <em>Logic and Bit Operations</em> library can be used: </p>
+<ul>
+ <li> Bitwise Operator </li>
+ <li> Logical Operator </li>
+ <li> Relational Operator </li>
+ <li> Bit Clear </li>
+ <li> Bit Set </li>
+ <li> Extract Bits </li>
+ <li> Shift Arithmetic </li>
+ <li> Detect Increase* </li>
+ <li> Detect Decrease* </li>
+ <li> Detect Change* </li>
+ <li> Compare To Constant* </li>
+ <li> Compare To Zero* </li>
+ <li> Detect Rise Positive* </li>
+ <li> Detect Rise Nonnegative* </li>
+ <li> Detect Fall Negative* </li>
+ <li> Detect Fall Nonpositive* </li>
+ <li> Interval Test* </li>
+ <li> Interval Test Dynamic* </li>
+</ul>
+<p> Blocks with an added * are only supported by using the TargetLink Utilities from www.dspace.com/tlpsc </p>]]></value>
+    </richtext>
+    <richtext name="MES Remarks" optional="true" private="false">
+      <description>Further remarks regarding guideline intention and description from MES.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> TargetLink supports only a restricted subset of blocks to ensure the generation of efficient code. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value><![CDATA[<p> <img src="TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS-1.PNG" /> </p>
+<p class="imageCaption"> Figure TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS-1: Permissible blocks from the <em>Logic and Bit Operations</em> library. </p>
+<p> <img src="TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS-2.PNG" /> </p>
+<p class="imageCaption"> Figure TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS-2: Permissible blocks from the <em>Logic and Bit Operations</em> library when using TargetLink Utilities. </p>]]></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T1.1b Use of Language Subset</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums>
+        <value>T3-1.3 Language Subset</value>
+      </enums>
+    </enumeration>
+    <string name="MISRA-C" optional="true" private="false">
+      <description>Reference to MISRA C rules that this guideline applies to.</description>
+      <value></value>
+    </string>
+    <string name="DO-178C/DO-331" optional="true" private="false">
+      <description>The guideline is associated with DO-178C/DO-331 categories.</description>
+      <value></value>
+    </string>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value>3.0</value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="7d62d010-aeed-45be-ab3c-6205e596f616" refId="mcheck_ds_0024" refTitle="Permissible Blocks of the Logic and Bit Operations Library" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>dSPACE.checkds0024.AllowedBlocksAfter31</parameterName>
+          <sourceIdentifier>mcheck_ds_0024</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{['simulink/Logic and Bit' char(10) 'Operations/Bitwise' char(10) 'Operator'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Logical' char(10) 'Operator'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Relational' char(10) 'Operator'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Bit Clear'];...
+					['simulink/Logic and Bit' char(10) 'Operations/Bit Set'];...
+					['simulink/Logic and Bit' char(10) 'Operations/Extract Bits'];...
+					['simulink/Logic and Bit' char(10) 'Operations/Shift' char(10) 'Arithmetic'];...
+				['simulink/Logic and Bit' char(10) 'Operations/Detect' char(10) 'Increase'];...
+				['simulink/Logic and Bit' char(10) 'Operations/Detect' char(10) 'Decrease'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Detect' char(10) 'Change'];...
+				['simulink/Logic and Bit' char(10) 'Operations/Compare' char(10) 'To Constant'];...
+		['simulink/Logic and Bit' char(10) 'Operations/Compare' char(10) 'To Zero'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Detect Rise' char(10) 'Positive'];...
+			['simulink/Logic and Bit' char(10) 'Operations/Detect Rise' char(10) 'Nonnegative'];...
+	['simulink/Logic and Bit' char(10) 'Operations/Detect Fall' char(10) 'Negative'];...
+		['simulink/Logic and Bit' char(10) 'Operations/Detect Fall' char(10) 'Nonpositive'];...
+		['simulink/Logic and Bit' char(10) 'Operations/Interval Test'];...
+					['simulink/Logic and Bit' char(10) 'Operations/Interval Test' char(10) 'Dynamic']		
+					}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/30/2016 15:19:02">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'Permissible Blocks of the Logic and Bit Operations Library' (ID: ds_0024, Version: v02, Library: MATLAB-dSPACE-TargetLink, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+  </history>
+</guideline>

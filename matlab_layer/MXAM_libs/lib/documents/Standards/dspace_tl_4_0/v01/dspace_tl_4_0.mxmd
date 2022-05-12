@@ -1,0 +1,512 @@
+<guidelineDocument fileVersion="2">
+  <uid>98f384c1-edb3-4162-837a-abe24ab94c34</uid>
+  <id>dspace_tl_4_0</id>
+  <title>Modeling Guidelines for dSPACE TargetLink - Version 4.0.3</title>
+  <access>public</access>
+  <version>1</version>
+  <status>proposed</status>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <copyright>dSPACE GmbH</copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="6c524f63-9bbd-4ae2-b539-f6e7e2549916" title="Introduction">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<h3> Purpose </h3>
+<p> The modeling guidelines contained in this document help to ensure a seamless development process from function development in MATLAB/Simulink/Stateflow to automatic production code generation for electronic control units (ECUs) using TargetLink from dSPACE. The rules described are only relevant to the development of controllers, but do not apply to the design of plant models, for instance. Adherence to the guidelines helps to minimize the amount of rework necessary to implement the controller model in highly efficient code. </p>
+<p> The issues covered in these guidelines are (among others): </p>
+<ul>
+ <li> Specification of a structure for MATLAB/Simulink/Stateflow models to enable code generation with TargetLink in a subsequent process. </li>
+ <li> Setting of TargetLink code generation options and implementation information for the generation of efficient code. </li>
+ <li> Issues relating to the reliability and safety of models and the generated code, for instance, compliance with the MISRA C:2004 or MISRA C:2012 rules. </li>
+</ul>
+<p> It should be noted that the guidelines in this document should not be regarded as a substitute for the TargetLink user documentation [1][2] and the TargetLink MISRA C compliance documentation [3]. The rules in these guidelines do not cover all the above aspects in their entirety. Customer feedback on topics to be treated in future versions of the guidelines is highly welcome. </p>
+<p> This publication and the contents hereof are subject to change without notice. dSPACE GmbH makes no warranty of any kind with regard to this publication, including but not limited to the implied warranties of merchantability or fitness for a particular purpose. dSPACE GmbH shall not be liable for errors contained herein or direct, indirect, special, incidental, or consequential damages in connection with the furnishing, performance, or use of this publication. </p>
+<h3> Relationship to Other Guidelines </h3>
+<p> Besides the dSPACE TargetLink guidelines, it might be beneficial to use the MAAB guidelines (MathWorks Automotive Advisory Board). The MAAB guidelines [10] mostly cover general guidelines regarding the controller layout and naming conventions that are not specific to a special production code generator like TargetLink. The MAAB guidelines can therefore be regarded as a useful amendment to the TargetLink guidelines. There is only a very small overlap between the MAAB guidelines and the dSPACE TargetLink guidelines. </p>
+<p> In 2007 and 2009, MISRA, the Motor Industry Software Reliability Association, has published special MISRA modeling guidelines for generic modelling, for Simulink/Stateflow as well as for TargetLink [9]. The official title of the guidelines are “MISRA AC GMG”, “MISRA AC SLSF” and “MISRA AC TL” and they constitute the first guidelines that MISRA has published for modeling environments and code generators. The guidelines address aspects of functional safety and can be purchased from the MISRA webstore. Since the “MISRA AC TL” guidelines are no longer maintained by MISRA, now the dSPACE TargetLink guidelines cover the relevant aspects. </p>
+<p> It is best practice to use a set of rules tailored to fit the needs of a project. For this select or modify existing rules, and also possibly make and add rules that are more specific from all the available material. </p>
+<h3> Version Dependency </h3>
+<p> The modeling guidelines in this document are primarily designed for a function development with MATLAB releases starting from R2009b and up to R2015b. The relevant TargetLink versions in the focus of these guidelines are all releases since TargetLink 3.1 as there are: </p>
+<ul>
+ <li> TargetLink 4.2 </li>
+ <li> TargetLink 4.1 </li>
+ <li> TargetLink 4.0 </li>
+ <li> TargetLink 3.5 </li>
+ <li> TargetLink 3.4 </li>
+ <li> TargetLink 3.3 </li>
+ <li> TargetLink 3.2 </li>
+ <li> TargetLink 3.1 </li>
+</ul>
+<p> Where an individual rule depends on specific MATLAB or TargetLink versions, this is indicated in the text of the rule. For other MATLAB and TargetLink versions than those listed above, the guidelines might be a useful addition as well, although full compatibility cannot be assured. Additionally consult the user documentation of your specific TargetLink version for obtaining the detailed information on that version. </p>
+<h3> Rule and Advice Structure </h3>
+<p> This document contains rules (which are basically checkable) and advices (which are not checkable since the intention of the modeler cannot always be guessed). Rules and Advices are distinguishable by their respective ID. Where the ID for rules start with [TL_RULE_...], the ID for advices start with [TL_ADV_]<br /> Since advices are basically not checkable, the recommendation is to show the advices to TargetLink users with the intention to memorize them and keep them in mind while developing the models. </p>
+<p> Rules and advices in this document all have a common structure: </p>
+<ul>
+ <li> A title, including a unique ID which also serves to distinguish rules from advices </li>
+ <li> A rule description, specifying the content of the rule </li>
+ <li> A purpose, giving a reason for the rule indicating the consequences of non-compliance with it </li>
+ <li> A remark which serves as an additional explanation providing some background information </li>
+ <li> A comment regarding the ability to check compliance with a rule (this is not present for advices) </li>
+ <li> An optional reference to additional documents </li>
+ <li> One or multiple optional examples for further explanation of the rule or highlighting related issues </li>
+</ul>
+<h3> Rule Relevance for Safety-Related Projects according to ISO 26262 and ISO 25119 </h3>
+<p> At the end of this document, there is a special section regarding the relevance of the different rules and advices for safety standards. Specifically for </p>
+<ul>
+ <li> ISO 26262-6, “Road vehicles — Functional safety — Part 6: Product development at the software level” [7] </li>
+ <li> ISO 25119-3, “Tractors and machinery for agriculture and forestry — Safety-related parts of control systems, Part 3: Series development, hardware and software” [8] </li>
+</ul>
+<p> a table is given, which lists the relevance of the different rules (as well as advices) for those standards. Moreover, a classification of the individual rules is given. </p>
+<h3> Automatic Guideline Checking </h3>
+<p> As noted above, the rules (indicated by an identifier [TL_RULE_...], in this guide are automatically checkable as opposed to the advices (indicated by an identifier [TL_ADV_ …]. The latter are not checkable in principle because it would require a guess what the intention of the modeler was.<br /> With regard to automatic guideline checking, we recommend consultations with TargetLink’s cooperation partner “Model Engineering Solutions” (http://www.model-engineers.com/en/). </p>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="4a3f48dc-0123-4c6c-8dd3-46fa3c1feca9" title="General, Block-Independent Guidelines for the Simulink/Stateflow Language Subset">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> The rules in this chapter help to define a block-independent language subset of MATLAB/Simulink/Stateflow that helps to ensure successful subsequent code generation with TargetLink. </p>]]></value>
+      </description>
+      <chapter uid="1cc48474-5049-4f19-9869-705c9d5af283" title="Global Simulink Settings">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="61a5679d-4a54-4638-82e0-f92b5a349fc6" modifier="standard" refUid="07ffa488-826a-4675-8070-e67ea6ece5ce" refId="TL_RULE_GENERAL_SOLVER" refVersion="1" refTitle="Simulink Solver Settings"/>
+        <guideline uid="0c895eb0-d706-4678-a2b0-fe26c6f8b9a0" modifier="standard" refUid="36a96bb7-5dd1-4955-9de5-952a131ae68e" refId="TL_RULE_GENERAL_DIAGNOSTICS" refVersion="1" refTitle="Simulink Diagnostics Settings">
+          <check uid="432bb991-a6be-4395-bddc-4a77b2483b69" selectedForRun="true" refUid="cbacd62d-2eba-467e-ba6c-a20c302f9790" refId="mcheck_ds_0093" refVersion="1" refTitle="Diagnostics Settings"/>
+        </guideline>
+      </chapter>
+      <chapter uid="de555625-ed03-42f4-acbd-c748ac63af58" title="General Conventions for Blocks, Signals and Parameters">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="3a56a4f2-5a02-4877-b051-ad8b143a76bf" modifier="standard" refUid="ff0ca9f3-11d9-4fd9-b5e4-9f84542a028b" refId="TL_RULE_GENERAL_NAMING" refVersion="1" refTitle="General Naming Conventions">
+          <check uid="7de30a9a-e1bd-4f22-a4ab-6ee7efad4c60" selectedForRun="true" refUid="4cd31c1c-a013-42dd-8858-4d63fcfc077d" refId="mcheck_ds_0055" refVersion="1" refTitle="Reserved Names in Stateflow"/>
+          <check uid="99267707-5d62-4000-9ef5-9587d75d9c3d" selectedForRun="true" refUid="8bde88f2-bbcd-4769-8e2d-621dd6aec72a" refId="mcheck_ds_0080" refVersion="1" refTitle="Reserved System Header File Names"/>
+          <check uid="5aba602f-78d3-4df8-95d6-53daf03756f0" selectedForRun="true" refUid="ca8be79c-8101-4985-bb4b-2c863034d79e" refId="mcheck_ds_0079_c" refVersion="1" refTitle="General Naming Conventions: Reserved Names"/>
+        </guideline>
+        <guideline uid="d6253337-c0a6-4d59-ac1a-91cca53c5fe7" modifier="standard" refUid="bfff11eb-d4fb-4537-a284-0daa1db4fb63" refId="TL_RULE_GENERAL_SIGNAL_PARAM_DIMENSIONS" refVersion="1" refTitle="Permissible Dimensions for Signals and Parameters"/>
+        <guideline uid="dafd6028-ad6e-4732-a569-66c950e910f6" modifier="standard" refUid="a1d73d62-33e5-4232-ae43-e3cd4989ae11" refId="TL_RULE_GENERAL_SIGNAL_PARAM_DATATYPES" refVersion="1" refTitle="Use of Simulink Types for Signals and Parameters"/>
+        <guideline uid="b72f493f-bf96-4e60-a0b8-96ff240c1972" modifier="standard" refUid="a7e82856-6fe8-400d-a8e7-58f41bd13873" refId="TL_RULE_GENERAL_PARAMETER_VALUES" refVersion="1" refTitle="Parameter Initialization"/>
+        <guideline uid="6187cdb7-63d5-4d8c-baf7-c2e662a4fd90" modifier="standard" refUid="41c37c90-b9b3-45ad-b354-cfcc89ac2cef" refId="TL_RULE_GENERAL_UNIQUE_SIGNAL_PARAM_NAMES" refVersion="1" refTitle="Unique Signal and Parameter Names"/>
+        <guideline uid="4969e536-d05e-4897-ae44-70e4f50f5eec" modifier="standard" refUid="3a301511-2f27-49c9-bb63-038d76288275" refId="TL_RULE_GENERAL_OUTPORT_STATE_INIT" refVersion="1" refTitle="Proper Initialization of Simulink Outports and States"/>
+        <guideline uid="e21d65a5-852d-460f-b98b-7fb15abaef1d" modifier="standard" refUid="76e497f3-25e8-40d0-932d-c89c1360d342" refId="TL_RULE_GENERAL_BLOCK_PRIOS" refVersion="1" refTitle="Block Priorities">
+          <check uid="e608f297-43c0-4648-9d31-4a47b77eef2e" selectedForRun="true" refUid="2a39368f-fbde-4bae-9d95-032826fd3149" refId="mcheck_ds_0012" refVersion="1" refTitle="Block Priorities"/>
+        </guideline>
+        <guideline uid="bf540fe0-dc62-4d14-b0c1-249bf869a23c" modifier="standard" refUid="01d611f3-a9cc-413c-b2b3-4bb51c038c1c" refId="TL_RULE_GENERAL_OVERFLOW_SATURATION" refVersion="1" refTitle="Avoidance of Overflows and Saturation in MIL-Simulations">
+          <check uid="8aaad951-4b55-493a-8388-eeab310703a3" selectedForRun="true" refUid="65bfb99c-d943-421d-960b-044dd8794a99" refId="mcheck_misra_slsf_008_a" refVersion="1" refTitle="Rounding and Saturation in Simulink Blocks - Saturation Property"/>
+        </guideline>
+        <guideline uid="3588baef-1ce3-4db3-84c6-41583273ab1e" modifier="standard" refUid="f84c8c7c-ef7a-4a4f-856c-e34367345bac" refId="TL_RULE_GENERAL_ROUNDING" refVersion="1" refTitle="Avoidance of Rounding Operations in MIL-Simulations">
+          <check uid="99a0c4ca-f271-4d2b-8cbf-2a21e72fb7ea" selectedForRun="true" refUid="0d3906d0-97b0-4a0f-b350-dcf97035a0bf" refId="mcheck_ds_0100" refVersion="1" refTitle="Avoidance of Rounding Operations"/>
+        </guideline>
+      </chapter>
+    </chapter>
+    <chapter uid="6dc59b54-154b-4ef9-9975-9db25482e0cd" title="Block-Specific Guidelines">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> This chapter contains guidelines that are mostly relevant to control design and partially also to Software design. The rules and advices listed here are specific to the individual Simulink libraries. </p>]]></value>
+      </description>
+      <chapter uid="83a3c648-55b0-40f9-b4e1-018bc58eca85" title="Continuous Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Continuous library. </p>]]></value>
+        </description>
+        <guideline uid="a50441b6-1c66-4265-afca-a4cf5d911439" modifier="standard" refUid="8112e728-a888-4fac-b1fb-4a9a5aff2999" refId="TL_RULE_CONT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="No Blocks from the Continuous Library">
+          <check uid="3944a8dd-6847-41d8-9c5e-34a61cf7da3a" selectedForRun="true" refUid="a80be4ce-a522-4e24-8a2e-e943b9633976" refId="mcheck_ds_0019" refVersion="1" refTitle="No Blocks from the Continuous Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="9b0e17ff-0032-4a14-87f3-d984f614d862" title="Discontinuities Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Discontinuities library. </p>]]></value>
+        </description>
+        <guideline uid="489343ad-8dec-449b-8c2f-39598e895b3b" modifier="standard" refUid="c4cdf080-3512-4008-bcdb-a00a9d4eb695" refId="TL_RULE_DISCONT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Discontinuities Library">
+          <check uid="c775cd13-e1b7-4f9d-8842-b73f747b4293" selectedForRun="true" refUid="6450eb13-58bf-4847-ad02-3f69fdba726f" refId="mcheck_ds_0020" refVersion="1" refTitle="Permissible Blocks of the Discontinuities Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="961241e1-c80e-40b2-9dc5-6c39e84512f6" title="Discrete Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Discrete library. </p>]]></value>
+        </description>
+        <guideline uid="6411ec5a-a716-4b01-a15e-94fe974b20d1" modifier="standard" refUid="73b07597-41f7-402d-984d-02732bf678bf" refId="TL_RULE_DISC_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Discrete Library">
+          <check uid="768cc2b5-17a8-48a7-8a67-e93474761829" selectedForRun="true" refUid="b0b67d53-8a1c-4c65-ae64-9ec7b3c32fe5" refId="mcheck_ds_0022" refVersion="1" refTitle="Permissible Blocks of the Discrete Library"/>
+        </guideline>
+        <guideline uid="52c52197-2b18-4805-ba77-02c8ef2b3dab" modifier="standard" refUid="29636842-6b55-468f-b673-7529129bad5a" refId="TL_RULE_DISC_LIB_INTEGRATOR_SETTINGS" refVersion="1" refTitle="Limitations with Regard to the Discrete-Time Integrator Block">
+          <check uid="1a2be6e5-65a1-4a62-b72f-fcb27f9dac5e" selectedForRun="true" refUid="f163decd-8dea-4cd1-97ae-142a951f400e" refId="mcheck_ds_0023_b_v3_0" refVersion="1" refTitle="Limitations with Regard to the Discrete-Time Integrator Block - External Reset"/>
+        </guideline>
+        <guideline uid="a8ba494d-90ff-42ee-892f-b0fcd8fb9353" modifier="standard" refUid="64805dff-f63f-4c34-81d6-44ebec0a2787" refId="TL_RULE_DISC_LIB_TRANSFER_STATESPACE_FILTER_BLOCKS" refVersion="1" refTitle="Use of Data Types for Discrete Transfer Fcn, Discrete State Space and Discrete Filter Blocks"/>
+      </chapter>
+      <chapter uid="15d60da9-e3b9-431f-8614-c316bb478505" title="Logic and Bit Operations Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains recommendations and restrictions with regard to the use of blocks from the Logic and Bit Operations library. </p>]]></value>
+        </description>
+        <guideline uid="710722c3-262a-44e3-91e0-54e8bec58b90" modifier="standard" refUid="b455447e-1382-430b-8735-598f55ca5218" refId="TL_RULE_LOGICBIT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Logic and Bit Operations Library">
+          <check uid="69dd184a-b68f-4ea1-acfc-e895b1c51bc7" selectedForRun="true" refUid="7d62d010-aeed-45be-ab3c-6205e596f616" refId="mcheck_ds_0024" refVersion="1" refTitle="Permissible Blocks of the Logic and Bit Operations Library"/>
+        </guideline>
+        <guideline uid="bcf3849d-e19b-4130-a62b-7898cd0d1305" modifier="standard" refUid="73d9c63a-7627-4b8e-96b8-3b4239411aec" refId="TL_RULE_LOGICBIT_LIB_RELOP_LOGOP_SL_TYPE" refVersion="1" refTitle="Limitations with Regard to the Relational Operator and Logical Operator Blocks">
+          <check uid="59adb9a0-6738-4d99-8e1f-8755e1d3e4f0" selectedForRun="true" refUid="d0b08abc-5142-40c1-a68b-eef6d4d9d8b8" refId="mcheck_ds_0025" refVersion="1" refTitle="Limitations with Regard to the Relational Operator and Logical Operator Blocks"/>
+        </guideline>
+        <guideline uid="9a46733c-63b2-4176-b29b-29256a2ac7c8" modifier="standard" refUid="6841051a-ff78-4d31-89ce-1479c6f12ce0" refId="TL_RULE_LOGICBIT_LIB_RELOP_NAN" refVersion="1" refTitle="Relational Operator with IsInf, IsNaN, IsFinite Checks">
+          <check uid="71dd657e-f05d-4e08-bc48-3107f5538cb2" selectedForRun="true" refUid="407e91d4-d53c-4b93-9dfa-7b8506267759" refId="mcheck_mes_slsf_4109" refVersion="1" refTitle="Relational Operator with IsInf, IsNaN, IsFinite Checks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="2f4efc4c-de31-43b0-bab7-84a83fdedfb8" title="Look-up Tables Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Look-up Tables library. </p>]]></value>
+        </description>
+        <guideline uid="b1957b95-f938-4f8c-ae35-e0ae4caa88c3" modifier="standard" refUid="47e42ddf-a609-4abd-a444-dd2bcd0f9760" refId="TL_RULE_LUT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Look-up Tables Library">
+          <check uid="fd76bcfe-0253-4ea5-9d94-eba448af12b1" selectedForRun="true" refUid="e6ec1a21-db2b-4477-9bfd-f7bacdf215eb" refId="mcheck_ds_0026" refVersion="1" refTitle="Permissible Blocks of the Look-up Tables Library"/>
+        </guideline>
+        <guideline uid="ea1727be-b12b-41e8-bcfb-5eda11b7bc02" modifier="standard" refUid="7bdc12b0-f355-4f4b-a3d7-c8ffe505f1d3" refId="TL_RULE_LUT_LIB_NO_GENERAL_TENSORS" refVersion="1" refTitle="Limitations with Regard to the Look-up Table (n-D) and Direct Look-up Table (n-D) Blocks">
+          <check uid="5b28c001-9aa0-4d82-aac3-6608ccc92f8d" selectedForRun="true" refUid="dd215498-d205-4e2a-ae07-2f2831b1253b" refId="mcheck_ds_0027" refVersion="1" refTitle="Limitations with Regard to the Look-up Table (n-D) and Direct Look-up Table (n-D) Blocks"/>
+        </guideline>
+        <guideline uid="2c925f0b-196b-4513-b4d5-c0a5776c66b7" modifier="standard" refUid="a36606a3-bb4a-43e3-a074-1d5cee68e3b6" refId="TL_RULE_LUT_LIB_SCALING_INPUT_VS_AXES" refVersion="1" refTitle="Scaling of the Input Axes for Look-up Table and Look-up Table (2D) Blocks in Comparison to their Inputs"/>
+        <guideline uid="a62da9bf-9320-4b5b-afb5-85eaf2a9c45b" modifier="standard" refUid="854e5269-95fd-4e2d-9317-d028ab5f0873" refId="TL_ADV_LUT_COMMON_SETTINGS" refVersion="1" refTitle="Common Settings for Look-up Table Blocks"/>
+        <guideline uid="a0b2936f-c233-43ee-b516-2fdcc4e71e14" modifier="standard" refUid="f96516ad-d08e-4a06-8d00-428b2b3fcd97" refId="TL_ADV_LUT_TABLE_VECTOR_MERGE" refVersion="1" refTitle="Merging of Table Vectors"/>
+        <guideline uid="3b6ee1ea-c91a-4b02-9900-da3714daf8fb" modifier="standard" refUid="c4ce9633-ec08-4c64-b574-4a58779ae3e3" refId="TL_ADV_LUT_COMMON_SEARCH_FUNCTION" refVersion="1" refTitle="Common Search Function for Multiple Look-up Table Blocks"/>
+        <guideline uid="374ef734-a315-49d4-b499-9bf1849823ec" modifier="standard" refUid="6b29e032-fadd-48d0-af24-85c464f527d7" refId="TL_RULE_LUT_FLOAT_EQUIDISTANT" refVersion="1" refTitle="TargetLink Data Types for Look-Up Table und Look-Up Table (2D) Blocks">
+          <check uid="de7242a5-cc91-4349-bdaa-0a4f4843d031" selectedForRun="true" refUid="8222398e-5073-4eba-b657-cb25b5bcfc2f" refId="mcheck_ds_0106" refVersion="1" refTitle="Use of Data Types for Look-Up Table and Look-Up Table (2D) Blocks"/>
+        </guideline>
+        <guideline uid="29abb290-fe81-4454-a8ae-2ce84229f549" modifier="standard" refUid="62292d78-24cb-4462-9cbd-5e786c18bf6e" refId="TL_ADV_LUT_CUSTOM_LUT_FUNCTION" refVersion="1" refTitle="Use of Custom Look-up-Table Functions"/>
+      </chapter>
+      <chapter uid="8abe0231-908f-491c-add3-29d5f0e98818" title="Math Operations Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Math library. </p>]]></value>
+        </description>
+        <guideline uid="24697e7b-ae4e-4768-bea8-17fac7863982" modifier="standard" refUid="efcdff74-66a7-499c-83e0-4a3ad594c6a7" refId="TL_RULE_MATH_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Math Library">
+          <check uid="34796c71-0398-45ed-9746-3e8dd34fe52a" selectedForRun="true" refUid="7f2fdbca-ac57-4012-bae0-be7f0852ed12" refId="mcheck_ds_0028" refVersion="1" refTitle="Permissible Blocks of the Math Library"/>
+        </guideline>
+        <guideline uid="468c6cf9-b3a6-4ce2-803d-837f51560fdb" modifier="standard" refUid="b9293589-717b-4a53-8378-c86e6d26233c" refId="TL_RULE_MATH_LIB_PROD_BLOCK_NUMBER_INPORTS" refVersion="1" refTitle="Limitations with Regard to Operand Numbers for the Product Block">
+          <check uid="74f9fba0-453b-4064-a1d6-07cce6498cb1" selectedForRun="true" refUid="e2ca96b0-4b9e-4890-a684-73086e267d79" refId="mcheck_ds_0029" refVersion="1" refTitle="Limitations with Regard to Operand Numbers for the Product Block"/>
+        </guideline>
+        <guideline uid="74bbdcf5-5682-4338-bd45-2e3431cd4160" modifier="standard" refUid="fbc9f517-9876-4340-be5a-3c0b66cb9743" refId="TL_RULE_MATH_LIB_PROD_BLOCK_SETTINGS" refVersion="1" refTitle="Limitations with Regard to Parameters for the Product Block">
+          <check uid="f654ab9e-0697-47f7-a1e6-100951b25869" selectedForRun="true" refUid="403de88a-c62a-4e38-8226-f031ae073b91" refId="mcheck_ds_0030" refVersion="1" refTitle="Limitations with Regard to Parameters for the Product Block"/>
+        </guideline>
+        <guideline uid="de4e7155-578b-4345-b5de-a7c629fe1943" modifier="standard" refUid="0aa4fc3a-841c-40df-a660-4f784dae99be" refId="TL_RULE_MATH_LIB_TRIGO_DATATYPES" refVersion="1" refTitle="Use of Data Types for Trigonometric Blocks">
+          <check uid="df83bcbb-a218-44a7-88ff-dcdf19dbba2a" selectedForRun="true" refUid="b5aadb20-ed36-4f45-a060-59bb1b41cd09" refId="mcheck_ds_0102" refVersion="1" refTitle="Use of Data Types for Trigonometric Blocks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="a1c1ad84-c93b-4ef9-b637-5f0639f50fc8" title="Model Verification Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains the permitted language subset from the Model Verification library. </p>]]></value>
+        </description>
+        <guideline uid="ae8e0e30-a9cd-4f16-87af-c2ad775bad1f" modifier="standard" refUid="6fd0d382-20c6-4209-84bb-62af014e7713" refId="TL_RULE_MODELVERIFY_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Model Verification Library">
+          <check uid="2919b632-f56b-432f-b1e9-a54df5c29074" selectedForRun="true" refUid="9ed44df4-7d1d-4d20-9aae-0392803b4a0f" refId="mcheck_ds_0034" refVersion="1" refTitle="Permissible Blocks of the Model Verification Library"/>
+        </guideline>
+        <guideline uid="e7b15e14-4e56-4197-822a-3b876d394d78" modifier="standard" refUid="721b0492-e53a-4b12-a951-a46a55b4c1f7" refId="TL_RULE_MODELVERIFY_LIB_ASSERT_SIGNAL" refVersion="1" refTitle="Assertion Signals in Model Verification Library">
+          <check uid="ef07fca8-f97e-4398-b00f-db14b17c53b8" selectedForRun="true" refUid="32ea97df-e107-49ab-8197-abc160fff420" refId="mcheck_mes_cgtl_4106" refVersion="1" refTitle="Assertion Signals in Model Verification Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="cbc0a03d-8e5e-4836-89bd-150e9dbbcfff" title="Model-Wide Utilities Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Model-Wide Utilities library. </p>]]></value>
+        </description>
+        <guideline uid="ae5b220e-a298-4450-b6bf-010e065a6d0f" modifier="standard" refUid="198e1ad7-903a-4ce6-82cd-221bebe92a2f" refId="TL_RULE_MODELUTIL_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Model-Wide Utilities Library">
+          <check uid="e8ee93cf-ba9e-4d13-9907-cdfa2040b47f" selectedForRun="true" refUid="f9f5ce68-9a66-4303-8ff4-500cd4eaf150" refId="mcheck_ds_0035" refVersion="1" refTitle="Permissible Blocks of the Model-Wide Utilities Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="e0b38ea0-644e-4c0b-ad25-d3c71f3d3652" title="Ports &amp; Subsystems Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Ports &amp; Subsystems library. </p>]]></value>
+        </description>
+        <guideline uid="91c8bcad-619d-478b-84b0-82c61114bbb7" modifier="standard" refUid="6a3f63f2-6a4b-4648-8459-5bd67988ba9c" refId="TL_RULE_PORTSYSTEM_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Ports and Subsystems Library">
+          <check uid="dc792256-1334-4928-8e08-43992e617664" selectedForRun="true" refUid="891baae2-cd5d-4888-aee6-b81533c5f261" refId="mcheck_ds_0036_whiteList" refVersion="1" refTitle="Permissible Blocks of the Ports and Subsystems Library"/>
+        </guideline>
+        <guideline uid="3d9b4fe4-df09-4f74-8ea8-25bac1f215df" modifier="standard" refUid="67eb0030-85be-490a-a908-6e4967767457" refId="TL_RULE_PORTSYSTEM_LIB_SWITCH_CASE" refVersion="1" refTitle="Use of the Switch Case Block">
+          <check uid="cfa0c8de-57fe-4a3a-b00f-f103d02bbe6c" selectedForRun="true" refUid="870c8408-36b6-4a62-9f9f-0510c235b7e1" refId="mcheck_ds_0037_a" refVersion="1" refTitle="Use of the Switch Case Block - Default Case"/>
+          <check uid="586f60db-ff61-4aeb-9aed-5b496d82dfaf" selectedForRun="true" refUid="c8ea2798-3f29-43f5-a2bb-dd1bd9aa56b3" refId="mcheck_ds_0037_b" refVersion="1" refTitle="Use of the Switch Case Block - Connection Default Output"/>
+        </guideline>
+        <guideline uid="5ac23306-9253-418f-a1e2-6a0db93b54ce" modifier="standard" refUid="f8892844-028b-454e-b3ba-211044fb7158" refId="TL_RULE_PORTSYSTEM_LIB_DUPLICATE_INPORTS" refVersion="1" refTitle="Duplicate Inports">
+          <check uid="c52a1488-6f64-4eda-a48f-6c4a393b64bb" selectedForRun="true" refUid="f8278c80-6448-4567-b66a-f567a08c0744" refId="mcheck_ds_0038" refVersion="1" refTitle="Absence of Duplicated Inports"/>
+        </guideline>
+        <guideline uid="766a40d3-9714-4098-a807-43b99dcf8b39" modifier="standard" refUid="90034239-f6c7-42f4-bf22-afe952ee3ad9" refId="TL_RULE_PORTSYSTEM_LIB_MULTIPLE_MODEL_INST" refVersion="1" refTitle="Use of Model Referencing"/>
+      </chapter>
+      <chapter uid="6cb520cc-f207-4c87-a0d6-77bd3d7c23bc" title="Signal Attributes Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Signal Attributes library. </p>]]></value>
+        </description>
+        <guideline uid="d067bc98-0b7d-4e91-bdbb-4e3167b420bd" modifier="standard" refUid="f6681436-2b1f-4bfd-b6ea-581b5606060b" refId="TL_RULE_SIGNALATT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Signal Attributes Library">
+          <check uid="7de15e30-8531-4b29-8426-0930fc75e140" selectedForRun="true" refUid="ca550d9e-3e98-4184-85db-afd34a352b58" refId="mcheck_ds_0039" refVersion="1" refTitle="Permissible Blocks of the Signal Attributes Library"/>
+        </guideline>
+        <guideline uid="bf9d09d8-90ab-4310-a96e-3dc689b109ac" modifier="standard" refUid="e4b11d62-9136-4cde-8667-fddebc8fb5f3" refId="TL_RULE_SIGNALATT_LIB_DATA_TYPE_CONV" refVersion="1" refTitle="Use of the Data Type Conversion Block">
+          <check uid="9e0d8390-d4f8-4674-abf1-55e18ab8b61d" selectedForRun="true" refUid="33ca08f9-754e-45f1-a1c6-7c11a7b8d655" refId="mcheck_mes_cgtl_4108" refVersion="1" refTitle="Use of the Data Type Conversion Block"/>
+        </guideline>
+      </chapter>
+      <chapter uid="0b92a283-58a1-4fb3-b467-082be8c40507" title="Signal Routing Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Signal Routing library. </p>]]></value>
+        </description>
+        <guideline uid="2a2753d2-fdc8-48d7-a25c-827ae007db3e" modifier="standard" refUid="6db9ad6f-f5cc-440e-ae98-5a93ca37a44f" refId="TL_RULE_SIGNALROUT_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Signal Routing Library">
+          <check uid="91bf7e7d-5456-422a-89a9-50d0c3edc824" selectedForRun="true" refUid="1b2ea8e8-e1bc-4da0-a637-d763c9565910" refId="mcheck_ds_0041" refVersion="1" refTitle="Permissible Blocks of the Signal Routing Library"/>
+        </guideline>
+        <guideline uid="bb2ded30-6246-4f51-9515-95fe89cff538" modifier="standard" refUid="b75e8dd2-749b-4649-9ff4-828b29db5e65" refId="TL_RULE_SIGNALROUT_LIB_DSMEMORY" refVersion="1" refTitle="Restrictions with Regard to the Data Store Memory/Read/Write Blocks">
+          <check uid="557f37ac-2d1e-4c4f-942f-729d0234907f" selectedForRun="true" refUid="2cd34cc4-7a10-4bbf-bfaa-eee6acecd195" refId="mcheck_ds_0042" refVersion="1" refTitle="Restrictions with Regard to the Data Store Memory,Read,Write Blocks"/>
+        </guideline>
+        <guideline uid="96e9c832-f36e-44b1-8168-2cb5bd111c29" modifier="standard" refUid="5ca38c0a-e9dc-45eb-9fce-d812ef5d05e8" refId="TL_RULE_SIGNALROUT_LIB_FROMGOTO" refVersion="1" refTitle="Restrictions with Regard to the From and Goto Block">
+          <check uid="1117fe27-20b9-4d01-8f70-1799198a26e4" selectedForRun="true" refUid="2776270c-071e-4f9b-98b2-70e1250980f8" refId="mcheck_mes_slsf_4110" refVersion="1" refTitle="Restrictions with Regard to the From and Goto Block"/>
+        </guideline>
+        <guideline uid="7fd8f78e-793a-41da-8547-aa7303c97c75" modifier="standard" refUid="ed466dcd-21ce-4088-b502-ae367c5fcb2d" refId="TL_RULE_SIGNALROUT_LIB_MERGE" refVersion="1" refTitle="Restrictions with Regard to the Merge Block">
+          <check uid="fbcc8b0f-fd83-4734-a2d7-855912f40301" selectedForRun="true" refUid="10a4f238-a158-4d47-afa9-e86757e4558e" refId="mcheck_ds_0044" refVersion="1" refTitle="Restrictions with Regard to the Merge Block"/>
+        </guideline>
+        <guideline uid="235bc167-0f18-4a78-8020-f3ff98ca9507" modifier="standard" refUid="9ba7c1bc-cd30-4289-bf2b-c7ad7eb56b10" refId="TL_RULE_SIGNALROUT_LIB_MULTIPORT_SWITCH" refVersion="1" refTitle="Use of Data Types for Multiport Switch Blocks">
+          <check uid="e2293358-fd47-41c9-99e3-9ab900a57702" selectedForRun="true" refUid="23eec713-4599-4fd4-aac9-3acab9b9179f" refId="mcheck_ds_0107" refVersion="1" refTitle="Use of Data Types for Multiport Switch Block"/>
+        </guideline>
+        <guideline uid="d0115eb5-1a03-4031-9d76-5113f26dcc41" modifier="standard" refUid="9cd7eca1-c6c7-48d1-8667-228b79afa671" refId="TL_RULE_SIGNALROUT_LIB_SELECTOR" refVersion="1" refTitle="Use of Data Types for Selector Blocks">
+          <check uid="8a75a261-e8ea-4503-8ec2-e013ab4764f8" selectedForRun="true" refUid="d81a8ee1-1037-4d80-9eec-2df7598dbade" refId="mcheck_ds_0105" refVersion="1" refTitle="Use of Data Types for Selector Blocks"/>
+        </guideline>
+      </chapter>
+      <chapter uid="53f4e733-7770-498a-97cd-aec81f873ac5" title="Sinks Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Sinks library. </p>]]></value>
+        </description>
+        <guideline uid="9e63bfc7-8d32-4a7c-b2d3-852cb947ded8" modifier="standard" refUid="a15a206d-df50-491a-affd-b74147f6b88b" refId="TL_RULE_SINKS_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Sinks Library">
+          <check uid="be157b13-f42d-4155-8e01-8eb0c9129b56" selectedForRun="true" refUid="fc5715a6-eb01-42a0-a9d5-2c2ff5aa31f5" refId="mcheck_ds_0050" refVersion="1" refTitle="Permissible Blocks of the Sinks Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="17acc4d2-4c19-4647-94f6-7cdac0a491f3" title="Sources Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the Sources library. </p>]]></value>
+        </description>
+        <guideline uid="ed60000e-f7e6-4eda-94e7-8d0628c7fba7" modifier="standard" refUid="48447285-3f81-40c0-9d53-5c1e758083d8" refId="TL_RULE_SOURCES_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks of the Sources Library">
+          <check uid="532f1ec3-84dd-4052-9ead-e2252ecb95d9" selectedForRun="true" refUid="bd479e02-7ee7-4986-abc4-921a26481c30" refId="mcheck_ds_0051" refVersion="1" refTitle="Permissible Blocks of the Sources Library"/>
+        </guideline>
+      </chapter>
+      <chapter uid="d71acdeb-294b-4747-8203-120e9468a2db" title="User-Defined Functions Library">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains restrictions with regard to the use of blocks from the User-Defined Functions library. </p>]]></value>
+        </description>
+        <guideline uid="27301bd2-c223-41ef-9297-d2664df40dae" modifier="standard" refUid="e18282ce-0178-418b-8c75-4f0164f8df9c" refId="TL_RULE_USERFUNC_LIB_PERMITTED_BLOCKS" refVersion="1" refTitle="Permissible Blocks from the User-Defined Functions Library">
+          <check uid="1640ad69-d69d-4ad6-b088-789a28133353" selectedForRun="true" refUid="14c8cd78-8f02-4a46-81bf-7ed32495e1f0" refId="mcheck_ds_0052" refVersion="1" refTitle="Permissible Blocks from the User-Defined Functions Library"/>
+        </guideline>
+        <guideline uid="89709600-34ba-4a6e-91ef-e4462bd7adb7" modifier="standard" refUid="6b632ab8-0eef-422b-a85d-d9a49237c1c7" refId="TL_RULE_USERFUNC_LIB_FCN_BLOCK" refVersion="1" refTitle="Restrictions with Regard to the Fcn Block">
+          <check uid="919bc742-5dc9-45d8-94cb-a93032a53559" selectedForRun="true" refUid="e8c840f3-3d2a-42e4-ac79-da607503697c" refId="mcheck_mes_cgtl_4204" refVersion="1" refTitle="Restrictions with Regard to the Fcn Block"/>
+        </guideline>
+        <guideline uid="21c117b3-883f-4f42-a258-9282b2285f3c" modifier="standard" refUid="d8dca24d-4da5-4f50-bd5e-6605ee67258b" refId="TL_RULE_USERFUNC_LIB_SFCN_CUSTOM_CODE" refVersion="1" refTitle="Include Statements and Custom Code"/>
+      </chapter>
+    </chapter>
+    <chapter uid="6f0a926a-1e5c-45fb-95e8-56feee431922" title="Stateflow">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> This chapter contains restrictions with regard to modeling in Stateflow. </p>]]></value>
+      </description>
+      <guideline uid="9240f4a4-dce9-4ad2-b6d1-e1aff0fbdf29" modifier="standard" refUid="f1704221-a43c-4118-bd86-d5a7a89a72c3" refId="TL_RULE_STATEFLOW_OUTPUT_CHART_WAKEUP" refVersion="1" refTitle="No Output initialization When Chart Wakes Up">
+        <check uid="7be76b62-7e5b-4af0-8e85-b3a52f1d8c14" selectedForRun="true" refUid="9a753c92-ab45-4c1e-bd00-67c38f026c41" refId="mcheck_mes_cgtl_4104" refVersion="1" refTitle="No Output initialization When Chart Wakes Up"/>
+      </guideline>
+      <guideline uid="41255b3f-1d4d-4cf2-87c2-ad302556caba" modifier="standard" refUid="881ee401-f467-4918-b367-5fde5b9c5de1" refId="TL_RULE_STATEFLOW_MEALYMOORE_CHART" refVersion="1" refTitle="No Support for Mealy or Moore State Machine Types">
+        <check uid="a15a2fc6-4bdb-4904-9750-4c510c664b77" selectedForRun="true" refUid="aae12bb5-31e7-48b7-91bd-285c6f646329" refId="mcheck_mes_cgtl_4103" refVersion="1" refTitle="No Support for Mealy or Moore State Machine Types"/>
+      </guideline>
+      <guideline uid="45fb1075-1061-4f6f-a417-192b62ba4e30" modifier="standard" refUid="33e08bc5-2873-4b7b-bda1-2c33f3b2c1dd" refId="TL_RULE_STATEFLOW_SUPERSTEP_CHART" refVersion="1" refTitle="No Chart Execution with Super Step Semantics">
+        <check uid="d1d59f82-7747-4143-a7d8-55d3a3a04c87" selectedForRun="true" refUid="0fd31e3e-d1fe-4b3f-bc98-1afdd737612d" refId="mcheck_mes_cgtl_4105" refVersion="1" refTitle="No Chart Execution with Super Step Semantics"/>
+      </guideline>
+      <guideline uid="b7758d90-380e-4799-bb59-af32d9190cbd" modifier="standard" refUid="84bc7312-f96f-4591-a4f9-fff50fb0403a" refId="TL_RULE_STATEFLOW_EXEC_CHART_AT_INIT" refVersion="1" refTitle="Initialization of a Stateflow Chart">
+        <check uid="46d23896-e816-4a4b-a974-ee2cfd75428c" selectedForRun="true" refUid="8fc97261-f7e1-474d-bf89-cdbe1af30aa7" refId="mcheck_ds_0054" refVersion="1" refTitle="Initializations of a Stateflow Chart"/>
+      </guideline>
+      <guideline uid="8d9b5825-01d4-4e4b-8afd-b5c3035b52cd" modifier="standard" refUid="489721e2-d21f-4e2a-be0e-d05f8b1cda24" refId="TL_RULE_STATEFLOW_STRONG_DATA_TYPING" refVersion="1" refTitle="Permitted Data Types at the Stateflow Chart Interface">
+        <check uid="48843daa-f9db-48de-be05-50c11e9b70ff" selectedForRun="true" refUid="b67f68bf-d991-4662-a028-68702540a1be" refId="mcheck_ds_0058" refVersion="1" refTitle="Permitted Data Types at the Stateflow Chart Interface"/>
+      </guideline>
+      <guideline uid="a9d9370d-d5e6-4c13-89e1-a78bb0224d63" modifier="standard" refUid="b28967aa-9a4e-4dd9-9fd9-a429a6e0e753" refId="TL_RULE_STATEFLOW_USER_TRANSITION_ORDER" refVersion="1" refTitle="Execution Order of Transitions">
+        <check uid="7c9bbf27-b623-4663-a2dd-d7294d1abae5" selectedForRun="true" refUid="9dffba49-74d8-426c-b6a7-87d0e4b6c9f9" refId="mcheck_mes_slsf_4113" refVersion="1" refTitle="Execution Order of Transitions"/>
+      </guideline>
+      <guideline uid="5568a816-a898-49c7-b904-62a14349409b" modifier="standard" refUid="dd790c7b-3f4b-422d-a934-186e83752048" refId="TL_RULE_STATEFLOW_TRANSITION_ACTIONS" refVersion="1" refTitle="Transition Actions">
+        <check uid="19dc3671-2be7-4853-b3f5-e0782aaa1e6d" selectedForRun="true" refUid="98f7b25b-0818-4fbc-b7d1-8922522ef60b" refId="mcheck_ds_0059" refVersion="1" refTitle="Transition Actions"/>
+      </guideline>
+      <guideline uid="7f8ac66d-a413-47df-a324-3e8a38890051" modifier="standard" refUid="f71c182f-85e9-4890-b770-eec801315115" refId="TL_RULE_STATEFLOW_ORDER_PARALLEL_STATES" refVersion="1" refTitle="Order Numbers for Parallel States">
+        <check uid="89e19bce-6601-4b19-8db7-396380ae9a45" selectedForRun="true" refUid="24327c6f-c641-4fcb-8203-89aca5926c4a" refId="mcheck_ds_0061" refVersion="1" refTitle="Order Numbers for Parallel States"/>
+      </guideline>
+      <guideline uid="0cda52fa-c2c6-46e3-9396-4ad9090e31f4" modifier="standard" refUid="ffad338d-1a82-47cc-8512-7a8bf931c67f" refId="TL_RULE_STATEFLOW_IMPLICIT_EVENTS" refVersion="1" refTitle="No Use of Implicit Events">
+        <check uid="9eace468-4c9f-421a-9872-d7083716549b" selectedForRun="true" refUid="c8916c22-c6ad-4030-835d-efb0cd7aa982" refId="mcheck_ds_0063" refVersion="1" refTitle="No Use of Implicit Events"/>
+      </guideline>
+      <guideline uid="796becd1-effa-4098-9814-cddea0b0a078" modifier="standard" refUid="c93475d2-425d-44a5-ae8a-c99f54ef3582" refId="TL_RULE_STATEFLOW_MATLAB" refVersion="1" refTitle="MATLAB Functionality">
+        <check uid="4e3395f4-4063-4eab-9bc6-f630d21de6f9" selectedForRun="true" refUid="edd430c3-167d-4b53-b9dd-2486a00dbe27" refId="mcheck_ds_0064" refVersion="1" refTitle="MATLAB Functionality"/>
+      </guideline>
+      <guideline uid="b527dc52-c655-47db-bc57-408584515632" modifier="standard" refUid="a8d4e505-ba9f-43ef-a9cc-566cf742c8d7" refId="TL_RULE_STATEFLOW_BOXES_WITH_DATA" refVersion="1" refTitle="Data on the Level of Stateflow Boxes">
+        <check uid="c4deb92f-6259-4aea-94d0-acf6b57af01e" selectedForRun="true" refUid="cd2af6ca-529c-45f5-b80d-3b58ea2a85a9" refId="mcheck_ds_0069" refVersion="1" refTitle="Data on the Level of Stateflow Boxes"/>
+      </guideline>
+      <guideline uid="b29f2429-57e1-4b3e-b45f-7b8fdb111f80" modifier="standard" refUid="47aedb6d-9007-41e5-8837-8831977b0414" refId="TL_RULE_STATEFLOW_EMBEDDED_MATLAB" refVersion="1" refTitle="Embedded MATLAB Functionality">
+        <check uid="f41940a3-2ea4-4d80-9ad9-a0d102ab3501" selectedForRun="true" refUid="516578d2-0e3e-4c28-b6b6-32c53056ae59" refId="mcheck_ds_0070" refVersion="1" refTitle="Embedded MATLAB Functionality"/>
+      </guideline>
+      <guideline uid="50ff27fc-0bc7-478b-8025-7e8e86578e69" modifier="standard" refUid="9608f286-4008-4b66-a0ac-9e7b8fbd3e0a" refId="TL_RULE_STATEFLOW_BUS_OBJECTS" refVersion="1" refTitle="Simulink Bus Objects for Structured Variables in Stateflow">
+        <check uid="9758c70b-7a6b-4cf3-a37a-560d1acab36c" selectedForRun="true" refUid="80f40138-8933-4e88-9b6c-96c150f5b250" refId="mcheck_mes_slsf_4111" refVersion="1" refTitle="Simulink Bus Objects for Structured Variables in Stateflow"/>
+      </guideline>
+      <guideline uid="c1549994-6592-4b12-90ae-f5ce351c0cef" modifier="standard" refUid="ab871eea-7646-4193-81c1-2a1b904268ca" refId="TL_RULE_STATEFLOW_GRAPH_FUNC_MULTIPLE_OUTS" refVersion="1" refTitle="Graphical Functions with Multiple Data Outputs">
+        <check uid="de5c5aa3-5afe-4c26-924b-30aa4e78e128" selectedForRun="true" refUid="96a124b3-1b62-47a5-895d-9a3fe755cb5c" refId="mcheck_mes_cgtl_4302" refVersion="1" refTitle="Graphical Functions with Multiple Data Outputs"/>
+      </guideline>
+      <guideline uid="8734ade8-8c2f-4bb2-93a2-098fefc75c31" modifier="standard" refUid="36cec633-d0dd-48b1-be88-234ddeb7ab01" refId="TL_RULE_STATEFLOW_TEMPORAL_LOGIC" refVersion="1" refTitle="Use of Temporal Logic"/>
+      <guideline uid="3966bc2e-076e-4851-8c1e-7bffec7f43a1" modifier="standard" refUid="0dcbf574-6ef3-4155-939d-cf5e8807c96f" refId="TL_RULE_STATEFLOW_SIMULINK_FUNCTION" refVersion="1" refTitle="Simulink Function-Call Subsystems in a Stateflow Chart">
+        <check uid="f1d61f2a-845a-4bbd-9ff3-e8e2814a02a0" selectedForRun="true" refUid="6b0372cd-89a8-4bc5-bc48-06574a396314" refId="mcheck_mes_cgtl_4107" refVersion="1" refTitle="Simulink Function-Call Subsystems in a Stateflow Chart"/>
+      </guideline>
+      <guideline uid="cb033a78-48a7-4d02-bf85-8bccaa0ec5ff" modifier="standard" refUid="ab98efd4-7d6c-42e6-a258-9ecf3a6558e4" refId="TL_RULE_STATEFLOW_TRANSITIONS_IN_CONTROL_FLOW" refVersion="1" refTitle="Use of Transitions in Control Flow">
+        <check uid="e94da308-8b8f-4771-9da0-15e0a48aa486" selectedForRun="true" refUid="2b29733d-0eea-437f-bd91-778461d0887f" refId="mcheck_mes_slsf_4112" refVersion="1" refTitle="Use of Transitions in Control Flow"/>
+      </guideline>
+      <guideline uid="562e06cd-d5c9-466d-b031-46ac45830fc2" modifier="standard" refUid="00444ef9-4b19-4ad2-ac61-1de3c34a3170" refId="TL_RULE_STATEFLOW_RANGE_INFORMATION" refVersion="1" refTitle="Specification of Range Information for Variables"/>
+      <guideline uid="6b3e0863-a5f2-4e2c-acdc-d2b6bbb52138" modifier="standard" refUid="e2b6e90c-f47f-40ba-903f-9e90ab589456" refId="TL_RULE_STATEFLOW_COMPLEX_FIXPOINT" refVersion="1" refTitle="Avoidance of Complex Fixed-Point Expressions"/>
+      <guideline uid="4495b5c1-4e5e-4a61-9265-2c7bfa8c43dd" modifier="standard" refUid="44f05e5a-51d6-44f3-bbd4-63025205e74e" refId="TL_RULE_STATEFLOW_EXPLICIT_INPUT_SPEC" refVersion="1" refTitle="Avoidance of TargetLink Specifications for Stateflow Input Variables">
+        <check uid="40a870e0-8fa3-4b91-91f6-d4b13b87d4d4" selectedForRun="true" refUid="6160798b-65cd-4655-9b50-3d6028171725" refId="mcheck_mes_cgtl_4301" refVersion="1" refTitle="Avoidance of TargetLink Specifications for Stateflow Input Variables"/>
+      </guideline>
+      <guideline uid="4bf34523-de6a-4c4b-b4a7-df0d8b27a1aa" modifier="standard" refUid="3a39e2fb-5c73-4b04-bb98-36d2dc7f1565" refId="TL_RULE_STATEFLOW_RECURSIONS" refVersion="1" refTitle="Avoidance of Recursions in Stateflow"/>
+      <guideline uid="38ecc35e-3f2b-49e1-99a5-d7df4367b505" modifier="standard" refUid="3d94b373-495a-4da5-b6ee-1767286bf14e" refId="TL_ADV_STATEFLOW_STATES_VS_CONTROL_FLOW" refVersion="1" refTitle="Usage of States vs. Control Flow">
+        <check uid="c7d738d1-e58f-4a29-b630-326b32895dba" selectedForRun="true" refUid="0ae7d390-cafb-498b-b0a3-6e0e69d93df2" refId="mcheck_mes_sf_generic_0001" refVersion="1" refTitle="Generic Review Check for Stateflow Elements"/>
+      </guideline>
+      <guideline uid="465643b2-b7e0-44fa-a39b-3338c4f96ad8" modifier="standard" refUid="d69a0588-b269-44cc-91ae-4e7e6d8aec28" refId="TL_ADV_STATEFLOW_PATTERN_CONTROL_FLOW" refVersion="1" refTitle="Usage of Design Patterns for Control Flow"/>
+    </chapter>
+    <chapter uid="af506537-6a99-4d9e-8b36-e3da861bfcc0" title="Model Architecture Advices">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="9f4c155f-1e0e-4609-8905-8800471a4e82" modifier="standard" refUid="3a4812e1-f633-48cb-b3aa-95a0e1a48be3" refId="TL_ADV_MODELARCH_CONTROL_EXECORDER" refVersion="1" refTitle="Control Unit for Proper Execution Order"/>
+      <guideline uid="942940a1-a708-436b-8ff7-f8ca9c4958aa" modifier="standard" refUid="f8e62e45-d091-4ca3-8b30-370612f49ba7" refId="TL_ADV_MODELARCH_MODELREF_LIB" refVersion="1" refTitle="Single Source Principle for Model Fragments using Model Referencing or Simulink Libraries"/>
+      <guideline uid="cbb74f62-0ac5-48ed-bcbf-0b0b1812c702" modifier="standard" refUid="a9a4a6ef-ab28-42d6-a533-bbb5c5d963f3" refId="TL_ADV_MODELARCH_TL_PORTS" refVersion="1" refTitle="Use of TargetLink Ports"/>
+    </chapter>
+    <chapter uid="39632826-3786-4136-b3d7-2cee0a876978" title="Block-Independent Software Design Aspects">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> This chapter contains block-independent rules or advices in order to generate particularly efficient code with TargetLink or comply with a maximum number of MISRA C rules. </p>]]></value>
+      </description>
+      <chapter uid="91e6ee95-21a2-4331-bbaf-0a4fa84d4121" title="Global TargetLink Settings">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="57a20912-29c5-4c30-9694-0d28a38804b4" modifier="standard" refUid="445adfc3-ed75-4663-aeb1-83717ca63ad1" refId="TL_RULE_SWDESIGN_ANSI_CODE_MISRA" refVersion="1" refTitle="Generic Code Without Pragmas"/>
+        <guideline uid="23b4f012-ffd9-428f-b0ae-87a55e89661a" modifier="standard" refUid="910d94df-c8ac-4583-9692-017dabaf013b" refId="TL_RULE_SWDESIGN_MULT_VS_BITSHIFT_MISRA" refVersion="1" refTitle="Multiplications/Divisions vs. Bitshifts"/>
+        <guideline uid="2542e0eb-c678-4a91-bdae-d19582a9b099" modifier="standard" refUid="218a4e68-d81f-4b31-a465-090e47b3d31b" refId="TL_RULE_SWDESIGN_BITFIELDS_MISRA" refVersion="1" refTitle="Use of Bitfields">
+          <check uid="425f7c1c-2719-4d3e-8c6b-b417186d9087" selectedForRun="true" refUid="75dd1098-7006-4d98-9734-1ee3a5ee878b" refId="mcheck_mes_cgtl_4112" refVersion="1" refTitle="Use of Bitfields"/>
+        </guideline>
+        <guideline uid="69907bfa-4b8f-4037-9779-b8bb9b87719d" modifier="standard" refUid="c9cd6519-2791-4a85-b387-eddc3206bb3d" refId="TL_RULE_SWDESIGN_IDENTIFIER_LENGTH" refVersion="1" refTitle="Identifier Length">
+          <check uid="32fe6b4d-e37b-404d-9fef-0cdcf7d81501" selectedForRun="true" refUid="f180ab79-979a-47df-a1c9-eace18c5d87a" refId="mcheck_misra_tl_2_3" refVersion="1" refTitle="Restricting identifiers to 31 characters"/>
+        </guideline>
+      </chapter>
+      <chapter uid="0350d554-5e95-46fb-a3bd-ac8cd4a270e4" title="General Software Design Aspects">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="505742ee-eefc-4c74-947a-bc0a18fe3514" modifier="standard" refUid="5213b296-ef14-48b4-93ad-97c8d6470379" refId="TL_RULE_SWDESIGN_CGOPTIONS" refVersion="1" refTitle="Use of Specific Code Generation Option Sets"/>
+        <guideline uid="47a430a8-a7a1-4634-8f12-b053bd9cd449" modifier="standard" refUid="0d280c38-25e0-43a9-a7ce-38e10139a0cd" refId="TL_RULE_SWDESIGN_USER_VARCLASS_FUNCCLASS" refVersion="1" refTitle="Use of User-Specific Variable Classes and Function Classes"/>
+        <guideline uid="2e2f483c-354a-41b5-8e15-df3b772d4813" modifier="standard" refUid="a618941b-d3f8-4eda-8b4b-371041ed4356" refId="TL_RULE_SWDESIGN_VARIABLES_IN_DD" refVersion="1" refTitle="Administration of Parameters, Component Inputs, Component Outputs, Measurables in the Data Dictionary"/>
+        <guideline uid="1cacbb3b-e9f0-4675-8984-4d41111c905e" modifier="standard" refUid="203e526f-af5c-43bb-8571-20d5646b0d77" refId="TL_RULE_SWDESIGN_EXTERNALS" refVersion="1" refTitle="Including External Variables and External Functions"/>
+        <guideline uid="dc482f8a-ea60-45f4-a940-fa8136b2c19b" modifier="standard" refUid="65046fbd-8974-424a-b662-80c0fbf297f8" refId="TL_RULE_SWDESIGN_AVOID_OVERLAPPING_NAMES" refVersion="1" refTitle="Avoidance of Identical Identifier Names"/>
+      </chapter>
+      <chapter uid="8daa0709-535e-4ec7-bc9a-f6840e921e69" title="Function Handling">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains advices relating to the handling of functions for the purpose of efficient code generation, MISRA-C compliance or others. The section is relevant during the software design phase. </p>]]></value>
+        </description>
+        <guideline uid="60c976ef-f81e-47d7-9f06-a1c2380f0541" modifier="standard" refUid="2709e136-d99c-440d-8b70-30c46c1ad2e0" refId="TL_ADV_FUNCTION_INLINING" refVersion="1" refTitle="Inlining of Functions"/>
+        <guideline uid="58fe53da-b9f0-43a5-a5b2-08c02e2365f5" modifier="standard" refUid="06a5034c-7b82-429d-9ce9-76891d6420cc" refId="TL_ADV_FUNCTION_ARGUMENTS" refVersion="1" refTitle="Handling of Function Arguments vs. Global Variables"/>
+        <guideline uid="6a0e824c-70f9-45c6-964e-df84c491a2cb" modifier="standard" refUid="887a4fe3-6b4e-4fd3-b4f0-281b6eacd703" refId="TL_ADV_FUNCTION_REUSE" refVersion="1" refTitle="Reuse of Functions"/>
+        <guideline uid="d2129240-63c0-4c91-bd1d-009f48d31d51" modifier="standard" refUid="461fd46c-bd39-4b0b-9c8d-b93e3cbd39c8" refId="TL_RULE_FUNCTION_CALL_LOGICAL_EXPRESSION" refVersion="1" refTitle="Function Calls in Logical Expressions"/>
+      </chapter>
+      <chapter uid="4d116229-3014-4de2-bfa5-c6019f502c28" title="Variable Handling">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value><![CDATA[<p> This section contains advices and rules relating to the handling of variables for the purpose of efficient code generation or MISRA C compliance. The advices and rules in this section are not relevant to mere controller design and can be considered during the software design phase only. </p>]]></value>
+        </description>
+        <guideline uid="c813b858-c544-43a2-8e65-837626c85dee" modifier="standard" refUid="570d766e-da1d-434c-b0e8-9e29d0d1f0e0" refId="TL_ADV_OPTI_VARIABLES_OPT_ATTRIBUTES" refVersion="1" refTitle="The Impact of Variable Classes on Optimization"/>
+        <guideline uid="08f7e54d-30c6-41c3-b95f-4cf104ab9ac0" modifier="standard" refUid="347942e1-2348-46e2-9b05-9e8168535355" refId="TL_ADV_OPTI_VARIABLES_ERASABLE" refVersion="1" refTitle="Erasing of Variables"/>
+        <guideline uid="4a154817-fe6b-4fb5-96e0-827d4adb387b" modifier="standard" refUid="1c902af4-6ebe-43c1-9931-596a81044bbb" refId="TL_RULE_OPTI_VARIABLES_MERGEABLE" refVersion="1" refTitle="Merging of Variables"/>
+        <guideline uid="9d448273-b806-4938-928e-7e602c07c3a1" modifier="standard" refUid="0f125e9a-bb43-48fb-89e6-157915d37bd5" refId="TL_RULE_VARIABLES_SCOPE_REDUCTION" refVersion="1" refTitle="Reducing the Scopes of Variables"/>
+        <guideline uid="bd67c0a1-19ce-437c-8620-a008f39ded63" modifier="standard" refUid="4af077c6-3dd0-4604-b4e6-85c17ead92b5" refId="TL_ADV_OPTI_VARIABLES_MOVABLE" refVersion="1" refTitle="Moving of Variables"/>
+        <guideline uid="9f0b03b1-50ea-4c68-b20c-1a559bcd6206" modifier="standard" refUid="937b9493-4f42-4573-8e86-3b2c4ee7ff37" refId="TL_RULE_VARIABLES_VOLATILE_VARS_LOGIC" refVersion="1" refTitle="Volatile Variables in Logical Expressions"/>
+        <guideline uid="61bdf7a9-9389-46b3-a21f-e5a9b951e0d8" modifier="standard" refUid="55ce1494-db79-4e03-abff-820801852a9a" refId="TL_RULE_VARIABLES_LOCAL_MACROS" refVersion="1" refTitle="Local Macros"/>
+      </chapter>
+      <chapter uid="53d93622-fb1e-420e-ba49-7d821624dfea" title="Fixed-Point Code Generation">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="cbe1524b-fb18-441b-8820-875b63445775" modifier="standard" refUid="48345ae9-bf55-4191-92e3-1aebd13d5c58" refId="TL_ADV_OPTI_POWER_OF_2" refVersion="1" refTitle="Power of Two-Scaling">
+          <check uid="e4a9b189-04f4-4910-97b2-b5187144ebb8" selectedForRun="true" refUid="5805a359-5db9-4753-97d1-26c15e3f2397" refId="mcheck_misra_tl_6_1" refVersion="1" refTitle="Power of two scaling"/>
+        </guideline>
+        <guideline uid="96330b20-6ed7-4856-b383-a12ddf429bd6" modifier="standard" refUid="e6a10510-9f8f-4a54-bc8a-ad11f40e8503" refId="TL_ADV_OPTI_OFFSETS" refVersion="1" refTitle="Offsets at Block Inputs and Outputs">
+          <check uid="6e6e2e14-cc27-47ee-9927-3f118e3947be" selectedForRun="true" refUid="e95163c5-97a8-4f5c-a6d7-c1357ea13e33" refId="mcheck_misra_tl_6_2" refVersion="1" refTitle="Zero offsets"/>
+        </guideline>
+        <guideline uid="5c78a48b-5a43-4685-b3c9-d06cf6c41d1b" modifier="standard" refUid="7cad0a49-734b-4914-bfc5-1e4189f24d4b" refId="TL_ADV_OPTI_CONSTANTS" refVersion="1" refTitle="Constants and Multiplications with Constants"/>
+        <guideline uid="e6daecce-f53f-4bdb-9b67-75a476837e30" modifier="standard" refUid="81104941-b275-422b-b64c-6d8d13ad9420" refId="TL_ADV_OPTI_CONSTRAINTS" refVersion="1" refTitle="Use of Constraint Limits">
+          <check uid="6f320299-cbc4-4253-97be-56c5850eb848" selectedForRun="true" refUid="328d2cc3-b496-488a-8152-73b2dcb0ccce" refId="mcheck_mes_cgtl_4203" refVersion="1" refTitle="Use of Constraint Limits"/>
+        </guideline>
+        <guideline uid="621eb6ce-6c34-4435-be63-d8094fcb8648" modifier="standard" refUid="d8aabf75-0e32-46b4-8982-c24e254c6210" refId="TL_RULE_OPTI_64_BIT" refVersion="1" refTitle="64-Bit Operations">
+          <check uid="9de96940-e44b-4740-afe5-1f52e8c1d475" selectedForRun="true" refUid="9d406ee3-6596-49fe-83e8-5d146f3d1f18" refId="mcheck_mes_cgtl_4202" refVersion="1" refTitle="64-Bit Operations"/>
+        </guideline>
+        <guideline uid="f3cf04c0-09a9-4aa4-8feb-0fa6b351d208" modifier="standard" refUid="5018d700-0ea2-4ac7-9be2-d7567cbb39ff" refId="TL_ADV_OPTI_SCALING_CONSISTENCY" refVersion="1" refTitle="Consistency of Scaling Parameters"/>
+        <guideline uid="74aa06c6-5c03-4e3d-b598-305ec6ebac4c" modifier="standard" refUid="8aef9e6c-dd38-4ef5-9733-fb8b2ac0983d" refId="TL_ADV_OPTI_SATURATION" refVersion="1" refTitle="Avoidance of Saturation Specification"/>
+      </chapter>
+    </chapter>
+    <chapter uid="8db63bed-5edc-4392-8e5f-05958f00f84f" title="Rule and Advice Classification for ISO 26262 and ISO 25119">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[<p> In this chapter, a subset of the rules and advices of this document is listed, which should be considered by the user when developing software for safety-related systems, in particular for </p>
+<ul>
+ <li> ISO 26262-6, “Road vehicles — Functional safety — Part 6: Product development at the software level, [7] </li>
+ <li> ISO 25119-3, “Tractors and machinery for agriculture and forestry — Safety-related parts of control systems, Part 3: Series development, hardware and software”, [8] </li>
+</ul>
+<p> The list for the rule classification contains the following entries: </p>
+<ul>
+ <li> Rule Title and ID for a unique identification of the rules of the previous chapters </li>
+ <li> Reference and optional Comment, references to individual fragments of ISO 26262 and ISO 25119 which constitute rationales for the individual rules. In some cases an optional comment is inserted. </li>
+ <li> Classification for ISO 26262 and ISO 25119 which describes how important the individual rules are. Two different categories are used:
+  <ul>
+   <li> Highly Recommended: This classification implies that compliance with the rule is strongly encouraged. Deviation from the rule should be carefully thought through and the necessity for the deviation should be documented. In some cases, deviation from the rule should be compensated for by a model review. </li>
+   <li> Recommended: Although compliance with the rule is encouraged, deviations from the rules might be appropriate. A general deviations from the rule should be documented as a whole but not for each individual deviation. </li>
+  </ul> </li>
+</ul>
+<p> It is important to note, that the following list of rules and advices constitutes only a subset of all the rules and advices of this document for the following reasons: </p>
+<ul>
+ <li> Some rules or advices do not have an impact on safety at all but e.g. on code efficiency only. Such rules and advices are not listed here. </li>
+ <li> Many of the rules described in this document are checked by TargetLink itself during code generation and TargetLink will abort code generation if those rules are violated in the model. Consequently, those rules are not listed here and need not be considered because TargetLink takes care of them automatically. Those rules are relevant for function developers or a smooth transition from Simulink modeling to TargetLink modeling because models will need to be reworked if the rules are violated. However, TargetLink itself will not tolerate a deviation from those rules and abort code generation. </li>
+</ul>
+<p> Please note that TargetLink itself has always been developed with the intent of production code generation and deployment on embedded systems in mind. It has always been clear that many of those use cases for TargetLink were and are safety-related. By nature, TargetLink itself only uses a subset of Simulink/Stateflow and thereby avoids many modeling constructs that could be considered as “unsafe”. </p>
+<p> With regard to automatic guideline checking, we recommend consultations with TargetLink’s cooperation partner, “Model Engineering Solutions” </p>]]></value>
+      </description>
+    </chapter>
+    <chapter uid="23e55f68-d46a-4837-914a-381ae275e624" title="List of Documents">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[[1]&nbsp; TargetLink Production Code Generation Guide, dSPACE, 2012
+<br /> [2]&nbsp; TargetLink Advanced Practices Guide, dSPACE, 2012.
+<br /> [3]&nbsp; MISRA C:2004/2012 Compliance Documentation for TargetLink 3.1, TargetLink 3.2, TargetLink 3.3, TargetLink 3.4, TargetLink 3.5, TargetLink 4.0, TargetLink 4.1, dSPACE, 2009 - 2015
+<br /> [4]&nbsp; Using MATLAB, The MathWorks
+<br /> [5]&nbsp; Using Simulink, The MathWorks
+<br /> [6]&nbsp; Stateflow User’s Guide, The MathWorks
+<br /> [7]&nbsp; Road vehicles – Functional safety, International Organization for Standardization, ISO 26262, First edition, International Organization for Standardization, 2011-11-15
+<br /> [8]&nbsp; Tractors and machinery for agriculture and forestry — Safety-related parts of control systems, ISO 25119, First edition, International Organization for Standardization, 2010
+<br /> [9]&nbsp; MISRA AC GMG &amp; AC SLSF &amp; AC TL, MIRA Limited, 2007/2009; available from: http://www.misra.org.uk
+<br /> [10]&nbsp; MAAB Control Algorithm Modeling Guidelines, MathWorks Automotive Advisory Board (MAAB); available from: www.mathworks.com/solutions/automotive/standards/maab.html
+<br />
+<br />]]></value>
+      </description>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="07/07/2016 10:21:49">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment><![CDATA[Copied from 'dSPACE - Modeling Guidelines for MATLAB®/Simulink®/Stateflow® and TargetLink®' (ID: dspace_tl_3_0, Version: v01, Library: Standards, Author: Model Engineering Solutions GmbH)]]></comment>
+    </record>
+    <record timestamp="10/17/2016 16:44:11">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="support@model-engineers.com"/>
+      <comment>Status changed from [DRAFT] to [PROPOSED]. </comment>
+    </record>
+  </history>
+</guidelineDocument>

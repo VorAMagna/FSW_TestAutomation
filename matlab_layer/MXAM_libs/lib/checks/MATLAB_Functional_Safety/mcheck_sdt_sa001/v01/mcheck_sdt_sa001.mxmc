@@ -1,0 +1,112 @@
+<check fileVersion="2">
+  <uid>fe41ad15-6f09-46c5-aa8b-8632402a1c2a</uid>
+  <id>mcheck_sdt_sa001</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain=""/>
+  <coAuthors/>
+  <copyright>Model Engineering Solutions GmbH</copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Strong Data Typing at the Input of Logical Operator Blocks</title>
+  <adapter version="2.2">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_sdt_sa001.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<ul> 
+ <li> All Simulink Logic blocks receive a pass if the block option 'Require all inputs and output to have the same data type' is set. </li> 
+ <li> All TargetLink Logical Operator block receive a pass if the base data type of all inputs is Boolean. </li> 
+ <li> Warnings are raised for unconnected inputs. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> For Simulink blocks, set the blocks option 'Require all inports to have the same data type'. </p>
+<img src="Ex1.png" /> 
+<p> Adjust the diverging signal properties accordingly. Note, that adjusting the data type of source blocks may require further, secondary adjustments involving other blocks. </p> 
+<p> To ensure boolean input data types of Simulink logical operator blocks, run the check sdt_sa002. </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value><![CDATA[The following example illustrates the type dependency of the result of a logical operation. Note that in the lower AND block the result is true, whereas in the upper AND block, with the same input constant values, the result is false, due to an underflow of the uint(1) data type.
+<br /> 
+<br /> 
+<img src="Ex2.png" />
+<br /> The check reports logical operator blocks whose option 'Require all inputs and output to have the same data type' is deactivated, as follows.
+<br /> 
+<br /> 
+<img src="Ex3.png" />
+<br /> 
+<br /> The check reports non-boolean input types as follows.
+<br /> 
+<br /> 
+<img src="Ex4.png" />
+<br />]]></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>SDT.sa001.AllowedInputBaseTypes</name>
+      <description>Each entry specifies an allowed data base type as input signal for logical operators.</description>
+      <defaultValue><![CDATA[{''}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>SDT.sa001.IgnoreTLDefaultDataTypes</name>
+      <description><![CDATA[Determines if TargetLink sources with a default class and/or unspecified data type/base type are ignored. This applies to TargetLink Constants and Merge blocks with class = 'default', for which the datatype is specified by TargetLink at run-time/build-time. In MIL mode, these blocks will have output int16, in SIL mode, the type is adjusted to match the following block.]]></description>
+      <defaultValue>1</defaultValue>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/26/2015 15:20:08">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Status changed from [PROPOSED] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

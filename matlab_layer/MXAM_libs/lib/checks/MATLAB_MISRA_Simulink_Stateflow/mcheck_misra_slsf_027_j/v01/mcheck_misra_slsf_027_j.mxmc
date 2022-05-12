@@ -1,0 +1,107 @@
+<check fileVersion="2">
+  <uid>b24dbfa6-7ddc-4273-be61-a1c00ac31b22</uid>
+  <id>mcheck_misra_slsf_027_j</id>
+  <version>1</version>
+  <status>proposed</status>
+  <preVersionUid></preVersionUid>
+  <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Signal and Bus Label Usage - Uniqueness</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_misra_slsf_027_j.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[The check analyzes each signal label in the model.
+<br /> 
+<ul> 
+ <li> Passed 1: The signal label is unique. </li> 
+</ul> 
+<p> The check result is failed if all passed cases do not apply.<br /> </p>Exceptions:
+<br /> 
+<ul> 
+ <li> Propagated signals are ignored as well as signals within a reusable subsystem. </li> 
+ <li> Identical input and output signal labels of the same Data Type Conversion block are ignored. </li> 
+ <li> MATLAB R2012a and newer: Output signals of Demux blocks are ignored, since the propagation of signals at Demux blocks is no longer supported. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[As of Matlab 2018b the model option &quot;Display -&gt; Signals &amp; Ports -&gt; Propagated Signal Labels&quot; is not recommended for use because it is not consistent with the individual signal property &quot;Show Propagated Signals&quot;. In addition, it is not updated when single changes in the individual property take place. Therefore, the check analyzes only the individual property and it could return failed findings if only the model option is set to &quot;on&quot;.]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Only use unique labels.</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> No automatic repair action available. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_027_j.BasicMaskedBlocks</name>
+      <description>This parameter is a list of mask types, all blocks with such mask type will be recognized as basic block.</description>
+      <defaultValue><![CDATA[{''}]]></defaultValue>
+    </specification>
+    <specification type="string">
+      <name>MISRA_SL_SF.misra_slsf_027_j.b_CheckLinkedSubsystem</name>
+      <description>If this parameter is true, the subsystems that have active link (linkstatus=resolved) to a library will also be checked. In this case the exception of this guideline is then ignored. Default is false.</description>
+      <defaultValue>false</defaultValue>
+      <allowedValues>
+        <entry>true</entry>
+        <entry>false</entry>
+      </allowedValues>
+    </specification>
+  </parameterSpecifications>
+  <parameterReferences/>
+  <history>
+    <record timestamp="12/04/2014 11:22:46">
+      <author username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+      <comment>Check modified by MXAM 1 importer.</comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="MATLAB-dSPACE-TargetLink-KnownProblems" title="dSPACE TargetLink® Known Problems - MATLAB® Guidelines" uid="e766fd5d-c6ae-4a5b-9b5e-64d4c3c1da2b">
+  <managers>
+    <manager username="Model Engineering Solutions GmbH" domain="MES" email="mxam@model-engineers.com"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

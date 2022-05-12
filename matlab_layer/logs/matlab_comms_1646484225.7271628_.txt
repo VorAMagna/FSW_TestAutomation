@@ -1,0 +1,1574 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+
+========================================================================================
+Configuring dSPACE Software for MATLAB(R) 9.3.0.713579 (R2017b) ...
+
+TargetLink       Production Code Generator                  4.3p7       15-Jan-2021 okay
+DSDD             Data Dictionary                            4.3p7       15-Jan-2021 okay
+========================================================================================
+
+PID=14076
+
+MXAM_MXRAY_BATCHCONFIG_FILEPATH =
+
+    'C:\Sandbox\FSW_TestAutomation\matlab_layer\matlab_communication\mxam_mxray_batchconfig.json'
+
+MXAM's MATLAB adapter is logging <a href="matlab:winopen('C:\Users\svc_mxam\AppData\Roaming\MES\MXAM\7_2_0_329b9854\workspace\.adapters\com.modelengineers.mxam.tooladapter.matlab\com.modelengineers.mxam.tooladapter.matlab.log')">here</a>.
+~~~Starting~~~
+Starting MXAM...
+Initializing MXAM dependencies...
+Setting up MXAM environment...
+Starting jmbridge server...
+Opening MXAM...
+MXAM started.
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+           checkId: 'mcheck_mes_color_001'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '7e70ad83-8148-4ae2-b34d-7e7c255604c7'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=7e70ad83-8148-4ae2-b34d-7e7c255604c7'
+
+~~~Reporting~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ace1ddea-b815-4210-859f-299f4bed3c0e'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=ace1ddea-b815-4210-859f-299f4bed3c0e'
+
+Autodoc Block must be added to the subsystem!
+ActDmpED01/CalcCorrectionSignal
+Autodoc Block must be added to the subsystem!
+ActDmpED01/CalcCorrectionSignal/AD
+Autodoc Block must be added to the subsystem!
+ActDmpED01/CalcCorrectionSignal/AD/CalcNEmADHighFreq2
+Autodoc Block must be added to the subsystem!
+ActDmpED01/CalcCorrectionSignal/CustomerActiveDamping
+Autodoc Block must be added to the subsystem!
+ActDmpED01/TrqEmRippleDmp
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ace1ddea-b815-4210-859f-299f4bed3c0e'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BckUpFcnED01\BckUpFcnED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '933af2c4-9211-4e41-8a45-d10d0d0c2462'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=933af2c4-9211-4e41-8a45-d10d0d0c2462'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '933af2c4-9211-4e41-8a45-d10d0d0c2462'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BckUpFcnED01\BckUpFcnED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BckUpFcnED01\BckUpFcnED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BoostED10\BoostED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f069d3ca-8c5d-40e9-8f43-a8096068fda1'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=f069d3ca-8c5d-40e9-8f43-a8096068fda1'
+
+Autodoc Block must be added to the subsystem!
+BoostED10/calcTransitionConditions
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f069d3ca-8c5d-40e9-8f43-a8096068fda1'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BoostED10\BoostED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BoostED10\BoostED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpGbxED10\CmpGbxED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd10a1d42-4e7a-472b-94dd-d134c42cd23e'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=d10a1d42-4e7a-472b-94dd-d134c42cd23e'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd10a1d42-4e7a-472b-94dd-d134c42cd23e'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpGbxED10\CmpGbxED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpGbxED10\CmpGbxED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpMainShftED10\CmpMainShftED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '481fc275-3149-4ab5-b7a8-4b099ae84b92'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=481fc275-3149-4ab5-b7a8-4b099ae84b92'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '481fc275-3149-4ab5-b7a8-4b099ae84b92'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpMainShftED10\CmpMainShftED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpMainShftED10\CmpMainShftED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC01\EmSimEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '45420907-9c63-4368-935c-5511ff872dab'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=45420907-9c63-4368-935c-5511ff872dab'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '45420907-9c63-4368-935c-5511ff872dab'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC01\EmSimEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC01\EmSimEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC10\EmSimEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '3fe10945-e732-4bba-825e-a05631b0152a'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=3fe10945-e732-4bba-825e-a05631b0152a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '3fe10945-e732-4bba-825e-a05631b0152a'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC10\EmSimEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC10\EmSimEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimED01\EmSimED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '2cf24b83-544e-42a9-b093-e607cf00e3e8'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=2cf24b83-544e-42a9-b093-e607cf00e3e8'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '2cf24b83-544e-42a9-b093-e607cf00e3e8'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimED01\EmSimED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimED01\EmSimED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\GearShiftMainED05\GearShiftMainED05.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9a6c6d8a-1ffa-4bff-89ba-e0cc8f069c4c'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=9a6c6d8a-1ffa-4bff-89ba-e0cc8f069c4c'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9a6c6d8a-1ffa-4bff-89ba-e0cc8f069c4c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\GearShiftMainED05\GearShiftMainED05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\GearShiftMainED05\GearShiftMainED05.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC01\InputEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ad639670-b352-4449-8c7b-5535968439e2'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=ad639670-b352-4449-8c7b-5535968439e2'
+
+Description in the Autodoc block is too short!
+InputEC01/ratGbEmToSys/Autodoc1
+Description in the Autodoc block is too short!
+InputEC01/ratGbSysToEm/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ad639670-b352-4449-8c7b-5535968439e2'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC01\InputEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC01\InputEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC10\InputEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '46a1da24-4b26-44c9-a27e-9a4e38dcdbd7'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=46a1da24-4b26-44c9-a27e-9a4e38dcdbd7'
+
+Description in the Autodoc block is too short!
+InputEC10/BF/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputEC10/ratGbEmToSys/Autodoc1
+Description in the Autodoc block is too short!
+InputEC10/ratGbSysToEm/Autodoc1
+Description in the Autodoc block is too short!
+InputEC10/trqDragMS/Autodoc1
+Description in the Autodoc block is too short!
+InputEC10/trqGbGen/Autodoc1
+Description in the Autodoc block is too short!
+InputEC10/trqGbMot/Autodoc1
+Description in the Autodoc block is too short!
+InputEC10/trqSysError/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '46a1da24-4b26-44c9-a27e-9a4e38dcdbd7'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC10\InputEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC10\InputEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED01\InputED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a8be1b40-d58b-49b6-b235-21e49476ee96'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=a8be1b40-d58b-49b6-b235-21e49476ee96'
+
+Upgrading library 'CounterResetSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 401 to 402 ...
+Upgrading library 'CounterResetSave_UInt8' from revision 402 to 403 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopEndless_UInt16' from revision 402 to 403 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 401 to 402 ...
+Upgrading library 'CounterStopSave_UInt16' from revision 402 to 403 ...
+Upgrading library 'Decoder_16Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_16Bit' from revision 402 to 403 ...
+Upgrading library 'Decoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Decoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'Encoder_8Bit' from revision 401 to 402 ...
+Upgrading library 'Encoder_8Bit' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOffDelay_Bool_UInt8' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt16' from revision 402 to 403 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 401 to 402 ...
+Upgrading library 'TurnOnDelay_Bool_UInt8' from revision 402 to 403 ...
+Description in the Autodoc block is too short!
+InputED01/BF/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputED01/SlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/cStiffnessSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/cStiffnessSpdCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/dtrqEmReqMax/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/dtrqEmReqMax_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/enActDisCharge/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/enActDisCharge_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/enActDmp/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/enActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/fDT1ActDmp/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/fDT1ActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/fPT1ActDmp/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/fPT1ActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/facActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nEmMainShftLvl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nMainShaft/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nMainShaft_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nReqSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nReqSpdCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nSyncTarget/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/nSyncTarget_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/stQuadrant/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpAmb/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpAmb_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpDCLink/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpDCLink_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpEmInvCltInVeh/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/tmpInvCltIn_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReq/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReqMax_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReqMaxi/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReqMin/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReqMin_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqDsReq_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqMaxSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqMaxSpdCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqMinSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqMinSpdCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqReqCusLib/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqReqCusLib_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/trqSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/vVeh/Autodoc1
+Description in the Autodoc block is too short!
+InputED01/vVeh_QF/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a8be1b40-d58b-49b6-b235-21e49476ee96'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED01\InputED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED01\InputED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED05\InputED05.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '0e0baa7b-0dcb-412e-8036-528fe987221d'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=0e0baa7b-0dcb-412e-8036-528fe987221d'
+
+Description in the Autodoc block is too short!
+InputED05/cmdBckUpFcn/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputED05/cmdBckUpFcn2/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputED05/nEmMainShftLvl/Autodoc1
+Description in the Autodoc block is too short!
+InputED05/nMainShaft_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED05/nSyncTarget_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED05/prcStressActMan/Autodoc1
+Description in the Autodoc block is too short!
+InputED05/stGearShiftExt_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED05/trqEmFilt/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '0e0baa7b-0dcb-412e-8036-528fe987221d'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED05\InputED05_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED05\InputED05.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED10\InputED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '4ec8e7eb-19de-46e3-9e23-07c038c5ca01'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=4ec8e7eb-19de-46e3-9e23-07c038c5ca01'
+
+Description in the Autodoc block is too short!
+InputED10/cmdBckUpFcn/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputED10/cmdBckUpFcn2/Autodoc_Customization1
+Description in the Autodoc block is too short!
+InputED10/cmdEmReq/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/cmdEmReq_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/enActDisCharge/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/enActDisCharge_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/flwEmInvCltl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/flwOil_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/nEmMainShftLvl/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/nMainShaft_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/nSyncTarget_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/nWhlSpdDiffAxle_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/prcStressActMan/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/reqBoost_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/stGearShiftExt_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/stSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tAbsolute/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tAbsolute_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tIdle/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tIdle_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tmpAmb/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tmpAmb_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tmpEmInvCltInVeh/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/tmpOil_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/trqDsReq/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/trqDsReqMan_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/trqEmFilt/Autodoc1
+Description in the Autodoc block is too short!
+InputED10/trqSlipCtrl/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '4ec8e7eb-19de-46e3-9e23-07c038c5ca01'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED10\InputED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED10\InputED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\LubCycED10\LubCycED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'd1494ef9-bc40-4d1a-b8d0-dc78295134ad'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=d1494ef9-bc40-4d1a-b8d0-dc78295134ad'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'd1494ef9-bc40-4d1a-b8d0-dc78295134ad'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\LubCycED10\LubCycED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\LubCycED10\LubCycED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\MainED10\MainED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'a49dbb21-1f3b-48f0-a07c-a4e0d549a3fc'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=a49dbb21-1f3b-48f0-a07c-a4e0d549a3fc'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'a49dbb21-1f3b-48f0-a07c-a4e0d549a3fc'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\MainED10\MainED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\MainED10\MainED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '88779da0-4c72-4610-889a-2e01b3845bd3'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=88779da0-4c72-4610-889a-2e01b3845bd3'
+
+Using DD project file:   C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Composition.dd
+Description in the Autodoc block is too short!
+NVMReadED01/NVMED01_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED01/NVMED01_01/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '88779da0-4c72-4610-889a-2e01b3845bd3'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '9b0effac-e651-4457-8263-5967f28a61d4'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=9b0effac-e651-4457-8263-5967f28a61d4'
+
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_03/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_04/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_05/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_06/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMReadED10/NVMED10_07/Autodoc_Customization
+Autodoc Block must be added to the subsystem!
+NVMReadED10/NVMED10_06/Crc8Calc2
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '9b0effac-e651-4457-8263-5967f28a61d4'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '671f883d-2cf0-413e-924f-c3060a81d420'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=671f883d-2cf0-413e-924f-c3060a81d420'
+
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/NVMED01_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/NVMED01_01_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED01/NVMED01_01/WDBIcalc/ValueChange/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '671f883d-2cf0-413e-924f-c3060a81d420'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '80baa6f2-2901-4a81-85c8-fe7061d103d4'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=80baa6f2-2901-4a81-85c8-fe7061d103d4'
+
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/NVMED10_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_00/WDBIcalc/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_01/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_02/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/NVMED10_03_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/NVM_Version/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_03/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/NVMED10_04_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/NVM_Version/ValueChange/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_04/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/NVMED10_05_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/NVM_Version/ValueChange1/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_05/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/NVMED10_00_Crc8Man/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_06/TicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/StatusTicketIDMan/Autodoc_Customization
+Description in the Autodoc block is too short!
+NVMWriteED10/NVMED10_07/TicketIDMan/Autodoc_Customization
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '80baa6f2-2901-4a81-85c8-fe7061d103d4'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c17ad111-fb7d-4943-88d2-87be1fdbf210'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=c17ad111-fb7d-4943-88d2-87be1fdbf210'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c17ad111-fb7d-4943-88d2-87be1fdbf210'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'c81c30fb-57ee-43c3-b201-684396cbdfb7'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=c81c30fb-57ee-43c3-b201-684396cbdfb7'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'c81c30fb-57ee-43c3-b201-684396cbdfb7'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e5f56d42-c094-4e03-876f-8122f9490f50'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=e5f56d42-c094-4e03-876f-8122f9490f50'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e5f56d42-c094-4e03-876f-8122f9490f50'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '651791a1-9fb3-497c-b520-b21c81519073'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=651791a1-9fb3-497c-b520-b21c81519073'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '651791a1-9fb3-497c-b520-b21c81519073'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'ef43b5a5-d917-495b-9292-e88d0dfcc3c2'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=ef43b5a5-d917-495b-9292-e88d0dfcc3c2'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'ef43b5a5-d917-495b-9292-e88d0dfcc3c2'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '39e5fd0b-5df9-4279-963d-0f4034ea4b05'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=39e5fd0b-5df9-4279-963d-0f4034ea4b05'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '39e5fd0b-5df9-4279-963d-0f4034ea4b05'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '59c2c09a-586e-4672-afee-6e9a6882cd66'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=59c2c09a-586e-4672-afee-6e9a6882cd66'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '59c2c09a-586e-4672-afee-6e9a6882cd66'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5c95b5e3-ea20-493e-b15c-33424ff68817'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=5c95b5e3-ea20-493e-b15c-33424ff68817'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5c95b5e3-ea20-493e-b15c-33424ff68817'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'fbf392aa-0080-46e4-9329-49f778ea7dab'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=fbf392aa-0080-46e4-9329-49f778ea7dab'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'fbf392aa-0080-46e4-9329-49f778ea7dab'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'f029e01a-6a98-4fbd-bf0b-c33a0bde8325'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=f029e01a-6a98-4fbd-bf0b-c33a0bde8325'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'f029e01a-6a98-4fbd-bf0b-c33a0bde8325'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'e0c4003b-de0f-4310-bdad-618e6f6ece3c'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=e0c4003b-de0f-4310-bdad-618e6f6ece3c'
+
+Autodoc Block must be added to the subsystem!
+SyncGearED01/DcplM_SpeedSync/PICtrl/Subsystem
+Autodoc Block must be added to the subsystem!
+SyncGearED01/SyncConditions
+Autodoc Block must be added to the subsystem!
+SyncGearED01/SyncCtrlActivationConditions
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'e0c4003b-de0f-4310-bdad-618e6f6ece3c'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bdc7bdce-3bb7-4c57-88ee-ca39ffa905c5'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=bdc7bdce-3bb7-4c57-88ee-ca39ffa905c5'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bdc7bdce-3bb7-4c57-88ee-ca39ffa905c5'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'eb5640c1-9f95-4f06-af04-2e7dce4be84b'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=eb5640c1-9f95-4f06-af04-2e7dce4be84b'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'eb5640c1-9f95-4f06-af04-2e7dce4be84b'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'b9d3dd94-9d4e-467f-8fda-cd1989be1626'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=b9d3dd94-9d4e-467f-8fda-cd1989be1626'
+
+Autodoc Block must be added to the subsystem!
+TestBenchED10/RateLim
+Autodoc Block must be added to the subsystem!
+TestBenchED10/RateLim1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'b9d3dd94-9d4e-467f-8fda-cd1989be1626'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '539689c4-4f52-4de7-b20c-f74d75dd0465'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=539689c4-4f52-4de7-b20c-f74d75dd0465'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '539689c4-4f52-4de7-b20c-f74d75dd0465'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '14c36f8e-1625-4ef2-8823-0bc97360f31a'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=14c36f8e-1625-4ef2-8823-0bc97360f31a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '14c36f8e-1625-4ef2-8823-0bc97360f31a'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '88cedc12-9650-4fff-9e10-a99d06b44d45'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=88cedc12-9650-4fff-9e10-a99d06b44d45'
+
+Autodoc Block must be added to the subsystem!
+TrqAvailFdbkEC10/Diag_MechIntegrity/errDbncr/Encoder8Bit/Encoder8Bit
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '88cedc12-9650-4fff-9e10-a99d06b44d45'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '6ebf16f5-2b8f-4333-9afe-945ced137e1a'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=6ebf16f5-2b8f-4333-9afe-945ced137e1a'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6ebf16f5-2b8f-4333-9afe-945ced137e1a'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '5b71cb27-4db3-405a-9170-9a69d993f675'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=5b71cb27-4db3-405a-9170-9a69d993f675'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '5b71cb27-4db3-405a-9170-9a69d993f675'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '19a85730-53ba-496d-a94c-609bd3c666aa'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=19a85730-53ba-496d-a94c-609bd3c666aa'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '19a85730-53ba-496d-a94c-609bd3c666aa'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: 'bb30d7c4-c2a6-4205-aea3-60f61f694bc2'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=bb30d7c4-c2a6-4205-aea3-60f61f694bc2'
+
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: 'bb30d7c4-c2a6-4205-aea3-60f61f694bc2'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx
+~~~Preprocessing~~~
+hook: mxam_hookBatchPreRun
+~~~Executing~~~
+              type: 'ExecuteItemResponse'
+           success: 'true'
+      projectTitle: 'Batch Project'
+       guidelineId: '[Only_User_Checks, MISRA_TL_Selected_Checks, ISO26262_Selected_Checks]'
+          artifact: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx'
+          callback: 'mxamapi_batch_execution'
+    callbackParams: 'post'
+            jobUid: '355915e5-3614-44f7-9fae-9fb0ddcaeb50'
+        resultLink: 'http://127.0.0.1:49921/result?jobUid=355915e5-3614-44f7-9fae-9fb0ddcaeb50'
+
+Autodoc Block must be added to the subsystem!
+VltgCtrlED01/DcplM_SpeedSync/PICtrl/CalcLockInt
+Autodoc Block must be added to the subsystem!
+VltgCtrlED01/DcplM_SpeedSync/PICtrl/IntegralPart
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '355915e5-3614-44f7-9fae-9fb0ddcaeb50'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Aborted 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\ActDmpED01\ActDmpED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BckUpFcnED01\BckUpFcnED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\BoostED10\BoostED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpGbxED10\CmpGbxED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\CmpMainShftED10\CmpMainShftED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC01\EmSimEC01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimEC10\EmSimEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\EmSimED01\EmSimED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\GearShiftMainED05\GearShiftMainED05.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC01\InputEC01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputEC10\InputEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED01\InputED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED05\InputED05.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\InputED10\InputED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\LubCycED10\LubCycED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\MainED10\MainED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED01\NVMReadED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMReadED10\NVMReadED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED01\NVMWriteED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\NVMWriteED10\NVMWriteED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC01\PFMEndEC01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndEC10\PFMEndEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED01\PFMEndED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMEndED10\PFMEndED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC01\PFMStartEC01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartEC10\PFMStartEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED01\PFMStartED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PFMStartED10\PFMStartED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\PreCondChkED10\PreCondChkED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SpdCtrlED01\SpdCtrlED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\SyncGearED01\SyncGearED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchEC10\TestBenchEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED01\TestBenchED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TestBenchED10\TestBenchED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TimeCalcED10\TimeCalcED10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqActFdbkEC01\TrqActFdbkEC01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqAvailFdbkEC10\TrqAvailFdbkEC10.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqGbxED01\TrqGbxED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqMainShftED01\TrqMainShftED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqOutED01\TrqOutED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\TrqShiftED01\TrqShiftED01.slx
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group\ED_Composition\ED_Modules\VltgCtrlED01\VltgCtrlED01.slx
+~~~Closing~~~
+Tearing down MXAM...
+Closing MXAM...
