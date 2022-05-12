@@ -37,7 +37,6 @@ from diagnostics.ExceptionCounter import exception
 
 def run_config():
 
-
     """Run a prepared config"""
     if not TEST_ONLY:
 

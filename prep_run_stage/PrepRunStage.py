@@ -1,10 +1,11 @@
 import json
-from datetime import datetime
-from global_config import INPUT_GLOBAL_ROUTINE, INPUT_JSON_SYNC_DIFF, \
-    FINISHED_MODELS_FILE
+
+import global_config
+from global_config import INPUT_GLOBAL_ROUTINE, INPUT_JSON_SYNC_DIFF
 
 from diagnostics.fsw_test_automation_logger import logger
 
+from mks_api.si.SiAdapter import SiAdapter
 ROUTINE_RUN_PREFIX = "ROUTINE__"
 
 
@@ -34,6 +35,9 @@ class PrepRunStage:
         """Prepares the run about to happen"""
         current_run = self.current_run
         logger.info("Preparing next run: {}".format(current_run['name']))
+        logger.info("Searching for project: {} on server: {}".format(current_run['name'], global_config.CURRENT_SERVER))
+        SiAdapter().set_server_for_project(current_run)
+        logger.info("Switching to server: {}".format(global_config.CURRENT_SERVER))
         with open(INPUT_JSON_SYNC_DIFF, 'w') as current_run_file:
             json.dump(current_run, current_run_file)
 

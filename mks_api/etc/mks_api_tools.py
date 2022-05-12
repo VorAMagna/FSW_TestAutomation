@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 
 
+
 def dir_jump_back_and_forth(func):
     """Decorator, jumps into the directory defined in args[1] then executes,
     the function, then jumps back into the original directory again"""
@@ -179,3 +180,5 @@ class Singleton:
 
     def __instancecheck__(self, inst):
         return isinstance(inst, self._decorated)
+
+

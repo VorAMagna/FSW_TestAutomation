@@ -73,6 +73,8 @@ class CommitStage:
         """
         if COMMIT_CHKIN:
             for model in self.current_run_inputs['modelpath']:
+                SiAdapter().set_server_for_project(model)
+                self.mks_api = SiAdapter()
                 if MXAM_ACTIVE:
                     logger.info(f"mxam report si_checkin for: {model}")
                     self.check_in_model(MxamArtifactPathGenerator(model),

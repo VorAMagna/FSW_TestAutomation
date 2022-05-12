@@ -47,6 +47,15 @@ class MksAdapterBase(MksCommunication):
     def _raw_disconnect(self):
         return self.cmd('disconnect', get_args('yes'))
 
+    def get_projects_on_server(self):
+        return self._raw_projects()
+
+    def _raw_projects(self):
+        """Gets the list of projects on server"""
+        return self.cmd("projects", get_args(hostname=self.server_handler.get_hostname()
+                                             , port=self.server_handler.get_port(),
+                                             password=';CreatinOverflow11'))
+
 
 
 

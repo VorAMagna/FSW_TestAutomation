@@ -1,4 +1,5 @@
 from mks_api.etc.mks_api_tools import Singleton
+from mks_api.im.ImServers import ImServers
 from mks_api.si.SiServers import SiServers
 
 @Singleton

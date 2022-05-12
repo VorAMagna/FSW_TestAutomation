@@ -1,3 +1,4 @@
+from global_config import CURRENT_SERVER
 from mks_api.etc.ServerHandler import ServerHandler
 from mks_api.si.SiServers import SiServers
 from typing import List
@@ -10,7 +11,8 @@ class SiServerHandler(ServerHandler):
         super().__init__()
         self._servers = SiServers().servers
         #self._current_server = self._servers['MPT_Lannach']
-        self._current_server = self._servers['MPT_StValentin']
+        #self._current_server = self._servers['MPT_StValentin']
+        self._current_server = self._servers[CURRENT_SERVER]
 
         if SiServerHandler.__instance__ is None:
             SiServerHandler.__instance__ = self

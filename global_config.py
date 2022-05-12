@@ -27,7 +27,7 @@ PROJ_ROOT = Path(__file__).parent
 matlab_layer_folder = "matlab_layer"
 input_folder = "prep_run_stage"
 
-MATLAB_2015B_PATH = os.environ['matlab15']
+#MATLAB_2015B_PATH = os.environ['matlab15']
 MATLAB_2017B_PATH = os.environ['matlab17']
 # MATLAB_2019B_PATH = os.environ['matlab19']
 
@@ -38,6 +38,8 @@ COMMIT_CHKIN = True  # default: True; a switch should be properly implemented to
 
 NO_JSON_CHKIN = True  # default: True; json should not be checked in. This variable should be deleted in the future!
 MEMBER_REVISION_OVERRIDE = False  # default: False; -> slower (uses Matlab engine) but more accurate
+
+CURRENT_SERVER = 'MPT_Lannach' # 'MPT_StValentin'
 
 if FUSI:
     MXAM_GUIDELINES = ('Only_User_Checks', 'MISRA_TL_Selected_Checks', 'ISO26262_Selected_Checks')

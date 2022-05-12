@@ -1,87 +1,23 @@
 [
   {
+    "name": "ROUTINE__INT_018_Product_Platform_EDrive_ED_Group",
+    "modelpath": [
+      "C:\\Sandbox\\INT_018_Product_Platform_EDrive\\SW\\STD\\Development\\ED_Group\\ED_Composition\\ED_Modules\\PFMStartED10\\PFMStartED10.slx"
+    ],
+    "sync": [
+      "C:\\Sandbox\\INT_018_Product_Platform_EDrive\\SW\\STD\\Development\\ED_Group"
+    ],
+    "matlab_version": "2017b"
+  },
+  {
     "name": "ROUTINE__X01841_DAG_EVA2_CP",
     "modelpath": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\CplOpP02\\CplOpP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\CtrlSwP02\\CtrlSwP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\FreezeFrameP02\\FreezeFrameP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\HistogramP10\\HistogramP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\InitPosP02\\InitPosP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\InputP02\\InputP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\InputP10\\InputP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\MainP10\\MainP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\NVMReadP02\\NVMReadP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\NVMReadP10\\NVMReadP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\NVMWriteP02\\NVMWriteP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\NVMWriteP10\\NVMWriteP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PFMEndP02\\PFMEndP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PFMEndP10\\PFMEndP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PFMStartP02\\PFMStartP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PFMStartP10\\PFMStartP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PosCtrlP02\\PosCtrlP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\SpdCtrlP02\\SpdCtrlP02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\SvcJobP10\\SvcJobP10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\VltOutP02\\VltOutP02.slx"
+      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PosCtrlP02\\PosCtrlP02.slx"
     ],
     "sync": [
       "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP"
     ],
     "matlab_version": "2017b"
-  },
-  {
-    "name": "ROUTINE__X01841_DAG_EVA2_CPS",
-    "modelpath": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\BckUpFcnS02\\BckUpFcnS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\DcplCluStateS02\\DcplCluStateS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\MainS02\\MainS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\NVMReadS02\\NVMReadS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\NVMWriteS02\\NVMWriteS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\PFMEndS02\\PFMEndS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\PFMStartS02\\PFMStartS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\PosCorrS02\\PosCorrS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\PosMonS02\\PosMonS02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS\\CPS_Composition\\CPS_Modules\\SvcJobS02\\SvcJobS02.slx"
-    ],
-    "sync": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CPS"
-    ],
-    "matlab_version": "2017b"
-  },
-  {
-    "name": "ROUTINE__X01841_DAG_EVA2_SI",
-    "modelpath": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SI\\SI_Composition\\SI_Modules\\PFMEndI02\\PFMEndI02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SI\\SI_Composition\\SI_Modules\\PFMStartI02\\PFMStartI02.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SI\\SI_Composition\\SI_Modules\\SigCondI02\\SigCondI02.slx"
-    ],
-    "sync": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SI"
-    ],
-    "matlab_version": "2017b"
-  },
-  {
-    "name": "ROUTINE__X01841_DAG_EVA2_SO",
-    "modelpath": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\PFMEndO10\\PFMEndO10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\PFMStartO10\\PFMStartO10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\StQualO10\\StQualO10.slx",
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\TestBenchO10\\TestBenchO10.slx"
-    ],
-    "sync": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\SO"
-    ],
-    "matlab_version": "2017b"
-  },
-  {
-    "name": "ROUTINE__X01948_AUDI_Quattro_SC",
-    "modelpath": [
-      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMEndS10\\PFMEndS10.slx",
-      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\PFMStartS10\\PFMStartS10.slx",
-      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC\\SC_Composition\\SC_Modules\\SigCondV10\\SigCondV10.slx"
-    ],
-    "sync": [
-      "C:\\Sandbox\\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\\SW\\Development\\SC"
-    ],
-    "matlab_version": "2017b"
   }
 ]
+
