@@ -35,9 +35,6 @@ class PrepRunStage:
         """Prepares the run about to happen"""
         current_run = self.current_run
         logger.info("Preparing next run: {}".format(current_run['name']))
-        logger.info("Searching for project: {} on server: {}".format(current_run['name'], global_config.CURRENT_SERVER))
-        SiAdapter().set_server_for_project(current_run)
-        logger.info("Switching to server: {}".format(global_config.CURRENT_SERVER))
         with open(INPUT_JSON_SYNC_DIFF, 'w') as current_run_file:
             json.dump(current_run, current_run_file)
 
