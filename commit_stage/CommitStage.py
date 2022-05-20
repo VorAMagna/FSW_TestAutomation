@@ -1,7 +1,7 @@
 import json
 from global_config import INPUT_JSON_SYNC_DIFF, SI_ISSUE_ID, \
-    SI_CHANGE_PACKAGE_DESCRIPTION, MXAM_ACTIVE, MXRAY_ACTIVE, COMMIT_CHKIN, NO_JSON_CHKIN
-
+    SI_CHANGE_PACKAGE_DESCRIPTION, MXAM_ACTIVE, MXRAY_ACTIVE, COMMIT_CHKIN, NO_JSON_CHKIN, SI_ISSUE_ID_IALM
+import global_config
 from test_stage.MxamArtifactPathGenerator import MxamArtifactPathGenerator
 from test_stage.MxrayArtifactPathGenerator import MxrayArtifactPathGenerator
 from test_stage.FswTestAutomationPathGenerator import \
@@ -43,7 +43,7 @@ class CommitStage:
         wanted_change_packages = [
             change_package
             for change_package in change_packages
-            if change_package.full_id.startswith(SI_ISSUE_ID)
+            if change_package.full_id.startswith(SI_ISSUE_ID) or change_package.full_id.startswith(SI_ISSUE_ID_IALM)
         ]
 
         # if there are no change packages in the list
@@ -73,8 +73,9 @@ class CommitStage:
         """
         if COMMIT_CHKIN:
             for model in self.current_run_inputs['modelpath']:
-                SiAdapter().set_server_for_project(model)
+                SiAdapter().set_server_for_project()
                 self.mks_api = SiAdapter()
+                self.manage_change_packages()
                 if MXAM_ACTIVE:
                     logger.info(f"mxam report si_checkin for: {model}")
                     self.check_in_model(MxamArtifactPathGenerator(model),

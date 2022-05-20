@@ -1,13 +1,13 @@
 import re
 
-import global_config
 from mks_api.etc.mks_api_tools import get_args
+import global_config
 from mks_api.etc.MksAdapterBase import MksAdapterBase
+from mks_api.si.SiServerHandler import SiServerHandler
 
 
 class SiAdapterBase(MksAdapterBase):
     """The basic less abstracted functions lay here"""
-
     def __init__(self):
         """
         :param servername: the name of the server defined in the list of servers
@@ -16,6 +16,7 @@ class SiAdapterBase(MksAdapterBase):
         :param hostname:
         :param port:
         """
+
         super().__init__("si")
 
     def _raw_view_sandbox(self, path: str):
@@ -36,7 +37,7 @@ class SiAdapterBase(MksAdapterBase):
     def _raw_check_in(self, filepath, cp_id, **kwargs):
         raw_response_str = self.cmd(
             "ci",
-            f"{get_args('no', cpid=cp_id, **kwargs)} {filepath}")
+            f"{get_args('no', cpid=cp_id,**kwargs)} {filepath}")
 
         return raw_response_str
 
@@ -47,8 +48,8 @@ class SiAdapterBase(MksAdapterBase):
         :type cp_id: str
         """
         raw_response_str = self.cmd("closecp",
-                                    f"{get_args('noconfirm', 'yes', **kwargs)} "
-                                    f"{cp_id}")
+                                  f"{get_args('noconfirm', 'yes', **kwargs)} "
+                                  f"{cp_id}")
 
         return raw_response_str
 
@@ -83,14 +84,14 @@ class SiAdapterBase(MksAdapterBase):
     def _raw_add(self, filepath, change_package_id, **kwargs):
         """adds a file to a si sandbox"""
 
-        arguments = f"{get_args('no', cpid=change_package_id, **kwargs)} " \
+        arguments = f"{get_args('no' ,cpid=change_package_id, **kwargs)} " \
                     f"{filepath}"
 
         raw_response_str = self.cmd("add", arguments)
 
         return raw_response_str
 
-    def set_server_for_project(self, current_run):
+    def set_server_for_project(self):
         """Searches on the current server for the project.
         If not found search on other server"""
         projects = self.get_projects_on_server().split("\n")
@@ -104,46 +105,21 @@ class SiAdapterBase(MksAdapterBase):
             if reg_mks is not None:
                 l_mks.append(reg_mks.group())
 
-        print(current_run['modelpath'][0])
-        current_project = re.findall(r'([A-Z]\w+)', str(current_run['modelpath'][0]))[1]
+        #print(global_config.current_model)
+        current_project = re.findall(r'([A-Z]\w+)', str(global_config.current_model))[1]
 
-        if current_project in l_ialm:
-            global_config.CURRENT_SERVER = 'MPT_StValentin'
-        elif current_project in l_mks:
-            global_config.CURRENT_SERVER = 'MPT_Lannach'
+        if global_config.CURRENT_SERVER == 'MPT_StValentin':
+            if current_project in l_ialm:
+                global_config.CURRENT_SERVER = 'MPT_StValentin'
+            else:
+                global_config.CURRENT_SERVER = 'MPT_Lannach'
+                SiServerHandler.reset_instance()
+
+        elif global_config.CURRENT_SERVER == 'MPT_Lannach':
+            if current_project in l_mks:
+                global_config.CURRENT_SERVER = 'MPT_Lannach'
+            else:
+                global_config.CURRENT_SERVER = 'MPT_StValentin'
+                SiServerHandler.reset_instance()
         else:
-            return
-
-
-if __name__ == '__main__':
-    adapter = SiAdapterBase()
-    host = adapter.server_handler.get_hostname()
-    port = adapter.server_handler.get_port()
-    args = get_args(hostname=host, port=port, password=';CreatinOverflow11')
-    print(args)
-    projects_valentin = adapter.cmd("projects", args)
-    projects_valentin = projects_valentin.split("\n")
-    #projects_filtered = list(filter(lambda v: re.match("(?<=/Projects/).*?(?=/)", v), projects_valentin[1:]))
-
-    l = list()
-    for s in projects_valentin:
-        reg = re.match("^(?<=\'/Projects/).*?(?=/)", s)
-        reg1 = re.search(r'/Projects/(.*?)/', s)
-        if reg1 is not None:
-            l.append(reg1.group(1))
-        print(reg)
-
-    print("Switch servers:")
-    adapter.server_handler.switch('MPT_Lannach')
-    host = adapter.server_handler.get_hostname()
-    port = adapter.server_handler.get_port()
-    args = get_args(hostname=host, port=port)
-    print(args)
-    projects_lannach = adapter.cmd("projects", args)
-    projects_lannach = projects_lannach.split("\n")
-
-    print("Done")
-
-
-
-
+            raise Exception('Finding server for project Error')

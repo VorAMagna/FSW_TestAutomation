@@ -1,5 +1,5 @@
 import re
-from global_config import MATLAB_2017B_PATH, \
+from global_config import MATLAB_2015B_PATH, MATLAB_2017B_PATH, \
     DEFAULT_MATLAB_VERSION
 
 from diagnostics.fsw_test_automation_logger import logger
@@ -34,7 +34,7 @@ class MatlabVersionHandler:
             self.matlab_path = MATLAB_2017B_PATH
         elif version == "2015b":
             self.version = "2015b"
-            #self.matlab_path = MATLAB_2015B_PATH
+            self.matlab_path = MATLAB_2015B_PATH
         elif version == "2019b":
             self.version = "2019b"
             #self.matlab_path = MATLAB_2019B_PATH

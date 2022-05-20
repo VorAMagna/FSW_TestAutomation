@@ -65,3 +65,89 @@ hook: mxam_hookBatchPreRun
             jobUid: '6a726683-d1e6-4945-9055-b7ea7d6006b5'
         resultLink: 'http://127.0.0.1:10117/result?jobUid=6a726683-d1e6-4945-9055-b7ea7d6006b5'
 
+Description in the Autodoc block is too short!
+InputSL01/dTrqRampOutSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/dTrqRampOutSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/disPreCtrlSlip/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/disPreCtrlSlip_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/enActDmp/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/enActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nAxleMaxSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nAxleMaxSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nAxleMinSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nAxleMinSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nEmMainShftLvl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nMainShaft/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nMainShaft_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/nWhlSpdAvg/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/selStiffnessActDmp/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/selStiffnessActDmp_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/selStiffnessSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/selStiffnessSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/stSlipCtrlReq/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/stSlipCtrlReq_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqDsReq/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqDsReqOffs/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqDsReqOffs_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqDsReq_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMaxSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMaxSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMaxSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMaxSpdCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMinSlipCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMinSlipCtrl_QF/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMinSpdCtrl/Autodoc1
+Description in the Autodoc block is too short!
+InputSL01/trqMinSpdCtrl_QF/Autodoc1
+~~~Reporting~~~
+MXAM is exporting the report...
+      type: 'ExportResponse'
+    jobUid: '6a726683-d1e6-4945-9055-b7ea7d6006b5'
+    export: 'true'
+      file: 'C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SL_Group\SL_Composition\SL_Modules\InputSL01\InputSL01_MXAM_Report.xml'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The analysis has finished with overall result: Failed 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hook: mxam_hookBatchPostRun
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SL_Group\SL_Composition\SL_Modules\InputSL01\InputSL01.slx
+~~~Postprocessing~~~
+hook: mxam_hookBatchPostExecution
+Overall result is 'Aborted' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SL_Group\SL_Composition\SL_Modules\InputSL01\InputSL01.slx
+Overall result is 'Failed' for the following artifacts:
+C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SL_Group\SL_Composition\SL_Modules\InputSL01\InputSL01.slx
+~~~Closing~~~
+Tearing down MXAM Drive...
+Closing MXAM Drive...

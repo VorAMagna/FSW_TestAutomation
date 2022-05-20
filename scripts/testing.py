@@ -13,7 +13,7 @@ server_handler.switch('MPT_Lannach')
 
 
 lannach_file = SiMember(r'C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modules\InputC02\InputC02.mdl')
-#lannach_file.submit(cp, 'Updated!')
+lannach_file.submit(cp, 'Updated!')
 
 server_handler.switch('MPT_StValentin')
 

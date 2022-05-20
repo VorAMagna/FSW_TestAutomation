@@ -1,1 +1,1 @@
-{"evals": ["MXAM_MXRAY_BATCHCONFIG_FILEPATH = 'C:\\Sandbox\\FSW_TestAutomation\\matlab_layer\\matlab_communication\\mxam_mxray_batchconfig.json'", "ExecuteBatch_MXAM"]}
+{"evals": ["MODELS_TO_EXCEPT_FILEPATH = 'C:\\Sandbox\\FSW_TestAutomation\\matlab_layer\\matlab_communication\\mxray_models_to_except.json'", "PostProcessing_MXRAY"]}

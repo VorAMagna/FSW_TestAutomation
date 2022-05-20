@@ -10,8 +10,14 @@ Used for generating an incomplete config for modules to be tested.
 # -------------------------------------------------------------------------------------------------------
 # Paths so be searched through recursively for modules
 SEARCH_CONFIG = [
-    (r"C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\SL_Group",
-     "ROUTINE_INT_018_PP_SL_Group")
+    (r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC",
+     "ROUTINE_X01948_AUDI_Quattro_CC"),
+(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC",
+     "ROUTINE_X01948_AUDI_Quattro_SC"),
+(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\VC",
+     "ROUTINE_X01948_AUDI_Quattro_VC"),
+(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SO",
+     "ROUTINE_X01948_AUDI_Quattro_SO"),
 
 ]
 DEFAULT_MATLAB_VERSION = "2017b"
@@ -19,8 +25,8 @@ DEFAULT_MATLAB_VERSION = "2017b"
 # Search patterns that tell the search ALGORITHM Which modules are to be searched for
 
 #MODULE_SPECIFIERS = ['*.mdl']
-MODULE_SPECIFIERS = ['*.slx']
-#MODULE_SPECIFIERS = ['*.mdl', '*.slx']
+#MODULE_SPECIFIERS = ['*.slx']
+MODULE_SPECIFIERS = ['*.mdl', '*.slx']
 # -------------------------------------------------------------------------------------------------------
 
 # If paths which contain these substrings exist, they will be removed

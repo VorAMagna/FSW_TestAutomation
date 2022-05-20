@@ -1,0 +1,13 @@
+temp/* 
+matlab_layer/slprj/*
+matlab_layer/logs/*
+*.log
+venv/*
+*.mat
+*.asv
+.idea/
+.vscode
+*__pycache__*
+*.xlsx
+*.pyc  
+

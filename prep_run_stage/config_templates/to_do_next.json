@@ -1,23 +1,12 @@
 [
   {
-    "name": "ROUTINE__INT_018_Product_Platform_EDrive_ED_Group",
+    "name": "ROUTINE_PORSC_SO",
     "modelpath": [
-      "C:\\Sandbox\\INT_018_Product_Platform_EDrive\\SW\\STD\\Development\\ED_Group\\ED_Composition\\ED_Modules\\PFMStartED10\\PFMStartED10.slx"
+      "C:\\Sandbox\\X01993_PORSC_PL73_HO_PA_Actimax\\SW\\Development\\SO\\SO_Composition\\SO_Modules\\StQualO10\\StQualO10.slx"
     ],
     "sync": [
-      "C:\\Sandbox\\INT_018_Product_Platform_EDrive\\SW\\STD\\Development\\ED_Group"
-    ],
-    "matlab_version": "2017b"
-  },
-  {
-    "name": "ROUTINE__X01841_DAG_EVA2_CP",
-    "modelpath": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP\\CP_Composition\\CP_Modules\\PosCtrlP02\\PosCtrlP02.slx"
-    ],
-    "sync": [
-      "C:\\Sandbox\\X01841_DAG_EVA2_Disconnect_Flex4DU\\SW\\Development\\CP"
+      "C:\\Sandbox\\X01993_PORSC_PL73_HO_PA_Actimax\\SW\\Development\\SO"
     ],
     "matlab_version": "2017b"
   }
 ]
-

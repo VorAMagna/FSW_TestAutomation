@@ -14,7 +14,7 @@ SYNC_STAGE_ACTIVE = True  # default: True; False if CHECKPOINT has to be tested 
 TEST_STAGE_ACTIVE = True  # default: True; (TEST)
 POST_PROCESSING_STAGE_ACTIVE = True  # default: True; (GENERATE REPORTS)
 
-DIFF_STAGE_OVERRIDE = False  # default: False; Retest
+DIFF_STAGE_OVERRIDE = True  # default: False; Retest
 COMMIT_STAGE_OVERRIDE = False  # default: False
 TEST_ONLY = False  # default: False; no MKS, no DIFF (iALM server)
 
@@ -27,7 +27,7 @@ PROJ_ROOT = Path(__file__).parent
 matlab_layer_folder = "matlab_layer"
 input_folder = "prep_run_stage"
 
-#MATLAB_2015B_PATH = os.environ['matlab15']
+MATLAB_2015B_PATH = os.environ['matlab15']
 MATLAB_2017B_PATH = os.environ['matlab17']
 # MATLAB_2019B_PATH = os.environ['matlab19']
 
@@ -40,6 +40,7 @@ NO_JSON_CHKIN = True  # default: True; json should not be checked in. This varia
 MEMBER_REVISION_OVERRIDE = False  # default: False; -> slower (uses Matlab engine) but more accurate
 
 CURRENT_SERVER = 'MPT_Lannach' # 'MPT_StValentin'
+current_model = ""
 
 if FUSI:
     MXAM_GUIDELINES = ('Only_User_Checks', 'MISRA_TL_Selected_Checks', 'ISO26262_Selected_Checks')
@@ -124,6 +125,10 @@ MATLAB_EVAL_FILE = str(joinpath(PROJ_ROOT,
 if SI_ACTIVE:
     SI_ISSUE_ID = "2584860"
     SI_CHANGE_PACKAGE_DESCRIPTION = "MXAM/MXRAY Automated Tests"
+
+    SI_ISSUE_ID_IALM = "242926"
+
+# IALM issue id :
 
 # Test Stage Related
 BATCH_SIZE_LIMIT = 4
