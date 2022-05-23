@@ -10,14 +10,16 @@ Used for generating an incomplete config for modules to be tested.
 # -------------------------------------------------------------------------------------------------------
 # Paths so be searched through recursively for modules
 SEARCH_CONFIG = [
-    (r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC",
-     "ROUTINE_X01948_AUDI_Quattro_CC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC",
-     "ROUTINE_X01948_AUDI_Quattro_SC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\VC",
-     "ROUTINE_X01948_AUDI_Quattro_VC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SO",
-     "ROUTINE_X01948_AUDI_Quattro_SO"),
+    (r"C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CP",
+     "ROUTINE__X01841_DAG_EVA2_CP"),
+    (r"C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\CPS",
+     "ROUTINE__X01841_DAG_EVA2_CPS"),
+    (r"C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SI",
+     "ROUTINE__X01841_DAG_EVA2_SI"),
+    (r"C:\Sandbox\X01841_DAG_EVA2_Disconnect_Flex4DU\SW\Development\SO",
+     "ROUTINE__X01841_DAG_EVA2_SO"),
+    (r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC",
+     "ROUTINE__X01948_AUDI_Quattro_SC")
 
 ]
 DEFAULT_MATLAB_VERSION = "2017b"

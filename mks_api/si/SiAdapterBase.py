@@ -1,9 +1,9 @@
 import re
 
 from mks_api.etc.mks_api_tools import get_args
-import global_config
+from mks_api.etc.MksCommunication import MksCommunication
 from mks_api.etc.MksAdapterBase import MksAdapterBase
-from mks_api.si.SiServerHandler import SiServerHandler
+from mks_api.si.SiServers import SiServers
 
 
 class SiAdapterBase(MksAdapterBase):
@@ -16,7 +16,6 @@ class SiAdapterBase(MksAdapterBase):
         :param hostname:
         :param port:
         """
-
         super().__init__("si")
 
     def _raw_view_sandbox(self, path: str):
@@ -91,35 +90,3 @@ class SiAdapterBase(MksAdapterBase):
 
         return raw_response_str
 
-    def set_server_for_project(self):
-        """Searches on the current server for the project.
-        If not found search on other server"""
-        projects = self.get_projects_on_server().split("\n")
-        l_ialm = list()
-        l_mks = list()
-        for s in projects:
-            reg_ialm = re.search(r'/Projects/(.*?)/', s)
-            reg_mks = re.search(r'(?<=c:/MKS_Archiv/).*?(?=/)', s)
-            if reg_ialm is not None:
-                l_ialm.append(reg_ialm.group(1))
-            if reg_mks is not None:
-                l_mks.append(reg_mks.group())
-
-        #print(global_config.current_model)
-        current_project = re.findall(r'([A-Z]\w+)', str(global_config.current_model))[1]
-
-        if global_config.CURRENT_SERVER == 'MPT_StValentin':
-            if current_project in l_ialm:
-                global_config.CURRENT_SERVER = 'MPT_StValentin'
-            else:
-                global_config.CURRENT_SERVER = 'MPT_Lannach'
-                SiServerHandler.reset_instance()
-
-        elif global_config.CURRENT_SERVER == 'MPT_Lannach':
-            if current_project in l_mks:
-                global_config.CURRENT_SERVER = 'MPT_Lannach'
-            else:
-                global_config.CURRENT_SERVER = 'MPT_StValentin'
-                SiServerHandler.reset_instance()
-        else:
-            raise Exception('Finding server for project Error')

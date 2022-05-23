@@ -1,10 +1,8 @@
 import json
 from datetime import datetime
-
-import global_config
 from global_config import INPUT_GLOBAL_ROUTINE, INPUT_JSON_SYNC_DIFF, \
     FINISHED_MODELS_FILE
-from mks_api.si.SiAdapter import SiAdapter
+
 from diagnostics.fsw_test_automation_logger import logger
 
 ROUTINE_RUN_PREFIX = "ROUTINE__"
@@ -36,8 +34,6 @@ class PrepRunStage:
         """Prepares the run about to happen"""
         current_run = self.current_run
         logger.info("Preparing next run: {}".format(current_run['name']))
-
-        global_config.current_model = current_run['modelpath'][0]
         with open(INPUT_JSON_SYNC_DIFF, 'w') as current_run_file:
             json.dump(current_run, current_run_file)
 

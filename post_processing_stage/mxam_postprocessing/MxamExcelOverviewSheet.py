@@ -2,14 +2,14 @@ from excel.FswAutomationExcelSheetGenerator import \
     FswAutomationExcelSheetGenerator
 from excel.FswTestAutomationXlsxStyles import FswTestAutomationXlsxStyles
 from post_processing_stage.mxam_postprocessing.MxamReport import MxamReport
-from global_config import MXAM_DRIVE_PATH
+from global_config import TEST_ONLY
 
 
 def overview_data(report: MxamReport) -> list:
     return \
     [
         {
-            "name": f"{report.model_extension}_Version",
+            "name": "Model_Version",
             "value": report.model_revision,
         },
         {
@@ -23,10 +23,6 @@ def overview_data(report: MxamReport) -> list:
         {
             "name": "Report_Creation",
             "value": report.report_timestamp
-        },
-        {
-            "name": "MXAM_DRIVE_Version",
-            "value": MXAM_DRIVE_PATH.split('\\')[-1]
         }
     ]
 

@@ -4,7 +4,7 @@ from pathlib import Path
 
 from mks_api.si.SiAdapter import SiAdapter
 from mks_api.etc.exceptions.SiNoMemberException import SiNoMemberException
-import global_config
+
 from mks_api.si.SiChangePackage import SiChangePackage
 
 
@@ -19,11 +19,6 @@ class SiMember:
         :type change_package: SiChangePackage
         """
         self.filepath = filepath
-        self.mks_api = SiAdapter()
-
-
-        global_config.current_model = filepath
-        SiAdapter().set_server_for_project()
         self.mks_api = SiAdapter()
 
         try:

@@ -14,11 +14,10 @@ SYNC_STAGE_ACTIVE = True  # default: True; False if CHECKPOINT has to be tested 
 TEST_STAGE_ACTIVE = True  # default: True; (TEST)
 POST_PROCESSING_STAGE_ACTIVE = True  # default: True; (GENERATE REPORTS)
 
-DIFF_STAGE_OVERRIDE = True  # default: False; Retest
+DIFF_STAGE_OVERRIDE = False  # default: False; Retest
 COMMIT_STAGE_OVERRIDE = False  # default: False
-TEST_ONLY = False  # default: False; no MKS, no DIFF (iALM server)
+TEST_ONLY = True  # default: False; no MKS, no DIFF (iALM server)
 
-MXAM_NEW_VERSION = False
 FUSI = True  # default: True; for new projects (iALM server)
 # -------------------------------------------------------------------------------------------------------
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -38,9 +37,6 @@ COMMIT_CHKIN = True  # default: True; a switch should be properly implemented to
 
 NO_JSON_CHKIN = True  # default: True; json should not be checked in. This variable should be deleted in the future!
 MEMBER_REVISION_OVERRIDE = False  # default: False; -> slower (uses Matlab engine) but more accurate
-
-CURRENT_SERVER = 'MPT_Lannach' # 'MPT_StValentin'
-current_model = ""
 
 if FUSI:
     MXAM_GUIDELINES = ('Only_User_Checks', 'MISRA_TL_Selected_Checks', 'ISO26262_Selected_Checks')
@@ -62,11 +58,7 @@ MXRAY_REPORT_EXCEL = ('Excel', '.xlsx', False)
 MXRAY_REPORT_HTML = ('NoHTML', '.html', False)  # When set to false there will be no html reports generated
 MXRAY_REPORT_XML = ('XML', '.xml', True) # XML Needs to be active for postprocessing
 
-if MXAM_NEW_VERSION:
-    MXAM_DRIVE_PATH = r'C:\OtherPrograms\MXAM_DRIVE_7_2_0'
-    #MXAM_DRIVE_PATH = r'C:\OtherPrograms\MXAM_DRIVE_7-3-0'
-else:
-    MXAM_DRIVE_PATH = r'C:\OtherPrograms\MXAM_DRIVE_5-1-0'
+MXAM_DRIVE_PATH = r'C:\OtherPrograms\MXAM_DRIVE_5-1-0'
 MXRAY_PATH = r'C:\Sandbox\Product_Group\SW\Development\FSW_Tools\mxray'
 FSW_TOOLS_PATH = r'C:\Sandbox\Product_Group\SW\Development\FSW_Tools'
 
@@ -125,10 +117,6 @@ MATLAB_EVAL_FILE = str(joinpath(PROJ_ROOT,
 if SI_ACTIVE:
     SI_ISSUE_ID = "2584860"
     SI_CHANGE_PACKAGE_DESCRIPTION = "MXAM/MXRAY Automated Tests"
-
-    SI_ISSUE_ID_IALM = "242926"
-
-# IALM issue id :
 
 # Test Stage Related
 BATCH_SIZE_LIMIT = 4

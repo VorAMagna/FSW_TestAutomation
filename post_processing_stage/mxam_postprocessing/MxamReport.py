@@ -35,7 +35,6 @@ class MxamReport(ReportType):
                                       ['artifacts']
                                       ['artifact']
                                       ['location'])
-        self.model_extension = self.path_generator.model_path.upper().split('.')[-1]
 
         if not TEST_ONLY:
             self.si_member_model = SiMember(self.path_generator.model_path)
@@ -68,7 +67,7 @@ class MxamReport(ReportType):
 
     @property
     def report_description(self):
-        return f"MXAM Report for {self.model_extension}-Model: {self.model_revision} and " \
+        return f"MXAM Report for Model: {self.model_revision} and " \
                f"DD: {self.data_dictionary_revision}."
 
     @property

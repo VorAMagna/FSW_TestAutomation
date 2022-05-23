@@ -5,7 +5,6 @@ from global_config import INPUT_JSON_SYNC_DIFF, MODELS_TO_TEST_FILE, \
     MXAM_ACTIVE, MXRAY_ACTIVE, TEST_ONLY, COMMIT_CHKIN
 
 from diff_stage.ModelDiffer import ModelDiffer
-from mks_api import SiAdapter
 from prep_run_stage.RunConfig import RunConfig
 from commit_stage.CommitStage import CommitStage
 from post_processing_stage.mxam_postprocessing.MxamReport import MxamReport
@@ -88,8 +87,6 @@ class DiffStage:
             elif not report_checked_in():
                 logger.info(f"report up to date, si_checkin: {model}")
                 commit_stage = CommitStage.instance()
-                commit_stage.mks_api = SiAdapter()
-                commit_stage.manage_change_packages()
                 commit_stage.check_in_model(path_gen(model),
                                             report_class)
                 return_bool = False

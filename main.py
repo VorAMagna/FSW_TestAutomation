@@ -37,7 +37,6 @@ from diagnostics.ExceptionCounter import exception
 
 def run_config():
 
-
     """Run a prepared config"""
     if not TEST_ONLY:
 
@@ -47,8 +46,8 @@ def run_config():
                 sync = SyncStage()
                 sync.sync_sandboxes()
             except Exception:
-                exception["sync_stage"] = exception["sync_stage"] + 1
                 raise SyncStageException()
+                exception["sync_stage"] = exception["sync_stage"] + 1
 
         logger.info("Diff Stage: ")
 
@@ -58,8 +57,8 @@ def run_config():
             diff.export_diff()
         except Exception:
             print("ERROR: DIFF STAGE!")
-            exception["diff_stage"] = exception["diff_stage"] + 1
             raise DiffStageException()
+            exception["diff_stage"] = exception["diff_stage"] + 1
 
         if not diff.data_to_export['modelpath'] and not RunConfig().override_commit:
             logger.info("All models in run are up to date. Going to next run.")
@@ -75,8 +74,8 @@ def run_config():
             test_stage()
         except Exception:
             print("ERROR: TEST STAGE!")
-            exception["test_stage"] = exception["test_stage"] + 1
             raise TestStageException()
+            exception["test_stage"] = exception["test_stage"] + 1
 
     if POST_PROCESSING_STAGE_ACTIVE:
         if MXAM_ACTIVE:
@@ -86,8 +85,8 @@ def run_config():
                 mxam_post.execute()
             except Exception:
                 print("ERROR: POSTPROCESS MXAM STAGE!")
-                exception["MXAMpostprocess_stage"] = exception["MXAMpostprocess_stage"] + 1
                 raise PostProcessExceptionMxam()
+                exception["MXAMpostprocess_stage"] = exception["MXAMpostprocess_stage"] + 1
 
         if MXRAY_ACTIVE:
             logger.info("Postprocess Stage: MXRAY")
@@ -95,8 +94,8 @@ def run_config():
                 mxray_postprocess_stage()
             except Exception:
                 print("ERROR: POSTPROCESS MXRAY STAGE!")
-                exception["MXRAYpostprocess_stage"] = exception["MXRAYpostprocess_stage"] + 1
                 raise PostProcessExceptionMxray()
+                exception["MXRAYpostprocess_stage"] = exception["MXRAYpostprocess_stage"] + 1
 
     # Commit stage if not overridden, is handled by the DiffStage logic
     if not TEST_ONLY:
