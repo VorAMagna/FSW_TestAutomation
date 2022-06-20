@@ -110,8 +110,7 @@ def run_config():
             if exception[key] > 0:
                 print(key, "has", exception[key], "error(s)!")
 
-
-if __name__ == '__main__':
+def main():
     prep_run_stage = PrepRunStage()
     matlab_version_control = MatlabVersionHandler.get_instance()
 
@@ -148,3 +147,6 @@ if __name__ == '__main__':
         sys.exit(1)
 
     logger.info("All runs are through")
+
+if __name__ == '__main__':
+    main()

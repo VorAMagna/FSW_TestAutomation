@@ -27,7 +27,7 @@ PROJ_ROOT = Path(__file__).parent
 matlab_layer_folder = "matlab_layer"
 input_folder = "prep_run_stage"
 
-MATLAB_2015B_PATH = os.environ['matlab15']
+MATLAB_2015B_PATH = ''#os.environ['matlab15']
 MATLAB_2017B_PATH = os.environ['matlab17']
 # MATLAB_2019B_PATH = os.environ['matlab19']
 
