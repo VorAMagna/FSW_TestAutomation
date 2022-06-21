@@ -131,6 +131,15 @@ class Panel(wx.Panel):
             e.Veto()
 
     def run_tests(self, e):
+        import os, stat
+
+        os.chmod(r"C:\Users\alexvord\Documents\FSW_TestAutomation\diagnostics", stat.S_IWRITE)
+
+        for root, dirs, files in os.walk(r'C:\Users\alexvord\Documents\FSW_TestAutomation\diagnostics'):
+            for fname in files:
+                full_path = os.path.join(root, fname)
+                os.chmod(full_path, stat.S_IWRITE)
+
         self.console.WriteText("ClickedRun\n")
         self.console.WriteText(str(self.current_project) + '\n')
 
@@ -144,6 +153,10 @@ class Panel(wx.Panel):
         with open(global_config.INPUT_GLOBAL_ROUTINE, 'w') as current_run_file:
             json.dump(SEARCH_CONFIG, current_run_file)
 
+        global_config.COMMIT_STAGE_OVERRIDE = a['RETEST']
+        global_config.DIFF_STAGE_OVERRIDE = a['RETEST']
+        global_config.FUSI = a['FUSI']
+        global_config.TEST_ONLY = a['TEST_ONLY']
         main.main()
 
 

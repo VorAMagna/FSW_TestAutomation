@@ -35,6 +35,8 @@ from prep_run_stage.RunConfig import RunConfig
 from diagnostics.fsw_test_automation_logger import logger
 from diagnostics.ExceptionCounter import exception
 
+KILL_SWITCH = KILL_SWITCH
+
 def run_config():
 
 
@@ -111,6 +113,7 @@ def run_config():
                 print(key, "has", exception[key], "error(s)!")
 
 def main():
+    global KILL_SWITCH
     prep_run_stage = PrepRunStage()
     matlab_version_control = MatlabVersionHandler.get_instance()
 
