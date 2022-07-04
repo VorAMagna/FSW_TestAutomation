@@ -18,7 +18,7 @@ from diagnostics.fsw_test_automation_logger import logger
 from diagnostics.ExceptionCounter import exception
 
 
-@Singleton
+#@Singleton
 class CommitStage:
     def __init__(self):
         self.mks_api = SiAdapter()

@@ -38,6 +38,7 @@ class PrepRunStage:
         logger.info("Preparing next run: {}".format(current_run['name']))
 
         global_config.current_model = current_run['modelpath'][0]
+        SiAdapter().set_server_for_project()
         with open(INPUT_JSON_SYNC_DIFF, 'w') as current_run_file:
             json.dump(current_run, current_run_file)
 

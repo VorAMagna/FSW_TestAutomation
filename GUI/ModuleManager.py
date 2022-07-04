@@ -4,10 +4,11 @@ from wx.lib.agw.customtreectrl import TR_AUTO_CHECK_CHILD, TR_ELLIPSIZE_LONG_ITE
 import json
 from pathlib import Path
 from libs.common import joinpath
-# from global_config import PROJECT_CONFIGS_PATH
+from global_config import PROJ_ROOT
 from event_identifiers import *
 
-path = r'C:\Sandbox\FSW_TestAutomation\prep_run_stage\configs'
+path = r'C:\Users\svc_mxam\Desktop\FSW_TestAutomation\prep_run_stage\configs'
+
 
 
 class ModuleManager:
@@ -34,7 +35,7 @@ class ModuleManager:
 
     def parse_modules(self):
         CONFIG_ROUTINE = joinpath(
-            path, self.project + ".json"
+            PROJ_ROOT, 'prep_run_stage', 'configs', self.project + ".json"
         )
         with open(CONFIG_ROUTINE, 'r') as j:
             self.config_content = json.loads(j.read())
@@ -81,7 +82,7 @@ class ModuleManager:
                 run_configs.append(
                     {
                         "name": routine,
-                        "modelpath": config_modules['modelpath'],
+                        "modelpath": run_modules,
                         "sync": config_modules['sync'],
                         "matlab_version": config_modules['matlab_version']
                     }

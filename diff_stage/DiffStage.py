@@ -87,7 +87,8 @@ class DiffStage:
                 return_bool = True
             elif not report_checked_in():
                 logger.info(f"report up to date, si_checkin: {model}")
-                commit_stage = CommitStage.instance()
+                #commit_stage = CommitStage.instance()
+                commit_stage = CommitStage()
                 commit_stage.mks_api = SiAdapter()
                 commit_stage.manage_change_packages()
                 commit_stage.check_in_model(path_gen(model),

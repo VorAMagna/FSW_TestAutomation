@@ -15,10 +15,10 @@ class GlobalConfigSetting:
         self.append_to_sizer()
 
     def init_checkboxes(self):
-        self.checkboxes_dict['TEST_ONlY'] = wx.CheckBox(self.parent, wx.ID_ANY, u"TEST_ONLY", wx.DefaultPosition, wx.DefaultSize, 0)
-        self.checkboxes_dict['FUSI'] = wx.CheckBox(self.parent, wx.ID_ANY, u"FUSI", wx.DefaultPosition, wx.DefaultSize, 0)
+        self.checkboxes_dict['SYNC'] = wx.CheckBox(self.parent, wx.ID_ANY, u"SYNC", wx.DefaultPosition, wx.DefaultSize, 0)
         self.checkboxes_dict['RETEST'] = wx.CheckBox(self.parent, wx.ID_ANY, u"RETEST", wx.DefaultPosition, wx.DefaultSize, 0)
         self.checkboxes_dict['RETEST'].SetValue(True)
+        self.checkboxes_dict['SYNC'].SetValue(True)
 
     def append_to_sizer(self):
         for chk in self.checkboxes_dict.values():

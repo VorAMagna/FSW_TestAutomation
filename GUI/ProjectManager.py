@@ -1,9 +1,13 @@
 import wx
 import json
-# from global_config import PROJECT_CONFIGS_PATH
+from global_config import PROJ_ROOT
 from event_identifiers import *
+from libs.common import joinpath
 
-path = r'C:\Sandbox\FSW_TestAutomation\prep_run_stage\configs\project_list.json'
+#path = r'C:\Users\svc_mxam\Desktop\FSW_TestAutomation\prep_run_stage\configs\project_list.json'
+path = joinpath(
+            PROJ_ROOT, 'prep_run_stage', 'configs', "project_list.json"
+        )
 
 
 class ProjectManager(wx.Choice):

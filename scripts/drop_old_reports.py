@@ -11,7 +11,8 @@ DROP_ROOT = ["C:\Sandbox\Product_Group\SW\Development\CC\CC_Composition\CC_Modul
 START_PREFIXES = ["*MXAM-Report*", "*MXRAY-Report*"]
 
 if __name__ == '__main__':
-    commit_stage = CommitStage.instance()
+    #commit_stage = CommitStage.instance()
+    commit_stage = CommitStage()
     commit_stage.manage_change_packages()
     cp = commit_stage.change_package
 

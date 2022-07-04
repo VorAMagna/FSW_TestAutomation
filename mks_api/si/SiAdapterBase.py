@@ -106,7 +106,7 @@ class SiAdapterBase(MksAdapterBase):
                 l_mks.append(reg_mks.group())
 
         #print(global_config.current_model)
-        current_project = re.findall(r'([A-Z]\w+)', str(global_config.current_model))[1]
+        current_project = re.findall(r'([A-Z](\w|-)+)', str(global_config.current_model))[1][0]
 
         if global_config.CURRENT_SERVER == 'MPT_StValentin':
             if current_project in l_ialm:
@@ -123,3 +123,4 @@ class SiAdapterBase(MksAdapterBase):
                 SiServerHandler.reset_instance()
         else:
             raise Exception('Finding server for project Error')
+        #SiServerHandler.reset_instance()

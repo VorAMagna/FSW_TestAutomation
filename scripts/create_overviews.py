@@ -45,7 +45,8 @@ run_stage = PrepRunStage()
 runs_list = run_stage.global_runs_list
 
 # Get standard change package object for checkins
-commit_stage = CommitStage.instance()
+#commit_stage = CommitStage.instance()
+commit_stage = CommitStage()
 commit_stage.manage_change_packages()
 cp = commit_stage.change_package
 

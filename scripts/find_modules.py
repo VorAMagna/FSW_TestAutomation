@@ -10,15 +10,10 @@ Used for generating an incomplete config for modules to be tested.
 # -------------------------------------------------------------------------------------------------------
 # Paths so be searched through recursively for modules
 SEARCH_CONFIG = [
-    (r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\CC",
-     "ROUTINE_X01948_AUDI_Quattro_CC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SC",
-     "ROUTINE_X01948_AUDI_Quattro_SC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\VC",
-     "ROUTINE_X01948_AUDI_Quattro_VC"),
-(r"C:\Sandbox\X01948_AUDI_Quattro_Ultra_NAR_Coupling_MSE_I\SW\Development\SO",
-     "ROUTINE_X01948_AUDI_Quattro_SO"),
-
+    (r"C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\ED_Group",
+     "ROUTINE_INT_018_Product_Platform_ED_Group"),
+(r"C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\HG_Group",
+     "ROUTINE_INT_018_Product_Platform_HG_Group")
 ]
 DEFAULT_MATLAB_VERSION = "2017b"
 
@@ -61,9 +56,9 @@ NOT_WANTED = ['MagnaLib',
 
 def is_wanted_module(path: str or Path):
     """Checks if a path is not wanted
-    :return: True if the path contains an not wanted substring"""
+    :return: True if the path contains an not wanted substring and if folder name equals filename"""
     for not_wanted in NOT_WANTED:
-        if not_wanted in str(path):
+        if not_wanted in str(path) or Path(path).parent.name != Path(path).name[:-4]:
             return False
     return True
 

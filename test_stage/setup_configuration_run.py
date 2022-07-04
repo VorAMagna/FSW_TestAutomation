@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Note, if the file name is changed here it also needs to be changed
 # in the matlab scripts
-
+import global_config
 from test_stage.MxamArtifactPathGenerator import MxamArtifactPathGenerator
 from test_stage.MxrayArtifactPathGenerator import MxrayArtifactPathGenerator
 from global_config import MXAM_REPORT_XLSX, MXAM_REPORT_HTML, MXAM_REPORT_XML, \
@@ -62,6 +62,14 @@ def generate_artifacts(modelpaths) -> dict:
             warnings.warn("The Model " + modelpath +
                           "does not exist!... Skipping")
             continue
+
+        model_extension = modelpath[-3:]
+        global_config.FUSI = True if model_extension == 'slx' else False
+        if global_config.FUSI:
+            MXAM_GUIDELINES = ('Only_User_Checks', 'MISRA_TL_Selected_Checks', 'ISO26262_Selected_Checks')
+        else:
+            MXAM_GUIDELINES = ('Only_User_Checks', 'MISRA_TL_Selected_Checks')
+
         modelpath = Path(modelpath)
         mxray_paths = MxrayArtifactPathGenerator(modelpath)
         mxam_paths = MxamArtifactPathGenerator(modelpath)
@@ -74,6 +82,7 @@ def generate_artifacts(modelpaths) -> dict:
             mxam_report_types.append(MXAM_REPORT_HTML[0])
         if MXAM_REPORT_XML[2]:
             mxam_report_types.append(MXAM_REPORT_XML[0])
+
 
         complete_artifacts['model' + str(artifact_count)] = {
             "model_name": model_name,
