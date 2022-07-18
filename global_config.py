@@ -15,7 +15,7 @@ TEST_STAGE_ACTIVE = True  # default: True; (TEST)
 POST_PROCESSING_STAGE_ACTIVE = True  # default: True; (GENERATE REPORTS)
 
 DIFF_STAGE_OVERRIDE = True  # default: False; Retest
-COMMIT_STAGE_OVERRIDE = False  # default: False
+COMMIT_STAGE_OVERRIDE = True  # default: False
 TEST_ONLY = False  # default: False; no MKS, no DIFF (iALM server)
 
 MXAM_NEW_VERSION = False
@@ -123,12 +123,16 @@ MATLAB_EVAL_FILE = str(joinpath(PROJ_ROOT,
                                 "matlab_eval.json"))
 
 if SI_ACTIVE:
+    #Operckal
     SI_ISSUE_ID = "2584860"
     SI_CHANGE_PACKAGE_DESCRIPTION = "MXAM/MXRAY Automated Tests"
-
     SI_ISSUE_ID_IALM = "242926"
 
-# IALM issue id :
+    #Vordermaier
+    #SI_ISSUE_ID = "2584860"
+    #SI_CHANGE_PACKAGE_DESCRIPTION = "MXAM/MXRAY Automated Tests"
+    #SI_ISSUE_ID_IALM = "1743885"
+
 
 # Test Stage Related
 BATCH_SIZE_LIMIT = 4

@@ -2,9 +2,9 @@
 pipeline {
     agent { label 'LANWINNB4082_vladvojn'}
     environment {
-        proj_root = 'C:\\Sandbox\\Product_Group\\SW\\Development\\FSW_Tools\\FSW_TestAutomation'
-        script_path = "C:\\Sandbox\\Product_Group\\SW\\Development\\FSW_Tools\\FSW_TestAutomation\\main.py"
-        virtual_env = "${proj_root}\\venv\\Scripts\\activate"
+        proj_root = 'C:\\Sandbox\\FSW_TestAutomation'
+        script_path = "C:\\Sandbox\\FSW_TestAutomation\\main.py"
+        virtual_env = "${proj_root}\\venv\\Scripts\\activate.bat"
     }
     stages {
         stage('All In one Stage') {

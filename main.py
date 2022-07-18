@@ -35,8 +35,6 @@ from prep_run_stage.RunConfig import RunConfig
 from diagnostics.fsw_test_automation_logger import logger
 from diagnostics.ExceptionCounter import exception
 
-KILL_SWITCH = KILL_SWITCH
-
 def run_config():
 
 
@@ -103,7 +101,8 @@ def run_config():
     # Commit stage if not overridden, is handled by the DiffStage logic
     if not TEST_ONLY:
         if RunConfig().override_commit:
-            commit = CommitStage.instance()
+            #commit = CommitStage.instance()
+            commit = CommitStage()
             commit.commit_models()
         else:
             commit = DiffStage()

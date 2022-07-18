@@ -1,6 +1,5 @@
 import wx
 from event_identifiers import *
-import os
 
 class MenuBar(wx.MenuBar):
 
@@ -30,9 +29,8 @@ class MenuBar(wx.MenuBar):
     # ----------------------------------------------------------------------
     def on_open_directory(self, event):
         """"""
-        file_dialog = wx.FileDialog(self, "Choose a project config file:", wildcard="*.json")
-        if file_dialog.ShowModal() == wx.ID_OK:
-            path = file_dialog.GetPath()
-            file_name = os.path.splitext(file_dialog.GetFilename())[0]
-            self.parent.project_manager.add_project(file_name, path)
-        file_dialog.Destroy()
+        dlg = wx.DirDialog(self, message="Choose a sandbox")
+        if dlg.ShowModal() == wx.ID_OK:
+            project_name = dlg.GetPath().split('\\')[-1]
+            self.parent.project_manager.add_project(project_name, dlg.GetPath())
+        dlg.Destroy()

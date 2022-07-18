@@ -35,7 +35,6 @@ class Panel(wx.Panel):
         self.locale = wx.Locale(wx.LANGUAGE_ENGLISH)
         wx.Panel.__init__(self, parent)
         self.parent = parent
-        #self.SetBackgroundColour("gray")
 
         self.run_button = None
         self.project_list = None
@@ -150,8 +149,6 @@ class Panel(wx.Panel):
             e.Veto()
 
     def run_tests(self, e):
-
-
         joinpath(global_config.PROJ_ROOT, 'diagnostics')
         os.chmod(joinpath(global_config.PROJ_ROOT, 'diagnostics'), stat.S_IWRITE)
 
@@ -160,13 +157,7 @@ class Panel(wx.Panel):
                 full_path = os.path.join(root, fname)
                 os.chmod(full_path, stat.S_IWRITE)
 
-        #self.console.WriteText("ClickedRun\n")
-        #self.console.WriteText(str(self.current_project) + '\n')
-
         a = self.checkboxes.get_checkboxes_values()
-        #self.console.WriteText(str(a) + '\n')
-
-
         self.module_manager.get_checked_items()
         SEARCH_CONFIG = self.module_manager.create_global_routine()
 
@@ -197,6 +188,9 @@ class Panel(wx.Panel):
         self.parent.Bind(wx.EVT_MENU, self.quit_app, id=ID_MENU_QUIT)
         self.parent.Bind(wx.EVT_BUTTON, self.run_tests, id=ID_RUN_PROGRAM)
         self.parent.Bind(wx.EVT_CHOICE, self.set_current_project, id=ID_SELECT_PROJECT)
+        self.parent.Bind(wx.EVT_CONTEXT_MENU, self.project_manager.on_show_popup, id=RIGHT_CLICK_PROJECT_TREE)
+        self.Bind(wx.EVT_MENU, self.project_manager.add_module, id=ID_ADD_MODULE)
+        self.Bind(wx.EVT_MENU, self.project_manager.delete_module, id=ID_DELETE_MODULE)
 
 
 if __name__ == '__main__':

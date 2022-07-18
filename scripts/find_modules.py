@@ -1,9 +1,11 @@
 import json
 # noinspection PyUnresolvedReferences
-import scripts_pathmagic # NOQA
+#import scripts_pathmagic # NOQA
+import sys
+
 from libs import winfind
 from pathlib import Path
-
+PATH = str(Path(__file__))
 """
 Used for generating an incomplete config for modules to be tested.
 """
@@ -15,6 +17,11 @@ SEARCH_CONFIG = [
 (r"C:\Sandbox\INT_018_Product_Platform_EDrive\SW\STD\Development\HG_Group",
      "ROUTINE_INT_018_Product_Platform_HG_Group")
 ]
+
+# Calling find_modules from PrepRunStage to create routine for DEBUG_ONLY mode
+if len(sys.argv) > 1:
+    arg1, arg2 = sys.argv[1].split(",")
+    SEARCH_CONFIG = [(arg1, arg2)]
 DEFAULT_MATLAB_VERSION = "2017b"
 
 # Search patterns that tell the search ALGORITHM Which modules are to be searched for

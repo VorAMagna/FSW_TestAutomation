@@ -10,7 +10,6 @@ from event_identifiers import *
 path = r'C:\Users\svc_mxam\Desktop\FSW_TestAutomation\prep_run_stage\configs'
 
 
-
 class ModuleManager:
 
     def __init__(self, parent, project):
@@ -22,8 +21,9 @@ class ModuleManager:
         self.module_path = {}
 
         # Create a CustomTreeCtrl instance
-        self.custom_tree = customtreectrl.CustomTreeCtrl(parent, agwStyle=wx.TR_DEFAULT_STYLE | TR_AUTO_CHECK_PARENT |
-                                                                          TR_AUTO_CHECK_CHILD | TR_ELLIPSIZE_LONG_ITEMS)
+        self.custom_tree = customtreectrl.CustomTreeCtrl(parent, id=RIGHT_CLICK_PROJECT_TREE,
+                                                         agwStyle=wx.TR_DEFAULT_STYLE | TR_AUTO_CHECK_PARENT |
+                                                         TR_AUTO_CHECK_CHILD | TR_ELLIPSIZE_LONG_ITEMS)
         # Add a root node to it
         self.set_root(project)
 
@@ -90,16 +90,6 @@ class ModuleManager:
         print(run_configs)
         return run_configs
 
-
-
-    def create_global_routine_gui(self):
-        from scripts import find_modules
-        import subprocess, json
-        SEARCH_CONFIG = self.current_project
-        run_config = subprocess.check_output(['python', find_modules.PATH, SEARCH_CONFIG])
-
-        self.global_runs_list = json.loads(run_config.decode('utf8').replace("'", '"'))
-
     def get_custom_treectrl(self):
         return self.custom_tree
 
@@ -118,7 +108,8 @@ class ModuleManager:
             while child:
 
                 if self.custom_tree.IsItemChecked(child):
-                    checked_items[self.custom_tree.GetItemText(routine_module)].append(self.custom_tree.GetItemText(child))
+                    checked_items[self.custom_tree.GetItemText(routine_module)].append(
+                        self.custom_tree.GetItemText(child))
 
                 child, child_cookie = self.custom_tree.GetNextChild(routine_module, child_cookie)
 
@@ -130,6 +121,7 @@ class ModuleManager:
         print(checked_items)
 
         return checked_items
+
 
 if __name__ == '__main__':
     pass
